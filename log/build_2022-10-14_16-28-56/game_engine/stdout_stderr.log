@@ -1,0 +1,79 @@
+-- The CXX compiler identification is Clang 10.0.0
+-- Check for working CXX compiler: /usr/bin/clang++
+-- Check for working CXX compiler: /usr/bin/clang++ -- works
+-- Detecting CXX compiler ABI info
+-- Detecting CXX compiler ABI info - done
+-- Detecting CXX compile features
+-- Detecting CXX compile features - done
+-- Found cmake_helpers: 1.0.0 (/home/ubuntu/workspace/Velizar/robotics_v1/install/cmake_helpers/share/cmake_helpers/cmake)
+-- Looking for C++ include pthread.h
+-- Looking for C++ include pthread.h - found
+-- Performing Test CMAKE_HAVE_LIBC_PTHREAD
+-- Performing Test CMAKE_HAVE_LIBC_PTHREAD - Failed
+-- Looking for pthread_create in pthreads
+-- Looking for pthread_create in pthreads - not found
+-- Looking for pthread_create in pthread
+-- Looking for pthread_create in pthread - found
+-- Found Threads: TRUE  
+-- Found ament_cmake: 0.9.9 (/opt/ros/foxy/share/ament_cmake/cmake)
+-- Found PythonInterp: /usr/bin/python3 (found suitable version "3.8.10", minimum required is "3") 
+-- Using PYTHON_EXECUTABLE: /usr/bin/python3
+-- Configuring done
+-- Generating done
+-- Build files have been written to: /home/ubuntu/workspace/Velizar/robotics_v1/build/game_engine
+[35m[1mScanning dependencies of target game_engine[0m
+[ 14%] [32mBuilding CXX object CMakeFiles/game_engine.dir/src/communicator/NullCommunicator.cpp.o[0m
+[ 28%] [32mBuilding CXX object CMakeFiles/game_engine.dir/src/engine/config/EngineConfig.cpp.o[0m
+[ 42%] [32mBuilding CXX object CMakeFiles/game_engine.dir/src/engine/Engine.cpp.o[0m
+[ 57%] [32mBuilding CXX object CMakeFiles/game_engine.dir/src/event_handler/ActionEventHandler.cpp.o[0m
+[ 71%] [32mBuilding CXX object CMakeFiles/game_engine.dir/src/utils/DebugConsole.cpp.o[0m
+[ 85%] [32mBuilding CXX object CMakeFiles/game_engine.dir/src/Application.cpp.o[0m
+[100%] [32m[1mLinking CXX static library libgame_engine.a[0m
+[100%] Built target game_engine
+-- Install configuration: "Debug"
+-- Installing: /home/ubuntu/workspace/Velizar/robotics_v1/install/game_engine/share/game_engine/package.xml
+-- Installing: /home/ubuntu/workspace/Velizar/robotics_v1/install/game_engine/lib/game_engine/libgame_engine.a
+-- Installing: /home/ubuntu/workspace/Velizar/robotics_v1/install/game_engine/share/ament_index/resource_index/packages/game_engine
+-- Installing: /home/ubuntu/workspace/Velizar/robotics_v1/install/game_engine/share/game_engine/hook/ament_prefix_path.dsv
+-- Installing: /home/ubuntu/workspace/Velizar/robotics_v1/install/game_engine/share/game_engine/hook/ros_package_path.dsv
+-- Installing: /home/ubuntu/workspace/Velizar/robotics_v1/install/game_engine/share/ament_index/resource_index/package_run_dependencies/game_engine
+-- Installing: /home/ubuntu/workspace/Velizar/robotics_v1/install/game_engine/share/ament_index/resource_index/parent_prefix_path/game_engine
+-- Installing: /home/ubuntu/workspace/Velizar/robotics_v1/install/game_engine/share/game_engine/environment/ament_prefix_path.sh
+-- Installing: /home/ubuntu/workspace/Velizar/robotics_v1/install/game_engine/share/game_engine/environment/ament_prefix_path.dsv
+-- Installing: /home/ubuntu/workspace/Velizar/robotics_v1/install/game_engine/share/game_engine/environment/path.sh
+-- Installing: /home/ubuntu/workspace/Velizar/robotics_v1/install/game_engine/share/game_engine/environment/path.dsv
+-- Installing: /home/ubuntu/workspace/Velizar/robotics_v1/install/game_engine/share/game_engine/local_setup.bash
+-- Installing: /home/ubuntu/workspace/Velizar/robotics_v1/install/game_engine/share/game_engine/local_setup.sh
+-- Installing: /home/ubuntu/workspace/Velizar/robotics_v1/install/game_engine/share/game_engine/local_setup.zsh
+-- Installing: /home/ubuntu/workspace/Velizar/robotics_v1/install/game_engine/share/game_engine/local_setup.dsv
+-- Installing: /home/ubuntu/workspace/Velizar/robotics_v1/install/game_engine/share/game_engine/package.dsv
+-- Up-to-date: /home/ubuntu/workspace/Velizar/robotics_v1/install/game_engine/share/ament_index/resource_index/packages/game_engine
+-- Installing: /home/ubuntu/workspace/Velizar/robotics_v1/install/game_engine/share/game_engine/cmake/game_engineConfig.cmake
+-- Installing: /home/ubuntu/workspace/Velizar/robotics_v1/install/game_engine/share/game_engine/cmake/game_engineConfig-version.cmake
+-- Up-to-date: /home/ubuntu/workspace/Velizar/robotics_v1/install/game_engine/share/game_engine/package.xml
+-- Installing: /home/ubuntu/workspace/Velizar/robotics_v1/install/game_engine/lib/libgame_engine.a
+-- Installing: /home/ubuntu/workspace/Velizar/robotics_v1/install/game_engine/include
+-- Installing: /home/ubuntu/workspace/Velizar/robotics_v1/install/game_engine/include/game_engine
+-- Installing: /home/ubuntu/workspace/Velizar/robotics_v1/install/game_engine/include/game_engine/event_handler
+-- Installing: /home/ubuntu/workspace/Velizar/robotics_v1/install/game_engine/include/game_engine/event_handler/ActionEventHandler.h
+-- Installing: /home/ubuntu/workspace/Velizar/robotics_v1/install/game_engine/include/game_engine/Game.h
+-- Installing: /home/ubuntu/workspace/Velizar/robotics_v1/install/game_engine/include/game_engine/communicator
+-- Installing: /home/ubuntu/workspace/Velizar/robotics_v1/install/game_engine/include/game_engine/communicator/Communicator.h
+-- Installing: /home/ubuntu/workspace/Velizar/robotics_v1/install/game_engine/include/game_engine/communicator/NullCommunicator.h
+-- Installing: /home/ubuntu/workspace/Velizar/robotics_v1/install/game_engine/include/game_engine/utils
+-- Installing: /home/ubuntu/workspace/Velizar/robotics_v1/install/game_engine/include/game_engine/utils/config
+-- Installing: /home/ubuntu/workspace/Velizar/robotics_v1/install/game_engine/include/game_engine/utils/config/DebugConsoleConfig.h
+-- Installing: /home/ubuntu/workspace/Velizar/robotics_v1/install/game_engine/include/game_engine/utils/DebugConsole.h
+-- Installing: /home/ubuntu/workspace/Velizar/robotics_v1/install/game_engine/include/game_engine/Application.h
+-- Installing: /home/ubuntu/workspace/Velizar/robotics_v1/install/game_engine/include/game_engine/config
+-- Installing: /home/ubuntu/workspace/Velizar/robotics_v1/install/game_engine/include/game_engine/config/ApplicationConfig.h
+-- Installing: /home/ubuntu/workspace/Velizar/robotics_v1/install/game_engine/include/game_engine/engine
+-- Installing: /home/ubuntu/workspace/Velizar/robotics_v1/install/game_engine/include/game_engine/engine/Engine.h
+-- Installing: /home/ubuntu/workspace/Velizar/robotics_v1/install/game_engine/include/game_engine/engine/config
+-- Installing: /home/ubuntu/workspace/Velizar/robotics_v1/install/game_engine/include/game_engine/engine/config/EngineConfig.h
+-- Installing: /home/ubuntu/workspace/Velizar/robotics_v1/install/game_engine/include/game_engine/defines
+-- Installing: /home/ubuntu/workspace/Velizar/robotics_v1/install/game_engine/include/game_engine/defines/DependencyDefines.h
+-- Installing: /home/ubuntu/workspace/Velizar/robotics_v1/install/game_engine/include/game_engine/defines/ActionEventDefines.h
+-- Installing: /home/ubuntu/workspace/Velizar/robotics_v1/install/game_engine/lib/cmake/game_engine/game_engineTargets.cmake
+-- Installing: /home/ubuntu/workspace/Velizar/robotics_v1/install/game_engine/lib/cmake/game_engine/game_engineTargets-debug.cmake
+-- Installing: /home/ubuntu/workspace/Velizar/robotics_v1/install/game_engine/lib/cmake/game_engine/game_engineConfig.cmake

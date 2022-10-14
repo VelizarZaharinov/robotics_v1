@@ -1,0 +1,1 @@
+ament_cmake_symlink_install_targets("TARGET_FILES" "/home/ubuntu/workspace/Velizar/robotics_v1/build/robo_cleaner_interfaces/librobo_cleaner_interfaces__rosidl_typesupport_fastrtps_cpp.so" "TARGETS" "robo_cleaner_interfaces__rosidl_typesupport_fastrtps_cpp" "ARCHIVE_DESTINATION" "lib" "LIBRARY_DESTINATION" "lib" "RUNTIME_DESTINATION" "bin")

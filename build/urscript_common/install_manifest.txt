@@ -1,0 +1,3 @@
+/home/ubuntu/workspace/Velizar/robotics_v1/install/urscript_common/lib/liburscript_common.a
+/home/ubuntu/workspace/Velizar/robotics_v1/install/urscript_common/lib/cmake/urscript_common/urscript_commonTargets.cmake
+/home/ubuntu/workspace/Velizar/robotics_v1/install/urscript_common/lib/cmake/urscript_common/urscript_commonTargets-debug.cmake

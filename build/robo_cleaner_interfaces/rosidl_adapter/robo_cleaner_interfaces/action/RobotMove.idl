@@ -1,0 +1,31 @@
+// generated from rosidl_adapter/resource/action.idl.em
+// with input from robo_cleaner_interfaces/action/RobotMove.action
+// generated code does not contain a copyright notice
+
+#include "robo_cleaner_interfaces/msg/RobotMoveType.idl"
+
+module robo_cleaner_interfaces {
+  module action {
+    @verbatim (language="comment", text=
+      " Request")
+    struct RobotMove_Goal {
+      robo_cleaner_interfaces::msg::RobotMoveType robot_move_type;
+    };
+    struct RobotMove_Result {
+      @verbatim (language="comment", text=
+        " Result")
+      boolean success;
+
+      string error_reason;
+
+      uint8 processed_field_marker;
+    };
+    struct RobotMove_Feedback {
+      @verbatim (language="comment", text=
+        " Feedback")
+      uint8 approaching_field_marker;
+
+      int32 progress_percent;
+    };
+  };
+};

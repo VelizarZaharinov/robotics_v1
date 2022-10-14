@@ -1,0 +1,62 @@
+-- The CXX compiler identification is Clang 10.0.0
+-- Check for working CXX compiler: /usr/bin/clang++
+-- Check for working CXX compiler: /usr/bin/clang++ -- works
+-- Detecting CXX compiler ABI info
+-- Detecting CXX compiler ABI info - done
+-- Detecting CXX compile features
+-- Detecting CXX compile features - done
+-- Found cmake_helpers: 1.0.0 (/home/ubuntu/workspace/Velizar/robotics_v1/install/cmake_helpers/share/cmake_helpers/cmake)
+-- Looking for C++ include pthread.h
+-- Looking for C++ include pthread.h - found
+-- Performing Test CMAKE_HAVE_LIBC_PTHREAD
+-- Performing Test CMAKE_HAVE_LIBC_PTHREAD - Failed
+-- Looking for pthread_create in pthreads
+-- Looking for pthread_create in pthreads - not found
+-- Looking for pthread_create in pthread
+-- Looking for pthread_create in pthread - found
+-- Found Threads: TRUE  
+-- Found ament_cmake: 0.9.9 (/opt/ros/foxy/share/ament_cmake/cmake)
+-- Found PythonInterp: /usr/bin/python3 (found suitable version "3.8.10", minimum required is "3") 
+-- Using PYTHON_EXECUTABLE: /usr/bin/python3
+-- Configuring done
+-- Generating done
+-- Build files have been written to: /home/ubuntu/workspace/Velizar/robotics_v1/build/resource_builder
+[35m[1mScanning dependencies of target resource_builder[0m
+[ 16%] [32mBuilding CXX object CMakeFiles/resource_builder.dir/src/FileBuilder.cpp.o[0m
+[ 33%] [32mBuilding CXX object CMakeFiles/resource_builder.dir/src/FileParser.cpp.o[0m
+[ 50%] [32mBuilding CXX object CMakeFiles/resource_builder.dir/src/main.cpp.o[0m
+[ 66%] [32mBuilding CXX object CMakeFiles/resource_builder.dir/src/ResourceParser.cpp.o[0m
+[ 83%] [32mBuilding CXX object CMakeFiles/resource_builder.dir/src/SyntaxChecker.cpp.o[0m
+[100%] [32m[1mLinking CXX executable resource_builder[0m
+[100%] Built target resource_builder
+-- Install configuration: "Debug"
+-- Installing: /home/ubuntu/workspace/Velizar/robotics_v1/install/resource_builder/share/resource_builder/package.xml
+-- Installing: /home/ubuntu/workspace/Velizar/robotics_v1/install/resource_builder/lib/resource_builder/resource_builder
+-- Installing: /home/ubuntu/workspace/Velizar/robotics_v1/install/resource_builder/share/ament_index/resource_index/packages/resource_builder
+-- Installing: /home/ubuntu/workspace/Velizar/robotics_v1/install/resource_builder/share/resource_builder/hook/ament_prefix_path.dsv
+-- Installing: /home/ubuntu/workspace/Velizar/robotics_v1/install/resource_builder/share/resource_builder/hook/ros_package_path.dsv
+-- Installing: /home/ubuntu/workspace/Velizar/robotics_v1/install/resource_builder/share/ament_index/resource_index/package_run_dependencies/resource_builder
+-- Installing: /home/ubuntu/workspace/Velizar/robotics_v1/install/resource_builder/share/ament_index/resource_index/parent_prefix_path/resource_builder
+-- Installing: /home/ubuntu/workspace/Velizar/robotics_v1/install/resource_builder/share/resource_builder/environment/ament_prefix_path.sh
+-- Installing: /home/ubuntu/workspace/Velizar/robotics_v1/install/resource_builder/share/resource_builder/environment/ament_prefix_path.dsv
+-- Installing: /home/ubuntu/workspace/Velizar/robotics_v1/install/resource_builder/share/resource_builder/environment/path.sh
+-- Installing: /home/ubuntu/workspace/Velizar/robotics_v1/install/resource_builder/share/resource_builder/environment/path.dsv
+-- Installing: /home/ubuntu/workspace/Velizar/robotics_v1/install/resource_builder/share/resource_builder/local_setup.bash
+-- Installing: /home/ubuntu/workspace/Velizar/robotics_v1/install/resource_builder/share/resource_builder/local_setup.sh
+-- Installing: /home/ubuntu/workspace/Velizar/robotics_v1/install/resource_builder/share/resource_builder/local_setup.zsh
+-- Installing: /home/ubuntu/workspace/Velizar/robotics_v1/install/resource_builder/share/resource_builder/local_setup.dsv
+-- Installing: /home/ubuntu/workspace/Velizar/robotics_v1/install/resource_builder/share/resource_builder/package.dsv
+-- Installing: /home/ubuntu/workspace/Velizar/robotics_v1/install/resource_builder/share/ament_index/resource_index/packages/resource_builder
+-- Installing: /home/ubuntu/workspace/Velizar/robotics_v1/install/resource_builder/share/resource_builder/cmake/resource_builderConfig.cmake
+-- Installing: /home/ubuntu/workspace/Velizar/robotics_v1/install/resource_builder/share/resource_builder/cmake/resource_builderConfig-version.cmake
+-- Up-to-date: /home/ubuntu/workspace/Velizar/robotics_v1/install/resource_builder/share/resource_builder/package.xml
+-- Installing: /home/ubuntu/workspace/Velizar/robotics_v1/install/resource_builder/bin/resource_builder
+-- Installing: /home/ubuntu/workspace/Velizar/robotics_v1/install/resource_builder/include
+-- Installing: /home/ubuntu/workspace/Velizar/robotics_v1/install/resource_builder/include/resource_builder
+-- Installing: /home/ubuntu/workspace/Velizar/robotics_v1/install/resource_builder/include/resource_builder/FileParser.h
+-- Installing: /home/ubuntu/workspace/Velizar/robotics_v1/install/resource_builder/include/resource_builder/FileBuilder.h
+-- Installing: /home/ubuntu/workspace/Velizar/robotics_v1/install/resource_builder/include/resource_builder/SyntaxChecker.h
+-- Installing: /home/ubuntu/workspace/Velizar/robotics_v1/install/resource_builder/include/resource_builder/ResourceParser.h
+-- Installing: /home/ubuntu/workspace/Velizar/robotics_v1/install/resource_builder/lib/cmake/resource_builder/resource_builderTargets.cmake
+-- Installing: /home/ubuntu/workspace/Velizar/robotics_v1/install/resource_builder/lib/cmake/resource_builder/resource_builderTargets-debug.cmake
+-- Installing: /home/ubuntu/workspace/Velizar/robotics_v1/install/resource_builder/lib/cmake/resource_builder/resource_builderConfig.cmake

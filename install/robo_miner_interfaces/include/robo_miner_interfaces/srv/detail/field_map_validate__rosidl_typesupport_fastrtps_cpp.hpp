@@ -1,0 +1,1 @@
+/home/ubuntu/workspace/Velizar/robotics_v1/build/robo_miner_interfaces/rosidl_typesupport_fastrtps_cpp/robo_miner_interfaces/srv/detail/field_map_validate__rosidl_typesupport_fastrtps_cpp.hpp

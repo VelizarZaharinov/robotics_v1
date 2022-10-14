@@ -1,0 +1,7 @@
+{
+  "package_name": "robo_collector_interfaces",
+  "non_idl_tuples": [
+    "/home/ubuntu/workspace/Velizar/robotics_v1/src/robo_collector/robo_collector_interfaces:msg/RobotMoveType.msg",
+    "/home/ubuntu/workspace/Velizar/robotics_v1/src/robo_collector/robo_collector_interfaces:msg/UserAuthenticate.msg"
+  ]
+}

@@ -1,0 +1,6 @@
+{
+  "package_name": "urscript_interfaces",
+  "non_idl_tuples": [
+    "/home/ubuntu/workspace/Velizar/robotics_v1/src/ur_dev/urscript/urscript_interfaces:srv/UrScript.srv"
+  ]
+}

@@ -1,0 +1,1 @@
+/home/ubuntu/workspace/Velizar/robotics_v1/build/robo_miner_interfaces/rosidl_typesupport_introspection_cpp/robo_miner_interfaces/msg/detail/robot_position_response__rosidl_typesupport_introspection_cpp.hpp

@@ -1,0 +1,50 @@
+[0.032s] Invoking command in '/home/ubuntu/workspace/Velizar/robotics_v1/build/ur_moveit_config': CMAKE_PREFIX_PATH=/opt/ros/foxy PS1=[\u@\h \W]$(git_branch)$ /usr/bin/cmake /home/ubuntu/workspace/Velizar/robotics_v1/src/ur_driver/Universal_Robots_ROS2_Driver/ur_moveit_config -DCMAKE_BUILD_TYPE=Debug -DCMAKE_CXX_COMPILER=/usr/bin/clang++ -DAMENT_CMAKE_SYMLINK_INSTALL=1 -DCMAKE_INSTALL_PREFIX=/home/ubuntu/workspace/Velizar/robotics_v1/install/ur_moveit_config
+[0.226s] -- The C compiler identification is GNU 9.4.0
+[0.542s] -- The CXX compiler identification is Clang 10.0.0
+[0.560s] -- Check for working C compiler: /usr/bin/cc
+[0.783s] -- Check for working C compiler: /usr/bin/cc -- works
+[0.786s] -- Detecting C compiler ABI info
+[1.000s] -- Detecting C compiler ABI info - done
+[1.062s] -- Detecting C compile features
+[1.064s] -- Detecting C compile features - done
+[1.075s] -- Check for working CXX compiler: /usr/bin/clang++
+[1.423s] -- Check for working CXX compiler: /usr/bin/clang++ -- works
+[1.429s] -- Detecting CXX compiler ABI info
+[1.795s] -- Detecting CXX compiler ABI info - done
+[1.855s] -- Detecting CXX compile features
+[1.857s] -- Detecting CXX compile features - done
+[1.864s] -- Found ament_cmake: 0.9.9 (/opt/ros/foxy/share/ament_cmake/cmake)
+[1.924s] -- Found PythonInterp: /usr/bin/python3 (found suitable version "3.8.10", minimum required is "3") 
+[1.924s] -- Using PYTHON_EXECUTABLE: /usr/bin/python3
+[2.406s] -- Override CMake install command with custom implementation using symlinks instead of copying resources
+[2.636s] -- Configuring done
+[2.642s] -- Generating done
+[2.648s] -- Build files have been written to: /home/ubuntu/workspace/Velizar/robotics_v1/build/ur_moveit_config
+[2.660s] Invoked command in '/home/ubuntu/workspace/Velizar/robotics_v1/build/ur_moveit_config' returned '0': CMAKE_PREFIX_PATH=/opt/ros/foxy PS1=[\u@\h \W]$(git_branch)$ /usr/bin/cmake /home/ubuntu/workspace/Velizar/robotics_v1/src/ur_driver/Universal_Robots_ROS2_Driver/ur_moveit_config -DCMAKE_BUILD_TYPE=Debug -DCMAKE_CXX_COMPILER=/usr/bin/clang++ -DAMENT_CMAKE_SYMLINK_INSTALL=1 -DCMAKE_INSTALL_PREFIX=/home/ubuntu/workspace/Velizar/robotics_v1/install/ur_moveit_config
+[2.664s] Invoking command in '/home/ubuntu/workspace/Velizar/robotics_v1/build/ur_moveit_config': CMAKE_PREFIX_PATH=/opt/ros/foxy PS1=[\u@\h \W]$(git_branch)$ /usr/bin/cmake --build /home/ubuntu/workspace/Velizar/robotics_v1/build/ur_moveit_config -- -j2 -l2
+[2.783s] Invoked command in '/home/ubuntu/workspace/Velizar/robotics_v1/build/ur_moveit_config' returned '0': CMAKE_PREFIX_PATH=/opt/ros/foxy PS1=[\u@\h \W]$(git_branch)$ /usr/bin/cmake --build /home/ubuntu/workspace/Velizar/robotics_v1/build/ur_moveit_config -- -j2 -l2
+[2.842s] Invoking command in '/home/ubuntu/workspace/Velizar/robotics_v1/build/ur_moveit_config': CMAKE_PREFIX_PATH=/opt/ros/foxy PS1=[\u@\h \W]$(git_branch)$ /usr/bin/cmake --install /home/ubuntu/workspace/Velizar/robotics_v1/build/ur_moveit_config
+[2.871s] -- Install configuration: "Debug"
+[2.873s] -- Execute custom install script
+[2.875s] -- Symlinking: /home/ubuntu/workspace/Velizar/robotics_v1/install/ur_moveit_config/share/ur_moveit_config/config/controllers.yaml
+[2.898s] -- Symlinking: /home/ubuntu/workspace/Velizar/robotics_v1/install/ur_moveit_config/share/ur_moveit_config/config/kinematics.yaml
+[2.919s] -- Symlinking: /home/ubuntu/workspace/Velizar/robotics_v1/install/ur_moveit_config/share/ur_moveit_config/config/ompl_planning.yaml
+[2.944s] -- Symlinking: /home/ubuntu/workspace/Velizar/robotics_v1/install/ur_moveit_config/share/ur_moveit_config/rviz/view_robot.rviz
+[2.972s] -- Symlinking: /home/ubuntu/workspace/Velizar/robotics_v1/install/ur_moveit_config/share/ur_moveit_config/srdf/ur.srdf.xacro
+[2.995s] -- Symlinking: /home/ubuntu/workspace/Velizar/robotics_v1/install/ur_moveit_config/share/ur_moveit_config/srdf/ur_macro.srdf.xacro
+[3.018s] -- Symlinking: /home/ubuntu/workspace/Velizar/robotics_v1/install/ur_moveit_config/share/ament_index/resource_index/package_run_dependencies/ur_moveit_config
+[3.050s] -- Symlinking: /home/ubuntu/workspace/Velizar/robotics_v1/install/ur_moveit_config/share/ament_index/resource_index/parent_prefix_path/ur_moveit_config
+[3.079s] -- Symlinking: /home/ubuntu/workspace/Velizar/robotics_v1/install/ur_moveit_config/share/ur_moveit_config/environment/ament_prefix_path.sh
+[3.102s] -- Symlinking: /home/ubuntu/workspace/Velizar/robotics_v1/install/ur_moveit_config/share/ur_moveit_config/environment/ament_prefix_path.dsv
+[3.127s] -- Symlinking: /home/ubuntu/workspace/Velizar/robotics_v1/install/ur_moveit_config/share/ur_moveit_config/environment/path.sh
+[3.153s] -- Symlinking: /home/ubuntu/workspace/Velizar/robotics_v1/install/ur_moveit_config/share/ur_moveit_config/environment/path.dsv
+[3.179s] -- Symlinking: /home/ubuntu/workspace/Velizar/robotics_v1/install/ur_moveit_config/share/ur_moveit_config/local_setup.bash
+[3.203s] -- Symlinking: /home/ubuntu/workspace/Velizar/robotics_v1/install/ur_moveit_config/share/ur_moveit_config/local_setup.sh
+[3.226s] -- Symlinking: /home/ubuntu/workspace/Velizar/robotics_v1/install/ur_moveit_config/share/ur_moveit_config/local_setup.zsh
+[3.253s] -- Symlinking: /home/ubuntu/workspace/Velizar/robotics_v1/install/ur_moveit_config/share/ur_moveit_config/local_setup.dsv
+[3.279s] -- Symlinking: /home/ubuntu/workspace/Velizar/robotics_v1/install/ur_moveit_config/share/ur_moveit_config/package.dsv
+[3.302s] -- Symlinking: /home/ubuntu/workspace/Velizar/robotics_v1/install/ur_moveit_config/share/ament_index/resource_index/packages/ur_moveit_config
+[3.325s] -- Symlinking: /home/ubuntu/workspace/Velizar/robotics_v1/install/ur_moveit_config/share/ur_moveit_config/cmake/ur_moveit_configConfig.cmake
+[3.350s] -- Symlinking: /home/ubuntu/workspace/Velizar/robotics_v1/install/ur_moveit_config/share/ur_moveit_config/cmake/ur_moveit_configConfig-version.cmake
+[3.376s] -- Symlinking: /home/ubuntu/workspace/Velizar/robotics_v1/install/ur_moveit_config/share/ur_moveit_config/package.xml
+[3.409s] Invoked command in '/home/ubuntu/workspace/Velizar/robotics_v1/build/ur_moveit_config' returned '0': CMAKE_PREFIX_PATH=/opt/ros/foxy PS1=[\u@\h \W]$(git_branch)$ /usr/bin/cmake --install /home/ubuntu/workspace/Velizar/robotics_v1/build/ur_moveit_config

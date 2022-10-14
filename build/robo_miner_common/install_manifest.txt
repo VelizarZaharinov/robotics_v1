@@ -1,0 +1,3 @@
+/home/ubuntu/workspace/Velizar/robotics_v1/install/robo_miner_common/lib/librobo_miner_common.a
+/home/ubuntu/workspace/Velizar/robotics_v1/install/robo_miner_common/lib/cmake/robo_miner_common/robo_miner_commonTargets.cmake
+/home/ubuntu/workspace/Velizar/robotics_v1/install/robo_miner_common/lib/cmake/robo_miner_common/robo_miner_commonTargets-debug.cmake

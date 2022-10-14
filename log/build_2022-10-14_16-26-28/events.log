@@ -1,0 +1,644 @@
+[0.000000] (-) TimerEvent: {}
+[0.002079] (-) JobUnselected: {'identifier': 'game_engine'}
+[0.002170] (-) JobUnselected: {'identifier': 'manager_utils'}
+[0.002239] (-) JobUnselected: {'identifier': 'robo_cleaner_common'}
+[0.002317] (-) JobUnselected: {'identifier': 'robo_cleaner_gui'}
+[0.002394] (-) JobUnselected: {'identifier': 'robo_cleaner_interfaces'}
+[0.002453] (-) JobUnselected: {'identifier': 'robo_collector_common'}
+[0.002624] (-) JobUnselected: {'identifier': 'robo_collector_controller'}
+[0.002699] (-) JobUnselected: {'identifier': 'robo_collector_controller_py'}
+[0.002777] (-) JobUnselected: {'identifier': 'robo_collector_gui'}
+[0.002853] (-) JobUnselected: {'identifier': 'robo_collector_interfaces'}
+[0.002929] (-) JobUnselected: {'identifier': 'robo_common'}
+[0.002995] (-) JobUnselected: {'identifier': 'robo_miner_common'}
+[0.003062] (-) JobUnselected: {'identifier': 'robo_miner_gui'}
+[0.003138] (-) JobUnselected: {'identifier': 'robo_miner_interfaces'}
+[0.003214] (-) JobUnselected: {'identifier': 'ros2_game_engine'}
+[0.003271] (-) JobUnselected: {'identifier': 'sdl_utils'}
+[0.003328] (-) JobUnselected: {'identifier': 'ur_bringup'}
+[0.003403] (-) JobUnselected: {'identifier': 'ur_client_library'}
+[0.003467] (-) JobUnselected: {'identifier': 'ur_control_gui'}
+[0.003526] (-) JobUnselected: {'identifier': 'ur_controllers'}
+[0.003583] (-) JobUnselected: {'identifier': 'ur_dashboard_msgs'}
+[0.003640] (-) JobUnselected: {'identifier': 'ur_description'}
+[0.003698] (-) JobUnselected: {'identifier': 'ur_moveit_config'}
+[0.003755] (-) JobUnselected: {'identifier': 'ur_robot_driver'}
+[0.003812] (-) JobUnselected: {'identifier': 'urscript_bridge'}
+[0.003869] (-) JobUnselected: {'identifier': 'urscript_common'}
+[0.003925] (-) JobUnselected: {'identifier': 'urscript_interfaces'}
+[0.003986] (cmake_helpers) JobQueued: {'identifier': 'cmake_helpers', 'dependencies': OrderedDict()}
+[0.004046] (utils) JobQueued: {'identifier': 'utils', 'dependencies': OrderedDict([('cmake_helpers', '/home/ubuntu/workspace/Velizar/robotics_v1/install/cmake_helpers')])}
+[0.004110] (resource_utils) JobQueued: {'identifier': 'resource_utils', 'dependencies': OrderedDict([('cmake_helpers', '/home/ubuntu/workspace/Velizar/robotics_v1/install/cmake_helpers'), ('utils', '/home/ubuntu/workspace/Velizar/robotics_v1/install/utils')])}
+[0.004174] (resource_builder) JobQueued: {'identifier': 'resource_builder', 'dependencies': OrderedDict([('cmake_helpers', '/home/ubuntu/workspace/Velizar/robotics_v1/install/cmake_helpers'), ('utils', '/home/ubuntu/workspace/Velizar/robotics_v1/install/utils'), ('resource_utils', '/home/ubuntu/workspace/Velizar/robotics_v1/install/resource_utils')])}
+[0.004240] (cmake_helpers) JobStarted: {'identifier': 'cmake_helpers'}
+[0.038462] (cmake_helpers) JobProgress: {'identifier': 'cmake_helpers', 'progress': 'cmake'}
+[0.039471] (cmake_helpers) Command: {'cmd': ['/usr/bin/cmake', '/home/ubuntu/workspace/Velizar/robotics_v1/src/lib/cmake_helpers', '-DCMAKE_BUILD_TYPE=Debug', '-DCMAKE_CXX_COMPILER=/usr/bin/clang++', '-DCMAKE_INSTALL_PREFIX=/home/ubuntu/workspace/Velizar/robotics_v1/install/cmake_helpers'], 'cwd': '/home/ubuntu/workspace/Velizar/robotics_v1/build/cmake_helpers', 'env': OrderedDict([('LESSOPEN', '| /usr/bin/lesspipe %s'), ('USER', 'ubuntu'), ('SSH_AGENT_PID', '2008'), ('XDG_SESSION_TYPE', 'x11'), ('SHLVL', '1'), ('LD_LIBRARY_PATH', '/opt/ros/foxy/opt/yaml_cpp_vendor/lib:/opt/ros/foxy/opt/rviz_ogre_vendor/lib:/opt/ros/foxy/lib/x86_64-linux-gnu:/opt/ros/foxy/lib'), ('HOME', '/home/ubuntu'), ('DESKTOP_SESSION', 'ubuntu'), ('ROS_PYTHON_VERSION', '3'), ('GNOME_SHELL_SESSION_MODE', 'ubuntu'), ('GTK_MODULES', 'gail:atk-bridge'), ('PS1', '[\\u@\\h \\W]$(git_branch)$'), ('MANAGERPID', '1804'), ('DBUS_STARTER_BUS_TYPE', 'session'), ('DBUS_SESSION_BUS_ADDRESS', 'unix:path=/run/user/1000/bus,guid=3cf57ed13619e15624827b8a634826e6'), ('COLORTERM', 'truecolor'), ('IM_CONFIG_PHASE', '1'), ('ROS_DISTRO', 'foxy'), ('LOGNAME', 'ubuntu'), ('JOURNAL_STREAM', '8:36712'), ('_', '/usr/bin/colcon'), ('ROS_VERSION', '2'), ('XDG_SESSION_CLASS', 'user'), ('USERNAME', 'ubuntu'), ('TERM', 'xterm-256color'), ('GNOME_DESKTOP_SESSION_ID', 'this-is-deprecated'), ('ROS_LOCALHOST_ONLY', '0'), ('WINDOWPATH', '2'), ('PATH', '/opt/ros/foxy/bin:/home/ubuntu/.local/bin:/usr/local/sbin:/usr/local/bin:/usr/sbin:/usr/bin:/sbin:/bin:/usr/games:/usr/local/games:/snap/bin'), ('SESSION_MANAGER', 'local/ubuntu2004:@/tmp/.ICE-unix/2046,unix/ubuntu2004:/tmp/.ICE-unix/2046'), ('INVOCATION_ID', 'f4b6283573064975930a418b95e0ddb1'), ('XDG_MENU_PREFIX', 'gnome-'), ('GNOME_TERMINAL_SCREEN', '/org/gnome/Terminal/screen/018776d1_9c95_4512_aed8_b3ba208c7249'), ('XDG_RUNTIME_DIR', '/run/user/1000'), ('DISPLAY', ':0'), ('LANG', 'en_US.UTF-8'), ('XDG_CURRENT_DESKTOP', 'ubuntu:GNOME'), ('XMODIFIERS', '@im=ibus'), ('XDG_SESSION_DESKTOP', 'ubuntu'), ('XAUTHORITY', '/run/user/1000/gdm/Xauthority'), ('LS_COLORS', 'rs=0:di=01;34:ln=01;36:mh=00:pi=40;33:so=01;35:do=01;35:bd=40;33;01:cd=40;33;01:or=40;31;01:mi=00:su=37;41:sg=30;43:ca=30;41:tw=30;42:ow=34;42:st=37;44:ex=01;32:*.tar=01;31:*.tgz=01;31:*.arc=01;31:*.arj=01;31:*.taz=01;31:*.lha=01;31:*.lz4=01;31:*.lzh=01;31:*.lzma=01;31:*.tlz=01;31:*.txz=01;31:*.tzo=01;31:*.t7z=01;31:*.zip=01;31:*.z=01;31:*.dz=01;31:*.gz=01;31:*.lrz=01;31:*.lz=01;31:*.lzo=01;31:*.xz=01;31:*.zst=01;31:*.tzst=01;31:*.bz2=01;31:*.bz=01;31:*.tbz=01;31:*.tbz2=01;31:*.tz=01;31:*.deb=01;31:*.rpm=01;31:*.jar=01;31:*.war=01;31:*.ear=01;31:*.sar=01;31:*.rar=01;31:*.alz=01;31:*.ace=01;31:*.zoo=01;31:*.cpio=01;31:*.7z=01;31:*.rz=01;31:*.cab=01;31:*.wim=01;31:*.swm=01;31:*.dwm=01;31:*.esd=01;31:*.jpg=01;35:*.jpeg=01;35:*.mjpg=01;35:*.mjpeg=01;35:*.gif=01;35:*.bmp=01;35:*.pbm=01;35:*.pgm=01;35:*.ppm=01;35:*.tga=01;35:*.xbm=01;35:*.xpm=01;35:*.tif=01;35:*.tiff=01;35:*.png=01;35:*.svg=01;35:*.svgz=01;35:*.mng=01;35:*.pcx=01;35:*.mov=01;35:*.mpg=01;35:*.mpeg=01;35:*.m2v=01;35:*.mkv=01;35:*.webm=01;35:*.ogm=01;35:*.mp4=01;35:*.m4v=01;35:*.mp4v=01;35:*.vob=01;35:*.qt=01;35:*.nuv=01;35:*.wmv=01;35:*.asf=01;35:*.rm=01;35:*.rmvb=01;35:*.flc=01;35:*.avi=01;35:*.fli=01;35:*.flv=01;35:*.gl=01;35:*.dl=01;35:*.xcf=01;35:*.xwd=01;35:*.yuv=01;35:*.cgm=01;35:*.emf=01;35:*.ogv=01;35:*.ogx=01;35:*.aac=00;36:*.au=00;36:*.flac=00;36:*.m4a=00;36:*.mid=00;36:*.midi=00;36:*.mka=00;36:*.mp3=00;36:*.mpc=00;36:*.ogg=00;36:*.ra=00;36:*.wav=00;36:*.oga=00;36:*.opus=00;36:*.spx=00;36:*.xspf=00;36:'), ('GNOME_TERMINAL_SERVICE', ':1.82'), ('SSH_AUTH_SOCK', '/run/user/1000/keyring/ssh'), ('AMENT_PREFIX_PATH', '/opt/ros/foxy'), ('SHELL', '/bin/bash'), ('QT_ACCESSIBILITY', '1'), ('GDMSESSION', 'ubuntu'), ('LESSCLOSE', '/usr/bin/lesspipe %s %s'), ('GPG_AGENT_INFO', '/run/user/1000/gnupg/S.gpg-agent:0:1'), ('QT_IM_MODULE', 'ibus'), ('PWD', '/home/ubuntu/workspace/Velizar/robotics_v1/build/cmake_helpers'), ('LC_ALL', 'en_US.UTF-8'), ('XDG_CONFIG_DIRS', '/etc/xdg/xdg-ubuntu:/etc/xdg'), ('DBUS_STARTER_ADDRESS', 'unix:path=/run/user/1000/bus,guid=3cf57ed13619e15624827b8a634826e6'), ('XDG_DATA_DIRS', '/usr/share/ubuntu:/usr/local/share/:/usr/share/:/var/lib/snapd/desktop'), ('PYTHONPATH', '/opt/ros/foxy/lib/python3.8/site-packages'), ('COLCON', '1'), ('VTE_VERSION', '6003'), ('CMAKE_PREFIX_PATH', '/opt/ros/foxy')]), 'shell': False}
+[0.098309] (-) TimerEvent: {}
+[0.199596] (-) TimerEvent: {}
+[0.300609] (-) TimerEvent: {}
+[0.401228] (-) TimerEvent: {}
+[0.501906] (-) TimerEvent: {}
+[0.574243] (cmake_helpers) StdoutLine: {'line': b'-- The C compiler identification is GNU 9.4.0\n'}
+[0.602507] (-) TimerEvent: {}
+[0.703467] (-) TimerEvent: {}
+[0.804749] (-) TimerEvent: {}
+[0.905854] (-) TimerEvent: {}
+[1.007989] (-) TimerEvent: {}
+[1.109489] (-) TimerEvent: {}
+[1.215881] (-) TimerEvent: {}
+[1.316526] (-) TimerEvent: {}
+[1.417587] (-) TimerEvent: {}
+[1.518108] (-) TimerEvent: {}
+[1.618560] (-) TimerEvent: {}
+[1.676861] (cmake_helpers) StdoutLine: {'line': b'-- The CXX compiler identification is Clang 10.0.0\n'}
+[1.698807] (cmake_helpers) StdoutLine: {'line': b'-- Check for working C compiler: /usr/bin/cc\n'}
+[1.718720] (-) TimerEvent: {}
+[1.819384] (-) TimerEvent: {}
+[1.901379] (cmake_helpers) StdoutLine: {'line': b'-- Check for working C compiler: /usr/bin/cc -- works\n'}
+[1.905157] (cmake_helpers) StdoutLine: {'line': b'-- Detecting C compiler ABI info\n'}
+[1.919535] (-) TimerEvent: {}
+[2.019973] (-) TimerEvent: {}
+[2.108958] (cmake_helpers) StdoutLine: {'line': b'-- Detecting C compiler ABI info - done\n'}
+[2.120104] (-) TimerEvent: {}
+[2.175364] (cmake_helpers) StdoutLine: {'line': b'-- Detecting C compile features\n'}
+[2.176698] (cmake_helpers) StdoutLine: {'line': b'-- Detecting C compile features - done\n'}
+[2.191015] (cmake_helpers) StdoutLine: {'line': b'-- Check for working CXX compiler: /usr/bin/clang++\n'}
+[2.220297] (-) TimerEvent: {}
+[2.320744] (-) TimerEvent: {}
+[2.421170] (-) TimerEvent: {}
+[2.521614] (-) TimerEvent: {}
+[2.533347] (cmake_helpers) StdoutLine: {'line': b'-- Check for working CXX compiler: /usr/bin/clang++ -- works\n'}
+[2.537438] (cmake_helpers) StdoutLine: {'line': b'-- Detecting CXX compiler ABI info\n'}
+[2.621765] (-) TimerEvent: {}
+[2.722166] (-) TimerEvent: {}
+[2.822722] (-) TimerEvent: {}
+[2.871728] (cmake_helpers) StdoutLine: {'line': b'-- Detecting CXX compiler ABI info - done\n'}
+[2.920287] (cmake_helpers) StdoutLine: {'line': b'-- Detecting CXX compile features\n'}
+[2.922870] (cmake_helpers) StdoutLine: {'line': b'-- Detecting CXX compile features - done\n'}
+[2.923120] (-) TimerEvent: {}
+[2.931871] (cmake_helpers) StdoutLine: {'line': b'-- Found ament_cmake: 0.9.9 (/opt/ros/foxy/share/ament_cmake/cmake)\n'}
+[3.001996] (cmake_helpers) StdoutLine: {'line': b'-- Found PythonInterp: /usr/bin/python3 (found suitable version "3.8.10", minimum required is "3") \n'}
+[3.002409] (cmake_helpers) StdoutLine: {'line': b'-- Using PYTHON_EXECUTABLE: /usr/bin/python3\n'}
+[3.023276] (-) TimerEvent: {}
+[3.123660] (-) TimerEvent: {}
+[3.224038] (-) TimerEvent: {}
+[3.324435] (-) TimerEvent: {}
+[3.424861] (-) TimerEvent: {}
+[3.525403] (-) TimerEvent: {}
+[3.625841] (-) TimerEvent: {}
+[3.726518] (cmake_helpers) StdoutLine: {'line': b'-- Configuring done\n'}
+[3.726869] (-) TimerEvent: {}
+[3.732494] (cmake_helpers) StdoutLine: {'line': b'-- Generating done\n'}
+[3.736277] (cmake_helpers) StdoutLine: {'line': b'-- Build files have been written to: /home/ubuntu/workspace/Velizar/robotics_v1/build/cmake_helpers\n'}
+[3.749304] (cmake_helpers) CommandEnded: {'returncode': 0}
+[3.752120] (cmake_helpers) JobProgress: {'identifier': 'cmake_helpers', 'progress': 'build'}
+[3.752202] (cmake_helpers) Command: {'cmd': ['/usr/bin/cmake', '--build', '/home/ubuntu/workspace/Velizar/robotics_v1/build/cmake_helpers', '--', '-j2', '-l2'], 'cwd': '/home/ubuntu/workspace/Velizar/robotics_v1/build/cmake_helpers', 'env': OrderedDict([('LESSOPEN', '| /usr/bin/lesspipe %s'), ('USER', 'ubuntu'), ('SSH_AGENT_PID', '2008'), ('XDG_SESSION_TYPE', 'x11'), ('SHLVL', '1'), ('LD_LIBRARY_PATH', '/opt/ros/foxy/opt/yaml_cpp_vendor/lib:/opt/ros/foxy/opt/rviz_ogre_vendor/lib:/opt/ros/foxy/lib/x86_64-linux-gnu:/opt/ros/foxy/lib'), ('HOME', '/home/ubuntu'), ('DESKTOP_SESSION', 'ubuntu'), ('ROS_PYTHON_VERSION', '3'), ('GNOME_SHELL_SESSION_MODE', 'ubuntu'), ('GTK_MODULES', 'gail:atk-bridge'), ('PS1', '[\\u@\\h \\W]$(git_branch)$'), ('MANAGERPID', '1804'), ('DBUS_STARTER_BUS_TYPE', 'session'), ('DBUS_SESSION_BUS_ADDRESS', 'unix:path=/run/user/1000/bus,guid=3cf57ed13619e15624827b8a634826e6'), ('COLORTERM', 'truecolor'), ('IM_CONFIG_PHASE', '1'), ('ROS_DISTRO', 'foxy'), ('LOGNAME', 'ubuntu'), ('JOURNAL_STREAM', '8:36712'), ('_', '/usr/bin/colcon'), ('ROS_VERSION', '2'), ('XDG_SESSION_CLASS', 'user'), ('USERNAME', 'ubuntu'), ('TERM', 'xterm-256color'), ('GNOME_DESKTOP_SESSION_ID', 'this-is-deprecated'), ('ROS_LOCALHOST_ONLY', '0'), ('WINDOWPATH', '2'), ('PATH', '/opt/ros/foxy/bin:/home/ubuntu/.local/bin:/usr/local/sbin:/usr/local/bin:/usr/sbin:/usr/bin:/sbin:/bin:/usr/games:/usr/local/games:/snap/bin'), ('SESSION_MANAGER', 'local/ubuntu2004:@/tmp/.ICE-unix/2046,unix/ubuntu2004:/tmp/.ICE-unix/2046'), ('INVOCATION_ID', 'f4b6283573064975930a418b95e0ddb1'), ('XDG_MENU_PREFIX', 'gnome-'), ('GNOME_TERMINAL_SCREEN', '/org/gnome/Terminal/screen/018776d1_9c95_4512_aed8_b3ba208c7249'), ('XDG_RUNTIME_DIR', '/run/user/1000'), ('DISPLAY', ':0'), ('LANG', 'en_US.UTF-8'), ('XDG_CURRENT_DESKTOP', 'ubuntu:GNOME'), ('XMODIFIERS', '@im=ibus'), ('XDG_SESSION_DESKTOP', 'ubuntu'), ('XAUTHORITY', '/run/user/1000/gdm/Xauthority'), ('LS_COLORS', 'rs=0:di=01;34:ln=01;36:mh=00:pi=40;33:so=01;35:do=01;35:bd=40;33;01:cd=40;33;01:or=40;31;01:mi=00:su=37;41:sg=30;43:ca=30;41:tw=30;42:ow=34;42:st=37;44:ex=01;32:*.tar=01;31:*.tgz=01;31:*.arc=01;31:*.arj=01;31:*.taz=01;31:*.lha=01;31:*.lz4=01;31:*.lzh=01;31:*.lzma=01;31:*.tlz=01;31:*.txz=01;31:*.tzo=01;31:*.t7z=01;31:*.zip=01;31:*.z=01;31:*.dz=01;31:*.gz=01;31:*.lrz=01;31:*.lz=01;31:*.lzo=01;31:*.xz=01;31:*.zst=01;31:*.tzst=01;31:*.bz2=01;31:*.bz=01;31:*.tbz=01;31:*.tbz2=01;31:*.tz=01;31:*.deb=01;31:*.rpm=01;31:*.jar=01;31:*.war=01;31:*.ear=01;31:*.sar=01;31:*.rar=01;31:*.alz=01;31:*.ace=01;31:*.zoo=01;31:*.cpio=01;31:*.7z=01;31:*.rz=01;31:*.cab=01;31:*.wim=01;31:*.swm=01;31:*.dwm=01;31:*.esd=01;31:*.jpg=01;35:*.jpeg=01;35:*.mjpg=01;35:*.mjpeg=01;35:*.gif=01;35:*.bmp=01;35:*.pbm=01;35:*.pgm=01;35:*.ppm=01;35:*.tga=01;35:*.xbm=01;35:*.xpm=01;35:*.tif=01;35:*.tiff=01;35:*.png=01;35:*.svg=01;35:*.svgz=01;35:*.mng=01;35:*.pcx=01;35:*.mov=01;35:*.mpg=01;35:*.mpeg=01;35:*.m2v=01;35:*.mkv=01;35:*.webm=01;35:*.ogm=01;35:*.mp4=01;35:*.m4v=01;35:*.mp4v=01;35:*.vob=01;35:*.qt=01;35:*.nuv=01;35:*.wmv=01;35:*.asf=01;35:*.rm=01;35:*.rmvb=01;35:*.flc=01;35:*.avi=01;35:*.fli=01;35:*.flv=01;35:*.gl=01;35:*.dl=01;35:*.xcf=01;35:*.xwd=01;35:*.yuv=01;35:*.cgm=01;35:*.emf=01;35:*.ogv=01;35:*.ogx=01;35:*.aac=00;36:*.au=00;36:*.flac=00;36:*.m4a=00;36:*.mid=00;36:*.midi=00;36:*.mka=00;36:*.mp3=00;36:*.mpc=00;36:*.ogg=00;36:*.ra=00;36:*.wav=00;36:*.oga=00;36:*.opus=00;36:*.spx=00;36:*.xspf=00;36:'), ('GNOME_TERMINAL_SERVICE', ':1.82'), ('SSH_AUTH_SOCK', '/run/user/1000/keyring/ssh'), ('AMENT_PREFIX_PATH', '/opt/ros/foxy'), ('SHELL', '/bin/bash'), ('QT_ACCESSIBILITY', '1'), ('GDMSESSION', 'ubuntu'), ('LESSCLOSE', '/usr/bin/lesspipe %s %s'), ('GPG_AGENT_INFO', '/run/user/1000/gnupg/S.gpg-agent:0:1'), ('QT_IM_MODULE', 'ibus'), ('PWD', '/home/ubuntu/workspace/Velizar/robotics_v1/build/cmake_helpers'), ('LC_ALL', 'en_US.UTF-8'), ('XDG_CONFIG_DIRS', '/etc/xdg/xdg-ubuntu:/etc/xdg'), ('DBUS_STARTER_ADDRESS', 'unix:path=/run/user/1000/bus,guid=3cf57ed13619e15624827b8a634826e6'), ('XDG_DATA_DIRS', '/usr/share/ubuntu:/usr/local/share/:/usr/share/:/var/lib/snapd/desktop'), ('PYTHONPATH', '/opt/ros/foxy/lib/python3.8/site-packages'), ('COLCON', '1'), ('VTE_VERSION', '6003'), ('CMAKE_PREFIX_PATH', '/opt/ros/foxy')]), 'shell': False}
+[3.827754] (-) TimerEvent: {}
+[3.855086] (cmake_helpers) CommandEnded: {'returncode': 0}
+[3.902405] (cmake_helpers) JobProgress: {'identifier': 'cmake_helpers', 'progress': 'install'}
+[3.925500] (cmake_helpers) Command: {'cmd': ['/usr/bin/cmake', '--install', '/home/ubuntu/workspace/Velizar/robotics_v1/build/cmake_helpers'], 'cwd': '/home/ubuntu/workspace/Velizar/robotics_v1/build/cmake_helpers', 'env': OrderedDict([('LESSOPEN', '| /usr/bin/lesspipe %s'), ('USER', 'ubuntu'), ('SSH_AGENT_PID', '2008'), ('XDG_SESSION_TYPE', 'x11'), ('SHLVL', '1'), ('LD_LIBRARY_PATH', '/opt/ros/foxy/opt/yaml_cpp_vendor/lib:/opt/ros/foxy/opt/rviz_ogre_vendor/lib:/opt/ros/foxy/lib/x86_64-linux-gnu:/opt/ros/foxy/lib'), ('HOME', '/home/ubuntu'), ('DESKTOP_SESSION', 'ubuntu'), ('ROS_PYTHON_VERSION', '3'), ('GNOME_SHELL_SESSION_MODE', 'ubuntu'), ('GTK_MODULES', 'gail:atk-bridge'), ('PS1', '[\\u@\\h \\W]$(git_branch)$'), ('MANAGERPID', '1804'), ('DBUS_STARTER_BUS_TYPE', 'session'), ('DBUS_SESSION_BUS_ADDRESS', 'unix:path=/run/user/1000/bus,guid=3cf57ed13619e15624827b8a634826e6'), ('COLORTERM', 'truecolor'), ('IM_CONFIG_PHASE', '1'), ('ROS_DISTRO', 'foxy'), ('LOGNAME', 'ubuntu'), ('JOURNAL_STREAM', '8:36712'), ('_', '/usr/bin/colcon'), ('ROS_VERSION', '2'), ('XDG_SESSION_CLASS', 'user'), ('USERNAME', 'ubuntu'), ('TERM', 'xterm-256color'), ('GNOME_DESKTOP_SESSION_ID', 'this-is-deprecated'), ('ROS_LOCALHOST_ONLY', '0'), ('WINDOWPATH', '2'), ('PATH', '/opt/ros/foxy/bin:/home/ubuntu/.local/bin:/usr/local/sbin:/usr/local/bin:/usr/sbin:/usr/bin:/sbin:/bin:/usr/games:/usr/local/games:/snap/bin'), ('SESSION_MANAGER', 'local/ubuntu2004:@/tmp/.ICE-unix/2046,unix/ubuntu2004:/tmp/.ICE-unix/2046'), ('INVOCATION_ID', 'f4b6283573064975930a418b95e0ddb1'), ('XDG_MENU_PREFIX', 'gnome-'), ('GNOME_TERMINAL_SCREEN', '/org/gnome/Terminal/screen/018776d1_9c95_4512_aed8_b3ba208c7249'), ('XDG_RUNTIME_DIR', '/run/user/1000'), ('DISPLAY', ':0'), ('LANG', 'en_US.UTF-8'), ('XDG_CURRENT_DESKTOP', 'ubuntu:GNOME'), ('XMODIFIERS', '@im=ibus'), ('XDG_SESSION_DESKTOP', 'ubuntu'), ('XAUTHORITY', '/run/user/1000/gdm/Xauthority'), ('LS_COLORS', 'rs=0:di=01;34:ln=01;36:mh=00:pi=40;33:so=01;35:do=01;35:bd=40;33;01:cd=40;33;01:or=40;31;01:mi=00:su=37;41:sg=30;43:ca=30;41:tw=30;42:ow=34;42:st=37;44:ex=01;32:*.tar=01;31:*.tgz=01;31:*.arc=01;31:*.arj=01;31:*.taz=01;31:*.lha=01;31:*.lz4=01;31:*.lzh=01;31:*.lzma=01;31:*.tlz=01;31:*.txz=01;31:*.tzo=01;31:*.t7z=01;31:*.zip=01;31:*.z=01;31:*.dz=01;31:*.gz=01;31:*.lrz=01;31:*.lz=01;31:*.lzo=01;31:*.xz=01;31:*.zst=01;31:*.tzst=01;31:*.bz2=01;31:*.bz=01;31:*.tbz=01;31:*.tbz2=01;31:*.tz=01;31:*.deb=01;31:*.rpm=01;31:*.jar=01;31:*.war=01;31:*.ear=01;31:*.sar=01;31:*.rar=01;31:*.alz=01;31:*.ace=01;31:*.zoo=01;31:*.cpio=01;31:*.7z=01;31:*.rz=01;31:*.cab=01;31:*.wim=01;31:*.swm=01;31:*.dwm=01;31:*.esd=01;31:*.jpg=01;35:*.jpeg=01;35:*.mjpg=01;35:*.mjpeg=01;35:*.gif=01;35:*.bmp=01;35:*.pbm=01;35:*.pgm=01;35:*.ppm=01;35:*.tga=01;35:*.xbm=01;35:*.xpm=01;35:*.tif=01;35:*.tiff=01;35:*.png=01;35:*.svg=01;35:*.svgz=01;35:*.mng=01;35:*.pcx=01;35:*.mov=01;35:*.mpg=01;35:*.mpeg=01;35:*.m2v=01;35:*.mkv=01;35:*.webm=01;35:*.ogm=01;35:*.mp4=01;35:*.m4v=01;35:*.mp4v=01;35:*.vob=01;35:*.qt=01;35:*.nuv=01;35:*.wmv=01;35:*.asf=01;35:*.rm=01;35:*.rmvb=01;35:*.flc=01;35:*.avi=01;35:*.fli=01;35:*.flv=01;35:*.gl=01;35:*.dl=01;35:*.xcf=01;35:*.xwd=01;35:*.yuv=01;35:*.cgm=01;35:*.emf=01;35:*.ogv=01;35:*.ogx=01;35:*.aac=00;36:*.au=00;36:*.flac=00;36:*.m4a=00;36:*.mid=00;36:*.midi=00;36:*.mka=00;36:*.mp3=00;36:*.mpc=00;36:*.ogg=00;36:*.ra=00;36:*.wav=00;36:*.oga=00;36:*.opus=00;36:*.spx=00;36:*.xspf=00;36:'), ('GNOME_TERMINAL_SERVICE', ':1.82'), ('SSH_AUTH_SOCK', '/run/user/1000/keyring/ssh'), ('AMENT_PREFIX_PATH', '/opt/ros/foxy'), ('SHELL', '/bin/bash'), ('QT_ACCESSIBILITY', '1'), ('GDMSESSION', 'ubuntu'), ('LESSCLOSE', '/usr/bin/lesspipe %s %s'), ('GPG_AGENT_INFO', '/run/user/1000/gnupg/S.gpg-agent:0:1'), ('QT_IM_MODULE', 'ibus'), ('PWD', '/home/ubuntu/workspace/Velizar/robotics_v1/build/cmake_helpers'), ('LC_ALL', 'en_US.UTF-8'), ('XDG_CONFIG_DIRS', '/etc/xdg/xdg-ubuntu:/etc/xdg'), ('DBUS_STARTER_ADDRESS', 'unix:path=/run/user/1000/bus,guid=3cf57ed13619e15624827b8a634826e6'), ('XDG_DATA_DIRS', '/usr/share/ubuntu:/usr/local/share/:/usr/share/:/var/lib/snapd/desktop'), ('PYTHONPATH', '/opt/ros/foxy/lib/python3.8/site-packages'), ('COLCON', '1'), ('VTE_VERSION', '6003'), ('CMAKE_PREFIX_PATH', '/opt/ros/foxy')]), 'shell': False}
+[3.929562] (-) TimerEvent: {}
+[3.951992] (cmake_helpers) StdoutLine: {'line': b'-- Install configuration: "Debug"\n'}
+[3.952492] (cmake_helpers) StdoutLine: {'line': b'-- Installing: /home/ubuntu/workspace/Velizar/robotics_v1/install/cmake_helpers/share/cmake_helpers/package.xml\n'}
+[3.952850] (cmake_helpers) StdoutLine: {'line': b'-- Installing: /home/ubuntu/workspace/Velizar/robotics_v1/install/cmake_helpers/share/cmake_helpers/cmake/helpers.cmake\n'}
+[3.953133] (cmake_helpers) StdoutLine: {'line': b'-- Installing: /home/ubuntu/workspace/Velizar/robotics_v1/install/cmake_helpers/share/cmake_helpers/cmake/find_modules\n'}
+[3.953460] (cmake_helpers) StdoutLine: {'line': b'-- Installing: /home/ubuntu/workspace/Velizar/robotics_v1/install/cmake_helpers/share/cmake_helpers/cmake/find_modules/FindSDL2_image.cmake\n'}
+[3.953811] (cmake_helpers) StdoutLine: {'line': b'-- Installing: /home/ubuntu/workspace/Velizar/robotics_v1/install/cmake_helpers/share/cmake_helpers/cmake/find_modules/FindIWYU.cmake\n'}
+[3.954058] (cmake_helpers) StdoutLine: {'line': b'-- Installing: /home/ubuntu/workspace/Velizar/robotics_v1/install/cmake_helpers/share/cmake_helpers/cmake/find_modules/FindSDL2_mixer.cmake\n'}
+[3.954307] (cmake_helpers) StdoutLine: {'line': b'-- Installing: /home/ubuntu/workspace/Velizar/robotics_v1/install/cmake_helpers/share/cmake_helpers/cmake/find_modules/FindSDL2.cmake\n'}
+[3.954472] (cmake_helpers) StdoutLine: {'line': b'-- Installing: /home/ubuntu/workspace/Velizar/robotics_v1/install/cmake_helpers/share/cmake_helpers/cmake/find_modules/FindSDL2_ttf.cmake\n'}
+[3.954968] (cmake_helpers) StdoutLine: {'line': b'-- Installing: /home/ubuntu/workspace/Velizar/robotics_v1/install/cmake_helpers/share/ament_index/resource_index/package_run_dependencies/cmake_helpers\n'}
+[3.955368] (cmake_helpers) StdoutLine: {'line': b'-- Installing: /home/ubuntu/workspace/Velizar/robotics_v1/install/cmake_helpers/share/ament_index/resource_index/parent_prefix_path/cmake_helpers\n'}
+[3.955851] (cmake_helpers) StdoutLine: {'line': b'-- Installing: /home/ubuntu/workspace/Velizar/robotics_v1/install/cmake_helpers/share/cmake_helpers/environment/ament_prefix_path.sh\n'}
+[3.956156] (cmake_helpers) StdoutLine: {'line': b'-- Installing: /home/ubuntu/workspace/Velizar/robotics_v1/install/cmake_helpers/share/cmake_helpers/environment/ament_prefix_path.dsv\n'}
+[3.957027] (cmake_helpers) StdoutLine: {'line': b'-- Installing: /home/ubuntu/workspace/Velizar/robotics_v1/install/cmake_helpers/share/cmake_helpers/environment/path.sh\n'}
+[3.957212] (cmake_helpers) StdoutLine: {'line': b'-- Installing: /home/ubuntu/workspace/Velizar/robotics_v1/install/cmake_helpers/share/cmake_helpers/environment/path.dsv\n'}
+[3.957900] (cmake_helpers) StdoutLine: {'line': b'-- Installing: /home/ubuntu/workspace/Velizar/robotics_v1/install/cmake_helpers/share/cmake_helpers/local_setup.bash\n'}
+[3.958337] (cmake_helpers) StdoutLine: {'line': b'-- Installing: /home/ubuntu/workspace/Velizar/robotics_v1/install/cmake_helpers/share/cmake_helpers/local_setup.sh\n'}
+[3.958715] (cmake_helpers) StdoutLine: {'line': b'-- Installing: /home/ubuntu/workspace/Velizar/robotics_v1/install/cmake_helpers/share/cmake_helpers/local_setup.zsh\n'}
+[3.959081] (cmake_helpers) StdoutLine: {'line': b'-- Installing: /home/ubuntu/workspace/Velizar/robotics_v1/install/cmake_helpers/share/cmake_helpers/local_setup.dsv\n'}
+[3.959452] (cmake_helpers) StdoutLine: {'line': b'-- Installing: /home/ubuntu/workspace/Velizar/robotics_v1/install/cmake_helpers/share/cmake_helpers/package.dsv\n'}
+[3.959966] (cmake_helpers) StdoutLine: {'line': b'-- Installing: /home/ubuntu/workspace/Velizar/robotics_v1/install/cmake_helpers/share/ament_index/resource_index/packages/cmake_helpers\n'}
+[3.960279] (cmake_helpers) StdoutLine: {'line': b'-- Installing: /home/ubuntu/workspace/Velizar/robotics_v1/install/cmake_helpers/share/cmake_helpers/cmake/cmake_helpersConfig.cmake\n'}
+[3.960577] (cmake_helpers) StdoutLine: {'line': b'-- Installing: /home/ubuntu/workspace/Velizar/robotics_v1/install/cmake_helpers/share/cmake_helpers/cmake/cmake_helpersConfig-version.cmake\n'}
+[3.960885] (cmake_helpers) StdoutLine: {'line': b'-- Up-to-date: /home/ubuntu/workspace/Velizar/robotics_v1/install/cmake_helpers/share/cmake_helpers/package.xml\n'}
+[3.969858] (cmake_helpers) CommandEnded: {'returncode': 0}
+[4.029706] (-) TimerEvent: {}
+[4.085498] (cmake_helpers) JobEnded: {'identifier': 'cmake_helpers', 'rc': 0}
+[4.086911] (utils) JobStarted: {'identifier': 'utils'}
+[4.117839] (utils) JobProgress: {'identifier': 'utils', 'progress': 'cmake'}
+[4.118862] (utils) Command: {'cmd': ['/usr/bin/cmake', '/home/ubuntu/workspace/Velizar/robotics_v1/src/lib/utils', '-DCMAKE_BUILD_TYPE=Debug', '-DCMAKE_CXX_COMPILER=/usr/bin/clang++', '-DCMAKE_INSTALL_PREFIX=/home/ubuntu/workspace/Velizar/robotics_v1/install/utils'], 'cwd': '/home/ubuntu/workspace/Velizar/robotics_v1/build/utils', 'env': OrderedDict([('LESSOPEN', '| /usr/bin/lesspipe %s'), ('USER', 'ubuntu'), ('SSH_AGENT_PID', '2008'), ('XDG_SESSION_TYPE', 'x11'), ('SHLVL', '1'), ('LD_LIBRARY_PATH', '/opt/ros/foxy/opt/yaml_cpp_vendor/lib:/opt/ros/foxy/opt/rviz_ogre_vendor/lib:/opt/ros/foxy/lib/x86_64-linux-gnu:/opt/ros/foxy/lib'), ('HOME', '/home/ubuntu'), ('DESKTOP_SESSION', 'ubuntu'), ('ROS_PYTHON_VERSION', '3'), ('GNOME_SHELL_SESSION_MODE', 'ubuntu'), ('GTK_MODULES', 'gail:atk-bridge'), ('PS1', '[\\u@\\h \\W]$(git_branch)$'), ('MANAGERPID', '1804'), ('DBUS_STARTER_BUS_TYPE', 'session'), ('DBUS_SESSION_BUS_ADDRESS', 'unix:path=/run/user/1000/bus,guid=3cf57ed13619e15624827b8a634826e6'), ('COLORTERM', 'truecolor'), ('IM_CONFIG_PHASE', '1'), ('ROS_DISTRO', 'foxy'), ('LOGNAME', 'ubuntu'), ('JOURNAL_STREAM', '8:36712'), ('_', '/usr/bin/colcon'), ('ROS_VERSION', '2'), ('XDG_SESSION_CLASS', 'user'), ('PKG_CONFIG_PATH', '/home/ubuntu/workspace/Velizar/robotics_v1/install/cmake_helpers/lib/x86_64-linux-gnu/pkgconfig:/home/ubuntu/workspace/Velizar/robotics_v1/install/cmake_helpers/lib/pkgconfig'), ('USERNAME', 'ubuntu'), ('TERM', 'xterm-256color'), ('GNOME_DESKTOP_SESSION_ID', 'this-is-deprecated'), ('ROS_LOCALHOST_ONLY', '0'), ('WINDOWPATH', '2'), ('PATH', '/opt/ros/foxy/bin:/home/ubuntu/.local/bin:/usr/local/sbin:/usr/local/bin:/usr/sbin:/usr/bin:/sbin:/bin:/usr/games:/usr/local/games:/snap/bin'), ('SESSION_MANAGER', 'local/ubuntu2004:@/tmp/.ICE-unix/2046,unix/ubuntu2004:/tmp/.ICE-unix/2046'), ('INVOCATION_ID', 'f4b6283573064975930a418b95e0ddb1'), ('XDG_MENU_PREFIX', 'gnome-'), ('GNOME_TERMINAL_SCREEN', '/org/gnome/Terminal/screen/018776d1_9c95_4512_aed8_b3ba208c7249'), ('XDG_RUNTIME_DIR', '/run/user/1000'), ('DISPLAY', ':0'), ('LANG', 'en_US.UTF-8'), ('XDG_CURRENT_DESKTOP', 'ubuntu:GNOME'), ('XMODIFIERS', '@im=ibus'), ('XDG_SESSION_DESKTOP', 'ubuntu'), ('XAUTHORITY', '/run/user/1000/gdm/Xauthority'), ('LS_COLORS', 'rs=0:di=01;34:ln=01;36:mh=00:pi=40;33:so=01;35:do=01;35:bd=40;33;01:cd=40;33;01:or=40;31;01:mi=00:su=37;41:sg=30;43:ca=30;41:tw=30;42:ow=34;42:st=37;44:ex=01;32:*.tar=01;31:*.tgz=01;31:*.arc=01;31:*.arj=01;31:*.taz=01;31:*.lha=01;31:*.lz4=01;31:*.lzh=01;31:*.lzma=01;31:*.tlz=01;31:*.txz=01;31:*.tzo=01;31:*.t7z=01;31:*.zip=01;31:*.z=01;31:*.dz=01;31:*.gz=01;31:*.lrz=01;31:*.lz=01;31:*.lzo=01;31:*.xz=01;31:*.zst=01;31:*.tzst=01;31:*.bz2=01;31:*.bz=01;31:*.tbz=01;31:*.tbz2=01;31:*.tz=01;31:*.deb=01;31:*.rpm=01;31:*.jar=01;31:*.war=01;31:*.ear=01;31:*.sar=01;31:*.rar=01;31:*.alz=01;31:*.ace=01;31:*.zoo=01;31:*.cpio=01;31:*.7z=01;31:*.rz=01;31:*.cab=01;31:*.wim=01;31:*.swm=01;31:*.dwm=01;31:*.esd=01;31:*.jpg=01;35:*.jpeg=01;35:*.mjpg=01;35:*.mjpeg=01;35:*.gif=01;35:*.bmp=01;35:*.pbm=01;35:*.pgm=01;35:*.ppm=01;35:*.tga=01;35:*.xbm=01;35:*.xpm=01;35:*.tif=01;35:*.tiff=01;35:*.png=01;35:*.svg=01;35:*.svgz=01;35:*.mng=01;35:*.pcx=01;35:*.mov=01;35:*.mpg=01;35:*.mpeg=01;35:*.m2v=01;35:*.mkv=01;35:*.webm=01;35:*.ogm=01;35:*.mp4=01;35:*.m4v=01;35:*.mp4v=01;35:*.vob=01;35:*.qt=01;35:*.nuv=01;35:*.wmv=01;35:*.asf=01;35:*.rm=01;35:*.rmvb=01;35:*.flc=01;35:*.avi=01;35:*.fli=01;35:*.flv=01;35:*.gl=01;35:*.dl=01;35:*.xcf=01;35:*.xwd=01;35:*.yuv=01;35:*.cgm=01;35:*.emf=01;35:*.ogv=01;35:*.ogx=01;35:*.aac=00;36:*.au=00;36:*.flac=00;36:*.m4a=00;36:*.mid=00;36:*.midi=00;36:*.mka=00;36:*.mp3=00;36:*.mpc=00;36:*.ogg=00;36:*.ra=00;36:*.wav=00;36:*.oga=00;36:*.opus=00;36:*.spx=00;36:*.xspf=00;36:'), ('GNOME_TERMINAL_SERVICE', ':1.82'), ('SSH_AUTH_SOCK', '/run/user/1000/keyring/ssh'), ('AMENT_PREFIX_PATH', '/opt/ros/foxy'), ('SHELL', '/bin/bash'), ('QT_ACCESSIBILITY', '1'), ('GDMSESSION', 'ubuntu'), ('LESSCLOSE', '/usr/bin/lesspipe %s %s'), ('GPG_AGENT_INFO', '/run/user/1000/gnupg/S.gpg-agent:0:1'), ('QT_IM_MODULE', 'ibus'), ('PWD', '/home/ubuntu/workspace/Velizar/robotics_v1/build/utils'), ('LC_ALL', 'en_US.UTF-8'), ('XDG_CONFIG_DIRS', '/etc/xdg/xdg-ubuntu:/etc/xdg'), ('DBUS_STARTER_ADDRESS', 'unix:path=/run/user/1000/bus,guid=3cf57ed13619e15624827b8a634826e6'), ('XDG_DATA_DIRS', '/usr/share/ubuntu:/usr/local/share/:/usr/share/:/var/lib/snapd/desktop'), ('PYTHONPATH', '/opt/ros/foxy/lib/python3.8/site-packages'), ('COLCON', '1'), ('VTE_VERSION', '6003'), ('CMAKE_PREFIX_PATH', '/home/ubuntu/workspace/Velizar/robotics_v1/install/cmake_helpers:/opt/ros/foxy')]), 'shell': False}
+[4.130501] (-) TimerEvent: {}
+[4.234061] (-) TimerEvent: {}
+[4.334654] (-) TimerEvent: {}
+[4.435337] (-) TimerEvent: {}
+[4.457984] (utils) StdoutLine: {'line': b'-- The CXX compiler identification is Clang 10.0.0\n'}
+[4.483157] (utils) StdoutLine: {'line': b'-- Check for working CXX compiler: /usr/bin/clang++\n'}
+[4.535518] (-) TimerEvent: {}
+[4.636122] (-) TimerEvent: {}
+[4.737046] (-) TimerEvent: {}
+[4.826599] (utils) StdoutLine: {'line': b'-- Check for working CXX compiler: /usr/bin/clang++ -- works\n'}
+[4.829643] (utils) StdoutLine: {'line': b'-- Detecting CXX compiler ABI info\n'}
+[4.837143] (-) TimerEvent: {}
+[4.937548] (-) TimerEvent: {}
+[5.038110] (-) TimerEvent: {}
+[5.138670] (-) TimerEvent: {}
+[5.168336] (utils) StdoutLine: {'line': b'-- Detecting CXX compiler ABI info - done\n'}
+[5.219412] (utils) StdoutLine: {'line': b'-- Detecting CXX compile features\n'}
+[5.221487] (utils) StdoutLine: {'line': b'-- Detecting CXX compile features - done\n'}
+[5.224696] (utils) StdoutLine: {'line': b'-- Found cmake_helpers: 1.0.0 (/home/ubuntu/workspace/Velizar/robotics_v1/install/cmake_helpers/share/cmake_helpers/cmake)\n'}
+[5.229185] (utils) StdoutLine: {'line': b'-- Looking for C++ include pthread.h\n'}
+[5.239483] (-) TimerEvent: {}
+[5.340118] (-) TimerEvent: {}
+[5.440616] (-) TimerEvent: {}
+[5.541378] (-) TimerEvent: {}
+[5.605915] (utils) StdoutLine: {'line': b'-- Looking for C++ include pthread.h - found\n'}
+[5.607017] (utils) StdoutLine: {'line': b'-- Performing Test CMAKE_HAVE_LIBC_PTHREAD\n'}
+[5.641906] (-) TimerEvent: {}
+[5.742477] (-) TimerEvent: {}
+[5.843602] (-) TimerEvent: {}
+[5.944090] (-) TimerEvent: {}
+[5.969457] (utils) StdoutLine: {'line': b'-- Performing Test CMAKE_HAVE_LIBC_PTHREAD - Failed\n'}
+[5.970016] (utils) StdoutLine: {'line': b'-- Looking for pthread_create in pthreads\n'}
+[6.044258] (-) TimerEvent: {}
+[6.144745] (-) TimerEvent: {}
+[6.219667] (utils) StdoutLine: {'line': b'-- Looking for pthread_create in pthreads - not found\n'}
+[6.220129] (utils) StdoutLine: {'line': b'-- Looking for pthread_create in pthread\n'}
+[6.244985] (-) TimerEvent: {}
+[6.345387] (-) TimerEvent: {}
+[6.445822] (-) TimerEvent: {}
+[6.546271] (-) TimerEvent: {}
+[6.562289] (utils) StdoutLine: {'line': b'-- Looking for pthread_create in pthread - found\n'}
+[6.565048] (utils) StdoutLine: {'line': b'-- Found Threads: TRUE  \n'}
+[6.572462] (utils) StdoutLine: {'line': b'-- Found ament_cmake: 0.9.9 (/opt/ros/foxy/share/ament_cmake/cmake)\n'}
+[6.635577] (utils) StdoutLine: {'line': b'-- Found PythonInterp: /usr/bin/python3 (found suitable version "3.8.10", minimum required is "3") \n'}
+[6.636078] (utils) StdoutLine: {'line': b'-- Using PYTHON_EXECUTABLE: /usr/bin/python3\n'}
+[6.646335] (-) TimerEvent: {}
+[6.746725] (-) TimerEvent: {}
+[6.847130] (-) TimerEvent: {}
+[6.947523] (-) TimerEvent: {}
+[7.047972] (-) TimerEvent: {}
+[7.148352] (-) TimerEvent: {}
+[7.248709] (-) TimerEvent: {}
+[7.302460] (utils) StdoutLine: {'line': b'-- Configuring done\n'}
+[7.326558] (utils) StdoutLine: {'line': b'-- Generating done\n'}
+[7.330468] (utils) StdoutLine: {'line': b'-- Build files have been written to: /home/ubuntu/workspace/Velizar/robotics_v1/build/utils\n'}
+[7.340474] (utils) CommandEnded: {'returncode': 0}
+[7.342041] (utils) JobProgress: {'identifier': 'utils', 'progress': 'build'}
+[7.342116] (utils) Command: {'cmd': ['/usr/bin/cmake', '--build', '/home/ubuntu/workspace/Velizar/robotics_v1/build/utils', '--', '-j2', '-l2'], 'cwd': '/home/ubuntu/workspace/Velizar/robotics_v1/build/utils', 'env': OrderedDict([('LESSOPEN', '| /usr/bin/lesspipe %s'), ('USER', 'ubuntu'), ('SSH_AGENT_PID', '2008'), ('XDG_SESSION_TYPE', 'x11'), ('SHLVL', '1'), ('LD_LIBRARY_PATH', '/opt/ros/foxy/opt/yaml_cpp_vendor/lib:/opt/ros/foxy/opt/rviz_ogre_vendor/lib:/opt/ros/foxy/lib/x86_64-linux-gnu:/opt/ros/foxy/lib'), ('HOME', '/home/ubuntu'), ('DESKTOP_SESSION', 'ubuntu'), ('ROS_PYTHON_VERSION', '3'), ('GNOME_SHELL_SESSION_MODE', 'ubuntu'), ('GTK_MODULES', 'gail:atk-bridge'), ('PS1', '[\\u@\\h \\W]$(git_branch)$'), ('MANAGERPID', '1804'), ('DBUS_STARTER_BUS_TYPE', 'session'), ('DBUS_SESSION_BUS_ADDRESS', 'unix:path=/run/user/1000/bus,guid=3cf57ed13619e15624827b8a634826e6'), ('COLORTERM', 'truecolor'), ('IM_CONFIG_PHASE', '1'), ('ROS_DISTRO', 'foxy'), ('LOGNAME', 'ubuntu'), ('JOURNAL_STREAM', '8:36712'), ('_', '/usr/bin/colcon'), ('ROS_VERSION', '2'), ('XDG_SESSION_CLASS', 'user'), ('PKG_CONFIG_PATH', '/home/ubuntu/workspace/Velizar/robotics_v1/install/cmake_helpers/lib/x86_64-linux-gnu/pkgconfig:/home/ubuntu/workspace/Velizar/robotics_v1/install/cmake_helpers/lib/pkgconfig'), ('USERNAME', 'ubuntu'), ('TERM', 'xterm-256color'), ('GNOME_DESKTOP_SESSION_ID', 'this-is-deprecated'), ('ROS_LOCALHOST_ONLY', '0'), ('WINDOWPATH', '2'), ('PATH', '/opt/ros/foxy/bin:/home/ubuntu/.local/bin:/usr/local/sbin:/usr/local/bin:/usr/sbin:/usr/bin:/sbin:/bin:/usr/games:/usr/local/games:/snap/bin'), ('SESSION_MANAGER', 'local/ubuntu2004:@/tmp/.ICE-unix/2046,unix/ubuntu2004:/tmp/.ICE-unix/2046'), ('INVOCATION_ID', 'f4b6283573064975930a418b95e0ddb1'), ('XDG_MENU_PREFIX', 'gnome-'), ('GNOME_TERMINAL_SCREEN', '/org/gnome/Terminal/screen/018776d1_9c95_4512_aed8_b3ba208c7249'), ('XDG_RUNTIME_DIR', '/run/user/1000'), ('DISPLAY', ':0'), ('LANG', 'en_US.UTF-8'), ('XDG_CURRENT_DESKTOP', 'ubuntu:GNOME'), ('XMODIFIERS', '@im=ibus'), ('XDG_SESSION_DESKTOP', 'ubuntu'), ('XAUTHORITY', '/run/user/1000/gdm/Xauthority'), ('LS_COLORS', 'rs=0:di=01;34:ln=01;36:mh=00:pi=40;33:so=01;35:do=01;35:bd=40;33;01:cd=40;33;01:or=40;31;01:mi=00:su=37;41:sg=30;43:ca=30;41:tw=30;42:ow=34;42:st=37;44:ex=01;32:*.tar=01;31:*.tgz=01;31:*.arc=01;31:*.arj=01;31:*.taz=01;31:*.lha=01;31:*.lz4=01;31:*.lzh=01;31:*.lzma=01;31:*.tlz=01;31:*.txz=01;31:*.tzo=01;31:*.t7z=01;31:*.zip=01;31:*.z=01;31:*.dz=01;31:*.gz=01;31:*.lrz=01;31:*.lz=01;31:*.lzo=01;31:*.xz=01;31:*.zst=01;31:*.tzst=01;31:*.bz2=01;31:*.bz=01;31:*.tbz=01;31:*.tbz2=01;31:*.tz=01;31:*.deb=01;31:*.rpm=01;31:*.jar=01;31:*.war=01;31:*.ear=01;31:*.sar=01;31:*.rar=01;31:*.alz=01;31:*.ace=01;31:*.zoo=01;31:*.cpio=01;31:*.7z=01;31:*.rz=01;31:*.cab=01;31:*.wim=01;31:*.swm=01;31:*.dwm=01;31:*.esd=01;31:*.jpg=01;35:*.jpeg=01;35:*.mjpg=01;35:*.mjpeg=01;35:*.gif=01;35:*.bmp=01;35:*.pbm=01;35:*.pgm=01;35:*.ppm=01;35:*.tga=01;35:*.xbm=01;35:*.xpm=01;35:*.tif=01;35:*.tiff=01;35:*.png=01;35:*.svg=01;35:*.svgz=01;35:*.mng=01;35:*.pcx=01;35:*.mov=01;35:*.mpg=01;35:*.mpeg=01;35:*.m2v=01;35:*.mkv=01;35:*.webm=01;35:*.ogm=01;35:*.mp4=01;35:*.m4v=01;35:*.mp4v=01;35:*.vob=01;35:*.qt=01;35:*.nuv=01;35:*.wmv=01;35:*.asf=01;35:*.rm=01;35:*.rmvb=01;35:*.flc=01;35:*.avi=01;35:*.fli=01;35:*.flv=01;35:*.gl=01;35:*.dl=01;35:*.xcf=01;35:*.xwd=01;35:*.yuv=01;35:*.cgm=01;35:*.emf=01;35:*.ogv=01;35:*.ogx=01;35:*.aac=00;36:*.au=00;36:*.flac=00;36:*.m4a=00;36:*.mid=00;36:*.midi=00;36:*.mka=00;36:*.mp3=00;36:*.mpc=00;36:*.ogg=00;36:*.ra=00;36:*.wav=00;36:*.oga=00;36:*.opus=00;36:*.spx=00;36:*.xspf=00;36:'), ('GNOME_TERMINAL_SERVICE', ':1.82'), ('SSH_AUTH_SOCK', '/run/user/1000/keyring/ssh'), ('AMENT_PREFIX_PATH', '/opt/ros/foxy'), ('SHELL', '/bin/bash'), ('QT_ACCESSIBILITY', '1'), ('GDMSESSION', 'ubuntu'), ('LESSCLOSE', '/usr/bin/lesspipe %s %s'), ('GPG_AGENT_INFO', '/run/user/1000/gnupg/S.gpg-agent:0:1'), ('QT_IM_MODULE', 'ibus'), ('PWD', '/home/ubuntu/workspace/Velizar/robotics_v1/build/utils'), ('LC_ALL', 'en_US.UTF-8'), ('XDG_CONFIG_DIRS', '/etc/xdg/xdg-ubuntu:/etc/xdg'), ('DBUS_STARTER_ADDRESS', 'unix:path=/run/user/1000/bus,guid=3cf57ed13619e15624827b8a634826e6'), ('XDG_DATA_DIRS', '/usr/share/ubuntu:/usr/local/share/:/usr/share/:/var/lib/snapd/desktop'), ('PYTHONPATH', '/opt/ros/foxy/lib/python3.8/site-packages'), ('COLCON', '1'), ('VTE_VERSION', '6003'), ('CMAKE_PREFIX_PATH', '/home/ubuntu/workspace/Velizar/robotics_v1/install/cmake_helpers:/opt/ros/foxy')]), 'shell': False}
+[7.349060] (-) TimerEvent: {}
+[7.444255] (utils) StdoutLine: {'line': b'\x1b[35m\x1b[1mScanning dependencies of target utils\x1b[0m\n'}
+[7.449291] (-) TimerEvent: {}
+[7.480968] (utils) StdoutLine: {'line': b'[  5%] \x1b[32mBuilding CXX object CMakeFiles/utils.dir/src/common/Crc.cpp.o\x1b[0m\n'}
+[7.481929] (utils) StdoutLine: {'line': b'[ 11%] \x1b[32mBuilding CXX object CMakeFiles/utils.dir/src/common/CircularBuffer.cpp.o\x1b[0m\n'}
+[7.549560] (-) TimerEvent: {}
+[7.624032] (utils) StdoutLine: {'line': b'[ 16%] \x1b[32mBuilding CXX object CMakeFiles/utils.dir/src/data_type/FloatingPointUtils.cpp.o\x1b[0m\n'}
+[7.649759] (-) TimerEvent: {}
+[7.750289] (-) TimerEvent: {}
+[7.785204] (utils) StdoutLine: {'line': b'[ 22%] \x1b[32mBuilding CXX object CMakeFiles/utils.dir/src/data_type/IntegerUtils.cpp.o\x1b[0m\n'}
+[7.850528] (-) TimerEvent: {}
+[7.877089] (utils) StdoutLine: {'line': b'[ 27%] \x1b[32mBuilding CXX object CMakeFiles/utils.dir/src/data_type/StringUtils.cpp.o\x1b[0m\n'}
+[7.950775] (-) TimerEvent: {}
+[8.051243] (-) TimerEvent: {}
+[8.151678] (-) TimerEvent: {}
+[8.252133] (-) TimerEvent: {}
+[8.352606] (-) TimerEvent: {}
+[8.453048] (-) TimerEvent: {}
+[8.553521] (-) TimerEvent: {}
+[8.654017] (-) TimerEvent: {}
+[8.707889] (utils) StdoutLine: {'line': b'[ 33%] \x1b[32mBuilding CXX object CMakeFiles/utils.dir/src/debug/SignalHandler.cpp.o\x1b[0m\n'}
+[8.754178] (-) TimerEvent: {}
+[8.854753] (-) TimerEvent: {}
+[8.872336] (utils) StdoutLine: {'line': b'[ 38%] \x1b[32mBuilding CXX object CMakeFiles/utils.dir/src/debug/StackTrace.cpp.o\x1b[0m\n'}
+[8.954938] (-) TimerEvent: {}
+[9.024992] (utils) StdoutLine: {'line': b'[ 44%] \x1b[32mBuilding CXX object CMakeFiles/utils.dir/src/drawing/Color.cpp.o\x1b[0m\n'}
+[9.055131] (-) TimerEvent: {}
+[9.146715] (utils) StdoutLine: {'line': b'[ 50%] \x1b[32mBuilding CXX object CMakeFiles/utils.dir/src/drawing/Margin.cpp.o\x1b[0m\n'}
+[9.155306] (-) TimerEvent: {}
+[9.241737] (utils) StdoutLine: {'line': b'[ 55%] \x1b[32mBuilding CXX object CMakeFiles/utils.dir/src/drawing/Point.cpp.o\x1b[0m\n'}
+[9.255493] (-) TimerEvent: {}
+[9.305373] (utils) StdoutLine: {'line': b'[ 61%] \x1b[32mBuilding CXX object CMakeFiles/utils.dir/src/drawing/Rectangle.cpp.o\x1b[0m\n'}
+[9.345549] (utils) StdoutLine: {'line': b'[ 66%] \x1b[32mBuilding CXX object CMakeFiles/utils.dir/src/drawing/WidgetAligner.cpp.o\x1b[0m\n'}
+[9.355653] (-) TimerEvent: {}
+[9.423144] (utils) StdoutLine: {'line': b'[ 72%] \x1b[32mBuilding CXX object CMakeFiles/utils.dir/src/file/IniFileParser.cpp.o\x1b[0m\n'}
+[9.455837] (-) TimerEvent: {}
+[9.539367] (utils) StdoutLine: {'line': b'[ 77%] \x1b[32mBuilding CXX object CMakeFiles/utils.dir/src/file_system/FileSystemUtils.cpp.o\x1b[0m\n'}
+[9.556003] (-) TimerEvent: {}
+[9.656517] (-) TimerEvent: {}
+[9.757009] (-) TimerEvent: {}
+[9.857522] (-) TimerEvent: {}
+[9.958072] (-) TimerEvent: {}
+[10.058711] (-) TimerEvent: {}
+[10.159337] (-) TimerEvent: {}
+[10.259815] (-) TimerEvent: {}
+[10.360313] (-) TimerEvent: {}
+[10.460763] (-) TimerEvent: {}
+[10.561229] (-) TimerEvent: {}
+[10.621823] (utils) StdoutLine: {'line': b'[ 83%] \x1b[32mBuilding CXX object CMakeFiles/utils.dir/src/time/Time.cpp.o\x1b[0m\n'}
+[10.661408] (-) TimerEvent: {}
+[10.761861] (-) TimerEvent: {}
+[10.862393] (-) TimerEvent: {}
+[10.909400] (utils) StdoutLine: {'line': b'[ 88%] \x1b[32mBuilding CXX object CMakeFiles/utils.dir/src/rng/Rng.cpp.o\x1b[0m\n'}
+[10.962580] (-) TimerEvent: {}
+[11.063161] (-) TimerEvent: {}
+[11.163603] (-) TimerEvent: {}
+[11.264061] (-) TimerEvent: {}
+[11.364537] (-) TimerEvent: {}
+[11.382076] (utils) StdoutLine: {'line': b'[ 94%] \x1b[32mBuilding CXX object CMakeFiles/utils.dir/src/log/Log.cpp.o\x1b[0m\n'}
+[11.464710] (-) TimerEvent: {}
+[11.565255] (-) TimerEvent: {}
+[11.665732] (-) TimerEvent: {}
+[11.766138] (-) TimerEvent: {}
+[11.866559] (-) TimerEvent: {}
+[11.967147] (-) TimerEvent: {}
+[12.068413] (-) TimerEvent: {}
+[12.169493] (-) TimerEvent: {}
+[12.264252] (utils) StdoutLine: {'line': b'[100%] \x1b[32m\x1b[1mLinking CXX static library libutils.a\x1b[0m\n'}
+[12.269637] (-) TimerEvent: {}
+[12.370161] (-) TimerEvent: {}
+[12.391758] (utils) StdoutLine: {'line': b'[100%] Built target utils\n'}
+[12.425208] (utils) CommandEnded: {'returncode': 0}
+[12.470319] (-) TimerEvent: {}
+[12.534518] (utils) JobProgress: {'identifier': 'utils', 'progress': 'install'}
+[12.535183] (utils) Command: {'cmd': ['/usr/bin/cmake', '--install', '/home/ubuntu/workspace/Velizar/robotics_v1/build/utils'], 'cwd': '/home/ubuntu/workspace/Velizar/robotics_v1/build/utils', 'env': OrderedDict([('LESSOPEN', '| /usr/bin/lesspipe %s'), ('USER', 'ubuntu'), ('SSH_AGENT_PID', '2008'), ('XDG_SESSION_TYPE', 'x11'), ('SHLVL', '1'), ('LD_LIBRARY_PATH', '/opt/ros/foxy/opt/yaml_cpp_vendor/lib:/opt/ros/foxy/opt/rviz_ogre_vendor/lib:/opt/ros/foxy/lib/x86_64-linux-gnu:/opt/ros/foxy/lib'), ('HOME', '/home/ubuntu'), ('DESKTOP_SESSION', 'ubuntu'), ('ROS_PYTHON_VERSION', '3'), ('GNOME_SHELL_SESSION_MODE', 'ubuntu'), ('GTK_MODULES', 'gail:atk-bridge'), ('PS1', '[\\u@\\h \\W]$(git_branch)$'), ('MANAGERPID', '1804'), ('DBUS_STARTER_BUS_TYPE', 'session'), ('DBUS_SESSION_BUS_ADDRESS', 'unix:path=/run/user/1000/bus,guid=3cf57ed13619e15624827b8a634826e6'), ('COLORTERM', 'truecolor'), ('IM_CONFIG_PHASE', '1'), ('ROS_DISTRO', 'foxy'), ('LOGNAME', 'ubuntu'), ('JOURNAL_STREAM', '8:36712'), ('_', '/usr/bin/colcon'), ('ROS_VERSION', '2'), ('XDG_SESSION_CLASS', 'user'), ('PKG_CONFIG_PATH', '/home/ubuntu/workspace/Velizar/robotics_v1/install/cmake_helpers/lib/x86_64-linux-gnu/pkgconfig:/home/ubuntu/workspace/Velizar/robotics_v1/install/cmake_helpers/lib/pkgconfig'), ('USERNAME', 'ubuntu'), ('TERM', 'xterm-256color'), ('GNOME_DESKTOP_SESSION_ID', 'this-is-deprecated'), ('ROS_LOCALHOST_ONLY', '0'), ('WINDOWPATH', '2'), ('PATH', '/opt/ros/foxy/bin:/home/ubuntu/.local/bin:/usr/local/sbin:/usr/local/bin:/usr/sbin:/usr/bin:/sbin:/bin:/usr/games:/usr/local/games:/snap/bin'), ('SESSION_MANAGER', 'local/ubuntu2004:@/tmp/.ICE-unix/2046,unix/ubuntu2004:/tmp/.ICE-unix/2046'), ('INVOCATION_ID', 'f4b6283573064975930a418b95e0ddb1'), ('XDG_MENU_PREFIX', 'gnome-'), ('GNOME_TERMINAL_SCREEN', '/org/gnome/Terminal/screen/018776d1_9c95_4512_aed8_b3ba208c7249'), ('XDG_RUNTIME_DIR', '/run/user/1000'), ('DISPLAY', ':0'), ('LANG', 'en_US.UTF-8'), ('XDG_CURRENT_DESKTOP', 'ubuntu:GNOME'), ('XMODIFIERS', '@im=ibus'), ('XDG_SESSION_DESKTOP', 'ubuntu'), ('XAUTHORITY', '/run/user/1000/gdm/Xauthority'), ('LS_COLORS', 'rs=0:di=01;34:ln=01;36:mh=00:pi=40;33:so=01;35:do=01;35:bd=40;33;01:cd=40;33;01:or=40;31;01:mi=00:su=37;41:sg=30;43:ca=30;41:tw=30;42:ow=34;42:st=37;44:ex=01;32:*.tar=01;31:*.tgz=01;31:*.arc=01;31:*.arj=01;31:*.taz=01;31:*.lha=01;31:*.lz4=01;31:*.lzh=01;31:*.lzma=01;31:*.tlz=01;31:*.txz=01;31:*.tzo=01;31:*.t7z=01;31:*.zip=01;31:*.z=01;31:*.dz=01;31:*.gz=01;31:*.lrz=01;31:*.lz=01;31:*.lzo=01;31:*.xz=01;31:*.zst=01;31:*.tzst=01;31:*.bz2=01;31:*.bz=01;31:*.tbz=01;31:*.tbz2=01;31:*.tz=01;31:*.deb=01;31:*.rpm=01;31:*.jar=01;31:*.war=01;31:*.ear=01;31:*.sar=01;31:*.rar=01;31:*.alz=01;31:*.ace=01;31:*.zoo=01;31:*.cpio=01;31:*.7z=01;31:*.rz=01;31:*.cab=01;31:*.wim=01;31:*.swm=01;31:*.dwm=01;31:*.esd=01;31:*.jpg=01;35:*.jpeg=01;35:*.mjpg=01;35:*.mjpeg=01;35:*.gif=01;35:*.bmp=01;35:*.pbm=01;35:*.pgm=01;35:*.ppm=01;35:*.tga=01;35:*.xbm=01;35:*.xpm=01;35:*.tif=01;35:*.tiff=01;35:*.png=01;35:*.svg=01;35:*.svgz=01;35:*.mng=01;35:*.pcx=01;35:*.mov=01;35:*.mpg=01;35:*.mpeg=01;35:*.m2v=01;35:*.mkv=01;35:*.webm=01;35:*.ogm=01;35:*.mp4=01;35:*.m4v=01;35:*.mp4v=01;35:*.vob=01;35:*.qt=01;35:*.nuv=01;35:*.wmv=01;35:*.asf=01;35:*.rm=01;35:*.rmvb=01;35:*.flc=01;35:*.avi=01;35:*.fli=01;35:*.flv=01;35:*.gl=01;35:*.dl=01;35:*.xcf=01;35:*.xwd=01;35:*.yuv=01;35:*.cgm=01;35:*.emf=01;35:*.ogv=01;35:*.ogx=01;35:*.aac=00;36:*.au=00;36:*.flac=00;36:*.m4a=00;36:*.mid=00;36:*.midi=00;36:*.mka=00;36:*.mp3=00;36:*.mpc=00;36:*.ogg=00;36:*.ra=00;36:*.wav=00;36:*.oga=00;36:*.opus=00;36:*.spx=00;36:*.xspf=00;36:'), ('GNOME_TERMINAL_SERVICE', ':1.82'), ('SSH_AUTH_SOCK', '/run/user/1000/keyring/ssh'), ('AMENT_PREFIX_PATH', '/opt/ros/foxy'), ('SHELL', '/bin/bash'), ('QT_ACCESSIBILITY', '1'), ('GDMSESSION', 'ubuntu'), ('LESSCLOSE', '/usr/bin/lesspipe %s %s'), ('GPG_AGENT_INFO', '/run/user/1000/gnupg/S.gpg-agent:0:1'), ('QT_IM_MODULE', 'ibus'), ('PWD', '/home/ubuntu/workspace/Velizar/robotics_v1/build/utils'), ('LC_ALL', 'en_US.UTF-8'), ('XDG_CONFIG_DIRS', '/etc/xdg/xdg-ubuntu:/etc/xdg'), ('DBUS_STARTER_ADDRESS', 'unix:path=/run/user/1000/bus,guid=3cf57ed13619e15624827b8a634826e6'), ('XDG_DATA_DIRS', '/usr/share/ubuntu:/usr/local/share/:/usr/share/:/var/lib/snapd/desktop'), ('PYTHONPATH', '/opt/ros/foxy/lib/python3.8/site-packages'), ('COLCON', '1'), ('VTE_VERSION', '6003'), ('CMAKE_PREFIX_PATH', '/home/ubuntu/workspace/Velizar/robotics_v1/install/cmake_helpers:/opt/ros/foxy')]), 'shell': False}
+[12.559117] (utils) StdoutLine: {'line': b'-- Install configuration: "Debug"\n'}
+[12.559689] (utils) StdoutLine: {'line': b'-- Installing: /home/ubuntu/workspace/Velizar/robotics_v1/install/utils/share/utils/package.xml\n'}
+[12.559945] (utils) StdoutLine: {'line': b'-- Installing: /home/ubuntu/workspace/Velizar/robotics_v1/install/utils/lib/utils/libutils.a\n'}
+[12.564799] (utils) StdoutLine: {'line': b'-- Installing: /home/ubuntu/workspace/Velizar/robotics_v1/install/utils/share/ament_index/resource_index/packages/utils\n'}
+[12.565243] (utils) StdoutLine: {'line': b'-- Installing: /home/ubuntu/workspace/Velizar/robotics_v1/install/utils/share/utils/hook/ament_prefix_path.dsv\n'}
+[12.565665] (utils) StdoutLine: {'line': b'-- Installing: /home/ubuntu/workspace/Velizar/robotics_v1/install/utils/share/utils/hook/ros_package_path.dsv\n'}
+[12.566094] (utils) StdoutLine: {'line': b'-- Installing: /home/ubuntu/workspace/Velizar/robotics_v1/install/utils/share/ament_index/resource_index/package_run_dependencies/utils\n'}
+[12.566672] (utils) StdoutLine: {'line': b'-- Installing: /home/ubuntu/workspace/Velizar/robotics_v1/install/utils/share/ament_index/resource_index/parent_prefix_path/utils\n'}
+[12.567491] (utils) StdoutLine: {'line': b'-- Installing: /home/ubuntu/workspace/Velizar/robotics_v1/install/utils/share/utils/environment/ament_prefix_path.sh\n'}
+[12.567864] (utils) StdoutLine: {'line': b'-- Installing: /home/ubuntu/workspace/Velizar/robotics_v1/install/utils/share/utils/environment/ament_prefix_path.dsv\n'}
+[12.568204] (utils) StdoutLine: {'line': b'-- Installing: /home/ubuntu/workspace/Velizar/robotics_v1/install/utils/share/utils/environment/path.sh\n'}
+[12.568992] (utils) StdoutLine: {'line': b'-- Installing: /home/ubuntu/workspace/Velizar/robotics_v1/install/utils/share/utils/environment/path.dsv\n'}
+[12.569356] (utils) StdoutLine: {'line': b'-- Installing: /home/ubuntu/workspace/Velizar/robotics_v1/install/utils/share/utils/local_setup.bash\n'}
+[12.569678] (utils) StdoutLine: {'line': b'-- Installing: /home/ubuntu/workspace/Velizar/robotics_v1/install/utils/share/utils/local_setup.sh\n'}
+[12.570010] (utils) StdoutLine: {'line': b'-- Installing: /home/ubuntu/workspace/Velizar/robotics_v1/install/utils/share/utils/local_setup.zsh\n'}
+[12.570401] (utils) StdoutLine: {'line': b'-- Installing: /home/ubuntu/workspace/Velizar/robotics_v1/install/utils/share/utils/local_setup.dsv\n'}
+[12.570657] (-) TimerEvent: {}
+[12.571126] (utils) StdoutLine: {'line': b'-- Installing: /home/ubuntu/workspace/Velizar/robotics_v1/install/utils/share/utils/package.dsv\n'}
+[12.571397] (utils) StdoutLine: {'line': b'-- Up-to-date: /home/ubuntu/workspace/Velizar/robotics_v1/install/utils/share/ament_index/resource_index/packages/utils\n'}
+[12.571680] (utils) StdoutLine: {'line': b'-- Installing: /home/ubuntu/workspace/Velizar/robotics_v1/install/utils/share/utils/cmake/utilsConfig.cmake\n'}
+[12.571891] (utils) StdoutLine: {'line': b'-- Installing: /home/ubuntu/workspace/Velizar/robotics_v1/install/utils/share/utils/cmake/utilsConfig-version.cmake\n'}
+[12.572172] (utils) StdoutLine: {'line': b'-- Up-to-date: /home/ubuntu/workspace/Velizar/robotics_v1/install/utils/share/utils/package.xml\n'}
+[12.572432] (utils) StdoutLine: {'line': b'-- Installing: /home/ubuntu/workspace/Velizar/robotics_v1/install/utils/lib/libutils.a\n'}
+[12.577159] (utils) StdoutLine: {'line': b'-- Installing: /home/ubuntu/workspace/Velizar/robotics_v1/install/utils/include\n'}
+[12.577519] (utils) StdoutLine: {'line': b'-- Installing: /home/ubuntu/workspace/Velizar/robotics_v1/install/utils/include/utils\n'}
+[12.577772] (utils) StdoutLine: {'line': b'-- Installing: /home/ubuntu/workspace/Velizar/robotics_v1/install/utils/include/utils/concurrency\n'}
+[12.578023] (utils) StdoutLine: {'line': b'-- Installing: /home/ubuntu/workspace/Velizar/robotics_v1/install/utils/include/utils/concurrency/ThreadSafeQueue.h\n'}
+[12.578326] (utils) StdoutLine: {'line': b'-- Installing: /home/ubuntu/workspace/Velizar/robotics_v1/install/utils/include/utils/Log.h\n'}
+[12.578709] (utils) StdoutLine: {'line': b'-- Installing: /home/ubuntu/workspace/Velizar/robotics_v1/install/utils/include/utils/ErrorCode.h\n'}
+[12.579069] (utils) StdoutLine: {'line': b'-- Installing: /home/ubuntu/workspace/Velizar/robotics_v1/install/utils/include/utils/rng\n'}
+[12.579307] (utils) StdoutLine: {'line': b'-- Installing: /home/ubuntu/workspace/Velizar/robotics_v1/install/utils/include/utils/rng/Rng.h\n'}
+[12.579561] (utils) StdoutLine: {'line': b'-- Installing: /home/ubuntu/workspace/Velizar/robotics_v1/install/utils/include/utils/time\n'}
+[12.579814] (utils) StdoutLine: {'line': b'-- Installing: /home/ubuntu/workspace/Velizar/robotics_v1/install/utils/include/utils/time/Time.h\n'}
+[12.580096] (utils) StdoutLine: {'line': b'-- Installing: /home/ubuntu/workspace/Velizar/robotics_v1/install/utils/include/utils/drawing\n'}
+[12.580355] (utils) StdoutLine: {'line': b'-- Installing: /home/ubuntu/workspace/Velizar/robotics_v1/install/utils/include/utils/drawing/WidgetAligner.h\n'}
+[12.580599] (utils) StdoutLine: {'line': b'-- Installing: /home/ubuntu/workspace/Velizar/robotics_v1/install/utils/include/utils/drawing/Point.h\n'}
+[12.580921] (utils) StdoutLine: {'line': b'-- Installing: /home/ubuntu/workspace/Velizar/robotics_v1/install/utils/include/utils/drawing/Rectangle.h\n'}
+[12.582750] (utils) StdoutLine: {'line': b'-- Installing: /home/ubuntu/workspace/Velizar/robotics_v1/install/utils/include/utils/drawing/Margin.h\n'}
+[12.583067] (utils) StdoutLine: {'line': b'-- Installing: /home/ubuntu/workspace/Velizar/robotics_v1/install/utils/include/utils/drawing/Color.h\n'}
+[12.583366] (utils) StdoutLine: {'line': b'-- Installing: /home/ubuntu/workspace/Velizar/robotics_v1/install/utils/include/utils/file\n'}
+[12.583611] (utils) StdoutLine: {'line': b'-- Installing: /home/ubuntu/workspace/Velizar/robotics_v1/install/utils/include/utils/file/IniFileParser.h\n'}
+[12.583854] (utils) StdoutLine: {'line': b'-- Installing: /home/ubuntu/workspace/Velizar/robotics_v1/install/utils/include/utils/file_system\n'}
+[12.584157] (utils) StdoutLine: {'line': b'-- Installing: /home/ubuntu/workspace/Velizar/robotics_v1/install/utils/include/utils/file_system/FileSystemUtils.h\n'}
+[12.584480] (utils) StdoutLine: {'line': b'-- Installing: /home/ubuntu/workspace/Velizar/robotics_v1/install/utils/include/utils/data_type\n'}
+[12.584787] (utils) StdoutLine: {'line': b'-- Installing: /home/ubuntu/workspace/Velizar/robotics_v1/install/utils/include/utils/data_type/StringUtils.h\n'}
+[12.585080] (utils) StdoutLine: {'line': b'-- Installing: /home/ubuntu/workspace/Velizar/robotics_v1/install/utils/include/utils/data_type/EnumClassUtils.h\n'}
+[12.585323] (utils) StdoutLine: {'line': b'-- Installing: /home/ubuntu/workspace/Velizar/robotics_v1/install/utils/include/utils/data_type/FloatingPointUtils.h\n'}
+[12.585584] (utils) StdoutLine: {'line': b'-- Installing: /home/ubuntu/workspace/Velizar/robotics_v1/install/utils/include/utils/data_type/FloatingPoint.h\n'}
+[12.585829] (utils) StdoutLine: {'line': b'-- Installing: /home/ubuntu/workspace/Velizar/robotics_v1/install/utils/include/utils/data_type/IntegerUtils.h\n'}
+[12.586115] (utils) StdoutLine: {'line': b'-- Installing: /home/ubuntu/workspace/Velizar/robotics_v1/install/utils/include/utils/LimitValues.h\n'}
+[12.586275] (utils) StdoutLine: {'line': b'-- Installing: /home/ubuntu/workspace/Velizar/robotics_v1/install/utils/include/utils/common\n'}
+[12.586433] (utils) StdoutLine: {'line': b'-- Installing: /home/ubuntu/workspace/Velizar/robotics_v1/install/utils/include/utils/common/Crc.h\n'}
+[12.586749] (utils) StdoutLine: {'line': b'-- Installing: /home/ubuntu/workspace/Velizar/robotics_v1/install/utils/include/utils/common/AutoCircularBuffer.h\n'}
+[12.587041] (utils) StdoutLine: {'line': b'-- Installing: /home/ubuntu/workspace/Velizar/robotics_v1/install/utils/include/utils/common/CircularBuffer.h\n'}
+[12.587203] (utils) StdoutLine: {'line': b'-- Installing: /home/ubuntu/workspace/Velizar/robotics_v1/install/utils/include/utils/common/defines\n'}
+[12.587473] (utils) StdoutLine: {'line': b'-- Installing: /home/ubuntu/workspace/Velizar/robotics_v1/install/utils/include/utils/common/defines/SymbolNameDefines.h\n'}
+[12.587633] (utils) StdoutLine: {'line': b'-- Installing: /home/ubuntu/workspace/Velizar/robotics_v1/install/utils/include/utils/debug\n'}
+[12.587790] (utils) StdoutLine: {'line': b'-- Installing: /home/ubuntu/workspace/Velizar/robotics_v1/install/utils/include/utils/debug/StackTrace.h\n'}
+[12.587998] (utils) StdoutLine: {'line': b'-- Installing: /home/ubuntu/workspace/Velizar/robotics_v1/install/utils/include/utils/debug/FunctionTracer.h\n'}
+[12.588165] (utils) StdoutLine: {'line': b'-- Installing: /home/ubuntu/workspace/Velizar/robotics_v1/install/utils/include/utils/debug/SignalHandler.h\n'}
+[12.588323] (utils) StdoutLine: {'line': b'-- Installing: /home/ubuntu/workspace/Velizar/robotics_v1/install/utils/include/utils/class\n'}
+[12.588480] (utils) StdoutLine: {'line': b'-- Installing: /home/ubuntu/workspace/Velizar/robotics_v1/install/utils/include/utils/class/NonMoveable.h\n'}
+[12.588637] (utils) StdoutLine: {'line': b'-- Installing: /home/ubuntu/workspace/Velizar/robotics_v1/install/utils/include/utils/class/NonCopyable.h\n'}
+[12.588834] (utils) StdoutLine: {'line': b'-- Installing: /home/ubuntu/workspace/Velizar/robotics_v1/install/utils/lib/cmake/utils/utilsTargets.cmake\n'}
+[12.588999] (utils) StdoutLine: {'line': b'-- Installing: /home/ubuntu/workspace/Velizar/robotics_v1/install/utils/lib/cmake/utils/utilsTargets-debug.cmake\n'}
+[12.589158] (utils) StdoutLine: {'line': b'-- Installing: /home/ubuntu/workspace/Velizar/robotics_v1/install/utils/lib/cmake/utils/utilsConfig.cmake\n'}
+[12.593647] (utils) CommandEnded: {'returncode': 0}
+[12.670875] (-) TimerEvent: {}
+[12.751258] (utils) JobEnded: {'identifier': 'utils', 'rc': 0}
+[12.752759] (resource_utils) JobStarted: {'identifier': 'resource_utils'}
+[12.771301] (-) TimerEvent: {}
+[12.784323] (resource_utils) JobProgress: {'identifier': 'resource_utils', 'progress': 'cmake'}
+[12.784923] (resource_utils) Command: {'cmd': ['/usr/bin/cmake', '/home/ubuntu/workspace/Velizar/robotics_v1/src/lib/resource_utils', '-DCMAKE_BUILD_TYPE=Debug', '-DCMAKE_CXX_COMPILER=/usr/bin/clang++', '-DCMAKE_INSTALL_PREFIX=/home/ubuntu/workspace/Velizar/robotics_v1/install/resource_utils'], 'cwd': '/home/ubuntu/workspace/Velizar/robotics_v1/build/resource_utils', 'env': OrderedDict([('LESSOPEN', '| /usr/bin/lesspipe %s'), ('USER', 'ubuntu'), ('SSH_AGENT_PID', '2008'), ('XDG_SESSION_TYPE', 'x11'), ('SHLVL', '1'), ('LD_LIBRARY_PATH', '/opt/ros/foxy/opt/yaml_cpp_vendor/lib:/opt/ros/foxy/opt/rviz_ogre_vendor/lib:/opt/ros/foxy/lib/x86_64-linux-gnu:/opt/ros/foxy/lib'), ('HOME', '/home/ubuntu'), ('DESKTOP_SESSION', 'ubuntu'), ('ROS_PYTHON_VERSION', '3'), ('GNOME_SHELL_SESSION_MODE', 'ubuntu'), ('GTK_MODULES', 'gail:atk-bridge'), ('PS1', '[\\u@\\h \\W]$(git_branch)$'), ('MANAGERPID', '1804'), ('DBUS_STARTER_BUS_TYPE', 'session'), ('DBUS_SESSION_BUS_ADDRESS', 'unix:path=/run/user/1000/bus,guid=3cf57ed13619e15624827b8a634826e6'), ('COLORTERM', 'truecolor'), ('IM_CONFIG_PHASE', '1'), ('ROS_DISTRO', 'foxy'), ('LOGNAME', 'ubuntu'), ('JOURNAL_STREAM', '8:36712'), ('_', '/usr/bin/colcon'), ('ROS_VERSION', '2'), ('XDG_SESSION_CLASS', 'user'), ('PKG_CONFIG_PATH', '/home/ubuntu/workspace/Velizar/robotics_v1/install/utils/lib/x86_64-linux-gnu/pkgconfig:/home/ubuntu/workspace/Velizar/robotics_v1/install/utils/lib/pkgconfig:/home/ubuntu/workspace/Velizar/robotics_v1/install/cmake_helpers/lib/x86_64-linux-gnu/pkgconfig:/home/ubuntu/workspace/Velizar/robotics_v1/install/cmake_helpers/lib/pkgconfig'), ('USERNAME', 'ubuntu'), ('TERM', 'xterm-256color'), ('GNOME_DESKTOP_SESSION_ID', 'this-is-deprecated'), ('ROS_LOCALHOST_ONLY', '0'), ('WINDOWPATH', '2'), ('PATH', '/opt/ros/foxy/bin:/home/ubuntu/.local/bin:/usr/local/sbin:/usr/local/bin:/usr/sbin:/usr/bin:/sbin:/bin:/usr/games:/usr/local/games:/snap/bin'), ('SESSION_MANAGER', 'local/ubuntu2004:@/tmp/.ICE-unix/2046,unix/ubuntu2004:/tmp/.ICE-unix/2046'), ('INVOCATION_ID', 'f4b6283573064975930a418b95e0ddb1'), ('XDG_MENU_PREFIX', 'gnome-'), ('GNOME_TERMINAL_SCREEN', '/org/gnome/Terminal/screen/018776d1_9c95_4512_aed8_b3ba208c7249'), ('XDG_RUNTIME_DIR', '/run/user/1000'), ('DISPLAY', ':0'), ('LANG', 'en_US.UTF-8'), ('XDG_CURRENT_DESKTOP', 'ubuntu:GNOME'), ('XMODIFIERS', '@im=ibus'), ('XDG_SESSION_DESKTOP', 'ubuntu'), ('XAUTHORITY', '/run/user/1000/gdm/Xauthority'), ('LS_COLORS', 'rs=0:di=01;34:ln=01;36:mh=00:pi=40;33:so=01;35:do=01;35:bd=40;33;01:cd=40;33;01:or=40;31;01:mi=00:su=37;41:sg=30;43:ca=30;41:tw=30;42:ow=34;42:st=37;44:ex=01;32:*.tar=01;31:*.tgz=01;31:*.arc=01;31:*.arj=01;31:*.taz=01;31:*.lha=01;31:*.lz4=01;31:*.lzh=01;31:*.lzma=01;31:*.tlz=01;31:*.txz=01;31:*.tzo=01;31:*.t7z=01;31:*.zip=01;31:*.z=01;31:*.dz=01;31:*.gz=01;31:*.lrz=01;31:*.lz=01;31:*.lzo=01;31:*.xz=01;31:*.zst=01;31:*.tzst=01;31:*.bz2=01;31:*.bz=01;31:*.tbz=01;31:*.tbz2=01;31:*.tz=01;31:*.deb=01;31:*.rpm=01;31:*.jar=01;31:*.war=01;31:*.ear=01;31:*.sar=01;31:*.rar=01;31:*.alz=01;31:*.ace=01;31:*.zoo=01;31:*.cpio=01;31:*.7z=01;31:*.rz=01;31:*.cab=01;31:*.wim=01;31:*.swm=01;31:*.dwm=01;31:*.esd=01;31:*.jpg=01;35:*.jpeg=01;35:*.mjpg=01;35:*.mjpeg=01;35:*.gif=01;35:*.bmp=01;35:*.pbm=01;35:*.pgm=01;35:*.ppm=01;35:*.tga=01;35:*.xbm=01;35:*.xpm=01;35:*.tif=01;35:*.tiff=01;35:*.png=01;35:*.svg=01;35:*.svgz=01;35:*.mng=01;35:*.pcx=01;35:*.mov=01;35:*.mpg=01;35:*.mpeg=01;35:*.m2v=01;35:*.mkv=01;35:*.webm=01;35:*.ogm=01;35:*.mp4=01;35:*.m4v=01;35:*.mp4v=01;35:*.vob=01;35:*.qt=01;35:*.nuv=01;35:*.wmv=01;35:*.asf=01;35:*.rm=01;35:*.rmvb=01;35:*.flc=01;35:*.avi=01;35:*.fli=01;35:*.flv=01;35:*.gl=01;35:*.dl=01;35:*.xcf=01;35:*.xwd=01;35:*.yuv=01;35:*.cgm=01;35:*.emf=01;35:*.ogv=01;35:*.ogx=01;35:*.aac=00;36:*.au=00;36:*.flac=00;36:*.m4a=00;36:*.mid=00;36:*.midi=00;36:*.mka=00;36:*.mp3=00;36:*.mpc=00;36:*.ogg=00;36:*.ra=00;36:*.wav=00;36:*.oga=00;36:*.opus=00;36:*.spx=00;36:*.xspf=00;36:'), ('GNOME_TERMINAL_SERVICE', ':1.82'), ('SSH_AUTH_SOCK', '/run/user/1000/keyring/ssh'), ('AMENT_PREFIX_PATH', '/opt/ros/foxy'), ('SHELL', '/bin/bash'), ('QT_ACCESSIBILITY', '1'), ('GDMSESSION', 'ubuntu'), ('LESSCLOSE', '/usr/bin/lesspipe %s %s'), ('GPG_AGENT_INFO', '/run/user/1000/gnupg/S.gpg-agent:0:1'), ('QT_IM_MODULE', 'ibus'), ('PWD', '/home/ubuntu/workspace/Velizar/robotics_v1/build/resource_utils'), ('LC_ALL', 'en_US.UTF-8'), ('XDG_CONFIG_DIRS', '/etc/xdg/xdg-ubuntu:/etc/xdg'), ('DBUS_STARTER_ADDRESS', 'unix:path=/run/user/1000/bus,guid=3cf57ed13619e15624827b8a634826e6'), ('XDG_DATA_DIRS', '/usr/share/ubuntu:/usr/local/share/:/usr/share/:/var/lib/snapd/desktop'), ('PYTHONPATH', '/opt/ros/foxy/lib/python3.8/site-packages'), ('COLCON', '1'), ('VTE_VERSION', '6003'), ('CMAKE_PREFIX_PATH', '/home/ubuntu/workspace/Velizar/robotics_v1/install/utils:/home/ubuntu/workspace/Velizar/robotics_v1/install/cmake_helpers:/opt/ros/foxy')]), 'shell': False}
+[12.871413] (-) TimerEvent: {}
+[12.971913] (-) TimerEvent: {}
+[13.072424] (-) TimerEvent: {}
+[13.097045] (resource_utils) StdoutLine: {'line': b'-- The CXX compiler identification is Clang 10.0.0\n'}
+[13.120444] (resource_utils) StdoutLine: {'line': b'-- Check for working CXX compiler: /usr/bin/clang++\n'}
+[13.172612] (-) TimerEvent: {}
+[13.273056] (-) TimerEvent: {}
+[13.373706] (-) TimerEvent: {}
+[13.465970] (resource_utils) StdoutLine: {'line': b'-- Check for working CXX compiler: /usr/bin/clang++ -- works\n'}
+[13.469065] (resource_utils) StdoutLine: {'line': b'-- Detecting CXX compiler ABI info\n'}
+[13.473858] (-) TimerEvent: {}
+[13.574238] (-) TimerEvent: {}
+[13.674747] (-) TimerEvent: {}
+[13.775086] (-) TimerEvent: {}
+[13.805828] (resource_utils) StdoutLine: {'line': b'-- Detecting CXX compiler ABI info - done\n'}
+[13.855592] (resource_utils) StdoutLine: {'line': b'-- Detecting CXX compile features\n'}
+[13.857713] (resource_utils) StdoutLine: {'line': b'-- Detecting CXX compile features - done\n'}
+[13.860964] (resource_utils) StdoutLine: {'line': b'-- Found cmake_helpers: 1.0.0 (/home/ubuntu/workspace/Velizar/robotics_v1/install/cmake_helpers/share/cmake_helpers/cmake)\n'}
+[13.866193] (resource_utils) StdoutLine: {'line': b'-- Looking for C++ include pthread.h\n'}
+[13.875237] (-) TimerEvent: {}
+[13.975624] (-) TimerEvent: {}
+[14.076113] (-) TimerEvent: {}
+[14.176598] (-) TimerEvent: {}
+[14.229474] (resource_utils) StdoutLine: {'line': b'-- Looking for C++ include pthread.h - found\n'}
+[14.230223] (resource_utils) StdoutLine: {'line': b'-- Performing Test CMAKE_HAVE_LIBC_PTHREAD\n'}
+[14.276780] (-) TimerEvent: {}
+[14.377246] (-) TimerEvent: {}
+[14.477769] (-) TimerEvent: {}
+[14.578288] (-) TimerEvent: {}
+[14.610022] (resource_utils) StdoutLine: {'line': b'-- Performing Test CMAKE_HAVE_LIBC_PTHREAD - Failed\n'}
+[14.610550] (resource_utils) StdoutLine: {'line': b'-- Looking for pthread_create in pthreads\n'}
+[14.678479] (-) TimerEvent: {}
+[14.779021] (-) TimerEvent: {}
+[14.865061] (resource_utils) StdoutLine: {'line': b'-- Looking for pthread_create in pthreads - not found\n'}
+[14.865848] (resource_utils) StdoutLine: {'line': b'-- Looking for pthread_create in pthread\n'}
+[14.879159] (-) TimerEvent: {}
+[14.979604] (-) TimerEvent: {}
+[15.080040] (-) TimerEvent: {}
+[15.180451] (-) TimerEvent: {}
+[15.208584] (resource_utils) StdoutLine: {'line': b'-- Looking for pthread_create in pthread - found\n'}
+[15.212183] (resource_utils) StdoutLine: {'line': b'-- Found Threads: TRUE  \n'}
+[15.222956] (resource_utils) StdoutLine: {'line': b'-- Found ament_cmake: 0.9.9 (/opt/ros/foxy/share/ament_cmake/cmake)\n'}
+[15.280652] (-) TimerEvent: {}
+[15.283473] (resource_utils) StdoutLine: {'line': b'-- Found PythonInterp: /usr/bin/python3 (found suitable version "3.8.10", minimum required is "3") \n'}
+[15.283739] (resource_utils) StdoutLine: {'line': b'-- Using PYTHON_EXECUTABLE: /usr/bin/python3\n'}
+[15.380855] (-) TimerEvent: {}
+[15.481314] (-) TimerEvent: {}
+[15.582060] (-) TimerEvent: {}
+[15.682604] (-) TimerEvent: {}
+[15.783424] (-) TimerEvent: {}
+[15.883961] (-) TimerEvent: {}
+[15.964768] (resource_utils) StdoutLine: {'line': b'-- Configuring done\n'}
+[15.981790] (resource_utils) StdoutLine: {'line': b'-- Generating done\n'}
+[15.984150] (-) TimerEvent: {}
+[15.986428] (resource_utils) StdoutLine: {'line': b'-- Build files have been written to: /home/ubuntu/workspace/Velizar/robotics_v1/build/resource_utils\n'}
+[15.997795] (resource_utils) CommandEnded: {'returncode': 0}
+[16.000330] (resource_utils) JobProgress: {'identifier': 'resource_utils', 'progress': 'build'}
+[16.000423] (resource_utils) Command: {'cmd': ['/usr/bin/cmake', '--build', '/home/ubuntu/workspace/Velizar/robotics_v1/build/resource_utils', '--', '-j2', '-l2'], 'cwd': '/home/ubuntu/workspace/Velizar/robotics_v1/build/resource_utils', 'env': OrderedDict([('LESSOPEN', '| /usr/bin/lesspipe %s'), ('USER', 'ubuntu'), ('SSH_AGENT_PID', '2008'), ('XDG_SESSION_TYPE', 'x11'), ('SHLVL', '1'), ('LD_LIBRARY_PATH', '/opt/ros/foxy/opt/yaml_cpp_vendor/lib:/opt/ros/foxy/opt/rviz_ogre_vendor/lib:/opt/ros/foxy/lib/x86_64-linux-gnu:/opt/ros/foxy/lib'), ('HOME', '/home/ubuntu'), ('DESKTOP_SESSION', 'ubuntu'), ('ROS_PYTHON_VERSION', '3'), ('GNOME_SHELL_SESSION_MODE', 'ubuntu'), ('GTK_MODULES', 'gail:atk-bridge'), ('PS1', '[\\u@\\h \\W]$(git_branch)$'), ('MANAGERPID', '1804'), ('DBUS_STARTER_BUS_TYPE', 'session'), ('DBUS_SESSION_BUS_ADDRESS', 'unix:path=/run/user/1000/bus,guid=3cf57ed13619e15624827b8a634826e6'), ('COLORTERM', 'truecolor'), ('IM_CONFIG_PHASE', '1'), ('ROS_DISTRO', 'foxy'), ('LOGNAME', 'ubuntu'), ('JOURNAL_STREAM', '8:36712'), ('_', '/usr/bin/colcon'), ('ROS_VERSION', '2'), ('XDG_SESSION_CLASS', 'user'), ('PKG_CONFIG_PATH', '/home/ubuntu/workspace/Velizar/robotics_v1/install/utils/lib/x86_64-linux-gnu/pkgconfig:/home/ubuntu/workspace/Velizar/robotics_v1/install/utils/lib/pkgconfig:/home/ubuntu/workspace/Velizar/robotics_v1/install/cmake_helpers/lib/x86_64-linux-gnu/pkgconfig:/home/ubuntu/workspace/Velizar/robotics_v1/install/cmake_helpers/lib/pkgconfig'), ('USERNAME', 'ubuntu'), ('TERM', 'xterm-256color'), ('GNOME_DESKTOP_SESSION_ID', 'this-is-deprecated'), ('ROS_LOCALHOST_ONLY', '0'), ('WINDOWPATH', '2'), ('PATH', '/opt/ros/foxy/bin:/home/ubuntu/.local/bin:/usr/local/sbin:/usr/local/bin:/usr/sbin:/usr/bin:/sbin:/bin:/usr/games:/usr/local/games:/snap/bin'), ('SESSION_MANAGER', 'local/ubuntu2004:@/tmp/.ICE-unix/2046,unix/ubuntu2004:/tmp/.ICE-unix/2046'), ('INVOCATION_ID', 'f4b6283573064975930a418b95e0ddb1'), ('XDG_MENU_PREFIX', 'gnome-'), ('GNOME_TERMINAL_SCREEN', '/org/gnome/Terminal/screen/018776d1_9c95_4512_aed8_b3ba208c7249'), ('XDG_RUNTIME_DIR', '/run/user/1000'), ('DISPLAY', ':0'), ('LANG', 'en_US.UTF-8'), ('XDG_CURRENT_DESKTOP', 'ubuntu:GNOME'), ('XMODIFIERS', '@im=ibus'), ('XDG_SESSION_DESKTOP', 'ubuntu'), ('XAUTHORITY', '/run/user/1000/gdm/Xauthority'), ('LS_COLORS', 'rs=0:di=01;34:ln=01;36:mh=00:pi=40;33:so=01;35:do=01;35:bd=40;33;01:cd=40;33;01:or=40;31;01:mi=00:su=37;41:sg=30;43:ca=30;41:tw=30;42:ow=34;42:st=37;44:ex=01;32:*.tar=01;31:*.tgz=01;31:*.arc=01;31:*.arj=01;31:*.taz=01;31:*.lha=01;31:*.lz4=01;31:*.lzh=01;31:*.lzma=01;31:*.tlz=01;31:*.txz=01;31:*.tzo=01;31:*.t7z=01;31:*.zip=01;31:*.z=01;31:*.dz=01;31:*.gz=01;31:*.lrz=01;31:*.lz=01;31:*.lzo=01;31:*.xz=01;31:*.zst=01;31:*.tzst=01;31:*.bz2=01;31:*.bz=01;31:*.tbz=01;31:*.tbz2=01;31:*.tz=01;31:*.deb=01;31:*.rpm=01;31:*.jar=01;31:*.war=01;31:*.ear=01;31:*.sar=01;31:*.rar=01;31:*.alz=01;31:*.ace=01;31:*.zoo=01;31:*.cpio=01;31:*.7z=01;31:*.rz=01;31:*.cab=01;31:*.wim=01;31:*.swm=01;31:*.dwm=01;31:*.esd=01;31:*.jpg=01;35:*.jpeg=01;35:*.mjpg=01;35:*.mjpeg=01;35:*.gif=01;35:*.bmp=01;35:*.pbm=01;35:*.pgm=01;35:*.ppm=01;35:*.tga=01;35:*.xbm=01;35:*.xpm=01;35:*.tif=01;35:*.tiff=01;35:*.png=01;35:*.svg=01;35:*.svgz=01;35:*.mng=01;35:*.pcx=01;35:*.mov=01;35:*.mpg=01;35:*.mpeg=01;35:*.m2v=01;35:*.mkv=01;35:*.webm=01;35:*.ogm=01;35:*.mp4=01;35:*.m4v=01;35:*.mp4v=01;35:*.vob=01;35:*.qt=01;35:*.nuv=01;35:*.wmv=01;35:*.asf=01;35:*.rm=01;35:*.rmvb=01;35:*.flc=01;35:*.avi=01;35:*.fli=01;35:*.flv=01;35:*.gl=01;35:*.dl=01;35:*.xcf=01;35:*.xwd=01;35:*.yuv=01;35:*.cgm=01;35:*.emf=01;35:*.ogv=01;35:*.ogx=01;35:*.aac=00;36:*.au=00;36:*.flac=00;36:*.m4a=00;36:*.mid=00;36:*.midi=00;36:*.mka=00;36:*.mp3=00;36:*.mpc=00;36:*.ogg=00;36:*.ra=00;36:*.wav=00;36:*.oga=00;36:*.opus=00;36:*.spx=00;36:*.xspf=00;36:'), ('GNOME_TERMINAL_SERVICE', ':1.82'), ('SSH_AUTH_SOCK', '/run/user/1000/keyring/ssh'), ('AMENT_PREFIX_PATH', '/opt/ros/foxy'), ('SHELL', '/bin/bash'), ('QT_ACCESSIBILITY', '1'), ('GDMSESSION', 'ubuntu'), ('LESSCLOSE', '/usr/bin/lesspipe %s %s'), ('GPG_AGENT_INFO', '/run/user/1000/gnupg/S.gpg-agent:0:1'), ('QT_IM_MODULE', 'ibus'), ('PWD', '/home/ubuntu/workspace/Velizar/robotics_v1/build/resource_utils'), ('LC_ALL', 'en_US.UTF-8'), ('XDG_CONFIG_DIRS', '/etc/xdg/xdg-ubuntu:/etc/xdg'), ('DBUS_STARTER_ADDRESS', 'unix:path=/run/user/1000/bus,guid=3cf57ed13619e15624827b8a634826e6'), ('XDG_DATA_DIRS', '/usr/share/ubuntu:/usr/local/share/:/usr/share/:/var/lib/snapd/desktop'), ('PYTHONPATH', '/opt/ros/foxy/lib/python3.8/site-packages'), ('COLCON', '1'), ('VTE_VERSION', '6003'), ('CMAKE_PREFIX_PATH', '/home/ubuntu/workspace/Velizar/robotics_v1/install/utils:/home/ubuntu/workspace/Velizar/robotics_v1/install/cmake_helpers:/opt/ros/foxy')]), 'shell': False}
+[16.084338] (-) TimerEvent: {}
+[16.100654] (resource_utils) StdoutLine: {'line': b'\x1b[35m\x1b[1mScanning dependencies of target resource_utils\x1b[0m\n'}
+[16.135861] (resource_utils) StdoutLine: {'line': b'[ 11%] \x1b[32mBuilding CXX object CMakeFiles/resource_utils.dir/src/defines/SoundDefines.cpp.o\x1b[0m\n'}
+[16.140651] (resource_utils) StdoutLine: {'line': b'[ 22%] \x1b[32mBuilding CXX object CMakeFiles/resource_utils.dir/src/common/ResourceFileHeader.cpp.o\x1b[0m\n'}
+[16.184521] (-) TimerEvent: {}
+[16.233590] (resource_utils) StdoutLine: {'line': b'[ 33%] \x1b[32mBuilding CXX object CMakeFiles/resource_utils.dir/src/resource_loader/ResourceLoader.cpp.o\x1b[0m\n'}
+[16.284712] (-) TimerEvent: {}
+[16.385359] (-) TimerEvent: {}
+[16.486172] (-) TimerEvent: {}
+[16.586680] (-) TimerEvent: {}
+[16.687166] (-) TimerEvent: {}
+[16.787594] (-) TimerEvent: {}
+[16.888346] (-) TimerEvent: {}
+[16.926680] (resource_utils) StdoutLine: {'line': b'[ 44%] \x1b[32mBuilding CXX object CMakeFiles/resource_utils.dir/src/structs/CombinedStructs.cpp.o\x1b[0m\n'}
+[16.988947] (-) TimerEvent: {}
+[17.089873] (-) TimerEvent: {}
+[17.190379] (-) TimerEvent: {}
+[17.290921] (-) TimerEvent: {}
+[17.391402] (-) TimerEvent: {}
+[17.491845] (-) TimerEvent: {}
+[17.592294] (-) TimerEvent: {}
+[17.693088] (-) TimerEvent: {}
+[17.715520] (resource_utils) StdoutLine: {'line': b'[ 55%] \x1b[32mBuilding CXX object CMakeFiles/resource_utils.dir/src/structs/DataHeader.cpp.o\x1b[0m\n'}
+[17.793271] (-) TimerEvent: {}
+[17.799376] (resource_utils) StdoutLine: {'line': b'[ 66%] \x1b[32mBuilding CXX object CMakeFiles/resource_utils.dir/src/structs/ResourceData.cpp.o\x1b[0m\n'}
+[17.893428] (-) TimerEvent: {}
+[17.993916] (-) TimerEvent: {}
+[18.094377] (-) TimerEvent: {}
+[18.194907] (-) TimerEvent: {}
+[18.295398] (-) TimerEvent: {}
+[18.392669] (resource_utils) StdoutLine: {'line': b'[ 77%] \x1b[32mBuilding CXX object CMakeFiles/resource_utils.dir/src/structs/FontData.cpp.o\x1b[0m\n'}
+[18.395538] (-) TimerEvent: {}
+[18.495975] (-) TimerEvent: {}
+[18.596535] (-) TimerEvent: {}
+[18.697009] (-) TimerEvent: {}
+[18.706868] (resource_utils) StdoutLine: {'line': b'[ 88%] \x1b[32mBuilding CXX object CMakeFiles/resource_utils.dir/src/structs/SoundData.cpp.o\x1b[0m\n'}
+[18.797215] (-) TimerEvent: {}
+[18.897717] (-) TimerEvent: {}
+[18.998238] (-) TimerEvent: {}
+[19.098726] (-) TimerEvent: {}
+[19.199342] (-) TimerEvent: {}
+[19.300043] (-) TimerEvent: {}
+[19.400536] (-) TimerEvent: {}
+[19.452635] (resource_utils) StdoutLine: {'line': b'[100%] \x1b[32m\x1b[1mLinking CXX static library libresource_utils.a\x1b[0m\n'}
+[19.500770] (-) TimerEvent: {}
+[19.548856] (resource_utils) StdoutLine: {'line': b'[100%] Built target resource_utils\n'}
+[19.578969] (resource_utils) CommandEnded: {'returncode': 0}
+[19.601015] (-) TimerEvent: {}
+[19.666304] (resource_utils) JobProgress: {'identifier': 'resource_utils', 'progress': 'install'}
+[19.666937] (resource_utils) Command: {'cmd': ['/usr/bin/cmake', '--install', '/home/ubuntu/workspace/Velizar/robotics_v1/build/resource_utils'], 'cwd': '/home/ubuntu/workspace/Velizar/robotics_v1/build/resource_utils', 'env': OrderedDict([('LESSOPEN', '| /usr/bin/lesspipe %s'), ('USER', 'ubuntu'), ('SSH_AGENT_PID', '2008'), ('XDG_SESSION_TYPE', 'x11'), ('SHLVL', '1'), ('LD_LIBRARY_PATH', '/opt/ros/foxy/opt/yaml_cpp_vendor/lib:/opt/ros/foxy/opt/rviz_ogre_vendor/lib:/opt/ros/foxy/lib/x86_64-linux-gnu:/opt/ros/foxy/lib'), ('HOME', '/home/ubuntu'), ('DESKTOP_SESSION', 'ubuntu'), ('ROS_PYTHON_VERSION', '3'), ('GNOME_SHELL_SESSION_MODE', 'ubuntu'), ('GTK_MODULES', 'gail:atk-bridge'), ('PS1', '[\\u@\\h \\W]$(git_branch)$'), ('MANAGERPID', '1804'), ('DBUS_STARTER_BUS_TYPE', 'session'), ('DBUS_SESSION_BUS_ADDRESS', 'unix:path=/run/user/1000/bus,guid=3cf57ed13619e15624827b8a634826e6'), ('COLORTERM', 'truecolor'), ('IM_CONFIG_PHASE', '1'), ('ROS_DISTRO', 'foxy'), ('LOGNAME', 'ubuntu'), ('JOURNAL_STREAM', '8:36712'), ('_', '/usr/bin/colcon'), ('ROS_VERSION', '2'), ('XDG_SESSION_CLASS', 'user'), ('PKG_CONFIG_PATH', '/home/ubuntu/workspace/Velizar/robotics_v1/install/utils/lib/x86_64-linux-gnu/pkgconfig:/home/ubuntu/workspace/Velizar/robotics_v1/install/utils/lib/pkgconfig:/home/ubuntu/workspace/Velizar/robotics_v1/install/cmake_helpers/lib/x86_64-linux-gnu/pkgconfig:/home/ubuntu/workspace/Velizar/robotics_v1/install/cmake_helpers/lib/pkgconfig'), ('USERNAME', 'ubuntu'), ('TERM', 'xterm-256color'), ('GNOME_DESKTOP_SESSION_ID', 'this-is-deprecated'), ('ROS_LOCALHOST_ONLY', '0'), ('WINDOWPATH', '2'), ('PATH', '/opt/ros/foxy/bin:/home/ubuntu/.local/bin:/usr/local/sbin:/usr/local/bin:/usr/sbin:/usr/bin:/sbin:/bin:/usr/games:/usr/local/games:/snap/bin'), ('SESSION_MANAGER', 'local/ubuntu2004:@/tmp/.ICE-unix/2046,unix/ubuntu2004:/tmp/.ICE-unix/2046'), ('INVOCATION_ID', 'f4b6283573064975930a418b95e0ddb1'), ('XDG_MENU_PREFIX', 'gnome-'), ('GNOME_TERMINAL_SCREEN', '/org/gnome/Terminal/screen/018776d1_9c95_4512_aed8_b3ba208c7249'), ('XDG_RUNTIME_DIR', '/run/user/1000'), ('DISPLAY', ':0'), ('LANG', 'en_US.UTF-8'), ('XDG_CURRENT_DESKTOP', 'ubuntu:GNOME'), ('XMODIFIERS', '@im=ibus'), ('XDG_SESSION_DESKTOP', 'ubuntu'), ('XAUTHORITY', '/run/user/1000/gdm/Xauthority'), ('LS_COLORS', 'rs=0:di=01;34:ln=01;36:mh=00:pi=40;33:so=01;35:do=01;35:bd=40;33;01:cd=40;33;01:or=40;31;01:mi=00:su=37;41:sg=30;43:ca=30;41:tw=30;42:ow=34;42:st=37;44:ex=01;32:*.tar=01;31:*.tgz=01;31:*.arc=01;31:*.arj=01;31:*.taz=01;31:*.lha=01;31:*.lz4=01;31:*.lzh=01;31:*.lzma=01;31:*.tlz=01;31:*.txz=01;31:*.tzo=01;31:*.t7z=01;31:*.zip=01;31:*.z=01;31:*.dz=01;31:*.gz=01;31:*.lrz=01;31:*.lz=01;31:*.lzo=01;31:*.xz=01;31:*.zst=01;31:*.tzst=01;31:*.bz2=01;31:*.bz=01;31:*.tbz=01;31:*.tbz2=01;31:*.tz=01;31:*.deb=01;31:*.rpm=01;31:*.jar=01;31:*.war=01;31:*.ear=01;31:*.sar=01;31:*.rar=01;31:*.alz=01;31:*.ace=01;31:*.zoo=01;31:*.cpio=01;31:*.7z=01;31:*.rz=01;31:*.cab=01;31:*.wim=01;31:*.swm=01;31:*.dwm=01;31:*.esd=01;31:*.jpg=01;35:*.jpeg=01;35:*.mjpg=01;35:*.mjpeg=01;35:*.gif=01;35:*.bmp=01;35:*.pbm=01;35:*.pgm=01;35:*.ppm=01;35:*.tga=01;35:*.xbm=01;35:*.xpm=01;35:*.tif=01;35:*.tiff=01;35:*.png=01;35:*.svg=01;35:*.svgz=01;35:*.mng=01;35:*.pcx=01;35:*.mov=01;35:*.mpg=01;35:*.mpeg=01;35:*.m2v=01;35:*.mkv=01;35:*.webm=01;35:*.ogm=01;35:*.mp4=01;35:*.m4v=01;35:*.mp4v=01;35:*.vob=01;35:*.qt=01;35:*.nuv=01;35:*.wmv=01;35:*.asf=01;35:*.rm=01;35:*.rmvb=01;35:*.flc=01;35:*.avi=01;35:*.fli=01;35:*.flv=01;35:*.gl=01;35:*.dl=01;35:*.xcf=01;35:*.xwd=01;35:*.yuv=01;35:*.cgm=01;35:*.emf=01;35:*.ogv=01;35:*.ogx=01;35:*.aac=00;36:*.au=00;36:*.flac=00;36:*.m4a=00;36:*.mid=00;36:*.midi=00;36:*.mka=00;36:*.mp3=00;36:*.mpc=00;36:*.ogg=00;36:*.ra=00;36:*.wav=00;36:*.oga=00;36:*.opus=00;36:*.spx=00;36:*.xspf=00;36:'), ('GNOME_TERMINAL_SERVICE', ':1.82'), ('SSH_AUTH_SOCK', '/run/user/1000/keyring/ssh'), ('AMENT_PREFIX_PATH', '/opt/ros/foxy'), ('SHELL', '/bin/bash'), ('QT_ACCESSIBILITY', '1'), ('GDMSESSION', 'ubuntu'), ('LESSCLOSE', '/usr/bin/lesspipe %s %s'), ('GPG_AGENT_INFO', '/run/user/1000/gnupg/S.gpg-agent:0:1'), ('QT_IM_MODULE', 'ibus'), ('PWD', '/home/ubuntu/workspace/Velizar/robotics_v1/build/resource_utils'), ('LC_ALL', 'en_US.UTF-8'), ('XDG_CONFIG_DIRS', '/etc/xdg/xdg-ubuntu:/etc/xdg'), ('DBUS_STARTER_ADDRESS', 'unix:path=/run/user/1000/bus,guid=3cf57ed13619e15624827b8a634826e6'), ('XDG_DATA_DIRS', '/usr/share/ubuntu:/usr/local/share/:/usr/share/:/var/lib/snapd/desktop'), ('PYTHONPATH', '/opt/ros/foxy/lib/python3.8/site-packages'), ('COLCON', '1'), ('VTE_VERSION', '6003'), ('CMAKE_PREFIX_PATH', '/home/ubuntu/workspace/Velizar/robotics_v1/install/utils:/home/ubuntu/workspace/Velizar/robotics_v1/install/cmake_helpers:/opt/ros/foxy')]), 'shell': False}
+[19.687760] (resource_utils) StdoutLine: {'line': b'-- Install configuration: "Debug"\n'}
+[19.688317] (resource_utils) StdoutLine: {'line': b'-- Installing: /home/ubuntu/workspace/Velizar/robotics_v1/install/resource_utils/share/resource_utils/package.xml\n'}
+[19.688883] (resource_utils) StdoutLine: {'line': b'-- Installing: /home/ubuntu/workspace/Velizar/robotics_v1/install/resource_utils/lib/resource_utils/libresource_utils.a\n'}
+[19.692210] (resource_utils) StdoutLine: {'line': b'-- Installing: /home/ubuntu/workspace/Velizar/robotics_v1/install/resource_utils/share/ament_index/resource_index/packages/resource_utils\n'}
+[19.692690] (resource_utils) StdoutLine: {'line': b'-- Installing: /home/ubuntu/workspace/Velizar/robotics_v1/install/resource_utils/share/resource_utils/hook/ament_prefix_path.dsv\n'}
+[19.693153] (resource_utils) StdoutLine: {'line': b'-- Installing: /home/ubuntu/workspace/Velizar/robotics_v1/install/resource_utils/share/resource_utils/hook/ros_package_path.dsv\n'}
+[19.693665] (resource_utils) StdoutLine: {'line': b'-- Installing: /home/ubuntu/workspace/Velizar/robotics_v1/install/resource_utils/share/ament_index/resource_index/package_run_dependencies/resource_utils\n'}
+[19.694273] (resource_utils) StdoutLine: {'line': b'-- Installing: /home/ubuntu/workspace/Velizar/robotics_v1/install/resource_utils/share/ament_index/resource_index/parent_prefix_path/resource_utils\n'}
+[19.694922] (resource_utils) StdoutLine: {'line': b'-- Installing: /home/ubuntu/workspace/Velizar/robotics_v1/install/resource_utils/share/resource_utils/environment/ament_prefix_path.sh\n'}
+[19.695365] (resource_utils) StdoutLine: {'line': b'-- Installing: /home/ubuntu/workspace/Velizar/robotics_v1/install/resource_utils/share/resource_utils/environment/ament_prefix_path.dsv\n'}
+[19.695877] (resource_utils) StdoutLine: {'line': b'-- Installing: /home/ubuntu/workspace/Velizar/robotics_v1/install/resource_utils/share/resource_utils/environment/path.sh\n'}
+[19.696283] (resource_utils) StdoutLine: {'line': b'-- Installing: /home/ubuntu/workspace/Velizar/robotics_v1/install/resource_utils/share/resource_utils/environment/path.dsv\n'}
+[19.696708] (resource_utils) StdoutLine: {'line': b'-- Installing: /home/ubuntu/workspace/Velizar/robotics_v1/install/resource_utils/share/resource_utils/local_setup.bash\n'}
+[19.697136] (resource_utils) StdoutLine: {'line': b'-- Installing: /home/ubuntu/workspace/Velizar/robotics_v1/install/resource_utils/share/resource_utils/local_setup.sh\n'}
+[19.697533] (resource_utils) StdoutLine: {'line': b'-- Installing: /home/ubuntu/workspace/Velizar/robotics_v1/install/resource_utils/share/resource_utils/local_setup.zsh\n'}
+[19.697986] (resource_utils) StdoutLine: {'line': b'-- Installing: /home/ubuntu/workspace/Velizar/robotics_v1/install/resource_utils/share/resource_utils/local_setup.dsv\n'}
+[19.698366] (resource_utils) StdoutLine: {'line': b'-- Installing: /home/ubuntu/workspace/Velizar/robotics_v1/install/resource_utils/share/resource_utils/package.dsv\n'}
+[19.699051] (resource_utils) StdoutLine: {'line': b'-- Installing: /home/ubuntu/workspace/Velizar/robotics_v1/install/resource_utils/share/ament_index/resource_index/packages/resource_utils\n'}
+[19.699484] (resource_utils) StdoutLine: {'line': b'-- Installing: /home/ubuntu/workspace/Velizar/robotics_v1/install/resource_utils/share/resource_utils/cmake/resource_utilsConfig.cmake\n'}
+[19.699843] (resource_utils) StdoutLine: {'line': b'-- Installing: /home/ubuntu/workspace/Velizar/robotics_v1/install/resource_utils/share/resource_utils/cmake/resource_utilsConfig-version.cmake\n'}
+[19.700226] (resource_utils) StdoutLine: {'line': b'-- Up-to-date: /home/ubuntu/workspace/Velizar/robotics_v1/install/resource_utils/share/resource_utils/package.xml\n'}
+[19.700454] (resource_utils) StdoutLine: {'line': b'-- Installing: /home/ubuntu/workspace/Velizar/robotics_v1/install/resource_utils/lib/libresource_utils.a\n'}
+[19.701619] (-) TimerEvent: {}
+[19.703739] (resource_utils) StdoutLine: {'line': b'-- Installing: /home/ubuntu/workspace/Velizar/robotics_v1/install/resource_utils/include\n'}
+[19.703993] (resource_utils) StdoutLine: {'line': b'-- Installing: /home/ubuntu/workspace/Velizar/robotics_v1/install/resource_utils/include/resource_utils\n'}
+[19.704189] (resource_utils) StdoutLine: {'line': b'-- Installing: /home/ubuntu/workspace/Velizar/robotics_v1/install/resource_utils/include/resource_utils/structs\n'}
+[19.704409] (resource_utils) StdoutLine: {'line': b'-- Installing: /home/ubuntu/workspace/Velizar/robotics_v1/install/resource_utils/include/resource_utils/structs/ResourceData.h\n'}
+[19.704887] (resource_utils) StdoutLine: {'line': b'-- Installing: /home/ubuntu/workspace/Velizar/robotics_v1/install/resource_utils/include/resource_utils/structs/FontData.h\n'}
+[19.705226] (resource_utils) StdoutLine: {'line': b'-- Installing: /home/ubuntu/workspace/Velizar/robotics_v1/install/resource_utils/include/resource_utils/structs/DataHeader.h\n'}
+[19.705594] (resource_utils) StdoutLine: {'line': b'-- Installing: /home/ubuntu/workspace/Velizar/robotics_v1/install/resource_utils/include/resource_utils/structs/SoundData.h\n'}
+[19.705902] (resource_utils) StdoutLine: {'line': b'-- Installing: /home/ubuntu/workspace/Velizar/robotics_v1/install/resource_utils/include/resource_utils/structs/CombinedStructs.h\n'}
+[19.706191] (resource_utils) StdoutLine: {'line': b'-- Installing: /home/ubuntu/workspace/Velizar/robotics_v1/install/resource_utils/include/resource_utils/common\n'}
+[19.706505] (resource_utils) StdoutLine: {'line': b'-- Installing: /home/ubuntu/workspace/Velizar/robotics_v1/install/resource_utils/include/resource_utils/common/ResourceFileHeader.h\n'}
+[19.707138] (resource_utils) StdoutLine: {'line': b'-- Installing: /home/ubuntu/workspace/Velizar/robotics_v1/install/resource_utils/include/resource_utils/defines\n'}
+[19.707444] (resource_utils) StdoutLine: {'line': b'-- Installing: /home/ubuntu/workspace/Velizar/robotics_v1/install/resource_utils/include/resource_utils/defines/ResourceDefines.h\n'}
+[19.707760] (resource_utils) StdoutLine: {'line': b'-- Installing: /home/ubuntu/workspace/Velizar/robotics_v1/install/resource_utils/include/resource_utils/defines/SoundDefines.h\n'}
+[19.708401] (resource_utils) StdoutLine: {'line': b'-- Installing: /home/ubuntu/workspace/Velizar/robotics_v1/install/resource_utils/include/resource_utils/resource_loader\n'}
+[19.708820] (resource_utils) StdoutLine: {'line': b'-- Installing: /home/ubuntu/workspace/Velizar/robotics_v1/install/resource_utils/include/resource_utils/resource_loader/ResourceLoader.h\n'}
+[19.709469] (resource_utils) StdoutLine: {'line': b'-- Installing: /home/ubuntu/workspace/Velizar/robotics_v1/install/resource_utils/lib/cmake/resource_utils/resource_utilsTargets.cmake\n'}
+[19.709913] (resource_utils) StdoutLine: {'line': b'-- Installing: /home/ubuntu/workspace/Velizar/robotics_v1/install/resource_utils/lib/cmake/resource_utils/resource_utilsTargets-debug.cmake\n'}
+[19.710360] (resource_utils) StdoutLine: {'line': b'-- Installing: /home/ubuntu/workspace/Velizar/robotics_v1/install/resource_utils/lib/cmake/resource_utils/resource_utilsConfig.cmake\n'}
+[19.718334] (resource_utils) CommandEnded: {'returncode': 0}
+[19.803534] (-) TimerEvent: {}
+[19.827938] (resource_utils) JobEnded: {'identifier': 'resource_utils', 'rc': 0}
+[19.828903] (resource_builder) JobStarted: {'identifier': 'resource_builder'}
+[19.865568] (resource_builder) JobProgress: {'identifier': 'resource_builder', 'progress': 'cmake'}
+[19.868661] (resource_builder) Command: {'cmd': ['/usr/bin/cmake', '/home/ubuntu/workspace/Velizar/robotics_v1/src/tools/resource_builder', '-DCMAKE_BUILD_TYPE=Debug', '-DCMAKE_CXX_COMPILER=/usr/bin/clang++', '-DCMAKE_INSTALL_PREFIX=/home/ubuntu/workspace/Velizar/robotics_v1/install/resource_builder'], 'cwd': '/home/ubuntu/workspace/Velizar/robotics_v1/build/resource_builder', 'env': OrderedDict([('LESSOPEN', '| /usr/bin/lesspipe %s'), ('USER', 'ubuntu'), ('SSH_AGENT_PID', '2008'), ('XDG_SESSION_TYPE', 'x11'), ('SHLVL', '1'), ('LD_LIBRARY_PATH', '/opt/ros/foxy/opt/yaml_cpp_vendor/lib:/opt/ros/foxy/opt/rviz_ogre_vendor/lib:/opt/ros/foxy/lib/x86_64-linux-gnu:/opt/ros/foxy/lib'), ('HOME', '/home/ubuntu'), ('DESKTOP_SESSION', 'ubuntu'), ('ROS_PYTHON_VERSION', '3'), ('GNOME_SHELL_SESSION_MODE', 'ubuntu'), ('GTK_MODULES', 'gail:atk-bridge'), ('PS1', '[\\u@\\h \\W]$(git_branch)$'), ('MANAGERPID', '1804'), ('DBUS_STARTER_BUS_TYPE', 'session'), ('DBUS_SESSION_BUS_ADDRESS', 'unix:path=/run/user/1000/bus,guid=3cf57ed13619e15624827b8a634826e6'), ('COLORTERM', 'truecolor'), ('IM_CONFIG_PHASE', '1'), ('ROS_DISTRO', 'foxy'), ('LOGNAME', 'ubuntu'), ('JOURNAL_STREAM', '8:36712'), ('_', '/usr/bin/colcon'), ('ROS_VERSION', '2'), ('XDG_SESSION_CLASS', 'user'), ('PKG_CONFIG_PATH', '/home/ubuntu/workspace/Velizar/robotics_v1/install/resource_utils/lib/x86_64-linux-gnu/pkgconfig:/home/ubuntu/workspace/Velizar/robotics_v1/install/resource_utils/lib/pkgconfig:/home/ubuntu/workspace/Velizar/robotics_v1/install/utils/lib/x86_64-linux-gnu/pkgconfig:/home/ubuntu/workspace/Velizar/robotics_v1/install/utils/lib/pkgconfig:/home/ubuntu/workspace/Velizar/robotics_v1/install/cmake_helpers/lib/x86_64-linux-gnu/pkgconfig:/home/ubuntu/workspace/Velizar/robotics_v1/install/cmake_helpers/lib/pkgconfig'), ('USERNAME', 'ubuntu'), ('TERM', 'xterm-256color'), ('GNOME_DESKTOP_SESSION_ID', 'this-is-deprecated'), ('ROS_LOCALHOST_ONLY', '0'), ('WINDOWPATH', '2'), ('PATH', '/opt/ros/foxy/bin:/home/ubuntu/.local/bin:/usr/local/sbin:/usr/local/bin:/usr/sbin:/usr/bin:/sbin:/bin:/usr/games:/usr/local/games:/snap/bin'), ('SESSION_MANAGER', 'local/ubuntu2004:@/tmp/.ICE-unix/2046,unix/ubuntu2004:/tmp/.ICE-unix/2046'), ('INVOCATION_ID', 'f4b6283573064975930a418b95e0ddb1'), ('XDG_MENU_PREFIX', 'gnome-'), ('GNOME_TERMINAL_SCREEN', '/org/gnome/Terminal/screen/018776d1_9c95_4512_aed8_b3ba208c7249'), ('XDG_RUNTIME_DIR', '/run/user/1000'), ('DISPLAY', ':0'), ('LANG', 'en_US.UTF-8'), ('XDG_CURRENT_DESKTOP', 'ubuntu:GNOME'), ('XMODIFIERS', '@im=ibus'), ('XDG_SESSION_DESKTOP', 'ubuntu'), ('XAUTHORITY', '/run/user/1000/gdm/Xauthority'), ('LS_COLORS', 'rs=0:di=01;34:ln=01;36:mh=00:pi=40;33:so=01;35:do=01;35:bd=40;33;01:cd=40;33;01:or=40;31;01:mi=00:su=37;41:sg=30;43:ca=30;41:tw=30;42:ow=34;42:st=37;44:ex=01;32:*.tar=01;31:*.tgz=01;31:*.arc=01;31:*.arj=01;31:*.taz=01;31:*.lha=01;31:*.lz4=01;31:*.lzh=01;31:*.lzma=01;31:*.tlz=01;31:*.txz=01;31:*.tzo=01;31:*.t7z=01;31:*.zip=01;31:*.z=01;31:*.dz=01;31:*.gz=01;31:*.lrz=01;31:*.lz=01;31:*.lzo=01;31:*.xz=01;31:*.zst=01;31:*.tzst=01;31:*.bz2=01;31:*.bz=01;31:*.tbz=01;31:*.tbz2=01;31:*.tz=01;31:*.deb=01;31:*.rpm=01;31:*.jar=01;31:*.war=01;31:*.ear=01;31:*.sar=01;31:*.rar=01;31:*.alz=01;31:*.ace=01;31:*.zoo=01;31:*.cpio=01;31:*.7z=01;31:*.rz=01;31:*.cab=01;31:*.wim=01;31:*.swm=01;31:*.dwm=01;31:*.esd=01;31:*.jpg=01;35:*.jpeg=01;35:*.mjpg=01;35:*.mjpeg=01;35:*.gif=01;35:*.bmp=01;35:*.pbm=01;35:*.pgm=01;35:*.ppm=01;35:*.tga=01;35:*.xbm=01;35:*.xpm=01;35:*.tif=01;35:*.tiff=01;35:*.png=01;35:*.svg=01;35:*.svgz=01;35:*.mng=01;35:*.pcx=01;35:*.mov=01;35:*.mpg=01;35:*.mpeg=01;35:*.m2v=01;35:*.mkv=01;35:*.webm=01;35:*.ogm=01;35:*.mp4=01;35:*.m4v=01;35:*.mp4v=01;35:*.vob=01;35:*.qt=01;35:*.nuv=01;35:*.wmv=01;35:*.asf=01;35:*.rm=01;35:*.rmvb=01;35:*.flc=01;35:*.avi=01;35:*.fli=01;35:*.flv=01;35:*.gl=01;35:*.dl=01;35:*.xcf=01;35:*.xwd=01;35:*.yuv=01;35:*.cgm=01;35:*.emf=01;35:*.ogv=01;35:*.ogx=01;35:*.aac=00;36:*.au=00;36:*.flac=00;36:*.m4a=00;36:*.mid=00;36:*.midi=00;36:*.mka=00;36:*.mp3=00;36:*.mpc=00;36:*.ogg=00;36:*.ra=00;36:*.wav=00;36:*.oga=00;36:*.opus=00;36:*.spx=00;36:*.xspf=00;36:'), ('GNOME_TERMINAL_SERVICE', ':1.82'), ('SSH_AUTH_SOCK', '/run/user/1000/keyring/ssh'), ('AMENT_PREFIX_PATH', '/opt/ros/foxy'), ('SHELL', '/bin/bash'), ('QT_ACCESSIBILITY', '1'), ('GDMSESSION', 'ubuntu'), ('LESSCLOSE', '/usr/bin/lesspipe %s %s'), ('GPG_AGENT_INFO', '/run/user/1000/gnupg/S.gpg-agent:0:1'), ('QT_IM_MODULE', 'ibus'), ('PWD', '/home/ubuntu/workspace/Velizar/robotics_v1/build/resource_builder'), ('LC_ALL', 'en_US.UTF-8'), ('XDG_CONFIG_DIRS', '/etc/xdg/xdg-ubuntu:/etc/xdg'), ('DBUS_STARTER_ADDRESS', 'unix:path=/run/user/1000/bus,guid=3cf57ed13619e15624827b8a634826e6'), ('XDG_DATA_DIRS', '/usr/share/ubuntu:/usr/local/share/:/usr/share/:/var/lib/snapd/desktop'), ('PYTHONPATH', '/opt/ros/foxy/lib/python3.8/site-packages'), ('COLCON', '1'), ('VTE_VERSION', '6003'), ('CMAKE_PREFIX_PATH', '/home/ubuntu/workspace/Velizar/robotics_v1/install/resource_utils:/home/ubuntu/workspace/Velizar/robotics_v1/install/utils:/home/ubuntu/workspace/Velizar/robotics_v1/install/cmake_helpers:/opt/ros/foxy')]), 'shell': False}
+[19.903759] (-) TimerEvent: {}
+[20.004325] (-) TimerEvent: {}
+[20.104885] (-) TimerEvent: {}
+[20.187043] (resource_builder) StdoutLine: {'line': b'-- The CXX compiler identification is Clang 10.0.0\n'}
+[20.205013] (-) TimerEvent: {}
+[20.209171] (resource_builder) StdoutLine: {'line': b'-- Check for working CXX compiler: /usr/bin/clang++\n'}
+[20.305113] (-) TimerEvent: {}
+[20.405587] (-) TimerEvent: {}
+[20.505935] (-) TimerEvent: {}
+[20.549231] (resource_builder) StdoutLine: {'line': b'-- Check for working CXX compiler: /usr/bin/clang++ -- works\n'}
+[20.552621] (resource_builder) StdoutLine: {'line': b'-- Detecting CXX compiler ABI info\n'}
+[20.606085] (-) TimerEvent: {}
+[20.706576] (-) TimerEvent: {}
+[20.807535] (-) TimerEvent: {}
+[20.890168] (resource_builder) StdoutLine: {'line': b'-- Detecting CXX compiler ABI info - done\n'}
+[20.907688] (-) TimerEvent: {}
+[20.943077] (resource_builder) StdoutLine: {'line': b'-- Detecting CXX compile features\n'}
+[20.945996] (resource_builder) StdoutLine: {'line': b'-- Detecting CXX compile features - done\n'}
+[20.949522] (resource_builder) StdoutLine: {'line': b'-- Found cmake_helpers: 1.0.0 (/home/ubuntu/workspace/Velizar/robotics_v1/install/cmake_helpers/share/cmake_helpers/cmake)\n'}
+[20.955647] (resource_builder) StdoutLine: {'line': b'-- Looking for C++ include pthread.h\n'}
+[21.007886] (-) TimerEvent: {}
+[21.108377] (-) TimerEvent: {}
+[21.208831] (-) TimerEvent: {}
+[21.309311] (-) TimerEvent: {}
+[21.315667] (resource_builder) StdoutLine: {'line': b'-- Looking for C++ include pthread.h - found\n'}
+[21.315953] (resource_builder) StdoutLine: {'line': b'-- Performing Test CMAKE_HAVE_LIBC_PTHREAD\n'}
+[21.409506] (-) TimerEvent: {}
+[21.510276] (-) TimerEvent: {}
+[21.611016] (-) TimerEvent: {}
+[21.681041] (resource_builder) StdoutLine: {'line': b'-- Performing Test CMAKE_HAVE_LIBC_PTHREAD - Failed\n'}
+[21.681458] (resource_builder) StdoutLine: {'line': b'-- Looking for pthread_create in pthreads\n'}
+[21.711368] (-) TimerEvent: {}
+[21.811976] (-) TimerEvent: {}
+[21.912575] (-) TimerEvent: {}
+[21.932293] (resource_builder) StdoutLine: {'line': b'-- Looking for pthread_create in pthreads - not found\n'}
+[21.932641] (resource_builder) StdoutLine: {'line': b'-- Looking for pthread_create in pthread\n'}
+[22.012758] (-) TimerEvent: {}
+[22.114221] (-) TimerEvent: {}
+[22.214791] (-) TimerEvent: {}
+[22.278031] (resource_builder) StdoutLine: {'line': b'-- Looking for pthread_create in pthread - found\n'}
+[22.280634] (resource_builder) StdoutLine: {'line': b'-- Found Threads: TRUE  \n'}
+[22.291041] (resource_builder) StdoutLine: {'line': b'-- Found ament_cmake: 0.9.9 (/opt/ros/foxy/share/ament_cmake/cmake)\n'}
+[22.314946] (-) TimerEvent: {}
+[22.359908] (resource_builder) StdoutLine: {'line': b'-- Found PythonInterp: /usr/bin/python3 (found suitable version "3.8.10", minimum required is "3") \n'}
+[22.360369] (resource_builder) StdoutLine: {'line': b'-- Using PYTHON_EXECUTABLE: /usr/bin/python3\n'}
+[22.415495] (-) TimerEvent: {}
+[22.515897] (-) TimerEvent: {}
+[22.617207] (-) TimerEvent: {}
+[22.717826] (-) TimerEvent: {}
+[22.818761] (-) TimerEvent: {}
+[22.919356] (-) TimerEvent: {}
+[23.019906] (-) TimerEvent: {}
+[23.052290] (resource_builder) StdoutLine: {'line': b'-- Configuring done\n'}
+[23.069035] (resource_builder) StdoutLine: {'line': b'-- Generating done\n'}
+[23.073250] (resource_builder) StdoutLine: {'line': b'-- Build files have been written to: /home/ubuntu/workspace/Velizar/robotics_v1/build/resource_builder\n'}
+[23.083458] (resource_builder) CommandEnded: {'returncode': 0}
+[23.085411] (resource_builder) JobProgress: {'identifier': 'resource_builder', 'progress': 'build'}
+[23.085485] (resource_builder) Command: {'cmd': ['/usr/bin/cmake', '--build', '/home/ubuntu/workspace/Velizar/robotics_v1/build/resource_builder', '--', '-j2', '-l2'], 'cwd': '/home/ubuntu/workspace/Velizar/robotics_v1/build/resource_builder', 'env': OrderedDict([('LESSOPEN', '| /usr/bin/lesspipe %s'), ('USER', 'ubuntu'), ('SSH_AGENT_PID', '2008'), ('XDG_SESSION_TYPE', 'x11'), ('SHLVL', '1'), ('LD_LIBRARY_PATH', '/opt/ros/foxy/opt/yaml_cpp_vendor/lib:/opt/ros/foxy/opt/rviz_ogre_vendor/lib:/opt/ros/foxy/lib/x86_64-linux-gnu:/opt/ros/foxy/lib'), ('HOME', '/home/ubuntu'), ('DESKTOP_SESSION', 'ubuntu'), ('ROS_PYTHON_VERSION', '3'), ('GNOME_SHELL_SESSION_MODE', 'ubuntu'), ('GTK_MODULES', 'gail:atk-bridge'), ('PS1', '[\\u@\\h \\W]$(git_branch)$'), ('MANAGERPID', '1804'), ('DBUS_STARTER_BUS_TYPE', 'session'), ('DBUS_SESSION_BUS_ADDRESS', 'unix:path=/run/user/1000/bus,guid=3cf57ed13619e15624827b8a634826e6'), ('COLORTERM', 'truecolor'), ('IM_CONFIG_PHASE', '1'), ('ROS_DISTRO', 'foxy'), ('LOGNAME', 'ubuntu'), ('JOURNAL_STREAM', '8:36712'), ('_', '/usr/bin/colcon'), ('ROS_VERSION', '2'), ('XDG_SESSION_CLASS', 'user'), ('PKG_CONFIG_PATH', '/home/ubuntu/workspace/Velizar/robotics_v1/install/resource_utils/lib/x86_64-linux-gnu/pkgconfig:/home/ubuntu/workspace/Velizar/robotics_v1/install/resource_utils/lib/pkgconfig:/home/ubuntu/workspace/Velizar/robotics_v1/install/utils/lib/x86_64-linux-gnu/pkgconfig:/home/ubuntu/workspace/Velizar/robotics_v1/install/utils/lib/pkgconfig:/home/ubuntu/workspace/Velizar/robotics_v1/install/cmake_helpers/lib/x86_64-linux-gnu/pkgconfig:/home/ubuntu/workspace/Velizar/robotics_v1/install/cmake_helpers/lib/pkgconfig'), ('USERNAME', 'ubuntu'), ('TERM', 'xterm-256color'), ('GNOME_DESKTOP_SESSION_ID', 'this-is-deprecated'), ('ROS_LOCALHOST_ONLY', '0'), ('WINDOWPATH', '2'), ('PATH', '/opt/ros/foxy/bin:/home/ubuntu/.local/bin:/usr/local/sbin:/usr/local/bin:/usr/sbin:/usr/bin:/sbin:/bin:/usr/games:/usr/local/games:/snap/bin'), ('SESSION_MANAGER', 'local/ubuntu2004:@/tmp/.ICE-unix/2046,unix/ubuntu2004:/tmp/.ICE-unix/2046'), ('INVOCATION_ID', 'f4b6283573064975930a418b95e0ddb1'), ('XDG_MENU_PREFIX', 'gnome-'), ('GNOME_TERMINAL_SCREEN', '/org/gnome/Terminal/screen/018776d1_9c95_4512_aed8_b3ba208c7249'), ('XDG_RUNTIME_DIR', '/run/user/1000'), ('DISPLAY', ':0'), ('LANG', 'en_US.UTF-8'), ('XDG_CURRENT_DESKTOP', 'ubuntu:GNOME'), ('XMODIFIERS', '@im=ibus'), ('XDG_SESSION_DESKTOP', 'ubuntu'), ('XAUTHORITY', '/run/user/1000/gdm/Xauthority'), ('LS_COLORS', 'rs=0:di=01;34:ln=01;36:mh=00:pi=40;33:so=01;35:do=01;35:bd=40;33;01:cd=40;33;01:or=40;31;01:mi=00:su=37;41:sg=30;43:ca=30;41:tw=30;42:ow=34;42:st=37;44:ex=01;32:*.tar=01;31:*.tgz=01;31:*.arc=01;31:*.arj=01;31:*.taz=01;31:*.lha=01;31:*.lz4=01;31:*.lzh=01;31:*.lzma=01;31:*.tlz=01;31:*.txz=01;31:*.tzo=01;31:*.t7z=01;31:*.zip=01;31:*.z=01;31:*.dz=01;31:*.gz=01;31:*.lrz=01;31:*.lz=01;31:*.lzo=01;31:*.xz=01;31:*.zst=01;31:*.tzst=01;31:*.bz2=01;31:*.bz=01;31:*.tbz=01;31:*.tbz2=01;31:*.tz=01;31:*.deb=01;31:*.rpm=01;31:*.jar=01;31:*.war=01;31:*.ear=01;31:*.sar=01;31:*.rar=01;31:*.alz=01;31:*.ace=01;31:*.zoo=01;31:*.cpio=01;31:*.7z=01;31:*.rz=01;31:*.cab=01;31:*.wim=01;31:*.swm=01;31:*.dwm=01;31:*.esd=01;31:*.jpg=01;35:*.jpeg=01;35:*.mjpg=01;35:*.mjpeg=01;35:*.gif=01;35:*.bmp=01;35:*.pbm=01;35:*.pgm=01;35:*.ppm=01;35:*.tga=01;35:*.xbm=01;35:*.xpm=01;35:*.tif=01;35:*.tiff=01;35:*.png=01;35:*.svg=01;35:*.svgz=01;35:*.mng=01;35:*.pcx=01;35:*.mov=01;35:*.mpg=01;35:*.mpeg=01;35:*.m2v=01;35:*.mkv=01;35:*.webm=01;35:*.ogm=01;35:*.mp4=01;35:*.m4v=01;35:*.mp4v=01;35:*.vob=01;35:*.qt=01;35:*.nuv=01;35:*.wmv=01;35:*.asf=01;35:*.rm=01;35:*.rmvb=01;35:*.flc=01;35:*.avi=01;35:*.fli=01;35:*.flv=01;35:*.gl=01;35:*.dl=01;35:*.xcf=01;35:*.xwd=01;35:*.yuv=01;35:*.cgm=01;35:*.emf=01;35:*.ogv=01;35:*.ogx=01;35:*.aac=00;36:*.au=00;36:*.flac=00;36:*.m4a=00;36:*.mid=00;36:*.midi=00;36:*.mka=00;36:*.mp3=00;36:*.mpc=00;36:*.ogg=00;36:*.ra=00;36:*.wav=00;36:*.oga=00;36:*.opus=00;36:*.spx=00;36:*.xspf=00;36:'), ('GNOME_TERMINAL_SERVICE', ':1.82'), ('SSH_AUTH_SOCK', '/run/user/1000/keyring/ssh'), ('AMENT_PREFIX_PATH', '/opt/ros/foxy'), ('SHELL', '/bin/bash'), ('QT_ACCESSIBILITY', '1'), ('GDMSESSION', 'ubuntu'), ('LESSCLOSE', '/usr/bin/lesspipe %s %s'), ('GPG_AGENT_INFO', '/run/user/1000/gnupg/S.gpg-agent:0:1'), ('QT_IM_MODULE', 'ibus'), ('PWD', '/home/ubuntu/workspace/Velizar/robotics_v1/build/resource_builder'), ('LC_ALL', 'en_US.UTF-8'), ('XDG_CONFIG_DIRS', '/etc/xdg/xdg-ubuntu:/etc/xdg'), ('DBUS_STARTER_ADDRESS', 'unix:path=/run/user/1000/bus,guid=3cf57ed13619e15624827b8a634826e6'), ('XDG_DATA_DIRS', '/usr/share/ubuntu:/usr/local/share/:/usr/share/:/var/lib/snapd/desktop'), ('PYTHONPATH', '/opt/ros/foxy/lib/python3.8/site-packages'), ('COLCON', '1'), ('VTE_VERSION', '6003'), ('CMAKE_PREFIX_PATH', '/home/ubuntu/workspace/Velizar/robotics_v1/install/resource_utils:/home/ubuntu/workspace/Velizar/robotics_v1/install/utils:/home/ubuntu/workspace/Velizar/robotics_v1/install/cmake_helpers:/opt/ros/foxy')]), 'shell': False}
+[23.120109] (-) TimerEvent: {}
+[23.186554] (resource_builder) StdoutLine: {'line': b'\x1b[35m\x1b[1mScanning dependencies of target resource_builder\x1b[0m\n'}
+[23.220269] (-) TimerEvent: {}
+[23.221842] (resource_builder) StdoutLine: {'line': b'[ 16%] \x1b[32mBuilding CXX object CMakeFiles/resource_builder.dir/src/FileBuilder.cpp.o\x1b[0m\n'}
+[23.222796] (resource_builder) StdoutLine: {'line': b'[ 33%] \x1b[32mBuilding CXX object CMakeFiles/resource_builder.dir/src/FileParser.cpp.o\x1b[0m\n'}
+[23.320430] (-) TimerEvent: {}
+[23.421097] (-) TimerEvent: {}
+[23.521706] (-) TimerEvent: {}
+[23.622305] (-) TimerEvent: {}
+[23.722991] (-) TimerEvent: {}
+[23.823585] (-) TimerEvent: {}
+[23.924250] (-) TimerEvent: {}
+[24.024926] (-) TimerEvent: {}
+[24.125535] (-) TimerEvent: {}
+[24.226208] (-) TimerEvent: {}
+[24.326852] (-) TimerEvent: {}
+[24.427474] (-) TimerEvent: {}
+[24.528135] (-) TimerEvent: {}
+[24.628772] (-) TimerEvent: {}
+[24.729471] (-) TimerEvent: {}
+[24.738582] (resource_builder) StdoutLine: {'line': b'[ 50%] \x1b[32mBuilding CXX object CMakeFiles/resource_builder.dir/src/main.cpp.o\x1b[0m\n'}
+[24.829651] (-) TimerEvent: {}
+[24.930266] (-) TimerEvent: {}
+[24.987687] (resource_builder) StdoutLine: {'line': b'[ 66%] \x1b[32mBuilding CXX object CMakeFiles/resource_builder.dir/src/ResourceParser.cpp.o\x1b[0m\n'}
+[25.033620] (-) TimerEvent: {}
+[25.134186] (-) TimerEvent: {}
+[25.234842] (-) TimerEvent: {}
+[25.335463] (-) TimerEvent: {}
+[25.436082] (-) TimerEvent: {}
+[25.536673] (-) TimerEvent: {}
+[25.637267] (-) TimerEvent: {}
+[25.737919] (-) TimerEvent: {}
+[25.838552] (-) TimerEvent: {}
+[25.939218] (-) TimerEvent: {}
+[26.039822] (-) TimerEvent: {}
+[26.140406] (-) TimerEvent: {}
+[26.241000] (-) TimerEvent: {}
+[26.341755] (-) TimerEvent: {}
+[26.382212] (resource_builder) StdoutLine: {'line': b'[ 83%] \x1b[32mBuilding CXX object CMakeFiles/resource_builder.dir/src/SyntaxChecker.cpp.o\x1b[0m\n'}
+[26.442040] (-) TimerEvent: {}
+[26.542723] (-) TimerEvent: {}
+[26.643321] (-) TimerEvent: {}
+[26.743991] (-) TimerEvent: {}
+[26.844602] (-) TimerEvent: {}
+[26.945231] (-) TimerEvent: {}
+[27.045859] (-) TimerEvent: {}
+[27.146536] (-) TimerEvent: {}
+[27.247526] (-) TimerEvent: {}
+[27.348083] (-) TimerEvent: {}
+[27.426365] (resource_builder) StdoutLine: {'line': b'[100%] \x1b[32m\x1b[1mLinking CXX executable resource_builder\x1b[0m\n'}
+[27.448213] (-) TimerEvent: {}
+[27.548868] (-) TimerEvent: {}
+[27.649342] (-) TimerEvent: {}
+[27.749739] (-) TimerEvent: {}
+[27.817213] (resource_builder) StdoutLine: {'line': b'[100%] Built target resource_builder\n'}
+[27.845406] (resource_builder) CommandEnded: {'returncode': 0}
+[27.849912] (-) TimerEvent: {}
+[27.936278] (resource_builder) JobProgress: {'identifier': 'resource_builder', 'progress': 'install'}
+[27.936855] (resource_builder) Command: {'cmd': ['/usr/bin/cmake', '--install', '/home/ubuntu/workspace/Velizar/robotics_v1/build/resource_builder'], 'cwd': '/home/ubuntu/workspace/Velizar/robotics_v1/build/resource_builder', 'env': OrderedDict([('LESSOPEN', '| /usr/bin/lesspipe %s'), ('USER', 'ubuntu'), ('SSH_AGENT_PID', '2008'), ('XDG_SESSION_TYPE', 'x11'), ('SHLVL', '1'), ('LD_LIBRARY_PATH', '/opt/ros/foxy/opt/yaml_cpp_vendor/lib:/opt/ros/foxy/opt/rviz_ogre_vendor/lib:/opt/ros/foxy/lib/x86_64-linux-gnu:/opt/ros/foxy/lib'), ('HOME', '/home/ubuntu'), ('DESKTOP_SESSION', 'ubuntu'), ('ROS_PYTHON_VERSION', '3'), ('GNOME_SHELL_SESSION_MODE', 'ubuntu'), ('GTK_MODULES', 'gail:atk-bridge'), ('PS1', '[\\u@\\h \\W]$(git_branch)$'), ('MANAGERPID', '1804'), ('DBUS_STARTER_BUS_TYPE', 'session'), ('DBUS_SESSION_BUS_ADDRESS', 'unix:path=/run/user/1000/bus,guid=3cf57ed13619e15624827b8a634826e6'), ('COLORTERM', 'truecolor'), ('IM_CONFIG_PHASE', '1'), ('ROS_DISTRO', 'foxy'), ('LOGNAME', 'ubuntu'), ('JOURNAL_STREAM', '8:36712'), ('_', '/usr/bin/colcon'), ('ROS_VERSION', '2'), ('XDG_SESSION_CLASS', 'user'), ('PKG_CONFIG_PATH', '/home/ubuntu/workspace/Velizar/robotics_v1/install/resource_utils/lib/x86_64-linux-gnu/pkgconfig:/home/ubuntu/workspace/Velizar/robotics_v1/install/resource_utils/lib/pkgconfig:/home/ubuntu/workspace/Velizar/robotics_v1/install/utils/lib/x86_64-linux-gnu/pkgconfig:/home/ubuntu/workspace/Velizar/robotics_v1/install/utils/lib/pkgconfig:/home/ubuntu/workspace/Velizar/robotics_v1/install/cmake_helpers/lib/x86_64-linux-gnu/pkgconfig:/home/ubuntu/workspace/Velizar/robotics_v1/install/cmake_helpers/lib/pkgconfig'), ('USERNAME', 'ubuntu'), ('TERM', 'xterm-256color'), ('GNOME_DESKTOP_SESSION_ID', 'this-is-deprecated'), ('ROS_LOCALHOST_ONLY', '0'), ('WINDOWPATH', '2'), ('PATH', '/opt/ros/foxy/bin:/home/ubuntu/.local/bin:/usr/local/sbin:/usr/local/bin:/usr/sbin:/usr/bin:/sbin:/bin:/usr/games:/usr/local/games:/snap/bin'), ('SESSION_MANAGER', 'local/ubuntu2004:@/tmp/.ICE-unix/2046,unix/ubuntu2004:/tmp/.ICE-unix/2046'), ('INVOCATION_ID', 'f4b6283573064975930a418b95e0ddb1'), ('XDG_MENU_PREFIX', 'gnome-'), ('GNOME_TERMINAL_SCREEN', '/org/gnome/Terminal/screen/018776d1_9c95_4512_aed8_b3ba208c7249'), ('XDG_RUNTIME_DIR', '/run/user/1000'), ('DISPLAY', ':0'), ('LANG', 'en_US.UTF-8'), ('XDG_CURRENT_DESKTOP', 'ubuntu:GNOME'), ('XMODIFIERS', '@im=ibus'), ('XDG_SESSION_DESKTOP', 'ubuntu'), ('XAUTHORITY', '/run/user/1000/gdm/Xauthority'), ('LS_COLORS', 'rs=0:di=01;34:ln=01;36:mh=00:pi=40;33:so=01;35:do=01;35:bd=40;33;01:cd=40;33;01:or=40;31;01:mi=00:su=37;41:sg=30;43:ca=30;41:tw=30;42:ow=34;42:st=37;44:ex=01;32:*.tar=01;31:*.tgz=01;31:*.arc=01;31:*.arj=01;31:*.taz=01;31:*.lha=01;31:*.lz4=01;31:*.lzh=01;31:*.lzma=01;31:*.tlz=01;31:*.txz=01;31:*.tzo=01;31:*.t7z=01;31:*.zip=01;31:*.z=01;31:*.dz=01;31:*.gz=01;31:*.lrz=01;31:*.lz=01;31:*.lzo=01;31:*.xz=01;31:*.zst=01;31:*.tzst=01;31:*.bz2=01;31:*.bz=01;31:*.tbz=01;31:*.tbz2=01;31:*.tz=01;31:*.deb=01;31:*.rpm=01;31:*.jar=01;31:*.war=01;31:*.ear=01;31:*.sar=01;31:*.rar=01;31:*.alz=01;31:*.ace=01;31:*.zoo=01;31:*.cpio=01;31:*.7z=01;31:*.rz=01;31:*.cab=01;31:*.wim=01;31:*.swm=01;31:*.dwm=01;31:*.esd=01;31:*.jpg=01;35:*.jpeg=01;35:*.mjpg=01;35:*.mjpeg=01;35:*.gif=01;35:*.bmp=01;35:*.pbm=01;35:*.pgm=01;35:*.ppm=01;35:*.tga=01;35:*.xbm=01;35:*.xpm=01;35:*.tif=01;35:*.tiff=01;35:*.png=01;35:*.svg=01;35:*.svgz=01;35:*.mng=01;35:*.pcx=01;35:*.mov=01;35:*.mpg=01;35:*.mpeg=01;35:*.m2v=01;35:*.mkv=01;35:*.webm=01;35:*.ogm=01;35:*.mp4=01;35:*.m4v=01;35:*.mp4v=01;35:*.vob=01;35:*.qt=01;35:*.nuv=01;35:*.wmv=01;35:*.asf=01;35:*.rm=01;35:*.rmvb=01;35:*.flc=01;35:*.avi=01;35:*.fli=01;35:*.flv=01;35:*.gl=01;35:*.dl=01;35:*.xcf=01;35:*.xwd=01;35:*.yuv=01;35:*.cgm=01;35:*.emf=01;35:*.ogv=01;35:*.ogx=01;35:*.aac=00;36:*.au=00;36:*.flac=00;36:*.m4a=00;36:*.mid=00;36:*.midi=00;36:*.mka=00;36:*.mp3=00;36:*.mpc=00;36:*.ogg=00;36:*.ra=00;36:*.wav=00;36:*.oga=00;36:*.opus=00;36:*.spx=00;36:*.xspf=00;36:'), ('GNOME_TERMINAL_SERVICE', ':1.82'), ('SSH_AUTH_SOCK', '/run/user/1000/keyring/ssh'), ('AMENT_PREFIX_PATH', '/opt/ros/foxy'), ('SHELL', '/bin/bash'), ('QT_ACCESSIBILITY', '1'), ('GDMSESSION', 'ubuntu'), ('LESSCLOSE', '/usr/bin/lesspipe %s %s'), ('GPG_AGENT_INFO', '/run/user/1000/gnupg/S.gpg-agent:0:1'), ('QT_IM_MODULE', 'ibus'), ('PWD', '/home/ubuntu/workspace/Velizar/robotics_v1/build/resource_builder'), ('LC_ALL', 'en_US.UTF-8'), ('XDG_CONFIG_DIRS', '/etc/xdg/xdg-ubuntu:/etc/xdg'), ('DBUS_STARTER_ADDRESS', 'unix:path=/run/user/1000/bus,guid=3cf57ed13619e15624827b8a634826e6'), ('XDG_DATA_DIRS', '/usr/share/ubuntu:/usr/local/share/:/usr/share/:/var/lib/snapd/desktop'), ('PYTHONPATH', '/opt/ros/foxy/lib/python3.8/site-packages'), ('COLCON', '1'), ('VTE_VERSION', '6003'), ('CMAKE_PREFIX_PATH', '/home/ubuntu/workspace/Velizar/robotics_v1/install/resource_utils:/home/ubuntu/workspace/Velizar/robotics_v1/install/utils:/home/ubuntu/workspace/Velizar/robotics_v1/install/cmake_helpers:/opt/ros/foxy')]), 'shell': False}
+[27.950069] (-) TimerEvent: {}
+[27.963152] (resource_builder) StdoutLine: {'line': b'-- Install configuration: "Debug"\n'}
+[27.963506] (resource_builder) StdoutLine: {'line': b'-- Installing: /home/ubuntu/workspace/Velizar/robotics_v1/install/resource_builder/share/resource_builder/package.xml\n'}
+[27.964146] (resource_builder) StdoutLine: {'line': b'-- Installing: /home/ubuntu/workspace/Velizar/robotics_v1/install/resource_builder/lib/resource_builder/resource_builder\n'}
+[27.967611] (resource_builder) StdoutLine: {'line': b'-- Installing: /home/ubuntu/workspace/Velizar/robotics_v1/install/resource_builder/share/ament_index/resource_index/packages/resource_builder\n'}
+[27.968068] (resource_builder) StdoutLine: {'line': b'-- Installing: /home/ubuntu/workspace/Velizar/robotics_v1/install/resource_builder/share/resource_builder/hook/ament_prefix_path.dsv\n'}
+[27.968398] (resource_builder) StdoutLine: {'line': b'-- Installing: /home/ubuntu/workspace/Velizar/robotics_v1/install/resource_builder/share/resource_builder/hook/ros_package_path.dsv\n'}
+[27.968919] (resource_builder) StdoutLine: {'line': b'-- Installing: /home/ubuntu/workspace/Velizar/robotics_v1/install/resource_builder/share/ament_index/resource_index/package_run_dependencies/resource_builder\n'}
+[27.969367] (resource_builder) StdoutLine: {'line': b'-- Installing: /home/ubuntu/workspace/Velizar/robotics_v1/install/resource_builder/share/ament_index/resource_index/parent_prefix_path/resource_builder\n'}
+[27.969823] (resource_builder) StdoutLine: {'line': b'-- Installing: /home/ubuntu/workspace/Velizar/robotics_v1/install/resource_builder/share/resource_builder/environment/ament_prefix_path.sh\n'}
+[27.970163] (resource_builder) StdoutLine: {'line': b'-- Installing: /home/ubuntu/workspace/Velizar/robotics_v1/install/resource_builder/share/resource_builder/environment/ament_prefix_path.dsv\n'}
+[27.970511] (resource_builder) StdoutLine: {'line': b'-- Installing: /home/ubuntu/workspace/Velizar/robotics_v1/install/resource_builder/share/resource_builder/environment/path.sh\n'}
+[27.970904] (resource_builder) StdoutLine: {'line': b'-- Installing: /home/ubuntu/workspace/Velizar/robotics_v1/install/resource_builder/share/resource_builder/environment/path.dsv\n'}
+[27.971231] (resource_builder) StdoutLine: {'line': b'-- Installing: /home/ubuntu/workspace/Velizar/robotics_v1/install/resource_builder/share/resource_builder/local_setup.bash\n'}
+[27.971584] (resource_builder) StdoutLine: {'line': b'-- Installing: /home/ubuntu/workspace/Velizar/robotics_v1/install/resource_builder/share/resource_builder/local_setup.sh\n'}
+[27.971957] (resource_builder) StdoutLine: {'line': b'-- Installing: /home/ubuntu/workspace/Velizar/robotics_v1/install/resource_builder/share/resource_builder/local_setup.zsh\n'}
+[27.972274] (resource_builder) StdoutLine: {'line': b'-- Installing: /home/ubuntu/workspace/Velizar/robotics_v1/install/resource_builder/share/resource_builder/local_setup.dsv\n'}
+[27.972608] (resource_builder) StdoutLine: {'line': b'-- Installing: /home/ubuntu/workspace/Velizar/robotics_v1/install/resource_builder/share/resource_builder/package.dsv\n'}
+[27.972960] (resource_builder) StdoutLine: {'line': b'-- Installing: /home/ubuntu/workspace/Velizar/robotics_v1/install/resource_builder/share/ament_index/resource_index/packages/resource_builder\n'}
+[27.973394] (resource_builder) StdoutLine: {'line': b'-- Installing: /home/ubuntu/workspace/Velizar/robotics_v1/install/resource_builder/share/resource_builder/cmake/resource_builderConfig.cmake\n'}
+[27.973733] (resource_builder) StdoutLine: {'line': b'-- Installing: /home/ubuntu/workspace/Velizar/robotics_v1/install/resource_builder/share/resource_builder/cmake/resource_builderConfig-version.cmake\n'}
+[27.974115] (resource_builder) StdoutLine: {'line': b'-- Up-to-date: /home/ubuntu/workspace/Velizar/robotics_v1/install/resource_builder/share/resource_builder/package.xml\n'}
+[27.974409] (resource_builder) StdoutLine: {'line': b'-- Installing: /home/ubuntu/workspace/Velizar/robotics_v1/install/resource_builder/bin/resource_builder\n'}
+[27.979026] (resource_builder) StdoutLine: {'line': b'-- Installing: /home/ubuntu/workspace/Velizar/robotics_v1/install/resource_builder/include\n'}
+[27.979436] (resource_builder) StdoutLine: {'line': b'-- Installing: /home/ubuntu/workspace/Velizar/robotics_v1/install/resource_builder/include/resource_builder\n'}
+[27.979718] (resource_builder) StdoutLine: {'line': b'-- Installing: /home/ubuntu/workspace/Velizar/robotics_v1/install/resource_builder/include/resource_builder/FileParser.h\n'}
+[27.979975] (resource_builder) StdoutLine: {'line': b'-- Installing: /home/ubuntu/workspace/Velizar/robotics_v1/install/resource_builder/include/resource_builder/FileBuilder.h\n'}
+[27.980236] (resource_builder) StdoutLine: {'line': b'-- Installing: /home/ubuntu/workspace/Velizar/robotics_v1/install/resource_builder/include/resource_builder/SyntaxChecker.h\n'}
+[27.980445] (resource_builder) StdoutLine: {'line': b'-- Installing: /home/ubuntu/workspace/Velizar/robotics_v1/install/resource_builder/include/resource_builder/ResourceParser.h\n'}
+[27.981271] (resource_builder) StdoutLine: {'line': b'-- Installing: /home/ubuntu/workspace/Velizar/robotics_v1/install/resource_builder/lib/cmake/resource_builder/resource_builderTargets.cmake\n'}
+[27.982011] (resource_builder) StdoutLine: {'line': b'-- Installing: /home/ubuntu/workspace/Velizar/robotics_v1/install/resource_builder/lib/cmake/resource_builder/resource_builderTargets-debug.cmake\n'}
+[27.982746] (resource_builder) StdoutLine: {'line': b'-- Installing: /home/ubuntu/workspace/Velizar/robotics_v1/install/resource_builder/lib/cmake/resource_builder/resource_builderConfig.cmake\n'}
+[27.993011] (resource_builder) CommandEnded: {'returncode': 0}
+[28.050420] (-) TimerEvent: {}
+[28.108753] (resource_builder) JobEnded: {'identifier': 'resource_builder', 'rc': 0}
+[28.109824] (-) EventReactorShutdown: {}

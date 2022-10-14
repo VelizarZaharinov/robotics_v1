@@ -1,0 +1,168 @@
+[0.028s] Invoking command in '/home/ubuntu/workspace/Velizar/robotics_v1/build/ur_description': CMAKE_PREFIX_PATH=/opt/ros/foxy PS1=[\u@\h \W]$(git_branch)$ /usr/bin/cmake /home/ubuntu/workspace/Velizar/robotics_v1/src/ur_driver/Universal_Robots_ROS2_Driver/ur_description -DCMAKE_BUILD_TYPE=Debug -DCMAKE_CXX_COMPILER=/usr/bin/clang++ -DAMENT_CMAKE_SYMLINK_INSTALL=1 -DCMAKE_INSTALL_PREFIX=/home/ubuntu/workspace/Velizar/robotics_v1/install/ur_description
+[0.217s] -- The C compiler identification is GNU 9.4.0
+[0.490s] -- The CXX compiler identification is Clang 10.0.0
+[0.508s] -- Check for working C compiler: /usr/bin/cc
+[0.704s] -- Check for working C compiler: /usr/bin/cc -- works
+[0.708s] -- Detecting C compiler ABI info
+[0.907s] -- Detecting C compiler ABI info - done
+[0.961s] -- Detecting C compile features
+[0.964s] -- Detecting C compile features - done
+[0.975s] -- Check for working CXX compiler: /usr/bin/clang++
+[1.313s] -- Check for working CXX compiler: /usr/bin/clang++ -- works
+[1.317s] -- Detecting CXX compiler ABI info
+[1.661s] -- Detecting CXX compiler ABI info - done
+[1.711s] -- Detecting CXX compile features
+[1.714s] -- Detecting CXX compile features - done
+[1.720s] -- Found ament_cmake: 0.9.9 (/opt/ros/foxy/share/ament_cmake/cmake)
+[1.780s] -- Found PythonInterp: /usr/bin/python3 (found suitable version "3.8.10", minimum required is "3") 
+[1.781s] -- Using PYTHON_EXECUTABLE: /usr/bin/python3
+[2.236s] -- Override CMake install command with custom implementation using symlinks instead of copying resources
+[2.459s] -- Configuring done
+[2.466s] -- Generating done
+[2.470s] -- Build files have been written to: /home/ubuntu/workspace/Velizar/robotics_v1/build/ur_description
+[2.482s] Invoked command in '/home/ubuntu/workspace/Velizar/robotics_v1/build/ur_description' returned '0': CMAKE_PREFIX_PATH=/opt/ros/foxy PS1=[\u@\h \W]$(git_branch)$ /usr/bin/cmake /home/ubuntu/workspace/Velizar/robotics_v1/src/ur_driver/Universal_Robots_ROS2_Driver/ur_description -DCMAKE_BUILD_TYPE=Debug -DCMAKE_CXX_COMPILER=/usr/bin/clang++ -DAMENT_CMAKE_SYMLINK_INSTALL=1 -DCMAKE_INSTALL_PREFIX=/home/ubuntu/workspace/Velizar/robotics_v1/install/ur_description
+[2.485s] Invoking command in '/home/ubuntu/workspace/Velizar/robotics_v1/build/ur_description': CMAKE_PREFIX_PATH=/opt/ros/foxy PS1=[\u@\h \W]$(git_branch)$ /usr/bin/cmake --build /home/ubuntu/workspace/Velizar/robotics_v1/build/ur_description -- -j2 -l2
+[2.594s] Invoked command in '/home/ubuntu/workspace/Velizar/robotics_v1/build/ur_description' returned '0': CMAKE_PREFIX_PATH=/opt/ros/foxy PS1=[\u@\h \W]$(git_branch)$ /usr/bin/cmake --build /home/ubuntu/workspace/Velizar/robotics_v1/build/ur_description -- -j2 -l2
+[2.652s] Invoking command in '/home/ubuntu/workspace/Velizar/robotics_v1/build/ur_description': CMAKE_PREFIX_PATH=/opt/ros/foxy PS1=[\u@\h \W]$(git_branch)$ /usr/bin/cmake --install /home/ubuntu/workspace/Velizar/robotics_v1/build/ur_description
+[2.677s] -- Install configuration: "Debug"
+[2.679s] -- Execute custom install script
+[2.682s] -- Symlinking: /home/ubuntu/workspace/Velizar/robotics_v1/install/ur_description/share/ur_description/config/initial_positions.yaml
+[2.707s] -- Symlinking: /home/ubuntu/workspace/Velizar/robotics_v1/install/ur_description/share/ur_description/config/ur10/default_kinematics.yaml
+[2.729s] -- Symlinking: /home/ubuntu/workspace/Velizar/robotics_v1/install/ur_description/share/ur_description/config/ur10/joint_limits.yaml
+[2.752s] -- Symlinking: /home/ubuntu/workspace/Velizar/robotics_v1/install/ur_description/share/ur_description/config/ur10/physical_parameters.yaml
+[2.774s] -- Symlinking: /home/ubuntu/workspace/Velizar/robotics_v1/install/ur_description/share/ur_description/config/ur10/visual_parameters.yaml
+[2.797s] -- Symlinking: /home/ubuntu/workspace/Velizar/robotics_v1/install/ur_description/share/ur_description/config/ur10e/default_kinematics.yaml
+[2.821s] -- Symlinking: /home/ubuntu/workspace/Velizar/robotics_v1/install/ur_description/share/ur_description/config/ur10e/joint_limits.yaml
+[2.844s] -- Symlinking: /home/ubuntu/workspace/Velizar/robotics_v1/install/ur_description/share/ur_description/config/ur10e/physical_parameters.yaml
+[2.866s] -- Symlinking: /home/ubuntu/workspace/Velizar/robotics_v1/install/ur_description/share/ur_description/config/ur10e/visual_parameters.yaml
+[2.889s] -- Symlinking: /home/ubuntu/workspace/Velizar/robotics_v1/install/ur_description/share/ur_description/config/ur16e/default_kinematics.yaml
+[2.913s] -- Symlinking: /home/ubuntu/workspace/Velizar/robotics_v1/install/ur_description/share/ur_description/config/ur16e/joint_limits.yaml
+[2.938s] -- Symlinking: /home/ubuntu/workspace/Velizar/robotics_v1/install/ur_description/share/ur_description/config/ur16e/physical_parameters.yaml
+[2.962s] -- Symlinking: /home/ubuntu/workspace/Velizar/robotics_v1/install/ur_description/share/ur_description/config/ur16e/visual_parameters.yaml
+[2.985s] -- Symlinking: /home/ubuntu/workspace/Velizar/robotics_v1/install/ur_description/share/ur_description/config/ur3/default_kinematics.yaml
+[3.010s] -- Symlinking: /home/ubuntu/workspace/Velizar/robotics_v1/install/ur_description/share/ur_description/config/ur3/joint_limits.yaml
+[3.032s] -- Symlinking: /home/ubuntu/workspace/Velizar/robotics_v1/install/ur_description/share/ur_description/config/ur3/physical_parameters.yaml
+[3.054s] -- Symlinking: /home/ubuntu/workspace/Velizar/robotics_v1/install/ur_description/share/ur_description/config/ur3/visual_parameters.yaml
+[3.082s] -- Symlinking: /home/ubuntu/workspace/Velizar/robotics_v1/install/ur_description/share/ur_description/config/ur3e/default_kinematics.yaml
+[3.107s] -- Symlinking: /home/ubuntu/workspace/Velizar/robotics_v1/install/ur_description/share/ur_description/config/ur3e/joint_limits.yaml
+[3.129s] -- Symlinking: /home/ubuntu/workspace/Velizar/robotics_v1/install/ur_description/share/ur_description/config/ur3e/physical_parameters.yaml
+[3.154s] -- Symlinking: /home/ubuntu/workspace/Velizar/robotics_v1/install/ur_description/share/ur_description/config/ur3e/visual_parameters.yaml
+[3.177s] -- Symlinking: /home/ubuntu/workspace/Velizar/robotics_v1/install/ur_description/share/ur_description/config/ur5/default_kinematics.yaml
+[3.200s] -- Symlinking: /home/ubuntu/workspace/Velizar/robotics_v1/install/ur_description/share/ur_description/config/ur5/joint_limits.yaml
+[3.224s] -- Symlinking: /home/ubuntu/workspace/Velizar/robotics_v1/install/ur_description/share/ur_description/config/ur5/physical_parameters.yaml
+[3.246s] -- Symlinking: /home/ubuntu/workspace/Velizar/robotics_v1/install/ur_description/share/ur_description/config/ur5/visual_parameters.yaml
+[3.269s] -- Symlinking: /home/ubuntu/workspace/Velizar/robotics_v1/install/ur_description/share/ur_description/config/ur5e/default_kinematics.yaml
+[3.292s] -- Symlinking: /home/ubuntu/workspace/Velizar/robotics_v1/install/ur_description/share/ur_description/config/ur5e/joint_limits.yaml
+[3.317s] -- Symlinking: /home/ubuntu/workspace/Velizar/robotics_v1/install/ur_description/share/ur_description/config/ur5e/physical_parameters.yaml
+[3.340s] -- Symlinking: /home/ubuntu/workspace/Velizar/robotics_v1/install/ur_description/share/ur_description/config/ur5e/visual_parameters.yaml
+[3.364s] -- Symlinking: /home/ubuntu/workspace/Velizar/robotics_v1/install/ur_description/share/ur_description/launch/view_ur.launch.py
+[3.392s] -- Symlinking: /home/ubuntu/workspace/Velizar/robotics_v1/install/ur_description/share/ur_description/meshes/ur10/collision/base.stl
+[3.418s] -- Symlinking: /home/ubuntu/workspace/Velizar/robotics_v1/install/ur_description/share/ur_description/meshes/ur10/collision/forearm.stl
+[3.443s] -- Symlinking: /home/ubuntu/workspace/Velizar/robotics_v1/install/ur_description/share/ur_description/meshes/ur10/collision/shoulder.stl
+[3.466s] -- Symlinking: /home/ubuntu/workspace/Velizar/robotics_v1/install/ur_description/share/ur_description/meshes/ur10/collision/upperarm.stl
+[3.490s] -- Symlinking: /home/ubuntu/workspace/Velizar/robotics_v1/install/ur_description/share/ur_description/meshes/ur10/collision/wrist1.stl
+[3.515s] -- Symlinking: /home/ubuntu/workspace/Velizar/robotics_v1/install/ur_description/share/ur_description/meshes/ur10/collision/wrist2.stl
+[3.538s] -- Symlinking: /home/ubuntu/workspace/Velizar/robotics_v1/install/ur_description/share/ur_description/meshes/ur10/collision/wrist3.stl
+[3.561s] -- Symlinking: /home/ubuntu/workspace/Velizar/robotics_v1/install/ur_description/share/ur_description/meshes/ur10/visual/base.dae
+[3.584s] -- Symlinking: /home/ubuntu/workspace/Velizar/robotics_v1/install/ur_description/share/ur_description/meshes/ur10/visual/forearm.dae
+[3.608s] -- Symlinking: /home/ubuntu/workspace/Velizar/robotics_v1/install/ur_description/share/ur_description/meshes/ur10/visual/shoulder.dae
+[3.631s] -- Symlinking: /home/ubuntu/workspace/Velizar/robotics_v1/install/ur_description/share/ur_description/meshes/ur10/visual/upperarm.dae
+[3.654s] -- Symlinking: /home/ubuntu/workspace/Velizar/robotics_v1/install/ur_description/share/ur_description/meshes/ur10/visual/wrist1.dae
+[3.677s] -- Symlinking: /home/ubuntu/workspace/Velizar/robotics_v1/install/ur_description/share/ur_description/meshes/ur10/visual/wrist2.dae
+[3.699s] -- Symlinking: /home/ubuntu/workspace/Velizar/robotics_v1/install/ur_description/share/ur_description/meshes/ur10/visual/wrist3.dae
+[3.722s] -- Symlinking: /home/ubuntu/workspace/Velizar/robotics_v1/install/ur_description/share/ur_description/meshes/ur10e/collision/base.stl
+[3.748s] -- Symlinking: /home/ubuntu/workspace/Velizar/robotics_v1/install/ur_description/share/ur_description/meshes/ur10e/collision/forearm.stl
+[3.772s] -- Symlinking: /home/ubuntu/workspace/Velizar/robotics_v1/install/ur_description/share/ur_description/meshes/ur10e/collision/shoulder.stl
+[3.794s] -- Symlinking: /home/ubuntu/workspace/Velizar/robotics_v1/install/ur_description/share/ur_description/meshes/ur10e/collision/upperarm.stl
+[3.820s] -- Symlinking: /home/ubuntu/workspace/Velizar/robotics_v1/install/ur_description/share/ur_description/meshes/ur10e/collision/wrist1.stl
+[3.843s] -- Symlinking: /home/ubuntu/workspace/Velizar/robotics_v1/install/ur_description/share/ur_description/meshes/ur10e/collision/wrist2.stl
+[3.866s] -- Symlinking: /home/ubuntu/workspace/Velizar/robotics_v1/install/ur_description/share/ur_description/meshes/ur10e/collision/wrist3.stl
+[3.890s] -- Symlinking: /home/ubuntu/workspace/Velizar/robotics_v1/install/ur_description/share/ur_description/meshes/ur10e/visual/base.dae
+[3.915s] -- Symlinking: /home/ubuntu/workspace/Velizar/robotics_v1/install/ur_description/share/ur_description/meshes/ur10e/visual/forearm.dae
+[3.938s] -- Symlinking: /home/ubuntu/workspace/Velizar/robotics_v1/install/ur_description/share/ur_description/meshes/ur10e/visual/shoulder.dae
+[3.961s] -- Symlinking: /home/ubuntu/workspace/Velizar/robotics_v1/install/ur_description/share/ur_description/meshes/ur10e/visual/upperarm.dae
+[3.984s] -- Symlinking: /home/ubuntu/workspace/Velizar/robotics_v1/install/ur_description/share/ur_description/meshes/ur10e/visual/wrist1.dae
+[4.009s] -- Symlinking: /home/ubuntu/workspace/Velizar/robotics_v1/install/ur_description/share/ur_description/meshes/ur10e/visual/wrist2.dae
+[4.031s] -- Symlinking: /home/ubuntu/workspace/Velizar/robotics_v1/install/ur_description/share/ur_description/meshes/ur10e/visual/wrist3.dae
+[4.055s] -- Symlinking: /home/ubuntu/workspace/Velizar/robotics_v1/install/ur_description/share/ur_description/meshes/ur16e/collision/forearm.stl
+[4.079s] -- Symlinking: /home/ubuntu/workspace/Velizar/robotics_v1/install/ur_description/share/ur_description/meshes/ur16e/collision/upperarm.stl
+[4.103s] -- Symlinking: /home/ubuntu/workspace/Velizar/robotics_v1/install/ur_description/share/ur_description/meshes/ur16e/visual/forearm.dae
+[4.134s] -- Symlinking: /home/ubuntu/workspace/Velizar/robotics_v1/install/ur_description/share/ur_description/meshes/ur16e/visual/upperarm.dae
+[4.157s] -- Symlinking: /home/ubuntu/workspace/Velizar/robotics_v1/install/ur_description/share/ur_description/meshes/ur3/collision/base.stl
+[4.180s] -- Symlinking: /home/ubuntu/workspace/Velizar/robotics_v1/install/ur_description/share/ur_description/meshes/ur3/collision/forearm.stl
+[4.204s] -- Symlinking: /home/ubuntu/workspace/Velizar/robotics_v1/install/ur_description/share/ur_description/meshes/ur3/collision/shoulder.stl
+[4.229s] -- Symlinking: /home/ubuntu/workspace/Velizar/robotics_v1/install/ur_description/share/ur_description/meshes/ur3/collision/upperarm.stl
+[4.260s] -- Symlinking: /home/ubuntu/workspace/Velizar/robotics_v1/install/ur_description/share/ur_description/meshes/ur3/collision/wrist1.stl
+[4.282s] -- Symlinking: /home/ubuntu/workspace/Velizar/robotics_v1/install/ur_description/share/ur_description/meshes/ur3/collision/wrist2.stl
+[4.306s] -- Symlinking: /home/ubuntu/workspace/Velizar/robotics_v1/install/ur_description/share/ur_description/meshes/ur3/collision/wrist3.stl
+[4.329s] -- Symlinking: /home/ubuntu/workspace/Velizar/robotics_v1/install/ur_description/share/ur_description/meshes/ur3/visual/base.dae
+[4.354s] -- Symlinking: /home/ubuntu/workspace/Velizar/robotics_v1/install/ur_description/share/ur_description/meshes/ur3/visual/forearm.dae
+[4.377s] -- Symlinking: /home/ubuntu/workspace/Velizar/robotics_v1/install/ur_description/share/ur_description/meshes/ur3/visual/shoulder.dae
+[4.400s] -- Symlinking: /home/ubuntu/workspace/Velizar/robotics_v1/install/ur_description/share/ur_description/meshes/ur3/visual/upperarm.dae
+[4.425s] -- Symlinking: /home/ubuntu/workspace/Velizar/robotics_v1/install/ur_description/share/ur_description/meshes/ur3/visual/wrist1.dae
+[4.448s] -- Symlinking: /home/ubuntu/workspace/Velizar/robotics_v1/install/ur_description/share/ur_description/meshes/ur3/visual/wrist2.dae
+[4.470s] -- Symlinking: /home/ubuntu/workspace/Velizar/robotics_v1/install/ur_description/share/ur_description/meshes/ur3/visual/wrist3.dae
+[4.493s] -- Symlinking: /home/ubuntu/workspace/Velizar/robotics_v1/install/ur_description/share/ur_description/meshes/ur3e/collision/base.stl
+[4.517s] -- Symlinking: /home/ubuntu/workspace/Velizar/robotics_v1/install/ur_description/share/ur_description/meshes/ur3e/collision/forearm.stl
+[4.541s] -- Symlinking: /home/ubuntu/workspace/Velizar/robotics_v1/install/ur_description/share/ur_description/meshes/ur3e/collision/shoulder.stl
+[4.564s] -- Symlinking: /home/ubuntu/workspace/Velizar/robotics_v1/install/ur_description/share/ur_description/meshes/ur3e/collision/upperarm.stl
+[4.587s] -- Symlinking: /home/ubuntu/workspace/Velizar/robotics_v1/install/ur_description/share/ur_description/meshes/ur3e/collision/wrist1.stl
+[4.611s] -- Symlinking: /home/ubuntu/workspace/Velizar/robotics_v1/install/ur_description/share/ur_description/meshes/ur3e/collision/wrist2.stl
+[4.633s] -- Symlinking: /home/ubuntu/workspace/Velizar/robotics_v1/install/ur_description/share/ur_description/meshes/ur3e/collision/wrist3.stl
+[4.656s] -- Symlinking: /home/ubuntu/workspace/Velizar/robotics_v1/install/ur_description/share/ur_description/meshes/ur3e/visual/base.dae
+[4.679s] -- Symlinking: /home/ubuntu/workspace/Velizar/robotics_v1/install/ur_description/share/ur_description/meshes/ur3e/visual/forearm.dae
+[4.702s] -- Symlinking: /home/ubuntu/workspace/Velizar/robotics_v1/install/ur_description/share/ur_description/meshes/ur3e/visual/shoulder.dae
+[4.727s] -- Symlinking: /home/ubuntu/workspace/Velizar/robotics_v1/install/ur_description/share/ur_description/meshes/ur3e/visual/upperarm.dae
+[4.749s] -- Symlinking: /home/ubuntu/workspace/Velizar/robotics_v1/install/ur_description/share/ur_description/meshes/ur3e/visual/wrist1.dae
+[4.772s] -- Symlinking: /home/ubuntu/workspace/Velizar/robotics_v1/install/ur_description/share/ur_description/meshes/ur3e/visual/wrist2.dae
+[4.794s] -- Symlinking: /home/ubuntu/workspace/Velizar/robotics_v1/install/ur_description/share/ur_description/meshes/ur3e/visual/wrist3.dae
+[4.819s] -- Symlinking: /home/ubuntu/workspace/Velizar/robotics_v1/install/ur_description/share/ur_description/meshes/ur5/collision/base.stl
+[4.845s] -- Symlinking: /home/ubuntu/workspace/Velizar/robotics_v1/install/ur_description/share/ur_description/meshes/ur5/collision/forearm.stl
+[4.868s] -- Symlinking: /home/ubuntu/workspace/Velizar/robotics_v1/install/ur_description/share/ur_description/meshes/ur5/collision/shoulder.stl
+[4.890s] -- Symlinking: /home/ubuntu/workspace/Velizar/robotics_v1/install/ur_description/share/ur_description/meshes/ur5/collision/upperarm.stl
+[4.913s] -- Symlinking: /home/ubuntu/workspace/Velizar/robotics_v1/install/ur_description/share/ur_description/meshes/ur5/collision/wrist1.stl
+[4.937s] -- Symlinking: /home/ubuntu/workspace/Velizar/robotics_v1/install/ur_description/share/ur_description/meshes/ur5/collision/wrist2.stl
+[4.961s] -- Symlinking: /home/ubuntu/workspace/Velizar/robotics_v1/install/ur_description/share/ur_description/meshes/ur5/collision/wrist3.stl
+[4.985s] -- Symlinking: /home/ubuntu/workspace/Velizar/robotics_v1/install/ur_description/share/ur_description/meshes/ur5/visual/base.dae
+[5.007s] -- Symlinking: /home/ubuntu/workspace/Velizar/robotics_v1/install/ur_description/share/ur_description/meshes/ur5/visual/forearm.dae
+[5.031s] -- Symlinking: /home/ubuntu/workspace/Velizar/robotics_v1/install/ur_description/share/ur_description/meshes/ur5/visual/shoulder.dae
+[5.057s] -- Symlinking: /home/ubuntu/workspace/Velizar/robotics_v1/install/ur_description/share/ur_description/meshes/ur5/visual/upperarm.dae
+[5.081s] -- Symlinking: /home/ubuntu/workspace/Velizar/robotics_v1/install/ur_description/share/ur_description/meshes/ur5/visual/wrist1.dae
+[5.104s] -- Symlinking: /home/ubuntu/workspace/Velizar/robotics_v1/install/ur_description/share/ur_description/meshes/ur5/visual/wrist2.dae
+[5.128s] -- Symlinking: /home/ubuntu/workspace/Velizar/robotics_v1/install/ur_description/share/ur_description/meshes/ur5/visual/wrist3.dae
+[5.151s] -- Symlinking: /home/ubuntu/workspace/Velizar/robotics_v1/install/ur_description/share/ur_description/meshes/ur5e/collision/base.stl
+[5.174s] -- Symlinking: /home/ubuntu/workspace/Velizar/robotics_v1/install/ur_description/share/ur_description/meshes/ur5e/collision/forearm.stl
+[5.196s] -- Symlinking: /home/ubuntu/workspace/Velizar/robotics_v1/install/ur_description/share/ur_description/meshes/ur5e/collision/shoulder.stl
+[5.221s] -- Symlinking: /home/ubuntu/workspace/Velizar/robotics_v1/install/ur_description/share/ur_description/meshes/ur5e/collision/upperarm.stl
+[5.243s] -- Symlinking: /home/ubuntu/workspace/Velizar/robotics_v1/install/ur_description/share/ur_description/meshes/ur5e/collision/wrist1.stl
+[5.266s] -- Symlinking: /home/ubuntu/workspace/Velizar/robotics_v1/install/ur_description/share/ur_description/meshes/ur5e/collision/wrist2.stl
+[5.289s] -- Symlinking: /home/ubuntu/workspace/Velizar/robotics_v1/install/ur_description/share/ur_description/meshes/ur5e/collision/wrist3.stl
+[5.311s] -- Symlinking: /home/ubuntu/workspace/Velizar/robotics_v1/install/ur_description/share/ur_description/meshes/ur5e/visual/base.dae
+[5.335s] -- Symlinking: /home/ubuntu/workspace/Velizar/robotics_v1/install/ur_description/share/ur_description/meshes/ur5e/visual/forearm.dae
+[5.357s] -- Symlinking: /home/ubuntu/workspace/Velizar/robotics_v1/install/ur_description/share/ur_description/meshes/ur5e/visual/shoulder.dae
+[5.381s] -- Symlinking: /home/ubuntu/workspace/Velizar/robotics_v1/install/ur_description/share/ur_description/meshes/ur5e/visual/upperarm.dae
+[5.404s] -- Symlinking: /home/ubuntu/workspace/Velizar/robotics_v1/install/ur_description/share/ur_description/meshes/ur5e/visual/wrist1.dae
+[5.430s] -- Symlinking: /home/ubuntu/workspace/Velizar/robotics_v1/install/ur_description/share/ur_description/meshes/ur5e/visual/wrist2.dae
+[5.453s] -- Symlinking: /home/ubuntu/workspace/Velizar/robotics_v1/install/ur_description/share/ur_description/meshes/ur5e/visual/wrist3.dae
+[5.477s] -- Symlinking: /home/ubuntu/workspace/Velizar/robotics_v1/install/ur_description/share/ur_description/rviz/view_robot.rviz
+[5.501s] -- Symlinking: /home/ubuntu/workspace/Velizar/robotics_v1/install/ur_description/share/ur_description/urdf/inc/ur_common.xacro
+[5.526s] -- Symlinking: /home/ubuntu/workspace/Velizar/robotics_v1/install/ur_description/share/ur_description/urdf/inc/ur_transmissions.xacro
+[5.550s] -- Symlinking: /home/ubuntu/workspace/Velizar/robotics_v1/install/ur_description/share/ur_description/urdf/ur.ros2_control.xacro
+[5.573s] -- Symlinking: /home/ubuntu/workspace/Velizar/robotics_v1/install/ur_description/share/ur_description/urdf/ur.urdf.xacro
+[5.596s] -- Symlinking: /home/ubuntu/workspace/Velizar/robotics_v1/install/ur_description/share/ur_description/urdf/ur_macro.xacro
+[5.622s] -- Symlinking: /home/ubuntu/workspace/Velizar/robotics_v1/install/ur_description/share/ament_index/resource_index/package_run_dependencies/ur_description
+[5.645s] -- Symlinking: /home/ubuntu/workspace/Velizar/robotics_v1/install/ur_description/share/ament_index/resource_index/parent_prefix_path/ur_description
+[5.669s] -- Symlinking: /home/ubuntu/workspace/Velizar/robotics_v1/install/ur_description/share/ur_description/environment/ament_prefix_path.sh
+[5.692s] -- Symlinking: /home/ubuntu/workspace/Velizar/robotics_v1/install/ur_description/share/ur_description/environment/ament_prefix_path.dsv
+[5.725s] -- Symlinking: /home/ubuntu/workspace/Velizar/robotics_v1/install/ur_description/share/ur_description/environment/path.sh
+[5.749s] -- Symlinking: /home/ubuntu/workspace/Velizar/robotics_v1/install/ur_description/share/ur_description/environment/path.dsv
+[5.772s] -- Symlinking: /home/ubuntu/workspace/Velizar/robotics_v1/install/ur_description/share/ur_description/local_setup.bash
+[5.795s] -- Symlinking: /home/ubuntu/workspace/Velizar/robotics_v1/install/ur_description/share/ur_description/local_setup.sh
+[5.818s] -- Symlinking: /home/ubuntu/workspace/Velizar/robotics_v1/install/ur_description/share/ur_description/local_setup.zsh
+[5.843s] -- Symlinking: /home/ubuntu/workspace/Velizar/robotics_v1/install/ur_description/share/ur_description/local_setup.dsv
+[5.867s] -- Symlinking: /home/ubuntu/workspace/Velizar/robotics_v1/install/ur_description/share/ur_description/package.dsv
+[5.890s] -- Symlinking: /home/ubuntu/workspace/Velizar/robotics_v1/install/ur_description/share/ament_index/resource_index/packages/ur_description
+[5.913s] -- Symlinking: /home/ubuntu/workspace/Velizar/robotics_v1/install/ur_description/share/ur_description/cmake/ur_descriptionConfig.cmake
+[5.936s] -- Symlinking: /home/ubuntu/workspace/Velizar/robotics_v1/install/ur_description/share/ur_description/cmake/ur_descriptionConfig-version.cmake
+[5.960s] -- Symlinking: /home/ubuntu/workspace/Velizar/robotics_v1/install/ur_description/share/ur_description/package.xml
+[6.004s] Invoked command in '/home/ubuntu/workspace/Velizar/robotics_v1/build/ur_description' returned '0': CMAKE_PREFIX_PATH=/opt/ros/foxy PS1=[\u@\h \W]$(git_branch)$ /usr/bin/cmake --install /home/ubuntu/workspace/Velizar/robotics_v1/build/ur_description

@@ -17,6 +17,6 @@
     ros2_executor_threads_num: 4
     
     use_local_controller_mode: True
-    user: not_set
-    repository: not_set
-    commit_sha: not_set
+    user: VelizarZaharinov
+    repository: https://github.com/VelizarZaharinov/robotics_v1
+    commit_sha: 997b1f9dc5c86f8b2536e07bf25397ce910b6e25

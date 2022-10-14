@@ -1,0 +1,10 @@
+/home/ubuntu/workspace/Velizar/robotics_v1/build/robo_collector_controller/CMakeFiles/install/strip.dir
+/home/ubuntu/workspace/Velizar/robotics_v1/build/robo_collector_controller/CMakeFiles/install.dir
+/home/ubuntu/workspace/Velizar/robotics_v1/build/robo_collector_controller/CMakeFiles/list_install_components.dir
+/home/ubuntu/workspace/Velizar/robotics_v1/build/robo_collector_controller/CMakeFiles/rebuild_cache.dir
+/home/ubuntu/workspace/Velizar/robotics_v1/build/robo_collector_controller/CMakeFiles/edit_cache.dir
+/home/ubuntu/workspace/Velizar/robotics_v1/build/robo_collector_controller/CMakeFiles/test.dir
+/home/ubuntu/workspace/Velizar/robotics_v1/build/robo_collector_controller/CMakeFiles/robo_collector_controller.dir
+/home/ubuntu/workspace/Velizar/robotics_v1/build/robo_collector_controller/CMakeFiles/install/local.dir
+/home/ubuntu/workspace/Velizar/robotics_v1/build/robo_collector_controller/CMakeFiles/robo_collector_controller_uninstall.dir
+/home/ubuntu/workspace/Velizar/robotics_v1/build/robo_collector_controller/CMakeFiles/uninstall.dir

@@ -1,0 +1,68 @@
+-- The CXX compiler identification is Clang 10.0.0
+-- Check for working CXX compiler: /usr/bin/clang++
+-- Check for working CXX compiler: /usr/bin/clang++ -- works
+-- Detecting CXX compiler ABI info
+-- Detecting CXX compiler ABI info - done
+-- Detecting CXX compile features
+-- Detecting CXX compile features - done
+-- Found cmake_helpers: 1.0.0 (/home/ubuntu/workspace/Velizar/robotics_v1/install/cmake_helpers/share/cmake_helpers/cmake)
+-- Looking for C++ include pthread.h
+-- Looking for C++ include pthread.h - found
+-- Performing Test CMAKE_HAVE_LIBC_PTHREAD
+-- Performing Test CMAKE_HAVE_LIBC_PTHREAD - Failed
+-- Looking for pthread_create in pthreads
+-- Looking for pthread_create in pthreads - not found
+-- Looking for pthread_create in pthread
+-- Looking for pthread_create in pthread - found
+-- Found Threads: TRUE  
+-- Found ament_cmake: 0.9.9 (/opt/ros/foxy/share/ament_cmake/cmake)
+-- Found PythonInterp: /usr/bin/python3 (found suitable version "3.8.10", minimum required is "3") 
+-- Using PYTHON_EXECUTABLE: /usr/bin/python3
+-- Override CMake install command with custom implementation using symlinks instead of copying resources
+-- Found rclcpp: 2.4.1 (/opt/ros/foxy/share/rclcpp/cmake)
+-- Using all available rosidl_typesupport_c: rosidl_typesupport_fastrtps_c;rosidl_typesupport_introspection_c
+-- Found rosidl_adapter: 1.2.1 (/opt/ros/foxy/share/rosidl_adapter/cmake)
+-- Found OpenSSL: /usr/lib/x86_64-linux-gnu/libcrypto.so (found version "1.1.1f")  
+-- Found FastRTPS: /opt/ros/foxy/include  
+-- Using all available rosidl_typesupport_cpp: rosidl_typesupport_fastrtps_cpp;rosidl_typesupport_introspection_cpp
+-- Found rmw_implementation_cmake: 1.0.3 (/opt/ros/foxy/share/rmw_implementation_cmake/cmake)
+-- Using RMW implementation 'rmw_fastrtps_cpp' as default
+-- Found ur_msgs: 2.0.0 (/opt/ros/foxy/share/ur_msgs/cmake)
+-- Found urscript_interfaces: 1.0.0 (/home/ubuntu/workspace/Velizar/robotics_v1/install/urscript_interfaces/share/urscript_interfaces/cmake)
+-- Configuring done
+-- Generating done
+-- Build files have been written to: /home/ubuntu/workspace/Velizar/robotics_v1/build/urscript_bridge
+[35m[1mScanning dependencies of target urscript_bridge[0m
+[ 14%] [32mBuilding CXX object CMakeFiles/urscript_bridge.dir/src/config/UrBridgeConfigGenerator.cpp.o[0m
+[ 28%] [32mBuilding CXX object CMakeFiles/urscript_bridge.dir/src/core/UrBridgeApplication.cpp.o[0m
+[ 42%] [32mBuilding CXX object CMakeFiles/urscript_bridge.dir/src/external_api/UrBridgeExternalInterface.cpp.o[0m
+[ 57%] [32mBuilding CXX object CMakeFiles/urscript_bridge.dir/src/external_api/UrBridgeRos2ParamProvider.cpp.o[0m
+[ 71%] [32mBuilding CXX object CMakeFiles/urscript_bridge.dir/src/utils/TcpClient.cpp.o[0m
+[ 85%] [32mBuilding CXX object CMakeFiles/urscript_bridge.dir/src/main.cpp.o[0m
+[100%] [32m[1mLinking CXX executable urscript_bridge[0m
+[100%] Built target urscript_bridge
+-- Install configuration: "Debug"
+-- Execute custom install script
+-- Symlinking: /home/ubuntu/workspace/Velizar/robotics_v1/install/urscript_bridge/share/urscript_bridge/package.xml
+-- Symlinking: /home/ubuntu/workspace/Velizar/robotics_v1/install/urscript_bridge/share/urscript_bridge//launch/launch.py
+-- Symlinking: /home/ubuntu/workspace/Velizar/robotics_v1/install/urscript_bridge/share/urscript_bridge//config/params.yaml
+-- Symlinking: /home/ubuntu/workspace/Velizar/robotics_v1/install/urscript_bridge/lib/urscript_bridge/urscript_bridge
+-- Symlinking: /home/ubuntu/workspace/Velizar/robotics_v1/install/urscript_bridge/share/ament_index/resource_index/packages/urscript_bridge
+-- Symlinking: /home/ubuntu/workspace/Velizar/robotics_v1/install/urscript_bridge/share/urscript_bridge/hook/ament_prefix_path.dsv
+-- Symlinking: /home/ubuntu/workspace/Velizar/robotics_v1/install/urscript_bridge/share/urscript_bridge/hook/ros_package_path.dsv
+-- Symlinking: /home/ubuntu/workspace/Velizar/robotics_v1/install/urscript_bridge/share/ament_index/resource_index/package_run_dependencies/urscript_bridge
+-- Symlinking: /home/ubuntu/workspace/Velizar/robotics_v1/install/urscript_bridge/share/ament_index/resource_index/parent_prefix_path/urscript_bridge
+-- Symlinking: /home/ubuntu/workspace/Velizar/robotics_v1/install/urscript_bridge/share/urscript_bridge/environment/ament_prefix_path.sh
+-- Symlinking: /home/ubuntu/workspace/Velizar/robotics_v1/install/urscript_bridge/share/urscript_bridge/environment/ament_prefix_path.dsv
+-- Symlinking: /home/ubuntu/workspace/Velizar/robotics_v1/install/urscript_bridge/share/urscript_bridge/environment/path.sh
+-- Symlinking: /home/ubuntu/workspace/Velizar/robotics_v1/install/urscript_bridge/share/urscript_bridge/environment/path.dsv
+-- Symlinking: /home/ubuntu/workspace/Velizar/robotics_v1/install/urscript_bridge/share/urscript_bridge/local_setup.bash
+-- Symlinking: /home/ubuntu/workspace/Velizar/robotics_v1/install/urscript_bridge/share/urscript_bridge/local_setup.sh
+-- Symlinking: /home/ubuntu/workspace/Velizar/robotics_v1/install/urscript_bridge/share/urscript_bridge/local_setup.zsh
+-- Symlinking: /home/ubuntu/workspace/Velizar/robotics_v1/install/urscript_bridge/share/urscript_bridge/local_setup.dsv
+-- Symlinking: /home/ubuntu/workspace/Velizar/robotics_v1/install/urscript_bridge/share/urscript_bridge/package.dsv
+-- Symlinking: /home/ubuntu/workspace/Velizar/robotics_v1/install/urscript_bridge/share/ament_index/resource_index/packages/urscript_bridge
+-- Symlinking: /home/ubuntu/workspace/Velizar/robotics_v1/install/urscript_bridge/share/urscript_bridge/cmake/ament_cmake_export_dependencies-extras.cmake
+-- Symlinking: /home/ubuntu/workspace/Velizar/robotics_v1/install/urscript_bridge/share/urscript_bridge/cmake/urscript_bridgeConfig.cmake
+-- Symlinking: /home/ubuntu/workspace/Velizar/robotics_v1/install/urscript_bridge/share/urscript_bridge/cmake/urscript_bridgeConfig-version.cmake
+-- Up-to-date symlink: /home/ubuntu/workspace/Velizar/robotics_v1/install/urscript_bridge/share/urscript_bridge/package.xml

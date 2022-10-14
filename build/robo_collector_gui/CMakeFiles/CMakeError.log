@@ -1,0 +1,58 @@
+Performing C++ SOURCE FILE Test CMAKE_HAVE_LIBC_PTHREAD failed with the following output:
+Change Dir: /home/ubuntu/workspace/Velizar/robotics_v1/build/robo_collector_gui/CMakeFiles/CMakeTmp
+
+Run Build Command(s):/usr/bin/make cmTC_85662/fast && /usr/bin/make -f CMakeFiles/cmTC_85662.dir/build.make CMakeFiles/cmTC_85662.dir/build
+make[1]: Entering directory '/home/ubuntu/workspace/Velizar/robotics_v1/build/robo_collector_gui/CMakeFiles/CMakeTmp'
+Building CXX object CMakeFiles/cmTC_85662.dir/src.cxx.o
+/usr/bin/clang++    -DCMAKE_HAVE_LIBC_PTHREAD   -o CMakeFiles/cmTC_85662.dir/src.cxx.o -c /home/ubuntu/workspace/Velizar/robotics_v1/build/robo_collector_gui/CMakeFiles/CMakeTmp/src.cxx
+Linking CXX executable cmTC_85662
+/usr/bin/cmake -E cmake_link_script CMakeFiles/cmTC_85662.dir/link.txt --verbose=1
+/usr/bin/clang++   -DCMAKE_HAVE_LIBC_PTHREAD    CMakeFiles/cmTC_85662.dir/src.cxx.o  -o cmTC_85662 
+/usr/bin/ld: CMakeFiles/cmTC_85662.dir/src.cxx.o: in function `main':
+src.cxx:(.text+0x35): undefined reference to `pthread_create'
+/usr/bin/ld: src.cxx:(.text+0x41): undefined reference to `pthread_detach'
+/usr/bin/ld: src.cxx:(.text+0x53): undefined reference to `pthread_join'
+clang: error: linker command failed with exit code 1 (use -v to see invocation)
+make[1]: *** [CMakeFiles/cmTC_85662.dir/build.make:87: cmTC_85662] Error 1
+make[1]: Leaving directory '/home/ubuntu/workspace/Velizar/robotics_v1/build/robo_collector_gui/CMakeFiles/CMakeTmp'
+make: *** [Makefile:121: cmTC_85662/fast] Error 2
+
+
+Source file was:
+#include <pthread.h>
+
+void* test_func(void* data)
+{
+  return data;
+}
+
+int main(void)
+{
+  pthread_t thread;
+  pthread_create(&thread, NULL, test_func, NULL);
+  pthread_detach(thread);
+  pthread_join(thread, NULL);
+  pthread_atfork(NULL, NULL, NULL);
+  pthread_exit(NULL);
+
+  return 0;
+}
+
+Determining if the function pthread_create exists in the pthreads failed with the following output:
+Change Dir: /home/ubuntu/workspace/Velizar/robotics_v1/build/robo_collector_gui/CMakeFiles/CMakeTmp
+
+Run Build Command(s):/usr/bin/make cmTC_62723/fast && /usr/bin/make -f CMakeFiles/cmTC_62723.dir/build.make CMakeFiles/cmTC_62723.dir/build
+make[1]: Entering directory '/home/ubuntu/workspace/Velizar/robotics_v1/build/robo_collector_gui/CMakeFiles/CMakeTmp'
+Building CXX object CMakeFiles/cmTC_62723.dir/CheckFunctionExists.cxx.o
+/usr/bin/clang++    -DCHECK_FUNCTION_EXISTS=pthread_create   -o CMakeFiles/cmTC_62723.dir/CheckFunctionExists.cxx.o -c /home/ubuntu/workspace/Velizar/robotics_v1/build/robo_collector_gui/CMakeFiles/CheckLibraryExists/CheckFunctionExists.cxx
+Linking CXX executable cmTC_62723
+/usr/bin/cmake -E cmake_link_script CMakeFiles/cmTC_62723.dir/link.txt --verbose=1
+/usr/bin/clang++   -DCHECK_FUNCTION_EXISTS=pthread_create    CMakeFiles/cmTC_62723.dir/CheckFunctionExists.cxx.o  -o cmTC_62723  -lpthreads 
+/usr/bin/ld: cannot find -lpthreads
+clang: error: linker command failed with exit code 1 (use -v to see invocation)
+make[1]: *** [CMakeFiles/cmTC_62723.dir/build.make:87: cmTC_62723] Error 1
+make[1]: Leaving directory '/home/ubuntu/workspace/Velizar/robotics_v1/build/robo_collector_gui/CMakeFiles/CMakeTmp'
+make: *** [Makefile:121: cmTC_62723/fast] Error 2
+
+
+

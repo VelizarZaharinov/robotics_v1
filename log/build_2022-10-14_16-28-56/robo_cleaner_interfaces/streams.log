@@ -1,0 +1,350 @@
+[0.049s] Invoking command in '/home/ubuntu/workspace/Velizar/robotics_v1/build/robo_cleaner_interfaces': CMAKE_PREFIX_PATH=/opt/ros/foxy PS1=[\u@\h \W]$(git_branch)$ /usr/bin/cmake /home/ubuntu/workspace/Velizar/robotics_v1/src/robo_cleaner/robo_cleaner_interfaces -DCMAKE_BUILD_TYPE=Debug -DCMAKE_CXX_COMPILER=/usr/bin/clang++ -DAMENT_CMAKE_SYMLINK_INSTALL=1 -DCMAKE_INSTALL_PREFIX=/home/ubuntu/workspace/Velizar/robotics_v1/install/robo_cleaner_interfaces
+[0.226s] -- The C compiler identification is GNU 9.4.0
+[0.505s] -- The CXX compiler identification is Clang 10.0.0
+[0.524s] -- Check for working C compiler: /usr/bin/cc
+[0.719s] -- Check for working C compiler: /usr/bin/cc -- works
+[0.722s] -- Detecting C compiler ABI info
+[0.924s] -- Detecting C compiler ABI info - done
+[0.982s] -- Detecting C compile features
+[0.984s] -- Detecting C compile features - done
+[0.995s] -- Check for working CXX compiler: /usr/bin/clang++
+[1.349s] -- Check for working CXX compiler: /usr/bin/clang++ -- works
+[1.354s] -- Detecting CXX compiler ABI info
+[1.704s] -- Detecting CXX compiler ABI info - done
+[1.758s] -- Detecting CXX compile features
+[1.761s] -- Detecting CXX compile features - done
+[1.767s] -- Found ament_cmake: 0.9.9 (/opt/ros/foxy/share/ament_cmake/cmake)
+[1.840s] -- Found PythonInterp: /usr/bin/python3 (found suitable version "3.8.10", minimum required is "3") 
+[1.841s] -- Using PYTHON_EXECUTABLE: /usr/bin/python3
+[2.301s] -- Override CMake install command with custom implementation using symlinks instead of copying resources
+[2.370s] -- Found rosidl_default_generators: 1.0.1 (/opt/ros/foxy/share/rosidl_default_generators/cmake)
+[2.380s] -- Using all available rosidl_typesupport_c: rosidl_typesupport_fastrtps_c;rosidl_typesupport_introspection_c
+[2.404s] -- Found rosidl_adapter: 1.2.1 (/opt/ros/foxy/share/rosidl_adapter/cmake)
+[2.728s] -- Found OpenSSL: /usr/lib/x86_64-linux-gnu/libcrypto.so (found version "1.1.1f")  
+[2.838s] -- Found FastRTPS: /opt/ros/foxy/include  
+[3.156s] -- Using all available rosidl_typesupport_cpp: rosidl_typesupport_fastrtps_cpp;rosidl_typesupport_introspection_cpp
+[3.377s] -- Found PythonInterp: /usr/bin/python3 (found version "3.8.10") 
+[4.175s] -- Found ament_cmake_ros: 0.9.2 (/opt/ros/foxy/share/ament_cmake_ros/cmake)
+[4.666s] -- Using all available rosidl_typesupport_c: rosidl_typesupport_fastrtps_c;rosidl_typesupport_introspection_c
+[4.784s] -- Using all available rosidl_typesupport_cpp: rosidl_typesupport_fastrtps_cpp;rosidl_typesupport_introspection_cpp
+[4.865s] -- Found PythonInterp: /usr/bin/python3 (found suitable version "3.8.10", minimum required is "3.5") 
+[4.871s] -- Found python_cmake_module: 0.8.1 (/opt/ros/foxy/share/python_cmake_module/cmake)
+[4.949s] -- Found PythonLibs: /usr/lib/x86_64-linux-gnu/libpython3.8.so (found suitable version "3.8.10", minimum required is "3.5") 
+[4.950s] -- Using PYTHON_EXECUTABLE: /usr/bin/python3
+[4.950s] -- Using PYTHON_INCLUDE_DIRS: /usr/include/python3.8
+[4.950s] -- Using PYTHON_LIBRARIES: /usr/lib/x86_64-linux-gnu/libpython3.8.so
+[5.004s] -- Found PythonExtra: .so  
+[5.235s] -- Configuring done
+[5.579s] -- Generating done
+[5.594s] -- Build files have been written to: /home/ubuntu/workspace/Velizar/robotics_v1/build/robo_cleaner_interfaces
+[5.618s] Invoked command in '/home/ubuntu/workspace/Velizar/robotics_v1/build/robo_cleaner_interfaces' returned '0': CMAKE_PREFIX_PATH=/opt/ros/foxy PS1=[\u@\h \W]$(git_branch)$ /usr/bin/cmake /home/ubuntu/workspace/Velizar/robotics_v1/src/robo_cleaner/robo_cleaner_interfaces -DCMAKE_BUILD_TYPE=Debug -DCMAKE_CXX_COMPILER=/usr/bin/clang++ -DAMENT_CMAKE_SYMLINK_INSTALL=1 -DCMAKE_INSTALL_PREFIX=/home/ubuntu/workspace/Velizar/robotics_v1/install/robo_cleaner_interfaces
+[5.621s] Invoking command in '/home/ubuntu/workspace/Velizar/robotics_v1/build/robo_cleaner_interfaces': CMAKE_PREFIX_PATH=/opt/ros/foxy PS1=[\u@\h \W]$(git_branch)$ /usr/bin/cmake --build /home/ubuntu/workspace/Velizar/robotics_v1/build/robo_cleaner_interfaces -- -j2 -l2
+[5.752s] [35m[1mScanning dependencies of target robo_cleaner_interfaces__cpp[0m
+[5.784s] [  1%] [34m[1mGenerating C++ code for ROS interfaces[0m
+[9.101s] [  1%] Built target robo_cleaner_interfaces__cpp
+[9.131s] [  2%] [34m[1mGenerating C code for ROS interfaces[0m
+[12.624s] [35m[1mScanning dependencies of target robo_cleaner_interfaces__rosidl_generator_c[0m
+[12.667s] [  3%] [32mBuilding C object CMakeFiles/robo_cleaner_interfaces__rosidl_generator_c.dir/rosidl_generator_c/robo_cleaner_interfaces/msg/detail/battery_status__functions.c.o[0m
+[12.790s] [  4%] [32mBuilding C object CMakeFiles/robo_cleaner_interfaces__rosidl_generator_c.dir/rosidl_generator_c/robo_cleaner_interfaces/msg/detail/initial_robot_state__functions.c.o[0m
+[12.914s] [  5%] [32mBuilding C object CMakeFiles/robo_cleaner_interfaces__rosidl_generator_c.dir/rosidl_generator_c/robo_cleaner_interfaces/msg/detail/robot_move_type__functions.c.o[0m
+[13.035s] [  6%] [32mBuilding C object CMakeFiles/robo_cleaner_interfaces__rosidl_generator_c.dir/rosidl_generator_c/robo_cleaner_interfaces/msg/detail/user_authenticate__functions.c.o[0m
+[13.158s] [  8%] [32mBuilding C object CMakeFiles/robo_cleaner_interfaces__rosidl_generator_c.dir/rosidl_generator_c/robo_cleaner_interfaces/srv/detail/charge_battery__functions.c.o[0m
+[13.330s] [  9%] [32mBuilding C object CMakeFiles/robo_cleaner_interfaces__rosidl_generator_c.dir/rosidl_generator_c/robo_cleaner_interfaces/srv/detail/query_battery_status__functions.c.o[0m
+[13.478s] [ 10%] [32mBuilding C object CMakeFiles/robo_cleaner_interfaces__rosidl_generator_c.dir/rosidl_generator_c/robo_cleaner_interfaces/srv/detail/query_initial_robot_state__functions.c.o[0m
+[13.632s] [ 11%] [32mBuilding C object CMakeFiles/robo_cleaner_interfaces__rosidl_generator_c.dir/rosidl_generator_c/robo_cleaner_interfaces/action/detail/robot_move__functions.c.o[0m
+[13.944s] [ 12%] [32m[1mLinking C shared library librobo_cleaner_interfaces__rosidl_generator_c.so[0m
+[14.061s] [ 12%] Built target robo_cleaner_interfaces__rosidl_generator_c
+[14.091s] [ 13%] [34m[1mGenerating C++ introspection for ROS interfaces[0m
+[16.381s] [35m[1mScanning dependencies of target robo_cleaner_interfaces__rosidl_typesupport_introspection_cpp[0m
+[16.438s] [ 14%] [32mBuilding CXX object CMakeFiles/robo_cleaner_interfaces__rosidl_typesupport_introspection_cpp.dir/rosidl_typesupport_introspection_cpp/robo_cleaner_interfaces/msg/detail/battery_status__type_support.cpp.o[0m
+[17.247s] [ 16%] [32mBuilding CXX object CMakeFiles/robo_cleaner_interfaces__rosidl_typesupport_introspection_cpp.dir/rosidl_typesupport_introspection_cpp/robo_cleaner_interfaces/msg/detail/initial_robot_state__type_support.cpp.o[0m
+[18.054s] [ 17%] [32mBuilding CXX object CMakeFiles/robo_cleaner_interfaces__rosidl_typesupport_introspection_cpp.dir/rosidl_typesupport_introspection_cpp/robo_cleaner_interfaces/msg/detail/robot_move_type__type_support.cpp.o[0m
+[18.855s] [ 18%] [32mBuilding CXX object CMakeFiles/robo_cleaner_interfaces__rosidl_typesupport_introspection_cpp.dir/rosidl_typesupport_introspection_cpp/robo_cleaner_interfaces/msg/detail/user_authenticate__type_support.cpp.o[0m
+[19.690s] [ 19%] [32mBuilding CXX object CMakeFiles/robo_cleaner_interfaces__rosidl_typesupport_introspection_cpp.dir/rosidl_typesupport_introspection_cpp/robo_cleaner_interfaces/srv/detail/charge_battery__type_support.cpp.o[0m
+[20.513s] [ 20%] [32mBuilding CXX object CMakeFiles/robo_cleaner_interfaces__rosidl_typesupport_introspection_cpp.dir/rosidl_typesupport_introspection_cpp/robo_cleaner_interfaces/srv/detail/query_battery_status__type_support.cpp.o[0m
+[21.330s] [ 21%] [32mBuilding CXX object CMakeFiles/robo_cleaner_interfaces__rosidl_typesupport_introspection_cpp.dir/rosidl_typesupport_introspection_cpp/robo_cleaner_interfaces/srv/detail/query_initial_robot_state__type_support.cpp.o[0m
+[22.163s] [ 22%] [32mBuilding CXX object CMakeFiles/robo_cleaner_interfaces__rosidl_typesupport_introspection_cpp.dir/rosidl_typesupport_introspection_cpp/robo_cleaner_interfaces/action/detail/robot_move__type_support.cpp.o[0m
+[23.131s] [ 24%] [32m[1mLinking CXX shared library librobo_cleaner_interfaces__rosidl_typesupport_introspection_cpp.so[0m
+[23.397s] [ 24%] Built target robo_cleaner_interfaces__rosidl_typesupport_introspection_cpp
+[23.426s] [ 25%] [34m[1mGenerating C++ type support dispatch for ROS interfaces[0m
+[25.200s] [35m[1mScanning dependencies of target robo_cleaner_interfaces__rosidl_typesupport_cpp[0m
+[25.252s] [ 26%] [32mBuilding CXX object CMakeFiles/robo_cleaner_interfaces__rosidl_typesupport_cpp.dir/rosidl_typesupport_cpp/robo_cleaner_interfaces/msg/battery_status__type_support.cpp.o[0m
+[26.086s] [ 27%] [32mBuilding CXX object CMakeFiles/robo_cleaner_interfaces__rosidl_typesupport_cpp.dir/rosidl_typesupport_cpp/robo_cleaner_interfaces/msg/initial_robot_state__type_support.cpp.o[0m
+[26.890s] [ 28%] [32mBuilding CXX object CMakeFiles/robo_cleaner_interfaces__rosidl_typesupport_cpp.dir/rosidl_typesupport_cpp/robo_cleaner_interfaces/msg/robot_move_type__type_support.cpp.o[0m
+[27.688s] [ 29%] [32mBuilding CXX object CMakeFiles/robo_cleaner_interfaces__rosidl_typesupport_cpp.dir/rosidl_typesupport_cpp/robo_cleaner_interfaces/msg/user_authenticate__type_support.cpp.o[0m
+[28.505s] [ 31%] [32mBuilding CXX object CMakeFiles/robo_cleaner_interfaces__rosidl_typesupport_cpp.dir/rosidl_typesupport_cpp/robo_cleaner_interfaces/srv/charge_battery__type_support.cpp.o[0m
+[29.320s] [ 32%] [32mBuilding CXX object CMakeFiles/robo_cleaner_interfaces__rosidl_typesupport_cpp.dir/rosidl_typesupport_cpp/robo_cleaner_interfaces/srv/query_battery_status__type_support.cpp.o[0m
+[30.123s] [ 33%] [32mBuilding CXX object CMakeFiles/robo_cleaner_interfaces__rosidl_typesupport_cpp.dir/rosidl_typesupport_cpp/robo_cleaner_interfaces/srv/query_initial_robot_state__type_support.cpp.o[0m
+[30.958s] [ 34%] [32mBuilding CXX object CMakeFiles/robo_cleaner_interfaces__rosidl_typesupport_cpp.dir/rosidl_typesupport_cpp/robo_cleaner_interfaces/action/robot_move__type_support.cpp.o[0m
+[31.865s] [ 35%] [32m[1mLinking CXX shared library librobo_cleaner_interfaces__rosidl_typesupport_cpp.so[0m
+[32.125s] [ 35%] Built target robo_cleaner_interfaces__rosidl_typesupport_cpp
+[32.155s] [ 36%] [34m[1mGenerating C++ type support for eProsima Fast-RTPS[0m
+[34.969s] [35m[1mScanning dependencies of target robo_cleaner_interfaces__rosidl_typesupport_fastrtps_cpp[0m
+[35.074s] [ 37%] [32mBuilding CXX object CMakeFiles/robo_cleaner_interfaces__rosidl_typesupport_fastrtps_cpp.dir/rosidl_typesupport_fastrtps_cpp/robo_cleaner_interfaces/msg/detail/dds_fastrtps/battery_status__type_support.cpp.o[0m
+[36.303s] [ 39%] [32mBuilding CXX object CMakeFiles/robo_cleaner_interfaces__rosidl_typesupport_fastrtps_cpp.dir/rosidl_typesupport_fastrtps_cpp/robo_cleaner_interfaces/msg/detail/dds_fastrtps/initial_robot_state__type_support.cpp.o[0m
+[37.517s] [ 40%] [32mBuilding CXX object CMakeFiles/robo_cleaner_interfaces__rosidl_typesupport_fastrtps_cpp.dir/rosidl_typesupport_fastrtps_cpp/robo_cleaner_interfaces/msg/detail/dds_fastrtps/robot_move_type__type_support.cpp.o[0m
+[38.753s] [ 41%] [32mBuilding CXX object CMakeFiles/robo_cleaner_interfaces__rosidl_typesupport_fastrtps_cpp.dir/rosidl_typesupport_fastrtps_cpp/robo_cleaner_interfaces/msg/detail/dds_fastrtps/user_authenticate__type_support.cpp.o[0m
+[39.996s] [ 42%] [32mBuilding CXX object CMakeFiles/robo_cleaner_interfaces__rosidl_typesupport_fastrtps_cpp.dir/rosidl_typesupport_fastrtps_cpp/robo_cleaner_interfaces/srv/detail/dds_fastrtps/charge_battery__type_support.cpp.o[0m
+[41.275s] [ 43%] [32mBuilding CXX object CMakeFiles/robo_cleaner_interfaces__rosidl_typesupport_fastrtps_cpp.dir/rosidl_typesupport_fastrtps_cpp/robo_cleaner_interfaces/srv/detail/dds_fastrtps/query_battery_status__type_support.cpp.o[0m
+[42.521s] [ 44%] [32mBuilding CXX object CMakeFiles/robo_cleaner_interfaces__rosidl_typesupport_fastrtps_cpp.dir/rosidl_typesupport_fastrtps_cpp/robo_cleaner_interfaces/srv/detail/dds_fastrtps/query_initial_robot_state__type_support.cpp.o[0m
+[43.835s] [ 45%] [32mBuilding CXX object CMakeFiles/robo_cleaner_interfaces__rosidl_typesupport_fastrtps_cpp.dir/rosidl_typesupport_fastrtps_cpp/robo_cleaner_interfaces/action/detail/dds_fastrtps/robot_move__type_support.cpp.o[0m
+[45.319s] [ 47%] [32m[1mLinking CXX shared library librobo_cleaner_interfaces__rosidl_typesupport_fastrtps_cpp.so[0m
+[45.743s] [ 47%] Built target robo_cleaner_interfaces__rosidl_typesupport_fastrtps_cpp
+[45.773s] [ 48%] [34m[1mGenerating C type support dispatch for ROS interfaces[0m
+[47.580s] [35m[1mScanning dependencies of target robo_cleaner_interfaces__rosidl_typesupport_c[0m
+[47.627s] [ 49%] [32mBuilding CXX object CMakeFiles/robo_cleaner_interfaces__rosidl_typesupport_c.dir/rosidl_typesupport_c/robo_cleaner_interfaces/msg/battery_status__type_support.cpp.o[0m
+[47.719s] [ 50%] [32mBuilding CXX object CMakeFiles/robo_cleaner_interfaces__rosidl_typesupport_c.dir/rosidl_typesupport_c/robo_cleaner_interfaces/msg/initial_robot_state__type_support.cpp.o[0m
+[47.817s] [ 51%] [32mBuilding CXX object CMakeFiles/robo_cleaner_interfaces__rosidl_typesupport_c.dir/rosidl_typesupport_c/robo_cleaner_interfaces/msg/robot_move_type__type_support.cpp.o[0m
+[47.909s] [ 52%] [32mBuilding CXX object CMakeFiles/robo_cleaner_interfaces__rosidl_typesupport_c.dir/rosidl_typesupport_c/robo_cleaner_interfaces/msg/user_authenticate__type_support.cpp.o[0m
+[48.003s] [ 54%] [32mBuilding CXX object CMakeFiles/robo_cleaner_interfaces__rosidl_typesupport_c.dir/rosidl_typesupport_c/robo_cleaner_interfaces/srv/charge_battery__type_support.cpp.o[0m
+[48.104s] [ 55%] [32mBuilding CXX object CMakeFiles/robo_cleaner_interfaces__rosidl_typesupport_c.dir/rosidl_typesupport_c/robo_cleaner_interfaces/srv/query_battery_status__type_support.cpp.o[0m
+[48.222s] [ 56%] [32mBuilding CXX object CMakeFiles/robo_cleaner_interfaces__rosidl_typesupport_c.dir/rosidl_typesupport_c/robo_cleaner_interfaces/srv/query_initial_robot_state__type_support.cpp.o[0m
+[48.326s] [ 57%] [32mBuilding CXX object CMakeFiles/robo_cleaner_interfaces__rosidl_typesupport_c.dir/rosidl_typesupport_c/robo_cleaner_interfaces/action/robot_move__type_support.cpp.o[0m
+[48.484s] [ 58%] [32m[1mLinking CXX shared library librobo_cleaner_interfaces__rosidl_typesupport_c.so[0m
+[48.744s] [ 58%] Built target robo_cleaner_interfaces__rosidl_typesupport_c
+[48.773s] [ 59%] [34m[1mGenerating C introspection for ROS interfaces[0m
+[51.276s] [35m[1mScanning dependencies of target robo_cleaner_interfaces__rosidl_typesupport_introspection_c[0m
+[51.331s] [ 60%] [32mBuilding C object CMakeFiles/robo_cleaner_interfaces__rosidl_typesupport_introspection_c.dir/rosidl_typesupport_introspection_c/robo_cleaner_interfaces/msg/detail/battery_status__type_support.c.o[0m
+[51.456s] [ 62%] [32mBuilding C object CMakeFiles/robo_cleaner_interfaces__rosidl_typesupport_introspection_c.dir/rosidl_typesupport_introspection_c/robo_cleaner_interfaces/msg/detail/initial_robot_state__type_support.c.o[0m
+[51.561s] [ 63%] [32mBuilding C object CMakeFiles/robo_cleaner_interfaces__rosidl_typesupport_introspection_c.dir/rosidl_typesupport_introspection_c/robo_cleaner_interfaces/msg/detail/robot_move_type__type_support.c.o[0m
+[51.667s] [ 64%] [32mBuilding C object CMakeFiles/robo_cleaner_interfaces__rosidl_typesupport_introspection_c.dir/rosidl_typesupport_introspection_c/robo_cleaner_interfaces/msg/detail/user_authenticate__type_support.c.o[0m
+[51.775s] [ 65%] [32mBuilding C object CMakeFiles/robo_cleaner_interfaces__rosidl_typesupport_introspection_c.dir/rosidl_typesupport_introspection_c/robo_cleaner_interfaces/srv/detail/charge_battery__type_support.c.o[0m
+[51.900s] [ 66%] [32mBuilding C object CMakeFiles/robo_cleaner_interfaces__rosidl_typesupport_introspection_c.dir/rosidl_typesupport_introspection_c/robo_cleaner_interfaces/srv/detail/query_battery_status__type_support.c.o[0m
+[52.020s] [ 67%] [32mBuilding C object CMakeFiles/robo_cleaner_interfaces__rosidl_typesupport_introspection_c.dir/rosidl_typesupport_introspection_c/robo_cleaner_interfaces/srv/detail/query_initial_robot_state__type_support.c.o[0m
+[52.143s] [ 68%] [32mBuilding C object CMakeFiles/robo_cleaner_interfaces__rosidl_typesupport_introspection_c.dir/rosidl_typesupport_introspection_c/robo_cleaner_interfaces/action/detail/robot_move__type_support.c.o[0m
+[52.299s] [ 70%] [32m[1mLinking C shared library librobo_cleaner_interfaces__rosidl_typesupport_introspection_c.so[0m
+[52.401s] [ 70%] Built target robo_cleaner_interfaces__rosidl_typesupport_introspection_c
+[52.432s] [ 71%] [34m[1mGenerating C type support for eProsima Fast-RTPS[0m
+[55.114s] [35m[1mScanning dependencies of target robo_cleaner_interfaces__rosidl_typesupport_fastrtps_c[0m
+[55.213s] [ 72%] [32mBuilding CXX object CMakeFiles/robo_cleaner_interfaces__rosidl_typesupport_fastrtps_c.dir/rosidl_typesupport_fastrtps_c/robo_cleaner_interfaces/msg/detail/battery_status__type_support_c.cpp.o[0m
+[56.273s] [ 73%] [32mBuilding CXX object CMakeFiles/robo_cleaner_interfaces__rosidl_typesupport_fastrtps_c.dir/rosidl_typesupport_fastrtps_c/robo_cleaner_interfaces/msg/detail/initial_robot_state__type_support_c.cpp.o[0m
+[57.321s] [ 74%] [32mBuilding CXX object CMakeFiles/robo_cleaner_interfaces__rosidl_typesupport_fastrtps_c.dir/rosidl_typesupport_fastrtps_c/robo_cleaner_interfaces/msg/detail/robot_move_type__type_support_c.cpp.o[0m
+[58.396s] [ 75%] [32mBuilding CXX object CMakeFiles/robo_cleaner_interfaces__rosidl_typesupport_fastrtps_c.dir/rosidl_typesupport_fastrtps_c/robo_cleaner_interfaces/msg/detail/user_authenticate__type_support_c.cpp.o[0m
+[59.471s] [ 77%] [32mBuilding CXX object CMakeFiles/robo_cleaner_interfaces__rosidl_typesupport_fastrtps_c.dir/rosidl_typesupport_fastrtps_c/robo_cleaner_interfaces/srv/detail/charge_battery__type_support_c.cpp.o[0m
+[60.554s] [ 78%] [32mBuilding CXX object CMakeFiles/robo_cleaner_interfaces__rosidl_typesupport_fastrtps_c.dir/rosidl_typesupport_fastrtps_c/robo_cleaner_interfaces/srv/detail/query_battery_status__type_support_c.cpp.o[0m
+[61.642s] [ 79%] [32mBuilding CXX object CMakeFiles/robo_cleaner_interfaces__rosidl_typesupport_fastrtps_c.dir/rosidl_typesupport_fastrtps_c/robo_cleaner_interfaces/srv/detail/query_initial_robot_state__type_support_c.cpp.o[0m
+[62.730s] [ 80%] [32mBuilding CXX object CMakeFiles/robo_cleaner_interfaces__rosidl_typesupport_fastrtps_c.dir/rosidl_typesupport_fastrtps_c/robo_cleaner_interfaces/action/detail/robot_move__type_support_c.cpp.o[0m
+[63.894s] [ 81%] [32m[1mLinking CXX shared library librobo_cleaner_interfaces__rosidl_typesupport_fastrtps_c.so[0m
+[64.318s] [ 81%] Built target robo_cleaner_interfaces__rosidl_typesupport_fastrtps_c
+[64.344s] [35m[1mScanning dependencies of target robo_cleaner_interfaces[0m
+[64.369s] [ 81%] Built target robo_cleaner_interfaces
+[64.400s] [35m[1mScanning dependencies of target robo_cleaner_interfaces__py[0m
+[64.429s] [ 82%] [34m[1mGenerating Python code for ROS interfaces[0m
+[70.412s] [ 82%] Built target robo_cleaner_interfaces__py
+[70.439s] [35m[1mScanning dependencies of target robo_cleaner_interfaces__python[0m
+[70.556s] [ 83%] [32mBuilding C object CMakeFiles/robo_cleaner_interfaces__python.dir/rosidl_generator_py/robo_cleaner_interfaces/msg/_battery_status_s.c.o[0m
+[70.898s] [ 85%] [32mBuilding C object CMakeFiles/robo_cleaner_interfaces__python.dir/rosidl_generator_py/robo_cleaner_interfaces/msg/_initial_robot_state_s.c.o[0m
+[71.238s] [ 86%] [32mBuilding C object CMakeFiles/robo_cleaner_interfaces__python.dir/rosidl_generator_py/robo_cleaner_interfaces/msg/_robot_move_type_s.c.o[0m
+[71.572s] [ 87%] [32mBuilding C object CMakeFiles/robo_cleaner_interfaces__python.dir/rosidl_generator_py/robo_cleaner_interfaces/msg/_user_authenticate_s.c.o[0m
+[71.932s] [ 88%] [32mBuilding C object CMakeFiles/robo_cleaner_interfaces__python.dir/rosidl_generator_py/robo_cleaner_interfaces/srv/_charge_battery_s.c.o[0m
+[72.313s] [ 89%] [32mBuilding C object CMakeFiles/robo_cleaner_interfaces__python.dir/rosidl_generator_py/robo_cleaner_interfaces/srv/_query_battery_status_s.c.o[0m
+[72.688s] [ 90%] [32mBuilding C object CMakeFiles/robo_cleaner_interfaces__python.dir/rosidl_generator_py/robo_cleaner_interfaces/srv/_query_initial_robot_state_s.c.o[0m
+[73.058s] [ 91%] [32mBuilding C object CMakeFiles/robo_cleaner_interfaces__python.dir/rosidl_generator_py/robo_cleaner_interfaces/action/_robot_move_s.c.o[0m
+[73.589s] [ 93%] [32m[1mLinking C shared library rosidl_generator_py/robo_cleaner_interfaces/librobo_cleaner_interfaces__python.so[0m
+[73.725s] [ 93%] Built target robo_cleaner_interfaces__python
+[73.751s] [35m[1mScanning dependencies of target robo_cleaner_interfaces__rosidl_typesupport_c__pyext[0m
+[73.831s] [ 94%] [32mBuilding C object CMakeFiles/robo_cleaner_interfaces__rosidl_typesupport_c__pyext.dir/rosidl_generator_py/robo_cleaner_interfaces/_robo_cleaner_interfaces_s.ep.rosidl_typesupport_c.c.o[0m
+[74.374s] [ 95%] [32m[1mLinking C shared library rosidl_generator_py/robo_cleaner_interfaces/robo_cleaner_interfaces_s__rosidl_typesupport_c.cpython-38-x86_64-linux-gnu.so[0m
+[74.489s] [ 95%] Built target robo_cleaner_interfaces__rosidl_typesupport_c__pyext
+[74.519s] [35m[1mScanning dependencies of target robo_cleaner_interfaces__rosidl_typesupport_fastrtps_c__pyext[0m
+[74.603s] [ 96%] [32mBuilding C object CMakeFiles/robo_cleaner_interfaces__rosidl_typesupport_fastrtps_c__pyext.dir/rosidl_generator_py/robo_cleaner_interfaces/_robo_cleaner_interfaces_s.ep.rosidl_typesupport_fastrtps_c.c.o[0m
+[75.157s] [ 97%] [32m[1mLinking CXX shared library rosidl_generator_py/robo_cleaner_interfaces/robo_cleaner_interfaces_s__rosidl_typesupport_fastrtps_c.cpython-38-x86_64-linux-gnu.so[0m
+[75.590s] [ 97%] Built target robo_cleaner_interfaces__rosidl_typesupport_fastrtps_c__pyext
+[75.617s] [35m[1mScanning dependencies of target robo_cleaner_interfaces__rosidl_typesupport_introspection_c__pyext[0m
+[75.693s] [ 98%] [32mBuilding C object CMakeFiles/robo_cleaner_interfaces__rosidl_typesupport_introspection_c__pyext.dir/rosidl_generator_py/robo_cleaner_interfaces/_robo_cleaner_interfaces_s.ep.rosidl_typesupport_introspection_c.c.o[0m
+[76.245s] [100%] [32m[1mLinking C shared library rosidl_generator_py/robo_cleaner_interfaces/robo_cleaner_interfaces_s__rosidl_typesupport_introspection_c.cpython-38-x86_64-linux-gnu.so[0m
+[76.358s] [100%] Built target robo_cleaner_interfaces__rosidl_typesupport_introspection_c__pyext
+[76.390s] Invoked command in '/home/ubuntu/workspace/Velizar/robotics_v1/build/robo_cleaner_interfaces' returned '0': CMAKE_PREFIX_PATH=/opt/ros/foxy PS1=[\u@\h \W]$(git_branch)$ /usr/bin/cmake --build /home/ubuntu/workspace/Velizar/robotics_v1/build/robo_cleaner_interfaces -- -j2 -l2
+[76.792s] Invoking command in '/home/ubuntu/workspace/Velizar/robotics_v1/build/robo_cleaner_interfaces': CMAKE_PREFIX_PATH=/opt/ros/foxy PS1=[\u@\h \W]$(git_branch)$ /usr/bin/cmake --install /home/ubuntu/workspace/Velizar/robotics_v1/build/robo_cleaner_interfaces
+[76.819s] -- Install configuration: "Debug"
+[76.824s] -- Execute custom install script
+[76.826s] -- Symlinking: /home/ubuntu/workspace/Velizar/robotics_v1/install/robo_cleaner_interfaces/share/ament_index/resource_index/rosidl_interfaces/robo_cleaner_interfaces
+[76.851s] -- Symlinking: /home/ubuntu/workspace/Velizar/robotics_v1/install/robo_cleaner_interfaces/include/robo_cleaner_interfaces/action/detail/robot_move__functions.h
+[76.874s] -- Symlinking: /home/ubuntu/workspace/Velizar/robotics_v1/install/robo_cleaner_interfaces/include/robo_cleaner_interfaces/action/detail/robot_move__struct.h
+[76.897s] -- Symlinking: /home/ubuntu/workspace/Velizar/robotics_v1/install/robo_cleaner_interfaces/include/robo_cleaner_interfaces/action/detail/robot_move__type_support.h
+[76.920s] -- Symlinking: /home/ubuntu/workspace/Velizar/robotics_v1/install/robo_cleaner_interfaces/include/robo_cleaner_interfaces/action/robot_move.h
+[76.944s] -- Symlinking: /home/ubuntu/workspace/Velizar/robotics_v1/install/robo_cleaner_interfaces/include/robo_cleaner_interfaces/msg/battery_status.h
+[76.967s] -- Symlinking: /home/ubuntu/workspace/Velizar/robotics_v1/install/robo_cleaner_interfaces/include/robo_cleaner_interfaces/msg/detail/battery_status__functions.h
+[76.990s] -- Symlinking: /home/ubuntu/workspace/Velizar/robotics_v1/install/robo_cleaner_interfaces/include/robo_cleaner_interfaces/msg/detail/battery_status__struct.h
+[77.012s] -- Symlinking: /home/ubuntu/workspace/Velizar/robotics_v1/install/robo_cleaner_interfaces/include/robo_cleaner_interfaces/msg/detail/battery_status__type_support.h
+[77.038s] -- Symlinking: /home/ubuntu/workspace/Velizar/robotics_v1/install/robo_cleaner_interfaces/include/robo_cleaner_interfaces/msg/detail/initial_robot_state__functions.h
+[77.060s] -- Symlinking: /home/ubuntu/workspace/Velizar/robotics_v1/install/robo_cleaner_interfaces/include/robo_cleaner_interfaces/msg/detail/initial_robot_state__struct.h
+[77.083s] -- Symlinking: /home/ubuntu/workspace/Velizar/robotics_v1/install/robo_cleaner_interfaces/include/robo_cleaner_interfaces/msg/detail/initial_robot_state__type_support.h
+[77.105s] -- Symlinking: /home/ubuntu/workspace/Velizar/robotics_v1/install/robo_cleaner_interfaces/include/robo_cleaner_interfaces/msg/detail/robot_move_type__functions.h
+[77.131s] -- Symlinking: /home/ubuntu/workspace/Velizar/robotics_v1/install/robo_cleaner_interfaces/include/robo_cleaner_interfaces/msg/detail/robot_move_type__struct.h
+[77.154s] -- Symlinking: /home/ubuntu/workspace/Velizar/robotics_v1/install/robo_cleaner_interfaces/include/robo_cleaner_interfaces/msg/detail/robot_move_type__type_support.h
+[77.176s] -- Symlinking: /home/ubuntu/workspace/Velizar/robotics_v1/install/robo_cleaner_interfaces/include/robo_cleaner_interfaces/msg/detail/user_authenticate__functions.h
+[77.198s] -- Symlinking: /home/ubuntu/workspace/Velizar/robotics_v1/install/robo_cleaner_interfaces/include/robo_cleaner_interfaces/msg/detail/user_authenticate__struct.h
+[77.223s] -- Symlinking: /home/ubuntu/workspace/Velizar/robotics_v1/install/robo_cleaner_interfaces/include/robo_cleaner_interfaces/msg/detail/user_authenticate__type_support.h
+[77.246s] -- Symlinking: /home/ubuntu/workspace/Velizar/robotics_v1/install/robo_cleaner_interfaces/include/robo_cleaner_interfaces/msg/initial_robot_state.h
+[77.269s] -- Symlinking: /home/ubuntu/workspace/Velizar/robotics_v1/install/robo_cleaner_interfaces/include/robo_cleaner_interfaces/msg/robot_move_type.h
+[77.292s] -- Symlinking: /home/ubuntu/workspace/Velizar/robotics_v1/install/robo_cleaner_interfaces/include/robo_cleaner_interfaces/msg/rosidl_generator_c__visibility_control.h
+[77.314s] -- Symlinking: /home/ubuntu/workspace/Velizar/robotics_v1/install/robo_cleaner_interfaces/include/robo_cleaner_interfaces/msg/user_authenticate.h
+[77.339s] -- Symlinking: /home/ubuntu/workspace/Velizar/robotics_v1/install/robo_cleaner_interfaces/include/robo_cleaner_interfaces/srv/charge_battery.h
+[77.362s] -- Symlinking: /home/ubuntu/workspace/Velizar/robotics_v1/install/robo_cleaner_interfaces/include/robo_cleaner_interfaces/srv/detail/charge_battery__functions.h
+[77.385s] -- Symlinking: /home/ubuntu/workspace/Velizar/robotics_v1/install/robo_cleaner_interfaces/include/robo_cleaner_interfaces/srv/detail/charge_battery__struct.h
+[77.407s] -- Symlinking: /home/ubuntu/workspace/Velizar/robotics_v1/install/robo_cleaner_interfaces/include/robo_cleaner_interfaces/srv/detail/charge_battery__type_support.h
+[77.432s] -- Symlinking: /home/ubuntu/workspace/Velizar/robotics_v1/install/robo_cleaner_interfaces/include/robo_cleaner_interfaces/srv/detail/query_battery_status__functions.h
+[77.454s] -- Symlinking: /home/ubuntu/workspace/Velizar/robotics_v1/install/robo_cleaner_interfaces/include/robo_cleaner_interfaces/srv/detail/query_battery_status__struct.h
+[77.476s] -- Symlinking: /home/ubuntu/workspace/Velizar/robotics_v1/install/robo_cleaner_interfaces/include/robo_cleaner_interfaces/srv/detail/query_battery_status__type_support.h
+[77.498s] -- Symlinking: /home/ubuntu/workspace/Velizar/robotics_v1/install/robo_cleaner_interfaces/include/robo_cleaner_interfaces/srv/detail/query_initial_robot_state__functions.h
+[77.522s] -- Symlinking: /home/ubuntu/workspace/Velizar/robotics_v1/install/robo_cleaner_interfaces/include/robo_cleaner_interfaces/srv/detail/query_initial_robot_state__struct.h
+[77.545s] -- Symlinking: /home/ubuntu/workspace/Velizar/robotics_v1/install/robo_cleaner_interfaces/include/robo_cleaner_interfaces/srv/detail/query_initial_robot_state__type_support.h
+[77.567s] -- Symlinking: /home/ubuntu/workspace/Velizar/robotics_v1/install/robo_cleaner_interfaces/include/robo_cleaner_interfaces/srv/query_battery_status.h
+[77.590s] -- Symlinking: /home/ubuntu/workspace/Velizar/robotics_v1/install/robo_cleaner_interfaces/include/robo_cleaner_interfaces/srv/query_initial_robot_state.h
+[77.613s] -- Symlinking: /home/ubuntu/workspace/Velizar/robotics_v1/install/robo_cleaner_interfaces/share/robo_cleaner_interfaces/environment/library_path.sh
+[77.638s] -- Symlinking: /home/ubuntu/workspace/Velizar/robotics_v1/install/robo_cleaner_interfaces/share/robo_cleaner_interfaces/environment/library_path.dsv
+[77.663s] -- Symlinking: /home/ubuntu/workspace/Velizar/robotics_v1/install/robo_cleaner_interfaces/include/robo_cleaner_interfaces/action/detail/robot_move__rosidl_typesupport_fastrtps_c.h
+[77.686s] -- Symlinking: /home/ubuntu/workspace/Velizar/robotics_v1/install/robo_cleaner_interfaces/include/robo_cleaner_interfaces/msg/detail/battery_status__rosidl_typesupport_fastrtps_c.h
+[77.708s] -- Symlinking: /home/ubuntu/workspace/Velizar/robotics_v1/install/robo_cleaner_interfaces/include/robo_cleaner_interfaces/msg/detail/initial_robot_state__rosidl_typesupport_fastrtps_c.h
+[77.733s] -- Symlinking: /home/ubuntu/workspace/Velizar/robotics_v1/install/robo_cleaner_interfaces/include/robo_cleaner_interfaces/msg/detail/robot_move_type__rosidl_typesupport_fastrtps_c.h
+[77.755s] -- Symlinking: /home/ubuntu/workspace/Velizar/robotics_v1/install/robo_cleaner_interfaces/include/robo_cleaner_interfaces/msg/detail/user_authenticate__rosidl_typesupport_fastrtps_c.h
+[77.778s] -- Symlinking: /home/ubuntu/workspace/Velizar/robotics_v1/install/robo_cleaner_interfaces/include/robo_cleaner_interfaces/msg/rosidl_typesupport_fastrtps_c__visibility_control.h
+[77.800s] -- Symlinking: /home/ubuntu/workspace/Velizar/robotics_v1/install/robo_cleaner_interfaces/include/robo_cleaner_interfaces/srv/detail/charge_battery__rosidl_typesupport_fastrtps_c.h
+[77.830s] -- Symlinking: /home/ubuntu/workspace/Velizar/robotics_v1/install/robo_cleaner_interfaces/include/robo_cleaner_interfaces/srv/detail/query_battery_status__rosidl_typesupport_fastrtps_c.h
+[77.853s] -- Symlinking: /home/ubuntu/workspace/Velizar/robotics_v1/install/robo_cleaner_interfaces/include/robo_cleaner_interfaces/srv/detail/query_initial_robot_state__rosidl_typesupport_fastrtps_c.h
+[77.876s] -- Symlinking: /home/ubuntu/workspace/Velizar/robotics_v1/install/robo_cleaner_interfaces/lib/librobo_cleaner_interfaces__rosidl_typesupport_fastrtps_c.so
+[77.902s] -- Symlinking: /home/ubuntu/workspace/Velizar/robotics_v1/install/robo_cleaner_interfaces/include/robo_cleaner_interfaces/action/detail/robot_move__rosidl_typesupport_fastrtps_cpp.hpp
+[77.927s] -- Symlinking: /home/ubuntu/workspace/Velizar/robotics_v1/install/robo_cleaner_interfaces/include/robo_cleaner_interfaces/msg/detail/battery_status__rosidl_typesupport_fastrtps_cpp.hpp
+[77.950s] -- Symlinking: /home/ubuntu/workspace/Velizar/robotics_v1/install/robo_cleaner_interfaces/include/robo_cleaner_interfaces/msg/detail/initial_robot_state__rosidl_typesupport_fastrtps_cpp.hpp
+[77.972s] -- Symlinking: /home/ubuntu/workspace/Velizar/robotics_v1/install/robo_cleaner_interfaces/include/robo_cleaner_interfaces/msg/detail/robot_move_type__rosidl_typesupport_fastrtps_cpp.hpp
+[77.994s] -- Symlinking: /home/ubuntu/workspace/Velizar/robotics_v1/install/robo_cleaner_interfaces/include/robo_cleaner_interfaces/msg/detail/user_authenticate__rosidl_typesupport_fastrtps_cpp.hpp
+[78.017s] -- Symlinking: /home/ubuntu/workspace/Velizar/robotics_v1/install/robo_cleaner_interfaces/include/robo_cleaner_interfaces/msg/rosidl_typesupport_fastrtps_cpp__visibility_control.h
+[78.041s] -- Symlinking: /home/ubuntu/workspace/Velizar/robotics_v1/install/robo_cleaner_interfaces/include/robo_cleaner_interfaces/srv/detail/charge_battery__rosidl_typesupport_fastrtps_cpp.hpp
+[78.063s] -- Symlinking: /home/ubuntu/workspace/Velizar/robotics_v1/install/robo_cleaner_interfaces/include/robo_cleaner_interfaces/srv/detail/query_battery_status__rosidl_typesupport_fastrtps_cpp.hpp
+[78.086s] -- Symlinking: /home/ubuntu/workspace/Velizar/robotics_v1/install/robo_cleaner_interfaces/include/robo_cleaner_interfaces/srv/detail/query_initial_robot_state__rosidl_typesupport_fastrtps_cpp.hpp
+[78.112s] -- Symlinking: /home/ubuntu/workspace/Velizar/robotics_v1/install/robo_cleaner_interfaces/lib/librobo_cleaner_interfaces__rosidl_typesupport_fastrtps_cpp.so
+[78.138s] -- Symlinking: /home/ubuntu/workspace/Velizar/robotics_v1/install/robo_cleaner_interfaces/include/robo_cleaner_interfaces/action/detail/robot_move__rosidl_typesupport_introspection_c.h
+[78.161s] -- Symlinking: /home/ubuntu/workspace/Velizar/robotics_v1/install/robo_cleaner_interfaces/include/robo_cleaner_interfaces/msg/detail/battery_status__rosidl_typesupport_introspection_c.h
+[78.183s] -- Symlinking: /home/ubuntu/workspace/Velizar/robotics_v1/install/robo_cleaner_interfaces/include/robo_cleaner_interfaces/msg/detail/initial_robot_state__rosidl_typesupport_introspection_c.h
+[78.205s] -- Symlinking: /home/ubuntu/workspace/Velizar/robotics_v1/install/robo_cleaner_interfaces/include/robo_cleaner_interfaces/msg/detail/robot_move_type__rosidl_typesupport_introspection_c.h
+[78.229s] -- Symlinking: /home/ubuntu/workspace/Velizar/robotics_v1/install/robo_cleaner_interfaces/include/robo_cleaner_interfaces/msg/detail/user_authenticate__rosidl_typesupport_introspection_c.h
+[78.251s] -- Symlinking: /home/ubuntu/workspace/Velizar/robotics_v1/install/robo_cleaner_interfaces/include/robo_cleaner_interfaces/msg/rosidl_typesupport_introspection_c__visibility_control.h
+[78.273s] -- Symlinking: /home/ubuntu/workspace/Velizar/robotics_v1/install/robo_cleaner_interfaces/include/robo_cleaner_interfaces/srv/detail/charge_battery__rosidl_typesupport_introspection_c.h
+[78.295s] -- Symlinking: /home/ubuntu/workspace/Velizar/robotics_v1/install/robo_cleaner_interfaces/include/robo_cleaner_interfaces/srv/detail/query_battery_status__rosidl_typesupport_introspection_c.h
+[78.317s] -- Symlinking: /home/ubuntu/workspace/Velizar/robotics_v1/install/robo_cleaner_interfaces/include/robo_cleaner_interfaces/srv/detail/query_initial_robot_state__rosidl_typesupport_introspection_c.h
+[78.343s] -- Symlinking: /home/ubuntu/workspace/Velizar/robotics_v1/install/robo_cleaner_interfaces/include/robo_cleaner_interfaces/action/detail/robot_move__builder.hpp
+[78.365s] -- Symlinking: /home/ubuntu/workspace/Velizar/robotics_v1/install/robo_cleaner_interfaces/include/robo_cleaner_interfaces/action/detail/robot_move__struct.hpp
+[78.387s] -- Symlinking: /home/ubuntu/workspace/Velizar/robotics_v1/install/robo_cleaner_interfaces/include/robo_cleaner_interfaces/action/detail/robot_move__traits.hpp
+[78.409s] -- Symlinking: /home/ubuntu/workspace/Velizar/robotics_v1/install/robo_cleaner_interfaces/include/robo_cleaner_interfaces/action/robot_move.hpp
+[78.433s] -- Symlinking: /home/ubuntu/workspace/Velizar/robotics_v1/install/robo_cleaner_interfaces/include/robo_cleaner_interfaces/msg/battery_status.hpp
+[78.455s] -- Symlinking: /home/ubuntu/workspace/Velizar/robotics_v1/install/robo_cleaner_interfaces/include/robo_cleaner_interfaces/msg/detail/battery_status__builder.hpp
+[78.477s] -- Symlinking: /home/ubuntu/workspace/Velizar/robotics_v1/install/robo_cleaner_interfaces/include/robo_cleaner_interfaces/msg/detail/battery_status__struct.hpp
+[78.500s] -- Symlinking: /home/ubuntu/workspace/Velizar/robotics_v1/install/robo_cleaner_interfaces/include/robo_cleaner_interfaces/msg/detail/battery_status__traits.hpp
+[78.521s] -- Symlinking: /home/ubuntu/workspace/Velizar/robotics_v1/install/robo_cleaner_interfaces/include/robo_cleaner_interfaces/msg/detail/initial_robot_state__builder.hpp
+[78.545s] -- Symlinking: /home/ubuntu/workspace/Velizar/robotics_v1/install/robo_cleaner_interfaces/include/robo_cleaner_interfaces/msg/detail/initial_robot_state__struct.hpp
+[78.567s] -- Symlinking: /home/ubuntu/workspace/Velizar/robotics_v1/install/robo_cleaner_interfaces/include/robo_cleaner_interfaces/msg/detail/initial_robot_state__traits.hpp
+[78.589s] -- Symlinking: /home/ubuntu/workspace/Velizar/robotics_v1/install/robo_cleaner_interfaces/include/robo_cleaner_interfaces/msg/detail/robot_move_type__builder.hpp
+[78.610s] -- Symlinking: /home/ubuntu/workspace/Velizar/robotics_v1/install/robo_cleaner_interfaces/include/robo_cleaner_interfaces/msg/detail/robot_move_type__struct.hpp
+[78.634s] -- Symlinking: /home/ubuntu/workspace/Velizar/robotics_v1/install/robo_cleaner_interfaces/include/robo_cleaner_interfaces/msg/detail/robot_move_type__traits.hpp
+[78.656s] -- Symlinking: /home/ubuntu/workspace/Velizar/robotics_v1/install/robo_cleaner_interfaces/include/robo_cleaner_interfaces/msg/detail/user_authenticate__builder.hpp
+[78.679s] -- Symlinking: /home/ubuntu/workspace/Velizar/robotics_v1/install/robo_cleaner_interfaces/include/robo_cleaner_interfaces/msg/detail/user_authenticate__struct.hpp
+[78.701s] -- Symlinking: /home/ubuntu/workspace/Velizar/robotics_v1/install/robo_cleaner_interfaces/include/robo_cleaner_interfaces/msg/detail/user_authenticate__traits.hpp
+[78.724s] -- Symlinking: /home/ubuntu/workspace/Velizar/robotics_v1/install/robo_cleaner_interfaces/include/robo_cleaner_interfaces/msg/initial_robot_state.hpp
+[78.746s] -- Symlinking: /home/ubuntu/workspace/Velizar/robotics_v1/install/robo_cleaner_interfaces/include/robo_cleaner_interfaces/msg/robot_move_type.hpp
+[78.768s] -- Symlinking: /home/ubuntu/workspace/Velizar/robotics_v1/install/robo_cleaner_interfaces/include/robo_cleaner_interfaces/msg/user_authenticate.hpp
+[78.790s] -- Symlinking: /home/ubuntu/workspace/Velizar/robotics_v1/install/robo_cleaner_interfaces/include/robo_cleaner_interfaces/srv/charge_battery.hpp
+[78.816s] -- Symlinking: /home/ubuntu/workspace/Velizar/robotics_v1/install/robo_cleaner_interfaces/include/robo_cleaner_interfaces/srv/detail/charge_battery__builder.hpp
+[78.840s] -- Symlinking: /home/ubuntu/workspace/Velizar/robotics_v1/install/robo_cleaner_interfaces/include/robo_cleaner_interfaces/srv/detail/charge_battery__struct.hpp
+[78.862s] -- Symlinking: /home/ubuntu/workspace/Velizar/robotics_v1/install/robo_cleaner_interfaces/include/robo_cleaner_interfaces/srv/detail/charge_battery__traits.hpp
+[78.884s] -- Symlinking: /home/ubuntu/workspace/Velizar/robotics_v1/install/robo_cleaner_interfaces/include/robo_cleaner_interfaces/srv/detail/query_battery_status__builder.hpp
+[78.905s] -- Symlinking: /home/ubuntu/workspace/Velizar/robotics_v1/install/robo_cleaner_interfaces/include/robo_cleaner_interfaces/srv/detail/query_battery_status__struct.hpp
+[78.928s] -- Symlinking: /home/ubuntu/workspace/Velizar/robotics_v1/install/robo_cleaner_interfaces/include/robo_cleaner_interfaces/srv/detail/query_battery_status__traits.hpp
+[78.948s] -- Symlinking: /home/ubuntu/workspace/Velizar/robotics_v1/install/robo_cleaner_interfaces/include/robo_cleaner_interfaces/srv/detail/query_initial_robot_state__builder.hpp
+[78.969s] -- Symlinking: /home/ubuntu/workspace/Velizar/robotics_v1/install/robo_cleaner_interfaces/include/robo_cleaner_interfaces/srv/detail/query_initial_robot_state__struct.hpp
+[78.990s] -- Symlinking: /home/ubuntu/workspace/Velizar/robotics_v1/install/robo_cleaner_interfaces/include/robo_cleaner_interfaces/srv/detail/query_initial_robot_state__traits.hpp
+[79.011s] -- Symlinking: /home/ubuntu/workspace/Velizar/robotics_v1/install/robo_cleaner_interfaces/include/robo_cleaner_interfaces/srv/query_battery_status.hpp
+[79.033s] -- Symlinking: /home/ubuntu/workspace/Velizar/robotics_v1/install/robo_cleaner_interfaces/include/robo_cleaner_interfaces/srv/query_initial_robot_state.hpp
+[79.056s] -- Symlinking: /home/ubuntu/workspace/Velizar/robotics_v1/install/robo_cleaner_interfaces/include/robo_cleaner_interfaces/action/detail/robot_move__rosidl_typesupport_introspection_cpp.hpp
+[79.077s] -- Symlinking: /home/ubuntu/workspace/Velizar/robotics_v1/install/robo_cleaner_interfaces/include/robo_cleaner_interfaces/msg/detail/battery_status__rosidl_typesupport_introspection_cpp.hpp
+[79.100s] -- Symlinking: /home/ubuntu/workspace/Velizar/robotics_v1/install/robo_cleaner_interfaces/include/robo_cleaner_interfaces/msg/detail/initial_robot_state__rosidl_typesupport_introspection_cpp.hpp
+[79.122s] -- Symlinking: /home/ubuntu/workspace/Velizar/robotics_v1/install/robo_cleaner_interfaces/include/robo_cleaner_interfaces/msg/detail/robot_move_type__rosidl_typesupport_introspection_cpp.hpp
+[79.146s] -- Symlinking: /home/ubuntu/workspace/Velizar/robotics_v1/install/robo_cleaner_interfaces/include/robo_cleaner_interfaces/msg/detail/user_authenticate__rosidl_typesupport_introspection_cpp.hpp
+[79.170s] -- Symlinking: /home/ubuntu/workspace/Velizar/robotics_v1/install/robo_cleaner_interfaces/include/robo_cleaner_interfaces/srv/detail/charge_battery__rosidl_typesupport_introspection_cpp.hpp
+[79.193s] -- Symlinking: /home/ubuntu/workspace/Velizar/robotics_v1/install/robo_cleaner_interfaces/include/robo_cleaner_interfaces/srv/detail/query_battery_status__rosidl_typesupport_introspection_cpp.hpp
+[79.215s] -- Symlinking: /home/ubuntu/workspace/Velizar/robotics_v1/install/robo_cleaner_interfaces/include/robo_cleaner_interfaces/srv/detail/query_initial_robot_state__rosidl_typesupport_introspection_cpp.hpp
+[79.241s] -- Symlinking: /home/ubuntu/workspace/Velizar/robotics_v1/install/robo_cleaner_interfaces/share/robo_cleaner_interfaces/environment/pythonpath.sh
+[79.264s] -- Symlinking: /home/ubuntu/workspace/Velizar/robotics_v1/install/robo_cleaner_interfaces/share/robo_cleaner_interfaces/environment/pythonpath.dsv
+[79.288s] -- Symlinking: /home/ubuntu/workspace/Velizar/robotics_v1/install/robo_cleaner_interfaces/lib/python3.8/site-packages/robo_cleaner_interfaces/__init__.py
+[79.311s] -- Symlinking: /home/ubuntu/workspace/Velizar/robotics_v1/install/robo_cleaner_interfaces/lib/python3.8/site-packages/robo_cleaner_interfaces/msg/__init__.py
+[79.337s] -- Symlinking: /home/ubuntu/workspace/Velizar/robotics_v1/install/robo_cleaner_interfaces/lib/python3.8/site-packages/robo_cleaner_interfaces/msg/_battery_status.py
+[79.359s] -- Symlinking: /home/ubuntu/workspace/Velizar/robotics_v1/install/robo_cleaner_interfaces/lib/python3.8/site-packages/robo_cleaner_interfaces/msg/_initial_robot_state.py
+[79.381s] -- Symlinking: /home/ubuntu/workspace/Velizar/robotics_v1/install/robo_cleaner_interfaces/lib/python3.8/site-packages/robo_cleaner_interfaces/msg/_robot_move_type.py
+[79.404s] -- Symlinking: /home/ubuntu/workspace/Velizar/robotics_v1/install/robo_cleaner_interfaces/lib/python3.8/site-packages/robo_cleaner_interfaces/msg/_user_authenticate.py
+[79.430s] -- Symlinking: /home/ubuntu/workspace/Velizar/robotics_v1/install/robo_cleaner_interfaces/lib/python3.8/site-packages/robo_cleaner_interfaces/srv/__init__.py
+[79.452s] -- Symlinking: /home/ubuntu/workspace/Velizar/robotics_v1/install/robo_cleaner_interfaces/lib/python3.8/site-packages/robo_cleaner_interfaces/srv/_charge_battery.py
+[79.476s] -- Symlinking: /home/ubuntu/workspace/Velizar/robotics_v1/install/robo_cleaner_interfaces/lib/python3.8/site-packages/robo_cleaner_interfaces/srv/_query_battery_status.py
+[79.499s] -- Symlinking: /home/ubuntu/workspace/Velizar/robotics_v1/install/robo_cleaner_interfaces/lib/python3.8/site-packages/robo_cleaner_interfaces/srv/_query_initial_robot_state.py
+[79.526s] -- Symlinking: /home/ubuntu/workspace/Velizar/robotics_v1/install/robo_cleaner_interfaces/lib/python3.8/site-packages/robo_cleaner_interfaces/action/__init__.py
+[79.552s] -- Symlinking: /home/ubuntu/workspace/Velizar/robotics_v1/install/robo_cleaner_interfaces/lib/python3.8/site-packages/robo_cleaner_interfaces/action/_robot_move.py
+[79.577s] -- Symlinking: /home/ubuntu/workspace/Velizar/robotics_v1/install/robo_cleaner_interfaces/lib/python3.8/site-packages/robo_cleaner_interfaces/robo_cleaner_interfaces_s__rosidl_typesupport_fastrtps_c.cpython-38-x86_64-linux-gnu.so
+[79.601s] -- Symlinking: /home/ubuntu/workspace/Velizar/robotics_v1/install/robo_cleaner_interfaces/lib/python3.8/site-packages/robo_cleaner_interfaces/robo_cleaner_interfaces_s__rosidl_typesupport_introspection_c.cpython-38-x86_64-linux-gnu.so
+[79.627s] -- Symlinking: /home/ubuntu/workspace/Velizar/robotics_v1/install/robo_cleaner_interfaces/lib/python3.8/site-packages/robo_cleaner_interfaces/robo_cleaner_interfaces_s__rosidl_typesupport_c.cpython-38-x86_64-linux-gnu.so
+[79.652s] -- Symlinking: /home/ubuntu/workspace/Velizar/robotics_v1/install/robo_cleaner_interfaces/lib/librobo_cleaner_interfaces__python.so
+[79.676s] -- Symlinking: /home/ubuntu/workspace/Velizar/robotics_v1/install/robo_cleaner_interfaces/share/robo_cleaner_interfaces/msg/BatteryStatus.idl
+[79.700s] -- Symlinking: /home/ubuntu/workspace/Velizar/robotics_v1/install/robo_cleaner_interfaces/share/robo_cleaner_interfaces/msg/InitialRobotState.idl
+[79.725s] -- Symlinking: /home/ubuntu/workspace/Velizar/robotics_v1/install/robo_cleaner_interfaces/share/robo_cleaner_interfaces/msg/RobotMoveType.idl
+[79.749s] -- Symlinking: /home/ubuntu/workspace/Velizar/robotics_v1/install/robo_cleaner_interfaces/share/robo_cleaner_interfaces/msg/UserAuthenticate.idl
+[79.772s] -- Symlinking: /home/ubuntu/workspace/Velizar/robotics_v1/install/robo_cleaner_interfaces/share/robo_cleaner_interfaces/srv/ChargeBattery.idl
+[79.797s] -- Symlinking: /home/ubuntu/workspace/Velizar/robotics_v1/install/robo_cleaner_interfaces/share/robo_cleaner_interfaces/srv/QueryBatteryStatus.idl
+[79.824s] -- Symlinking: /home/ubuntu/workspace/Velizar/robotics_v1/install/robo_cleaner_interfaces/share/robo_cleaner_interfaces/srv/QueryInitialRobotState.idl
+[79.850s] -- Symlinking: /home/ubuntu/workspace/Velizar/robotics_v1/install/robo_cleaner_interfaces/share/robo_cleaner_interfaces/action/RobotMove.idl
+[79.873s] -- Symlinking: /home/ubuntu/workspace/Velizar/robotics_v1/install/robo_cleaner_interfaces/share/robo_cleaner_interfaces/msg/BatteryStatus.msg
+[79.897s] -- Symlinking: /home/ubuntu/workspace/Velizar/robotics_v1/install/robo_cleaner_interfaces/share/robo_cleaner_interfaces/msg/InitialRobotState.msg
+[79.920s] -- Symlinking: /home/ubuntu/workspace/Velizar/robotics_v1/install/robo_cleaner_interfaces/share/robo_cleaner_interfaces/msg/RobotMoveType.msg
+[79.945s] -- Symlinking: /home/ubuntu/workspace/Velizar/robotics_v1/install/robo_cleaner_interfaces/share/robo_cleaner_interfaces/msg/UserAuthenticate.msg
+[79.969s] -- Symlinking: /home/ubuntu/workspace/Velizar/robotics_v1/install/robo_cleaner_interfaces/share/robo_cleaner_interfaces/srv/ChargeBattery.srv
+[79.993s] -- Symlinking: /home/ubuntu/workspace/Velizar/robotics_v1/install/robo_cleaner_interfaces/share/robo_cleaner_interfaces/srv/ChargeBattery_Request.msg
+[80.016s] -- Symlinking: /home/ubuntu/workspace/Velizar/robotics_v1/install/robo_cleaner_interfaces/share/robo_cleaner_interfaces/srv/ChargeBattery_Response.msg
+[80.042s] -- Symlinking: /home/ubuntu/workspace/Velizar/robotics_v1/install/robo_cleaner_interfaces/share/robo_cleaner_interfaces/srv/QueryBatteryStatus.srv
+[80.065s] -- Symlinking: /home/ubuntu/workspace/Velizar/robotics_v1/install/robo_cleaner_interfaces/share/robo_cleaner_interfaces/srv/QueryBatteryStatus_Request.msg
+[80.089s] -- Symlinking: /home/ubuntu/workspace/Velizar/robotics_v1/install/robo_cleaner_interfaces/share/robo_cleaner_interfaces/srv/QueryBatteryStatus_Response.msg
+[80.114s] -- Symlinking: /home/ubuntu/workspace/Velizar/robotics_v1/install/robo_cleaner_interfaces/share/robo_cleaner_interfaces/srv/QueryInitialRobotState.srv
+[80.140s] -- Symlinking: /home/ubuntu/workspace/Velizar/robotics_v1/install/robo_cleaner_interfaces/share/robo_cleaner_interfaces/srv/QueryInitialRobotState_Request.msg
+[80.164s] -- Symlinking: /home/ubuntu/workspace/Velizar/robotics_v1/install/robo_cleaner_interfaces/share/robo_cleaner_interfaces/srv/QueryInitialRobotState_Response.msg
+[80.188s] -- Symlinking: /home/ubuntu/workspace/Velizar/robotics_v1/install/robo_cleaner_interfaces/share/robo_cleaner_interfaces/action/RobotMove.action
+[80.212s] -- Symlinking: /home/ubuntu/workspace/Velizar/robotics_v1/install/robo_cleaner_interfaces/share/ament_index/resource_index/package_run_dependencies/robo_cleaner_interfaces
+[80.238s] -- Symlinking: /home/ubuntu/workspace/Velizar/robotics_v1/install/robo_cleaner_interfaces/share/ament_index/resource_index/parent_prefix_path/robo_cleaner_interfaces
+[80.262s] -- Symlinking: /home/ubuntu/workspace/Velizar/robotics_v1/install/robo_cleaner_interfaces/share/robo_cleaner_interfaces/environment/ament_prefix_path.sh
+[80.286s] -- Symlinking: /home/ubuntu/workspace/Velizar/robotics_v1/install/robo_cleaner_interfaces/share/robo_cleaner_interfaces/environment/ament_prefix_path.dsv
+[80.309s] -- Symlinking: /home/ubuntu/workspace/Velizar/robotics_v1/install/robo_cleaner_interfaces/share/robo_cleaner_interfaces/environment/path.sh
+[80.336s] -- Symlinking: /home/ubuntu/workspace/Velizar/robotics_v1/install/robo_cleaner_interfaces/share/robo_cleaner_interfaces/environment/path.dsv
+[80.360s] -- Symlinking: /home/ubuntu/workspace/Velizar/robotics_v1/install/robo_cleaner_interfaces/share/robo_cleaner_interfaces/local_setup.bash
+[80.383s] -- Symlinking: /home/ubuntu/workspace/Velizar/robotics_v1/install/robo_cleaner_interfaces/share/robo_cleaner_interfaces/local_setup.sh
+[80.407s] -- Symlinking: /home/ubuntu/workspace/Velizar/robotics_v1/install/robo_cleaner_interfaces/share/robo_cleaner_interfaces/local_setup.zsh
+[80.433s] -- Symlinking: /home/ubuntu/workspace/Velizar/robotics_v1/install/robo_cleaner_interfaces/share/robo_cleaner_interfaces/local_setup.dsv
+[80.457s] -- Symlinking: /home/ubuntu/workspace/Velizar/robotics_v1/install/robo_cleaner_interfaces/share/robo_cleaner_interfaces/package.dsv
+[80.485s] -- Symlinking: /home/ubuntu/workspace/Velizar/robotics_v1/install/robo_cleaner_interfaces/share/ament_index/resource_index/packages/robo_cleaner_interfaces
+[80.509s] -- Symlinking: /home/ubuntu/workspace/Velizar/robotics_v1/install/robo_cleaner_interfaces/share/robo_cleaner_interfaces/cmake/rosidl_cmake-extras.cmake
+[80.535s] -- Symlinking: /home/ubuntu/workspace/Velizar/robotics_v1/install/robo_cleaner_interfaces/share/robo_cleaner_interfaces/cmake/ament_cmake_export_dependencies-extras.cmake
+[80.559s] -- Symlinking: /home/ubuntu/workspace/Velizar/robotics_v1/install/robo_cleaner_interfaces/share/robo_cleaner_interfaces/cmake/ament_cmake_export_libraries-extras.cmake
+[80.582s] -- Symlinking: /home/ubuntu/workspace/Velizar/robotics_v1/install/robo_cleaner_interfaces/share/robo_cleaner_interfaces/cmake/ament_cmake_export_targets-extras.cmake
+[80.606s] -- Symlinking: /home/ubuntu/workspace/Velizar/robotics_v1/install/robo_cleaner_interfaces/share/robo_cleaner_interfaces/cmake/ament_cmake_export_include_directories-extras.cmake
+[80.632s] -- Symlinking: /home/ubuntu/workspace/Velizar/robotics_v1/install/robo_cleaner_interfaces/share/robo_cleaner_interfaces/cmake/rosidl_cmake_export_typesupport_libraries-extras.cmake
+[80.656s] -- Symlinking: /home/ubuntu/workspace/Velizar/robotics_v1/install/robo_cleaner_interfaces/share/robo_cleaner_interfaces/cmake/rosidl_cmake_export_typesupport_targets-extras.cmake
+[80.680s] -- Symlinking: /home/ubuntu/workspace/Velizar/robotics_v1/install/robo_cleaner_interfaces/share/robo_cleaner_interfaces/cmake/robo_cleaner_interfacesConfig.cmake
+[80.703s] -- Symlinking: /home/ubuntu/workspace/Velizar/robotics_v1/install/robo_cleaner_interfaces/share/robo_cleaner_interfaces/cmake/robo_cleaner_interfacesConfig-version.cmake
+[80.729s] -- Symlinking: /home/ubuntu/workspace/Velizar/robotics_v1/install/robo_cleaner_interfaces/share/robo_cleaner_interfaces/package.xml
+[80.753s] -- Installing: /home/ubuntu/workspace/Velizar/robotics_v1/install/robo_cleaner_interfaces/lib/librobo_cleaner_interfaces__rosidl_generator_c.so
+[80.754s] -- Set runtime path of "/home/ubuntu/workspace/Velizar/robotics_v1/install/robo_cleaner_interfaces/lib/librobo_cleaner_interfaces__rosidl_generator_c.so" to ""
+[80.755s] -- Installing: /home/ubuntu/workspace/Velizar/robotics_v1/install/robo_cleaner_interfaces/lib/librobo_cleaner_interfaces__rosidl_typesupport_introspection_c.so
+[80.757s] -- Set runtime path of "/home/ubuntu/workspace/Velizar/robotics_v1/install/robo_cleaner_interfaces/lib/librobo_cleaner_interfaces__rosidl_typesupport_introspection_c.so" to ""
+[80.757s] -- Installing: /home/ubuntu/workspace/Velizar/robotics_v1/install/robo_cleaner_interfaces/lib/librobo_cleaner_interfaces__rosidl_typesupport_c.so
+[80.759s] -- Set runtime path of "/home/ubuntu/workspace/Velizar/robotics_v1/install/robo_cleaner_interfaces/lib/librobo_cleaner_interfaces__rosidl_typesupport_c.so" to ""
+[80.760s] -- Installing: /home/ubuntu/workspace/Velizar/robotics_v1/install/robo_cleaner_interfaces/lib/librobo_cleaner_interfaces__rosidl_typesupport_introspection_cpp.so
+[80.762s] -- Set runtime path of "/home/ubuntu/workspace/Velizar/robotics_v1/install/robo_cleaner_interfaces/lib/librobo_cleaner_interfaces__rosidl_typesupport_introspection_cpp.so" to ""
+[80.763s] -- Installing: /home/ubuntu/workspace/Velizar/robotics_v1/install/robo_cleaner_interfaces/lib/librobo_cleaner_interfaces__rosidl_typesupport_cpp.so
+[80.764s] -- Set runtime path of "/home/ubuntu/workspace/Velizar/robotics_v1/install/robo_cleaner_interfaces/lib/librobo_cleaner_interfaces__rosidl_typesupport_cpp.so" to ""
+[80.841s] Compiling '/home/ubuntu/workspace/Velizar/robotics_v1/install/robo_cleaner_interfaces/lib/python3.8/site-packages/robo_cleaner_interfaces/__init__.py'...
+[80.852s] -- Installing: /home/ubuntu/workspace/Velizar/robotics_v1/install/robo_cleaner_interfaces/share/robo_cleaner_interfaces/cmake/robo_cleaner_interfaces__rosidl_generator_cExport.cmake
+[80.853s] -- Installing: /home/ubuntu/workspace/Velizar/robotics_v1/install/robo_cleaner_interfaces/share/robo_cleaner_interfaces/cmake/robo_cleaner_interfaces__rosidl_generator_cExport-debug.cmake
+[80.854s] -- Installing: /home/ubuntu/workspace/Velizar/robotics_v1/install/robo_cleaner_interfaces/share/robo_cleaner_interfaces/cmake/robo_cleaner_interfaces__rosidl_typesupport_introspection_cExport.cmake
+[80.855s] -- Installing: /home/ubuntu/workspace/Velizar/robotics_v1/install/robo_cleaner_interfaces/share/robo_cleaner_interfaces/cmake/robo_cleaner_interfaces__rosidl_typesupport_introspection_cExport-debug.cmake
+[80.856s] -- Installing: /home/ubuntu/workspace/Velizar/robotics_v1/install/robo_cleaner_interfaces/share/robo_cleaner_interfaces/cmake/robo_cleaner_interfaces__rosidl_typesupport_cExport.cmake
+[80.857s] -- Installing: /home/ubuntu/workspace/Velizar/robotics_v1/install/robo_cleaner_interfaces/share/robo_cleaner_interfaces/cmake/robo_cleaner_interfaces__rosidl_typesupport_cExport-debug.cmake
+[80.857s] -- Installing: /home/ubuntu/workspace/Velizar/robotics_v1/install/robo_cleaner_interfaces/share/robo_cleaner_interfaces/cmake/robo_cleaner_interfaces__rosidl_generator_cppExport.cmake
+[80.858s] -- Installing: /home/ubuntu/workspace/Velizar/robotics_v1/install/robo_cleaner_interfaces/share/robo_cleaner_interfaces/cmake/robo_cleaner_interfaces__rosidl_typesupport_introspection_cppExport.cmake
+[80.859s] -- Installing: /home/ubuntu/workspace/Velizar/robotics_v1/install/robo_cleaner_interfaces/share/robo_cleaner_interfaces/cmake/robo_cleaner_interfaces__rosidl_typesupport_introspection_cppExport-debug.cmake
+[80.860s] -- Installing: /home/ubuntu/workspace/Velizar/robotics_v1/install/robo_cleaner_interfaces/share/robo_cleaner_interfaces/cmake/robo_cleaner_interfaces__rosidl_typesupport_cppExport.cmake
+[80.861s] -- Installing: /home/ubuntu/workspace/Velizar/robotics_v1/install/robo_cleaner_interfaces/share/robo_cleaner_interfaces/cmake/robo_cleaner_interfaces__rosidl_typesupport_cppExport-debug.cmake
+[80.873s] Invoked command in '/home/ubuntu/workspace/Velizar/robotics_v1/build/robo_cleaner_interfaces' returned '0': CMAKE_PREFIX_PATH=/opt/ros/foxy PS1=[\u@\h \W]$(git_branch)$ /usr/bin/cmake --install /home/ubuntu/workspace/Velizar/robotics_v1/build/robo_cleaner_interfaces

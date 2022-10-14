@@ -1,0 +1,115 @@
+-- The CXX compiler identification is Clang 10.0.0
+-- Check for working CXX compiler: /usr/bin/clang++
+-- Check for working CXX compiler: /usr/bin/clang++ -- works
+-- Detecting CXX compiler ABI info
+-- Detecting CXX compiler ABI info - done
+-- Detecting CXX compile features
+-- Detecting CXX compile features - done
+-- Found cmake_helpers: 1.0.0 (/home/ubuntu/workspace/Velizar/robotics_v1/install/cmake_helpers/share/cmake_helpers/cmake)
+-- Looking for C++ include pthread.h
+-- Looking for C++ include pthread.h - found
+-- Performing Test CMAKE_HAVE_LIBC_PTHREAD
+-- Performing Test CMAKE_HAVE_LIBC_PTHREAD - Failed
+-- Looking for pthread_create in pthreads
+-- Looking for pthread_create in pthreads - not found
+-- Looking for pthread_create in pthread
+-- Looking for pthread_create in pthread - found
+-- Found Threads: TRUE  
+-- Found SDL2: /usr/lib/x86_64-linux-gnu/libSDL2main.a;/usr/lib/x86_64-linux-gnu/libSDL2.so;-lpthread  
+-- Found SDL2_IMAGE: /usr/lib/x86_64-linux-gnu/libSDL2_image.so  
+-- Found SDL2_TTF: /usr/lib/x86_64-linux-gnu/libSDL2_ttf.so  
+-- Found SDL2_MIXER: /usr/lib/x86_64-linux-gnu/libSDL2_mixer.so  
+-- Found ament_cmake: 0.9.9 (/opt/ros/foxy/share/ament_cmake/cmake)
+-- Found PythonInterp: /usr/bin/python3 (found suitable version "3.8.10", minimum required is "3") 
+-- Using PYTHON_EXECUTABLE: /usr/bin/python3
+-- Configuring done
+-- Generating done
+-- Build files have been written to: /home/ubuntu/workspace/Velizar/robotics_v1/build/sdl_utils
+[35m[1mScanning dependencies of target sdl_utils[0m
+[  5%] [32mBuilding CXX object CMakeFiles/sdl_utils.dir/src/containers/FontContainer.cpp.o[0m
+[ 10%] [32mBuilding CXX object CMakeFiles/sdl_utils.dir/src/containers/ResourceContainer.cpp.o[0m
+[ 15%] [32mBuilding CXX object CMakeFiles/sdl_utils.dir/src/containers/SDLContainers.cpp.o[0m
+[ 20%] [32mBuilding CXX object CMakeFiles/sdl_utils.dir/src/containers/SoundContainer.cpp.o[0m
+[ 25%] [32mBuilding CXX object CMakeFiles/sdl_utils.dir/src/containers/FboContainer.cpp.o[0m
+[ 30%] [32mBuilding CXX object CMakeFiles/sdl_utils.dir/src/containers/TextContainer.cpp.o[0m
+[ 35%] [32mBuilding CXX object CMakeFiles/sdl_utils.dir/src/drawing/defines/MonitorDefines.cpp.o[0m
+[ 40%] [32mBuilding CXX object CMakeFiles/sdl_utils.dir/src/drawing/DrawParams.cpp.o[0m
+[ 45%] [32mBuilding CXX object CMakeFiles/sdl_utils.dir/src/drawing/GeometryUtils.cpp.o[0m
+[ 50%] [32mBuilding CXX object CMakeFiles/sdl_utils.dir/src/drawing/LoadingScreen.cpp.o[0m
+[ 55%] [32mBuilding CXX object CMakeFiles/sdl_utils.dir/src/drawing/MonitorWindow.cpp.o[0m
+[ 60%] [32mBuilding CXX object CMakeFiles/sdl_utils.dir/src/drawing/Renderer.cpp.o[0m
+[ 65%] [32mBuilding CXX object CMakeFiles/sdl_utils.dir/src/drawing/RendererState.cpp.o[0m
+[ 70%] [32mBuilding CXX object CMakeFiles/sdl_utils.dir/src/drawing/Texture.cpp.o[0m
+[ 75%] [32mBuilding CXX object CMakeFiles/sdl_utils.dir/src/input/InputEvent.cpp.o[0m
+[ 80%] [32mBuilding CXX object CMakeFiles/sdl_utils.dir/src/input/InputEventGenerator.cpp.o[0m
+[ 85%] [32mBuilding CXX object CMakeFiles/sdl_utils.dir/src/input/MouseUtils.cpp.o[0m
+[ 90%] [32mBuilding CXX object CMakeFiles/sdl_utils.dir/src/sound/SoundMixer.cpp.o[0m
+[ 95%] [32mBuilding CXX object CMakeFiles/sdl_utils.dir/src/SDLLoader.cpp.o[0m
+[100%] [32m[1mLinking CXX static library libsdl_utils.a[0m
+[100%] Built target sdl_utils
+-- Install configuration: "Debug"
+-- Installing: /home/ubuntu/workspace/Velizar/robotics_v1/install/sdl_utils/share/sdl_utils/package.xml
+-- Installing: /home/ubuntu/workspace/Velizar/robotics_v1/install/sdl_utils/lib/sdl_utils/libsdl_utils.a
+-- Installing: /home/ubuntu/workspace/Velizar/robotics_v1/install/sdl_utils/share/ament_index/resource_index/packages/sdl_utils
+-- Installing: /home/ubuntu/workspace/Velizar/robotics_v1/install/sdl_utils/share/sdl_utils/hook/ament_prefix_path.dsv
+-- Installing: /home/ubuntu/workspace/Velizar/robotics_v1/install/sdl_utils/share/sdl_utils/hook/ros_package_path.dsv
+-- Installing: /home/ubuntu/workspace/Velizar/robotics_v1/install/sdl_utils/share/ament_index/resource_index/package_run_dependencies/sdl_utils
+-- Installing: /home/ubuntu/workspace/Velizar/robotics_v1/install/sdl_utils/share/ament_index/resource_index/parent_prefix_path/sdl_utils
+-- Installing: /home/ubuntu/workspace/Velizar/robotics_v1/install/sdl_utils/share/sdl_utils/environment/ament_prefix_path.sh
+-- Installing: /home/ubuntu/workspace/Velizar/robotics_v1/install/sdl_utils/share/sdl_utils/environment/ament_prefix_path.dsv
+-- Installing: /home/ubuntu/workspace/Velizar/robotics_v1/install/sdl_utils/share/sdl_utils/environment/path.sh
+-- Installing: /home/ubuntu/workspace/Velizar/robotics_v1/install/sdl_utils/share/sdl_utils/environment/path.dsv
+-- Installing: /home/ubuntu/workspace/Velizar/robotics_v1/install/sdl_utils/share/sdl_utils/local_setup.bash
+-- Installing: /home/ubuntu/workspace/Velizar/robotics_v1/install/sdl_utils/share/sdl_utils/local_setup.sh
+-- Installing: /home/ubuntu/workspace/Velizar/robotics_v1/install/sdl_utils/share/sdl_utils/local_setup.zsh
+-- Installing: /home/ubuntu/workspace/Velizar/robotics_v1/install/sdl_utils/share/sdl_utils/local_setup.dsv
+-- Installing: /home/ubuntu/workspace/Velizar/robotics_v1/install/sdl_utils/share/sdl_utils/package.dsv
+-- Installing: /home/ubuntu/workspace/Velizar/robotics_v1/install/sdl_utils/share/ament_index/resource_index/packages/sdl_utils
+-- Installing: /home/ubuntu/workspace/Velizar/robotics_v1/install/sdl_utils/share/sdl_utils/cmake/sdl_utilsConfig.cmake
+-- Installing: /home/ubuntu/workspace/Velizar/robotics_v1/install/sdl_utils/share/sdl_utils/cmake/sdl_utilsConfig-version.cmake
+-- Up-to-date: /home/ubuntu/workspace/Velizar/robotics_v1/install/sdl_utils/share/sdl_utils/package.xml
+-- Installing: /home/ubuntu/workspace/Velizar/robotics_v1/install/sdl_utils/lib/libsdl_utils.a
+-- Installing: /home/ubuntu/workspace/Velizar/robotics_v1/install/sdl_utils/include
+-- Installing: /home/ubuntu/workspace/Velizar/robotics_v1/install/sdl_utils/include/sdl_utils
+-- Installing: /home/ubuntu/workspace/Velizar/robotics_v1/install/sdl_utils/include/sdl_utils/containers
+-- Installing: /home/ubuntu/workspace/Velizar/robotics_v1/install/sdl_utils/include/sdl_utils/containers/TextContainer.h
+-- Installing: /home/ubuntu/workspace/Velizar/robotics_v1/install/sdl_utils/include/sdl_utils/containers/config
+-- Installing: /home/ubuntu/workspace/Velizar/robotics_v1/install/sdl_utils/include/sdl_utils/containers/config/SDLContainersConfig.h
+-- Installing: /home/ubuntu/workspace/Velizar/robotics_v1/install/sdl_utils/include/sdl_utils/containers/ResourceContainer.h
+-- Installing: /home/ubuntu/workspace/Velizar/robotics_v1/install/sdl_utils/include/sdl_utils/containers/FboContainer.h
+-- Installing: /home/ubuntu/workspace/Velizar/robotics_v1/install/sdl_utils/include/sdl_utils/containers/FontContainer.h
+-- Installing: /home/ubuntu/workspace/Velizar/robotics_v1/install/sdl_utils/include/sdl_utils/containers/SoundContainer.h
+-- Installing: /home/ubuntu/workspace/Velizar/robotics_v1/install/sdl_utils/include/sdl_utils/containers/SDLContainers.h
+-- Installing: /home/ubuntu/workspace/Velizar/robotics_v1/install/sdl_utils/include/sdl_utils/drawing
+-- Installing: /home/ubuntu/workspace/Velizar/robotics_v1/install/sdl_utils/include/sdl_utils/drawing/Texture.h
+-- Installing: /home/ubuntu/workspace/Velizar/robotics_v1/install/sdl_utils/include/sdl_utils/drawing/MonitorWindow.h
+-- Installing: /home/ubuntu/workspace/Velizar/robotics_v1/install/sdl_utils/include/sdl_utils/drawing/DrawParams.h
+-- Installing: /home/ubuntu/workspace/Velizar/robotics_v1/install/sdl_utils/include/sdl_utils/drawing/LoadingScreen.h
+-- Installing: /home/ubuntu/workspace/Velizar/robotics_v1/install/sdl_utils/include/sdl_utils/drawing/config
+-- Installing: /home/ubuntu/workspace/Velizar/robotics_v1/install/sdl_utils/include/sdl_utils/drawing/config/LoadingScreenConfig.h
+-- Installing: /home/ubuntu/workspace/Velizar/robotics_v1/install/sdl_utils/include/sdl_utils/drawing/config/MonitorWindowConfig.h
+-- Installing: /home/ubuntu/workspace/Velizar/robotics_v1/install/sdl_utils/include/sdl_utils/drawing/config/RendererConfig.h
+-- Installing: /home/ubuntu/workspace/Velizar/robotics_v1/install/sdl_utils/include/sdl_utils/drawing/RendererState.h
+-- Installing: /home/ubuntu/workspace/Velizar/robotics_v1/install/sdl_utils/include/sdl_utils/drawing/Renderer.h
+-- Installing: /home/ubuntu/workspace/Velizar/robotics_v1/install/sdl_utils/include/sdl_utils/drawing/GeometryUtils.h
+-- Installing: /home/ubuntu/workspace/Velizar/robotics_v1/install/sdl_utils/include/sdl_utils/drawing/defines
+-- Installing: /home/ubuntu/workspace/Velizar/robotics_v1/install/sdl_utils/include/sdl_utils/drawing/defines/DrawConstants.h
+-- Installing: /home/ubuntu/workspace/Velizar/robotics_v1/install/sdl_utils/include/sdl_utils/drawing/defines/DrawUtilityDefines.h
+-- Installing: /home/ubuntu/workspace/Velizar/robotics_v1/install/sdl_utils/include/sdl_utils/drawing/defines/RendererDefines.h
+-- Installing: /home/ubuntu/workspace/Velizar/robotics_v1/install/sdl_utils/include/sdl_utils/drawing/defines/MonitorDefines.h
+-- Installing: /home/ubuntu/workspace/Velizar/robotics_v1/install/sdl_utils/include/sdl_utils/sound
+-- Installing: /home/ubuntu/workspace/Velizar/robotics_v1/install/sdl_utils/include/sdl_utils/sound/SoundMixer.h
+-- Installing: /home/ubuntu/workspace/Velizar/robotics_v1/install/sdl_utils/include/sdl_utils/sound/defines
+-- Installing: /home/ubuntu/workspace/Velizar/robotics_v1/install/sdl_utils/include/sdl_utils/sound/defines/SoundMixerDefines.h
+-- Installing: /home/ubuntu/workspace/Velizar/robotics_v1/install/sdl_utils/include/sdl_utils/input
+-- Installing: /home/ubuntu/workspace/Velizar/robotics_v1/install/sdl_utils/include/sdl_utils/input/TouchEntity.h
+-- Installing: /home/ubuntu/workspace/Velizar/robotics_v1/install/sdl_utils/include/sdl_utils/input/InputEvent.h
+-- Installing: /home/ubuntu/workspace/Velizar/robotics_v1/install/sdl_utils/include/sdl_utils/input/TouchEntityInterface.h
+-- Installing: /home/ubuntu/workspace/Velizar/robotics_v1/install/sdl_utils/include/sdl_utils/input/InputEventGenerator.h
+-- Installing: /home/ubuntu/workspace/Velizar/robotics_v1/install/sdl_utils/include/sdl_utils/input/MouseUtils.h
+-- Installing: /home/ubuntu/workspace/Velizar/robotics_v1/install/sdl_utils/include/sdl_utils/input/defines
+-- Installing: /home/ubuntu/workspace/Velizar/robotics_v1/install/sdl_utils/include/sdl_utils/input/defines/EventDefines.h
+-- Installing: /home/ubuntu/workspace/Velizar/robotics_v1/install/sdl_utils/include/sdl_utils/SDLLoader.h
+-- Installing: /home/ubuntu/workspace/Velizar/robotics_v1/install/sdl_utils/lib/cmake/sdl_utils/sdl_utilsTargets.cmake
+-- Installing: /home/ubuntu/workspace/Velizar/robotics_v1/install/sdl_utils/lib/cmake/sdl_utils/sdl_utilsTargets-debug.cmake
+-- Installing: /home/ubuntu/workspace/Velizar/robotics_v1/install/sdl_utils/lib/cmake/sdl_utils/sdl_utilsConfig.cmake

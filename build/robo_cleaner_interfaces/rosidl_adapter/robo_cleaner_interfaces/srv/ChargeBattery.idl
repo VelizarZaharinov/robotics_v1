@@ -1,0 +1,25 @@
+// generated from rosidl_adapter/resource/srv.idl.em
+// with input from robo_cleaner_interfaces/srv/ChargeBattery.srv
+// generated code does not contain a copyright notice
+
+#include "robo_cleaner_interfaces/msg/BatteryStatus.idl"
+
+module robo_cleaner_interfaces {
+  module srv {
+    module ChargeBattery_Request_Constants {
+      const int32 CHARGE_UNTIL_FULL = 0;
+    };
+    struct ChargeBattery_Request {
+      int32 charge_turns;
+    };
+    struct ChargeBattery_Response {
+      boolean success;
+
+      string error_reason;
+
+      robo_cleaner_interfaces::msg::BatteryStatus battery_status;
+
+      int32 turns_spend_charging;
+    };
+  };
+};

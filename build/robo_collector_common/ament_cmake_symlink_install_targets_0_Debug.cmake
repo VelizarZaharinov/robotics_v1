@@ -1,0 +1,1 @@
+ament_cmake_symlink_install_targets("TARGET_FILES" "/home/ubuntu/workspace/Velizar/robotics_v1/build/robo_collector_common/librobo_collector_common.a" "TARGETS" "robo_collector_common" "DESTINATION" "lib/robo_collector_common")

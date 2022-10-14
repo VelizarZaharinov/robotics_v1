@@ -1,0 +1,1 @@
+/home/ubuntu/workspace/Velizar/robotics_v1/build/urscript_bridge/ament_cmake_core/urscript_bridgeConfig-version.cmake

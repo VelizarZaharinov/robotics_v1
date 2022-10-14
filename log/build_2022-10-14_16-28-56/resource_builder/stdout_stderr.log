@@ -1,0 +1,32 @@
+[100%] Built target resource_builder
+-- Install configuration: "Debug"
+-- Up-to-date: /home/ubuntu/workspace/Velizar/robotics_v1/install/resource_builder/share/resource_builder/package.xml
+-- Up-to-date: /home/ubuntu/workspace/Velizar/robotics_v1/install/resource_builder/lib/resource_builder/resource_builder
+-- Up-to-date: /home/ubuntu/workspace/Velizar/robotics_v1/install/resource_builder/share/ament_index/resource_index/packages/resource_builder
+-- Up-to-date: /home/ubuntu/workspace/Velizar/robotics_v1/install/resource_builder/share/resource_builder/hook/ament_prefix_path.dsv
+-- Up-to-date: /home/ubuntu/workspace/Velizar/robotics_v1/install/resource_builder/share/resource_builder/hook/ros_package_path.dsv
+-- Up-to-date: /home/ubuntu/workspace/Velizar/robotics_v1/install/resource_builder/share/ament_index/resource_index/package_run_dependencies/resource_builder
+-- Up-to-date: /home/ubuntu/workspace/Velizar/robotics_v1/install/resource_builder/share/ament_index/resource_index/parent_prefix_path/resource_builder
+-- Up-to-date: /home/ubuntu/workspace/Velizar/robotics_v1/install/resource_builder/share/resource_builder/environment/ament_prefix_path.sh
+-- Up-to-date: /home/ubuntu/workspace/Velizar/robotics_v1/install/resource_builder/share/resource_builder/environment/ament_prefix_path.dsv
+-- Up-to-date: /home/ubuntu/workspace/Velizar/robotics_v1/install/resource_builder/share/resource_builder/environment/path.sh
+-- Up-to-date: /home/ubuntu/workspace/Velizar/robotics_v1/install/resource_builder/share/resource_builder/environment/path.dsv
+-- Up-to-date: /home/ubuntu/workspace/Velizar/robotics_v1/install/resource_builder/share/resource_builder/local_setup.bash
+-- Up-to-date: /home/ubuntu/workspace/Velizar/robotics_v1/install/resource_builder/share/resource_builder/local_setup.sh
+-- Up-to-date: /home/ubuntu/workspace/Velizar/robotics_v1/install/resource_builder/share/resource_builder/local_setup.zsh
+-- Up-to-date: /home/ubuntu/workspace/Velizar/robotics_v1/install/resource_builder/share/resource_builder/local_setup.dsv
+-- Installing: /home/ubuntu/workspace/Velizar/robotics_v1/install/resource_builder/share/resource_builder/package.dsv
+-- Up-to-date: /home/ubuntu/workspace/Velizar/robotics_v1/install/resource_builder/share/ament_index/resource_index/packages/resource_builder
+-- Up-to-date: /home/ubuntu/workspace/Velizar/robotics_v1/install/resource_builder/share/resource_builder/cmake/resource_builderConfig.cmake
+-- Up-to-date: /home/ubuntu/workspace/Velizar/robotics_v1/install/resource_builder/share/resource_builder/cmake/resource_builderConfig-version.cmake
+-- Up-to-date: /home/ubuntu/workspace/Velizar/robotics_v1/install/resource_builder/share/resource_builder/package.xml
+-- Up-to-date: /home/ubuntu/workspace/Velizar/robotics_v1/install/resource_builder/bin/resource_builder
+-- Up-to-date: /home/ubuntu/workspace/Velizar/robotics_v1/install/resource_builder/include
+-- Up-to-date: /home/ubuntu/workspace/Velizar/robotics_v1/install/resource_builder/include/resource_builder
+-- Up-to-date: /home/ubuntu/workspace/Velizar/robotics_v1/install/resource_builder/include/resource_builder/FileParser.h
+-- Up-to-date: /home/ubuntu/workspace/Velizar/robotics_v1/install/resource_builder/include/resource_builder/FileBuilder.h
+-- Up-to-date: /home/ubuntu/workspace/Velizar/robotics_v1/install/resource_builder/include/resource_builder/SyntaxChecker.h
+-- Up-to-date: /home/ubuntu/workspace/Velizar/robotics_v1/install/resource_builder/include/resource_builder/ResourceParser.h
+-- Up-to-date: /home/ubuntu/workspace/Velizar/robotics_v1/install/resource_builder/lib/cmake/resource_builder/resource_builderTargets.cmake
+-- Up-to-date: /home/ubuntu/workspace/Velizar/robotics_v1/install/resource_builder/lib/cmake/resource_builder/resource_builderTargets-debug.cmake
+-- Up-to-date: /home/ubuntu/workspace/Velizar/robotics_v1/install/resource_builder/lib/cmake/resource_builder/resource_builderConfig.cmake

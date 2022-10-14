@@ -1,0 +1,18 @@
+// generated from rosidl_adapter/resource/srv.idl.em
+// with input from robo_cleaner_interfaces/srv/QueryBatteryStatus.srv
+// generated code does not contain a copyright notice
+
+#include "robo_cleaner_interfaces/msg/BatteryStatus.idl"
+
+module robo_cleaner_interfaces {
+  module srv {
+    @verbatim (language="comment", text=
+      "empty request")
+    struct QueryBatteryStatus_Request {
+      uint8 structure_needs_at_least_one_member;
+    };
+    struct QueryBatteryStatus_Response {
+      robo_cleaner_interfaces::msg::BatteryStatus battery_status;
+    };
+  };
+};

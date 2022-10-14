@@ -1,0 +1,114 @@
+[0.033s] Invoking command in '/home/ubuntu/workspace/Velizar/robotics_v1/build/utils': CMAKE_PREFIX_PATH=/home/ubuntu/workspace/Velizar/robotics_v1/install/cmake_helpers:/opt/ros/foxy PKG_CONFIG_PATH=/home/ubuntu/workspace/Velizar/robotics_v1/install/cmake_helpers/lib/x86_64-linux-gnu/pkgconfig:/home/ubuntu/workspace/Velizar/robotics_v1/install/cmake_helpers/lib/pkgconfig PS1=[\u@\h \W]$(git_branch)$ /usr/bin/cmake /home/ubuntu/workspace/Velizar/robotics_v1/src/lib/utils -DCMAKE_BUILD_TYPE=Debug -DCMAKE_CXX_COMPILER=/usr/bin/clang++ -DCMAKE_INSTALL_PREFIX=/home/ubuntu/workspace/Velizar/robotics_v1/install/utils
+[0.371s] -- The CXX compiler identification is Clang 10.0.0
+[0.396s] -- Check for working CXX compiler: /usr/bin/clang++
+[0.740s] -- Check for working CXX compiler: /usr/bin/clang++ -- works
+[0.743s] -- Detecting CXX compiler ABI info
+[1.082s] -- Detecting CXX compiler ABI info - done
+[1.133s] -- Detecting CXX compile features
+[1.135s] -- Detecting CXX compile features - done
+[1.138s] -- Found cmake_helpers: 1.0.0 (/home/ubuntu/workspace/Velizar/robotics_v1/install/cmake_helpers/share/cmake_helpers/cmake)
+[1.142s] -- Looking for C++ include pthread.h
+[1.519s] -- Looking for C++ include pthread.h - found
+[1.520s] -- Performing Test CMAKE_HAVE_LIBC_PTHREAD
+[1.883s] -- Performing Test CMAKE_HAVE_LIBC_PTHREAD - Failed
+[1.883s] -- Looking for pthread_create in pthreads
+[2.133s] -- Looking for pthread_create in pthreads - not found
+[2.133s] -- Looking for pthread_create in pthread
+[2.476s] -- Looking for pthread_create in pthread - found
+[2.478s] -- Found Threads: TRUE  
+[2.486s] -- Found ament_cmake: 0.9.9 (/opt/ros/foxy/share/ament_cmake/cmake)
+[2.549s] -- Found PythonInterp: /usr/bin/python3 (found suitable version "3.8.10", minimum required is "3") 
+[2.549s] -- Using PYTHON_EXECUTABLE: /usr/bin/python3
+[3.216s] -- Configuring done
+[3.240s] -- Generating done
+[3.244s] -- Build files have been written to: /home/ubuntu/workspace/Velizar/robotics_v1/build/utils
+[3.254s] Invoked command in '/home/ubuntu/workspace/Velizar/robotics_v1/build/utils' returned '0': CMAKE_PREFIX_PATH=/home/ubuntu/workspace/Velizar/robotics_v1/install/cmake_helpers:/opt/ros/foxy PKG_CONFIG_PATH=/home/ubuntu/workspace/Velizar/robotics_v1/install/cmake_helpers/lib/x86_64-linux-gnu/pkgconfig:/home/ubuntu/workspace/Velizar/robotics_v1/install/cmake_helpers/lib/pkgconfig PS1=[\u@\h \W]$(git_branch)$ /usr/bin/cmake /home/ubuntu/workspace/Velizar/robotics_v1/src/lib/utils -DCMAKE_BUILD_TYPE=Debug -DCMAKE_CXX_COMPILER=/usr/bin/clang++ -DCMAKE_INSTALL_PREFIX=/home/ubuntu/workspace/Velizar/robotics_v1/install/utils
+[3.256s] Invoking command in '/home/ubuntu/workspace/Velizar/robotics_v1/build/utils': CMAKE_PREFIX_PATH=/home/ubuntu/workspace/Velizar/robotics_v1/install/cmake_helpers:/opt/ros/foxy PKG_CONFIG_PATH=/home/ubuntu/workspace/Velizar/robotics_v1/install/cmake_helpers/lib/x86_64-linux-gnu/pkgconfig:/home/ubuntu/workspace/Velizar/robotics_v1/install/cmake_helpers/lib/pkgconfig PS1=[\u@\h \W]$(git_branch)$ /usr/bin/cmake --build /home/ubuntu/workspace/Velizar/robotics_v1/build/utils -- -j2 -l2
+[3.358s] [35m[1mScanning dependencies of target utils[0m
+[3.394s] [  5%] [32mBuilding CXX object CMakeFiles/utils.dir/src/common/Crc.cpp.o[0m
+[3.395s] [ 11%] [32mBuilding CXX object CMakeFiles/utils.dir/src/common/CircularBuffer.cpp.o[0m
+[3.537s] [ 16%] [32mBuilding CXX object CMakeFiles/utils.dir/src/data_type/FloatingPointUtils.cpp.o[0m
+[3.699s] [ 22%] [32mBuilding CXX object CMakeFiles/utils.dir/src/data_type/IntegerUtils.cpp.o[0m
+[3.790s] [ 27%] [32mBuilding CXX object CMakeFiles/utils.dir/src/data_type/StringUtils.cpp.o[0m
+[4.621s] [ 33%] [32mBuilding CXX object CMakeFiles/utils.dir/src/debug/SignalHandler.cpp.o[0m
+[4.786s] [ 38%] [32mBuilding CXX object CMakeFiles/utils.dir/src/debug/StackTrace.cpp.o[0m
+[4.938s] [ 44%] [32mBuilding CXX object CMakeFiles/utils.dir/src/drawing/Color.cpp.o[0m
+[5.060s] [ 50%] [32mBuilding CXX object CMakeFiles/utils.dir/src/drawing/Margin.cpp.o[0m
+[5.155s] [ 55%] [32mBuilding CXX object CMakeFiles/utils.dir/src/drawing/Point.cpp.o[0m
+[5.219s] [ 61%] [32mBuilding CXX object CMakeFiles/utils.dir/src/drawing/Rectangle.cpp.o[0m
+[5.259s] [ 66%] [32mBuilding CXX object CMakeFiles/utils.dir/src/drawing/WidgetAligner.cpp.o[0m
+[5.337s] [ 72%] [32mBuilding CXX object CMakeFiles/utils.dir/src/file/IniFileParser.cpp.o[0m
+[5.453s] [ 77%] [32mBuilding CXX object CMakeFiles/utils.dir/src/file_system/FileSystemUtils.cpp.o[0m
+[6.535s] [ 83%] [32mBuilding CXX object CMakeFiles/utils.dir/src/time/Time.cpp.o[0m
+[6.823s] [ 88%] [32mBuilding CXX object CMakeFiles/utils.dir/src/rng/Rng.cpp.o[0m
+[7.295s] [ 94%] [32mBuilding CXX object CMakeFiles/utils.dir/src/log/Log.cpp.o[0m
+[8.178s] [100%] [32m[1mLinking CXX static library libutils.a[0m
+[8.305s] [100%] Built target utils
+[8.339s] Invoked command in '/home/ubuntu/workspace/Velizar/robotics_v1/build/utils' returned '0': CMAKE_PREFIX_PATH=/home/ubuntu/workspace/Velizar/robotics_v1/install/cmake_helpers:/opt/ros/foxy PKG_CONFIG_PATH=/home/ubuntu/workspace/Velizar/robotics_v1/install/cmake_helpers/lib/x86_64-linux-gnu/pkgconfig:/home/ubuntu/workspace/Velizar/robotics_v1/install/cmake_helpers/lib/pkgconfig PS1=[\u@\h \W]$(git_branch)$ /usr/bin/cmake --build /home/ubuntu/workspace/Velizar/robotics_v1/build/utils -- -j2 -l2
+[8.449s] Invoking command in '/home/ubuntu/workspace/Velizar/robotics_v1/build/utils': CMAKE_PREFIX_PATH=/home/ubuntu/workspace/Velizar/robotics_v1/install/cmake_helpers:/opt/ros/foxy PKG_CONFIG_PATH=/home/ubuntu/workspace/Velizar/robotics_v1/install/cmake_helpers/lib/x86_64-linux-gnu/pkgconfig:/home/ubuntu/workspace/Velizar/robotics_v1/install/cmake_helpers/lib/pkgconfig PS1=[\u@\h \W]$(git_branch)$ /usr/bin/cmake --install /home/ubuntu/workspace/Velizar/robotics_v1/build/utils
+[8.472s] -- Install configuration: "Debug"
+[8.473s] -- Installing: /home/ubuntu/workspace/Velizar/robotics_v1/install/utils/share/utils/package.xml
+[8.473s] -- Installing: /home/ubuntu/workspace/Velizar/robotics_v1/install/utils/lib/utils/libutils.a
+[8.478s] -- Installing: /home/ubuntu/workspace/Velizar/robotics_v1/install/utils/share/ament_index/resource_index/packages/utils
+[8.478s] -- Installing: /home/ubuntu/workspace/Velizar/robotics_v1/install/utils/share/utils/hook/ament_prefix_path.dsv
+[8.479s] -- Installing: /home/ubuntu/workspace/Velizar/robotics_v1/install/utils/share/utils/hook/ros_package_path.dsv
+[8.479s] -- Installing: /home/ubuntu/workspace/Velizar/robotics_v1/install/utils/share/ament_index/resource_index/package_run_dependencies/utils
+[8.480s] -- Installing: /home/ubuntu/workspace/Velizar/robotics_v1/install/utils/share/ament_index/resource_index/parent_prefix_path/utils
+[8.481s] -- Installing: /home/ubuntu/workspace/Velizar/robotics_v1/install/utils/share/utils/environment/ament_prefix_path.sh
+[8.481s] -- Installing: /home/ubuntu/workspace/Velizar/robotics_v1/install/utils/share/utils/environment/ament_prefix_path.dsv
+[8.481s] -- Installing: /home/ubuntu/workspace/Velizar/robotics_v1/install/utils/share/utils/environment/path.sh
+[8.482s] -- Installing: /home/ubuntu/workspace/Velizar/robotics_v1/install/utils/share/utils/environment/path.dsv
+[8.483s] -- Installing: /home/ubuntu/workspace/Velizar/robotics_v1/install/utils/share/utils/local_setup.bash
+[8.483s] -- Installing: /home/ubuntu/workspace/Velizar/robotics_v1/install/utils/share/utils/local_setup.sh
+[8.483s] -- Installing: /home/ubuntu/workspace/Velizar/robotics_v1/install/utils/share/utils/local_setup.zsh
+[8.484s] -- Installing: /home/ubuntu/workspace/Velizar/robotics_v1/install/utils/share/utils/local_setup.dsv
+[8.484s] -- Installing: /home/ubuntu/workspace/Velizar/robotics_v1/install/utils/share/utils/package.dsv
+[8.485s] -- Up-to-date: /home/ubuntu/workspace/Velizar/robotics_v1/install/utils/share/ament_index/resource_index/packages/utils
+[8.485s] -- Installing: /home/ubuntu/workspace/Velizar/robotics_v1/install/utils/share/utils/cmake/utilsConfig.cmake
+[8.485s] -- Installing: /home/ubuntu/workspace/Velizar/robotics_v1/install/utils/share/utils/cmake/utilsConfig-version.cmake
+[8.485s] -- Up-to-date: /home/ubuntu/workspace/Velizar/robotics_v1/install/utils/share/utils/package.xml
+[8.486s] -- Installing: /home/ubuntu/workspace/Velizar/robotics_v1/install/utils/lib/libutils.a
+[8.490s] -- Installing: /home/ubuntu/workspace/Velizar/robotics_v1/install/utils/include
+[8.491s] -- Installing: /home/ubuntu/workspace/Velizar/robotics_v1/install/utils/include/utils
+[8.491s] -- Installing: /home/ubuntu/workspace/Velizar/robotics_v1/install/utils/include/utils/concurrency
+[8.491s] -- Installing: /home/ubuntu/workspace/Velizar/robotics_v1/install/utils/include/utils/concurrency/ThreadSafeQueue.h
+[8.492s] -- Installing: /home/ubuntu/workspace/Velizar/robotics_v1/install/utils/include/utils/Log.h
+[8.492s] -- Installing: /home/ubuntu/workspace/Velizar/robotics_v1/install/utils/include/utils/ErrorCode.h
+[8.492s] -- Installing: /home/ubuntu/workspace/Velizar/robotics_v1/install/utils/include/utils/rng
+[8.493s] -- Installing: /home/ubuntu/workspace/Velizar/robotics_v1/install/utils/include/utils/rng/Rng.h
+[8.493s] -- Installing: /home/ubuntu/workspace/Velizar/robotics_v1/install/utils/include/utils/time
+[8.493s] -- Installing: /home/ubuntu/workspace/Velizar/robotics_v1/install/utils/include/utils/time/Time.h
+[8.493s] -- Installing: /home/ubuntu/workspace/Velizar/robotics_v1/install/utils/include/utils/drawing
+[8.494s] -- Installing: /home/ubuntu/workspace/Velizar/robotics_v1/install/utils/include/utils/drawing/WidgetAligner.h
+[8.494s] -- Installing: /home/ubuntu/workspace/Velizar/robotics_v1/install/utils/include/utils/drawing/Point.h
+[8.496s] -- Installing: /home/ubuntu/workspace/Velizar/robotics_v1/install/utils/include/utils/drawing/Rectangle.h
+[8.496s] -- Installing: /home/ubuntu/workspace/Velizar/robotics_v1/install/utils/include/utils/drawing/Margin.h
+[8.496s] -- Installing: /home/ubuntu/workspace/Velizar/robotics_v1/install/utils/include/utils/drawing/Color.h
+[8.497s] -- Installing: /home/ubuntu/workspace/Velizar/robotics_v1/install/utils/include/utils/file
+[8.497s] -- Installing: /home/ubuntu/workspace/Velizar/robotics_v1/install/utils/include/utils/file/IniFileParser.h
+[8.497s] -- Installing: /home/ubuntu/workspace/Velizar/robotics_v1/install/utils/include/utils/file_system
+[8.497s] -- Installing: /home/ubuntu/workspace/Velizar/robotics_v1/install/utils/include/utils/file_system/FileSystemUtils.h
+[8.498s] -- Installing: /home/ubuntu/workspace/Velizar/robotics_v1/install/utils/include/utils/data_type
+[8.498s] -- Installing: /home/ubuntu/workspace/Velizar/robotics_v1/install/utils/include/utils/data_type/StringUtils.h
+[8.498s] -- Installing: /home/ubuntu/workspace/Velizar/robotics_v1/install/utils/include/utils/data_type/EnumClassUtils.h
+[8.499s] -- Installing: /home/ubuntu/workspace/Velizar/robotics_v1/install/utils/include/utils/data_type/FloatingPointUtils.h
+[8.499s] -- Installing: /home/ubuntu/workspace/Velizar/robotics_v1/install/utils/include/utils/data_type/FloatingPoint.h
+[8.499s] -- Installing: /home/ubuntu/workspace/Velizar/robotics_v1/install/utils/include/utils/data_type/IntegerUtils.h
+[8.499s] -- Installing: /home/ubuntu/workspace/Velizar/robotics_v1/install/utils/include/utils/LimitValues.h
+[8.499s] -- Installing: /home/ubuntu/workspace/Velizar/robotics_v1/install/utils/include/utils/common
+[8.500s] -- Installing: /home/ubuntu/workspace/Velizar/robotics_v1/install/utils/include/utils/common/Crc.h
+[8.500s] -- Installing: /home/ubuntu/workspace/Velizar/robotics_v1/install/utils/include/utils/common/AutoCircularBuffer.h
+[8.500s] -- Installing: /home/ubuntu/workspace/Velizar/robotics_v1/install/utils/include/utils/common/CircularBuffer.h
+[8.500s] -- Installing: /home/ubuntu/workspace/Velizar/robotics_v1/install/utils/include/utils/common/defines
+[8.501s] -- Installing: /home/ubuntu/workspace/Velizar/robotics_v1/install/utils/include/utils/common/defines/SymbolNameDefines.h
+[8.501s] -- Installing: /home/ubuntu/workspace/Velizar/robotics_v1/install/utils/include/utils/debug
+[8.501s] -- Installing: /home/ubuntu/workspace/Velizar/robotics_v1/install/utils/include/utils/debug/StackTrace.h
+[8.501s] -- Installing: /home/ubuntu/workspace/Velizar/robotics_v1/install/utils/include/utils/debug/FunctionTracer.h
+[8.501s] -- Installing: /home/ubuntu/workspace/Velizar/robotics_v1/install/utils/include/utils/debug/SignalHandler.h
+[8.501s] -- Installing: /home/ubuntu/workspace/Velizar/robotics_v1/install/utils/include/utils/class
+[8.502s] -- Installing: /home/ubuntu/workspace/Velizar/robotics_v1/install/utils/include/utils/class/NonMoveable.h
+[8.502s] -- Installing: /home/ubuntu/workspace/Velizar/robotics_v1/install/utils/include/utils/class/NonCopyable.h
+[8.502s] -- Installing: /home/ubuntu/workspace/Velizar/robotics_v1/install/utils/lib/cmake/utils/utilsTargets.cmake
+[8.502s] -- Installing: /home/ubuntu/workspace/Velizar/robotics_v1/install/utils/lib/cmake/utils/utilsTargets-debug.cmake
+[8.502s] -- Installing: /home/ubuntu/workspace/Velizar/robotics_v1/install/utils/lib/cmake/utils/utilsConfig.cmake
+[8.508s] Invoked command in '/home/ubuntu/workspace/Velizar/robotics_v1/build/utils' returned '0': CMAKE_PREFIX_PATH=/home/ubuntu/workspace/Velizar/robotics_v1/install/cmake_helpers:/opt/ros/foxy PKG_CONFIG_PATH=/home/ubuntu/workspace/Velizar/robotics_v1/install/cmake_helpers/lib/x86_64-linux-gnu/pkgconfig:/home/ubuntu/workspace/Velizar/robotics_v1/install/cmake_helpers/lib/pkgconfig PS1=[\u@\h \W]$(git_branch)$ /usr/bin/cmake --install /home/ubuntu/workspace/Velizar/robotics_v1/build/utils

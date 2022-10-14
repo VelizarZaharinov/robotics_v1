@@ -1,0 +1,110 @@
+-- The CXX compiler identification is Clang 10.0.0
+-- Check for working CXX compiler: /usr/bin/clang++
+-- Check for working CXX compiler: /usr/bin/clang++ -- works
+-- Detecting CXX compiler ABI info
+-- Detecting CXX compiler ABI info - done
+-- Detecting CXX compile features
+-- Detecting CXX compile features - done
+-- Found cmake_helpers: 1.0.0 (/home/ubuntu/workspace/Velizar/robotics_v1/install/cmake_helpers/share/cmake_helpers/cmake)
+-- Found ament_cmake: 0.9.9 (/opt/ros/foxy/share/ament_cmake/cmake)
+-- Found PythonInterp: /usr/bin/python3 (found suitable version "3.8.10", minimum required is "3") 
+-- Using PYTHON_EXECUTABLE: /usr/bin/python3
+-- Override CMake install command with custom implementation using symlinks instead of copying resources
+-- Found ament_index_cpp: 1.1.0 (/opt/ros/foxy/share/ament_index_cpp/cmake)
+-- Found rclcpp: 2.4.1 (/opt/ros/foxy/share/rclcpp/cmake)
+-- Using all available rosidl_typesupport_c: rosidl_typesupport_fastrtps_c;rosidl_typesupport_introspection_c
+-- Found rosidl_adapter: 1.2.1 (/opt/ros/foxy/share/rosidl_adapter/cmake)
+-- Found OpenSSL: /usr/lib/x86_64-linux-gnu/libcrypto.so (found version "1.1.1f")  
+-- Found FastRTPS: /opt/ros/foxy/include  
+-- Using all available rosidl_typesupport_cpp: rosidl_typesupport_fastrtps_cpp;rosidl_typesupport_introspection_cpp
+-- Found rmw_implementation_cmake: 1.0.3 (/opt/ros/foxy/share/rmw_implementation_cmake/cmake)
+-- Using RMW implementation 'rmw_fastrtps_cpp' as default
+-- Looking for C++ include pthread.h
+-- Looking for C++ include pthread.h - found
+-- Performing Test CMAKE_HAVE_LIBC_PTHREAD
+-- Performing Test CMAKE_HAVE_LIBC_PTHREAD - Failed
+-- Looking for pthread_create in pthreads
+-- Looking for pthread_create in pthreads - not found
+-- Looking for pthread_create in pthread
+-- Looking for pthread_create in pthread - found
+-- Found Threads: TRUE  
+-- Found robo_collector_interfaces: 1.0.0 (/home/ubuntu/workspace/Velizar/robotics_v1/install/robo_collector_interfaces/share/robo_collector_interfaces/cmake)
+-- Configuring done
+-- Generating done
+-- Build files have been written to: /home/ubuntu/workspace/Velizar/robotics_v1/build/robo_collector_gui
+[35m[1mScanning dependencies of target robo_collector_gui[0m
+[  5%] [32mBuilding CXX object CMakeFiles/robo_collector_gui.dir/src/main.cpp.o[0m
+[ 11%] [32mBuilding CXX object CMakeFiles/robo_collector_gui.dir/src/RoboCollectorGui.cpp.o[0m
+[ 17%] [32mBuilding CXX object CMakeFiles/robo_collector_gui.dir/src/config/RoboCollectorGuiConfigGenerator.cpp.o[0m
+[ 23%] [32mBuilding CXX object CMakeFiles/robo_collector_gui.dir/src/helpers/TurnHelper.cpp.o[0m
+[ 29%] [32mBuilding CXX object CMakeFiles/robo_collector_gui.dir/src/helpers/RoboCollectorBuilder.cpp.o[0m
+[ 35%] [32mBuilding CXX object CMakeFiles/robo_collector_gui.dir/src/helpers/RoboCollectorGuiInitHelper.cpp.o[0m
+[ 41%] [32mBuilding CXX object CMakeFiles/robo_collector_gui.dir/src/external_api/CollectorControllerExternalBridge.cpp.o[0m
+[ 47%] [32mBuilding CXX object CMakeFiles/robo_collector_gui.dir/src/external_api/RoboCollectorGuiRos2ParamProvider.cpp.o[0m
+[ 52%] [32mBuilding CXX object CMakeFiles/robo_collector_gui.dir/src/layout/RoboCollectorLayout.cpp.o[0m
+[ 58%] [32mBuilding CXX object CMakeFiles/robo_collector_gui.dir/src/layout/helpers/RoboCollectorLayoutInitHelper.cpp.o[0m
+[ 64%] [32mBuilding CXX object CMakeFiles/robo_collector_gui.dir/src/layout/entities/robot/RobotAI.cpp.o[0m
+[ 70%] [32mBuilding CXX object CMakeFiles/robo_collector_gui.dir/src/layout/entities/coin/Coin.cpp.o[0m
+[ 76%] [32mBuilding CXX object CMakeFiles/robo_collector_gui.dir/src/layout/entities/coin/CoinHandler.cpp.o[0m
+[ 82%] [32mBuilding CXX object CMakeFiles/robo_collector_gui.dir/src/layout/entities/coin/animation/CoinCollectAnimEndCb.cpp.o[0m
+[ 88%] [32mBuilding CXX object CMakeFiles/robo_collector_gui.dir/src/layout/entities/coin/animation/CoinRespawnAnim.cpp.o[0m
+[ 94%] [32mBuilding CXX object CMakeFiles/robo_collector_gui.dir/src/layout/panels/PanelHandler.cpp.o[0m
+[100%] [32m[1mLinking CXX executable robo_collector_gui[0m
+[100%] Built target robo_collector_gui
+-- Install configuration: "Debug"
+-- Execute custom install script
+-- Symlinking: /home/ubuntu/workspace/Velizar/robotics_v1/install/robo_collector_gui/share/robo_collector_gui/package.xml
+-- Symlinking: /home/ubuntu/workspace/Velizar/robotics_v1/install/robo_collector_gui/share/robo_collector_gui//launch/launch.py
+-- Symlinking: /home/ubuntu/workspace/Velizar/robotics_v1/install/robo_collector_gui/share/robo_collector_gui//config/params.yaml
+-- Symlinking: /home/ubuntu/workspace/Velizar/robotics_v1/install/robo_collector_gui/lib/robo_collector_gui/robo_collector_gui
+-- Symlinking: /home/ubuntu/workspace/Velizar/robotics_v1/install/robo_collector_gui/share/ament_index/resource_index/packages/robo_collector_gui
+-- Symlinking: /home/ubuntu/workspace/Velizar/robotics_v1/install/robo_collector_gui/share/robo_collector_gui/hook/ament_prefix_path.dsv
+-- Symlinking: /home/ubuntu/workspace/Velizar/robotics_v1/install/robo_collector_gui/share/robo_collector_gui/hook/ros_package_path.dsv
+-- Symlinking: /home/ubuntu/workspace/Velizar/robotics_v1/install/robo_collector_gui/share/ament_index/resource_index/package_run_dependencies/robo_collector_gui
+-- Symlinking: /home/ubuntu/workspace/Velizar/robotics_v1/install/robo_collector_gui/share/ament_index/resource_index/parent_prefix_path/robo_collector_gui
+-- Symlinking: /home/ubuntu/workspace/Velizar/robotics_v1/install/robo_collector_gui/share/robo_collector_gui/environment/ament_prefix_path.sh
+-- Symlinking: /home/ubuntu/workspace/Velizar/robotics_v1/install/robo_collector_gui/share/robo_collector_gui/environment/ament_prefix_path.dsv
+-- Symlinking: /home/ubuntu/workspace/Velizar/robotics_v1/install/robo_collector_gui/share/robo_collector_gui/environment/path.sh
+-- Symlinking: /home/ubuntu/workspace/Velizar/robotics_v1/install/robo_collector_gui/share/robo_collector_gui/environment/path.dsv
+-- Symlinking: /home/ubuntu/workspace/Velizar/robotics_v1/install/robo_collector_gui/share/robo_collector_gui/local_setup.bash
+-- Symlinking: /home/ubuntu/workspace/Velizar/robotics_v1/install/robo_collector_gui/share/robo_collector_gui/local_setup.sh
+-- Symlinking: /home/ubuntu/workspace/Velizar/robotics_v1/install/robo_collector_gui/share/robo_collector_gui/local_setup.zsh
+-- Symlinking: /home/ubuntu/workspace/Velizar/robotics_v1/install/robo_collector_gui/share/robo_collector_gui/local_setup.dsv
+-- Symlinking: /home/ubuntu/workspace/Velizar/robotics_v1/install/robo_collector_gui/share/robo_collector_gui/package.dsv
+-- Symlinking: /home/ubuntu/workspace/Velizar/robotics_v1/install/robo_collector_gui/share/ament_index/resource_index/packages/robo_collector_gui
+-- Symlinking: /home/ubuntu/workspace/Velizar/robotics_v1/install/robo_collector_gui/share/robo_collector_gui/cmake/robo_collector_guiConfig.cmake
+-- Symlinking: /home/ubuntu/workspace/Velizar/robotics_v1/install/robo_collector_gui/share/robo_collector_gui/cmake/robo_collector_guiConfig-version.cmake
+-- Up-to-date symlink: /home/ubuntu/workspace/Velizar/robotics_v1/install/robo_collector_gui/share/robo_collector_gui/package.xml
+-- Symlinking: /home/ubuntu/workspace/Velizar/robotics_v1/install/robo_collector_gui/share/robo_collector_gui/resources//RoboCollectorGui.rsrc
+-- Symlinking: /home/ubuntu/workspace/Velizar/robotics_v1/install/robo_collector_gui/share/robo_collector_gui/resources//f/vinque_rg_20.ttf
+-- Symlinking: /home/ubuntu/workspace/Velizar/robotics_v1/install/robo_collector_gui/share/robo_collector_gui/resources//f/vinque_rg_30.ttf
+-- Symlinking: /home/ubuntu/workspace/Velizar/robotics_v1/install/robo_collector_gui/share/robo_collector_gui/resources//f/vinque_rg_75.ttf
+-- Symlinking: /home/ubuntu/workspace/Velizar/robotics_v1/install/robo_collector_gui/share/robo_collector_gui/resources//generated/RoboCollectorGuiResources.h
+-- Symlinking: /home/ubuntu/workspace/Velizar/robotics_v1/install/robo_collector_gui/share/robo_collector_gui/resources//generated/RoboCollectorGuiResourcesDynamic.h
+-- Symlinking: /home/ubuntu/workspace/Velizar/robotics_v1/install/robo_collector_gui/share/robo_collector_gui/resources//generated/RoboCollectorGuiResourcesDynamicValues.h
+-- Symlinking: /home/ubuntu/workspace/Velizar/robotics_v1/install/robo_collector_gui/share/robo_collector_gui/resources//generated/fonts.bin
+-- Symlinking: /home/ubuntu/workspace/Velizar/robotics_v1/install/robo_collector_gui/share/robo_collector_gui/resources//generated/resources.bin
+-- Symlinking: /home/ubuntu/workspace/Velizar/robotics_v1/install/robo_collector_gui/share/robo_collector_gui/resources//generated/sounds.bin
+-- Symlinking: /home/ubuntu/workspace/Velizar/robotics_v1/install/robo_collector_gui/share/robo_collector_gui/resources//levels/level_1/field_map.txt
+-- Symlinking: /home/ubuntu/workspace/Velizar/robotics_v1/install/robo_collector_gui/share/robo_collector_gui/resources//p/background/map.png
+-- Symlinking: /home/ubuntu/workspace/Velizar/robotics_v1/install/robo_collector_gui/share/robo_collector_gui/resources//p/background/obstacle.png
+-- Symlinking: /home/ubuntu/workspace/Velizar/robotics_v1/install/robo_collector_gui/share/robo_collector_gui/resources//p/background/tile.png
+-- Symlinking: /home/ubuntu/workspace/Velizar/robotics_v1/install/robo_collector_gui/share/robo_collector_gui/resources//p/buttons/help_button.png
+-- Symlinking: /home/ubuntu/workspace/Velizar/robotics_v1/install/robo_collector_gui/share/robo_collector_gui/resources//p/buttons/left_button.png
+-- Symlinking: /home/ubuntu/workspace/Velizar/robotics_v1/install/robo_collector_gui/share/robo_collector_gui/resources//p/buttons/right_button.png
+-- Symlinking: /home/ubuntu/workspace/Velizar/robotics_v1/install/robo_collector_gui/share/robo_collector_gui/resources//p/buttons/settings_button.png
+-- Symlinking: /home/ubuntu/workspace/Velizar/robotics_v1/install/robo_collector_gui/share/robo_collector_gui/resources//p/buttons/up_button.png
+-- Symlinking: /home/ubuntu/workspace/Velizar/robotics_v1/install/robo_collector_gui/share/robo_collector_gui/resources//p/coin_animations/bronze/coin_anim_bronze.png
+-- Symlinking: /home/ubuntu/workspace/Velizar/robotics_v1/install/robo_collector_gui/share/robo_collector_gui/resources//p/coin_animations/gold/coin_anim_gold.png
+-- Symlinking: /home/ubuntu/workspace/Velizar/robotics_v1/install/robo_collector_gui/share/robo_collector_gui/resources//p/coin_animations/silver/coin_anim_silver.png
+-- Symlinking: /home/ubuntu/workspace/Velizar/robotics_v1/install/robo_collector_gui/share/robo_collector_gui/resources//p/entities/damage_marker.png
+-- Symlinking: /home/ubuntu/workspace/Velizar/robotics_v1/install/robo_collector_gui/share/robo_collector_gui/resources//p/entities/enemy_robots.png
+-- Symlinking: /home/ubuntu/workspace/Velizar/robotics_v1/install/robo_collector_gui/share/robo_collector_gui/resources//p/entities/player_robot.png
+-- Symlinking: /home/ubuntu/workspace/Velizar/robotics_v1/install/robo_collector_gui/share/robo_collector_gui/resources//p/panels/coin_panel.png
+-- Symlinking: /home/ubuntu/workspace/Velizar/robotics_v1/install/robo_collector_gui/share/robo_collector_gui/resources//p/panels/health_indicator.png
+-- Symlinking: /home/ubuntu/workspace/Velizar/robotics_v1/install/robo_collector_gui/share/robo_collector_gui/resources//p/panels/health_panel.png
+-- Symlinking: /home/ubuntu/workspace/Velizar/robotics_v1/install/robo_collector_gui/share/robo_collector_gui/resources//p/panels/hor_delimiter.png
+-- Symlinking: /home/ubuntu/workspace/Velizar/robotics_v1/install/robo_collector_gui/share/robo_collector_gui/resources//p/panels/time_panel.png
+-- Symlinking: /home/ubuntu/workspace/Velizar/robotics_v1/install/robo_collector_gui/share/robo_collector_gui/resources//p/panels/vert_delimiter.png
+-- Symlinking: /home/ubuntu/workspace/Velizar/robotics_v1/install/robo_collector_gui/share/robo_collector_gui/resources//p/stars/star_single.png
+-- Symlinking: /home/ubuntu/workspace/Velizar/robotics_v1/install/robo_collector_gui/share/robo_collector_gui/resources//p/stars/stars.png

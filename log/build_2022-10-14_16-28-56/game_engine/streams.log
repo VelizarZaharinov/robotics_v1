@@ -1,0 +1,85 @@
+[0.063s] Invoking command in '/home/ubuntu/workspace/Velizar/robotics_v1/build/game_engine': CMAKE_PREFIX_PATH=/home/ubuntu/workspace/Velizar/robotics_v1/install/manager_utils:/home/ubuntu/workspace/Velizar/robotics_v1/install/sdl_utils:/home/ubuntu/workspace/Velizar/robotics_v1/install/resource_utils:/home/ubuntu/workspace/Velizar/robotics_v1/install/utils:/home/ubuntu/workspace/Velizar/robotics_v1/install/cmake_helpers:/opt/ros/foxy PKG_CONFIG_PATH=/home/ubuntu/workspace/Velizar/robotics_v1/install/manager_utils/lib/x86_64-linux-gnu/pkgconfig:/home/ubuntu/workspace/Velizar/robotics_v1/install/manager_utils/lib/pkgconfig:/home/ubuntu/workspace/Velizar/robotics_v1/install/sdl_utils/lib/x86_64-linux-gnu/pkgconfig:/home/ubuntu/workspace/Velizar/robotics_v1/install/sdl_utils/lib/pkgconfig:/home/ubuntu/workspace/Velizar/robotics_v1/install/resource_utils/lib/x86_64-linux-gnu/pkgconfig:/home/ubuntu/workspace/Velizar/robotics_v1/install/resource_utils/lib/pkgconfig:/home/ubuntu/workspace/Velizar/robotics_v1/install/utils/lib/x86_64-linux-gnu/pkgconfig:/home/ubuntu/workspace/Velizar/robotics_v1/install/utils/lib/pkgconfig:/home/ubuntu/workspace/Velizar/robotics_v1/install/cmake_helpers/lib/x86_64-linux-gnu/pkgconfig:/home/ubuntu/workspace/Velizar/robotics_v1/install/cmake_helpers/lib/pkgconfig PS1=[\u@\h \W]$(git_branch)$ /usr/bin/cmake /home/ubuntu/workspace/Velizar/robotics_v1/src/lib/game_engine -DCMAKE_BUILD_TYPE=Debug -DCMAKE_CXX_COMPILER=/usr/bin/clang++ -DCMAKE_INSTALL_PREFIX=/home/ubuntu/workspace/Velizar/robotics_v1/install/game_engine
+[0.393s] -- The CXX compiler identification is Clang 10.0.0
+[0.417s] -- Check for working CXX compiler: /usr/bin/clang++
+[0.782s] -- Check for working CXX compiler: /usr/bin/clang++ -- works
+[0.786s] -- Detecting CXX compiler ABI info
+[1.150s] -- Detecting CXX compiler ABI info - done
+[1.200s] -- Detecting CXX compile features
+[1.202s] -- Detecting CXX compile features - done
+[1.206s] -- Found cmake_helpers: 1.0.0 (/home/ubuntu/workspace/Velizar/robotics_v1/install/cmake_helpers/share/cmake_helpers/cmake)
+[1.218s] -- Looking for C++ include pthread.h
+[1.611s] -- Looking for C++ include pthread.h - found
+[1.612s] -- Performing Test CMAKE_HAVE_LIBC_PTHREAD
+[1.981s] -- Performing Test CMAKE_HAVE_LIBC_PTHREAD - Failed
+[1.982s] -- Looking for pthread_create in pthreads
+[2.252s] -- Looking for pthread_create in pthreads - not found
+[2.253s] -- Looking for pthread_create in pthread
+[2.618s] -- Looking for pthread_create in pthread - found
+[2.621s] -- Found Threads: TRUE  
+[2.637s] -- Found ament_cmake: 0.9.9 (/opt/ros/foxy/share/ament_cmake/cmake)
+[2.710s] -- Found PythonInterp: /usr/bin/python3 (found suitable version "3.8.10", minimum required is "3") 
+[2.710s] -- Using PYTHON_EXECUTABLE: /usr/bin/python3
+[3.417s] -- Configuring done
+[3.438s] -- Generating done
+[3.442s] -- Build files have been written to: /home/ubuntu/workspace/Velizar/robotics_v1/build/game_engine
+[3.454s] Invoked command in '/home/ubuntu/workspace/Velizar/robotics_v1/build/game_engine' returned '0': CMAKE_PREFIX_PATH=/home/ubuntu/workspace/Velizar/robotics_v1/install/manager_utils:/home/ubuntu/workspace/Velizar/robotics_v1/install/sdl_utils:/home/ubuntu/workspace/Velizar/robotics_v1/install/resource_utils:/home/ubuntu/workspace/Velizar/robotics_v1/install/utils:/home/ubuntu/workspace/Velizar/robotics_v1/install/cmake_helpers:/opt/ros/foxy PKG_CONFIG_PATH=/home/ubuntu/workspace/Velizar/robotics_v1/install/manager_utils/lib/x86_64-linux-gnu/pkgconfig:/home/ubuntu/workspace/Velizar/robotics_v1/install/manager_utils/lib/pkgconfig:/home/ubuntu/workspace/Velizar/robotics_v1/install/sdl_utils/lib/x86_64-linux-gnu/pkgconfig:/home/ubuntu/workspace/Velizar/robotics_v1/install/sdl_utils/lib/pkgconfig:/home/ubuntu/workspace/Velizar/robotics_v1/install/resource_utils/lib/x86_64-linux-gnu/pkgconfig:/home/ubuntu/workspace/Velizar/robotics_v1/install/resource_utils/lib/pkgconfig:/home/ubuntu/workspace/Velizar/robotics_v1/install/utils/lib/x86_64-linux-gnu/pkgconfig:/home/ubuntu/workspace/Velizar/robotics_v1/install/utils/lib/pkgconfig:/home/ubuntu/workspace/Velizar/robotics_v1/install/cmake_helpers/lib/x86_64-linux-gnu/pkgconfig:/home/ubuntu/workspace/Velizar/robotics_v1/install/cmake_helpers/lib/pkgconfig PS1=[\u@\h \W]$(git_branch)$ /usr/bin/cmake /home/ubuntu/workspace/Velizar/robotics_v1/src/lib/game_engine -DCMAKE_BUILD_TYPE=Debug -DCMAKE_CXX_COMPILER=/usr/bin/clang++ -DCMAKE_INSTALL_PREFIX=/home/ubuntu/workspace/Velizar/robotics_v1/install/game_engine
+[3.456s] Invoking command in '/home/ubuntu/workspace/Velizar/robotics_v1/build/game_engine': CMAKE_PREFIX_PATH=/home/ubuntu/workspace/Velizar/robotics_v1/install/manager_utils:/home/ubuntu/workspace/Velizar/robotics_v1/install/sdl_utils:/home/ubuntu/workspace/Velizar/robotics_v1/install/resource_utils:/home/ubuntu/workspace/Velizar/robotics_v1/install/utils:/home/ubuntu/workspace/Velizar/robotics_v1/install/cmake_helpers:/opt/ros/foxy PKG_CONFIG_PATH=/home/ubuntu/workspace/Velizar/robotics_v1/install/manager_utils/lib/x86_64-linux-gnu/pkgconfig:/home/ubuntu/workspace/Velizar/robotics_v1/install/manager_utils/lib/pkgconfig:/home/ubuntu/workspace/Velizar/robotics_v1/install/sdl_utils/lib/x86_64-linux-gnu/pkgconfig:/home/ubuntu/workspace/Velizar/robotics_v1/install/sdl_utils/lib/pkgconfig:/home/ubuntu/workspace/Velizar/robotics_v1/install/resource_utils/lib/x86_64-linux-gnu/pkgconfig:/home/ubuntu/workspace/Velizar/robotics_v1/install/resource_utils/lib/pkgconfig:/home/ubuntu/workspace/Velizar/robotics_v1/install/utils/lib/x86_64-linux-gnu/pkgconfig:/home/ubuntu/workspace/Velizar/robotics_v1/install/utils/lib/pkgconfig:/home/ubuntu/workspace/Velizar/robotics_v1/install/cmake_helpers/lib/x86_64-linux-gnu/pkgconfig:/home/ubuntu/workspace/Velizar/robotics_v1/install/cmake_helpers/lib/pkgconfig PS1=[\u@\h \W]$(git_branch)$ /usr/bin/cmake --build /home/ubuntu/workspace/Velizar/robotics_v1/build/game_engine -- -j2 -l2
+[3.583s] [35m[1mScanning dependencies of target game_engine[0m
+[3.641s] [ 14%] [32mBuilding CXX object CMakeFiles/game_engine.dir/src/communicator/NullCommunicator.cpp.o[0m
+[3.830s] [ 28%] [32mBuilding CXX object CMakeFiles/game_engine.dir/src/engine/config/EngineConfig.cpp.o[0m
+[5.236s] [ 42%] [32mBuilding CXX object CMakeFiles/game_engine.dir/src/engine/Engine.cpp.o[0m
+[8.617s] [ 57%] [32mBuilding CXX object CMakeFiles/game_engine.dir/src/event_handler/ActionEventHandler.cpp.o[0m
+[11.557s] [ 71%] [32mBuilding CXX object CMakeFiles/game_engine.dir/src/utils/DebugConsole.cpp.o[0m
+[12.625s] [ 85%] [32mBuilding CXX object CMakeFiles/game_engine.dir/src/Application.cpp.o[0m
+[14.739s] [100%] [32m[1mLinking CXX static library libgame_engine.a[0m
+[14.894s] [100%] Built target game_engine
+[14.927s] Invoked command in '/home/ubuntu/workspace/Velizar/robotics_v1/build/game_engine' returned '0': CMAKE_PREFIX_PATH=/home/ubuntu/workspace/Velizar/robotics_v1/install/manager_utils:/home/ubuntu/workspace/Velizar/robotics_v1/install/sdl_utils:/home/ubuntu/workspace/Velizar/robotics_v1/install/resource_utils:/home/ubuntu/workspace/Velizar/robotics_v1/install/utils:/home/ubuntu/workspace/Velizar/robotics_v1/install/cmake_helpers:/opt/ros/foxy PKG_CONFIG_PATH=/home/ubuntu/workspace/Velizar/robotics_v1/install/manager_utils/lib/x86_64-linux-gnu/pkgconfig:/home/ubuntu/workspace/Velizar/robotics_v1/install/manager_utils/lib/pkgconfig:/home/ubuntu/workspace/Velizar/robotics_v1/install/sdl_utils/lib/x86_64-linux-gnu/pkgconfig:/home/ubuntu/workspace/Velizar/robotics_v1/install/sdl_utils/lib/pkgconfig:/home/ubuntu/workspace/Velizar/robotics_v1/install/resource_utils/lib/x86_64-linux-gnu/pkgconfig:/home/ubuntu/workspace/Velizar/robotics_v1/install/resource_utils/lib/pkgconfig:/home/ubuntu/workspace/Velizar/robotics_v1/install/utils/lib/x86_64-linux-gnu/pkgconfig:/home/ubuntu/workspace/Velizar/robotics_v1/install/utils/lib/pkgconfig:/home/ubuntu/workspace/Velizar/robotics_v1/install/cmake_helpers/lib/x86_64-linux-gnu/pkgconfig:/home/ubuntu/workspace/Velizar/robotics_v1/install/cmake_helpers/lib/pkgconfig PS1=[\u@\h \W]$(git_branch)$ /usr/bin/cmake --build /home/ubuntu/workspace/Velizar/robotics_v1/build/game_engine -- -j2 -l2
+[15.036s] Invoking command in '/home/ubuntu/workspace/Velizar/robotics_v1/build/game_engine': CMAKE_PREFIX_PATH=/home/ubuntu/workspace/Velizar/robotics_v1/install/manager_utils:/home/ubuntu/workspace/Velizar/robotics_v1/install/sdl_utils:/home/ubuntu/workspace/Velizar/robotics_v1/install/resource_utils:/home/ubuntu/workspace/Velizar/robotics_v1/install/utils:/home/ubuntu/workspace/Velizar/robotics_v1/install/cmake_helpers:/opt/ros/foxy PKG_CONFIG_PATH=/home/ubuntu/workspace/Velizar/robotics_v1/install/manager_utils/lib/x86_64-linux-gnu/pkgconfig:/home/ubuntu/workspace/Velizar/robotics_v1/install/manager_utils/lib/pkgconfig:/home/ubuntu/workspace/Velizar/robotics_v1/install/sdl_utils/lib/x86_64-linux-gnu/pkgconfig:/home/ubuntu/workspace/Velizar/robotics_v1/install/sdl_utils/lib/pkgconfig:/home/ubuntu/workspace/Velizar/robotics_v1/install/resource_utils/lib/x86_64-linux-gnu/pkgconfig:/home/ubuntu/workspace/Velizar/robotics_v1/install/resource_utils/lib/pkgconfig:/home/ubuntu/workspace/Velizar/robotics_v1/install/utils/lib/x86_64-linux-gnu/pkgconfig:/home/ubuntu/workspace/Velizar/robotics_v1/install/utils/lib/pkgconfig:/home/ubuntu/workspace/Velizar/robotics_v1/install/cmake_helpers/lib/x86_64-linux-gnu/pkgconfig:/home/ubuntu/workspace/Velizar/robotics_v1/install/cmake_helpers/lib/pkgconfig PS1=[\u@\h \W]$(git_branch)$ /usr/bin/cmake --install /home/ubuntu/workspace/Velizar/robotics_v1/build/game_engine
+[15.063s] -- Install configuration: "Debug"
+[15.064s] -- Installing: /home/ubuntu/workspace/Velizar/robotics_v1/install/game_engine/share/game_engine/package.xml
+[15.065s] -- Installing: /home/ubuntu/workspace/Velizar/robotics_v1/install/game_engine/lib/game_engine/libgame_engine.a
+[15.074s] -- Installing: /home/ubuntu/workspace/Velizar/robotics_v1/install/game_engine/share/ament_index/resource_index/packages/game_engine
+[15.075s] -- Installing: /home/ubuntu/workspace/Velizar/robotics_v1/install/game_engine/share/game_engine/hook/ament_prefix_path.dsv
+[15.076s] -- Installing: /home/ubuntu/workspace/Velizar/robotics_v1/install/game_engine/share/game_engine/hook/ros_package_path.dsv
+[15.077s] -- Installing: /home/ubuntu/workspace/Velizar/robotics_v1/install/game_engine/share/ament_index/resource_index/package_run_dependencies/game_engine
+[15.078s] -- Installing: /home/ubuntu/workspace/Velizar/robotics_v1/install/game_engine/share/ament_index/resource_index/parent_prefix_path/game_engine
+[15.079s] -- Installing: /home/ubuntu/workspace/Velizar/robotics_v1/install/game_engine/share/game_engine/environment/ament_prefix_path.sh
+[15.081s] -- Installing: /home/ubuntu/workspace/Velizar/robotics_v1/install/game_engine/share/game_engine/environment/ament_prefix_path.dsv
+[15.082s] -- Installing: /home/ubuntu/workspace/Velizar/robotics_v1/install/game_engine/share/game_engine/environment/path.sh
+[15.082s] -- Installing: /home/ubuntu/workspace/Velizar/robotics_v1/install/game_engine/share/game_engine/environment/path.dsv
+[15.083s] -- Installing: /home/ubuntu/workspace/Velizar/robotics_v1/install/game_engine/share/game_engine/local_setup.bash
+[15.084s] -- Installing: /home/ubuntu/workspace/Velizar/robotics_v1/install/game_engine/share/game_engine/local_setup.sh
+[15.085s] -- Installing: /home/ubuntu/workspace/Velizar/robotics_v1/install/game_engine/share/game_engine/local_setup.zsh
+[15.085s] -- Installing: /home/ubuntu/workspace/Velizar/robotics_v1/install/game_engine/share/game_engine/local_setup.dsv
+[15.086s] -- Installing: /home/ubuntu/workspace/Velizar/robotics_v1/install/game_engine/share/game_engine/package.dsv
+[15.087s] -- Up-to-date: /home/ubuntu/workspace/Velizar/robotics_v1/install/game_engine/share/ament_index/resource_index/packages/game_engine
+[15.087s] -- Installing: /home/ubuntu/workspace/Velizar/robotics_v1/install/game_engine/share/game_engine/cmake/game_engineConfig.cmake
+[15.088s] -- Installing: /home/ubuntu/workspace/Velizar/robotics_v1/install/game_engine/share/game_engine/cmake/game_engineConfig-version.cmake
+[15.089s] -- Up-to-date: /home/ubuntu/workspace/Velizar/robotics_v1/install/game_engine/share/game_engine/package.xml
+[15.089s] -- Installing: /home/ubuntu/workspace/Velizar/robotics_v1/install/game_engine/lib/libgame_engine.a
+[15.098s] -- Installing: /home/ubuntu/workspace/Velizar/robotics_v1/install/game_engine/include
+[15.098s] -- Installing: /home/ubuntu/workspace/Velizar/robotics_v1/install/game_engine/include/game_engine
+[15.099s] -- Installing: /home/ubuntu/workspace/Velizar/robotics_v1/install/game_engine/include/game_engine/event_handler
+[15.099s] -- Installing: /home/ubuntu/workspace/Velizar/robotics_v1/install/game_engine/include/game_engine/event_handler/ActionEventHandler.h
+[15.100s] -- Installing: /home/ubuntu/workspace/Velizar/robotics_v1/install/game_engine/include/game_engine/Game.h
+[15.100s] -- Installing: /home/ubuntu/workspace/Velizar/robotics_v1/install/game_engine/include/game_engine/communicator
+[15.101s] -- Installing: /home/ubuntu/workspace/Velizar/robotics_v1/install/game_engine/include/game_engine/communicator/Communicator.h
+[15.101s] -- Installing: /home/ubuntu/workspace/Velizar/robotics_v1/install/game_engine/include/game_engine/communicator/NullCommunicator.h
+[15.102s] -- Installing: /home/ubuntu/workspace/Velizar/robotics_v1/install/game_engine/include/game_engine/utils
+[15.102s] -- Installing: /home/ubuntu/workspace/Velizar/robotics_v1/install/game_engine/include/game_engine/utils/config
+[15.103s] -- Installing: /home/ubuntu/workspace/Velizar/robotics_v1/install/game_engine/include/game_engine/utils/config/DebugConsoleConfig.h
+[15.103s] -- Installing: /home/ubuntu/workspace/Velizar/robotics_v1/install/game_engine/include/game_engine/utils/DebugConsole.h
+[15.104s] -- Installing: /home/ubuntu/workspace/Velizar/robotics_v1/install/game_engine/include/game_engine/Application.h
+[15.104s] -- Installing: /home/ubuntu/workspace/Velizar/robotics_v1/install/game_engine/include/game_engine/config
+[15.105s] -- Installing: /home/ubuntu/workspace/Velizar/robotics_v1/install/game_engine/include/game_engine/config/ApplicationConfig.h
+[15.105s] -- Installing: /home/ubuntu/workspace/Velizar/robotics_v1/install/game_engine/include/game_engine/engine
+[15.106s] -- Installing: /home/ubuntu/workspace/Velizar/robotics_v1/install/game_engine/include/game_engine/engine/Engine.h
+[15.106s] -- Installing: /home/ubuntu/workspace/Velizar/robotics_v1/install/game_engine/include/game_engine/engine/config
+[15.107s] -- Installing: /home/ubuntu/workspace/Velizar/robotics_v1/install/game_engine/include/game_engine/engine/config/EngineConfig.h
+[15.107s] -- Installing: /home/ubuntu/workspace/Velizar/robotics_v1/install/game_engine/include/game_engine/defines
+[15.108s] -- Installing: /home/ubuntu/workspace/Velizar/robotics_v1/install/game_engine/include/game_engine/defines/DependencyDefines.h
+[15.108s] -- Installing: /home/ubuntu/workspace/Velizar/robotics_v1/install/game_engine/include/game_engine/defines/ActionEventDefines.h
+[15.109s] -- Installing: /home/ubuntu/workspace/Velizar/robotics_v1/install/game_engine/lib/cmake/game_engine/game_engineTargets.cmake
+[15.110s] -- Installing: /home/ubuntu/workspace/Velizar/robotics_v1/install/game_engine/lib/cmake/game_engine/game_engineTargets-debug.cmake
+[15.111s] -- Installing: /home/ubuntu/workspace/Velizar/robotics_v1/install/game_engine/lib/cmake/game_engine/game_engineConfig.cmake
+[15.119s] Invoked command in '/home/ubuntu/workspace/Velizar/robotics_v1/build/game_engine' returned '0': CMAKE_PREFIX_PATH=/home/ubuntu/workspace/Velizar/robotics_v1/install/manager_utils:/home/ubuntu/workspace/Velizar/robotics_v1/install/sdl_utils:/home/ubuntu/workspace/Velizar/robotics_v1/install/resource_utils:/home/ubuntu/workspace/Velizar/robotics_v1/install/utils:/home/ubuntu/workspace/Velizar/robotics_v1/install/cmake_helpers:/opt/ros/foxy PKG_CONFIG_PATH=/home/ubuntu/workspace/Velizar/robotics_v1/install/manager_utils/lib/x86_64-linux-gnu/pkgconfig:/home/ubuntu/workspace/Velizar/robotics_v1/install/manager_utils/lib/pkgconfig:/home/ubuntu/workspace/Velizar/robotics_v1/install/sdl_utils/lib/x86_64-linux-gnu/pkgconfig:/home/ubuntu/workspace/Velizar/robotics_v1/install/sdl_utils/lib/pkgconfig:/home/ubuntu/workspace/Velizar/robotics_v1/install/resource_utils/lib/x86_64-linux-gnu/pkgconfig:/home/ubuntu/workspace/Velizar/robotics_v1/install/resource_utils/lib/pkgconfig:/home/ubuntu/workspace/Velizar/robotics_v1/install/utils/lib/x86_64-linux-gnu/pkgconfig:/home/ubuntu/workspace/Velizar/robotics_v1/install/utils/lib/pkgconfig:/home/ubuntu/workspace/Velizar/robotics_v1/install/cmake_helpers/lib/x86_64-linux-gnu/pkgconfig:/home/ubuntu/workspace/Velizar/robotics_v1/install/cmake_helpers/lib/pkgconfig PS1=[\u@\h \W]$(git_branch)$ /usr/bin/cmake --install /home/ubuntu/workspace/Velizar/robotics_v1/build/game_engine

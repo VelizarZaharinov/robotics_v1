@@ -1,0 +1,10 @@
+/home/ubuntu/workspace/Velizar/robotics_v1/build/ur_controllers/CMakeFiles/install/strip.dir
+/home/ubuntu/workspace/Velizar/robotics_v1/build/ur_controllers/CMakeFiles/install/local.dir
+/home/ubuntu/workspace/Velizar/robotics_v1/build/ur_controllers/CMakeFiles/install.dir
+/home/ubuntu/workspace/Velizar/robotics_v1/build/ur_controllers/CMakeFiles/list_install_components.dir
+/home/ubuntu/workspace/Velizar/robotics_v1/build/ur_controllers/CMakeFiles/rebuild_cache.dir
+/home/ubuntu/workspace/Velizar/robotics_v1/build/ur_controllers/CMakeFiles/edit_cache.dir
+/home/ubuntu/workspace/Velizar/robotics_v1/build/ur_controllers/CMakeFiles/test.dir
+/home/ubuntu/workspace/Velizar/robotics_v1/build/ur_controllers/CMakeFiles/ur_controllers.dir
+/home/ubuntu/workspace/Velizar/robotics_v1/build/ur_controllers/CMakeFiles/ur_controllers_uninstall.dir
+/home/ubuntu/workspace/Velizar/robotics_v1/build/ur_controllers/CMakeFiles/uninstall.dir

@@ -1,0 +1,1 @@
+ament_cmake_symlink_install_targets("TARGET_FILES" "/home/ubuntu/workspace/Velizar/robotics_v1/build/urscript_interfaces/rosidl_generator_py/urscript_interfaces/liburscript_interfaces__python.so" "TARGETS" "urscript_interfaces__python" "ARCHIVE_DESTINATION" "lib" "LIBRARY_DESTINATION" "lib" "RUNTIME_DESTINATION" "bin")

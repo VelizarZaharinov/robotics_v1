@@ -1,0 +1,1 @@
+/home/ubuntu/workspace/Velizar/robotics_v1/build/robo_collector_interfaces/ament_cmake_export_dependencies/ament_cmake_export_dependencies-extras.cmake

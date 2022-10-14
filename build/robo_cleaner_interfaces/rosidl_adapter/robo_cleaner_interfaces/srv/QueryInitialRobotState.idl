@@ -1,0 +1,22 @@
+// generated from rosidl_adapter/resource/srv.idl.em
+// with input from robo_cleaner_interfaces/srv/QueryInitialRobotState.srv
+// generated code does not contain a copyright notice
+
+#include "robo_cleaner_interfaces/msg/InitialRobotState.idl"
+
+module robo_cleaner_interfaces {
+  module srv {
+    @verbatim (language="comment", text=
+      "empty request")
+    struct QueryInitialRobotState_Request {
+      uint8 structure_needs_at_least_one_member;
+    };
+    struct QueryInitialRobotState_Response {
+      boolean success;
+
+      string error_reason;
+
+      robo_cleaner_interfaces::msg::InitialRobotState initial_robot_state;
+    };
+  };
+};

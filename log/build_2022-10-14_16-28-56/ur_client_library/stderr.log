@@ -1,0 +1,15 @@
+In file included from /home/ubuntu/workspace/Velizar/robotics_v1/src/ur_driver/Universal_Robots_Client_Library/examples/primary_pipeline.cpp:28:
+In file included from /home/ubuntu/workspace/Velizar/robotics_v1/src/ur_driver/Universal_Robots_Client_Library/include/ur_client_library/comm/pipeline.h:23:
+In file included from /home/ubuntu/workspace/Velizar/robotics_v1/src/ur_driver/Universal_Robots_Client_Library/include/ur_client_library/comm/package.h:31:
+In file included from /home/ubuntu/workspace/Velizar/robotics_v1/src/ur_driver/Universal_Robots_Client_Library/include/ur_client_library/comm/bin_parser.h:31:
+In file included from /usr/bin/../lib/gcc/x86_64-linux-gnu/9/../../../../include/c++/9/memory:80:
+[1m/usr/bin/../lib/gcc/x86_64-linux-gnu/9/../../../../include/c++/9/bits/unique_ptr.h:81:2: [0m[0;1;35mwarning: [0m[1mdelete called on 'urcl::comm::IConsumer<urcl::primary_interface::PrimaryPackage>' that is abstract but has non-virtual destructor [-Wdelete-abstract-non-virtual-dtor][0m
+        delete __ptr;
+[0;1;32m        ^
+[0m[1m/usr/bin/../lib/gcc/x86_64-linux-gnu/9/../../../../include/c++/9/bits/unique_ptr.h:292:4: [0m[0;1;30mnote: [0min instantiation of member function 'std::default_delete<urcl::comm::IConsumer<urcl::primary_interface::PrimaryPackage> >::operator()' requested here[0m
+          get_deleter()(std::move(__ptr));
+[0;1;32m          ^
+[0m[1m/home/ubuntu/workspace/Velizar/robotics_v1/src/ur_driver/Universal_Robots_Client_Library/examples/primary_pipeline.cpp:52:71: [0m[0;1;30mnote: [0min instantiation of member function 'std::unique_ptr<urcl::comm::IConsumer<urcl::primary_interface::PrimaryPackage>, std::default_delete<urcl::comm::IConsumer<urcl::primary_interface::PrimaryPackage> > >::~unique_ptr' requested here[0m
+  std::unique_ptr<comm::IConsumer<primary_interface::PrimaryPackage>> consumer;
+[0;1;32m                                                                      ^
+[0m1 warning generated.

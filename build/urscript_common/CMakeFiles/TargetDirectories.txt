@@ -1,0 +1,10 @@
+/home/ubuntu/workspace/Velizar/robotics_v1/build/urscript_common/CMakeFiles/install/strip.dir
+/home/ubuntu/workspace/Velizar/robotics_v1/build/urscript_common/CMakeFiles/install.dir
+/home/ubuntu/workspace/Velizar/robotics_v1/build/urscript_common/CMakeFiles/list_install_components.dir
+/home/ubuntu/workspace/Velizar/robotics_v1/build/urscript_common/CMakeFiles/rebuild_cache.dir
+/home/ubuntu/workspace/Velizar/robotics_v1/build/urscript_common/CMakeFiles/edit_cache.dir
+/home/ubuntu/workspace/Velizar/robotics_v1/build/urscript_common/CMakeFiles/test.dir
+/home/ubuntu/workspace/Velizar/robotics_v1/build/urscript_common/CMakeFiles/install/local.dir
+/home/ubuntu/workspace/Velizar/robotics_v1/build/urscript_common/CMakeFiles/urscript_common.dir
+/home/ubuntu/workspace/Velizar/robotics_v1/build/urscript_common/CMakeFiles/urscript_common_uninstall.dir
+/home/ubuntu/workspace/Velizar/robotics_v1/build/urscript_common/CMakeFiles/uninstall.dir

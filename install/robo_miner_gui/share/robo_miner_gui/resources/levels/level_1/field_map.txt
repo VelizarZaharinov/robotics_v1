@@ -1,0 +1,1 @@
+/home/ubuntu/workspace/Velizar/robotics_v1/src/robo_miner/robo_miner_gui/resources/levels/level_1/field_map.txt

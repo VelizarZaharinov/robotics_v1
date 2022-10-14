@@ -1,0 +1,29 @@
+file(REMOVE_RECURSE
+  "CMakeFiles/robo_miner_interfaces__rosidl_typesupport_cpp.dir/rosidl_typesupport_cpp/robo_miner_interfaces/msg/field_point__type_support.cpp.o"
+  "CMakeFiles/robo_miner_interfaces__rosidl_typesupport_cpp.dir/rosidl_typesupport_cpp/robo_miner_interfaces/msg/robot_move_type__type_support.cpp.o"
+  "CMakeFiles/robo_miner_interfaces__rosidl_typesupport_cpp.dir/rosidl_typesupport_cpp/robo_miner_interfaces/msg/robot_position_response__type_support.cpp.o"
+  "CMakeFiles/robo_miner_interfaces__rosidl_typesupport_cpp.dir/rosidl_typesupport_cpp/robo_miner_interfaces/msg/u_int8_multi_array__type_support.cpp.o"
+  "CMakeFiles/robo_miner_interfaces__rosidl_typesupport_cpp.dir/rosidl_typesupport_cpp/robo_miner_interfaces/msg/user_authenticate__type_support.cpp.o"
+  "CMakeFiles/robo_miner_interfaces__rosidl_typesupport_cpp.dir/rosidl_typesupport_cpp/robo_miner_interfaces/srv/activate_mining_validate__type_support.cpp.o"
+  "CMakeFiles/robo_miner_interfaces__rosidl_typesupport_cpp.dir/rosidl_typesupport_cpp/robo_miner_interfaces/srv/field_map_validate__type_support.cpp.o"
+  "CMakeFiles/robo_miner_interfaces__rosidl_typesupport_cpp.dir/rosidl_typesupport_cpp/robo_miner_interfaces/srv/longest_sequence_validate__type_support.cpp.o"
+  "CMakeFiles/robo_miner_interfaces__rosidl_typesupport_cpp.dir/rosidl_typesupport_cpp/robo_miner_interfaces/srv/query_initial_robot_position__type_support.cpp.o"
+  "CMakeFiles/robo_miner_interfaces__rosidl_typesupport_cpp.dir/rosidl_typesupport_cpp/robo_miner_interfaces/srv/robot_move__type_support.cpp.o"
+  "librobo_miner_interfaces__rosidl_typesupport_cpp.pdb"
+  "librobo_miner_interfaces__rosidl_typesupport_cpp.so"
+  "rosidl_typesupport_cpp/robo_miner_interfaces/msg/field_point__type_support.cpp"
+  "rosidl_typesupport_cpp/robo_miner_interfaces/msg/robot_move_type__type_support.cpp"
+  "rosidl_typesupport_cpp/robo_miner_interfaces/msg/robot_position_response__type_support.cpp"
+  "rosidl_typesupport_cpp/robo_miner_interfaces/msg/u_int8_multi_array__type_support.cpp"
+  "rosidl_typesupport_cpp/robo_miner_interfaces/msg/user_authenticate__type_support.cpp"
+  "rosidl_typesupport_cpp/robo_miner_interfaces/srv/activate_mining_validate__type_support.cpp"
+  "rosidl_typesupport_cpp/robo_miner_interfaces/srv/field_map_validate__type_support.cpp"
+  "rosidl_typesupport_cpp/robo_miner_interfaces/srv/longest_sequence_validate__type_support.cpp"
+  "rosidl_typesupport_cpp/robo_miner_interfaces/srv/query_initial_robot_position__type_support.cpp"
+  "rosidl_typesupport_cpp/robo_miner_interfaces/srv/robot_move__type_support.cpp"
+)
+
+# Per-language clean rules from dependency scanning.
+foreach(lang CXX)
+  include(CMakeFiles/robo_miner_interfaces__rosidl_typesupport_cpp.dir/cmake_clean_${lang}.cmake OPTIONAL)
+endforeach()

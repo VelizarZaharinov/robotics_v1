@@ -1,0 +1,74 @@
+-- The CXX compiler identification is Clang 10.0.0
+-- Check for working CXX compiler: /usr/bin/clang++
+-- Check for working CXX compiler: /usr/bin/clang++ -- works
+-- Detecting CXX compiler ABI info
+-- Detecting CXX compiler ABI info - done
+-- Detecting CXX compile features
+-- Detecting CXX compile features - done
+-- Found cmake_helpers: 1.0.0 (/home/ubuntu/workspace/Velizar/robotics_v1/install/cmake_helpers/share/cmake_helpers/cmake)
+-- Looking for C++ include pthread.h
+-- Looking for C++ include pthread.h - found
+-- Performing Test CMAKE_HAVE_LIBC_PTHREAD
+-- Performing Test CMAKE_HAVE_LIBC_PTHREAD - Failed
+-- Looking for pthread_create in pthreads
+-- Looking for pthread_create in pthreads - not found
+-- Looking for pthread_create in pthread
+-- Looking for pthread_create in pthread - found
+-- Found Threads: TRUE  
+-- Found ament_cmake: 0.9.9 (/opt/ros/foxy/share/ament_cmake/cmake)
+-- Found PythonInterp: /usr/bin/python3 (found suitable version "3.8.10", minimum required is "3") 
+-- Using PYTHON_EXECUTABLE: /usr/bin/python3
+-- Configuring done
+-- Generating done
+-- Build files have been written to: /home/ubuntu/workspace/Velizar/robotics_v1/build/resource_utils
+[35m[1mScanning dependencies of target resource_utils[0m
+[ 11%] [32mBuilding CXX object CMakeFiles/resource_utils.dir/src/defines/SoundDefines.cpp.o[0m
+[ 22%] [32mBuilding CXX object CMakeFiles/resource_utils.dir/src/common/ResourceFileHeader.cpp.o[0m
+[ 33%] [32mBuilding CXX object CMakeFiles/resource_utils.dir/src/resource_loader/ResourceLoader.cpp.o[0m
+[ 44%] [32mBuilding CXX object CMakeFiles/resource_utils.dir/src/structs/CombinedStructs.cpp.o[0m
+[ 55%] [32mBuilding CXX object CMakeFiles/resource_utils.dir/src/structs/DataHeader.cpp.o[0m
+[ 66%] [32mBuilding CXX object CMakeFiles/resource_utils.dir/src/structs/ResourceData.cpp.o[0m
+[ 77%] [32mBuilding CXX object CMakeFiles/resource_utils.dir/src/structs/FontData.cpp.o[0m
+[ 88%] [32mBuilding CXX object CMakeFiles/resource_utils.dir/src/structs/SoundData.cpp.o[0m
+[100%] [32m[1mLinking CXX static library libresource_utils.a[0m
+[100%] Built target resource_utils
+-- Install configuration: "Debug"
+-- Installing: /home/ubuntu/workspace/Velizar/robotics_v1/install/resource_utils/share/resource_utils/package.xml
+-- Installing: /home/ubuntu/workspace/Velizar/robotics_v1/install/resource_utils/lib/resource_utils/libresource_utils.a
+-- Installing: /home/ubuntu/workspace/Velizar/robotics_v1/install/resource_utils/share/ament_index/resource_index/packages/resource_utils
+-- Installing: /home/ubuntu/workspace/Velizar/robotics_v1/install/resource_utils/share/resource_utils/hook/ament_prefix_path.dsv
+-- Installing: /home/ubuntu/workspace/Velizar/robotics_v1/install/resource_utils/share/resource_utils/hook/ros_package_path.dsv
+-- Installing: /home/ubuntu/workspace/Velizar/robotics_v1/install/resource_utils/share/ament_index/resource_index/package_run_dependencies/resource_utils
+-- Installing: /home/ubuntu/workspace/Velizar/robotics_v1/install/resource_utils/share/ament_index/resource_index/parent_prefix_path/resource_utils
+-- Installing: /home/ubuntu/workspace/Velizar/robotics_v1/install/resource_utils/share/resource_utils/environment/ament_prefix_path.sh
+-- Installing: /home/ubuntu/workspace/Velizar/robotics_v1/install/resource_utils/share/resource_utils/environment/ament_prefix_path.dsv
+-- Installing: /home/ubuntu/workspace/Velizar/robotics_v1/install/resource_utils/share/resource_utils/environment/path.sh
+-- Installing: /home/ubuntu/workspace/Velizar/robotics_v1/install/resource_utils/share/resource_utils/environment/path.dsv
+-- Installing: /home/ubuntu/workspace/Velizar/robotics_v1/install/resource_utils/share/resource_utils/local_setup.bash
+-- Installing: /home/ubuntu/workspace/Velizar/robotics_v1/install/resource_utils/share/resource_utils/local_setup.sh
+-- Installing: /home/ubuntu/workspace/Velizar/robotics_v1/install/resource_utils/share/resource_utils/local_setup.zsh
+-- Installing: /home/ubuntu/workspace/Velizar/robotics_v1/install/resource_utils/share/resource_utils/local_setup.dsv
+-- Installing: /home/ubuntu/workspace/Velizar/robotics_v1/install/resource_utils/share/resource_utils/package.dsv
+-- Installing: /home/ubuntu/workspace/Velizar/robotics_v1/install/resource_utils/share/ament_index/resource_index/packages/resource_utils
+-- Installing: /home/ubuntu/workspace/Velizar/robotics_v1/install/resource_utils/share/resource_utils/cmake/resource_utilsConfig.cmake
+-- Installing: /home/ubuntu/workspace/Velizar/robotics_v1/install/resource_utils/share/resource_utils/cmake/resource_utilsConfig-version.cmake
+-- Up-to-date: /home/ubuntu/workspace/Velizar/robotics_v1/install/resource_utils/share/resource_utils/package.xml
+-- Installing: /home/ubuntu/workspace/Velizar/robotics_v1/install/resource_utils/lib/libresource_utils.a
+-- Installing: /home/ubuntu/workspace/Velizar/robotics_v1/install/resource_utils/include
+-- Installing: /home/ubuntu/workspace/Velizar/robotics_v1/install/resource_utils/include/resource_utils
+-- Installing: /home/ubuntu/workspace/Velizar/robotics_v1/install/resource_utils/include/resource_utils/structs
+-- Installing: /home/ubuntu/workspace/Velizar/robotics_v1/install/resource_utils/include/resource_utils/structs/ResourceData.h
+-- Installing: /home/ubuntu/workspace/Velizar/robotics_v1/install/resource_utils/include/resource_utils/structs/FontData.h
+-- Installing: /home/ubuntu/workspace/Velizar/robotics_v1/install/resource_utils/include/resource_utils/structs/DataHeader.h
+-- Installing: /home/ubuntu/workspace/Velizar/robotics_v1/install/resource_utils/include/resource_utils/structs/SoundData.h
+-- Installing: /home/ubuntu/workspace/Velizar/robotics_v1/install/resource_utils/include/resource_utils/structs/CombinedStructs.h
+-- Installing: /home/ubuntu/workspace/Velizar/robotics_v1/install/resource_utils/include/resource_utils/common
+-- Installing: /home/ubuntu/workspace/Velizar/robotics_v1/install/resource_utils/include/resource_utils/common/ResourceFileHeader.h
+-- Installing: /home/ubuntu/workspace/Velizar/robotics_v1/install/resource_utils/include/resource_utils/defines
+-- Installing: /home/ubuntu/workspace/Velizar/robotics_v1/install/resource_utils/include/resource_utils/defines/ResourceDefines.h
+-- Installing: /home/ubuntu/workspace/Velizar/robotics_v1/install/resource_utils/include/resource_utils/defines/SoundDefines.h
+-- Installing: /home/ubuntu/workspace/Velizar/robotics_v1/install/resource_utils/include/resource_utils/resource_loader
+-- Installing: /home/ubuntu/workspace/Velizar/robotics_v1/install/resource_utils/include/resource_utils/resource_loader/ResourceLoader.h
+-- Installing: /home/ubuntu/workspace/Velizar/robotics_v1/install/resource_utils/lib/cmake/resource_utils/resource_utilsTargets.cmake
+-- Installing: /home/ubuntu/workspace/Velizar/robotics_v1/install/resource_utils/lib/cmake/resource_utils/resource_utilsTargets-debug.cmake
+-- Installing: /home/ubuntu/workspace/Velizar/robotics_v1/install/resource_utils/lib/cmake/resource_utils/resource_utilsConfig.cmake

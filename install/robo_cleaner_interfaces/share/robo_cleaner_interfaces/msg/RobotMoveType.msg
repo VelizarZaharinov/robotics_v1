@@ -1,0 +1,1 @@
+/home/ubuntu/workspace/Velizar/robotics_v1/src/robo_cleaner/robo_cleaner_interfaces/msg/RobotMoveType.msg

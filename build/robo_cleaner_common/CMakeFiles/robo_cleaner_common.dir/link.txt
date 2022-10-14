@@ -1,0 +1,2 @@
+/usr/bin/ar qc librobo_cleaner_common.a  CMakeFiles/robo_cleaner_common.dir/src/message_helpers/RoboCleanerMessageHelpers.cpp.o CMakeFiles/robo_cleaner_common.dir/src/defines/RoboCleanerDefines.cpp.o
+/usr/bin/ranlib librobo_cleaner_common.a

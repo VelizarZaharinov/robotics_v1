@@ -1,0 +1,13 @@
+package.xml
+setup.cfg
+setup.py
+resource/robo_collector_controller_py
+robo_collector_controller_py/__init__.py
+robo_collector_controller_py/robo_collector_controller.py
+robo_collector_controller_py.egg-info/PKG-INFO
+robo_collector_controller_py.egg-info/SOURCES.txt
+robo_collector_controller_py.egg-info/dependency_links.txt
+robo_collector_controller_py.egg-info/entry_points.txt
+robo_collector_controller_py.egg-info/requires.txt
+robo_collector_controller_py.egg-info/top_level.txt
+robo_collector_controller_py.egg-info/zip-safe

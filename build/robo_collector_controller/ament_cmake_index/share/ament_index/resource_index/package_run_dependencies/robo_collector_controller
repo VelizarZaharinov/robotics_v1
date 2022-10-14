@@ -1,0 +1,1 @@
+rclcpp;ament_index_cpp;std_msgs;robo_collector_interfaces;robo_collector_common;ros2_game_engine;ament_lint_auto;ament_lint_common

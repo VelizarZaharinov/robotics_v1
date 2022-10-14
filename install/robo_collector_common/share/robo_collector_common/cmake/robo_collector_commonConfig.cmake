@@ -1,0 +1,1 @@
+/home/ubuntu/workspace/Velizar/robotics_v1/build/robo_collector_common/ament_cmake_core/robo_collector_commonConfig.cmake

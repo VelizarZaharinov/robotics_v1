@@ -1,0 +1,121 @@
+-- The CXX compiler identification is Clang 10.0.0
+-- Check for working CXX compiler: /usr/bin/clang++
+-- Check for working CXX compiler: /usr/bin/clang++ -- works
+-- Detecting CXX compiler ABI info
+-- Detecting CXX compiler ABI info - done
+-- Detecting CXX compile features
+-- Detecting CXX compile features - done
+-- Found cmake_helpers: 1.0.0 (/home/ubuntu/workspace/Velizar/robotics_v1/install/cmake_helpers/share/cmake_helpers/cmake)
+-- Looking for C++ include pthread.h
+-- Looking for C++ include pthread.h - found
+-- Performing Test CMAKE_HAVE_LIBC_PTHREAD
+-- Performing Test CMAKE_HAVE_LIBC_PTHREAD - Failed
+-- Looking for pthread_create in pthreads
+-- Looking for pthread_create in pthreads - not found
+-- Looking for pthread_create in pthread
+-- Looking for pthread_create in pthread - found
+-- Found Threads: TRUE  
+-- Found ament_cmake: 0.9.9 (/opt/ros/foxy/share/ament_cmake/cmake)
+-- Found PythonInterp: /usr/bin/python3 (found suitable version "3.8.10", minimum required is "3") 
+-- Using PYTHON_EXECUTABLE: /usr/bin/python3
+-- Configuring done
+-- Generating done
+-- Build files have been written to: /home/ubuntu/workspace/Velizar/robotics_v1/build/manager_utils
+[35m[1mScanning dependencies of target manager_utils[0m
+[  3%] [32mBuilding CXX object CMakeFiles/manager_utils.dir/src/drawing/DynamicImage.cpp.o[0m
+[  7%] [32mBuilding CXX object CMakeFiles/manager_utils.dir/src/drawing/NumberCounter.cpp.o[0m
+[ 11%] [32mBuilding CXX object CMakeFiles/manager_utils.dir/src/drawing/Image.cpp.o[0m
+[ 14%] [32mBuilding CXX object CMakeFiles/manager_utils.dir/src/drawing/Sprite.cpp.o[0m
+[ 18%] [32mBuilding CXX object CMakeFiles/manager_utils.dir/src/drawing/Fbo.cpp.o[0m
+[ 22%] [32mBuilding CXX object CMakeFiles/manager_utils.dir/src/drawing/Text.cpp.o[0m
+[ 25%] [32mBuilding CXX object CMakeFiles/manager_utils.dir/src/drawing/Widget.cpp.o[0m
+[ 29%] [32mBuilding CXX object CMakeFiles/manager_utils.dir/src/drawing/animation/AnimationBase.cpp.o[0m
+[ 33%] [32mBuilding CXX object CMakeFiles/manager_utils.dir/src/drawing/animation/FrameAnimation.cpp.o[0m
+[ 37%] [32mBuilding CXX object CMakeFiles/manager_utils.dir/src/drawing/animation/PositionAnimation.cpp.o[0m
+[ 40%] [32mBuilding CXX object CMakeFiles/manager_utils.dir/src/drawing/animation/PulseAnimation.cpp.o[0m
+[ 44%] [32mBuilding CXX object CMakeFiles/manager_utils.dir/src/drawing/animation/RotationAnimation.cpp.o[0m
+[ 48%] [32mBuilding CXX object CMakeFiles/manager_utils.dir/src/drawing/animation/defines/CommonAnimationStructs.cpp.o[0m
+[ 51%] [32mBuilding CXX object CMakeFiles/manager_utils.dir/src/input/ButtonBase.cpp.o[0m
+[ 55%] [32mBuilding CXX object CMakeFiles/manager_utils.dir/src/input/Scroller.cpp.o[0m
+[ 59%] [32mBuilding CXX object CMakeFiles/manager_utils.dir/src/managers/ManagerHandler.cpp.o[0m
+[ 62%] [32mBuilding CXX object CMakeFiles/manager_utils.dir/src/managers/DrawMgr.cpp.o[0m
+[ 66%] [32mBuilding CXX object CMakeFiles/manager_utils.dir/src/managers/RsrcMgr.cpp.o[0m
+[ 70%] [32mBuilding CXX object CMakeFiles/manager_utils.dir/src/managers/SoundMgr.cpp.o[0m
+[ 74%] [32mBuilding CXX object CMakeFiles/manager_utils.dir/src/managers/TimerMgr.cpp.o[0m
+[ 77%] [32mBuilding CXX object CMakeFiles/manager_utils.dir/src/sound/Music.cpp.o[0m
+[ 81%] [32mBuilding CXX object CMakeFiles/manager_utils.dir/src/sound/Sound.cpp.o[0m
+[ 85%] [32mBuilding CXX object CMakeFiles/manager_utils.dir/src/sound/SoundWidget.cpp.o[0m
+[ 88%] [32mBuilding CXX object CMakeFiles/manager_utils.dir/src/time/TimerClient.cpp.o[0m
+[ 92%] [32mBuilding CXX object CMakeFiles/manager_utils.dir/src/time/TimerClientSpeedAdjustable.cpp.o[0m
+[ 96%] [32mBuilding CXX object CMakeFiles/manager_utils.dir/src/time/UserTimerClient.cpp.o[0m
+[100%] [32m[1mLinking CXX static library libmanager_utils.a[0m
+[100%] Built target manager_utils
+-- Install configuration: "Debug"
+-- Installing: /home/ubuntu/workspace/Velizar/robotics_v1/install/manager_utils/share/manager_utils/package.xml
+-- Installing: /home/ubuntu/workspace/Velizar/robotics_v1/install/manager_utils/lib/manager_utils/libmanager_utils.a
+-- Installing: /home/ubuntu/workspace/Velizar/robotics_v1/install/manager_utils/share/ament_index/resource_index/packages/manager_utils
+-- Installing: /home/ubuntu/workspace/Velizar/robotics_v1/install/manager_utils/share/manager_utils/hook/ament_prefix_path.dsv
+-- Installing: /home/ubuntu/workspace/Velizar/robotics_v1/install/manager_utils/share/manager_utils/hook/ros_package_path.dsv
+-- Installing: /home/ubuntu/workspace/Velizar/robotics_v1/install/manager_utils/share/ament_index/resource_index/package_run_dependencies/manager_utils
+-- Installing: /home/ubuntu/workspace/Velizar/robotics_v1/install/manager_utils/share/ament_index/resource_index/parent_prefix_path/manager_utils
+-- Installing: /home/ubuntu/workspace/Velizar/robotics_v1/install/manager_utils/share/manager_utils/environment/ament_prefix_path.sh
+-- Installing: /home/ubuntu/workspace/Velizar/robotics_v1/install/manager_utils/share/manager_utils/environment/ament_prefix_path.dsv
+-- Installing: /home/ubuntu/workspace/Velizar/robotics_v1/install/manager_utils/share/manager_utils/environment/path.sh
+-- Installing: /home/ubuntu/workspace/Velizar/robotics_v1/install/manager_utils/share/manager_utils/environment/path.dsv
+-- Installing: /home/ubuntu/workspace/Velizar/robotics_v1/install/manager_utils/share/manager_utils/local_setup.bash
+-- Installing: /home/ubuntu/workspace/Velizar/robotics_v1/install/manager_utils/share/manager_utils/local_setup.sh
+-- Installing: /home/ubuntu/workspace/Velizar/robotics_v1/install/manager_utils/share/manager_utils/local_setup.zsh
+-- Installing: /home/ubuntu/workspace/Velizar/robotics_v1/install/manager_utils/share/manager_utils/local_setup.dsv
+-- Installing: /home/ubuntu/workspace/Velizar/robotics_v1/install/manager_utils/share/manager_utils/package.dsv
+-- Up-to-date: /home/ubuntu/workspace/Velizar/robotics_v1/install/manager_utils/share/ament_index/resource_index/packages/manager_utils
+-- Installing: /home/ubuntu/workspace/Velizar/robotics_v1/install/manager_utils/share/manager_utils/cmake/manager_utilsConfig.cmake
+-- Installing: /home/ubuntu/workspace/Velizar/robotics_v1/install/manager_utils/share/manager_utils/cmake/manager_utilsConfig-version.cmake
+-- Up-to-date: /home/ubuntu/workspace/Velizar/robotics_v1/install/manager_utils/share/manager_utils/package.xml
+-- Installing: /home/ubuntu/workspace/Velizar/robotics_v1/install/manager_utils/lib/libmanager_utils.a
+-- Installing: /home/ubuntu/workspace/Velizar/robotics_v1/install/manager_utils/include
+-- Installing: /home/ubuntu/workspace/Velizar/robotics_v1/install/manager_utils/include/manager_utils
+-- Installing: /home/ubuntu/workspace/Velizar/robotics_v1/install/manager_utils/include/manager_utils/time
+-- Installing: /home/ubuntu/workspace/Velizar/robotics_v1/install/manager_utils/include/manager_utils/time/UserTimerClient.h
+-- Installing: /home/ubuntu/workspace/Velizar/robotics_v1/install/manager_utils/include/manager_utils/time/defines
+-- Installing: /home/ubuntu/workspace/Velizar/robotics_v1/install/manager_utils/include/manager_utils/time/defines/TimerClientDefines.h
+-- Installing: /home/ubuntu/workspace/Velizar/robotics_v1/install/manager_utils/include/manager_utils/time/TimerClient.h
+-- Installing: /home/ubuntu/workspace/Velizar/robotics_v1/install/manager_utils/include/manager_utils/time/TimerClientSpeedAdjustable.h
+-- Installing: /home/ubuntu/workspace/Velizar/robotics_v1/install/manager_utils/include/manager_utils/drawing
+-- Installing: /home/ubuntu/workspace/Velizar/robotics_v1/install/manager_utils/include/manager_utils/drawing/Sprite.h
+-- Installing: /home/ubuntu/workspace/Velizar/robotics_v1/install/manager_utils/include/manager_utils/drawing/Fbo.h
+-- Installing: /home/ubuntu/workspace/Velizar/robotics_v1/install/manager_utils/include/manager_utils/drawing/NumberCounter.h
+-- Installing: /home/ubuntu/workspace/Velizar/robotics_v1/install/manager_utils/include/manager_utils/drawing/DynamicImage.h
+-- Installing: /home/ubuntu/workspace/Velizar/robotics_v1/install/manager_utils/include/manager_utils/drawing/Text.h
+-- Installing: /home/ubuntu/workspace/Velizar/robotics_v1/install/manager_utils/include/manager_utils/drawing/Image.h
+-- Installing: /home/ubuntu/workspace/Velizar/robotics_v1/install/manager_utils/include/manager_utils/drawing/Widget.h
+-- Installing: /home/ubuntu/workspace/Velizar/robotics_v1/install/manager_utils/include/manager_utils/drawing/animation
+-- Installing: /home/ubuntu/workspace/Velizar/robotics_v1/install/manager_utils/include/manager_utils/drawing/animation/RotationAnimation.h
+-- Installing: /home/ubuntu/workspace/Velizar/robotics_v1/install/manager_utils/include/manager_utils/drawing/animation/PulseAnimation.h
+-- Installing: /home/ubuntu/workspace/Velizar/robotics_v1/install/manager_utils/include/manager_utils/drawing/animation/AnimationBase.h
+-- Installing: /home/ubuntu/workspace/Velizar/robotics_v1/install/manager_utils/include/manager_utils/drawing/animation/FrameAnimation.h
+-- Installing: /home/ubuntu/workspace/Velizar/robotics_v1/install/manager_utils/include/manager_utils/drawing/animation/defines
+-- Installing: /home/ubuntu/workspace/Velizar/robotics_v1/install/manager_utils/include/manager_utils/drawing/animation/defines/AnimationDefines.h
+-- Installing: /home/ubuntu/workspace/Velizar/robotics_v1/install/manager_utils/include/manager_utils/drawing/animation/defines/CommonAnimationStructs.h
+-- Installing: /home/ubuntu/workspace/Velizar/robotics_v1/install/manager_utils/include/manager_utils/drawing/animation/PositionAnimation.h
+-- Installing: /home/ubuntu/workspace/Velizar/robotics_v1/install/manager_utils/include/manager_utils/drawing/animation/AnimationEndCb.h
+-- Installing: /home/ubuntu/workspace/Velizar/robotics_v1/install/manager_utils/include/manager_utils/managers
+-- Installing: /home/ubuntu/workspace/Velizar/robotics_v1/install/manager_utils/include/manager_utils/managers/DrawMgr.h
+-- Installing: /home/ubuntu/workspace/Velizar/robotics_v1/install/manager_utils/include/manager_utils/managers/SoundMgr.h
+-- Installing: /home/ubuntu/workspace/Velizar/robotics_v1/install/manager_utils/include/manager_utils/managers/config
+-- Installing: /home/ubuntu/workspace/Velizar/robotics_v1/install/manager_utils/include/manager_utils/managers/config/DrawMgrConfig.h
+-- Installing: /home/ubuntu/workspace/Velizar/robotics_v1/install/manager_utils/include/manager_utils/managers/config/ManagerHandlerConfig.h
+-- Installing: /home/ubuntu/workspace/Velizar/robotics_v1/install/manager_utils/include/manager_utils/managers/MgrBase.h
+-- Installing: /home/ubuntu/workspace/Velizar/robotics_v1/install/manager_utils/include/manager_utils/managers/RsrcMgr.h
+-- Installing: /home/ubuntu/workspace/Velizar/robotics_v1/install/manager_utils/include/manager_utils/managers/ManagerHandler.h
+-- Installing: /home/ubuntu/workspace/Velizar/robotics_v1/install/manager_utils/include/manager_utils/managers/TimerMgr.h
+-- Installing: /home/ubuntu/workspace/Velizar/robotics_v1/install/manager_utils/include/manager_utils/sound
+-- Installing: /home/ubuntu/workspace/Velizar/robotics_v1/install/manager_utils/include/manager_utils/sound/SoundWidget.h
+-- Installing: /home/ubuntu/workspace/Velizar/robotics_v1/install/manager_utils/include/manager_utils/sound/Music.h
+-- Installing: /home/ubuntu/workspace/Velizar/robotics_v1/install/manager_utils/include/manager_utils/sound/Sound.h
+-- Installing: /home/ubuntu/workspace/Velizar/robotics_v1/install/manager_utils/include/manager_utils/sound/SoundWidgetEndCb.h
+-- Installing: /home/ubuntu/workspace/Velizar/robotics_v1/install/manager_utils/include/manager_utils/input
+-- Installing: /home/ubuntu/workspace/Velizar/robotics_v1/install/manager_utils/include/manager_utils/input/Scroller.h
+-- Installing: /home/ubuntu/workspace/Velizar/robotics_v1/install/manager_utils/include/manager_utils/input/ButtonBase.h
+-- Installing: /home/ubuntu/workspace/Velizar/robotics_v1/install/manager_utils/lib/cmake/manager_utils/manager_utilsTargets.cmake
+-- Installing: /home/ubuntu/workspace/Velizar/robotics_v1/install/manager_utils/lib/cmake/manager_utils/manager_utilsTargets-debug.cmake
+-- Installing: /home/ubuntu/workspace/Velizar/robotics_v1/install/manager_utils/lib/cmake/manager_utils/manager_utilsConfig.cmake

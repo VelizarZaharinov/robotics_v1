@@ -1,0 +1,2 @@
+/usr/bin/ar qc librobo_miner_common.a  CMakeFiles/robo_miner_common.dir/src/message_helpers/RoboMinerMessageHelpers.cpp.o
+/usr/bin/ranlib librobo_miner_common.a

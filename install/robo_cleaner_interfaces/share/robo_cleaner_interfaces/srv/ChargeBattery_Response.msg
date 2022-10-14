@@ -1,0 +1,1 @@
+/home/ubuntu/workspace/Velizar/robotics_v1/build/robo_cleaner_interfaces/rosidl_cmake/srv/ChargeBattery_Response.msg

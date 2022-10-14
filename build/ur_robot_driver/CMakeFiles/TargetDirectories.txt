@@ -1,0 +1,11 @@
+/home/ubuntu/workspace/Velizar/robotics_v1/build/ur_robot_driver/CMakeFiles/install/strip.dir
+/home/ubuntu/workspace/Velizar/robotics_v1/build/ur_robot_driver/CMakeFiles/install/local.dir
+/home/ubuntu/workspace/Velizar/robotics_v1/build/ur_robot_driver/CMakeFiles/install.dir
+/home/ubuntu/workspace/Velizar/robotics_v1/build/ur_robot_driver/CMakeFiles/list_install_components.dir
+/home/ubuntu/workspace/Velizar/robotics_v1/build/ur_robot_driver/CMakeFiles/rebuild_cache.dir
+/home/ubuntu/workspace/Velizar/robotics_v1/build/ur_robot_driver/CMakeFiles/dashboard_client.dir
+/home/ubuntu/workspace/Velizar/robotics_v1/build/ur_robot_driver/CMakeFiles/edit_cache.dir
+/home/ubuntu/workspace/Velizar/robotics_v1/build/ur_robot_driver/CMakeFiles/test.dir
+/home/ubuntu/workspace/Velizar/robotics_v1/build/ur_robot_driver/CMakeFiles/ur_robot_driver_plugin.dir
+/home/ubuntu/workspace/Velizar/robotics_v1/build/ur_robot_driver/CMakeFiles/ur_robot_driver_uninstall.dir
+/home/ubuntu/workspace/Velizar/robotics_v1/build/ur_robot_driver/CMakeFiles/uninstall.dir

@@ -1,0 +1,2 @@
+/usr/bin/ar qc libgame_engine.a  CMakeFiles/game_engine.dir/src/communicator/NullCommunicator.cpp.o CMakeFiles/game_engine.dir/src/engine/config/EngineConfig.cpp.o CMakeFiles/game_engine.dir/src/engine/Engine.cpp.o CMakeFiles/game_engine.dir/src/event_handler/ActionEventHandler.cpp.o CMakeFiles/game_engine.dir/src/utils/DebugConsole.cpp.o CMakeFiles/game_engine.dir/src/Application.cpp.o
+/usr/bin/ranlib libgame_engine.a

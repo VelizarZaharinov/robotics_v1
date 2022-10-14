@@ -1,0 +1,25 @@
+file(REMOVE_RECURSE
+  "CMakeFiles/robo_cleaner_interfaces__rosidl_typesupport_c.dir/rosidl_typesupport_c/robo_cleaner_interfaces/action/robot_move__type_support.cpp.o"
+  "CMakeFiles/robo_cleaner_interfaces__rosidl_typesupport_c.dir/rosidl_typesupport_c/robo_cleaner_interfaces/msg/battery_status__type_support.cpp.o"
+  "CMakeFiles/robo_cleaner_interfaces__rosidl_typesupport_c.dir/rosidl_typesupport_c/robo_cleaner_interfaces/msg/initial_robot_state__type_support.cpp.o"
+  "CMakeFiles/robo_cleaner_interfaces__rosidl_typesupport_c.dir/rosidl_typesupport_c/robo_cleaner_interfaces/msg/robot_move_type__type_support.cpp.o"
+  "CMakeFiles/robo_cleaner_interfaces__rosidl_typesupport_c.dir/rosidl_typesupport_c/robo_cleaner_interfaces/msg/user_authenticate__type_support.cpp.o"
+  "CMakeFiles/robo_cleaner_interfaces__rosidl_typesupport_c.dir/rosidl_typesupport_c/robo_cleaner_interfaces/srv/charge_battery__type_support.cpp.o"
+  "CMakeFiles/robo_cleaner_interfaces__rosidl_typesupport_c.dir/rosidl_typesupport_c/robo_cleaner_interfaces/srv/query_battery_status__type_support.cpp.o"
+  "CMakeFiles/robo_cleaner_interfaces__rosidl_typesupport_c.dir/rosidl_typesupport_c/robo_cleaner_interfaces/srv/query_initial_robot_state__type_support.cpp.o"
+  "librobo_cleaner_interfaces__rosidl_typesupport_c.pdb"
+  "librobo_cleaner_interfaces__rosidl_typesupport_c.so"
+  "rosidl_typesupport_c/robo_cleaner_interfaces/action/robot_move__type_support.cpp"
+  "rosidl_typesupport_c/robo_cleaner_interfaces/msg/battery_status__type_support.cpp"
+  "rosidl_typesupport_c/robo_cleaner_interfaces/msg/initial_robot_state__type_support.cpp"
+  "rosidl_typesupport_c/robo_cleaner_interfaces/msg/robot_move_type__type_support.cpp"
+  "rosidl_typesupport_c/robo_cleaner_interfaces/msg/user_authenticate__type_support.cpp"
+  "rosidl_typesupport_c/robo_cleaner_interfaces/srv/charge_battery__type_support.cpp"
+  "rosidl_typesupport_c/robo_cleaner_interfaces/srv/query_battery_status__type_support.cpp"
+  "rosidl_typesupport_c/robo_cleaner_interfaces/srv/query_initial_robot_state__type_support.cpp"
+)
+
+# Per-language clean rules from dependency scanning.
+foreach(lang CXX)
+  include(CMakeFiles/robo_cleaner_interfaces__rosidl_typesupport_c.dir/cmake_clean_${lang}.cmake OPTIONAL)
+endforeach()

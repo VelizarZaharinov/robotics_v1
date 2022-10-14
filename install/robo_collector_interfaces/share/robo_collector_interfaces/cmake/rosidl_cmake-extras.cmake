@@ -1,0 +1,1 @@
+/home/ubuntu/workspace/Velizar/robotics_v1/build/robo_collector_interfaces/rosidl_cmake/rosidl_cmake-extras.cmake

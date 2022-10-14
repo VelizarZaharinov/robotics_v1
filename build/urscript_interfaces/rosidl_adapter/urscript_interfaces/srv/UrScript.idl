@@ -1,0 +1,17 @@
+// generated from rosidl_adapter/resource/srv.idl.em
+// with input from urscript_interfaces/srv/UrScript.srv
+// generated code does not contain a copyright notice
+
+
+module urscript_interfaces {
+  module srv {
+    struct UrScript_Request {
+      string data;
+    };
+    struct UrScript_Response {
+      boolean success;
+
+      string error_reason;
+    };
+  };
+};

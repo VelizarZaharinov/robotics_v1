@@ -1,0 +1,3 @@
+/home/ubuntu/workspace/Velizar/robotics_v1/install/robo_cleaner_common/lib/librobo_cleaner_common.a
+/home/ubuntu/workspace/Velizar/robotics_v1/install/robo_cleaner_common/lib/cmake/robo_cleaner_common/robo_cleaner_commonTargets.cmake
+/home/ubuntu/workspace/Velizar/robotics_v1/install/robo_cleaner_common/lib/cmake/robo_cleaner_common/robo_cleaner_commonTargets-debug.cmake

@@ -1,0 +1,9 @@
+/home/ubuntu/workspace/Velizar/robotics_v1/build/game_engine/CMakeFiles/install/strip.dir
+/home/ubuntu/workspace/Velizar/robotics_v1/build/game_engine/CMakeFiles/install/local.dir
+/home/ubuntu/workspace/Velizar/robotics_v1/build/game_engine/CMakeFiles/install.dir
+/home/ubuntu/workspace/Velizar/robotics_v1/build/game_engine/CMakeFiles/list_install_components.dir
+/home/ubuntu/workspace/Velizar/robotics_v1/build/game_engine/CMakeFiles/rebuild_cache.dir
+/home/ubuntu/workspace/Velizar/robotics_v1/build/game_engine/CMakeFiles/edit_cache.dir
+/home/ubuntu/workspace/Velizar/robotics_v1/build/game_engine/CMakeFiles/game_engine_uninstall.dir
+/home/ubuntu/workspace/Velizar/robotics_v1/build/game_engine/CMakeFiles/uninstall.dir
+/home/ubuntu/workspace/Velizar/robotics_v1/build/game_engine/CMakeFiles/game_engine.dir

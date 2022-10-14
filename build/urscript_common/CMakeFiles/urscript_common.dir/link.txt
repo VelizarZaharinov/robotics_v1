@@ -1,0 +1,2 @@
+/usr/bin/ar qc liburscript_common.a  CMakeFiles/urscript_common.dir/src/message_helpers/UrScriptMessageHelpers.cpp.o
+/usr/bin/ranlib liburscript_common.a

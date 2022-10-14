@@ -1,0 +1,10 @@
+/home/ubuntu/workspace/Velizar/robotics_v1/build/ros2_game_engine/CMakeFiles/install/local.dir
+/home/ubuntu/workspace/Velizar/robotics_v1/build/ros2_game_engine/CMakeFiles/install.dir
+/home/ubuntu/workspace/Velizar/robotics_v1/build/ros2_game_engine/CMakeFiles/list_install_components.dir
+/home/ubuntu/workspace/Velizar/robotics_v1/build/ros2_game_engine/CMakeFiles/rebuild_cache.dir
+/home/ubuntu/workspace/Velizar/robotics_v1/build/ros2_game_engine/CMakeFiles/edit_cache.dir
+/home/ubuntu/workspace/Velizar/robotics_v1/build/ros2_game_engine/CMakeFiles/test.dir
+/home/ubuntu/workspace/Velizar/robotics_v1/build/ros2_game_engine/CMakeFiles/install/strip.dir
+/home/ubuntu/workspace/Velizar/robotics_v1/build/ros2_game_engine/CMakeFiles/ros2_game_engine.dir
+/home/ubuntu/workspace/Velizar/robotics_v1/build/ros2_game_engine/CMakeFiles/ros2_game_engine_uninstall.dir
+/home/ubuntu/workspace/Velizar/robotics_v1/build/ros2_game_engine/CMakeFiles/uninstall.dir

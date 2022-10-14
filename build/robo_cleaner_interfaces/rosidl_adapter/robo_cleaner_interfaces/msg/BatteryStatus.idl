@@ -1,0 +1,14 @@
+// generated from rosidl_adapter/resource/msg.idl.em
+// with input from robo_cleaner_interfaces/msg/BatteryStatus.msg
+// generated code does not contain a copyright notice
+
+
+module robo_cleaner_interfaces {
+  module msg {
+    struct BatteryStatus {
+      int32 max_moves_on_full_energy;
+
+      int32 moves_left;
+    };
+  };
+};

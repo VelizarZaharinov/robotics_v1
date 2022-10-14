@@ -1,0 +1,23 @@
+running develop
+running egg_info
+creating robo_collector_controller_py.egg-info
+writing robo_collector_controller_py.egg-info/PKG-INFO
+writing dependency_links to robo_collector_controller_py.egg-info/dependency_links.txt
+writing entry points to robo_collector_controller_py.egg-info/entry_points.txt
+writing requirements to robo_collector_controller_py.egg-info/requires.txt
+writing top-level names to robo_collector_controller_py.egg-info/top_level.txt
+writing manifest file 'robo_collector_controller_py.egg-info/SOURCES.txt'
+reading manifest file 'robo_collector_controller_py.egg-info/SOURCES.txt'
+writing manifest file 'robo_collector_controller_py.egg-info/SOURCES.txt'
+running build_ext
+Creating /home/ubuntu/workspace/Velizar/robotics_v1/install/robo_collector_controller_py/lib/python3.8/site-packages/site.py
+Creating /home/ubuntu/workspace/Velizar/robotics_v1/install/robo_collector_controller_py/lib/python3.8/site-packages/robo-collector-controller-py.egg-link (link to .)
+Installing talker script to /home/ubuntu/workspace/Velizar/robotics_v1/install/robo_collector_controller_py/lib/robo_collector_controller_py
+
+Installed /home/ubuntu/workspace/Velizar/robotics_v1/build/robo_collector_controller_py
+running install_data
+creating /home/ubuntu/workspace/Velizar/robotics_v1/install/robo_collector_controller_py/share/ament_index
+creating /home/ubuntu/workspace/Velizar/robotics_v1/install/robo_collector_controller_py/share/ament_index/resource_index
+creating /home/ubuntu/workspace/Velizar/robotics_v1/install/robo_collector_controller_py/share/ament_index/resource_index/packages
+copying resource/robo_collector_controller_py -> /home/ubuntu/workspace/Velizar/robotics_v1/install/robo_collector_controller_py/share/ament_index/resource_index/packages
+copying package.xml -> /home/ubuntu/workspace/Velizar/robotics_v1/install/robo_collector_controller_py/share/robo_collector_controller_py

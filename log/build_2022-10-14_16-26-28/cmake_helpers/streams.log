@@ -1,0 +1,50 @@
+[0.037s] Invoking command in '/home/ubuntu/workspace/Velizar/robotics_v1/build/cmake_helpers': CMAKE_PREFIX_PATH=/opt/ros/foxy PS1=[\u@\h \W]$(git_branch)$ /usr/bin/cmake /home/ubuntu/workspace/Velizar/robotics_v1/src/lib/cmake_helpers -DCMAKE_BUILD_TYPE=Debug -DCMAKE_CXX_COMPILER=/usr/bin/clang++ -DCMAKE_INSTALL_PREFIX=/home/ubuntu/workspace/Velizar/robotics_v1/install/cmake_helpers
+[0.570s] -- The C compiler identification is GNU 9.4.0
+[1.673s] -- The CXX compiler identification is Clang 10.0.0
+[1.695s] -- Check for working C compiler: /usr/bin/cc
+[1.897s] -- Check for working C compiler: /usr/bin/cc -- works
+[1.901s] -- Detecting C compiler ABI info
+[2.105s] -- Detecting C compiler ABI info - done
+[2.171s] -- Detecting C compile features
+[2.173s] -- Detecting C compile features - done
+[2.187s] -- Check for working CXX compiler: /usr/bin/clang++
+[2.529s] -- Check for working CXX compiler: /usr/bin/clang++ -- works
+[2.533s] -- Detecting CXX compiler ABI info
+[2.868s] -- Detecting CXX compiler ABI info - done
+[2.916s] -- Detecting CXX compile features
+[2.919s] -- Detecting CXX compile features - done
+[2.928s] -- Found ament_cmake: 0.9.9 (/opt/ros/foxy/share/ament_cmake/cmake)
+[2.998s] -- Found PythonInterp: /usr/bin/python3 (found suitable version "3.8.10", minimum required is "3") 
+[2.998s] -- Using PYTHON_EXECUTABLE: /usr/bin/python3
+[3.722s] -- Configuring done
+[3.728s] -- Generating done
+[3.732s] -- Build files have been written to: /home/ubuntu/workspace/Velizar/robotics_v1/build/cmake_helpers
+[3.747s] Invoked command in '/home/ubuntu/workspace/Velizar/robotics_v1/build/cmake_helpers' returned '0': CMAKE_PREFIX_PATH=/opt/ros/foxy PS1=[\u@\h \W]$(git_branch)$ /usr/bin/cmake /home/ubuntu/workspace/Velizar/robotics_v1/src/lib/cmake_helpers -DCMAKE_BUILD_TYPE=Debug -DCMAKE_CXX_COMPILER=/usr/bin/clang++ -DCMAKE_INSTALL_PREFIX=/home/ubuntu/workspace/Velizar/robotics_v1/install/cmake_helpers
+[3.749s] Invoking command in '/home/ubuntu/workspace/Velizar/robotics_v1/build/cmake_helpers': CMAKE_PREFIX_PATH=/opt/ros/foxy PS1=[\u@\h \W]$(git_branch)$ /usr/bin/cmake --build /home/ubuntu/workspace/Velizar/robotics_v1/build/cmake_helpers -- -j2 -l2
+[3.852s] Invoked command in '/home/ubuntu/workspace/Velizar/robotics_v1/build/cmake_helpers' returned '0': CMAKE_PREFIX_PATH=/opt/ros/foxy PS1=[\u@\h \W]$(git_branch)$ /usr/bin/cmake --build /home/ubuntu/workspace/Velizar/robotics_v1/build/cmake_helpers -- -j2 -l2
+[3.922s] Invoking command in '/home/ubuntu/workspace/Velizar/robotics_v1/build/cmake_helpers': CMAKE_PREFIX_PATH=/opt/ros/foxy PS1=[\u@\h \W]$(git_branch)$ /usr/bin/cmake --install /home/ubuntu/workspace/Velizar/robotics_v1/build/cmake_helpers
+[3.948s] -- Install configuration: "Debug"
+[3.948s] -- Installing: /home/ubuntu/workspace/Velizar/robotics_v1/install/cmake_helpers/share/cmake_helpers/package.xml
+[3.949s] -- Installing: /home/ubuntu/workspace/Velizar/robotics_v1/install/cmake_helpers/share/cmake_helpers/cmake/helpers.cmake
+[3.949s] -- Installing: /home/ubuntu/workspace/Velizar/robotics_v1/install/cmake_helpers/share/cmake_helpers/cmake/find_modules
+[3.949s] -- Installing: /home/ubuntu/workspace/Velizar/robotics_v1/install/cmake_helpers/share/cmake_helpers/cmake/find_modules/FindSDL2_image.cmake
+[3.950s] -- Installing: /home/ubuntu/workspace/Velizar/robotics_v1/install/cmake_helpers/share/cmake_helpers/cmake/find_modules/FindIWYU.cmake
+[3.950s] -- Installing: /home/ubuntu/workspace/Velizar/robotics_v1/install/cmake_helpers/share/cmake_helpers/cmake/find_modules/FindSDL2_mixer.cmake
+[3.950s] -- Installing: /home/ubuntu/workspace/Velizar/robotics_v1/install/cmake_helpers/share/cmake_helpers/cmake/find_modules/FindSDL2.cmake
+[3.950s] -- Installing: /home/ubuntu/workspace/Velizar/robotics_v1/install/cmake_helpers/share/cmake_helpers/cmake/find_modules/FindSDL2_ttf.cmake
+[3.951s] -- Installing: /home/ubuntu/workspace/Velizar/robotics_v1/install/cmake_helpers/share/ament_index/resource_index/package_run_dependencies/cmake_helpers
+[3.951s] -- Installing: /home/ubuntu/workspace/Velizar/robotics_v1/install/cmake_helpers/share/ament_index/resource_index/parent_prefix_path/cmake_helpers
+[3.952s] -- Installing: /home/ubuntu/workspace/Velizar/robotics_v1/install/cmake_helpers/share/cmake_helpers/environment/ament_prefix_path.sh
+[3.952s] -- Installing: /home/ubuntu/workspace/Velizar/robotics_v1/install/cmake_helpers/share/cmake_helpers/environment/ament_prefix_path.dsv
+[3.953s] -- Installing: /home/ubuntu/workspace/Velizar/robotics_v1/install/cmake_helpers/share/cmake_helpers/environment/path.sh
+[3.953s] -- Installing: /home/ubuntu/workspace/Velizar/robotics_v1/install/cmake_helpers/share/cmake_helpers/environment/path.dsv
+[3.954s] -- Installing: /home/ubuntu/workspace/Velizar/robotics_v1/install/cmake_helpers/share/cmake_helpers/local_setup.bash
+[3.954s] -- Installing: /home/ubuntu/workspace/Velizar/robotics_v1/install/cmake_helpers/share/cmake_helpers/local_setup.sh
+[3.955s] -- Installing: /home/ubuntu/workspace/Velizar/robotics_v1/install/cmake_helpers/share/cmake_helpers/local_setup.zsh
+[3.955s] -- Installing: /home/ubuntu/workspace/Velizar/robotics_v1/install/cmake_helpers/share/cmake_helpers/local_setup.dsv
+[3.955s] -- Installing: /home/ubuntu/workspace/Velizar/robotics_v1/install/cmake_helpers/share/cmake_helpers/package.dsv
+[3.956s] -- Installing: /home/ubuntu/workspace/Velizar/robotics_v1/install/cmake_helpers/share/ament_index/resource_index/packages/cmake_helpers
+[3.956s] -- Installing: /home/ubuntu/workspace/Velizar/robotics_v1/install/cmake_helpers/share/cmake_helpers/cmake/cmake_helpersConfig.cmake
+[3.956s] -- Installing: /home/ubuntu/workspace/Velizar/robotics_v1/install/cmake_helpers/share/cmake_helpers/cmake/cmake_helpersConfig-version.cmake
+[3.957s] -- Up-to-date: /home/ubuntu/workspace/Velizar/robotics_v1/install/cmake_helpers/share/cmake_helpers/package.xml
+[3.968s] Invoked command in '/home/ubuntu/workspace/Velizar/robotics_v1/build/cmake_helpers' returned '0': CMAKE_PREFIX_PATH=/opt/ros/foxy PS1=[\u@\h \W]$(git_branch)$ /usr/bin/cmake --install /home/ubuntu/workspace/Velizar/robotics_v1/build/cmake_helpers

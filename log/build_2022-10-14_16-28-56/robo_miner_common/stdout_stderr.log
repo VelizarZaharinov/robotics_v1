@@ -1,0 +1,61 @@
+-- The CXX compiler identification is Clang 10.0.0
+-- Check for working CXX compiler: /usr/bin/clang++
+-- Check for working CXX compiler: /usr/bin/clang++ -- works
+-- Detecting CXX compiler ABI info
+-- Detecting CXX compiler ABI info - done
+-- Detecting CXX compile features
+-- Detecting CXX compile features - done
+-- Found cmake_helpers: 1.0.0 (/home/ubuntu/workspace/Velizar/robotics_v1/install/cmake_helpers/share/cmake_helpers/cmake)
+-- Looking for C++ include pthread.h
+-- Looking for C++ include pthread.h - found
+-- Performing Test CMAKE_HAVE_LIBC_PTHREAD
+-- Performing Test CMAKE_HAVE_LIBC_PTHREAD - Failed
+-- Looking for pthread_create in pthreads
+-- Looking for pthread_create in pthreads - not found
+-- Looking for pthread_create in pthread
+-- Looking for pthread_create in pthread - found
+-- Found Threads: TRUE  
+-- Found robo_miner_interfaces: 1.0.0 (/home/ubuntu/workspace/Velizar/robotics_v1/install/robo_miner_interfaces/share/robo_miner_interfaces/cmake)
+-- Found PythonInterp: /usr/bin/python3 (found suitable version "3.8.10", minimum required is "3") 
+-- Using PYTHON_EXECUTABLE: /usr/bin/python3
+-- Override CMake install command with custom implementation using symlinks instead of copying resources
+-- Using all available rosidl_typesupport_c: rosidl_typesupport_fastrtps_c;rosidl_typesupport_introspection_c
+-- Found rosidl_adapter: 1.2.1 (/opt/ros/foxy/share/rosidl_adapter/cmake)
+-- Found OpenSSL: /usr/lib/x86_64-linux-gnu/libcrypto.so (found version "1.1.1f")  
+-- Found FastRTPS: /opt/ros/foxy/include  
+-- Using all available rosidl_typesupport_cpp: rosidl_typesupport_fastrtps_cpp;rosidl_typesupport_introspection_cpp
+-- Configuring done
+-- Generating done
+-- Build files have been written to: /home/ubuntu/workspace/Velizar/robotics_v1/build/robo_miner_common
+[35m[1mScanning dependencies of target robo_miner_common[0m
+[ 50%] [32mBuilding CXX object CMakeFiles/robo_miner_common.dir/src/message_helpers/RoboMinerMessageHelpers.cpp.o[0m
+[100%] [32m[1mLinking CXX static library librobo_miner_common.a[0m
+[100%] Built target robo_miner_common
+-- Install configuration: "Debug"
+-- Execute custom install script
+-- Symlinking: /home/ubuntu/workspace/Velizar/robotics_v1/install/robo_miner_common/share/robo_miner_common/package.xml
+-- Symlinking: /home/ubuntu/workspace/Velizar/robotics_v1/install/robo_miner_common/lib/robo_miner_common/librobo_miner_common.a
+-- Symlinking: /home/ubuntu/workspace/Velizar/robotics_v1/install/robo_miner_common/share/ament_index/resource_index/packages/robo_miner_common
+-- Symlinking: /home/ubuntu/workspace/Velizar/robotics_v1/install/robo_miner_common/share/robo_miner_common/hook/ament_prefix_path.dsv
+-- Symlinking: /home/ubuntu/workspace/Velizar/robotics_v1/install/robo_miner_common/share/robo_miner_common/hook/ros_package_path.dsv
+-- Symlinking: /home/ubuntu/workspace/Velizar/robotics_v1/install/robo_miner_common/share/ament_index/resource_index/package_run_dependencies/robo_miner_common
+-- Symlinking: /home/ubuntu/workspace/Velizar/robotics_v1/install/robo_miner_common/share/ament_index/resource_index/parent_prefix_path/robo_miner_common
+-- Symlinking: /home/ubuntu/workspace/Velizar/robotics_v1/install/robo_miner_common/share/robo_miner_common/environment/ament_prefix_path.sh
+-- Symlinking: /home/ubuntu/workspace/Velizar/robotics_v1/install/robo_miner_common/share/robo_miner_common/environment/ament_prefix_path.dsv
+-- Symlinking: /home/ubuntu/workspace/Velizar/robotics_v1/install/robo_miner_common/share/robo_miner_common/environment/path.sh
+-- Symlinking: /home/ubuntu/workspace/Velizar/robotics_v1/install/robo_miner_common/share/robo_miner_common/environment/path.dsv
+-- Symlinking: /home/ubuntu/workspace/Velizar/robotics_v1/install/robo_miner_common/share/robo_miner_common/local_setup.bash
+-- Symlinking: /home/ubuntu/workspace/Velizar/robotics_v1/install/robo_miner_common/share/robo_miner_common/local_setup.sh
+-- Symlinking: /home/ubuntu/workspace/Velizar/robotics_v1/install/robo_miner_common/share/robo_miner_common/local_setup.zsh
+-- Symlinking: /home/ubuntu/workspace/Velizar/robotics_v1/install/robo_miner_common/share/robo_miner_common/local_setup.dsv
+-- Symlinking: /home/ubuntu/workspace/Velizar/robotics_v1/install/robo_miner_common/share/robo_miner_common/package.dsv
+-- Symlinking: /home/ubuntu/workspace/Velizar/robotics_v1/install/robo_miner_common/share/ament_index/resource_index/packages/robo_miner_common
+-- Symlinking: /home/ubuntu/workspace/Velizar/robotics_v1/install/robo_miner_common/share/robo_miner_common/cmake/robo_miner_commonConfig.cmake
+-- Symlinking: /home/ubuntu/workspace/Velizar/robotics_v1/install/robo_miner_common/share/robo_miner_common/cmake/robo_miner_commonConfig-version.cmake
+-- Up-to-date symlink: /home/ubuntu/workspace/Velizar/robotics_v1/install/robo_miner_common/share/robo_miner_common/package.xml
+-- Symlinking: /home/ubuntu/workspace/Velizar/robotics_v1/install/robo_miner_common/include/robo_miner_common/defines/RoboMinerTopics.h
+-- Symlinking: /home/ubuntu/workspace/Velizar/robotics_v1/install/robo_miner_common/include/robo_miner_common/message_helpers/RoboMinerMessageHelpers.h
+-- Symlinking: /home/ubuntu/workspace/Velizar/robotics_v1/install/robo_miner_common/lib/cmake/robo_miner_common/robo_miner_commonConfig.cmake
+-- Installing: /home/ubuntu/workspace/Velizar/robotics_v1/install/robo_miner_common/lib/librobo_miner_common.a
+-- Installing: /home/ubuntu/workspace/Velizar/robotics_v1/install/robo_miner_common/lib/cmake/robo_miner_common/robo_miner_commonTargets.cmake
+-- Installing: /home/ubuntu/workspace/Velizar/robotics_v1/install/robo_miner_common/lib/cmake/robo_miner_common/robo_miner_commonTargets-debug.cmake

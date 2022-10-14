@@ -1,0 +1,153 @@
+[0.056s] Invoking command in '/home/ubuntu/workspace/Velizar/robotics_v1/build/robo_common': CMAKE_PREFIX_PATH=/home/ubuntu/workspace/Velizar/robotics_v1/install/manager_utils:/home/ubuntu/workspace/Velizar/robotics_v1/install/sdl_utils:/home/ubuntu/workspace/Velizar/robotics_v1/install/resource_utils:/home/ubuntu/workspace/Velizar/robotics_v1/install/utils:/home/ubuntu/workspace/Velizar/robotics_v1/install/cmake_helpers:/opt/ros/foxy PKG_CONFIG_PATH=/home/ubuntu/workspace/Velizar/robotics_v1/install/manager_utils/lib/x86_64-linux-gnu/pkgconfig:/home/ubuntu/workspace/Velizar/robotics_v1/install/manager_utils/lib/pkgconfig:/home/ubuntu/workspace/Velizar/robotics_v1/install/sdl_utils/lib/x86_64-linux-gnu/pkgconfig:/home/ubuntu/workspace/Velizar/robotics_v1/install/sdl_utils/lib/pkgconfig:/home/ubuntu/workspace/Velizar/robotics_v1/install/resource_utils/lib/x86_64-linux-gnu/pkgconfig:/home/ubuntu/workspace/Velizar/robotics_v1/install/resource_utils/lib/pkgconfig:/home/ubuntu/workspace/Velizar/robotics_v1/install/utils/lib/x86_64-linux-gnu/pkgconfig:/home/ubuntu/workspace/Velizar/robotics_v1/install/utils/lib/pkgconfig:/home/ubuntu/workspace/Velizar/robotics_v1/install/cmake_helpers/lib/x86_64-linux-gnu/pkgconfig:/home/ubuntu/workspace/Velizar/robotics_v1/install/cmake_helpers/lib/pkgconfig PS1=[\u@\h \W]$(git_branch)$ /usr/bin/cmake /home/ubuntu/workspace/Velizar/robotics_v1/src/robo_common -DCMAKE_BUILD_TYPE=Debug -DCMAKE_CXX_COMPILER=/usr/bin/clang++ -DCMAKE_INSTALL_PREFIX=/home/ubuntu/workspace/Velizar/robotics_v1/install/robo_common
+[0.398s] -- The CXX compiler identification is Clang 10.0.0
+[0.424s] -- Check for working CXX compiler: /usr/bin/clang++
+[0.787s] -- Check for working CXX compiler: /usr/bin/clang++ -- works
+[0.791s] -- Detecting CXX compiler ABI info
+[1.147s] -- Detecting CXX compiler ABI info - done
+[1.196s] -- Detecting CXX compile features
+[1.198s] -- Detecting CXX compile features - done
+[1.202s] -- Found cmake_helpers: 1.0.0 (/home/ubuntu/workspace/Velizar/robotics_v1/install/cmake_helpers/share/cmake_helpers/cmake)
+[1.214s] -- Looking for C++ include pthread.h
+[1.585s] -- Looking for C++ include pthread.h - found
+[1.586s] -- Performing Test CMAKE_HAVE_LIBC_PTHREAD
+[1.962s] -- Performing Test CMAKE_HAVE_LIBC_PTHREAD - Failed
+[1.963s] -- Looking for pthread_create in pthreads
+[2.219s] -- Looking for pthread_create in pthreads - not found
+[2.220s] -- Looking for pthread_create in pthread
+[2.569s] -- Looking for pthread_create in pthread - found
+[2.572s] -- Found Threads: TRUE  
+[2.590s] -- Found ament_cmake: 0.9.9 (/opt/ros/foxy/share/ament_cmake/cmake)
+[2.661s] -- Found PythonInterp: /usr/bin/python3 (found suitable version "3.8.10", minimum required is "3") 
+[2.661s] -- Using PYTHON_EXECUTABLE: /usr/bin/python3
+[3.369s] -- Configuring done
+[3.412s] -- Generating done
+[3.418s] -- Build files have been written to: /home/ubuntu/workspace/Velizar/robotics_v1/build/robo_common
+[3.430s] Invoked command in '/home/ubuntu/workspace/Velizar/robotics_v1/build/robo_common' returned '0': CMAKE_PREFIX_PATH=/home/ubuntu/workspace/Velizar/robotics_v1/install/manager_utils:/home/ubuntu/workspace/Velizar/robotics_v1/install/sdl_utils:/home/ubuntu/workspace/Velizar/robotics_v1/install/resource_utils:/home/ubuntu/workspace/Velizar/robotics_v1/install/utils:/home/ubuntu/workspace/Velizar/robotics_v1/install/cmake_helpers:/opt/ros/foxy PKG_CONFIG_PATH=/home/ubuntu/workspace/Velizar/robotics_v1/install/manager_utils/lib/x86_64-linux-gnu/pkgconfig:/home/ubuntu/workspace/Velizar/robotics_v1/install/manager_utils/lib/pkgconfig:/home/ubuntu/workspace/Velizar/robotics_v1/install/sdl_utils/lib/x86_64-linux-gnu/pkgconfig:/home/ubuntu/workspace/Velizar/robotics_v1/install/sdl_utils/lib/pkgconfig:/home/ubuntu/workspace/Velizar/robotics_v1/install/resource_utils/lib/x86_64-linux-gnu/pkgconfig:/home/ubuntu/workspace/Velizar/robotics_v1/install/resource_utils/lib/pkgconfig:/home/ubuntu/workspace/Velizar/robotics_v1/install/utils/lib/x86_64-linux-gnu/pkgconfig:/home/ubuntu/workspace/Velizar/robotics_v1/install/utils/lib/pkgconfig:/home/ubuntu/workspace/Velizar/robotics_v1/install/cmake_helpers/lib/x86_64-linux-gnu/pkgconfig:/home/ubuntu/workspace/Velizar/robotics_v1/install/cmake_helpers/lib/pkgconfig PS1=[\u@\h \W]$(git_branch)$ /usr/bin/cmake /home/ubuntu/workspace/Velizar/robotics_v1/src/robo_common -DCMAKE_BUILD_TYPE=Debug -DCMAKE_CXX_COMPILER=/usr/bin/clang++ -DCMAKE_INSTALL_PREFIX=/home/ubuntu/workspace/Velizar/robotics_v1/install/robo_common
+[3.433s] Invoking command in '/home/ubuntu/workspace/Velizar/robotics_v1/build/robo_common': CMAKE_PREFIX_PATH=/home/ubuntu/workspace/Velizar/robotics_v1/install/manager_utils:/home/ubuntu/workspace/Velizar/robotics_v1/install/sdl_utils:/home/ubuntu/workspace/Velizar/robotics_v1/install/resource_utils:/home/ubuntu/workspace/Velizar/robotics_v1/install/utils:/home/ubuntu/workspace/Velizar/robotics_v1/install/cmake_helpers:/opt/ros/foxy PKG_CONFIG_PATH=/home/ubuntu/workspace/Velizar/robotics_v1/install/manager_utils/lib/x86_64-linux-gnu/pkgconfig:/home/ubuntu/workspace/Velizar/robotics_v1/install/manager_utils/lib/pkgconfig:/home/ubuntu/workspace/Velizar/robotics_v1/install/sdl_utils/lib/x86_64-linux-gnu/pkgconfig:/home/ubuntu/workspace/Velizar/robotics_v1/install/sdl_utils/lib/pkgconfig:/home/ubuntu/workspace/Velizar/robotics_v1/install/resource_utils/lib/x86_64-linux-gnu/pkgconfig:/home/ubuntu/workspace/Velizar/robotics_v1/install/resource_utils/lib/pkgconfig:/home/ubuntu/workspace/Velizar/robotics_v1/install/utils/lib/x86_64-linux-gnu/pkgconfig:/home/ubuntu/workspace/Velizar/robotics_v1/install/utils/lib/pkgconfig:/home/ubuntu/workspace/Velizar/robotics_v1/install/cmake_helpers/lib/x86_64-linux-gnu/pkgconfig:/home/ubuntu/workspace/Velizar/robotics_v1/install/cmake_helpers/lib/pkgconfig PS1=[\u@\h \W]$(git_branch)$ /usr/bin/cmake --build /home/ubuntu/workspace/Velizar/robotics_v1/build/robo_common -- -j2 -l2
+[3.556s] [35m[1mScanning dependencies of target robo_common[0m
+[3.651s] [  3%] [32mBuilding CXX object CMakeFiles/robo_common.dir/src/layout/RoboCommonLayout.cpp.o[0m
+[6.651s] [  6%] [32mBuilding CXX object CMakeFiles/robo_common.dir/src/layout/field/Field.cpp.o[0m
+[8.652s] [ 10%] [32mBuilding CXX object CMakeFiles/robo_common.dir/src/layout/field/FieldPos.cpp.o[0m
+[8.746s] [ 13%] [32mBuilding CXX object CMakeFiles/robo_common.dir/src/layout/field/FieldUtils.cpp.o[0m
+[9.567s] [ 17%] [32mBuilding CXX object CMakeFiles/robo_common.dir/src/layout/field/Tile.cpp.o[0m
+[10.487s] [ 20%] [32mBuilding CXX object CMakeFiles/robo_common.dir/src/layout/field/ObjectApproachOverlay.cpp.o[0m
+[11.647s] [ 24%] [32mBuilding CXX object CMakeFiles/robo_common.dir/src/layout/field/fog_of_war/FogOfWar.cpp.o[0m
+[13.186s] [ 27%] [32mBuilding CXX object CMakeFiles/robo_common.dir/src/layout/field/fog_of_war/FogCollisionObject.cpp.o[0m
+[14.361s] [ 31%] [32mBuilding CXX object CMakeFiles/robo_common.dir/src/layout/field/obstacles/Obstacle.cpp.o[0m
+[15.567s] [ 34%] [32mBuilding CXX object CMakeFiles/robo_common.dir/src/layout/field/obstacles/ObstacleHandler.cpp.o[0m
+[16.905s] [ 37%] [32mBuilding CXX object CMakeFiles/robo_common.dir/src/layout/panels/TimePanel.cpp.o[0m
+[18.139s] [ 41%] [32mBuilding CXX object CMakeFiles/robo_common.dir/src/layout/panels/NumberCounterPanel.cpp.o[0m
+[19.519s] [ 44%] [32mBuilding CXX object CMakeFiles/robo_common.dir/src/layout/panels/IndicatorPanel.cpp.o[0m
+[21.099s] [ 48%] [32mBuilding CXX object CMakeFiles/robo_common.dir/src/layout/debug/DebugField.cpp.o[0m
+[22.356s] [ 51%] [32mBuilding CXX object CMakeFiles/robo_common.dir/src/layout/entities/robot/Robot.cpp.o[0m
+[23.587s] [ 55%] [32mBuilding CXX object CMakeFiles/robo_common.dir/src/layout/entities/robot/helpers/RobotInitHelper.cpp.o[0m
+[25.313s] [ 58%] [32mBuilding CXX object CMakeFiles/robo_common.dir/src/layout/entities/robot/helpers/RobotUtils.cpp.o[0m
+[26.138s] [ 62%] [32mBuilding CXX object CMakeFiles/robo_common.dir/src/layout/entities/robot/animation/RobotAnimator.cpp.o[0m
+[27.768s] [ 65%] [32mBuilding CXX object CMakeFiles/robo_common.dir/src/layout/entities/robot/animation/RobotAnimEndCb.cpp.o[0m
+[28.892s] [ 68%] [32mBuilding CXX object CMakeFiles/robo_common.dir/src/layout/entities/robot/animation/PlayerDamageAnimEndCb.cpp.o[0m
+[29.982s] [ 72%] [32mBuilding CXX object CMakeFiles/robo_common.dir/src/layout/animators/GameEndAnimator.cpp.o[0m
+[31.687s] [ 75%] [32mBuilding CXX object CMakeFiles/robo_common.dir/src/layout/animators/AchievementAnimator.cpp.o[0m
+[33.109s] [ 79%] [32mBuilding CXX object CMakeFiles/robo_common.dir/src/layout/animators/EndScreenAppearAnimator.cpp.o[0m
+[34.507s] [ 82%] [32mBuilding CXX object CMakeFiles/robo_common.dir/src/layout/animators/CountdownAnimator.cpp.o[0m
+[35.879s] [ 86%] [32mBuilding CXX object CMakeFiles/robo_common.dir/src/layout/animators/HelpPageAnimator.cpp.o[0m
+[37.077s] [ 89%] [32mBuilding CXX object CMakeFiles/robo_common.dir/src/layout/helpers/RoboCommonLayoutInitHelper.cpp.o[0m
+[39.533s] [ 93%] [32mBuilding CXX object CMakeFiles/robo_common.dir/src/helpers/CollisionWatcher.cpp.o[0m
+[40.834s] [ 96%] [32mBuilding CXX object CMakeFiles/robo_common.dir/src/helpers/LevelFileLoader.cpp.o[0m
+[42.343s] [100%] [32m[1mLinking CXX static library librobo_common.a[0m
+[42.609s] [100%] Built target robo_common
+[42.642s] Invoked command in '/home/ubuntu/workspace/Velizar/robotics_v1/build/robo_common' returned '0': CMAKE_PREFIX_PATH=/home/ubuntu/workspace/Velizar/robotics_v1/install/manager_utils:/home/ubuntu/workspace/Velizar/robotics_v1/install/sdl_utils:/home/ubuntu/workspace/Velizar/robotics_v1/install/resource_utils:/home/ubuntu/workspace/Velizar/robotics_v1/install/utils:/home/ubuntu/workspace/Velizar/robotics_v1/install/cmake_helpers:/opt/ros/foxy PKG_CONFIG_PATH=/home/ubuntu/workspace/Velizar/robotics_v1/install/manager_utils/lib/x86_64-linux-gnu/pkgconfig:/home/ubuntu/workspace/Velizar/robotics_v1/install/manager_utils/lib/pkgconfig:/home/ubuntu/workspace/Velizar/robotics_v1/install/sdl_utils/lib/x86_64-linux-gnu/pkgconfig:/home/ubuntu/workspace/Velizar/robotics_v1/install/sdl_utils/lib/pkgconfig:/home/ubuntu/workspace/Velizar/robotics_v1/install/resource_utils/lib/x86_64-linux-gnu/pkgconfig:/home/ubuntu/workspace/Velizar/robotics_v1/install/resource_utils/lib/pkgconfig:/home/ubuntu/workspace/Velizar/robotics_v1/install/utils/lib/x86_64-linux-gnu/pkgconfig:/home/ubuntu/workspace/Velizar/robotics_v1/install/utils/lib/pkgconfig:/home/ubuntu/workspace/Velizar/robotics_v1/install/cmake_helpers/lib/x86_64-linux-gnu/pkgconfig:/home/ubuntu/workspace/Velizar/robotics_v1/install/cmake_helpers/lib/pkgconfig PS1=[\u@\h \W]$(git_branch)$ /usr/bin/cmake --build /home/ubuntu/workspace/Velizar/robotics_v1/build/robo_common -- -j2 -l2
+[42.838s] Invoking command in '/home/ubuntu/workspace/Velizar/robotics_v1/build/robo_common': CMAKE_PREFIX_PATH=/home/ubuntu/workspace/Velizar/robotics_v1/install/manager_utils:/home/ubuntu/workspace/Velizar/robotics_v1/install/sdl_utils:/home/ubuntu/workspace/Velizar/robotics_v1/install/resource_utils:/home/ubuntu/workspace/Velizar/robotics_v1/install/utils:/home/ubuntu/workspace/Velizar/robotics_v1/install/cmake_helpers:/opt/ros/foxy PKG_CONFIG_PATH=/home/ubuntu/workspace/Velizar/robotics_v1/install/manager_utils/lib/x86_64-linux-gnu/pkgconfig:/home/ubuntu/workspace/Velizar/robotics_v1/install/manager_utils/lib/pkgconfig:/home/ubuntu/workspace/Velizar/robotics_v1/install/sdl_utils/lib/x86_64-linux-gnu/pkgconfig:/home/ubuntu/workspace/Velizar/robotics_v1/install/sdl_utils/lib/pkgconfig:/home/ubuntu/workspace/Velizar/robotics_v1/install/resource_utils/lib/x86_64-linux-gnu/pkgconfig:/home/ubuntu/workspace/Velizar/robotics_v1/install/resource_utils/lib/pkgconfig:/home/ubuntu/workspace/Velizar/robotics_v1/install/utils/lib/x86_64-linux-gnu/pkgconfig:/home/ubuntu/workspace/Velizar/robotics_v1/install/utils/lib/pkgconfig:/home/ubuntu/workspace/Velizar/robotics_v1/install/cmake_helpers/lib/x86_64-linux-gnu/pkgconfig:/home/ubuntu/workspace/Velizar/robotics_v1/install/cmake_helpers/lib/pkgconfig PS1=[\u@\h \W]$(git_branch)$ /usr/bin/cmake --install /home/ubuntu/workspace/Velizar/robotics_v1/build/robo_common
+[42.865s] -- Install configuration: "Debug"
+[42.866s] -- Installing: /home/ubuntu/workspace/Velizar/robotics_v1/install/robo_common/share/robo_common/package.xml
+[42.867s] -- Installing: /home/ubuntu/workspace/Velizar/robotics_v1/install/robo_common/lib/robo_common/librobo_common.a
+[42.891s] -- Installing: /home/ubuntu/workspace/Velizar/robotics_v1/install/robo_common/share/ament_index/resource_index/packages/robo_common
+[42.892s] -- Installing: /home/ubuntu/workspace/Velizar/robotics_v1/install/robo_common/share/robo_common/hook/ament_prefix_path.dsv
+[42.892s] -- Installing: /home/ubuntu/workspace/Velizar/robotics_v1/install/robo_common/share/robo_common/hook/ros_package_path.dsv
+[42.893s] -- Installing: /home/ubuntu/workspace/Velizar/robotics_v1/install/robo_common/share/ament_index/resource_index/package_run_dependencies/robo_common
+[42.894s] -- Installing: /home/ubuntu/workspace/Velizar/robotics_v1/install/robo_common/share/ament_index/resource_index/parent_prefix_path/robo_common
+[42.895s] -- Installing: /home/ubuntu/workspace/Velizar/robotics_v1/install/robo_common/share/robo_common/environment/ament_prefix_path.sh
+[42.896s] -- Installing: /home/ubuntu/workspace/Velizar/robotics_v1/install/robo_common/share/robo_common/environment/ament_prefix_path.dsv
+[42.897s] -- Installing: /home/ubuntu/workspace/Velizar/robotics_v1/install/robo_common/share/robo_common/environment/path.sh
+[42.897s] -- Installing: /home/ubuntu/workspace/Velizar/robotics_v1/install/robo_common/share/robo_common/environment/path.dsv
+[42.898s] -- Installing: /home/ubuntu/workspace/Velizar/robotics_v1/install/robo_common/share/robo_common/local_setup.bash
+[42.899s] -- Installing: /home/ubuntu/workspace/Velizar/robotics_v1/install/robo_common/share/robo_common/local_setup.sh
+[42.899s] -- Installing: /home/ubuntu/workspace/Velizar/robotics_v1/install/robo_common/share/robo_common/local_setup.zsh
+[42.900s] -- Installing: /home/ubuntu/workspace/Velizar/robotics_v1/install/robo_common/share/robo_common/local_setup.dsv
+[42.901s] -- Installing: /home/ubuntu/workspace/Velizar/robotics_v1/install/robo_common/share/robo_common/package.dsv
+[42.901s] -- Installing: /home/ubuntu/workspace/Velizar/robotics_v1/install/robo_common/share/ament_index/resource_index/packages/robo_common
+[42.902s] -- Installing: /home/ubuntu/workspace/Velizar/robotics_v1/install/robo_common/share/robo_common/cmake/robo_commonConfig.cmake
+[42.903s] -- Installing: /home/ubuntu/workspace/Velizar/robotics_v1/install/robo_common/share/robo_common/cmake/robo_commonConfig-version.cmake
+[42.903s] -- Up-to-date: /home/ubuntu/workspace/Velizar/robotics_v1/install/robo_common/share/robo_common/package.xml
+[42.904s] -- Installing: /home/ubuntu/workspace/Velizar/robotics_v1/install/robo_common/lib/librobo_common.a
+[42.926s] -- Installing: /home/ubuntu/workspace/Velizar/robotics_v1/install/robo_common/include
+[42.926s] -- Installing: /home/ubuntu/workspace/Velizar/robotics_v1/install/robo_common/include/robo_common
+[42.927s] -- Installing: /home/ubuntu/workspace/Velizar/robotics_v1/install/robo_common/include/robo_common/helpers
+[42.927s] -- Installing: /home/ubuntu/workspace/Velizar/robotics_v1/install/robo_common/include/robo_common/helpers/CollisionWatcher.h
+[42.928s] -- Installing: /home/ubuntu/workspace/Velizar/robotics_v1/install/robo_common/include/robo_common/helpers/CollisionObject.h
+[42.928s] -- Installing: /home/ubuntu/workspace/Velizar/robotics_v1/install/robo_common/include/robo_common/helpers/LevelFileLoader.h
+[42.929s] -- Installing: /home/ubuntu/workspace/Velizar/robotics_v1/install/robo_common/include/robo_common/layout
+[42.929s] -- Installing: /home/ubuntu/workspace/Velizar/robotics_v1/install/robo_common/include/robo_common/layout/helpers
+[42.930s] -- Installing: /home/ubuntu/workspace/Velizar/robotics_v1/install/robo_common/include/robo_common/layout/helpers/RoboCommonLayoutInterfaces.h
+[42.930s] -- Installing: /home/ubuntu/workspace/Velizar/robotics_v1/install/robo_common/include/robo_common/layout/helpers/RoboCommonLayoutInitHelper.h
+[42.931s] -- Installing: /home/ubuntu/workspace/Velizar/robotics_v1/install/robo_common/include/robo_common/layout/panels
+[42.931s] -- Installing: /home/ubuntu/workspace/Velizar/robotics_v1/install/robo_common/include/robo_common/layout/panels/NumberCounterPanel.h
+[42.932s] -- Installing: /home/ubuntu/workspace/Velizar/robotics_v1/install/robo_common/include/robo_common/layout/panels/IndicatorPanel.h
+[42.932s] -- Installing: /home/ubuntu/workspace/Velizar/robotics_v1/install/robo_common/include/robo_common/layout/panels/TimePanel.h
+[42.933s] -- Installing: /home/ubuntu/workspace/Velizar/robotics_v1/install/robo_common/include/robo_common/layout/panels/config
+[42.933s] -- Installing: /home/ubuntu/workspace/Velizar/robotics_v1/install/robo_common/include/robo_common/layout/panels/config/NumberCounterPanelConfig.h
+[42.934s] -- Installing: /home/ubuntu/workspace/Velizar/robotics_v1/install/robo_common/include/robo_common/layout/panels/config/TimePanelConfig.h
+[42.935s] -- Installing: /home/ubuntu/workspace/Velizar/robotics_v1/install/robo_common/include/robo_common/layout/panels/config/IndicatorPanelConfig.h
+[42.935s] -- Installing: /home/ubuntu/workspace/Velizar/robotics_v1/install/robo_common/include/robo_common/layout/config
+[42.936s] -- Installing: /home/ubuntu/workspace/Velizar/robotics_v1/install/robo_common/include/robo_common/layout/config/RoboCommonLayoutConfig.h
+[42.936s] -- Installing: /home/ubuntu/workspace/Velizar/robotics_v1/install/robo_common/include/robo_common/layout/RoboCommonLayout.h
+[42.937s] -- Installing: /home/ubuntu/workspace/Velizar/robotics_v1/install/robo_common/include/robo_common/layout/field
+[42.937s] -- Installing: /home/ubuntu/workspace/Velizar/robotics_v1/install/robo_common/include/robo_common/layout/field/fog_of_war
+[42.937s] -- Installing: /home/ubuntu/workspace/Velizar/robotics_v1/install/robo_common/include/robo_common/layout/field/fog_of_war/FogCollisionObject.h
+[42.938s] -- Installing: /home/ubuntu/workspace/Velizar/robotics_v1/install/robo_common/include/robo_common/layout/field/fog_of_war/FogOfWar.h
+[42.939s] -- Installing: /home/ubuntu/workspace/Velizar/robotics_v1/install/robo_common/include/robo_common/layout/field/Tile.h
+[42.939s] -- Installing: /home/ubuntu/workspace/Velizar/robotics_v1/install/robo_common/include/robo_common/layout/field/config
+[42.940s] -- Installing: /home/ubuntu/workspace/Velizar/robotics_v1/install/robo_common/include/robo_common/layout/field/config/TileConfig.h
+[42.940s] -- Installing: /home/ubuntu/workspace/Velizar/robotics_v1/install/robo_common/include/robo_common/layout/field/config/FieldConfig.h
+[42.941s] -- Installing: /home/ubuntu/workspace/Velizar/robotics_v1/install/robo_common/include/robo_common/layout/field/config/ObstacleHandlerConfig.h
+[42.941s] -- Installing: /home/ubuntu/workspace/Velizar/robotics_v1/install/robo_common/include/robo_common/layout/field/config/FogOfWarConfig.h
+[42.942s] -- Installing: /home/ubuntu/workspace/Velizar/robotics_v1/install/robo_common/include/robo_common/layout/field/ObjectApproachOverlay.h
+[42.943s] -- Installing: /home/ubuntu/workspace/Velizar/robotics_v1/install/robo_common/include/robo_common/layout/field/obstacles
+[42.943s] -- Installing: /home/ubuntu/workspace/Velizar/robotics_v1/install/robo_common/include/robo_common/layout/field/obstacles/ObstacleHandler.h
+[42.944s] -- Installing: /home/ubuntu/workspace/Velizar/robotics_v1/install/robo_common/include/robo_common/layout/field/obstacles/Obstacle.h
+[42.944s] -- Installing: /home/ubuntu/workspace/Velizar/robotics_v1/install/robo_common/include/robo_common/layout/field/Field.h
+[42.945s] -- Installing: /home/ubuntu/workspace/Velizar/robotics_v1/install/robo_common/include/robo_common/layout/field/FieldPos.h
+[42.945s] -- Installing: /home/ubuntu/workspace/Velizar/robotics_v1/install/robo_common/include/robo_common/layout/field/FieldUtils.h
+[42.946s] -- Installing: /home/ubuntu/workspace/Velizar/robotics_v1/install/robo_common/include/robo_common/layout/entities
+[42.947s] -- Installing: /home/ubuntu/workspace/Velizar/robotics_v1/install/robo_common/include/robo_common/layout/entities/robot
+[42.947s] -- Installing: /home/ubuntu/workspace/Velizar/robotics_v1/install/robo_common/include/robo_common/layout/entities/robot/helpers
+[42.947s] -- Installing: /home/ubuntu/workspace/Velizar/robotics_v1/install/robo_common/include/robo_common/layout/entities/robot/helpers/RobotInitHelper.h
+[42.948s] -- Installing: /home/ubuntu/workspace/Velizar/robotics_v1/install/robo_common/include/robo_common/layout/entities/robot/helpers/RobotUtils.h
+[42.949s] -- Installing: /home/ubuntu/workspace/Velizar/robotics_v1/install/robo_common/include/robo_common/layout/entities/robot/helpers/RobotActInterface.h
+[42.949s] -- Installing: /home/ubuntu/workspace/Velizar/robotics_v1/install/robo_common/include/robo_common/layout/entities/robot/Robot.h
+[42.950s] -- Installing: /home/ubuntu/workspace/Velizar/robotics_v1/install/robo_common/include/robo_common/layout/entities/robot/config
+[42.950s] -- Installing: /home/ubuntu/workspace/Velizar/robotics_v1/install/robo_common/include/robo_common/layout/entities/robot/config/RobotBaseConfig.h
+[42.951s] -- Installing: /home/ubuntu/workspace/Velizar/robotics_v1/install/robo_common/include/robo_common/layout/entities/robot/animation
+[42.951s] -- Installing: /home/ubuntu/workspace/Velizar/robotics_v1/install/robo_common/include/robo_common/layout/entities/robot/animation/PlayerDamageAnimEndCb.h
+[42.952s] -- Installing: /home/ubuntu/workspace/Velizar/robotics_v1/install/robo_common/include/robo_common/layout/entities/robot/animation/RobotAnimator.h
+[42.952s] -- Installing: /home/ubuntu/workspace/Velizar/robotics_v1/install/robo_common/include/robo_common/layout/entities/robot/animation/RobotAnimEndCb.h
+[42.954s] -- Installing: /home/ubuntu/workspace/Velizar/robotics_v1/install/robo_common/include/robo_common/layout/debug
+[42.954s] -- Installing: /home/ubuntu/workspace/Velizar/robotics_v1/install/robo_common/include/robo_common/layout/debug/config
+[42.955s] -- Installing: /home/ubuntu/workspace/Velizar/robotics_v1/install/robo_common/include/robo_common/layout/debug/config/DebugFieldConfig.h
+[42.955s] -- Installing: /home/ubuntu/workspace/Velizar/robotics_v1/install/robo_common/include/robo_common/layout/debug/DebugField.h
+[42.956s] -- Installing: /home/ubuntu/workspace/Velizar/robotics_v1/install/robo_common/include/robo_common/layout/animators
+[42.956s] -- Installing: /home/ubuntu/workspace/Velizar/robotics_v1/install/robo_common/include/robo_common/layout/animators/EndScreenAppearAnimator.h
+[42.957s] -- Installing: /home/ubuntu/workspace/Velizar/robotics_v1/install/robo_common/include/robo_common/layout/animators/config
+[42.957s] -- Installing: /home/ubuntu/workspace/Velizar/robotics_v1/install/robo_common/include/robo_common/layout/animators/config/AchievementAnimatorConfig.h
+[42.958s] -- Installing: /home/ubuntu/workspace/Velizar/robotics_v1/install/robo_common/include/robo_common/layout/animators/config/GameEndAnimatorConfig.h
+[42.958s] -- Installing: /home/ubuntu/workspace/Velizar/robotics_v1/install/robo_common/include/robo_common/layout/animators/config/HelpPageAnimatorConfig.h
+[42.959s] -- Installing: /home/ubuntu/workspace/Velizar/robotics_v1/install/robo_common/include/robo_common/layout/animators/GameEndAnimator.h
+[42.959s] -- Installing: /home/ubuntu/workspace/Velizar/robotics_v1/install/robo_common/include/robo_common/layout/animators/HelpPageAnimator.h
+[42.960s] -- Installing: /home/ubuntu/workspace/Velizar/robotics_v1/install/robo_common/include/robo_common/layout/animators/CountdownAnimator.h
+[42.960s] -- Installing: /home/ubuntu/workspace/Velizar/robotics_v1/install/robo_common/include/robo_common/layout/animators/AchievementAnimator.h
+[42.961s] -- Installing: /home/ubuntu/workspace/Velizar/robotics_v1/install/robo_common/include/robo_common/defines
+[42.961s] -- Installing: /home/ubuntu/workspace/Velizar/robotics_v1/install/robo_common/include/robo_common/defines/RoboCommonFunctionalDefines.h
+[42.962s] -- Installing: /home/ubuntu/workspace/Velizar/robotics_v1/install/robo_common/include/robo_common/defines/RoboCommonDefines.h
+[42.963s] -- Installing: /home/ubuntu/workspace/Velizar/robotics_v1/install/robo_common/lib/cmake/robo_common/robo_commonTargets.cmake
+[42.964s] -- Installing: /home/ubuntu/workspace/Velizar/robotics_v1/install/robo_common/lib/cmake/robo_common/robo_commonTargets-debug.cmake
+[42.964s] -- Installing: /home/ubuntu/workspace/Velizar/robotics_v1/install/robo_common/lib/cmake/robo_common/robo_commonConfig.cmake
+[42.972s] Invoked command in '/home/ubuntu/workspace/Velizar/robotics_v1/build/robo_common' returned '0': CMAKE_PREFIX_PATH=/home/ubuntu/workspace/Velizar/robotics_v1/install/manager_utils:/home/ubuntu/workspace/Velizar/robotics_v1/install/sdl_utils:/home/ubuntu/workspace/Velizar/robotics_v1/install/resource_utils:/home/ubuntu/workspace/Velizar/robotics_v1/install/utils:/home/ubuntu/workspace/Velizar/robotics_v1/install/cmake_helpers:/opt/ros/foxy PKG_CONFIG_PATH=/home/ubuntu/workspace/Velizar/robotics_v1/install/manager_utils/lib/x86_64-linux-gnu/pkgconfig:/home/ubuntu/workspace/Velizar/robotics_v1/install/manager_utils/lib/pkgconfig:/home/ubuntu/workspace/Velizar/robotics_v1/install/sdl_utils/lib/x86_64-linux-gnu/pkgconfig:/home/ubuntu/workspace/Velizar/robotics_v1/install/sdl_utils/lib/pkgconfig:/home/ubuntu/workspace/Velizar/robotics_v1/install/resource_utils/lib/x86_64-linux-gnu/pkgconfig:/home/ubuntu/workspace/Velizar/robotics_v1/install/resource_utils/lib/pkgconfig:/home/ubuntu/workspace/Velizar/robotics_v1/install/utils/lib/x86_64-linux-gnu/pkgconfig:/home/ubuntu/workspace/Velizar/robotics_v1/install/utils/lib/pkgconfig:/home/ubuntu/workspace/Velizar/robotics_v1/install/cmake_helpers/lib/x86_64-linux-gnu/pkgconfig:/home/ubuntu/workspace/Velizar/robotics_v1/install/cmake_helpers/lib/pkgconfig PS1=[\u@\h \W]$(git_branch)$ /usr/bin/cmake --install /home/ubuntu/workspace/Velizar/robotics_v1/build/robo_common

@@ -1,0 +1,1 @@
+/home/ubuntu/workspace/Velizar/robotics_v1/build/robo_miner_interfaces/rosidl_cmake/rosidl_cmake_export_typesupport_targets-extras.cmake

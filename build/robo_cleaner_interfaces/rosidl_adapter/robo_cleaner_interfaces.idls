@@ -1,0 +1,8 @@
+/home/ubuntu/workspace/Velizar/robotics_v1/build/robo_cleaner_interfaces/rosidl_adapter/robo_cleaner_interfaces:msg/BatteryStatus.idl
+/home/ubuntu/workspace/Velizar/robotics_v1/build/robo_cleaner_interfaces/rosidl_adapter/robo_cleaner_interfaces:msg/InitialRobotState.idl
+/home/ubuntu/workspace/Velizar/robotics_v1/build/robo_cleaner_interfaces/rosidl_adapter/robo_cleaner_interfaces:msg/RobotMoveType.idl
+/home/ubuntu/workspace/Velizar/robotics_v1/build/robo_cleaner_interfaces/rosidl_adapter/robo_cleaner_interfaces:msg/UserAuthenticate.idl
+/home/ubuntu/workspace/Velizar/robotics_v1/build/robo_cleaner_interfaces/rosidl_adapter/robo_cleaner_interfaces:srv/ChargeBattery.idl
+/home/ubuntu/workspace/Velizar/robotics_v1/build/robo_cleaner_interfaces/rosidl_adapter/robo_cleaner_interfaces:srv/QueryBatteryStatus.idl
+/home/ubuntu/workspace/Velizar/robotics_v1/build/robo_cleaner_interfaces/rosidl_adapter/robo_cleaner_interfaces:srv/QueryInitialRobotState.idl
+/home/ubuntu/workspace/Velizar/robotics_v1/build/robo_cleaner_interfaces/rosidl_adapter/robo_cleaner_interfaces:action/RobotMove.idl

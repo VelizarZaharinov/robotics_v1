@@ -1,0 +1,67 @@
+[0.039s] Invoking command in '/home/ubuntu/workspace/Velizar/robotics_v1/build/urscript_common': AMENT_PREFIX_PATH=/home/ubuntu/workspace/Velizar/robotics_v1/install/urscript_interfaces:${AMENT_PREFIX_PATH} CMAKE_PREFIX_PATH=/home/ubuntu/workspace/Velizar/robotics_v1/install/utils:/home/ubuntu/workspace/Velizar/robotics_v1/install/urscript_interfaces:/home/ubuntu/workspace/Velizar/robotics_v1/install/cmake_helpers:/opt/ros/foxy LD_LIBRARY_PATH=/home/ubuntu/workspace/Velizar/robotics_v1/install/urscript_interfaces/lib:${LD_LIBRARY_PATH} PKG_CONFIG_PATH=/home/ubuntu/workspace/Velizar/robotics_v1/install/utils/lib/x86_64-linux-gnu/pkgconfig:/home/ubuntu/workspace/Velizar/robotics_v1/install/utils/lib/pkgconfig:/home/ubuntu/workspace/Velizar/robotics_v1/install/cmake_helpers/lib/x86_64-linux-gnu/pkgconfig:/home/ubuntu/workspace/Velizar/robotics_v1/install/cmake_helpers/lib/pkgconfig PS1=[\u@\h \W]$(git_branch)$ PYTHONPATH=/home/ubuntu/workspace/Velizar/robotics_v1/install/urscript_interfaces/lib/python3.8/site-packages:${PYTHONPATH} /usr/bin/cmake /home/ubuntu/workspace/Velizar/robotics_v1/src/ur_dev/urscript/urscript_common -DCMAKE_BUILD_TYPE=Debug -DCMAKE_CXX_COMPILER=/usr/bin/clang++ -DAMENT_CMAKE_SYMLINK_INSTALL=1 -DCMAKE_INSTALL_PREFIX=/home/ubuntu/workspace/Velizar/robotics_v1/install/urscript_common
+[0.363s] -- The CXX compiler identification is Clang 10.0.0
+[0.387s] -- Check for working CXX compiler: /usr/bin/clang++
+[0.735s] -- Check for working CXX compiler: /usr/bin/clang++ -- works
+[0.739s] -- Detecting CXX compiler ABI info
+[1.084s] -- Detecting CXX compiler ABI info - done
+[1.134s] -- Detecting CXX compile features
+[1.136s] -- Detecting CXX compile features - done
+[1.140s] -- Found cmake_helpers: 1.0.0 (/home/ubuntu/workspace/Velizar/robotics_v1/install/cmake_helpers/share/cmake_helpers/cmake)
+[1.145s] -- Looking for C++ include pthread.h
+[1.499s] -- Looking for C++ include pthread.h - found
+[1.500s] -- Performing Test CMAKE_HAVE_LIBC_PTHREAD
+[1.883s] -- Performing Test CMAKE_HAVE_LIBC_PTHREAD - Failed
+[1.884s] -- Looking for pthread_create in pthreads
+[2.139s] -- Looking for pthread_create in pthreads - not found
+[2.139s] -- Looking for pthread_create in pthread
+[2.481s] -- Looking for pthread_create in pthread - found
+[2.484s] -- Found Threads: TRUE  
+[2.489s] -- Found urscript_interfaces: 1.0.0 (/home/ubuntu/workspace/Velizar/robotics_v1/install/urscript_interfaces/share/urscript_interfaces/cmake)
+[2.558s] -- Found PythonInterp: /usr/bin/python3 (found suitable version "3.8.10", minimum required is "3") 
+[2.559s] -- Using PYTHON_EXECUTABLE: /usr/bin/python3
+[3.017s] -- Override CMake install command with custom implementation using symlinks instead of copying resources
+[3.191s] -- Using all available rosidl_typesupport_c: rosidl_typesupport_fastrtps_c;rosidl_typesupport_introspection_c
+[3.216s] -- Found rosidl_adapter: 1.2.1 (/opt/ros/foxy/share/rosidl_adapter/cmake)
+[3.451s] -- Found OpenSSL: /usr/lib/x86_64-linux-gnu/libcrypto.so (found version "1.1.1f")  
+[3.560s] -- Found FastRTPS: /opt/ros/foxy/include  
+[3.849s] -- Using all available rosidl_typesupport_cpp: rosidl_typesupport_fastrtps_cpp;rosidl_typesupport_introspection_cpp
+[4.156s] -- Configuring done
+[4.172s] -- Generating done
+[4.178s] -- Build files have been written to: /home/ubuntu/workspace/Velizar/robotics_v1/build/urscript_common
+[4.197s] Invoked command in '/home/ubuntu/workspace/Velizar/robotics_v1/build/urscript_common' returned '0': AMENT_PREFIX_PATH=/home/ubuntu/workspace/Velizar/robotics_v1/install/urscript_interfaces:${AMENT_PREFIX_PATH} CMAKE_PREFIX_PATH=/home/ubuntu/workspace/Velizar/robotics_v1/install/utils:/home/ubuntu/workspace/Velizar/robotics_v1/install/urscript_interfaces:/home/ubuntu/workspace/Velizar/robotics_v1/install/cmake_helpers:/opt/ros/foxy LD_LIBRARY_PATH=/home/ubuntu/workspace/Velizar/robotics_v1/install/urscript_interfaces/lib:${LD_LIBRARY_PATH} PKG_CONFIG_PATH=/home/ubuntu/workspace/Velizar/robotics_v1/install/utils/lib/x86_64-linux-gnu/pkgconfig:/home/ubuntu/workspace/Velizar/robotics_v1/install/utils/lib/pkgconfig:/home/ubuntu/workspace/Velizar/robotics_v1/install/cmake_helpers/lib/x86_64-linux-gnu/pkgconfig:/home/ubuntu/workspace/Velizar/robotics_v1/install/cmake_helpers/lib/pkgconfig PS1=[\u@\h \W]$(git_branch)$ PYTHONPATH=/home/ubuntu/workspace/Velizar/robotics_v1/install/urscript_interfaces/lib/python3.8/site-packages:${PYTHONPATH} /usr/bin/cmake /home/ubuntu/workspace/Velizar/robotics_v1/src/ur_dev/urscript/urscript_common -DCMAKE_BUILD_TYPE=Debug -DCMAKE_CXX_COMPILER=/usr/bin/clang++ -DAMENT_CMAKE_SYMLINK_INSTALL=1 -DCMAKE_INSTALL_PREFIX=/home/ubuntu/workspace/Velizar/robotics_v1/install/urscript_common
+[4.199s] Invoking command in '/home/ubuntu/workspace/Velizar/robotics_v1/build/urscript_common': AMENT_PREFIX_PATH=/home/ubuntu/workspace/Velizar/robotics_v1/install/urscript_interfaces:${AMENT_PREFIX_PATH} CMAKE_PREFIX_PATH=/home/ubuntu/workspace/Velizar/robotics_v1/install/utils:/home/ubuntu/workspace/Velizar/robotics_v1/install/urscript_interfaces:/home/ubuntu/workspace/Velizar/robotics_v1/install/cmake_helpers:/opt/ros/foxy LD_LIBRARY_PATH=/home/ubuntu/workspace/Velizar/robotics_v1/install/urscript_interfaces/lib:${LD_LIBRARY_PATH} PKG_CONFIG_PATH=/home/ubuntu/workspace/Velizar/robotics_v1/install/utils/lib/x86_64-linux-gnu/pkgconfig:/home/ubuntu/workspace/Velizar/robotics_v1/install/utils/lib/pkgconfig:/home/ubuntu/workspace/Velizar/robotics_v1/install/cmake_helpers/lib/x86_64-linux-gnu/pkgconfig:/home/ubuntu/workspace/Velizar/robotics_v1/install/cmake_helpers/lib/pkgconfig PS1=[\u@\h \W]$(git_branch)$ PYTHONPATH=/home/ubuntu/workspace/Velizar/robotics_v1/install/urscript_interfaces/lib/python3.8/site-packages:${PYTHONPATH} /usr/bin/cmake --build /home/ubuntu/workspace/Velizar/robotics_v1/build/urscript_common -- -j2 -l2
+[4.308s] [35m[1mScanning dependencies of target urscript_common[0m
+[4.340s] [ 50%] [32mBuilding CXX object CMakeFiles/urscript_common.dir/src/message_helpers/UrScriptMessageHelpers.cpp.o[0m
+[5.651s] [100%] [32m[1mLinking CXX static library liburscript_common.a[0m
+[5.734s] [100%] Built target urscript_common
+[5.769s] Invoked command in '/home/ubuntu/workspace/Velizar/robotics_v1/build/urscript_common' returned '0': AMENT_PREFIX_PATH=/home/ubuntu/workspace/Velizar/robotics_v1/install/urscript_interfaces:${AMENT_PREFIX_PATH} CMAKE_PREFIX_PATH=/home/ubuntu/workspace/Velizar/robotics_v1/install/utils:/home/ubuntu/workspace/Velizar/robotics_v1/install/urscript_interfaces:/home/ubuntu/workspace/Velizar/robotics_v1/install/cmake_helpers:/opt/ros/foxy LD_LIBRARY_PATH=/home/ubuntu/workspace/Velizar/robotics_v1/install/urscript_interfaces/lib:${LD_LIBRARY_PATH} PKG_CONFIG_PATH=/home/ubuntu/workspace/Velizar/robotics_v1/install/utils/lib/x86_64-linux-gnu/pkgconfig:/home/ubuntu/workspace/Velizar/robotics_v1/install/utils/lib/pkgconfig:/home/ubuntu/workspace/Velizar/robotics_v1/install/cmake_helpers/lib/x86_64-linux-gnu/pkgconfig:/home/ubuntu/workspace/Velizar/robotics_v1/install/cmake_helpers/lib/pkgconfig PS1=[\u@\h \W]$(git_branch)$ PYTHONPATH=/home/ubuntu/workspace/Velizar/robotics_v1/install/urscript_interfaces/lib/python3.8/site-packages:${PYTHONPATH} /usr/bin/cmake --build /home/ubuntu/workspace/Velizar/robotics_v1/build/urscript_common -- -j2 -l2
+[5.833s] Invoking command in '/home/ubuntu/workspace/Velizar/robotics_v1/build/urscript_common': AMENT_PREFIX_PATH=/home/ubuntu/workspace/Velizar/robotics_v1/install/urscript_interfaces:${AMENT_PREFIX_PATH} CMAKE_PREFIX_PATH=/home/ubuntu/workspace/Velizar/robotics_v1/install/utils:/home/ubuntu/workspace/Velizar/robotics_v1/install/urscript_interfaces:/home/ubuntu/workspace/Velizar/robotics_v1/install/cmake_helpers:/opt/ros/foxy LD_LIBRARY_PATH=/home/ubuntu/workspace/Velizar/robotics_v1/install/urscript_interfaces/lib:${LD_LIBRARY_PATH} PKG_CONFIG_PATH=/home/ubuntu/workspace/Velizar/robotics_v1/install/utils/lib/x86_64-linux-gnu/pkgconfig:/home/ubuntu/workspace/Velizar/robotics_v1/install/utils/lib/pkgconfig:/home/ubuntu/workspace/Velizar/robotics_v1/install/cmake_helpers/lib/x86_64-linux-gnu/pkgconfig:/home/ubuntu/workspace/Velizar/robotics_v1/install/cmake_helpers/lib/pkgconfig PS1=[\u@\h \W]$(git_branch)$ PYTHONPATH=/home/ubuntu/workspace/Velizar/robotics_v1/install/urscript_interfaces/lib/python3.8/site-packages:${PYTHONPATH} /usr/bin/cmake --install /home/ubuntu/workspace/Velizar/robotics_v1/build/urscript_common
+[5.861s] -- Install configuration: "Debug"
+[5.863s] -- Execute custom install script
+[5.865s] -- Symlinking: /home/ubuntu/workspace/Velizar/robotics_v1/install/urscript_common/share/urscript_common/package.xml
+[5.890s] -- Symlinking: /home/ubuntu/workspace/Velizar/robotics_v1/install/urscript_common/lib/urscript_common/liburscript_common.a
+[5.915s] -- Symlinking: /home/ubuntu/workspace/Velizar/robotics_v1/install/urscript_common/share/ament_index/resource_index/packages/urscript_common
+[5.940s] -- Symlinking: /home/ubuntu/workspace/Velizar/robotics_v1/install/urscript_common/share/urscript_common/hook/ament_prefix_path.dsv
+[5.968s] -- Symlinking: /home/ubuntu/workspace/Velizar/robotics_v1/install/urscript_common/share/urscript_common/hook/ros_package_path.dsv
+[5.992s] -- Symlinking: /home/ubuntu/workspace/Velizar/robotics_v1/install/urscript_common/share/ament_index/resource_index/package_run_dependencies/urscript_common
+[6.016s] -- Symlinking: /home/ubuntu/workspace/Velizar/robotics_v1/install/urscript_common/share/ament_index/resource_index/parent_prefix_path/urscript_common
+[6.044s] -- Symlinking: /home/ubuntu/workspace/Velizar/robotics_v1/install/urscript_common/share/urscript_common/environment/ament_prefix_path.sh
+[6.068s] -- Symlinking: /home/ubuntu/workspace/Velizar/robotics_v1/install/urscript_common/share/urscript_common/environment/ament_prefix_path.dsv
+[6.092s] -- Symlinking: /home/ubuntu/workspace/Velizar/robotics_v1/install/urscript_common/share/urscript_common/environment/path.sh
+[6.144s] -- Symlinking: /home/ubuntu/workspace/Velizar/robotics_v1/install/urscript_common/share/urscript_common/environment/path.dsv
+[6.171s] -- Symlinking: /home/ubuntu/workspace/Velizar/robotics_v1/install/urscript_common/share/urscript_common/local_setup.bash
+[6.196s] -- Symlinking: /home/ubuntu/workspace/Velizar/robotics_v1/install/urscript_common/share/urscript_common/local_setup.sh
+[6.271s] -- Symlinking: /home/ubuntu/workspace/Velizar/robotics_v1/install/urscript_common/share/urscript_common/local_setup.zsh
+[6.327s] -- Symlinking: /home/ubuntu/workspace/Velizar/robotics_v1/install/urscript_common/share/urscript_common/local_setup.dsv
+[6.353s] -- Symlinking: /home/ubuntu/workspace/Velizar/robotics_v1/install/urscript_common/share/urscript_common/package.dsv
+[6.378s] -- Symlinking: /home/ubuntu/workspace/Velizar/robotics_v1/install/urscript_common/share/ament_index/resource_index/packages/urscript_common
+[6.403s] -- Symlinking: /home/ubuntu/workspace/Velizar/robotics_v1/install/urscript_common/share/urscript_common/cmake/urscript_commonConfig.cmake
+[6.427s] -- Symlinking: /home/ubuntu/workspace/Velizar/robotics_v1/install/urscript_common/share/urscript_common/cmake/urscript_commonConfig-version.cmake
+[6.451s] -- Up-to-date symlink: /home/ubuntu/workspace/Velizar/robotics_v1/install/urscript_common/share/urscript_common/package.xml
+[6.454s] -- Symlinking: /home/ubuntu/workspace/Velizar/robotics_v1/install/urscript_common/include/urscript_common/defines/UrScriptTopics.h
+[6.480s] -- Symlinking: /home/ubuntu/workspace/Velizar/robotics_v1/install/urscript_common/include/urscript_common/message_helpers/UrScriptMessageHelpers.h
+[6.504s] -- Symlinking: /home/ubuntu/workspace/Velizar/robotics_v1/install/urscript_common/lib/cmake/urscript_common/urscript_commonConfig.cmake
+[6.528s] -- Installing: /home/ubuntu/workspace/Velizar/robotics_v1/install/urscript_common/lib/liburscript_common.a
+[6.530s] -- Installing: /home/ubuntu/workspace/Velizar/robotics_v1/install/urscript_common/lib/cmake/urscript_common/urscript_commonTargets.cmake
+[6.530s] -- Installing: /home/ubuntu/workspace/Velizar/robotics_v1/install/urscript_common/lib/cmake/urscript_common/urscript_commonTargets-debug.cmake
+[6.541s] Invoked command in '/home/ubuntu/workspace/Velizar/robotics_v1/build/urscript_common' returned '0': AMENT_PREFIX_PATH=/home/ubuntu/workspace/Velizar/robotics_v1/install/urscript_interfaces:${AMENT_PREFIX_PATH} CMAKE_PREFIX_PATH=/home/ubuntu/workspace/Velizar/robotics_v1/install/utils:/home/ubuntu/workspace/Velizar/robotics_v1/install/urscript_interfaces:/home/ubuntu/workspace/Velizar/robotics_v1/install/cmake_helpers:/opt/ros/foxy LD_LIBRARY_PATH=/home/ubuntu/workspace/Velizar/robotics_v1/install/urscript_interfaces/lib:${LD_LIBRARY_PATH} PKG_CONFIG_PATH=/home/ubuntu/workspace/Velizar/robotics_v1/install/utils/lib/x86_64-linux-gnu/pkgconfig:/home/ubuntu/workspace/Velizar/robotics_v1/install/utils/lib/pkgconfig:/home/ubuntu/workspace/Velizar/robotics_v1/install/cmake_helpers/lib/x86_64-linux-gnu/pkgconfig:/home/ubuntu/workspace/Velizar/robotics_v1/install/cmake_helpers/lib/pkgconfig PS1=[\u@\h \W]$(git_branch)$ PYTHONPATH=/home/ubuntu/workspace/Velizar/robotics_v1/install/urscript_interfaces/lib/python3.8/site-packages:${PYTHONPATH} /usr/bin/cmake --install /home/ubuntu/workspace/Velizar/robotics_v1/build/urscript_common

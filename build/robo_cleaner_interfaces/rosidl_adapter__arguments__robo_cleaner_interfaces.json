@@ -1,0 +1,13 @@
+{
+  "package_name": "robo_cleaner_interfaces",
+  "non_idl_tuples": [
+    "/home/ubuntu/workspace/Velizar/robotics_v1/src/robo_cleaner/robo_cleaner_interfaces:msg/BatteryStatus.msg",
+    "/home/ubuntu/workspace/Velizar/robotics_v1/src/robo_cleaner/robo_cleaner_interfaces:msg/InitialRobotState.msg",
+    "/home/ubuntu/workspace/Velizar/robotics_v1/src/robo_cleaner/robo_cleaner_interfaces:msg/RobotMoveType.msg",
+    "/home/ubuntu/workspace/Velizar/robotics_v1/src/robo_cleaner/robo_cleaner_interfaces:msg/UserAuthenticate.msg",
+    "/home/ubuntu/workspace/Velizar/robotics_v1/src/robo_cleaner/robo_cleaner_interfaces:srv/ChargeBattery.srv",
+    "/home/ubuntu/workspace/Velizar/robotics_v1/src/robo_cleaner/robo_cleaner_interfaces:srv/QueryBatteryStatus.srv",
+    "/home/ubuntu/workspace/Velizar/robotics_v1/src/robo_cleaner/robo_cleaner_interfaces:srv/QueryInitialRobotState.srv",
+    "/home/ubuntu/workspace/Velizar/robotics_v1/src/robo_cleaner/robo_cleaner_interfaces:action/RobotMove.action"
+  ]
+}

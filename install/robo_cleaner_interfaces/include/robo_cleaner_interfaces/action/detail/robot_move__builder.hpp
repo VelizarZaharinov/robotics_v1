@@ -1,0 +1,1 @@
+/home/ubuntu/workspace/Velizar/robotics_v1/build/robo_cleaner_interfaces/rosidl_generator_cpp/robo_cleaner_interfaces/action/detail/robot_move__builder.hpp

@@ -1,0 +1,1 @@
+/usr/bin/clang++   -Wall -pedantic -Wall -pedantic -g  -rdynamic CMakeFiles/primary_pipeline_example.dir/primary_pipeline.cpp.o  -o primary_pipeline_example  -Wl,-rpath,/home/ubuntu/workspace/Velizar/robotics_v1/build/ur_client_library ../liburcl.so -lpthread 

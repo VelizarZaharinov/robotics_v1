@@ -1,0 +1,2 @@
+/usr/bin/ar qc librobo_collector_common.a  CMakeFiles/robo_collector_common.dir/src/layout/controller/buttons/MoveButton.cpp.o CMakeFiles/robo_collector_common.dir/src/layout/controller/buttons/HelpButton.cpp.o CMakeFiles/robo_collector_common.dir/src/layout/controller/buttons/SettingsButton.cpp.o CMakeFiles/robo_collector_common.dir/src/layout/controller/RoboCollectorUiController.cpp.o CMakeFiles/robo_collector_common.dir/src/message_helpers/RoboCollectorMessageHelpers.cpp.o
+/usr/bin/ranlib librobo_collector_common.a

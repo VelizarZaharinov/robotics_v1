@@ -1,0 +1,139 @@
+[0.052s] Invoking command in '/home/ubuntu/workspace/Velizar/robotics_v1/build/ur_robot_driver': AMENT_PREFIX_PATH=/home/ubuntu/workspace/Velizar/robotics_v1/install/ur_controllers:/home/ubuntu/workspace/Velizar/robotics_v1/install/ur_description:/home/ubuntu/workspace/Velizar/robotics_v1/install/ur_dashboard_msgs:/home/ubuntu/workspace/Velizar/robotics_v1/install/ur_bringup:${AMENT_PREFIX_PATH} CMAKE_PREFIX_PATH=/home/ubuntu/workspace/Velizar/robotics_v1/install/ur_controllers:/home/ubuntu/workspace/Velizar/robotics_v1/install/ur_description:/home/ubuntu/workspace/Velizar/robotics_v1/install/ur_dashboard_msgs:/home/ubuntu/workspace/Velizar/robotics_v1/install/ur_client_library:/home/ubuntu/workspace/Velizar/robotics_v1/install/ur_bringup:/opt/ros/foxy LD_LIBRARY_PATH=/home/ubuntu/workspace/Velizar/robotics_v1/install/ur_controllers/lib:/home/ubuntu/workspace/Velizar/robotics_v1/install/ur_dashboard_msgs/lib:/home/ubuntu/workspace/Velizar/robotics_v1/install/ur_client_library/lib:${LD_LIBRARY_PATH} PKG_CONFIG_PATH=/home/ubuntu/workspace/Velizar/robotics_v1/install/ur_client_library/lib/x86_64-linux-gnu/pkgconfig:/home/ubuntu/workspace/Velizar/robotics_v1/install/ur_client_library/lib/pkgconfig PS1=[\u@\h \W]$(git_branch)$ PYTHONPATH=/home/ubuntu/workspace/Velizar/robotics_v1/install/ur_dashboard_msgs/lib/python3.8/site-packages:${PYTHONPATH} /usr/bin/cmake /home/ubuntu/workspace/Velizar/robotics_v1/src/ur_driver/Universal_Robots_ROS2_Driver/ur_robot_driver -DCMAKE_BUILD_TYPE=Debug -DCMAKE_CXX_COMPILER=/usr/bin/clang++ -DAMENT_CMAKE_SYMLINK_INSTALL=1 -DCMAKE_INSTALL_PREFIX=/home/ubuntu/workspace/Velizar/robotics_v1/install/ur_robot_driver
+[0.250s] -- The C compiler identification is GNU 9.4.0
+[0.528s] -- The CXX compiler identification is Clang 10.0.0
+[0.549s] -- Check for working C compiler: /usr/bin/cc
+[0.750s] -- Check for working C compiler: /usr/bin/cc -- works
+[0.754s] -- Detecting C compiler ABI info
+[0.954s] -- Detecting C compiler ABI info - done
+[1.009s] -- Detecting C compile features
+[1.011s] -- Detecting C compile features - done
+[1.022s] -- Check for working CXX compiler: /usr/bin/clang++
+[1.361s] -- Check for working CXX compiler: /usr/bin/clang++ -- works
+[1.365s] -- Detecting CXX compiler ABI info
+[1.710s] -- Detecting CXX compiler ABI info - done
+[1.761s] -- Detecting CXX compile features
+[1.763s] -- Detecting CXX compile features - done
+[1.771s] -- Found ament_cmake: 0.9.9 (/opt/ros/foxy/share/ament_cmake/cmake)
+[1.839s] -- Found PythonInterp: /usr/bin/python3 (found suitable version "3.8.10", minimum required is "3") 
+[1.840s] -- Using PYTHON_EXECUTABLE: /usr/bin/python3
+[2.304s] -- Override CMake install command with custom implementation using symlinks instead of copying resources
+[2.385s] -- Found hardware_interface: 0.10.1 (/opt/ros/foxy/share/hardware_interface/cmake)
+[2.513s] -- Using all available rosidl_typesupport_c: rosidl_typesupport_fastrtps_c;rosidl_typesupport_introspection_c
+[2.539s] -- Found rosidl_adapter: 1.2.1 (/opt/ros/foxy/share/rosidl_adapter/cmake)
+[2.783s] -- Found OpenSSL: /usr/lib/x86_64-linux-gnu/libcrypto.so (found version "1.1.1f")  
+[2.890s] -- Found FastRTPS: /opt/ros/foxy/include  
+[3.187s] -- Using all available rosidl_typesupport_cpp: rosidl_typesupport_fastrtps_cpp;rosidl_typesupport_introspection_cpp
+[5.981s] -- Found rclcpp: 2.4.1 (/opt/ros/foxy/share/rclcpp/cmake)
+[6.172s] -- Found rmw_implementation_cmake: 1.0.3 (/opt/ros/foxy/share/rmw_implementation_cmake/cmake)
+[6.178s] -- Using RMW implementation 'rmw_fastrtps_cpp' as default
+[6.182s] -- Looking for pthread.h
+[6.395s] -- Looking for pthread.h - found
+[6.396s] -- Performing Test CMAKE_HAVE_LIBC_PTHREAD
+[6.619s] -- Performing Test CMAKE_HAVE_LIBC_PTHREAD - Failed
+[6.619s] -- Looking for pthread_create in pthreads
+[6.786s] -- Looking for pthread_create in pthreads - not found
+[6.787s] -- Looking for pthread_create in pthread
+[6.989s] -- Looking for pthread_create in pthread - found
+[6.992s] -- Found Threads: TRUE  
+[7.724s] -- Found std_srvs: 2.0.5 (/opt/ros/foxy/share/std_srvs/cmake)
+[7.772s] -- Found ur_dashboard_msgs: 0.0.0 (/home/ubuntu/workspace/Velizar/robotics_v1/install/ur_dashboard_msgs/share/ur_dashboard_msgs/cmake)
+[8.493s] -- Found ur_controllers: 0.0.0 (/home/ubuntu/workspace/Velizar/robotics_v1/install/ur_controllers/share/ur_controllers/cmake)
+[13.544s] -- Found ur_description: 0.0.0 (/home/ubuntu/workspace/Velizar/robotics_v1/install/ur_description/share/ur_description/cmake)
+[13.547s] -- Found ur_bringup: 0.0.0 (/home/ubuntu/workspace/Velizar/robotics_v1/install/ur_bringup/share/ur_bringup/cmake)
+[13.554s] -- Found launch_testing_ament_cmake: 0.10.8 (/opt/ros/foxy/share/launch_testing_ament_cmake/cmake)
+[13.562s] -- Found python_cmake_module: 0.8.1 (/opt/ros/foxy/share/python_cmake_module/cmake)
+[13.619s] -- Found PythonInterp: /usr/bin/python3 (found suitable version "3.8.10", minimum required is "3.5") 
+[13.643s] -- Found PythonLibs: /usr/lib/x86_64-linux-gnu/libpython3.8.so (found suitable version "3.8.10", minimum required is "3.5") 
+[13.644s] -- Using PYTHON_EXECUTABLE: /usr/bin/python3
+[13.644s] -- Using PYTHON_INCLUDE_DIRS: /usr/include/python3.8
+[13.645s] -- Using PYTHON_LIBRARIES: /usr/lib/x86_64-linux-gnu/libpython3.8.so
+[13.700s] -- Found PythonExtra: .so  
+[13.710s] -- Configuring done
+[13.875s] -- Generating done
+[13.885s] -- Build files have been written to: /home/ubuntu/workspace/Velizar/robotics_v1/build/ur_robot_driver
+[13.910s] Invoked command in '/home/ubuntu/workspace/Velizar/robotics_v1/build/ur_robot_driver' returned '0': AMENT_PREFIX_PATH=/home/ubuntu/workspace/Velizar/robotics_v1/install/ur_controllers:/home/ubuntu/workspace/Velizar/robotics_v1/install/ur_description:/home/ubuntu/workspace/Velizar/robotics_v1/install/ur_dashboard_msgs:/home/ubuntu/workspace/Velizar/robotics_v1/install/ur_bringup:${AMENT_PREFIX_PATH} CMAKE_PREFIX_PATH=/home/ubuntu/workspace/Velizar/robotics_v1/install/ur_controllers:/home/ubuntu/workspace/Velizar/robotics_v1/install/ur_description:/home/ubuntu/workspace/Velizar/robotics_v1/install/ur_dashboard_msgs:/home/ubuntu/workspace/Velizar/robotics_v1/install/ur_client_library:/home/ubuntu/workspace/Velizar/robotics_v1/install/ur_bringup:/opt/ros/foxy LD_LIBRARY_PATH=/home/ubuntu/workspace/Velizar/robotics_v1/install/ur_controllers/lib:/home/ubuntu/workspace/Velizar/robotics_v1/install/ur_dashboard_msgs/lib:/home/ubuntu/workspace/Velizar/robotics_v1/install/ur_client_library/lib:${LD_LIBRARY_PATH} PKG_CONFIG_PATH=/home/ubuntu/workspace/Velizar/robotics_v1/install/ur_client_library/lib/x86_64-linux-gnu/pkgconfig:/home/ubuntu/workspace/Velizar/robotics_v1/install/ur_client_library/lib/pkgconfig PS1=[\u@\h \W]$(git_branch)$ PYTHONPATH=/home/ubuntu/workspace/Velizar/robotics_v1/install/ur_dashboard_msgs/lib/python3.8/site-packages:${PYTHONPATH} /usr/bin/cmake /home/ubuntu/workspace/Velizar/robotics_v1/src/ur_driver/Universal_Robots_ROS2_Driver/ur_robot_driver -DCMAKE_BUILD_TYPE=Debug -DCMAKE_CXX_COMPILER=/usr/bin/clang++ -DAMENT_CMAKE_SYMLINK_INSTALL=1 -DCMAKE_INSTALL_PREFIX=/home/ubuntu/workspace/Velizar/robotics_v1/install/ur_robot_driver
+[13.912s] Invoking command in '/home/ubuntu/workspace/Velizar/robotics_v1/build/ur_robot_driver': AMENT_PREFIX_PATH=/home/ubuntu/workspace/Velizar/robotics_v1/install/ur_controllers:/home/ubuntu/workspace/Velizar/robotics_v1/install/ur_description:/home/ubuntu/workspace/Velizar/robotics_v1/install/ur_dashboard_msgs:/home/ubuntu/workspace/Velizar/robotics_v1/install/ur_bringup:${AMENT_PREFIX_PATH} CMAKE_PREFIX_PATH=/home/ubuntu/workspace/Velizar/robotics_v1/install/ur_controllers:/home/ubuntu/workspace/Velizar/robotics_v1/install/ur_description:/home/ubuntu/workspace/Velizar/robotics_v1/install/ur_dashboard_msgs:/home/ubuntu/workspace/Velizar/robotics_v1/install/ur_client_library:/home/ubuntu/workspace/Velizar/robotics_v1/install/ur_bringup:/opt/ros/foxy LD_LIBRARY_PATH=/home/ubuntu/workspace/Velizar/robotics_v1/install/ur_controllers/lib:/home/ubuntu/workspace/Velizar/robotics_v1/install/ur_dashboard_msgs/lib:/home/ubuntu/workspace/Velizar/robotics_v1/install/ur_client_library/lib:${LD_LIBRARY_PATH} PKG_CONFIG_PATH=/home/ubuntu/workspace/Velizar/robotics_v1/install/ur_client_library/lib/x86_64-linux-gnu/pkgconfig:/home/ubuntu/workspace/Velizar/robotics_v1/install/ur_client_library/lib/pkgconfig PS1=[\u@\h \W]$(git_branch)$ PYTHONPATH=/home/ubuntu/workspace/Velizar/robotics_v1/install/ur_dashboard_msgs/lib/python3.8/site-packages:${PYTHONPATH} /usr/bin/cmake --build /home/ubuntu/workspace/Velizar/robotics_v1/build/ur_robot_driver -- -j2 -l2
+[14.045s] [35m[1mScanning dependencies of target dashboard_client[0m
+[14.232s] [ 12%] [32mBuilding CXX object CMakeFiles/dashboard_client.dir/src/dashboard_client_ros.cpp.o[0m
+[29.325s] [ 25%] [32mBuilding CXX object CMakeFiles/dashboard_client.dir/src/dashboard_client_node.cpp.o[0m
+[36.331s] [ 37%] [32mBuilding CXX object CMakeFiles/dashboard_client.dir/src/urcl_log_handler.cpp.o[0m
+[38.098s] [ 50%] [32m[1mLinking CXX executable dashboard_client[0m
+[39.234s] [ 50%] Built target dashboard_client
+[39.264s] [35m[1mScanning dependencies of target ur_robot_driver_plugin[0m
+[39.459s] [ 62%] [32mBuilding CXX object CMakeFiles/ur_robot_driver_plugin.dir/src/dashboard_client_ros.cpp.o[0m
+[54.499s] [ 75%] [32mBuilding CXX object CMakeFiles/ur_robot_driver_plugin.dir/src/hardware_interface.cpp.o[0m
+[64.601s] [ 87%] [32mBuilding CXX object CMakeFiles/ur_robot_driver_plugin.dir/src/urcl_log_handler.cpp.o[0m
+[66.420s] [100%] [32m[1mLinking CXX shared library libur_robot_driver_plugin.so[0m
+[67.792s] [100%] Built target ur_robot_driver_plugin
+[67.825s] Invoked command in '/home/ubuntu/workspace/Velizar/robotics_v1/build/ur_robot_driver' returned '0': AMENT_PREFIX_PATH=/home/ubuntu/workspace/Velizar/robotics_v1/install/ur_controllers:/home/ubuntu/workspace/Velizar/robotics_v1/install/ur_description:/home/ubuntu/workspace/Velizar/robotics_v1/install/ur_dashboard_msgs:/home/ubuntu/workspace/Velizar/robotics_v1/install/ur_bringup:${AMENT_PREFIX_PATH} CMAKE_PREFIX_PATH=/home/ubuntu/workspace/Velizar/robotics_v1/install/ur_controllers:/home/ubuntu/workspace/Velizar/robotics_v1/install/ur_description:/home/ubuntu/workspace/Velizar/robotics_v1/install/ur_dashboard_msgs:/home/ubuntu/workspace/Velizar/robotics_v1/install/ur_client_library:/home/ubuntu/workspace/Velizar/robotics_v1/install/ur_bringup:/opt/ros/foxy LD_LIBRARY_PATH=/home/ubuntu/workspace/Velizar/robotics_v1/install/ur_controllers/lib:/home/ubuntu/workspace/Velizar/robotics_v1/install/ur_dashboard_msgs/lib:/home/ubuntu/workspace/Velizar/robotics_v1/install/ur_client_library/lib:${LD_LIBRARY_PATH} PKG_CONFIG_PATH=/home/ubuntu/workspace/Velizar/robotics_v1/install/ur_client_library/lib/x86_64-linux-gnu/pkgconfig:/home/ubuntu/workspace/Velizar/robotics_v1/install/ur_client_library/lib/pkgconfig PS1=[\u@\h \W]$(git_branch)$ PYTHONPATH=/home/ubuntu/workspace/Velizar/robotics_v1/install/ur_dashboard_msgs/lib/python3.8/site-packages:${PYTHONPATH} /usr/bin/cmake --build /home/ubuntu/workspace/Velizar/robotics_v1/build/ur_robot_driver -- -j2 -l2
+[67.964s] Invoking command in '/home/ubuntu/workspace/Velizar/robotics_v1/build/ur_robot_driver': AMENT_PREFIX_PATH=/home/ubuntu/workspace/Velizar/robotics_v1/install/ur_controllers:/home/ubuntu/workspace/Velizar/robotics_v1/install/ur_description:/home/ubuntu/workspace/Velizar/robotics_v1/install/ur_dashboard_msgs:/home/ubuntu/workspace/Velizar/robotics_v1/install/ur_bringup:${AMENT_PREFIX_PATH} CMAKE_PREFIX_PATH=/home/ubuntu/workspace/Velizar/robotics_v1/install/ur_controllers:/home/ubuntu/workspace/Velizar/robotics_v1/install/ur_description:/home/ubuntu/workspace/Velizar/robotics_v1/install/ur_dashboard_msgs:/home/ubuntu/workspace/Velizar/robotics_v1/install/ur_client_library:/home/ubuntu/workspace/Velizar/robotics_v1/install/ur_bringup:/opt/ros/foxy LD_LIBRARY_PATH=/home/ubuntu/workspace/Velizar/robotics_v1/install/ur_controllers/lib:/home/ubuntu/workspace/Velizar/robotics_v1/install/ur_dashboard_msgs/lib:/home/ubuntu/workspace/Velizar/robotics_v1/install/ur_client_library/lib:${LD_LIBRARY_PATH} PKG_CONFIG_PATH=/home/ubuntu/workspace/Velizar/robotics_v1/install/ur_client_library/lib/x86_64-linux-gnu/pkgconfig:/home/ubuntu/workspace/Velizar/robotics_v1/install/ur_client_library/lib/pkgconfig PS1=[\u@\h \W]$(git_branch)$ PYTHONPATH=/home/ubuntu/workspace/Velizar/robotics_v1/install/ur_dashboard_msgs/lib/python3.8/site-packages:${PYTHONPATH} /usr/bin/cmake --install /home/ubuntu/workspace/Velizar/robotics_v1/build/ur_robot_driver
+[67.997s] -- Install configuration: "Debug"
+[67.999s] -- Execute custom install script
+[68.000s] -- Symlinking: /home/ubuntu/workspace/Velizar/robotics_v1/install/ur_robot_driver/share/ur_robot_driver//hardware_interface_plugin.xml
+[68.045s] -- Symlinking: /home/ubuntu/workspace/Velizar/robotics_v1/install/ur_robot_driver/lib/ur_robot_driver/dashboard_client
+[68.132s] -- Symlinking: /home/ubuntu/workspace/Velizar/robotics_v1/install/ur_robot_driver/lib/libur_robot_driver_plugin.so
+[68.245s] -- Symlinking: /home/ubuntu/workspace/Velizar/robotics_v1/install/ur_robot_driver/include/ur_robot_driver/dashboard_client_ros.hpp
+[68.353s] -- Symlinking: /home/ubuntu/workspace/Velizar/robotics_v1/install/ur_robot_driver/include/ur_robot_driver/hardware_interface.hpp
+[68.399s] -- Symlinking: /home/ubuntu/workspace/Velizar/robotics_v1/install/ur_robot_driver/include/ur_robot_driver/urcl_log_handler.hpp
+[68.441s] -- Symlinking: /home/ubuntu/workspace/Velizar/robotics_v1/install/ur_robot_driver/share/ur_robot_driver/environment/library_path.sh
+[68.482s] -- Symlinking: /home/ubuntu/workspace/Velizar/robotics_v1/install/ur_robot_driver/share/ur_robot_driver/environment/library_path.dsv
+[68.552s] -- Symlinking: /home/ubuntu/workspace/Velizar/robotics_v1/install/ur_robot_driver/bin/tool_communication
+[68.621s] -- Symlinking: /home/ubuntu/workspace/Velizar/robotics_v1/install/ur_robot_driver/share/ur_robot_driver/resources/Dockerfile
+[68.665s] -- Symlinking: /home/ubuntu/workspace/Velizar/robotics_v1/install/ur_robot_driver/share/ur_robot_driver/resources/externalcontrol-1.0.5.urcap
+[68.696s] -- Symlinking: /home/ubuntu/workspace/Velizar/robotics_v1/install/ur_robot_driver/share/ur_robot_driver/resources/ros_control.urscript
+[68.722s] -- Symlinking: /home/ubuntu/workspace/Velizar/robotics_v1/install/ur_robot_driver/share/ur_robot_driver/resources/rs485-1.0.urcap
+[68.749s] -- Symlinking: /home/ubuntu/workspace/Velizar/robotics_v1/install/ur_robot_driver/share/ur_robot_driver/resources/rtde_input_recipe.txt
+[68.778s] -- Symlinking: /home/ubuntu/workspace/Velizar/robotics_v1/install/ur_robot_driver/share/ur_robot_driver/resources/rtde_output_recipe.txt
+[68.809s] -- Symlinking: /home/ubuntu/workspace/Velizar/robotics_v1/install/ur_robot_driver/share/ur_robot_driver/resources/ursim_driver/README.md
+[68.836s] -- Symlinking: /home/ubuntu/workspace/Velizar/robotics_v1/install/ur_robot_driver/share/ur_robot_driver/resources/ursim_driver/build_and_run_docker_ursim_with_driver.sh
+[68.880s] -- Symlinking: /home/ubuntu/workspace/Velizar/robotics_v1/install/ur_robot_driver/share/ur_robot_driver/resources/ursim_driver/docker-compose.yml
+[68.917s] -- Symlinking: /home/ubuntu/workspace/Velizar/robotics_v1/install/ur_robot_driver/share/ur_robot_driver/resources/ursim_driver/driver/Dockerfile
+[68.945s] -- Symlinking: /home/ubuntu/workspace/Velizar/robotics_v1/install/ur_robot_driver/share/ur_robot_driver/resources/ursim_driver/driver/entrypoint.sh
+[68.972s] -- Symlinking: /home/ubuntu/workspace/Velizar/robotics_v1/install/ur_robot_driver/share/ur_robot_driver/resources/ursim_driver/driver/wait_dashboard_server.sh
+[69.009s] -- Symlinking: /home/ubuntu/workspace/Velizar/robotics_v1/install/ur_robot_driver/share/ur_robot_driver/resources/ursim_driver/resources/add_urcap.png
+[69.034s] -- Symlinking: /home/ubuntu/workspace/Velizar/robotics_v1/install/ur_robot_driver/share/ur_robot_driver/resources/ursim_driver/resources/added_external_ctrl.png
+[69.061s] -- Symlinking: /home/ubuntu/workspace/Velizar/robotics_v1/install/ur_robot_driver/share/ur_robot_driver/resources/ursim_driver/resources/added_urcap.png
+[69.090s] -- Symlinking: /home/ubuntu/workspace/Velizar/robotics_v1/install/ur_robot_driver/share/ur_robot_driver/resources/ursim_driver/resources/move_tab.png
+[69.117s] -- Symlinking: /home/ubuntu/workspace/Velizar/robotics_v1/install/ur_robot_driver/share/ur_robot_driver/resources/ursim_driver/resources/powered_on.png
+[69.142s] -- Symlinking: /home/ubuntu/workspace/Velizar/robotics_v1/install/ur_robot_driver/share/ur_robot_driver/resources/ursim_driver/resources/poweron_proc.png
+[69.168s] -- Symlinking: /home/ubuntu/workspace/Velizar/robotics_v1/install/ur_robot_driver/share/ur_robot_driver/resources/ursim_driver/resources/running_external_ctrl.png
+[69.198s] -- Symlinking: /home/ubuntu/workspace/Velizar/robotics_v1/install/ur_robot_driver/share/ur_robot_driver/resources/ursim_driver/resources/rviz.png
+[69.224s] -- Symlinking: /home/ubuntu/workspace/Velizar/robotics_v1/install/ur_robot_driver/share/ur_robot_driver/resources/ursim_driver/resources/settings.png
+[69.248s] -- Symlinking: /home/ubuntu/workspace/Velizar/robotics_v1/install/ur_robot_driver/share/ur_robot_driver/resources/ursim_driver/resources/terminal.png
+[69.275s] -- Symlinking: /home/ubuntu/workspace/Velizar/robotics_v1/install/ur_robot_driver/share/ur_robot_driver/resources/ursim_driver/resources/urcap_menu.png
+[69.307s] -- Symlinking: /home/ubuntu/workspace/Velizar/robotics_v1/install/ur_robot_driver/share/ur_robot_driver/resources/ursim_driver/resources/vncviewer_list.png
+[69.329s] -- Symlinking: /home/ubuntu/workspace/Velizar/robotics_v1/install/ur_robot_driver/share/ur_robot_driver/resources/ursim_driver/ursim/aux/.vol/urcap_ros_control.installation
+[69.360s] -- Symlinking: /home/ubuntu/workspace/Velizar/robotics_v1/install/ur_robot_driver/share/ur_robot_driver/resources/ursim_driver/ursim/aux/.vol/urcap_ros_control.script
+[69.519s] -- Symlinking: /home/ubuntu/workspace/Velizar/robotics_v1/install/ur_robot_driver/share/ur_robot_driver/resources/ursim_driver/ursim/aux/.vol/urcap_ros_control.txt
+[69.676s] -- Symlinking: /home/ubuntu/workspace/Velizar/robotics_v1/install/ur_robot_driver/share/ur_robot_driver/resources/ursim_driver/ursim/aux/.vol/urcap_ros_control.urp
+[69.833s] -- Symlinking: /home/ubuntu/workspace/Velizar/robotics_v1/install/ur_robot_driver/share/ur_robot_driver/resources/ursim_driver/ursim/aux/.vol/urcap_ros_control.variables
+[69.876s] -- Symlinking: /home/ubuntu/workspace/Velizar/robotics_v1/install/ur_robot_driver/share/ur_robot_driver/resources/ursim_driver/ursim/aux/externalcontrol-1.0.5.urcap
+[69.909s] -- Symlinking: /home/ubuntu/workspace/Velizar/robotics_v1/install/ur_robot_driver/share/ur_robot_driver/resources/ursim_driver/ursim/aux/ros_control.urscript
+[69.931s] -- Symlinking: /home/ubuntu/workspace/Velizar/robotics_v1/install/ur_robot_driver/share/ur_robot_driver/resources/ursim_driver/ursim/aux/rs485-1.0.urcap
+[69.956s] -- Symlinking: /home/ubuntu/workspace/Velizar/robotics_v1/install/ur_robot_driver/share/ur_robot_driver/resources/ursim_driver/ursim/g3/Dockerfile
+[69.983s] -- Symlinking: /home/ubuntu/workspace/Velizar/robotics_v1/install/ur_robot_driver/share/ur_robot_driver/resources/ursim_driver/ursim/g3/entrypoint.sh
+[70.011s] -- Symlinking: /home/ubuntu/workspace/Velizar/robotics_v1/install/ur_robot_driver/share/ur_robot_driver/resources/ursim_driver/ursim/g5/Dockerfile
+[70.035s] -- Symlinking: /home/ubuntu/workspace/Velizar/robotics_v1/install/ur_robot_driver/share/ur_robot_driver/resources/ursim_driver/ursim/g5/entrypoint.sh
+[70.063s] -- Up-to-date symlink: /home/ubuntu/workspace/Velizar/robotics_v1/install/ur_robot_driver/include/ur_robot_driver/dashboard_client_ros.hpp
+[70.063s] -- Up-to-date symlink: /home/ubuntu/workspace/Velizar/robotics_v1/install/ur_robot_driver/include/ur_robot_driver/hardware_interface.hpp
+[70.064s] -- Up-to-date symlink: /home/ubuntu/workspace/Velizar/robotics_v1/install/ur_robot_driver/include/ur_robot_driver/urcl_log_handler.hpp
+[70.065s] -- Symlinking: /home/ubuntu/workspace/Velizar/robotics_v1/install/ur_robot_driver/share/ament_index/resource_index/package_run_dependencies/ur_robot_driver
+[70.095s] -- Symlinking: /home/ubuntu/workspace/Velizar/robotics_v1/install/ur_robot_driver/share/ament_index/resource_index/parent_prefix_path/ur_robot_driver
+[70.119s] -- Symlinking: /home/ubuntu/workspace/Velizar/robotics_v1/install/ur_robot_driver/share/ur_robot_driver/environment/ament_prefix_path.sh
+[70.143s] -- Symlinking: /home/ubuntu/workspace/Velizar/robotics_v1/install/ur_robot_driver/share/ur_robot_driver/environment/ament_prefix_path.dsv
+[70.167s] -- Symlinking: /home/ubuntu/workspace/Velizar/robotics_v1/install/ur_robot_driver/share/ur_robot_driver/environment/path.sh
+[70.197s] -- Symlinking: /home/ubuntu/workspace/Velizar/robotics_v1/install/ur_robot_driver/share/ur_robot_driver/environment/path.dsv
+[70.219s] -- Symlinking: /home/ubuntu/workspace/Velizar/robotics_v1/install/ur_robot_driver/share/ur_robot_driver/local_setup.bash
+[70.244s] -- Symlinking: /home/ubuntu/workspace/Velizar/robotics_v1/install/ur_robot_driver/share/ur_robot_driver/local_setup.sh
+[70.268s] -- Symlinking: /home/ubuntu/workspace/Velizar/robotics_v1/install/ur_robot_driver/share/ur_robot_driver/local_setup.zsh
+[70.296s] -- Symlinking: /home/ubuntu/workspace/Velizar/robotics_v1/install/ur_robot_driver/share/ur_robot_driver/local_setup.dsv
+[70.319s] -- Symlinking: /home/ubuntu/workspace/Velizar/robotics_v1/install/ur_robot_driver/share/ur_robot_driver/package.dsv
+[70.344s] -- Symlinking: /home/ubuntu/workspace/Velizar/robotics_v1/install/ur_robot_driver/share/ament_index/resource_index/packages/ur_robot_driver
+[70.368s] -- Symlinking: /home/ubuntu/workspace/Velizar/robotics_v1/install/ur_robot_driver/share/ament_index/resource_index/hardware_interface__pluginlib__plugin/ur_robot_driver
+[70.398s] -- Symlinking: /home/ubuntu/workspace/Velizar/robotics_v1/install/ur_robot_driver/share/ur_robot_driver/cmake/ament_cmake_export_include_directories-extras.cmake
+[70.428s] -- Symlinking: /home/ubuntu/workspace/Velizar/robotics_v1/install/ur_robot_driver/share/ur_robot_driver/cmake/ament_cmake_export_libraries-extras.cmake
+[70.461s] -- Symlinking: /home/ubuntu/workspace/Velizar/robotics_v1/install/ur_robot_driver/share/ur_robot_driver/cmake/ament_cmake_export_dependencies-extras.cmake
+[70.505s] -- Symlinking: /home/ubuntu/workspace/Velizar/robotics_v1/install/ur_robot_driver/share/ur_robot_driver/cmake/ur_robot_driverConfig.cmake
+[70.542s] -- Symlinking: /home/ubuntu/workspace/Velizar/robotics_v1/install/ur_robot_driver/share/ur_robot_driver/cmake/ur_robot_driverConfig-version.cmake
+[70.572s] -- Symlinking: /home/ubuntu/workspace/Velizar/robotics_v1/install/ur_robot_driver/share/ur_robot_driver/package.xml
+[70.621s] Invoked command in '/home/ubuntu/workspace/Velizar/robotics_v1/build/ur_robot_driver' returned '0': AMENT_PREFIX_PATH=/home/ubuntu/workspace/Velizar/robotics_v1/install/ur_controllers:/home/ubuntu/workspace/Velizar/robotics_v1/install/ur_description:/home/ubuntu/workspace/Velizar/robotics_v1/install/ur_dashboard_msgs:/home/ubuntu/workspace/Velizar/robotics_v1/install/ur_bringup:${AMENT_PREFIX_PATH} CMAKE_PREFIX_PATH=/home/ubuntu/workspace/Velizar/robotics_v1/install/ur_controllers:/home/ubuntu/workspace/Velizar/robotics_v1/install/ur_description:/home/ubuntu/workspace/Velizar/robotics_v1/install/ur_dashboard_msgs:/home/ubuntu/workspace/Velizar/robotics_v1/install/ur_client_library:/home/ubuntu/workspace/Velizar/robotics_v1/install/ur_bringup:/opt/ros/foxy LD_LIBRARY_PATH=/home/ubuntu/workspace/Velizar/robotics_v1/install/ur_controllers/lib:/home/ubuntu/workspace/Velizar/robotics_v1/install/ur_dashboard_msgs/lib:/home/ubuntu/workspace/Velizar/robotics_v1/install/ur_client_library/lib:${LD_LIBRARY_PATH} PKG_CONFIG_PATH=/home/ubuntu/workspace/Velizar/robotics_v1/install/ur_client_library/lib/x86_64-linux-gnu/pkgconfig:/home/ubuntu/workspace/Velizar/robotics_v1/install/ur_client_library/lib/pkgconfig PS1=[\u@\h \W]$(git_branch)$ PYTHONPATH=/home/ubuntu/workspace/Velizar/robotics_v1/install/ur_dashboard_msgs/lib/python3.8/site-packages:${PYTHONPATH} /usr/bin/cmake --install /home/ubuntu/workspace/Velizar/robotics_v1/build/ur_robot_driver

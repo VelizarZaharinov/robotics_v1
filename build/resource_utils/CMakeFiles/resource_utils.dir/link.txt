@@ -1,0 +1,2 @@
+/usr/bin/ar qc libresource_utils.a  CMakeFiles/resource_utils.dir/src/common/ResourceFileHeader.cpp.o CMakeFiles/resource_utils.dir/src/defines/SoundDefines.cpp.o CMakeFiles/resource_utils.dir/src/resource_loader/ResourceLoader.cpp.o CMakeFiles/resource_utils.dir/src/structs/CombinedStructs.cpp.o CMakeFiles/resource_utils.dir/src/structs/DataHeader.cpp.o CMakeFiles/resource_utils.dir/src/structs/ResourceData.cpp.o CMakeFiles/resource_utils.dir/src/structs/FontData.cpp.o CMakeFiles/resource_utils.dir/src/structs/SoundData.cpp.o
+/usr/bin/ranlib libresource_utils.a

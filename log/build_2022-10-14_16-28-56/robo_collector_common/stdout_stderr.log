@@ -1,0 +1,71 @@
+-- The CXX compiler identification is Clang 10.0.0
+-- Check for working CXX compiler: /usr/bin/clang++
+-- Check for working CXX compiler: /usr/bin/clang++ -- works
+-- Detecting CXX compiler ABI info
+-- Detecting CXX compiler ABI info - done
+-- Detecting CXX compile features
+-- Detecting CXX compile features - done
+-- Found cmake_helpers: 1.0.0 (/home/ubuntu/workspace/Velizar/robotics_v1/install/cmake_helpers/share/cmake_helpers/cmake)
+-- Looking for C++ include pthread.h
+-- Looking for C++ include pthread.h - found
+-- Performing Test CMAKE_HAVE_LIBC_PTHREAD
+-- Performing Test CMAKE_HAVE_LIBC_PTHREAD - Failed
+-- Looking for pthread_create in pthreads
+-- Looking for pthread_create in pthreads - not found
+-- Looking for pthread_create in pthread
+-- Looking for pthread_create in pthread - found
+-- Found Threads: TRUE  
+-- Found robo_collector_interfaces: 1.0.0 (/home/ubuntu/workspace/Velizar/robotics_v1/install/robo_collector_interfaces/share/robo_collector_interfaces/cmake)
+-- Found PythonInterp: /usr/bin/python3 (found suitable version "3.8.10", minimum required is "3") 
+-- Using PYTHON_EXECUTABLE: /usr/bin/python3
+-- Override CMake install command with custom implementation using symlinks instead of copying resources
+-- Using all available rosidl_typesupport_c: rosidl_typesupport_fastrtps_c;rosidl_typesupport_introspection_c
+-- Found rosidl_adapter: 1.2.1 (/opt/ros/foxy/share/rosidl_adapter/cmake)
+-- Found OpenSSL: /usr/lib/x86_64-linux-gnu/libcrypto.so (found version "1.1.1f")  
+-- Found FastRTPS: /opt/ros/foxy/include  
+-- Using all available rosidl_typesupport_cpp: rosidl_typesupport_fastrtps_cpp;rosidl_typesupport_introspection_cpp
+-- Configuring done
+-- Generating done
+-- Build files have been written to: /home/ubuntu/workspace/Velizar/robotics_v1/build/robo_collector_common
+[35m[1mScanning dependencies of target robo_collector_common[0m
+[ 16%] [32mBuilding CXX object CMakeFiles/robo_collector_common.dir/src/layout/controller/buttons/MoveButton.cpp.o[0m
+[ 33%] [32mBuilding CXX object CMakeFiles/robo_collector_common.dir/src/layout/controller/buttons/HelpButton.cpp.o[0m
+[ 50%] [32mBuilding CXX object CMakeFiles/robo_collector_common.dir/src/layout/controller/buttons/SettingsButton.cpp.o[0m
+[ 66%] [32mBuilding CXX object CMakeFiles/robo_collector_common.dir/src/layout/controller/RoboCollectorUiController.cpp.o[0m
+[ 83%] [32mBuilding CXX object CMakeFiles/robo_collector_common.dir/src/message_helpers/RoboCollectorMessageHelpers.cpp.o[0m
+[100%] [32m[1mLinking CXX static library librobo_collector_common.a[0m
+[100%] Built target robo_collector_common
+-- Install configuration: "Debug"
+-- Execute custom install script
+-- Symlinking: /home/ubuntu/workspace/Velizar/robotics_v1/install/robo_collector_common/share/robo_collector_common/package.xml
+-- Symlinking: /home/ubuntu/workspace/Velizar/robotics_v1/install/robo_collector_common/lib/robo_collector_common/librobo_collector_common.a
+-- Symlinking: /home/ubuntu/workspace/Velizar/robotics_v1/install/robo_collector_common/share/ament_index/resource_index/packages/robo_collector_common
+-- Symlinking: /home/ubuntu/workspace/Velizar/robotics_v1/install/robo_collector_common/share/robo_collector_common/hook/ament_prefix_path.dsv
+-- Symlinking: /home/ubuntu/workspace/Velizar/robotics_v1/install/robo_collector_common/share/robo_collector_common/hook/ros_package_path.dsv
+-- Symlinking: /home/ubuntu/workspace/Velizar/robotics_v1/install/robo_collector_common/share/ament_index/resource_index/package_run_dependencies/robo_collector_common
+-- Symlinking: /home/ubuntu/workspace/Velizar/robotics_v1/install/robo_collector_common/share/ament_index/resource_index/parent_prefix_path/robo_collector_common
+-- Symlinking: /home/ubuntu/workspace/Velizar/robotics_v1/install/robo_collector_common/share/robo_collector_common/environment/ament_prefix_path.sh
+-- Symlinking: /home/ubuntu/workspace/Velizar/robotics_v1/install/robo_collector_common/share/robo_collector_common/environment/ament_prefix_path.dsv
+-- Symlinking: /home/ubuntu/workspace/Velizar/robotics_v1/install/robo_collector_common/share/robo_collector_common/environment/path.sh
+-- Symlinking: /home/ubuntu/workspace/Velizar/robotics_v1/install/robo_collector_common/share/robo_collector_common/environment/path.dsv
+-- Symlinking: /home/ubuntu/workspace/Velizar/robotics_v1/install/robo_collector_common/share/robo_collector_common/local_setup.bash
+-- Symlinking: /home/ubuntu/workspace/Velizar/robotics_v1/install/robo_collector_common/share/robo_collector_common/local_setup.sh
+-- Symlinking: /home/ubuntu/workspace/Velizar/robotics_v1/install/robo_collector_common/share/robo_collector_common/local_setup.zsh
+-- Symlinking: /home/ubuntu/workspace/Velizar/robotics_v1/install/robo_collector_common/share/robo_collector_common/local_setup.dsv
+-- Symlinking: /home/ubuntu/workspace/Velizar/robotics_v1/install/robo_collector_common/share/robo_collector_common/package.dsv
+-- Symlinking: /home/ubuntu/workspace/Velizar/robotics_v1/install/robo_collector_common/share/ament_index/resource_index/packages/robo_collector_common
+-- Symlinking: /home/ubuntu/workspace/Velizar/robotics_v1/install/robo_collector_common/share/robo_collector_common/cmake/robo_collector_commonConfig.cmake
+-- Symlinking: /home/ubuntu/workspace/Velizar/robotics_v1/install/robo_collector_common/share/robo_collector_common/cmake/robo_collector_commonConfig-version.cmake
+-- Up-to-date symlink: /home/ubuntu/workspace/Velizar/robotics_v1/install/robo_collector_common/share/robo_collector_common/package.xml
+-- Symlinking: /home/ubuntu/workspace/Velizar/robotics_v1/install/robo_collector_common/include/robo_collector_common/defines/RoboCollectorFunctionalDefines.h
+-- Symlinking: /home/ubuntu/workspace/Velizar/robotics_v1/install/robo_collector_common/include/robo_collector_common/defines/RoboCollectorTopics.h
+-- Symlinking: /home/ubuntu/workspace/Velizar/robotics_v1/install/robo_collector_common/include/robo_collector_common/layout/controller/RoboCollectorUiController.h
+-- Symlinking: /home/ubuntu/workspace/Velizar/robotics_v1/install/robo_collector_common/include/robo_collector_common/layout/controller/buttons/HelpButton.h
+-- Symlinking: /home/ubuntu/workspace/Velizar/robotics_v1/install/robo_collector_common/include/robo_collector_common/layout/controller/buttons/MoveButton.h
+-- Symlinking: /home/ubuntu/workspace/Velizar/robotics_v1/install/robo_collector_common/include/robo_collector_common/layout/controller/buttons/SettingsButton.h
+-- Symlinking: /home/ubuntu/workspace/Velizar/robotics_v1/install/robo_collector_common/include/robo_collector_common/layout/controller/config/RoboCollectorUiControllerBaseConfig.h
+-- Symlinking: /home/ubuntu/workspace/Velizar/robotics_v1/install/robo_collector_common/include/robo_collector_common/message_helpers/RoboCollectorMessageHelpers.h
+-- Symlinking: /home/ubuntu/workspace/Velizar/robotics_v1/install/robo_collector_common/lib/cmake/robo_collector_common/robo_collector_commonConfig.cmake
+-- Installing: /home/ubuntu/workspace/Velizar/robotics_v1/install/robo_collector_common/lib/librobo_collector_common.a
+-- Installing: /home/ubuntu/workspace/Velizar/robotics_v1/install/robo_collector_common/lib/cmake/robo_collector_common/robo_collector_commonTargets.cmake
+-- Installing: /home/ubuntu/workspace/Velizar/robotics_v1/install/robo_collector_common/lib/cmake/robo_collector_common/robo_collector_commonTargets-debug.cmake

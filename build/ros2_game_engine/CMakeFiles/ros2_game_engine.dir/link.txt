@@ -1,0 +1,2 @@
+/usr/bin/ar qc libros2_game_engine.a  CMakeFiles/ros2_game_engine.dir/src/communicator/Ros2Communicator.cpp.o CMakeFiles/ros2_game_engine.dir/src/communicator/config/Ros2CommunicatorConfig.cpp.o
+/usr/bin/ranlib libros2_game_engine.a

@@ -1,0 +1,68 @@
+[0.042s] Invoking command in '/home/ubuntu/workspace/Velizar/robotics_v1/build/resource_builder': CMAKE_PREFIX_PATH=/home/ubuntu/workspace/Velizar/robotics_v1/install/resource_utils:/home/ubuntu/workspace/Velizar/robotics_v1/install/utils:/home/ubuntu/workspace/Velizar/robotics_v1/install/cmake_helpers:/opt/ros/foxy PKG_CONFIG_PATH=/home/ubuntu/workspace/Velizar/robotics_v1/install/resource_utils/lib/x86_64-linux-gnu/pkgconfig:/home/ubuntu/workspace/Velizar/robotics_v1/install/resource_utils/lib/pkgconfig:/home/ubuntu/workspace/Velizar/robotics_v1/install/utils/lib/x86_64-linux-gnu/pkgconfig:/home/ubuntu/workspace/Velizar/robotics_v1/install/utils/lib/pkgconfig:/home/ubuntu/workspace/Velizar/robotics_v1/install/cmake_helpers/lib/x86_64-linux-gnu/pkgconfig:/home/ubuntu/workspace/Velizar/robotics_v1/install/cmake_helpers/lib/pkgconfig PS1=[\u@\h \W]$(git_branch)$ /usr/bin/cmake /home/ubuntu/workspace/Velizar/robotics_v1/src/tools/resource_builder -DCMAKE_BUILD_TYPE=Debug -DCMAKE_CXX_COMPILER=/usr/bin/clang++ -DCMAKE_INSTALL_PREFIX=/home/ubuntu/workspace/Velizar/robotics_v1/install/resource_builder
+[0.358s] -- The CXX compiler identification is Clang 10.0.0
+[0.380s] -- Check for working CXX compiler: /usr/bin/clang++
+[0.721s] -- Check for working CXX compiler: /usr/bin/clang++ -- works
+[0.724s] -- Detecting CXX compiler ABI info
+[1.061s] -- Detecting CXX compiler ABI info - done
+[1.115s] -- Detecting CXX compile features
+[1.117s] -- Detecting CXX compile features - done
+[1.121s] -- Found cmake_helpers: 1.0.0 (/home/ubuntu/workspace/Velizar/robotics_v1/install/cmake_helpers/share/cmake_helpers/cmake)
+[1.127s] -- Looking for C++ include pthread.h
+[1.487s] -- Looking for C++ include pthread.h - found
+[1.487s] -- Performing Test CMAKE_HAVE_LIBC_PTHREAD
+[1.852s] -- Performing Test CMAKE_HAVE_LIBC_PTHREAD - Failed
+[1.853s] -- Looking for pthread_create in pthreads
+[2.104s] -- Looking for pthread_create in pthreads - not found
+[2.104s] -- Looking for pthread_create in pthread
+[2.449s] -- Looking for pthread_create in pthread - found
+[2.452s] -- Found Threads: TRUE  
+[2.462s] -- Found ament_cmake: 0.9.9 (/opt/ros/foxy/share/ament_cmake/cmake)
+[2.531s] -- Found PythonInterp: /usr/bin/python3 (found suitable version "3.8.10", minimum required is "3") 
+[2.532s] -- Using PYTHON_EXECUTABLE: /usr/bin/python3
+[3.224s] -- Configuring done
+[3.240s] -- Generating done
+[3.244s] -- Build files have been written to: /home/ubuntu/workspace/Velizar/robotics_v1/build/resource_builder
+[3.256s] Invoked command in '/home/ubuntu/workspace/Velizar/robotics_v1/build/resource_builder' returned '0': CMAKE_PREFIX_PATH=/home/ubuntu/workspace/Velizar/robotics_v1/install/resource_utils:/home/ubuntu/workspace/Velizar/robotics_v1/install/utils:/home/ubuntu/workspace/Velizar/robotics_v1/install/cmake_helpers:/opt/ros/foxy PKG_CONFIG_PATH=/home/ubuntu/workspace/Velizar/robotics_v1/install/resource_utils/lib/x86_64-linux-gnu/pkgconfig:/home/ubuntu/workspace/Velizar/robotics_v1/install/resource_utils/lib/pkgconfig:/home/ubuntu/workspace/Velizar/robotics_v1/install/utils/lib/x86_64-linux-gnu/pkgconfig:/home/ubuntu/workspace/Velizar/robotics_v1/install/utils/lib/pkgconfig:/home/ubuntu/workspace/Velizar/robotics_v1/install/cmake_helpers/lib/x86_64-linux-gnu/pkgconfig:/home/ubuntu/workspace/Velizar/robotics_v1/install/cmake_helpers/lib/pkgconfig PS1=[\u@\h \W]$(git_branch)$ /usr/bin/cmake /home/ubuntu/workspace/Velizar/robotics_v1/src/tools/resource_builder -DCMAKE_BUILD_TYPE=Debug -DCMAKE_CXX_COMPILER=/usr/bin/clang++ -DCMAKE_INSTALL_PREFIX=/home/ubuntu/workspace/Velizar/robotics_v1/install/resource_builder
+[3.257s] Invoking command in '/home/ubuntu/workspace/Velizar/robotics_v1/build/resource_builder': CMAKE_PREFIX_PATH=/home/ubuntu/workspace/Velizar/robotics_v1/install/resource_utils:/home/ubuntu/workspace/Velizar/robotics_v1/install/utils:/home/ubuntu/workspace/Velizar/robotics_v1/install/cmake_helpers:/opt/ros/foxy PKG_CONFIG_PATH=/home/ubuntu/workspace/Velizar/robotics_v1/install/resource_utils/lib/x86_64-linux-gnu/pkgconfig:/home/ubuntu/workspace/Velizar/robotics_v1/install/resource_utils/lib/pkgconfig:/home/ubuntu/workspace/Velizar/robotics_v1/install/utils/lib/x86_64-linux-gnu/pkgconfig:/home/ubuntu/workspace/Velizar/robotics_v1/install/utils/lib/pkgconfig:/home/ubuntu/workspace/Velizar/robotics_v1/install/cmake_helpers/lib/x86_64-linux-gnu/pkgconfig:/home/ubuntu/workspace/Velizar/robotics_v1/install/cmake_helpers/lib/pkgconfig PS1=[\u@\h \W]$(git_branch)$ /usr/bin/cmake --build /home/ubuntu/workspace/Velizar/robotics_v1/build/resource_builder -- -j2 -l2
+[3.358s] [35m[1mScanning dependencies of target resource_builder[0m
+[3.393s] [ 16%] [32mBuilding CXX object CMakeFiles/resource_builder.dir/src/FileBuilder.cpp.o[0m
+[3.394s] [ 33%] [32mBuilding CXX object CMakeFiles/resource_builder.dir/src/FileParser.cpp.o[0m
+[4.910s] [ 50%] [32mBuilding CXX object CMakeFiles/resource_builder.dir/src/main.cpp.o[0m
+[5.159s] [ 66%] [32mBuilding CXX object CMakeFiles/resource_builder.dir/src/ResourceParser.cpp.o[0m
+[6.554s] [ 83%] [32mBuilding CXX object CMakeFiles/resource_builder.dir/src/SyntaxChecker.cpp.o[0m
+[7.598s] [100%] [32m[1mLinking CXX executable resource_builder[0m
+[7.989s] [100%] Built target resource_builder
+[8.018s] Invoked command in '/home/ubuntu/workspace/Velizar/robotics_v1/build/resource_builder' returned '0': CMAKE_PREFIX_PATH=/home/ubuntu/workspace/Velizar/robotics_v1/install/resource_utils:/home/ubuntu/workspace/Velizar/robotics_v1/install/utils:/home/ubuntu/workspace/Velizar/robotics_v1/install/cmake_helpers:/opt/ros/foxy PKG_CONFIG_PATH=/home/ubuntu/workspace/Velizar/robotics_v1/install/resource_utils/lib/x86_64-linux-gnu/pkgconfig:/home/ubuntu/workspace/Velizar/robotics_v1/install/resource_utils/lib/pkgconfig:/home/ubuntu/workspace/Velizar/robotics_v1/install/utils/lib/x86_64-linux-gnu/pkgconfig:/home/ubuntu/workspace/Velizar/robotics_v1/install/utils/lib/pkgconfig:/home/ubuntu/workspace/Velizar/robotics_v1/install/cmake_helpers/lib/x86_64-linux-gnu/pkgconfig:/home/ubuntu/workspace/Velizar/robotics_v1/install/cmake_helpers/lib/pkgconfig PS1=[\u@\h \W]$(git_branch)$ /usr/bin/cmake --build /home/ubuntu/workspace/Velizar/robotics_v1/build/resource_builder -- -j2 -l2
+[8.109s] Invoking command in '/home/ubuntu/workspace/Velizar/robotics_v1/build/resource_builder': CMAKE_PREFIX_PATH=/home/ubuntu/workspace/Velizar/robotics_v1/install/resource_utils:/home/ubuntu/workspace/Velizar/robotics_v1/install/utils:/home/ubuntu/workspace/Velizar/robotics_v1/install/cmake_helpers:/opt/ros/foxy PKG_CONFIG_PATH=/home/ubuntu/workspace/Velizar/robotics_v1/install/resource_utils/lib/x86_64-linux-gnu/pkgconfig:/home/ubuntu/workspace/Velizar/robotics_v1/install/resource_utils/lib/pkgconfig:/home/ubuntu/workspace/Velizar/robotics_v1/install/utils/lib/x86_64-linux-gnu/pkgconfig:/home/ubuntu/workspace/Velizar/robotics_v1/install/utils/lib/pkgconfig:/home/ubuntu/workspace/Velizar/robotics_v1/install/cmake_helpers/lib/x86_64-linux-gnu/pkgconfig:/home/ubuntu/workspace/Velizar/robotics_v1/install/cmake_helpers/lib/pkgconfig PS1=[\u@\h \W]$(git_branch)$ /usr/bin/cmake --install /home/ubuntu/workspace/Velizar/robotics_v1/build/resource_builder
+[8.134s] -- Install configuration: "Debug"
+[8.135s] -- Installing: /home/ubuntu/workspace/Velizar/robotics_v1/install/resource_builder/share/resource_builder/package.xml
+[8.135s] -- Installing: /home/ubuntu/workspace/Velizar/robotics_v1/install/resource_builder/lib/resource_builder/resource_builder
+[8.139s] -- Installing: /home/ubuntu/workspace/Velizar/robotics_v1/install/resource_builder/share/ament_index/resource_index/packages/resource_builder
+[8.139s] -- Installing: /home/ubuntu/workspace/Velizar/robotics_v1/install/resource_builder/share/resource_builder/hook/ament_prefix_path.dsv
+[8.140s] -- Installing: /home/ubuntu/workspace/Velizar/robotics_v1/install/resource_builder/share/resource_builder/hook/ros_package_path.dsv
+[8.140s] -- Installing: /home/ubuntu/workspace/Velizar/robotics_v1/install/resource_builder/share/ament_index/resource_index/package_run_dependencies/resource_builder
+[8.141s] -- Installing: /home/ubuntu/workspace/Velizar/robotics_v1/install/resource_builder/share/ament_index/resource_index/parent_prefix_path/resource_builder
+[8.141s] -- Installing: /home/ubuntu/workspace/Velizar/robotics_v1/install/resource_builder/share/resource_builder/environment/ament_prefix_path.sh
+[8.141s] -- Installing: /home/ubuntu/workspace/Velizar/robotics_v1/install/resource_builder/share/resource_builder/environment/ament_prefix_path.dsv
+[8.142s] -- Installing: /home/ubuntu/workspace/Velizar/robotics_v1/install/resource_builder/share/resource_builder/environment/path.sh
+[8.142s] -- Installing: /home/ubuntu/workspace/Velizar/robotics_v1/install/resource_builder/share/resource_builder/environment/path.dsv
+[8.142s] -- Installing: /home/ubuntu/workspace/Velizar/robotics_v1/install/resource_builder/share/resource_builder/local_setup.bash
+[8.143s] -- Installing: /home/ubuntu/workspace/Velizar/robotics_v1/install/resource_builder/share/resource_builder/local_setup.sh
+[8.143s] -- Installing: /home/ubuntu/workspace/Velizar/robotics_v1/install/resource_builder/share/resource_builder/local_setup.zsh
+[8.143s] -- Installing: /home/ubuntu/workspace/Velizar/robotics_v1/install/resource_builder/share/resource_builder/local_setup.dsv
+[8.144s] -- Installing: /home/ubuntu/workspace/Velizar/robotics_v1/install/resource_builder/share/resource_builder/package.dsv
+[8.144s] -- Installing: /home/ubuntu/workspace/Velizar/robotics_v1/install/resource_builder/share/ament_index/resource_index/packages/resource_builder
+[8.145s] -- Installing: /home/ubuntu/workspace/Velizar/robotics_v1/install/resource_builder/share/resource_builder/cmake/resource_builderConfig.cmake
+[8.145s] -- Installing: /home/ubuntu/workspace/Velizar/robotics_v1/install/resource_builder/share/resource_builder/cmake/resource_builderConfig-version.cmake
+[8.145s] -- Up-to-date: /home/ubuntu/workspace/Velizar/robotics_v1/install/resource_builder/share/resource_builder/package.xml
+[8.146s] -- Installing: /home/ubuntu/workspace/Velizar/robotics_v1/install/resource_builder/bin/resource_builder
+[8.150s] -- Installing: /home/ubuntu/workspace/Velizar/robotics_v1/install/resource_builder/include
+[8.151s] -- Installing: /home/ubuntu/workspace/Velizar/robotics_v1/install/resource_builder/include/resource_builder
+[8.151s] -- Installing: /home/ubuntu/workspace/Velizar/robotics_v1/install/resource_builder/include/resource_builder/FileParser.h
+[8.151s] -- Installing: /home/ubuntu/workspace/Velizar/robotics_v1/install/resource_builder/include/resource_builder/FileBuilder.h
+[8.151s] -- Installing: /home/ubuntu/workspace/Velizar/robotics_v1/install/resource_builder/include/resource_builder/SyntaxChecker.h
+[8.152s] -- Installing: /home/ubuntu/workspace/Velizar/robotics_v1/install/resource_builder/include/resource_builder/ResourceParser.h
+[8.153s] -- Installing: /home/ubuntu/workspace/Velizar/robotics_v1/install/resource_builder/lib/cmake/resource_builder/resource_builderTargets.cmake
+[8.153s] -- Installing: /home/ubuntu/workspace/Velizar/robotics_v1/install/resource_builder/lib/cmake/resource_builder/resource_builderTargets-debug.cmake
+[8.154s] -- Installing: /home/ubuntu/workspace/Velizar/robotics_v1/install/resource_builder/lib/cmake/resource_builder/resource_builderConfig.cmake
+[8.166s] Invoked command in '/home/ubuntu/workspace/Velizar/robotics_v1/build/resource_builder' returned '0': CMAKE_PREFIX_PATH=/home/ubuntu/workspace/Velizar/robotics_v1/install/resource_utils:/home/ubuntu/workspace/Velizar/robotics_v1/install/utils:/home/ubuntu/workspace/Velizar/robotics_v1/install/cmake_helpers:/opt/ros/foxy PKG_CONFIG_PATH=/home/ubuntu/workspace/Velizar/robotics_v1/install/resource_utils/lib/x86_64-linux-gnu/pkgconfig:/home/ubuntu/workspace/Velizar/robotics_v1/install/resource_utils/lib/pkgconfig:/home/ubuntu/workspace/Velizar/robotics_v1/install/utils/lib/x86_64-linux-gnu/pkgconfig:/home/ubuntu/workspace/Velizar/robotics_v1/install/utils/lib/pkgconfig:/home/ubuntu/workspace/Velizar/robotics_v1/install/cmake_helpers/lib/x86_64-linux-gnu/pkgconfig:/home/ubuntu/workspace/Velizar/robotics_v1/install/cmake_helpers/lib/pkgconfig PS1=[\u@\h \W]$(git_branch)$ /usr/bin/cmake --install /home/ubuntu/workspace/Velizar/robotics_v1/build/resource_builder
