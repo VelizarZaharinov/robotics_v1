@@ -1,0 +1,30 @@
+running develop
+Removing /home/ubuntu/workspace/Velizar/robotics_v1/install/robo_collector_controller_py/lib/python3.8/site-packages/robo-collector-controller-py.egg-link (link to .)
+running egg_info
+writing ../../../build/robo_collector_controller_py/robo_collector_controller_py.egg-info/PKG-INFO
+writing dependency_links to ../../../build/robo_collector_controller_py/robo_collector_controller_py.egg-info/dependency_links.txt
+writing entry points to ../../../build/robo_collector_controller_py/robo_collector_controller_py.egg-info/entry_points.txt
+writing requirements to ../../../build/robo_collector_controller_py/robo_collector_controller_py.egg-info/requires.txt
+writing top-level names to ../../../build/robo_collector_controller_py/robo_collector_controller_py.egg-info/top_level.txt
+reading manifest file '../../../build/robo_collector_controller_py/robo_collector_controller_py.egg-info/SOURCES.txt'
+writing manifest file '../../../build/robo_collector_controller_py/robo_collector_controller_py.egg-info/SOURCES.txt'
+running build
+running build_py
+creating /home/ubuntu/workspace/Velizar/robotics_v1/build/robo_collector_controller_py/build
+creating /home/ubuntu/workspace/Velizar/robotics_v1/build/robo_collector_controller_py/build/lib
+creating /home/ubuntu/workspace/Velizar/robotics_v1/build/robo_collector_controller_py/build/lib/robo_collector_controller_py
+copying robo_collector_controller_py/__init__.py -> /home/ubuntu/workspace/Velizar/robotics_v1/build/robo_collector_controller_py/build/lib/robo_collector_controller_py
+copying robo_collector_controller_py/robo_collector_controller.py -> /home/ubuntu/workspace/Velizar/robotics_v1/build/robo_collector_controller_py/build/lib/robo_collector_controller_py
+running install
+running install_lib
+creating /home/ubuntu/workspace/Velizar/robotics_v1/install/robo_collector_controller_py/lib/python3.8/site-packages/robo_collector_controller_py
+copying /home/ubuntu/workspace/Velizar/robotics_v1/build/robo_collector_controller_py/build/lib/robo_collector_controller_py/__init__.py -> /home/ubuntu/workspace/Velizar/robotics_v1/install/robo_collector_controller_py/lib/python3.8/site-packages/robo_collector_controller_py
+copying /home/ubuntu/workspace/Velizar/robotics_v1/build/robo_collector_controller_py/build/lib/robo_collector_controller_py/robo_collector_controller.py -> /home/ubuntu/workspace/Velizar/robotics_v1/install/robo_collector_controller_py/lib/python3.8/site-packages/robo_collector_controller_py
+byte-compiling /home/ubuntu/workspace/Velizar/robotics_v1/install/robo_collector_controller_py/lib/python3.8/site-packages/robo_collector_controller_py/__init__.py to __init__.cpython-38.pyc
+byte-compiling /home/ubuntu/workspace/Velizar/robotics_v1/install/robo_collector_controller_py/lib/python3.8/site-packages/robo_collector_controller_py/robo_collector_controller.py to robo_collector_controller.cpython-38.pyc
+running install_data
+running install_egg_info
+Copying ../../../build/robo_collector_controller_py/robo_collector_controller_py.egg-info to /home/ubuntu/workspace/Velizar/robotics_v1/install/robo_collector_controller_py/lib/python3.8/site-packages/robo_collector_controller_py-0.0.0-py3.8.egg-info
+running install_scripts
+Installing talker script to /home/ubuntu/workspace/Velizar/robotics_v1/install/robo_collector_controller_py/lib/robo_collector_controller_py
+writing list of installed files to '/home/ubuntu/workspace/Velizar/robotics_v1/build/robo_collector_controller_py/install.log'
