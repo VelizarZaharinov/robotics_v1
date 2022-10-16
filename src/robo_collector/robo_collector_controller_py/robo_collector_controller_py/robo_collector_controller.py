@@ -54,7 +54,7 @@ class RobotPendant(Node):
 
         msg.user = 'Velizar Zaharinov'
         msg.repository = 'https://github.com/VelizarZaharinov/robotics_v1'
-        msg.commit_sha = 'TODO'
+        msg.commit_sha = '5f7220939d0bef7f15c021813e3525aeb9f93e12'
 
         self.publisher_authenticate.publish(msg)
         print('Authentication complete')

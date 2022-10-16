@@ -1,0 +1,57 @@
+-- Found cmake_helpers: 1.0.0 (/home/ubuntu/workspace/Velizar/robotics_v1/install/cmake_helpers/share/cmake_helpers/cmake)
+-- Found ament_cmake: 0.9.9 (/opt/ros/foxy/share/ament_cmake/cmake)
+-- Using PYTHON_EXECUTABLE: /usr/bin/python3
+-- Override CMake install command with custom implementation using symlinks instead of copying resources
+-- Found ament_index_cpp: 1.1.0 (/opt/ros/foxy/share/ament_index_cpp/cmake)
+-- Found rclcpp: 2.4.1 (/opt/ros/foxy/share/rclcpp/cmake)
+-- Using all available rosidl_typesupport_c: rosidl_typesupport_fastrtps_c;rosidl_typesupport_introspection_c
+-- Found rosidl_adapter: 1.2.1 (/opt/ros/foxy/share/rosidl_adapter/cmake)
+-- Using all available rosidl_typesupport_cpp: rosidl_typesupport_fastrtps_cpp;rosidl_typesupport_introspection_cpp
+-- Found rmw_implementation_cmake: 1.0.3 (/opt/ros/foxy/share/rmw_implementation_cmake/cmake)
+-- Using RMW implementation 'rmw_fastrtps_cpp' as default
+-- Found robo_collector_interfaces: 1.0.0 (/home/ubuntu/workspace/Velizar/robotics_v1/install/robo_collector_interfaces/share/robo_collector_interfaces/cmake)
+-- Configuring done
+-- Generating done
+-- Build files have been written to: /home/ubuntu/workspace/Velizar/robotics_v1/build/robo_collector_controller
+[100%] Built target robo_collector_controller
+-- Install configuration: "Debug"
+-- Execute custom install script
+-- Up-to-date symlink: /home/ubuntu/workspace/Velizar/robotics_v1/install/robo_collector_controller/share/robo_collector_controller/package.xml
+-- Up-to-date symlink: /home/ubuntu/workspace/Velizar/robotics_v1/install/robo_collector_controller/share/robo_collector_controller//launch/launch.py
+-- Up-to-date symlink: /home/ubuntu/workspace/Velizar/robotics_v1/install/robo_collector_controller/share/robo_collector_controller//config/params.yaml
+-- Up-to-date symlink: /home/ubuntu/workspace/Velizar/robotics_v1/install/robo_collector_controller/lib/robo_collector_controller/robo_collector_controller
+-- Symlinking: /home/ubuntu/workspace/Velizar/robotics_v1/install/robo_collector_controller/share/ament_index/resource_index/packages/robo_collector_controller
+-- Up-to-date symlink: /home/ubuntu/workspace/Velizar/robotics_v1/install/robo_collector_controller/share/robo_collector_controller/hook/ament_prefix_path.dsv
+-- Up-to-date symlink: /home/ubuntu/workspace/Velizar/robotics_v1/install/robo_collector_controller/share/robo_collector_controller/hook/ros_package_path.dsv
+-- Up-to-date symlink: /home/ubuntu/workspace/Velizar/robotics_v1/install/robo_collector_controller/share/ament_index/resource_index/package_run_dependencies/robo_collector_controller
+-- Up-to-date symlink: /home/ubuntu/workspace/Velizar/robotics_v1/install/robo_collector_controller/share/ament_index/resource_index/parent_prefix_path/robo_collector_controller
+-- Up-to-date symlink: /home/ubuntu/workspace/Velizar/robotics_v1/install/robo_collector_controller/share/robo_collector_controller/environment/ament_prefix_path.sh
+-- Up-to-date symlink: /home/ubuntu/workspace/Velizar/robotics_v1/install/robo_collector_controller/share/robo_collector_controller/environment/ament_prefix_path.dsv
+-- Up-to-date symlink: /home/ubuntu/workspace/Velizar/robotics_v1/install/robo_collector_controller/share/robo_collector_controller/environment/path.sh
+-- Up-to-date symlink: /home/ubuntu/workspace/Velizar/robotics_v1/install/robo_collector_controller/share/robo_collector_controller/environment/path.dsv
+-- Up-to-date symlink: /home/ubuntu/workspace/Velizar/robotics_v1/install/robo_collector_controller/share/robo_collector_controller/local_setup.bash
+-- Up-to-date symlink: /home/ubuntu/workspace/Velizar/robotics_v1/install/robo_collector_controller/share/robo_collector_controller/local_setup.sh
+-- Up-to-date symlink: /home/ubuntu/workspace/Velizar/robotics_v1/install/robo_collector_controller/share/robo_collector_controller/local_setup.zsh
+-- Up-to-date symlink: /home/ubuntu/workspace/Velizar/robotics_v1/install/robo_collector_controller/share/robo_collector_controller/local_setup.dsv
+-- Symlinking: /home/ubuntu/workspace/Velizar/robotics_v1/install/robo_collector_controller/share/robo_collector_controller/package.dsv
+-- Symlinking: /home/ubuntu/workspace/Velizar/robotics_v1/install/robo_collector_controller/share/ament_index/resource_index/packages/robo_collector_controller
+-- Up-to-date symlink: /home/ubuntu/workspace/Velizar/robotics_v1/install/robo_collector_controller/share/robo_collector_controller/cmake/robo_collector_controllerConfig.cmake
+-- Up-to-date symlink: /home/ubuntu/workspace/Velizar/robotics_v1/install/robo_collector_controller/share/robo_collector_controller/cmake/robo_collector_controllerConfig-version.cmake
+-- Up-to-date symlink: /home/ubuntu/workspace/Velizar/robotics_v1/install/robo_collector_controller/share/robo_collector_controller/package.xml
+-- Up-to-date symlink: /home/ubuntu/workspace/Velizar/robotics_v1/install/robo_collector_controller/share/robo_collector_controller/resources//RoboCollectorController.rsrc
+-- Up-to-date symlink: /home/ubuntu/workspace/Velizar/robotics_v1/install/robo_collector_controller/share/robo_collector_controller/resources//f/vinque_rg_30.ttf
+-- Up-to-date symlink: /home/ubuntu/workspace/Velizar/robotics_v1/install/robo_collector_controller/share/robo_collector_controller/resources//generated/RoboCollectorControllerResources.h
+-- Up-to-date symlink: /home/ubuntu/workspace/Velizar/robotics_v1/install/robo_collector_controller/share/robo_collector_controller/resources//generated/RoboCollectorControllerResourcesDynamic.h
+-- Up-to-date symlink: /home/ubuntu/workspace/Velizar/robotics_v1/install/robo_collector_controller/share/robo_collector_controller/resources//generated/RoboCollectorControllerResourcesDynamicValues.h
+-- Up-to-date symlink: /home/ubuntu/workspace/Velizar/robotics_v1/install/robo_collector_controller/share/robo_collector_controller/resources//generated/fonts.bin
+-- Up-to-date symlink: /home/ubuntu/workspace/Velizar/robotics_v1/install/robo_collector_controller/share/robo_collector_controller/resources//generated/resources.bin
+-- Up-to-date symlink: /home/ubuntu/workspace/Velizar/robotics_v1/install/robo_collector_controller/share/robo_collector_controller/resources//generated/sounds.bin
+-- Up-to-date symlink: /home/ubuntu/workspace/Velizar/robotics_v1/install/robo_collector_controller/share/robo_collector_controller/resources//p/background/map.png
+-- Up-to-date symlink: /home/ubuntu/workspace/Velizar/robotics_v1/install/robo_collector_controller/share/robo_collector_controller/resources//p/buttons/help_button.png
+-- Up-to-date symlink: /home/ubuntu/workspace/Velizar/robotics_v1/install/robo_collector_controller/share/robo_collector_controller/resources//p/buttons/left_button.png
+-- Up-to-date symlink: /home/ubuntu/workspace/Velizar/robotics_v1/install/robo_collector_controller/share/robo_collector_controller/resources//p/buttons/right_button.png
+-- Up-to-date symlink: /home/ubuntu/workspace/Velizar/robotics_v1/install/robo_collector_controller/share/robo_collector_controller/resources//p/buttons/settings_button.png
+-- Up-to-date symlink: /home/ubuntu/workspace/Velizar/robotics_v1/install/robo_collector_controller/share/robo_collector_controller/resources//p/buttons/up_button.png
+-- Up-to-date symlink: /home/ubuntu/workspace/Velizar/robotics_v1/install/robo_collector_controller/share/robo_collector_controller/resources//p/icons/joystick.png
+-- Up-to-date symlink: /home/ubuntu/workspace/Velizar/robotics_v1/install/robo_collector_controller/share/robo_collector_controller/resources//p/panels/hor_delimiter.png
+-- Up-to-date symlink: /home/ubuntu/workspace/Velizar/robotics_v1/install/robo_collector_controller/share/robo_collector_controller/resources//p/panels/vert_delimiter.png

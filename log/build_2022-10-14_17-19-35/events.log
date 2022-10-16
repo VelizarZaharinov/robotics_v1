@@ -1,0 +1,192 @@
+[0.000000] (-) TimerEvent: {}
+[0.000284] (-) JobUnselected: {'identifier': 'cmake_helpers'}
+[0.000331] (-) JobUnselected: {'identifier': 'game_engine'}
+[0.000362] (-) JobUnselected: {'identifier': 'manager_utils'}
+[0.000389] (-) JobUnselected: {'identifier': 'resource_builder'}
+[0.000414] (-) JobUnselected: {'identifier': 'resource_utils'}
+[0.000438] (-) JobUnselected: {'identifier': 'robo_cleaner_common'}
+[0.000463] (-) JobUnselected: {'identifier': 'robo_cleaner_gui'}
+[0.000487] (-) JobUnselected: {'identifier': 'robo_cleaner_interfaces'}
+[0.000555] (-) JobUnselected: {'identifier': 'robo_collector_common'}
+[0.000634] (-) JobUnselected: {'identifier': 'robo_collector_controller_py'}
+[0.000694] (-) JobUnselected: {'identifier': 'robo_collector_gui'}
+[0.000755] (-) JobUnselected: {'identifier': 'robo_collector_interfaces'}
+[0.000815] (-) JobUnselected: {'identifier': 'robo_common'}
+[0.000957] (-) JobUnselected: {'identifier': 'robo_miner_common'}
+[0.001025] (-) JobUnselected: {'identifier': 'robo_miner_gui'}
+[0.001086] (-) JobUnselected: {'identifier': 'robo_miner_interfaces'}
+[0.001146] (-) JobUnselected: {'identifier': 'ros2_game_engine'}
+[0.001206] (-) JobUnselected: {'identifier': 'sdl_utils'}
+[0.001267] (-) JobUnselected: {'identifier': 'ur_bringup'}
+[0.001329] (-) JobUnselected: {'identifier': 'ur_client_library'}
+[0.001389] (-) JobUnselected: {'identifier': 'ur_control_gui'}
+[0.001449] (-) JobUnselected: {'identifier': 'ur_controllers'}
+[0.001534] (-) JobUnselected: {'identifier': 'ur_dashboard_msgs'}
+[0.001600] (-) JobUnselected: {'identifier': 'ur_description'}
+[0.001668] (-) JobUnselected: {'identifier': 'ur_moveit_config'}
+[0.001725] (-) JobUnselected: {'identifier': 'ur_robot_driver'}
+[0.001782] (-) JobUnselected: {'identifier': 'urscript_bridge'}
+[0.001839] (-) JobUnselected: {'identifier': 'urscript_common'}
+[0.001896] (-) JobUnselected: {'identifier': 'urscript_interfaces'}
+[0.001952] (-) JobUnselected: {'identifier': 'utils'}
+[0.002015] (robo_collector_controller) JobQueued: {'identifier': 'robo_collector_controller', 'dependencies': OrderedDict([('cmake_helpers', '/home/ubuntu/workspace/Velizar/robotics_v1/install/cmake_helpers'), ('robo_collector_interfaces', '/home/ubuntu/workspace/Velizar/robotics_v1/install/robo_collector_interfaces'), ('utils', '/home/ubuntu/workspace/Velizar/robotics_v1/install/utils'), ('resource_utils', '/home/ubuntu/workspace/Velizar/robotics_v1/install/resource_utils'), ('sdl_utils', '/home/ubuntu/workspace/Velizar/robotics_v1/install/sdl_utils'), ('manager_utils', '/home/ubuntu/workspace/Velizar/robotics_v1/install/manager_utils'), ('game_engine', '/home/ubuntu/workspace/Velizar/robotics_v1/install/game_engine'), ('robo_common', '/home/ubuntu/workspace/Velizar/robotics_v1/install/robo_common'), ('robo_collector_common', '/home/ubuntu/workspace/Velizar/robotics_v1/install/robo_collector_common'), ('ros2_game_engine', '/home/ubuntu/workspace/Velizar/robotics_v1/install/ros2_game_engine')])}
+[0.002116] (robo_collector_controller) JobStarted: {'identifier': 'robo_collector_controller'}
+[0.089517] (robo_collector_controller) JobProgress: {'identifier': 'robo_collector_controller', 'progress': 'cmake'}
+[0.092233] (robo_collector_controller) Command: {'cmd': ['/usr/bin/cmake', '/home/ubuntu/workspace/Velizar/robotics_v1/src/robo_collector/robo_collector_controller', '-DCMAKE_INSTALL_PREFIX=/home/ubuntu/workspace/Velizar/robotics_v1/install/robo_collector_controller'], 'cwd': '/home/ubuntu/workspace/Velizar/robotics_v1/build/robo_collector_controller', 'env': OrderedDict([('LESSOPEN', '| /usr/bin/lesspipe %s'), ('USER', 'ubuntu'), ('SSH_AGENT_PID', '2008'), ('XDG_SESSION_TYPE', 'x11'), ('SHLVL', '1'), ('LD_LIBRARY_PATH', '/home/ubuntu/workspace/Velizar/robotics_v1/install/robo_collector_interfaces/lib:/opt/ros/foxy/opt/yaml_cpp_vendor/lib:/opt/ros/foxy/opt/rviz_ogre_vendor/lib:/opt/ros/foxy/lib/x86_64-linux-gnu:/opt/ros/foxy/lib'), ('HOME', '/home/ubuntu'), ('DESKTOP_SESSION', 'ubuntu'), ('ROS_PYTHON_VERSION', '3'), ('GNOME_SHELL_SESSION_MODE', 'ubuntu'), ('GTK_MODULES', 'gail:atk-bridge'), ('PS1', '[\\u@\\h \\W]$(git_branch)$'), ('MANAGERPID', '1804'), ('DBUS_STARTER_BUS_TYPE', 'session'), ('DBUS_SESSION_BUS_ADDRESS', 'unix:path=/run/user/1000/bus,guid=3cf57ed13619e15624827b8a634826e6'), ('COLORTERM', 'truecolor'), ('IM_CONFIG_PHASE', '1'), ('ROS_DISTRO', 'foxy'), ('LOGNAME', 'ubuntu'), ('JOURNAL_STREAM', '8:36712'), ('_', '/usr/bin/colcon'), ('ROS_VERSION', '2'), ('XDG_SESSION_CLASS', 'user'), ('PKG_CONFIG_PATH', '/home/ubuntu/workspace/Velizar/robotics_v1/install/ros2_game_engine/lib/x86_64-linux-gnu/pkgconfig:/home/ubuntu/workspace/Velizar/robotics_v1/install/ros2_game_engine/lib/pkgconfig:/home/ubuntu/workspace/Velizar/robotics_v1/install/robo_common/lib/x86_64-linux-gnu/pkgconfig:/home/ubuntu/workspace/Velizar/robotics_v1/install/robo_common/lib/pkgconfig:/home/ubuntu/workspace/Velizar/robotics_v1/install/game_engine/lib/x86_64-linux-gnu/pkgconfig:/home/ubuntu/workspace/Velizar/robotics_v1/install/game_engine/lib/pkgconfig:/home/ubuntu/workspace/Velizar/robotics_v1/install/manager_utils/lib/x86_64-linux-gnu/pkgconfig:/home/ubuntu/workspace/Velizar/robotics_v1/install/manager_utils/lib/pkgconfig:/home/ubuntu/workspace/Velizar/robotics_v1/install/sdl_utils/lib/x86_64-linux-gnu/pkgconfig:/home/ubuntu/workspace/Velizar/robotics_v1/install/sdl_utils/lib/pkgconfig:/home/ubuntu/workspace/Velizar/robotics_v1/install/resource_utils/lib/x86_64-linux-gnu/pkgconfig:/home/ubuntu/workspace/Velizar/robotics_v1/install/resource_utils/lib/pkgconfig:/home/ubuntu/workspace/Velizar/robotics_v1/install/utils/lib/x86_64-linux-gnu/pkgconfig:/home/ubuntu/workspace/Velizar/robotics_v1/install/utils/lib/pkgconfig:/home/ubuntu/workspace/Velizar/robotics_v1/install/cmake_helpers/lib/x86_64-linux-gnu/pkgconfig:/home/ubuntu/workspace/Velizar/robotics_v1/install/cmake_helpers/lib/pkgconfig'), ('USERNAME', 'ubuntu'), ('TERM', 'xterm-256color'), ('GNOME_DESKTOP_SESSION_ID', 'this-is-deprecated'), ('ROS_LOCALHOST_ONLY', '0'), ('WINDOWPATH', '2'), ('PATH', '/opt/ros/foxy/bin:/home/ubuntu/.local/bin:/usr/local/sbin:/usr/local/bin:/usr/sbin:/usr/bin:/sbin:/bin:/usr/games:/usr/local/games:/snap/bin'), ('SESSION_MANAGER', 'local/ubuntu2004:@/tmp/.ICE-unix/2046,unix/ubuntu2004:/tmp/.ICE-unix/2046'), ('INVOCATION_ID', 'f4b6283573064975930a418b95e0ddb1'), ('XDG_MENU_PREFIX', 'gnome-'), ('GNOME_TERMINAL_SCREEN', '/org/gnome/Terminal/screen/44cd2eeb_9675_4361_bcce_636830e310e5'), ('XDG_RUNTIME_DIR', '/run/user/1000'), ('DISPLAY', ':0'), ('LANG', 'en_US.UTF-8'), ('XDG_CURRENT_DESKTOP', 'ubuntu:GNOME'), ('XMODIFIERS', '@im=ibus'), ('XDG_SESSION_DESKTOP', 'ubuntu'), ('XAUTHORITY', '/run/user/1000/gdm/Xauthority'), ('LS_COLORS', 'rs=0:di=01;34:ln=01;36:mh=00:pi=40;33:so=01;35:do=01;35:bd=40;33;01:cd=40;33;01:or=40;31;01:mi=00:su=37;41:sg=30;43:ca=30;41:tw=30;42:ow=34;42:st=37;44:ex=01;32:*.tar=01;31:*.tgz=01;31:*.arc=01;31:*.arj=01;31:*.taz=01;31:*.lha=01;31:*.lz4=01;31:*.lzh=01;31:*.lzma=01;31:*.tlz=01;31:*.txz=01;31:*.tzo=01;31:*.t7z=01;31:*.zip=01;31:*.z=01;31:*.dz=01;31:*.gz=01;31:*.lrz=01;31:*.lz=01;31:*.lzo=01;31:*.xz=01;31:*.zst=01;31:*.tzst=01;31:*.bz2=01;31:*.bz=01;31:*.tbz=01;31:*.tbz2=01;31:*.tz=01;31:*.deb=01;31:*.rpm=01;31:*.jar=01;31:*.war=01;31:*.ear=01;31:*.sar=01;31:*.rar=01;31:*.alz=01;31:*.ace=01;31:*.zoo=01;31:*.cpio=01;31:*.7z=01;31:*.rz=01;31:*.cab=01;31:*.wim=01;31:*.swm=01;31:*.dwm=01;31:*.esd=01;31:*.jpg=01;35:*.jpeg=01;35:*.mjpg=01;35:*.mjpeg=01;35:*.gif=01;35:*.bmp=01;35:*.pbm=01;35:*.pgm=01;35:*.ppm=01;35:*.tga=01;35:*.xbm=01;35:*.xpm=01;35:*.tif=01;35:*.tiff=01;35:*.png=01;35:*.svg=01;35:*.svgz=01;35:*.mng=01;35:*.pcx=01;35:*.mov=01;35:*.mpg=01;35:*.mpeg=01;35:*.m2v=01;35:*.mkv=01;35:*.webm=01;35:*.ogm=01;35:*.mp4=01;35:*.m4v=01;35:*.mp4v=01;35:*.vob=01;35:*.qt=01;35:*.nuv=01;35:*.wmv=01;35:*.asf=01;35:*.rm=01;35:*.rmvb=01;35:*.flc=01;35:*.avi=01;35:*.fli=01;35:*.flv=01;35:*.gl=01;35:*.dl=01;35:*.xcf=01;35:*.xwd=01;35:*.yuv=01;35:*.cgm=01;35:*.emf=01;35:*.ogv=01;35:*.ogx=01;35:*.aac=00;36:*.au=00;36:*.flac=00;36:*.m4a=00;36:*.mid=00;36:*.midi=00;36:*.mka=00;36:*.mp3=00;36:*.mpc=00;36:*.ogg=00;36:*.ra=00;36:*.wav=00;36:*.oga=00;36:*.opus=00;36:*.spx=00;36:*.xspf=00;36:'), ('GNOME_TERMINAL_SERVICE', ':1.82'), ('SSH_AUTH_SOCK', '/run/user/1000/keyring/ssh'), ('AMENT_PREFIX_PATH', '/home/ubuntu/workspace/Velizar/robotics_v1/install/robo_collector_common:/home/ubuntu/workspace/Velizar/robotics_v1/install/robo_collector_interfaces:/opt/ros/foxy'), ('SHELL', '/bin/bash'), ('QT_ACCESSIBILITY', '1'), ('GDMSESSION', 'ubuntu'), ('LESSCLOSE', '/usr/bin/lesspipe %s %s'), ('GPG_AGENT_INFO', '/run/user/1000/gnupg/S.gpg-agent:0:1'), ('QT_IM_MODULE', 'ibus'), ('PWD', '/home/ubuntu/workspace/Velizar/robotics_v1/build/robo_collector_controller'), ('LC_ALL', 'en_US.UTF-8'), ('XDG_CONFIG_DIRS', '/etc/xdg/xdg-ubuntu:/etc/xdg'), ('DBUS_STARTER_ADDRESS', 'unix:path=/run/user/1000/bus,guid=3cf57ed13619e15624827b8a634826e6'), ('XDG_DATA_DIRS', '/usr/share/ubuntu:/usr/local/share/:/usr/share/:/var/lib/snapd/desktop'), ('PYTHONPATH', '/home/ubuntu/workspace/Velizar/robotics_v1/install/robo_collector_interfaces/lib/python3.8/site-packages:/opt/ros/foxy/lib/python3.8/site-packages'), ('COLCON', '1'), ('VTE_VERSION', '6003'), ('CMAKE_PREFIX_PATH', '/home/ubuntu/workspace/Velizar/robotics_v1/install/ros2_game_engine:/home/ubuntu/workspace/Velizar/robotics_v1/install/robo_collector_common:/home/ubuntu/workspace/Velizar/robotics_v1/install/robo_common:/home/ubuntu/workspace/Velizar/robotics_v1/install/game_engine:/home/ubuntu/workspace/Velizar/robotics_v1/install/manager_utils:/home/ubuntu/workspace/Velizar/robotics_v1/install/sdl_utils:/home/ubuntu/workspace/Velizar/robotics_v1/install/resource_utils:/home/ubuntu/workspace/Velizar/robotics_v1/install/utils:/home/ubuntu/workspace/Velizar/robotics_v1/install/robo_collector_interfaces:/home/ubuntu/workspace/Velizar/robotics_v1/install/cmake_helpers:/opt/ros/foxy')]), 'shell': False}
+[0.100069] (-) TimerEvent: {}
+[0.201009] (-) TimerEvent: {}
+[0.215116] (robo_collector_controller) StdoutLine: {'line': b'-- Found cmake_helpers: 1.0.0 (/home/ubuntu/workspace/Velizar/robotics_v1/install/cmake_helpers/share/cmake_helpers/cmake)\n'}
+[0.218416] (robo_collector_controller) StdoutLine: {'line': b'-- Found ament_cmake: 0.9.9 (/opt/ros/foxy/share/ament_cmake/cmake)\n'}
+[0.287262] (robo_collector_controller) StdoutLine: {'line': b'-- Using PYTHON_EXECUTABLE: /usr/bin/python3\n'}
+[0.301147] (-) TimerEvent: {}
+[0.401646] (-) TimerEvent: {}
+[0.502152] (-) TimerEvent: {}
+[0.602795] (-) TimerEvent: {}
+[0.703314] (-) TimerEvent: {}
+[0.775005] (robo_collector_controller) StdoutLine: {'line': b'-- Override CMake install command with custom implementation using symlinks instead of copying resources\n'}
+[0.803494] (-) TimerEvent: {}
+[0.827160] (robo_collector_controller) StdoutLine: {'line': b'-- Found ament_index_cpp: 1.1.0 (/opt/ros/foxy/share/ament_index_cpp/cmake)\n'}
+[0.846125] (robo_collector_controller) StdoutLine: {'line': b'-- Found rclcpp: 2.4.1 (/opt/ros/foxy/share/rclcpp/cmake)\n'}
+[0.903962] (-) TimerEvent: {}
+[1.004665] (-) TimerEvent: {}
+[1.018270] (robo_collector_controller) StdoutLine: {'line': b'-- Using all available rosidl_typesupport_c: rosidl_typesupport_fastrtps_c;rosidl_typesupport_introspection_c\n'}
+[1.036557] (robo_collector_controller) StdoutLine: {'line': b'-- Found rosidl_adapter: 1.2.1 (/opt/ros/foxy/share/rosidl_adapter/cmake)\n'}
+[1.104791] (-) TimerEvent: {}
+[1.205342] (-) TimerEvent: {}
+[1.306192] (-) TimerEvent: {}
+[1.406908] (-) TimerEvent: {}
+[1.501879] (robo_collector_controller) StdoutLine: {'line': b'-- Using all available rosidl_typesupport_cpp: rosidl_typesupport_fastrtps_cpp;rosidl_typesupport_introspection_cpp\n'}
+[1.507111] (-) TimerEvent: {}
+[1.607681] (-) TimerEvent: {}
+[1.708684] (-) TimerEvent: {}
+[1.729874] (robo_collector_controller) StdoutLine: {'line': b'-- Found rmw_implementation_cmake: 1.0.3 (/opt/ros/foxy/share/rmw_implementation_cmake/cmake)\n'}
+[1.737227] (robo_collector_controller) StdoutLine: {'line': b"-- Using RMW implementation 'rmw_fastrtps_cpp' as default\n"}
+[1.808985] (-) TimerEvent: {}
+[1.909739] (-) TimerEvent: {}
+[2.010432] (-) TimerEvent: {}
+[2.111309] (-) TimerEvent: {}
+[2.211990] (-) TimerEvent: {}
+[2.312613] (-) TimerEvent: {}
+[2.413189] (-) TimerEvent: {}
+[2.480479] (robo_collector_controller) StdoutLine: {'line': b'-- Found robo_collector_interfaces: 1.0.0 (/home/ubuntu/workspace/Velizar/robotics_v1/install/robo_collector_interfaces/share/robo_collector_interfaces/cmake)\n'}
+[2.513331] (-) TimerEvent: {}
+[2.613919] (-) TimerEvent: {}
+[2.714597] (-) TimerEvent: {}
+[2.815327] (-) TimerEvent: {}
+[2.916138] (-) TimerEvent: {}
+[3.016930] (-) TimerEvent: {}
+[3.117612] (-) TimerEvent: {}
+[3.218387] (-) TimerEvent: {}
+[3.319307] (-) TimerEvent: {}
+[3.419989] (-) TimerEvent: {}
+[3.520632] (-) TimerEvent: {}
+[3.621798] (-) TimerEvent: {}
+[3.722394] (-) TimerEvent: {}
+[3.823136] (-) TimerEvent: {}
+[3.923853] (-) TimerEvent: {}
+[4.024613] (-) TimerEvent: {}
+[4.125066] (-) TimerEvent: {}
+[4.225843] (-) TimerEvent: {}
+[4.326494] (-) TimerEvent: {}
+[4.427520] (-) TimerEvent: {}
+[4.528076] (-) TimerEvent: {}
+[4.628736] (-) TimerEvent: {}
+[4.729322] (-) TimerEvent: {}
+[4.829870] (-) TimerEvent: {}
+[4.930542] (-) TimerEvent: {}
+[5.031145] (-) TimerEvent: {}
+[5.131960] (-) TimerEvent: {}
+[5.232667] (-) TimerEvent: {}
+[5.333501] (-) TimerEvent: {}
+[5.434335] (-) TimerEvent: {}
+[5.534971] (-) TimerEvent: {}
+[5.635661] (-) TimerEvent: {}
+[5.736408] (-) TimerEvent: {}
+[5.837043] (-) TimerEvent: {}
+[5.937534] (-) TimerEvent: {}
+[6.038364] (-) TimerEvent: {}
+[6.139137] (-) TimerEvent: {}
+[6.240003] (-) TimerEvent: {}
+[6.340691] (-) TimerEvent: {}
+[6.441802] (-) TimerEvent: {}
+[6.542500] (-) TimerEvent: {}
+[6.643480] (-) TimerEvent: {}
+[6.744379] (-) TimerEvent: {}
+[6.845121] (-) TimerEvent: {}
+[6.945725] (-) TimerEvent: {}
+[7.046431] (-) TimerEvent: {}
+[7.146996] (-) TimerEvent: {}
+[7.247563] (-) TimerEvent: {}
+[7.348266] (-) TimerEvent: {}
+[7.448863] (-) TimerEvent: {}
+[7.549523] (-) TimerEvent: {}
+[7.650438] (-) TimerEvent: {}
+[7.751168] (-) TimerEvent: {}
+[7.851778] (-) TimerEvent: {}
+[7.952550] (-) TimerEvent: {}
+[8.053284] (-) TimerEvent: {}
+[8.153870] (-) TimerEvent: {}
+[8.254623] (-) TimerEvent: {}
+[8.313063] (robo_collector_controller) StdoutLine: {'line': b'-- Configuring done\n'}
+[8.354755] (-) TimerEvent: {}
+[8.423452] (robo_collector_controller) StdoutLine: {'line': b'-- Generating done\n'}
+[8.431731] (robo_collector_controller) StdoutLine: {'line': b'-- Build files have been written to: /home/ubuntu/workspace/Velizar/robotics_v1/build/robo_collector_controller\n'}
+[8.450094] (robo_collector_controller) CommandEnded: {'returncode': 0}
+[8.456071] (robo_collector_controller) JobProgress: {'identifier': 'robo_collector_controller', 'progress': 'build'}
+[8.456592] (-) TimerEvent: {}
+[8.457352] (robo_collector_controller) Command: {'cmd': ['/usr/bin/cmake', '--build', '/home/ubuntu/workspace/Velizar/robotics_v1/build/robo_collector_controller', '--', '-j2', '-l2'], 'cwd': '/home/ubuntu/workspace/Velizar/robotics_v1/build/robo_collector_controller', 'env': OrderedDict([('LESSOPEN', '| /usr/bin/lesspipe %s'), ('USER', 'ubuntu'), ('SSH_AGENT_PID', '2008'), ('XDG_SESSION_TYPE', 'x11'), ('SHLVL', '1'), ('LD_LIBRARY_PATH', '/home/ubuntu/workspace/Velizar/robotics_v1/install/robo_collector_interfaces/lib:/opt/ros/foxy/opt/yaml_cpp_vendor/lib:/opt/ros/foxy/opt/rviz_ogre_vendor/lib:/opt/ros/foxy/lib/x86_64-linux-gnu:/opt/ros/foxy/lib'), ('HOME', '/home/ubuntu'), ('DESKTOP_SESSION', 'ubuntu'), ('ROS_PYTHON_VERSION', '3'), ('GNOME_SHELL_SESSION_MODE', 'ubuntu'), ('GTK_MODULES', 'gail:atk-bridge'), ('PS1', '[\\u@\\h \\W]$(git_branch)$'), ('MANAGERPID', '1804'), ('DBUS_STARTER_BUS_TYPE', 'session'), ('DBUS_SESSION_BUS_ADDRESS', 'unix:path=/run/user/1000/bus,guid=3cf57ed13619e15624827b8a634826e6'), ('COLORTERM', 'truecolor'), ('IM_CONFIG_PHASE', '1'), ('ROS_DISTRO', 'foxy'), ('LOGNAME', 'ubuntu'), ('JOURNAL_STREAM', '8:36712'), ('_', '/usr/bin/colcon'), ('ROS_VERSION', '2'), ('XDG_SESSION_CLASS', 'user'), ('PKG_CONFIG_PATH', '/home/ubuntu/workspace/Velizar/robotics_v1/install/ros2_game_engine/lib/x86_64-linux-gnu/pkgconfig:/home/ubuntu/workspace/Velizar/robotics_v1/install/ros2_game_engine/lib/pkgconfig:/home/ubuntu/workspace/Velizar/robotics_v1/install/robo_common/lib/x86_64-linux-gnu/pkgconfig:/home/ubuntu/workspace/Velizar/robotics_v1/install/robo_common/lib/pkgconfig:/home/ubuntu/workspace/Velizar/robotics_v1/install/game_engine/lib/x86_64-linux-gnu/pkgconfig:/home/ubuntu/workspace/Velizar/robotics_v1/install/game_engine/lib/pkgconfig:/home/ubuntu/workspace/Velizar/robotics_v1/install/manager_utils/lib/x86_64-linux-gnu/pkgconfig:/home/ubuntu/workspace/Velizar/robotics_v1/install/manager_utils/lib/pkgconfig:/home/ubuntu/workspace/Velizar/robotics_v1/install/sdl_utils/lib/x86_64-linux-gnu/pkgconfig:/home/ubuntu/workspace/Velizar/robotics_v1/install/sdl_utils/lib/pkgconfig:/home/ubuntu/workspace/Velizar/robotics_v1/install/resource_utils/lib/x86_64-linux-gnu/pkgconfig:/home/ubuntu/workspace/Velizar/robotics_v1/install/resource_utils/lib/pkgconfig:/home/ubuntu/workspace/Velizar/robotics_v1/install/utils/lib/x86_64-linux-gnu/pkgconfig:/home/ubuntu/workspace/Velizar/robotics_v1/install/utils/lib/pkgconfig:/home/ubuntu/workspace/Velizar/robotics_v1/install/cmake_helpers/lib/x86_64-linux-gnu/pkgconfig:/home/ubuntu/workspace/Velizar/robotics_v1/install/cmake_helpers/lib/pkgconfig'), ('USERNAME', 'ubuntu'), ('TERM', 'xterm-256color'), ('GNOME_DESKTOP_SESSION_ID', 'this-is-deprecated'), ('ROS_LOCALHOST_ONLY', '0'), ('WINDOWPATH', '2'), ('PATH', '/opt/ros/foxy/bin:/home/ubuntu/.local/bin:/usr/local/sbin:/usr/local/bin:/usr/sbin:/usr/bin:/sbin:/bin:/usr/games:/usr/local/games:/snap/bin'), ('SESSION_MANAGER', 'local/ubuntu2004:@/tmp/.ICE-unix/2046,unix/ubuntu2004:/tmp/.ICE-unix/2046'), ('INVOCATION_ID', 'f4b6283573064975930a418b95e0ddb1'), ('XDG_MENU_PREFIX', 'gnome-'), ('GNOME_TERMINAL_SCREEN', '/org/gnome/Terminal/screen/44cd2eeb_9675_4361_bcce_636830e310e5'), ('XDG_RUNTIME_DIR', '/run/user/1000'), ('DISPLAY', ':0'), ('LANG', 'en_US.UTF-8'), ('XDG_CURRENT_DESKTOP', 'ubuntu:GNOME'), ('XMODIFIERS', '@im=ibus'), ('XDG_SESSION_DESKTOP', 'ubuntu'), ('XAUTHORITY', '/run/user/1000/gdm/Xauthority'), ('LS_COLORS', 'rs=0:di=01;34:ln=01;36:mh=00:pi=40;33:so=01;35:do=01;35:bd=40;33;01:cd=40;33;01:or=40;31;01:mi=00:su=37;41:sg=30;43:ca=30;41:tw=30;42:ow=34;42:st=37;44:ex=01;32:*.tar=01;31:*.tgz=01;31:*.arc=01;31:*.arj=01;31:*.taz=01;31:*.lha=01;31:*.lz4=01;31:*.lzh=01;31:*.lzma=01;31:*.tlz=01;31:*.txz=01;31:*.tzo=01;31:*.t7z=01;31:*.zip=01;31:*.z=01;31:*.dz=01;31:*.gz=01;31:*.lrz=01;31:*.lz=01;31:*.lzo=01;31:*.xz=01;31:*.zst=01;31:*.tzst=01;31:*.bz2=01;31:*.bz=01;31:*.tbz=01;31:*.tbz2=01;31:*.tz=01;31:*.deb=01;31:*.rpm=01;31:*.jar=01;31:*.war=01;31:*.ear=01;31:*.sar=01;31:*.rar=01;31:*.alz=01;31:*.ace=01;31:*.zoo=01;31:*.cpio=01;31:*.7z=01;31:*.rz=01;31:*.cab=01;31:*.wim=01;31:*.swm=01;31:*.dwm=01;31:*.esd=01;31:*.jpg=01;35:*.jpeg=01;35:*.mjpg=01;35:*.mjpeg=01;35:*.gif=01;35:*.bmp=01;35:*.pbm=01;35:*.pgm=01;35:*.ppm=01;35:*.tga=01;35:*.xbm=01;35:*.xpm=01;35:*.tif=01;35:*.tiff=01;35:*.png=01;35:*.svg=01;35:*.svgz=01;35:*.mng=01;35:*.pcx=01;35:*.mov=01;35:*.mpg=01;35:*.mpeg=01;35:*.m2v=01;35:*.mkv=01;35:*.webm=01;35:*.ogm=01;35:*.mp4=01;35:*.m4v=01;35:*.mp4v=01;35:*.vob=01;35:*.qt=01;35:*.nuv=01;35:*.wmv=01;35:*.asf=01;35:*.rm=01;35:*.rmvb=01;35:*.flc=01;35:*.avi=01;35:*.fli=01;35:*.flv=01;35:*.gl=01;35:*.dl=01;35:*.xcf=01;35:*.xwd=01;35:*.yuv=01;35:*.cgm=01;35:*.emf=01;35:*.ogv=01;35:*.ogx=01;35:*.aac=00;36:*.au=00;36:*.flac=00;36:*.m4a=00;36:*.mid=00;36:*.midi=00;36:*.mka=00;36:*.mp3=00;36:*.mpc=00;36:*.ogg=00;36:*.ra=00;36:*.wav=00;36:*.oga=00;36:*.opus=00;36:*.spx=00;36:*.xspf=00;36:'), ('GNOME_TERMINAL_SERVICE', ':1.82'), ('SSH_AUTH_SOCK', '/run/user/1000/keyring/ssh'), ('AMENT_PREFIX_PATH', '/home/ubuntu/workspace/Velizar/robotics_v1/install/robo_collector_common:/home/ubuntu/workspace/Velizar/robotics_v1/install/robo_collector_interfaces:/opt/ros/foxy'), ('SHELL', '/bin/bash'), ('QT_ACCESSIBILITY', '1'), ('GDMSESSION', 'ubuntu'), ('LESSCLOSE', '/usr/bin/lesspipe %s %s'), ('GPG_AGENT_INFO', '/run/user/1000/gnupg/S.gpg-agent:0:1'), ('QT_IM_MODULE', 'ibus'), ('PWD', '/home/ubuntu/workspace/Velizar/robotics_v1/build/robo_collector_controller'), ('LC_ALL', 'en_US.UTF-8'), ('XDG_CONFIG_DIRS', '/etc/xdg/xdg-ubuntu:/etc/xdg'), ('DBUS_STARTER_ADDRESS', 'unix:path=/run/user/1000/bus,guid=3cf57ed13619e15624827b8a634826e6'), ('XDG_DATA_DIRS', '/usr/share/ubuntu:/usr/local/share/:/usr/share/:/var/lib/snapd/desktop'), ('PYTHONPATH', '/home/ubuntu/workspace/Velizar/robotics_v1/install/robo_collector_interfaces/lib/python3.8/site-packages:/opt/ros/foxy/lib/python3.8/site-packages'), ('COLCON', '1'), ('VTE_VERSION', '6003'), ('CMAKE_PREFIX_PATH', '/home/ubuntu/workspace/Velizar/robotics_v1/install/ros2_game_engine:/home/ubuntu/workspace/Velizar/robotics_v1/install/robo_collector_common:/home/ubuntu/workspace/Velizar/robotics_v1/install/robo_common:/home/ubuntu/workspace/Velizar/robotics_v1/install/game_engine:/home/ubuntu/workspace/Velizar/robotics_v1/install/manager_utils:/home/ubuntu/workspace/Velizar/robotics_v1/install/sdl_utils:/home/ubuntu/workspace/Velizar/robotics_v1/install/resource_utils:/home/ubuntu/workspace/Velizar/robotics_v1/install/utils:/home/ubuntu/workspace/Velizar/robotics_v1/install/robo_collector_interfaces:/home/ubuntu/workspace/Velizar/robotics_v1/install/cmake_helpers:/opt/ros/foxy')]), 'shell': False}
+[8.556782] (-) TimerEvent: {}
+[8.657564] (-) TimerEvent: {}
+[8.740793] (robo_collector_controller) StdoutLine: {'line': b'[100%] Built target robo_collector_controller\n'}
+[8.757818] (-) TimerEvent: {}
+[8.772520] (robo_collector_controller) CommandEnded: {'returncode': 0}
+[8.858039] (-) TimerEvent: {}
+[8.867544] (robo_collector_controller) JobProgress: {'identifier': 'robo_collector_controller', 'progress': 'install'}
+[8.896743] (robo_collector_controller) Command: {'cmd': ['/usr/bin/cmake', '--install', '/home/ubuntu/workspace/Velizar/robotics_v1/build/robo_collector_controller'], 'cwd': '/home/ubuntu/workspace/Velizar/robotics_v1/build/robo_collector_controller', 'env': OrderedDict([('LESSOPEN', '| /usr/bin/lesspipe %s'), ('USER', 'ubuntu'), ('SSH_AGENT_PID', '2008'), ('XDG_SESSION_TYPE', 'x11'), ('SHLVL', '1'), ('LD_LIBRARY_PATH', '/home/ubuntu/workspace/Velizar/robotics_v1/install/robo_collector_interfaces/lib:/opt/ros/foxy/opt/yaml_cpp_vendor/lib:/opt/ros/foxy/opt/rviz_ogre_vendor/lib:/opt/ros/foxy/lib/x86_64-linux-gnu:/opt/ros/foxy/lib'), ('HOME', '/home/ubuntu'), ('DESKTOP_SESSION', 'ubuntu'), ('ROS_PYTHON_VERSION', '3'), ('GNOME_SHELL_SESSION_MODE', 'ubuntu'), ('GTK_MODULES', 'gail:atk-bridge'), ('PS1', '[\\u@\\h \\W]$(git_branch)$'), ('MANAGERPID', '1804'), ('DBUS_STARTER_BUS_TYPE', 'session'), ('DBUS_SESSION_BUS_ADDRESS', 'unix:path=/run/user/1000/bus,guid=3cf57ed13619e15624827b8a634826e6'), ('COLORTERM', 'truecolor'), ('IM_CONFIG_PHASE', '1'), ('ROS_DISTRO', 'foxy'), ('LOGNAME', 'ubuntu'), ('JOURNAL_STREAM', '8:36712'), ('_', '/usr/bin/colcon'), ('ROS_VERSION', '2'), ('XDG_SESSION_CLASS', 'user'), ('PKG_CONFIG_PATH', '/home/ubuntu/workspace/Velizar/robotics_v1/install/ros2_game_engine/lib/x86_64-linux-gnu/pkgconfig:/home/ubuntu/workspace/Velizar/robotics_v1/install/ros2_game_engine/lib/pkgconfig:/home/ubuntu/workspace/Velizar/robotics_v1/install/robo_common/lib/x86_64-linux-gnu/pkgconfig:/home/ubuntu/workspace/Velizar/robotics_v1/install/robo_common/lib/pkgconfig:/home/ubuntu/workspace/Velizar/robotics_v1/install/game_engine/lib/x86_64-linux-gnu/pkgconfig:/home/ubuntu/workspace/Velizar/robotics_v1/install/game_engine/lib/pkgconfig:/home/ubuntu/workspace/Velizar/robotics_v1/install/manager_utils/lib/x86_64-linux-gnu/pkgconfig:/home/ubuntu/workspace/Velizar/robotics_v1/install/manager_utils/lib/pkgconfig:/home/ubuntu/workspace/Velizar/robotics_v1/install/sdl_utils/lib/x86_64-linux-gnu/pkgconfig:/home/ubuntu/workspace/Velizar/robotics_v1/install/sdl_utils/lib/pkgconfig:/home/ubuntu/workspace/Velizar/robotics_v1/install/resource_utils/lib/x86_64-linux-gnu/pkgconfig:/home/ubuntu/workspace/Velizar/robotics_v1/install/resource_utils/lib/pkgconfig:/home/ubuntu/workspace/Velizar/robotics_v1/install/utils/lib/x86_64-linux-gnu/pkgconfig:/home/ubuntu/workspace/Velizar/robotics_v1/install/utils/lib/pkgconfig:/home/ubuntu/workspace/Velizar/robotics_v1/install/cmake_helpers/lib/x86_64-linux-gnu/pkgconfig:/home/ubuntu/workspace/Velizar/robotics_v1/install/cmake_helpers/lib/pkgconfig'), ('USERNAME', 'ubuntu'), ('TERM', 'xterm-256color'), ('GNOME_DESKTOP_SESSION_ID', 'this-is-deprecated'), ('ROS_LOCALHOST_ONLY', '0'), ('WINDOWPATH', '2'), ('PATH', '/opt/ros/foxy/bin:/home/ubuntu/.local/bin:/usr/local/sbin:/usr/local/bin:/usr/sbin:/usr/bin:/sbin:/bin:/usr/games:/usr/local/games:/snap/bin'), ('SESSION_MANAGER', 'local/ubuntu2004:@/tmp/.ICE-unix/2046,unix/ubuntu2004:/tmp/.ICE-unix/2046'), ('INVOCATION_ID', 'f4b6283573064975930a418b95e0ddb1'), ('XDG_MENU_PREFIX', 'gnome-'), ('GNOME_TERMINAL_SCREEN', '/org/gnome/Terminal/screen/44cd2eeb_9675_4361_bcce_636830e310e5'), ('XDG_RUNTIME_DIR', '/run/user/1000'), ('DISPLAY', ':0'), ('LANG', 'en_US.UTF-8'), ('XDG_CURRENT_DESKTOP', 'ubuntu:GNOME'), ('XMODIFIERS', '@im=ibus'), ('XDG_SESSION_DESKTOP', 'ubuntu'), ('XAUTHORITY', '/run/user/1000/gdm/Xauthority'), ('LS_COLORS', 'rs=0:di=01;34:ln=01;36:mh=00:pi=40;33:so=01;35:do=01;35:bd=40;33;01:cd=40;33;01:or=40;31;01:mi=00:su=37;41:sg=30;43:ca=30;41:tw=30;42:ow=34;42:st=37;44:ex=01;32:*.tar=01;31:*.tgz=01;31:*.arc=01;31:*.arj=01;31:*.taz=01;31:*.lha=01;31:*.lz4=01;31:*.lzh=01;31:*.lzma=01;31:*.tlz=01;31:*.txz=01;31:*.tzo=01;31:*.t7z=01;31:*.zip=01;31:*.z=01;31:*.dz=01;31:*.gz=01;31:*.lrz=01;31:*.lz=01;31:*.lzo=01;31:*.xz=01;31:*.zst=01;31:*.tzst=01;31:*.bz2=01;31:*.bz=01;31:*.tbz=01;31:*.tbz2=01;31:*.tz=01;31:*.deb=01;31:*.rpm=01;31:*.jar=01;31:*.war=01;31:*.ear=01;31:*.sar=01;31:*.rar=01;31:*.alz=01;31:*.ace=01;31:*.zoo=01;31:*.cpio=01;31:*.7z=01;31:*.rz=01;31:*.cab=01;31:*.wim=01;31:*.swm=01;31:*.dwm=01;31:*.esd=01;31:*.jpg=01;35:*.jpeg=01;35:*.mjpg=01;35:*.mjpeg=01;35:*.gif=01;35:*.bmp=01;35:*.pbm=01;35:*.pgm=01;35:*.ppm=01;35:*.tga=01;35:*.xbm=01;35:*.xpm=01;35:*.tif=01;35:*.tiff=01;35:*.png=01;35:*.svg=01;35:*.svgz=01;35:*.mng=01;35:*.pcx=01;35:*.mov=01;35:*.mpg=01;35:*.mpeg=01;35:*.m2v=01;35:*.mkv=01;35:*.webm=01;35:*.ogm=01;35:*.mp4=01;35:*.m4v=01;35:*.mp4v=01;35:*.vob=01;35:*.qt=01;35:*.nuv=01;35:*.wmv=01;35:*.asf=01;35:*.rm=01;35:*.rmvb=01;35:*.flc=01;35:*.avi=01;35:*.fli=01;35:*.flv=01;35:*.gl=01;35:*.dl=01;35:*.xcf=01;35:*.xwd=01;35:*.yuv=01;35:*.cgm=01;35:*.emf=01;35:*.ogv=01;35:*.ogx=01;35:*.aac=00;36:*.au=00;36:*.flac=00;36:*.m4a=00;36:*.mid=00;36:*.midi=00;36:*.mka=00;36:*.mp3=00;36:*.mpc=00;36:*.ogg=00;36:*.ra=00;36:*.wav=00;36:*.oga=00;36:*.opus=00;36:*.spx=00;36:*.xspf=00;36:'), ('GNOME_TERMINAL_SERVICE', ':1.82'), ('SSH_AUTH_SOCK', '/run/user/1000/keyring/ssh'), ('AMENT_PREFIX_PATH', '/home/ubuntu/workspace/Velizar/robotics_v1/install/robo_collector_common:/home/ubuntu/workspace/Velizar/robotics_v1/install/robo_collector_interfaces:/opt/ros/foxy'), ('SHELL', '/bin/bash'), ('QT_ACCESSIBILITY', '1'), ('GDMSESSION', 'ubuntu'), ('LESSCLOSE', '/usr/bin/lesspipe %s %s'), ('GPG_AGENT_INFO', '/run/user/1000/gnupg/S.gpg-agent:0:1'), ('QT_IM_MODULE', 'ibus'), ('PWD', '/home/ubuntu/workspace/Velizar/robotics_v1/build/robo_collector_controller'), ('LC_ALL', 'en_US.UTF-8'), ('XDG_CONFIG_DIRS', '/etc/xdg/xdg-ubuntu:/etc/xdg'), ('DBUS_STARTER_ADDRESS', 'unix:path=/run/user/1000/bus,guid=3cf57ed13619e15624827b8a634826e6'), ('XDG_DATA_DIRS', '/usr/share/ubuntu:/usr/local/share/:/usr/share/:/var/lib/snapd/desktop'), ('PYTHONPATH', '/home/ubuntu/workspace/Velizar/robotics_v1/install/robo_collector_interfaces/lib/python3.8/site-packages:/opt/ros/foxy/lib/python3.8/site-packages'), ('COLCON', '1'), ('VTE_VERSION', '6003'), ('CMAKE_PREFIX_PATH', '/home/ubuntu/workspace/Velizar/robotics_v1/install/ros2_game_engine:/home/ubuntu/workspace/Velizar/robotics_v1/install/robo_collector_common:/home/ubuntu/workspace/Velizar/robotics_v1/install/robo_common:/home/ubuntu/workspace/Velizar/robotics_v1/install/game_engine:/home/ubuntu/workspace/Velizar/robotics_v1/install/manager_utils:/home/ubuntu/workspace/Velizar/robotics_v1/install/sdl_utils:/home/ubuntu/workspace/Velizar/robotics_v1/install/resource_utils:/home/ubuntu/workspace/Velizar/robotics_v1/install/utils:/home/ubuntu/workspace/Velizar/robotics_v1/install/robo_collector_interfaces:/home/ubuntu/workspace/Velizar/robotics_v1/install/cmake_helpers:/opt/ros/foxy')]), 'shell': False}
+[8.920185] (robo_collector_controller) StdoutLine: {'line': b'-- Install configuration: "Debug"\n'}
+[8.921932] (robo_collector_controller) StdoutLine: {'line': b'-- Execute custom install script\n'}
+[8.923266] (robo_collector_controller) StdoutLine: {'line': b'-- Up-to-date symlink: /home/ubuntu/workspace/Velizar/robotics_v1/install/robo_collector_controller/share/robo_collector_controller/package.xml\n'}
+[8.924055] (robo_collector_controller) StdoutLine: {'line': b'-- Up-to-date symlink: /home/ubuntu/workspace/Velizar/robotics_v1/install/robo_collector_controller/share/robo_collector_controller//launch/launch.py\n'}
+[8.925701] (robo_collector_controller) StdoutLine: {'line': b'-- Up-to-date symlink: /home/ubuntu/workspace/Velizar/robotics_v1/install/robo_collector_controller/share/robo_collector_controller//config/params.yaml\n'}
+[8.927053] (robo_collector_controller) StdoutLine: {'line': b'-- Up-to-date symlink: /home/ubuntu/workspace/Velizar/robotics_v1/install/robo_collector_controller/lib/robo_collector_controller/robo_collector_controller\n'}
+[8.929798] (robo_collector_controller) StdoutLine: {'line': b'-- Symlinking: /home/ubuntu/workspace/Velizar/robotics_v1/install/robo_collector_controller/share/ament_index/resource_index/packages/robo_collector_controller\n'}
+[8.951711] (robo_collector_controller) StdoutLine: {'line': b'-- Up-to-date symlink: /home/ubuntu/workspace/Velizar/robotics_v1/install/robo_collector_controller/share/robo_collector_controller/hook/ament_prefix_path.dsv\n'}
+[8.952489] (robo_collector_controller) StdoutLine: {'line': b'-- Up-to-date symlink: /home/ubuntu/workspace/Velizar/robotics_v1/install/robo_collector_controller/share/robo_collector_controller/hook/ros_package_path.dsv\n'}
+[8.953638] (robo_collector_controller) StdoutLine: {'line': b'-- Up-to-date symlink: /home/ubuntu/workspace/Velizar/robotics_v1/install/robo_collector_controller/share/ament_index/resource_index/package_run_dependencies/robo_collector_controller\n'}
+[8.954502] (robo_collector_controller) StdoutLine: {'line': b'-- Up-to-date symlink: /home/ubuntu/workspace/Velizar/robotics_v1/install/robo_collector_controller/share/ament_index/resource_index/parent_prefix_path/robo_collector_controller\n'}
+[8.955350] (robo_collector_controller) StdoutLine: {'line': b'-- Up-to-date symlink: /home/ubuntu/workspace/Velizar/robotics_v1/install/robo_collector_controller/share/robo_collector_controller/environment/ament_prefix_path.sh\n'}
+[8.956196] (robo_collector_controller) StdoutLine: {'line': b'-- Up-to-date symlink: /home/ubuntu/workspace/Velizar/robotics_v1/install/robo_collector_controller/share/robo_collector_controller/environment/ament_prefix_path.dsv\n'}
+[8.957092] (robo_collector_controller) StdoutLine: {'line': b'-- Up-to-date symlink: /home/ubuntu/workspace/Velizar/robotics_v1/install/robo_collector_controller/share/robo_collector_controller/environment/path.sh\n'}
+[8.957925] (robo_collector_controller) StdoutLine: {'line': b'-- Up-to-date symlink: /home/ubuntu/workspace/Velizar/robotics_v1/install/robo_collector_controller/share/robo_collector_controller/environment/path.dsv\n'}
+[8.958035] (-) TimerEvent: {}
+[8.958869] (robo_collector_controller) StdoutLine: {'line': b'-- Up-to-date symlink: /home/ubuntu/workspace/Velizar/robotics_v1/install/robo_collector_controller/share/robo_collector_controller/local_setup.bash\n'}
+[8.959634] (robo_collector_controller) StdoutLine: {'line': b'-- Up-to-date symlink: /home/ubuntu/workspace/Velizar/robotics_v1/install/robo_collector_controller/share/robo_collector_controller/local_setup.sh\n'}
+[8.960476] (robo_collector_controller) StdoutLine: {'line': b'-- Up-to-date symlink: /home/ubuntu/workspace/Velizar/robotics_v1/install/robo_collector_controller/share/robo_collector_controller/local_setup.zsh\n'}
+[8.962116] (robo_collector_controller) StdoutLine: {'line': b'-- Up-to-date symlink: /home/ubuntu/workspace/Velizar/robotics_v1/install/robo_collector_controller/share/robo_collector_controller/local_setup.dsv\n'}
+[8.962457] (robo_collector_controller) StdoutLine: {'line': b'-- Symlinking: /home/ubuntu/workspace/Velizar/robotics_v1/install/robo_collector_controller/share/robo_collector_controller/package.dsv\n'}
+[8.989484] (robo_collector_controller) StdoutLine: {'line': b'-- Symlinking: /home/ubuntu/workspace/Velizar/robotics_v1/install/robo_collector_controller/share/ament_index/resource_index/packages/robo_collector_controller\n'}
+[9.014527] (robo_collector_controller) StdoutLine: {'line': b'-- Up-to-date symlink: /home/ubuntu/workspace/Velizar/robotics_v1/install/robo_collector_controller/share/robo_collector_controller/cmake/robo_collector_controllerConfig.cmake\n'}
+[9.015014] (robo_collector_controller) StdoutLine: {'line': b'-- Up-to-date symlink: /home/ubuntu/workspace/Velizar/robotics_v1/install/robo_collector_controller/share/robo_collector_controller/cmake/robo_collector_controllerConfig-version.cmake\n'}
+[9.015975] (robo_collector_controller) StdoutLine: {'line': b'-- Up-to-date symlink: /home/ubuntu/workspace/Velizar/robotics_v1/install/robo_collector_controller/share/robo_collector_controller/package.xml\n'}
+[9.018211] (robo_collector_controller) StdoutLine: {'line': b'-- Up-to-date symlink: /home/ubuntu/workspace/Velizar/robotics_v1/install/robo_collector_controller/share/robo_collector_controller/resources//RoboCollectorController.rsrc\n'}
+[9.018772] (robo_collector_controller) StdoutLine: {'line': b'-- Up-to-date symlink: /home/ubuntu/workspace/Velizar/robotics_v1/install/robo_collector_controller/share/robo_collector_controller/resources//f/vinque_rg_30.ttf\n'}
+[9.019309] (robo_collector_controller) StdoutLine: {'line': b'-- Up-to-date symlink: /home/ubuntu/workspace/Velizar/robotics_v1/install/robo_collector_controller/share/robo_collector_controller/resources//generated/RoboCollectorControllerResources.h\n'}
+[9.019885] (robo_collector_controller) StdoutLine: {'line': b'-- Up-to-date symlink: /home/ubuntu/workspace/Velizar/robotics_v1/install/robo_collector_controller/share/robo_collector_controller/resources//generated/RoboCollectorControllerResourcesDynamic.h\n'}
+[9.020455] (robo_collector_controller) StdoutLine: {'line': b'-- Up-to-date symlink: /home/ubuntu/workspace/Velizar/robotics_v1/install/robo_collector_controller/share/robo_collector_controller/resources//generated/RoboCollectorControllerResourcesDynamicValues.h\n'}
+[9.021175] (robo_collector_controller) StdoutLine: {'line': b'-- Up-to-date symlink: /home/ubuntu/workspace/Velizar/robotics_v1/install/robo_collector_controller/share/robo_collector_controller/resources//generated/fonts.bin\n'}
+[9.021763] (robo_collector_controller) StdoutLine: {'line': b'-- Up-to-date symlink: /home/ubuntu/workspace/Velizar/robotics_v1/install/robo_collector_controller/share/robo_collector_controller/resources//generated/resources.bin\n'}
+[9.022433] (robo_collector_controller) StdoutLine: {'line': b'-- Up-to-date symlink: /home/ubuntu/workspace/Velizar/robotics_v1/install/robo_collector_controller/share/robo_collector_controller/resources//generated/sounds.bin\n'}
+[9.022878] (robo_collector_controller) StdoutLine: {'line': b'-- Up-to-date symlink: /home/ubuntu/workspace/Velizar/robotics_v1/install/robo_collector_controller/share/robo_collector_controller/resources//p/background/map.png\n'}
+[9.023462] (robo_collector_controller) StdoutLine: {'line': b'-- Up-to-date symlink: /home/ubuntu/workspace/Velizar/robotics_v1/install/robo_collector_controller/share/robo_collector_controller/resources//p/buttons/help_button.png\n'}
+[9.023994] (robo_collector_controller) StdoutLine: {'line': b'-- Up-to-date symlink: /home/ubuntu/workspace/Velizar/robotics_v1/install/robo_collector_controller/share/robo_collector_controller/resources//p/buttons/left_button.png\n'}
+[9.024659] (robo_collector_controller) StdoutLine: {'line': b'-- Up-to-date symlink: /home/ubuntu/workspace/Velizar/robotics_v1/install/robo_collector_controller/share/robo_collector_controller/resources//p/buttons/right_button.png\n'}
+[9.025261] (robo_collector_controller) StdoutLine: {'line': b'-- Up-to-date symlink: /home/ubuntu/workspace/Velizar/robotics_v1/install/robo_collector_controller/share/robo_collector_controller/resources//p/buttons/settings_button.png\n'}
+[9.025842] (robo_collector_controller) StdoutLine: {'line': b'-- Up-to-date symlink: /home/ubuntu/workspace/Velizar/robotics_v1/install/robo_collector_controller/share/robo_collector_controller/resources//p/buttons/up_button.png\n'}
+[9.026496] (robo_collector_controller) StdoutLine: {'line': b'-- Up-to-date symlink: /home/ubuntu/workspace/Velizar/robotics_v1/install/robo_collector_controller/share/robo_collector_controller/resources//p/icons/joystick.png\n'}
+[9.027052] (robo_collector_controller) StdoutLine: {'line': b'-- Up-to-date symlink: /home/ubuntu/workspace/Velizar/robotics_v1/install/robo_collector_controller/share/robo_collector_controller/resources//p/panels/hor_delimiter.png\n'}
+[9.027647] (robo_collector_controller) StdoutLine: {'line': b'-- Up-to-date symlink: /home/ubuntu/workspace/Velizar/robotics_v1/install/robo_collector_controller/share/robo_collector_controller/resources//p/panels/vert_delimiter.png\n'}
+[9.033439] (robo_collector_controller) CommandEnded: {'returncode': 0}
+[9.065562] (-) TimerEvent: {}
+[9.166097] (-) TimerEvent: {}
+[9.202652] (robo_collector_controller) JobEnded: {'identifier': 'robo_collector_controller', 'rc': 0}
+[9.204617] (-) EventReactorShutdown: {}

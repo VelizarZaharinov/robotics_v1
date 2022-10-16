@@ -1,0 +1,3 @@
+[console_scripts]
+robot_ai = robo_miner_ai_py.robo_miner_ai:main
+
