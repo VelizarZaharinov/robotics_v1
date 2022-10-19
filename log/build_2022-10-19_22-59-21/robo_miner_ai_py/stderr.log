@@ -1,0 +1,5 @@
+  File "/home/ubuntu/workspace/Velizar/robotics_v1/install/robo_miner_ai_py/lib/python3.8/site-packages/robo_miner_ai_py/robo_miner_ai.py", line 741
+    self.obstacles)
+    ^
+SyntaxError: invalid syntax
+

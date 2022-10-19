@@ -1,342 +1,91 @@
-import sys
+import random
 
 import rclpy
-from rclpy.node import Node
 
-from robo_miner_interfaces.msg import UserAuthenticate
-from robo_miner_interfaces.msg import RobotMoveType
+import robo_miner_ai_py.communicator as communicator
+import robo_miner_ai_py.map_tiles as map_tiles
 
-from robo_miner_interfaces.srv import QueryInitialRobotPosition
-from robo_miner_interfaces.srv import RobotMove
+class PheromoneMap:
+    def __init__(self, landscape, explored_tiles_map, obstacles):
+        self.landscape = landscape
+        self.obstacles = obstacles
 
-class RobotConverse(Node):
-    def __init__(self):
-        # Init parent class
-        super().__init__('robot_ai')
+        # Initial pheromoen levels
+        self.init_pheromone_levels(1.0,
+                                   explored_tiles_map)
 
-        # Init QoS
-        qos = rclpy.qos.QoSProfile(reliability=rclpy.qos.ReliabilityPolicy.RELIABLE,
-                                   durability=rclpy.qos.DurabilityPolicy.VOLATILE,
-                                   history=rclpy.qos.HistoryPolicy.SYSTEM_DEFAULT,
-                                   depth=10)
-
-        # Init publishers
-        self.pub_authenticate = self.create_publisher(UserAuthenticate,
-                                                      'user_authenticate',
-                                                      qos)
-
-        # Init services
-        self.cli_initial_position = self.create_client(QueryInitialRobotPosition,
-                                                       'query_initial_robot_position')
-        while not self.cli_initial_position.wait_for_service(timeout_sec=1):
-            self.get_logger().info('service not available, waiting again...')
-        self.cli_move = self.create_client(RobotMove,
-                                           'move_robot')
-        while not self.cli_move.wait_for_service(timeout_sec=1):
-            self.get_logger().info('service not available, waiting again...')
-
-        # Init requests returned from services
-        self.req_initial_position = QueryInitialRobotPosition.Request()
-        self.req_move = RobotMove.Request()
-
-        # Init messages
-        self.msg_move = RobotMoveType()
-
-    def authenticate_user(self):
-        msg = UserAuthenticate()
-
-        msg.user = 'Velizar Zaharinov'
-        msg.repository = 'https://github.com/VelizarZaharinov/robotics_v1'
-        msg.commit_sha = 'TODO'
-
-        self.pub_authenticate.publish(msg)
-        print('Authentication complete')
-
-    def request_initial_position(self):
-        future = self.cli_initial_position.call_async(self.req_initial_position)
-        rclpy.spin_until_future_complete(self,
-                                         future)
-        
-        return future.result()
-
-    def move_forward(self):
-        self.msg_move.move_type = 0
-        self.req_move.robot_move_type = self.msg_move
-        future = self.cli_move.call_async(self.req_move)
-        rclpy.spin_until_future_complete(self,
-                                         future)
-
-        return future.result()
-
-    def move_rot_left(self):
-        self.msg_move.move_type = 1
-        self.req_move.robot_move_type = self.msg_move
-        future = self.cli_move.call_async(self.req_move)
-        rclpy.spin_until_future_complete(self,
-                                         future)
-
-        return future.result()
-
-    def move_rot_right(self):
-        self.msg_move.move_type = 2
-        self.req_move.robot_move_type = self.msg_move
-        future = self.cli_move.call_async(self.req_move)
-        rclpy.spin_until_future_complete(self,
-                                         future)
-
-        return future.result()
-
-class Map:
-    def __init__(self, **kwargs):
-        # The initial map contains only the surroundings of the initial
-        # position of the robot. The robot is in the center
-        self.landscape = [[None, None, None],
-                          [None, kwargs['initial_tile'], None],
-                          [None, None, None]]
-        # Flag not to check for map borders if all are found
-        self.borders_found = [0, 0, 0, 0] # Four borders top to left
-        # For saving the original value of the marked tile
-        self.marked_tile_original = None
-        
-        self.update_map(kwargs['orientation'],
-                        kwargs['surroundings'],
-                        kwargs['cur_pos'][0],
-                        kwargs['cur_pos'][1])
-                        
-
-    def update_map(self, orientation, surroundings, cur_x, cur_y):
-        if orientation==0:
-            if self.landscape[cur_y][cur_x-1]==None:
-                self.landscape[cur_y][cur_x-1] = surroundings[0]
-            if self.landscape[cur_y-1][cur_x]==None:
-                self.landscape[cur_y-1][cur_x] = surroundings[1]
-            if self.landscape[cur_y][cur_x+1]==None:
-                self.landscape[cur_y][cur_x+1] = surroundings[2]
-        elif orientation==1:
-            if self.landscape[cur_y-1][cur_x]==None:
-                self.landscape[cur_y-1][cur_x] = surroundings[0]
-            if self.landscape[cur_y][cur_x+1]==None:
-                self.landscape[cur_y][cur_x+1] = surroundings[1]
-            if self.landscape[cur_y+1][cur_x]==None:
-                self.landscape[cur_y+1][cur_x] = surroundings[2]
-        elif orientation==2:
-            if self.landscape[cur_y][cur_x+1]==None:
-                self.landscape[cur_y][cur_x+1] = surroundings[0]
-            if self.landscape[cur_y+1][cur_x]==None:
-                self.landscape[cur_y+1][cur_x] = surroundings[1]
-            if self.landscape[cur_y][cur_x-1]==None:
-                self.landscape[cur_y][cur_x-1] = surroundings[2]
-        elif orientation==3:
-            if self.landscape[cur_y+1][cur_x]==None:
-                self.landscape[cur_y+1][cur_x] = surroundings[0]
-            if self.landscape[cur_y][cur_x-1]==None:
-                self.landscape[cur_y][cur_x-1] = surroundings[1]
-            if self.landscape[cur_y-1][cur_x]==None:
-                self.landscape[cur_y-1][cur_x] = surroundings[2]
-        else:
-            print('Unknown orientation')
-
-        self.print_map()
-
-    def get_tile_front(self, pos, orient):
-        if orient==0:
-            tile = self.landscape[pos[1]-1][pos[0]]
-        elif orient==1:
-            tile = self.landscape[pos[1]][pos[0]+1]
-        elif orient==2:
-            tile = self.landscape[pos[1]+1][pos[0]]
-        elif orient==3:
-            tile = self.landscape[pos[1]][pos[0]-1]
-        else:
-            print('Unknown orientation')
-
-        return tile
-
-    def get_tile_left(self, pos, orient):
-        if orient==0:
-            tile = self.landscape[pos[1]][pos[0]-1]
-        elif orient==1:
-            tile = self.landscape[pos[1]-1][pos[0]]
-        elif orient==2:
-            tile = self.landscape[pos[1]][pos[0]+1]
-        elif orient==3:
-            tile = self.landscape[pos[1]+1][pos[0]]
-        else:
-            print('Unknown orientation')
-
-        return tile
-
-    def get_tile_right(self, pos, orient):
-        if orient==0:
-            tile = self.landscape[pos[1]][pos[0]+1]
-        elif orient==1:
-            tile = self.landscape[pos[1]+1][pos[0]]
-        elif orient==2:
-            tile = self.landscape[pos[1]][pos[0]-1]
-        elif orient==3:
-            tile = self.landscape[pos[1]-1][pos[0]]
-        else:
-            print('Unknown orientation')
-
-        return tile
-
-    def get_tile_rear(self, pos, orient):
-        if orient==0:
-            tile = self.landscape[pos[1]+1][pos[0]]
-        elif orient==1:
-            tile = self.landscape[pos[1]][pos[0]-1]
-        elif orient==2:
-            tile = self.landscape[pos[1]-1][pos[0]]
-        elif orient==3:
-            tile = self.landscape[pos[1]][pos[0]+1]
-        else:
-            print('Unknown orientation')
-
-        return tile
-
-    def get_tile_on(self, pos):
-        return self.landscape[pos[1]][pos[0]]
-
-    def get_unexplored_tile(self):
+    def init_pheromone_levels(self, pheromone_level, explored_tiles_map):
         for i in range(len(self.landscape)):
             for j in range(len(self.landscape[i])):
-                if self.landscape[i][j]==None:
-                    return [i, j]
+                if not (self.landscape[i][j] in self.obstacles):
+                    if explored_tiles_map.landscape[i][j]==1:
+                        self.landscape[i][j] = pheromone_level/2.0
+                    else:
+                        self.landscape[i][j] = pheromone_level
+                else:
+                    self.landscape[i][j] = 0.0
 
-    def grow(self, cur_pos):
-        if (cur_pos[1]+1)==len(self.landscape):
-            self.landscape.append([])
-            for tile in range(len(self.landscape[cur_pos[1]])):
-                self.landscape[-1].append(None)
-            print('map grows downwards')
-        elif (cur_pos[1]-1)<0:
-            self.landscape.insert(0, [])
-            cur_pos[1] += 1 # Important to increment here
-            for tile in range(len(self.landscape[cur_pos[1]])):
-                self.landscape[0].append(None)
-            print('map grows upwards')
-        elif (cur_pos[0]+1)==len(self.landscape[cur_pos[1]]):
-            for tile in range(len(self.landscape)):
-                self.landscape[tile].append(None)
-            print('map grows right')
-        elif (cur_pos[0]-1)<0:
-            for tile in range(len(self.landscape)):
-                self.landscape[tile].insert(0, None)
-            cur_pos[0] += 1
-            print('map grows left')
+    def decrease_pheromone(self, pos):
+        self.landscape[pos[1]][pos[0]] /= 2.0
 
-        return cur_pos
-
-    def exploration_check(self):
-        fully_explored = True
-        i = 0
-        map_rows = len(self.landscape)
-        while i<map_rows:
-            if None in self.landscape[i]:
-                fully_explored = False
-                i = map_rows
-            i += 1
-
-        return fully_explored
-
-    def auto_fill_map_borders(self):
-        if 0 in self.borders_found:
-            if not self.borders_found[0]:
-                self.check_upper_border()
-            if not self.borders_found[1]:
-                self.check_right_border()
-            if not self.borders_found[2]:
-                self.check_lower_border()
-            if not self.borders_found[3]:
-                self.check_left_border()
-
-        self.print_map()
-
-    def auto_fill_map_borders_edges(self):
-        map_rows = len(self.landscape)
-        for i in range(map_rows):
-            if (not i) or (i==(map_rows-1)):
-                for j in range(len(self.landscape[i])):
-                    self.landscape[i][j] = 2
-            else:
-                self.landscape[i][0] = 2
-                self.landscape[i][-1] = 2
-
-        self.print_map()
-
-    def check_upper_border(self):
-        border_tiles_count = 0
-        border_tiles_indices = []
-        map_columns = len(self.landscape[0])
-        for i in range(map_columns):
-            if self.landscape[0][i]==35:
-                border_tiles_count += 1
-                border_tiles_indices.append(i)
-
-        if border_tiles_count>2:
-            for i in range(map_columns):
-                self.landscape[0][i] = 35
-            self.borders_found[0] = 1
+    def get_front_tile_pos(self, pos, orient):
+        if orient==0:
+            tile_pos = [pos[0], pos[1]-1]
+        elif orient==1:
+            tile_pos = [pos[0]+1, pos[1]]
+        elif orient==2:
+            tile_pos = [pos[0], pos[1]+1]
+        elif orient==3:
+            tile_pos = [pos[0]-1, pos[1]]
         else:
-            for i in range(len(border_tiles_indices)):
-                if (border_tiles_indices[i]>0) and (border_tiles_indices[i]<(border_tiles_count-1)):
-                    for j in range(map_columns):
-                        self.landscape[0][i] = 35
-                    self.borders_found[0] = 1
-                    
-    def check_right_border(self):
-        map_rows = len(self.landscape)
-        i = 0
-        while i<map_rows:
-            if self.landscape[i][-1]==35:
-                for j in range(map_rows):
-                    self.landscape[j][-1] = 35
-                i = map_rows
-                self.borders_found[1] = 1
-            i += 1
+            print('Unknown orientation')
 
-    def check_lower_border(self):
-        border_tiles_count = 0
-        border_tiles_indices = []
-        map_columns = len(self.landscape[-1])
-        for i in range(map_columns):
-            if self.landscape[-1][i]==35:
-                border_tiles_count += 1
-                border_tiles_indices.append(i)
+        return tile_pos
 
-        if border_tiles_count>2:
-            for i in range(map_columns):
-                self.landscape[-1][i] = 35
-            self.borders_found[2] = 1
+    def get_left_tile_pos(self, pos, orient):
+        if orient==0:
+            tile_pos = [pos[0]-1, pos[1]]
+        elif orient==1:
+            tile_pos = [pos[0], pos[1]-1]
+        elif orient==2:
+            tile_pos = [pos[0]+1, pos[1]]
+        elif orient==3:
+            tile_pos = [pos[0], pos[1]+1]
         else:
-            for i in range(len(border_tiles_indices)):
-                if (border_tiles_indices[i]>0) and (border_tiles_indices[i]<(border_tiles_count-1)):
-                    for j in range(map_columns):
-                        self.landscape[-1][i] = 35
-                    self.borders_found[2] = 1
+            print('Unknown orientation')
 
-    def check_left_border(self):
-        map_rows = len(self.landscape)
-        i = 0
-        while i<map_rows:
-            if self.landscape[i][0]==35:
-                for j in range(map_rows):
-                    self.landscape[j][0] = 35
-                i = map_rows
-                self.borders_found[3] = 1
-            i += 1
+        return tile_pos
 
-    def mark_position(self, cur_pos, marker):
-        self.marked_tile_original = self.landscape[cur_pos[1]][cur_pos[0]]
-        self.landscape[cur_pos[1]][cur_pos[0]] = marker
+    def get_right_tile_pos(self, pos, orient):
+        if orient==0:
+            tile_pos = [pos[0]+1, pos[1]]
+        elif orient==1:
+            tile_pos = [pos[0], pos[1]+1]
+        elif orient==2:
+            tile_pos = [pos[0]-1, pos[1]]
+        elif orient==3:
+            tile_pos = [pos[0], pos[1]-1]
+        else:
+            print('Unknown orientation')
 
-    def fill_obstacles(self, pattern_map):
-        for i in range(len(pattern_map.landscape)):
-            for j in range(len(pattern_map.landscape[i])):
-                if pattern_map.landscape[i][j]==88:
-                    self.landscape[i][j] = 88
+        return tile_pos
 
-        self.print_map()
+    def get_rear_tile_pos(self, pos, orient):
+        if orient==0:
+            tile_pos = [pos[0], pos[1]+1]
+        elif orient==1:
+            tile_pos = [pos[0]-1, pos[1]]
+        elif orient==2:
+            tile_pos = [pos[0], pos[1]-1]
+        elif orient==3:
+            tile_pos = [pos[0]+1, pos[1]]
+        else:
+            print('Unknown orientation')
+
+        return tile_pos
+
+    def get_tile_pheromone_level(self, coords):
+        return self.landscape[coords[1]][coords[0]]
 
     def print_map(self):
         for i in range(len(self.landscape)):
@@ -345,6 +94,7 @@ class Map:
 class RobotAi:
     def __init__(self):
         # The position is relative to the currently explored map data
+        # [0] corresponds to map column, and [1] to map row
         self.cur_position = [1, 1]
         self.starting_tile = None
         # For the current orientation 0 = up, 1 = right, 2 = down, 3 = left
@@ -355,7 +105,10 @@ class RobotAi:
         self.surrounding_tiles = [None, None, None]
         
         # Init robot talker
-        self.robot_converse = RobotConverse()
+        self.robot_converse = communicator.RobotConverse()
+
+        # Obstacle markers
+        self.obstacles = [35, 88]
 
     def authenticate(self):
         self.robot_converse.authenticate_user()
@@ -368,14 +121,14 @@ class RobotAi:
 
         # The initial map contains only the surroundings of the initial
         # position of the robot. The robot is in the center
-        self.map = Map(orientation=self.cur_orientation,
-                       surroundings=self.surrounding_tiles,
-                       cur_pos=self.cur_position,
-                       initial_tile=self.starting_tile)
-        self.explored_tiles_map = Map(orientation=self.cur_orientation,
-                                      surroundings=[None, None, None],
-                                      cur_pos=self.cur_position,
-                                      initial_tile=1)
+        self.map = map_tiles.Map(orientation=self.cur_orientation,
+                                 surroundings=self.surrounding_tiles,
+                                 cur_pos=self.cur_position,
+                                 initial_tile=self.starting_tile)
+        self.explored_tiles_map = map_tiles.Map(orientation=self.cur_orientation,
+                                                surroundings=[None, None, None],
+                                                cur_pos=self.cur_position,
+                                                initial_tile=1)
 
         self.traverse_left_edge_strategy()
 
@@ -383,13 +136,89 @@ class RobotAi:
         self.explored_tiles_map.auto_fill_map_borders_edges()
         self.explored_tiles_map.fill_obstacles(self.map)
 
+        self.pheromone_map = PheromoneMap(self.map.copy_map(),
+                                          self.explored_tiles_map,
+                                          self.obstacles)
         while not self.explored_tiles_map.exploration_check():
             print('Need more exploration')
-            tile = self.explored_tiles_map.get_unexplored_tile()
-            print(tile)
-            break
+            print('Ant algorithm')
+            self.pheromone_map.decrease_pheromone(self.cur_position)
+            self.pheromone_map.print_map()
+            possible_tiles_coords = {'front':None,
+                                     'right':None,
+                                     'rear':None,
+                                     'left':None}
+            if self.check_front():
+                possible_tiles_coords['front'] = self.pheromone_map.get_front_tile_pos(self.cur_position,
+                                                                                       self.cur_orientation)
+            if self.check_right():
+                possible_tiles_coords['right'] = self.pheromone_map.get_right_tile_pos(self.cur_position,
+                                                                                       self.cur_orientation)
+            if self.check_rear():
+                possible_tiles_coords['rear'] = self.pheromone_map.get_rear_tile_pos(self.cur_position,
+                                                                                     self.cur_orientation)
+            if self.check_left():
+                possible_tiles_coords['left'] = self.pheromone_map.get_left_tile_pos(self.cur_position,
+                                                                                     self.cur_orientation)
+            print(possible_tiles_coords)
+            
+            pheromone_levels = {'front':None,
+                                'right':None,
+                                'rear':None,
+                                'left':None}
+            for direction in possible_tiles_coords.keys():
+                if possible_tiles_coords[direction]:
+                    pheromone_levels[direction] = self.pheromone_map.get_tile_pheromone_level(possible_tiles_coords[direction])
+            print(pheromone_levels)
 
-        print('All explored!')
+            total_surrounding_pheromone = 0
+            for direction in pheromone_levels.keys():
+                if pheromone_levels[direction]:
+                    total_surrounding_pheromone += self.pheromone_map.get_tile_pheromone_level(possible_tiles_coords[direction])
+
+            tile_probability = {'front':None,
+                                'right':None,
+                                'rear':None,
+                                'left':None}
+            for direction in pheromone_levels.keys():
+                if pheromone_levels[direction]:
+                    tile_probability[direction] = pheromone_levels[direction]/total_surrounding_pheromone
+            print(tile_probability)
+
+            probabilities = tile_probability.values()
+            filtered_probabilities = []
+            for p in probabilities:
+                if p==None:
+                    filtered_probabilities.append(0.0)
+                else:
+                    filtered_probabilities.append(p)
+            max_probability = max(filtered_probabilities)
+            
+            max_probability_tiles_coords = []
+            for direction in tile_probability.keys():
+                if tile_probability[direction]==max_probability:
+                    max_probability_tiles_coords.append(possible_tiles_coords[direction])
+            print(max_probability_tiles_coords)
+
+            n_max_probability_tiles = len(max_probability_tiles_coords)
+            if n_max_probability_tiles>1:
+                chosen_tile_index = random.randint(0, n_max_probability_tiles-1)
+            else:
+                chosen_tile_index = 0
+            print(chosen_tile_index)
+
+##            input()
+
+            self.go_to_tile(max_probability_tiles_coords[chosen_tile_index])
+
+        print('All explored! Now to validate the map')
+        map_no_borders = self.map.clear_borders()
+        print(map_no_borders)
+        validation = self.robot_converse.map_validate(map_no_borders)
+        if validation.success:
+            print('Map validated')
+        else:
+            print(validation.error_reason)
 
     def ask_initial_position(self):
         res_initial_position = self.robot_converse.request_initial_position()
@@ -400,6 +229,7 @@ class RobotAi:
     def check_front(self):
         front_tile = self.map.get_tile_front(self.cur_position,
                                              self.cur_orientation)
+        print('Front tile in check front: %d'%(front_tile))
 
         no_obstacle = True
         if (front_tile==35) or (front_tile==88):
@@ -437,6 +267,54 @@ class RobotAi:
 
         return no_obstacle
 
+    def check_obstacle_along_x(self, target_x):
+        obstacle_along_x = False
+        seek_x = self.cur_position[0]
+        if target_x<self.cur_position[0]:
+            seek_x -= 1
+        elif target_x>self.cur_position[0]:
+            seek_x += 1
+        flag = 1
+        while (not (target_x==seek_x)) and flag:
+            if self.map.landscape[self.cur_position[1]][seek_x]==88:
+                obstacle_along_x = True
+                if target_x<self.cur_position[0]:
+                    seek_x += 1
+                else:
+                    seek_x -= 1
+                flag = 0
+            else:
+                if target_x<self.cur_position[0]:
+                    seek_x -= 1
+                else:
+                    seek_x += 1
+
+        return obstacle_along_x, seek_x
+
+    def check_obstacle_along_y(self, target_y):
+        obstacle_along_y = False
+        seek_y = self.cur_position[1]
+        if target_y<self.cur_position[1]:
+            seek_y -= 1
+        elif target_y>self.cur_position[1]:
+            seek_y += 1
+        flag = 1
+        while (not (target_y==seek_y)) and flag:
+            if self.map.landscape[seek_y][self.cur_position[0]]==88:
+                obstacle_along_y = True
+                if target_y<self.cur_position[1]:
+                    seek_y += 1
+                else:
+                    seek_y -= 1
+                flag = 0
+            else:
+                if target_y<self.cur_position[1]:
+                    seek_y -= 1
+                else:
+                    seek_y += 1
+
+        return obstacle_along_y, seek_y
+        
     def advance(self):
         move_outcome = self.robot_converse.move_forward()
         self.surrounding_tiles = move_outcome.robot_position_response.surrounding_tiles
@@ -463,7 +341,8 @@ class RobotAi:
                             self.cur_position[1])
 
         self.explored_tiles_map.landscape[self.cur_position[1]][self.cur_position[0]] = 1
-        self.explored_tiles_map.print_map()
+        self.explored_tiles_map.update_explored_map(self.map.landscape,
+                                                    self.obstacles)
 
         print('Moved forward')
 
@@ -521,14 +400,19 @@ class RobotAi:
         self.map.mark_position(self.cur_position,
                                marker)
 
-        self.next_move_left_edge_strategy()
+        advanced_after_marker_placed = self.next_move_left_edge_strategy()
+        while not advanced_after_marker_placed:
+            advanced_after_marker_placed = self.next_move_left_edge_strategy()
 
         while not (self.map.get_tile_on(self.cur_position)==marker):
             self.next_move_left_edge_strategy()
 
+        self.map.erease_marker(marker)
+
         print('Returned to starting position after left edge following')        
 
     def next_move_left_edge_strategy(self):
+        advanced = True
         if self.check_front():
             if not self.check_left():
                 self.advance()
@@ -543,6 +427,175 @@ class RobotAi:
         else:
             print('There is an obstacle in front and on the left. Try to evade right')
             self.evade_right()
+            advanced = False
+
+        return advanced
+
+    def next_move_right_edge_strategy(self):
+        if self.check_front():
+            if not self.check_right():
+                self.advance()
+            else:
+                print('Lost right edge, trying to find it')
+                self.evade_right()
+                self.advance()
+        elif self.check_right():
+            print('Lost left edge, trying to find it')
+            self.evade_right()
+            self.advance()
+        else:
+            print('There is an obstacle in front and on the right. Try to evade left')
+            self.evade_left()
+
+    def go_to_tile(self, tile):
+        cur_x_diff = tile[0] - self.cur_position[0]
+        cur_y_diff = tile[1] - self.cur_position[1]
+        while cur_x_diff or cur_y_diff:
+            if cur_x_diff:
+                self.align_x_strategy(tile)
+                print('X position reached')
+            else:
+                print('X position reached')
+            if cur_y_diff:
+                self.align_y_strategy(tile)
+                print('Y position reached')
+            else:
+                print('Y position reached')
+
+            cur_x_diff = tile[0] - self.cur_position[0]
+            cur_y_diff = tile[1] - self.cur_position[1]
+                
+        print('Desired tile reached')
+
+    def align_x_strategy(self, tile):
+        print('Align x strategy')
+        cur_x_diff = tile[0] - self.cur_position[0]
+        cur_y_diff = tile[1] - self.cur_position[1]
+        
+        self.align_x(cur_x_diff)
+
+        while cur_x_diff:
+            if self.check_front():
+                self.advance()
+                cur_x_diff = tile[0] - self.cur_position[0]
+                cur_y_diff = tile[1] - self.cur_position[1]
+            else:
+                print('Obstacle reached. Trying to evade')
+                if cur_y_diff<0:
+                    if self.check_right():
+                        self.evade_right()
+                        self.advance()
+                        cur_x_diff = tile[0] - self.cur_position[0]
+                        cur_y_diff = tile[1] - self.cur_position[1]
+                        self.align_x(cur_x_diff)
+                    elif self.check_left():
+                        self.evade_left()
+                        self.advance()
+                        cur_x_diff = tile[0] - self.cur_position[0]
+                        cur_y_diff = tile[1] - self.cur_position[1]
+                        self.align_x(cur_x_diff)
+                    else:
+                        self.evade_right()
+                elif cur_y_diff>0:
+                    if self.check_left():
+                        self.evade_left()
+                        self.advance()
+                        cur_x_diff = tile[0] - self.cur_position[0]
+                        cur_y_diff = tile[1] - self.cur_position[1]
+                        self.align_x(cur_x_diff)
+                    elif self.check_right():
+                        self.evade_right()
+                        self.advance()
+                        cur_x_diff = tile[0] - self.cur_position[0]
+                        cur_y_diff = tile[1] - self.cur_position[1]
+                        self.align_x(cur_x_diff)
+                    else:
+                        self.evade_left()
+                else:
+                    if self.check_right():
+                        self.evade_right()
+                        self.advance()
+                        cur_x_diff = tile[0] - self.cur_position[0]
+                        cur_y_diff = tile[1] - self.cur_position[1]
+                        self.align_x(cur_x_diff)
+                    elif self.check_left():
+                        self.evade_left()
+                        self.advance()
+                        cur_x_diff = tile[0] - self.cur_position[0]
+                        cur_y_diff = tile[1] - self.cur_position[1]
+                        self.align_x(cur_x_diff)
+                    else:
+                        self.evade_right()
+
+    def align_y_strategy(self, tile):
+        print('Align y strategy')
+        cur_y_diff = tile[1] - self.cur_position[1]
+        
+        self.align_y(cur_y_diff)
+
+        while cur_y_diff:
+            if self.check_front():
+                self.advance()
+                cur_y_diff = tile[1] - self.cur_position[1]
+            else:
+                print('Obstacle reached. Trying to evade')
+                if self.check_right():
+                    self.evade_right()
+                    while (not self.check_left()) and self.check_front():
+                        self.advance()
+                    cur_y_diff = tile[1] - self.cur_position[1]
+                    self.align_y(cur_y_diff)
+                elif self.check_left():
+                    self.evade_left()
+                    while (not self.check_right()) and self.check_front():
+                        self.advance()
+                    cur_y_diff = tile[1] - self.cur_position[1]
+                    self.align_y(cur_y_diff)
+                else:
+                    self.evade_right()
+
+    def align_x(self, x_diff):
+        if x_diff:
+            if self.cur_orientation==0:
+                if x_diff<0:
+                    self.evade_left()
+                elif x_diff>0:
+                    self.evade_right()
+            elif self.cur_orientation==1:
+                if x_diff<0:
+                    self.evade_left()
+                    self.evade_left()
+            elif self.cur_orientation==2:
+                if x_diff<0:
+                    self.evade_right()
+                elif x_diff>0:
+                    self.evade_left()
+            else:
+                if x_diff>0:
+                    self.evade_left()
+                    self.evade_left()
+        
+
+    def align_y(self, y_diff):
+        if y_diff:
+            if self.cur_orientation==0:
+                if y_diff>0:
+                    self.evade_left()
+                    self.evade_left()
+            elif self.cur_orientation==1:
+                if y_diff<0:
+                    self.evade_left()
+                elif y_diff>0:
+                    self.evade_right()
+            elif self.cur_orientation==2:
+                if y_diff<0:
+                    self.evade_left()
+                    self.evade_left()
+            else:
+                if y_diff<0:
+                    self.evade_right()
+                elif y_diff>0:
+                    self.evade_left()
 
     def destroy(self):
         self.robot_converse.destroy_node()

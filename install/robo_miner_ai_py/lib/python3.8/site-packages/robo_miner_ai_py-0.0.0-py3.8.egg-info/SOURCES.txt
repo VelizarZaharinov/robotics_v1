@@ -10,6 +10,8 @@ setup.py
 ../../../build/robo_miner_ai_py/robo_miner_ai_py.egg-info/zip-safe
 resource/robo_miner_ai_py
 robo_miner_ai_py/__init__.py
+robo_miner_ai_py/communicator.py
+robo_miner_ai_py/map_tiles.py
 robo_miner_ai_py/robo_miner_ai.py
 test/test_copyright.py
 test/test_flake8.py
