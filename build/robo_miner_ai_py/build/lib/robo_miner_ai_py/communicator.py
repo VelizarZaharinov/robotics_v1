@@ -6,10 +6,13 @@ from rclpy.node import Node
 from robo_miner_interfaces.msg import UserAuthenticate
 from robo_miner_interfaces.msg import RobotMoveType
 from robo_miner_interfaces.msg import UInt8MultiArray
+from robo_miner_interfaces.msg import FieldPoint
 
 from robo_miner_interfaces.srv import QueryInitialRobotPosition
 from robo_miner_interfaces.srv import RobotMove
 from robo_miner_interfaces.srv import FieldMapValidate
+from robo_miner_interfaces.srv import LongestSequenceValidate
+from robo_miner_interfaces.srv import ActivateMiningValidate
 
 class RobotConverse(Node):
     def __init__(self):
@@ -40,12 +43,21 @@ class RobotConverse(Node):
                                                    'field_map_validate')
         while not self.cli_map_validate.wait_for_service(timeout_sec=1):
             self.get_logger().info('service not available, waiting again...')
-        
+        self.cli_longest_sequence_validate = self.create_client(LongestSequenceValidate,
+                                                                'longest_sequence_validate')
+        while not self.cli_longest_sequence_validate.wait_for_service(timeout_sec=1):
+            self.get_logger().info('service not available, waiting again...')
+        self.cli_activate_mining = self.create_client(ActivateMiningValidate,
+                                                      'activate_mining_validate')
+        while not self.cli_activate_mining.wait_for_service(timeout_sec=1):
+            self.get_logger().info('service not available, waiting again...')
 
         # Init requests returned from services
         self.req_initial_position = QueryInitialRobotPosition.Request()
         self.req_move = RobotMove.Request()
         self.req_map_validate = FieldMapValidate.Request()
+        self.req_longest_sequence_validate = LongestSequenceValidate.Request()
+        self.req_activate_mining = ActivateMiningValidate.Request()
 
         # Init messages
         self.msg_move = RobotMoveType()
@@ -56,7 +68,7 @@ class RobotConverse(Node):
 
         msg.user = 'Velizar Zaharinov'
         msg.repository = 'https://github.com/VelizarZaharinov/robotics_v1'
-        msg.commit_sha = 'TODO'
+        msg.commit_sha = 'd0a06faa7e4090f2096e6b44b0987941700f8a30'
 
         self.pub_authenticate.publish(msg)
         print('Authentication complete')
@@ -108,6 +120,25 @@ class RobotConverse(Node):
                 
         self.req_map_validate.field_map = self.msg_uint8_multi_array
         future = self.cli_map_validate.call_async(self.req_map_validate)
+        rclpy.spin_until_future_complete(self,
+                                         future)
+
+        return future.result()
+
+    def longest_sequence_validate(self, longest_sequence_points):
+        for i in range(len(longest_sequence_points)):
+            self.req_longest_sequence_validate.sequence_points.append(FieldPoint())
+            self.req_longest_sequence_validate.sequence_points[-1].row = longest_sequence_points[i][1]
+            self.req_longest_sequence_validate.sequence_points[-1].col = longest_sequence_points[i][0]
+
+        future = self.cli_longest_sequence_validate.call_async(self.req_longest_sequence_validate)
+        rclpy.spin_until_future_complete(self,
+                                         future)
+
+        return future.result()
+
+    def activate_mining(self):
+        future = self.cli_activate_mining.call_async(self.req_activate_mining)
         rclpy.spin_until_future_complete(self,
                                          future)
 

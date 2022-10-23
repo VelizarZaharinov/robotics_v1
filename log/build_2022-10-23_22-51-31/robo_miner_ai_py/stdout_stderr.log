@@ -1,0 +1,31 @@
+running egg_info
+writing ../../../build/robo_miner_ai_py/robo_miner_ai_py.egg-info/PKG-INFO
+writing dependency_links to ../../../build/robo_miner_ai_py/robo_miner_ai_py.egg-info/dependency_links.txt
+writing entry points to ../../../build/robo_miner_ai_py/robo_miner_ai_py.egg-info/entry_points.txt
+writing requirements to ../../../build/robo_miner_ai_py/robo_miner_ai_py.egg-info/requires.txt
+writing top-level names to ../../../build/robo_miner_ai_py/robo_miner_ai_py.egg-info/top_level.txt
+reading manifest file '../../../build/robo_miner_ai_py/robo_miner_ai_py.egg-info/SOURCES.txt'
+writing manifest file '../../../build/robo_miner_ai_py/robo_miner_ai_py.egg-info/SOURCES.txt'
+running build
+running build_py
+copying robo_miner_ai_py/map_pheromone.py -> /home/ubuntu/workspace/Velizar/robotics_v1/build/robo_miner_ai_py/build/lib/robo_miner_ai_py
+copying robo_miner_ai_py/communicator.py -> /home/ubuntu/workspace/Velizar/robotics_v1/build/robo_miner_ai_py/build/lib/robo_miner_ai_py
+copying robo_miner_ai_py/map_tiles.py -> /home/ubuntu/workspace/Velizar/robotics_v1/build/robo_miner_ai_py/build/lib/robo_miner_ai_py
+copying robo_miner_ai_py/robo_miner_ai.py -> /home/ubuntu/workspace/Velizar/robotics_v1/build/robo_miner_ai_py/build/lib/robo_miner_ai_py
+running install
+running install_lib
+copying /home/ubuntu/workspace/Velizar/robotics_v1/build/robo_miner_ai_py/build/lib/robo_miner_ai_py/map_pheromone.py -> /home/ubuntu/workspace/Velizar/robotics_v1/install/robo_miner_ai_py/lib/python3.8/site-packages/robo_miner_ai_py
+copying /home/ubuntu/workspace/Velizar/robotics_v1/build/robo_miner_ai_py/build/lib/robo_miner_ai_py/communicator.py -> /home/ubuntu/workspace/Velizar/robotics_v1/install/robo_miner_ai_py/lib/python3.8/site-packages/robo_miner_ai_py
+copying /home/ubuntu/workspace/Velizar/robotics_v1/build/robo_miner_ai_py/build/lib/robo_miner_ai_py/map_tiles.py -> /home/ubuntu/workspace/Velizar/robotics_v1/install/robo_miner_ai_py/lib/python3.8/site-packages/robo_miner_ai_py
+copying /home/ubuntu/workspace/Velizar/robotics_v1/build/robo_miner_ai_py/build/lib/robo_miner_ai_py/robo_miner_ai.py -> /home/ubuntu/workspace/Velizar/robotics_v1/install/robo_miner_ai_py/lib/python3.8/site-packages/robo_miner_ai_py
+byte-compiling /home/ubuntu/workspace/Velizar/robotics_v1/install/robo_miner_ai_py/lib/python3.8/site-packages/robo_miner_ai_py/map_pheromone.py to map_pheromone.cpython-38.pyc
+byte-compiling /home/ubuntu/workspace/Velizar/robotics_v1/install/robo_miner_ai_py/lib/python3.8/site-packages/robo_miner_ai_py/communicator.py to communicator.cpython-38.pyc
+byte-compiling /home/ubuntu/workspace/Velizar/robotics_v1/install/robo_miner_ai_py/lib/python3.8/site-packages/robo_miner_ai_py/map_tiles.py to map_tiles.cpython-38.pyc
+byte-compiling /home/ubuntu/workspace/Velizar/robotics_v1/install/robo_miner_ai_py/lib/python3.8/site-packages/robo_miner_ai_py/robo_miner_ai.py to robo_miner_ai.cpython-38.pyc
+running install_data
+running install_egg_info
+removing '/home/ubuntu/workspace/Velizar/robotics_v1/install/robo_miner_ai_py/lib/python3.8/site-packages/robo_miner_ai_py-0.0.0-py3.8.egg-info' (and everything under it)
+Copying ../../../build/robo_miner_ai_py/robo_miner_ai_py.egg-info to /home/ubuntu/workspace/Velizar/robotics_v1/install/robo_miner_ai_py/lib/python3.8/site-packages/robo_miner_ai_py-0.0.0-py3.8.egg-info
+running install_scripts
+Installing robot_ai script to /home/ubuntu/workspace/Velizar/robotics_v1/install/robo_miner_ai_py/lib/robo_miner_ai_py
+writing list of installed files to '/home/ubuntu/workspace/Velizar/robotics_v1/build/robo_miner_ai_py/install.log'

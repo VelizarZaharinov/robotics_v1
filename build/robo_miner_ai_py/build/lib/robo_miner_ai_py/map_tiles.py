@@ -281,6 +281,12 @@ class Map:
 
         return copy
 
+    def setup_for_mining(self, sequence):
+        for i in range(len(self.landscape)):
+            for j in range(len(self.landscape[i])):
+                if not ([j, i] in sequence):
+                    self.landscape[i][j] = 35
+
     def print_map(self):
         for i in range(len(self.landscape)):
             print(self.landscape[i])

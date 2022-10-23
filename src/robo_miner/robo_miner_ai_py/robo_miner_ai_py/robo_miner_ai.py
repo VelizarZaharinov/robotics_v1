@@ -4,95 +4,11 @@ import rclpy
 
 import robo_miner_ai_py.communicator as communicator
 import robo_miner_ai_py.map_tiles as map_tiles
-
-class PheromoneMap:
-    def __init__(self, landscape, explored_tiles_map, obstacles):
-        self.landscape = landscape
-        self.obstacles = obstacles
-
-        # Initial pheromoen levels
-        self.init_pheromone_levels(1.0,
-                                   explored_tiles_map)
-
-    def init_pheromone_levels(self, pheromone_level, explored_tiles_map):
-        for i in range(len(self.landscape)):
-            for j in range(len(self.landscape[i])):
-                if not (self.landscape[i][j] in self.obstacles):
-                    if explored_tiles_map.landscape[i][j]==1:
-                        self.landscape[i][j] = pheromone_level/2.0
-                    else:
-                        self.landscape[i][j] = pheromone_level
-                else:
-                    self.landscape[i][j] = 0.0
-
-    def decrease_pheromone(self, pos):
-        self.landscape[pos[1]][pos[0]] /= 2.0
-
-    def get_front_tile_pos(self, pos, orient):
-        if orient==0:
-            tile_pos = [pos[0], pos[1]-1]
-        elif orient==1:
-            tile_pos = [pos[0]+1, pos[1]]
-        elif orient==2:
-            tile_pos = [pos[0], pos[1]+1]
-        elif orient==3:
-            tile_pos = [pos[0]-1, pos[1]]
-        else:
-            print('Unknown orientation')
-
-        return tile_pos
-
-    def get_left_tile_pos(self, pos, orient):
-        if orient==0:
-            tile_pos = [pos[0]-1, pos[1]]
-        elif orient==1:
-            tile_pos = [pos[0], pos[1]-1]
-        elif orient==2:
-            tile_pos = [pos[0]+1, pos[1]]
-        elif orient==3:
-            tile_pos = [pos[0], pos[1]+1]
-        else:
-            print('Unknown orientation')
-
-        return tile_pos
-
-    def get_right_tile_pos(self, pos, orient):
-        if orient==0:
-            tile_pos = [pos[0]+1, pos[1]]
-        elif orient==1:
-            tile_pos = [pos[0], pos[1]+1]
-        elif orient==2:
-            tile_pos = [pos[0]-1, pos[1]]
-        elif orient==3:
-            tile_pos = [pos[0], pos[1]-1]
-        else:
-            print('Unknown orientation')
-
-        return tile_pos
-
-    def get_rear_tile_pos(self, pos, orient):
-        if orient==0:
-            tile_pos = [pos[0], pos[1]+1]
-        elif orient==1:
-            tile_pos = [pos[0]-1, pos[1]]
-        elif orient==2:
-            tile_pos = [pos[0], pos[1]-1]
-        elif orient==3:
-            tile_pos = [pos[0]+1, pos[1]]
-        else:
-            print('Unknown orientation')
-
-        return tile_pos
-
-    def get_tile_pheromone_level(self, coords):
-        return self.landscape[coords[1]][coords[0]]
-
-    def print_map(self):
-        for i in range(len(self.landscape)):
-            print(self.landscape[i])
+import robo_miner_ai_py.map_pheromone as map_pheromone
+import robo_miner_ai_py.ant_algorithm as ant_algorithm
 
 class RobotAi:
-    def __init__(self):
+    def __init__(self, obstacles=None, crystals=None):
         # The position is relative to the currently explored map data
         # [0] corresponds to map column, and [1] to map row
         self.cur_position = [1, 1]
@@ -108,7 +24,10 @@ class RobotAi:
         self.robot_converse = communicator.RobotConverse()
 
         # Obstacle markers
-        self.obstacles = [35, 88]
+        self.obstacles = obstacles
+
+        # Crystal markers
+        self.crystals = crystals
 
     def authenticate(self):
         self.robot_converse.authenticate_user()
@@ -136,90 +55,124 @@ class RobotAi:
         self.explored_tiles_map.auto_fill_map_borders_edges()
         self.explored_tiles_map.fill_obstacles(self.map)
 
-        self.pheromone_map = PheromoneMap(self.map.copy_map(),
-                                          self.explored_tiles_map,
-                                          self.obstacles)
+        self.pheromone_map = map_pheromone.PheromoneMap(self.map.copy_map(),
+                                                        self.explored_tiles_map,
+                                                        self.obstacles)
+        self.ant = ant_algorithm.AntAlgorithm()
         while not self.explored_tiles_map.exploration_check():
             print('Need more exploration')
             print('Ant algorithm')
             self.pheromone_map.decrease_pheromone(self.cur_position)
             self.pheromone_map.print_map()
-            possible_tiles_coords = {'front':None,
-                                     'right':None,
-                                     'rear':None,
-                                     'left':None}
-            if self.check_front():
-                possible_tiles_coords['front'] = self.pheromone_map.get_front_tile_pos(self.cur_position,
-                                                                                       self.cur_orientation)
-            if self.check_right():
-                possible_tiles_coords['right'] = self.pheromone_map.get_right_tile_pos(self.cur_position,
-                                                                                       self.cur_orientation)
-            if self.check_rear():
-                possible_tiles_coords['rear'] = self.pheromone_map.get_rear_tile_pos(self.cur_position,
-                                                                                     self.cur_orientation)
-            if self.check_left():
-                possible_tiles_coords['left'] = self.pheromone_map.get_left_tile_pos(self.cur_position,
-                                                                                     self.cur_orientation)
-            print(possible_tiles_coords)
-            
-            pheromone_levels = {'front':None,
-                                'right':None,
-                                'rear':None,
-                                'left':None}
-            for direction in possible_tiles_coords.keys():
-                if possible_tiles_coords[direction]:
-                    pheromone_levels[direction] = self.pheromone_map.get_tile_pheromone_level(possible_tiles_coords[direction])
-            print(pheromone_levels)
 
-            total_surrounding_pheromone = 0
-            for direction in pheromone_levels.keys():
-                if pheromone_levels[direction]:
-                    total_surrounding_pheromone += self.pheromone_map.get_tile_pheromone_level(possible_tiles_coords[direction])
+            possible_tiles_coords = self.check_possible_tiles_to_move()
 
-            tile_probability = {'front':None,
-                                'right':None,
-                                'rear':None,
-                                'left':None}
-            for direction in pheromone_levels.keys():
-                if pheromone_levels[direction]:
-                    tile_probability[direction] = pheromone_levels[direction]/total_surrounding_pheromone
-            print(tile_probability)
+            tile_probability = self.ant.calculate_probability(possible_tiles_coords,
+                                                              self.pheromone_map,
+                                                              target_tile=self.explored_tiles_map.get_unexplored_tile())
 
-            probabilities = tile_probability.values()
-            filtered_probabilities = []
-            for p in probabilities:
-                if p==None:
-                    filtered_probabilities.append(0.0)
-                else:
-                    filtered_probabilities.append(p)
-            max_probability = max(filtered_probabilities)
-            
-            max_probability_tiles_coords = []
-            for direction in tile_probability.keys():
-                if tile_probability[direction]==max_probability:
-                    max_probability_tiles_coords.append(possible_tiles_coords[direction])
-            print(max_probability_tiles_coords)
+            max_probability = self.get_max_probability_value(tile_probability)
 
-            n_max_probability_tiles = len(max_probability_tiles_coords)
-            if n_max_probability_tiles>1:
-                chosen_tile_index = random.randint(0, n_max_probability_tiles-1)
-            else:
-                chosen_tile_index = 0
-            print(chosen_tile_index)
+            max_probability_tiles_coords = self.get_most_probable_tiles(tile_probability,
+                                                                        max_probability,
+                                                                        possible_tiles_coords)
 
-##            input()
+            chosen_tile_index = self.choose_next_tile(max_probability_tiles_coords)
 
             self.go_to_tile(max_probability_tiles_coords[chosen_tile_index])
 
         print('All explored! Now to validate the map')
-        map_no_borders = self.map.clear_borders()
-        print(map_no_borders)
-        validation = self.robot_converse.map_validate(map_no_borders)
+        self.map_no_borders = self.map.clear_borders()
+        print(self.map_no_borders)
+        validation = self.robot_converse.map_validate(self.map_no_borders)
         if validation.success:
             print('Map validated')
         else:
             print(validation.error_reason)
 
+    def check_possible_tiles_to_move(self):
+        possible_tiles_coords = {'front':None,
+                                 'right':None,
+                                 'rear':None,
+                                 'left':None}
+        if self.check_front():
+            possible_tiles_coords['front'] = self.pheromone_map.get_front_tile_pos(self.cur_position,
+                                                                                   self.cur_orientation)
+        if self.check_right():
+            possible_tiles_coords['right'] = self.pheromone_map.get_right_tile_pos(self.cur_position,
+                                                                                   self.cur_orientation)
+        if self.check_rear():
+            possible_tiles_coords['rear'] = self.pheromone_map.get_rear_tile_pos(self.cur_position,
+                                                                                 self.cur_orientation)
+        if self.check_left():
+            possible_tiles_coords['left'] = self.pheromone_map.get_left_tile_pos(self.cur_position,
+                                                                                 self.cur_orientation)
+        print(possible_tiles_coords)
+
+        return possible_tiles_coords
+
+    def get_pheromone_levels(self, tiles):
+        pheromone_levels = {'front':None,
+                            'right':None,
+                            'rear':None,
+                            'left':None}
+        for direction in tiles.keys():
+            if tiles[direction]:
+                pheromone_levels[direction] = self.pheromone_map.get_tile_pheromone_level(tiles[direction])
+        print(pheromone_levels)
+
+        return pheromone_levels
+
+    def sum_pheromone(self, phe_levels, tiles):
+        total_phe = 0
+        for direction in phe_levels.keys():
+            if phe_levels[direction]:
+                total_phe += self.pheromone_map.get_tile_pheromone_level(tiles[direction])
+
+        return total_phe
+
+    def clac_probability(self, phe_levels, total_phe):
+        tile_probability = {'front':None,
+                            'right':None,
+                            'rear':None,
+                            'left':None}
+        for direction in phe_levels.keys():
+            if phe_levels[direction]:
+                tile_probability[direction] = phe_levels[direction]/total_phe
+        print(tile_probability)
+
+        return tile_probability
+
+    def get_max_probability_value(self, tile_probability):
+        probabilities = tile_probability.values()
+        filtered_probabilities = []
+        for p in probabilities:
+            if p==None:
+                filtered_probabilities.append(0.0)
+            else:
+                filtered_probabilities.append(p)
+
+        return max(filtered_probabilities)
+
+    def get_most_probable_tiles(self, tile_probability, max_probability, tiles):
+        max_probability_tiles_coords = []
+        for direction in tile_probability.keys():
+            if tile_probability[direction]==max_probability:
+                max_probability_tiles_coords.append(tiles[direction])
+        print(max_probability_tiles_coords)
+
+        return max_probability_tiles_coords
+
+    def choose_next_tile(self, max_probability_tiles_coords):
+        n_max_probability_tiles = len(max_probability_tiles_coords)
+        if n_max_probability_tiles>1:
+            chosen_tile_index = random.randint(0, n_max_probability_tiles-1)
+        else:
+            chosen_tile_index = 0
+        print(chosen_tile_index)
+
+        return chosen_tile_index
+    
     def ask_initial_position(self):
         res_initial_position = self.robot_converse.request_initial_position()
         self.surrounding_tiles = res_initial_position.robot_position_response.surrounding_tiles
@@ -266,54 +219,6 @@ class RobotAi:
             no_obstacle = False
 
         return no_obstacle
-
-    def check_obstacle_along_x(self, target_x):
-        obstacle_along_x = False
-        seek_x = self.cur_position[0]
-        if target_x<self.cur_position[0]:
-            seek_x -= 1
-        elif target_x>self.cur_position[0]:
-            seek_x += 1
-        flag = 1
-        while (not (target_x==seek_x)) and flag:
-            if self.map.landscape[self.cur_position[1]][seek_x]==88:
-                obstacle_along_x = True
-                if target_x<self.cur_position[0]:
-                    seek_x += 1
-                else:
-                    seek_x -= 1
-                flag = 0
-            else:
-                if target_x<self.cur_position[0]:
-                    seek_x -= 1
-                else:
-                    seek_x += 1
-
-        return obstacle_along_x, seek_x
-
-    def check_obstacle_along_y(self, target_y):
-        obstacle_along_y = False
-        seek_y = self.cur_position[1]
-        if target_y<self.cur_position[1]:
-            seek_y -= 1
-        elif target_y>self.cur_position[1]:
-            seek_y += 1
-        flag = 1
-        while (not (target_y==seek_y)) and flag:
-            if self.map.landscape[seek_y][self.cur_position[0]]==88:
-                obstacle_along_y = True
-                if target_y<self.cur_position[1]:
-                    seek_y += 1
-                else:
-                    seek_y -= 1
-                flag = 0
-            else:
-                if target_y<self.cur_position[1]:
-                    seek_y -= 1
-                else:
-                    seek_y += 1
-
-        return obstacle_along_y, seek_y
         
     def advance(self):
         move_outcome = self.robot_converse.move_forward()
@@ -430,22 +335,6 @@ class RobotAi:
             advanced = False
 
         return advanced
-
-    def next_move_right_edge_strategy(self):
-        if self.check_front():
-            if not self.check_right():
-                self.advance()
-            else:
-                print('Lost right edge, trying to find it')
-                self.evade_right()
-                self.advance()
-        elif self.check_right():
-            print('Lost left edge, trying to find it')
-            self.evade_right()
-            self.advance()
-        else:
-            print('There is an obstacle in front and on the right. Try to evade left')
-            self.evade_left()
 
     def go_to_tile(self, tile):
         cur_x_diff = tile[0] - self.cur_position[0]
@@ -597,17 +486,176 @@ class RobotAi:
                 elif y_diff>0:
                     self.evade_left()
 
+    # FIND BIGGEST PATCH
+    def find_largest_patch(self):
+        # Deduce crystals from map
+        self.crystals = self.get_crystals()
+        
+        # First filter all tiles of same kind
+        crystal_type_groups = {}
+        for i in range(len(self.crystals)):
+            crystal_type_groups[str(self.crystals[i])] = self.find_all_same_tiles(self.crystals[i])
+
+        # Then cluster each group following the thread of neighbours
+        all_clusters = {}
+        for tile_type in crystal_type_groups.keys():
+            all_clusters[tile_type] = []
+            while len(crystal_type_groups[tile_type]):
+                all_clusters[tile_type].append([])
+                if not (crystal_type_groups[tile_type][0] in all_clusters[tile_type][-1]):
+                    all_clusters[tile_type][-1].append(crystal_type_groups[tile_type][0])
+                    del crystal_type_groups[tile_type][0]
+
+                j = 0
+                while j<len(all_clusters[tile_type][-1]):
+                    surrounding_tiles = self.get_surrounding_tiles(all_clusters[tile_type][-1][j])
+
+                    k = 0
+                    while k<len(surrounding_tiles):
+                        if surrounding_tiles[k] in all_clusters[tile_type][-1]:
+                            del surrounding_tiles[k]
+                        else:
+                            k += 1
+
+                    k = 0
+                    while k<len(crystal_type_groups[tile_type]):
+                        if crystal_type_groups[tile_type][k] in surrounding_tiles:
+                            all_clusters[tile_type][-1].append(crystal_type_groups[tile_type][k])
+                            del crystal_type_groups[tile_type][k]
+                        else:
+                            k += 1
+
+                    j += 1
+                    
+        print(all_clusters)
+
+        tile_type, index = self.find_largest_cluster(all_clusters)
+        
+        self.longest_sequence = all_clusters[tile_type][index]
+        
+        longest_sequence = self.convert_sequence_from_zero(all_clusters[tile_type][index])
+        print(longest_sequence)
+
+        result = self.robot_converse.longest_sequence_validate(longest_sequence)
+        if not result.success:
+            print(result.error_reason)
+
+    def get_crystals(self):
+        crystals = []
+        for i in range(len(self.map_no_borders)):
+            for j in range(len(self.map_no_borders[i])):
+                if not self.map_no_borders[i][j] in self.obstacles:
+                    if not self.map_no_borders[i][j] in crystals:
+                        crystals.append(self.map_no_borders[i][j])
+        print(crystals)
+
+        return crystals
+            
+    def find_all_same_tiles(self, tile_type):
+        all_same_tiles_coords = []
+        for i in range(len(self.map.landscape)):
+            for j in range(len(self.map.landscape[i])):
+                if self.map.landscape[i][j]==tile_type:
+                    all_same_tiles_coords.append([j, i])
+        print('All tiles of type %d'%(tile_type))
+        print(all_same_tiles_coords)
+
+        return all_same_tiles_coords
+
+    def get_surrounding_tiles(self, tile):
+        cur_tile_north = [tile[0], tile[1]-1]
+        cur_tile_east = [tile[0]+1, tile[1]]
+        cur_tile_south = [tile[0], tile[1]+1]
+        cur_tile_west = [tile[0]-1, tile[1]]
+        surrounding_tiles = [cur_tile_north,
+                             cur_tile_east,
+                             cur_tile_south,
+                             cur_tile_west]
+
+        return surrounding_tiles
+
+    def find_largest_cluster(self, all_clusters):
+        max_size = 0
+        for tile_type in all_clusters.keys():
+            for i in range(len(all_clusters[tile_type])):
+                if max_size<len(all_clusters[tile_type][i]):
+                    tile_type_max = tile_type
+                    index = i
+                    max_size = len(all_clusters[tile_type][i])
+
+        return tile_type_max, index
+
+    def convert_sequence_from_zero(self, sequence):
+        converted = []
+        for i in range(len(sequence)):
+            converted.append([sequence[i][0]-1,
+                             sequence[i][1]-1])
+
+        return converted
+
+    def mine_largest_patch(self):
+        print('Go to start of patch')
+        # Reset pheromone
+        self.pheromone_map.reset()
+
+        self.pheromone_map.decrease_pheromone(self.cur_position)
+        self.pheromone_map.print_map()
+
+        # Go to first tile in mining sequence        
+        self.go_to_tile_ant(self.longest_sequence[0])
+
+        # Announce mining
+        self.robot_converse.activate_mining()
+
+        # Setup pheromone map for mining
+        self.pheromone_map.setup_for_mining(self.longest_sequence)
+        self.pheromone_map.decrease_pheromone(self.cur_position)
+        self.pheromone_map.print_map()
+
+        # Mine
+        print('Mine patch')
+        for i in range(1, len(self.longest_sequence)):
+            self.go_to_tile_ant(self.longest_sequence[i])            
+
+    def go_to_tile_ant(self, tile):
+        while not (self.cur_position==tile):
+            possible_tiles_coords = self.check_possible_tiles_to_move()
+
+            tile_probability = self.ant.calculate_probability(possible_tiles_coords,
+                                                              self.pheromone_map,
+                                                              target_tile=tile)
+
+            max_probability = self.get_max_probability_value(tile_probability)
+
+            max_probability_tiles_coords = self.get_most_probable_tiles(tile_probability,
+                                                                        max_probability,
+                                                                        possible_tiles_coords)
+
+            chosen_tile_index = self.choose_next_tile(max_probability_tiles_coords)
+
+            self.go_to_tile(max_probability_tiles_coords[chosen_tile_index])
+
+            self.pheromone_map.decrease_pheromone(self.cur_position)
+            self.pheromone_map.print_map()
+
     def destroy(self):
         self.robot_converse.destroy_node()
 
 def main(args=None):
     rclpy.init(args=args)
 
-    robot = RobotAi()
+    robot = RobotAi(obstacles=[35, 88],
+                    crystals=[98, 99, 103, 112, 114])
 
     robot.authenticate()
 
     robot.explore_map()
+
+    robot.find_largest_patch()
+
+    robot.mine_largest_patch()
+
+    print('All work done! Yupee!')
 
     robot.destroy()
 
