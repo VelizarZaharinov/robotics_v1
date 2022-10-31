@@ -40,9 +40,7 @@ class RobotAi:
 
         # The initial map contains only the surroundings of the initial
         # position of the robot. The robot is in the center
-        self.map = map_tiles.Map(orientation=self.cur_orientation,
-                                 surroundings=self.surrounding_tiles,
-                                 cur_pos=self.cur_position,
+        self.map = map_tiles.Map(fog=None,
                                  initial_tile=self.starting_tile)
         self.explored_tiles_map = map_tiles.Map(orientation=self.cur_orientation,
                                                 surroundings=[None, None, None],

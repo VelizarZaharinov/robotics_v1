@@ -1,0 +1,3 @@
+[console_scripts]
+robot_ai = robo_cleaner_ai_py.robo_cleaner_ai:main
+
