@@ -347,8 +347,8 @@ class TilesMap(Map):
             j = 0
             while j<len(self.landscape[i]):
                 if self.landscape[i][j]==charging_station_tile:
-                    charge_tile_coords = [i, j]
-                    i = len(self.landscape)
+                    charge_tile_coords = [j, i]
+                    i = len(self.landscape) - 1
                     j = len(self.landscape[i])
                 else:
                     j += 1
@@ -401,7 +401,7 @@ class PheromoneMap(Map):
     def __init__(self, **kwargs):
         super().__init__(**kwargs)
 
-    def update_map(self, orientation, tile_param, cur_x, cur_y, fog=1.0, dirtiness=None):
+    def update_map(self, orientation, tile_param, cur_x, cur_y, fog=1.0, dirtiness=None, obstacles=None):
         if dirtiness:
             if self.landscape[cur_y][cur_x]==fog:
                 if orientation==0:
@@ -450,6 +450,13 @@ class PheromoneMap(Map):
     def get_tile_pheromone_level(self, coords):
         return self.landscape[coords[1]][coords[0]]
 
+    def reset(self, cur_pos):
+        for i in range(len(self.landscape)):
+            for j in range(len(self.landscape[i])):
+                if self.landscape[i][j] and (self.landscape[i][j]<1.0):
+                    self.landscape[i][j] = 1.0
+        self.landscape[cur_pos[1]][cur_pos[0]] = 0.5
+
 class ChargeMap(Map):
     def __init__(self, **kwargs):
         super().__init__(**kwargs)
@@ -473,7 +480,7 @@ class ChargeMap(Map):
 
     def reset(self, cur_pos):
         for i in range(len(self.landscape)):
-            for j in range(len(self.landsape[i])):
+            for j in range(len(self.landscape[i])):
                 if self.landscape[i][j]:
                     self.landscape[i][j] = None
         self.landscape[cur_pos[1]][cur_pos[0]] = 0
@@ -481,7 +488,7 @@ class ChargeMap(Map):
     def convert_to_pheromone(self, initial_level):
         for i in range(len(self.landscape)):
             for j in range(len(self.landscape[i])):
-                if self.landscape[i][j]:
+                if not (self.landscape[i][j]==None):
                     self.landscape[i][j] = initial_level
 
     def get_tile_pheromone_level(self, coords):

@@ -27,6 +27,9 @@ class MoveAction(Node):
         # Result from moving forward
         self.move_result = None
 
+        # Flag for checking what is in front
+        self.probing = False
+
         # Init actions
         self.act_move = ActionClient(self,
                                      RobotMove,
@@ -38,7 +41,9 @@ class MoveAction(Node):
         # Init messages
         self.msg_move = RobotMoveType()
 
-    def move_forward(self):
+    def move_forward(self, probe=False):
+        self.probing = probe
+        
         self.msg_move.move_type = 0
         self.goal_move.robot_move_type = self.msg_move
 
@@ -63,7 +68,12 @@ class MoveAction(Node):
     def move_forward_feedback(self, feedback_msg):
         feedback = feedback_msg.feedback
         self.move_feedback = feedback.approaching_field_marker
-        if self.move_feedback in self.obstacles:
+        if self.probing:
+            if self.move_feedback:
+                future = self.goal_handle.cancel_goal_async()
+                print('Move cancelled due to probing')
+                future.add_done_callback(self.cancel_move_done)
+        elif self.move_feedback in self.obstacles:
             future = self.goal_handle.cancel_goal_async()
             print('Move cancelled due to obstacle')
             future.add_done_callback(self.cancel_move_done)
@@ -175,8 +185,8 @@ class RobotConverse(Node):
         
         return future.result()
 
-    def move_forward(self):
-        self.move_action.move_forward()
+    def move_forward(self, probe=False):
+        self.move_action.move_forward(probe=probe)
 
         return self.move_action.move_feedback
 

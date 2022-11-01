@@ -25,6 +25,88 @@ class RobotAi:
         rclpy.spin_once(self.robot_converse,
                         timeout_sec=0.5)
 
+    def traverse_left_edge_strategy(self):
+        print('Follow left edge strategy')
+        # Feel out the surroundings for an edge
+        found_edge = False
+        while not found_edge:
+            self.seek_edge_around()
+            self.advance()
+            input()
+
+        # Then follow along until return to initial position
+        self.follow_left_edge()
+        print('Follow left edge strategy complete')
+
+    def seek_edge_around(self):
+        print('Seeking edge around...')
+        success = False
+        i = 0
+        while (i<4) and (not success):
+            tile_in_front = self.advance(probe=True)
+            if tile_in_front in self.obstacles:
+                self.turn_right()
+                success = True
+            else:
+                self.turn_left()
+            i += 1
+            input()
+
+        return success
+
+    def follow_left_edge(self):
+        print('Following edge on left...')
+        marker = 0
+        self.map.mark_position(self.cur_position,
+                               marker)
+
+        advanced_after_marker_placed = self.next_move_left_edge_strategy()
+        while not advanced_after_marker_placed:
+            advanced_after_marker_placed = self.next_move_left_edge_strategy()
+
+            if not self.check_charge():
+                self.return_to_charging_station()
+                self.robot_converse.request_charge()
+                self.moves_left = self.max_moves_on_full_energy
+                self.charge_map.reset(self.cur_position)
+
+            input()
+
+        while not (self.map.get_tile_on(self.cur_position)==marker):
+            self.next_move_left_edge_strategy()
+
+            if not self.check_charge():
+                self.return_to_charging_station()
+                self.robot_converse.request_charge()
+                self.moves_left = self.max_moves_on_full_energy
+                self.charge_map.reset(self.cur_position)
+
+            input()
+
+        self.map.erease_marker(marker)
+
+        print('Returned to starting position after left edge following')
+
+    def next_move_left_edge_strategy(self):
+        advanced = True
+        if self.check_front():
+            if not self.check_left():
+                self.advance()
+            else:
+                print('Lost left edge, trying to find it')
+                self.turn_left()
+                self.advance()
+        elif self.check_left():
+            print('Lost left edge, trying to find it')
+            self.turn_left()
+            self.advance()
+        else:
+            print('There is an obstacle in front and on the left. Try to evade right')
+            self.turn_right()
+            advanced = False
+
+        return advanced
+
     # EXPLORATION
     def explore_map(self):
         self.ask_initial_state()
@@ -47,6 +129,8 @@ class RobotAi:
         # Map of the current path to the charging station
         self.charge_map = maps.ChargeMap(fog=None,
                                          initial_tile=0)
+
+##        self.traverse_left_edge_strategy()
         
         self.ant = ant_algorithm.AntAlgorithm()
         while not self.explored_tiles_map.exploration_check():
@@ -68,11 +152,15 @@ class RobotAi:
             self.go_to_tile(max_probability_tiles_coords[chosen_tile_index])
 
             if not self.check_charge():
+                last_tile_in_exploration = self.cur_position[:]
                 self.return_to_charging_station()
                 self.robot_converse.request_charge()
+                self.moves_left = self.max_moves_on_full_energy
                 self.charge_map.reset(self.cur_position)
+                self.pheromone_map.reset(self.cur_position)
+                self.return_to_last_explored_tile(last_tile_in_exploration)
 
-            input()
+##            input()
 
         print('All explored! Now to validate the map')
 ##        self.map_no_borders = self.map.clear_borders()
@@ -114,8 +202,12 @@ class RobotAi:
     def check_front(self):
         front_tile = self.map.get_front_tile_type(self.cur_position,
                                                   self.cur_orientation)
-        
+
         no_obstacle = True
+##        if front_tile==None:
+##            front_tile = self.advance(probe=True)
+##            if front_tile in self.obstacles:
+##                no_obstacle = False
         if front_tile in self.obstacles:
             no_obstacle = False
 
@@ -126,6 +218,12 @@ class RobotAi:
                                                 self.cur_orientation)
 
         no_obstacle = True
+##        if left_tile==None:
+##            self.turn_left()
+##            left_tile = self.advance(probe=True)
+##            if left_tile in self.obstacles:
+##                no_obstacle = False
+##            self.turn_right()
         if left_tile in self.obstacles:
             no_obstacle = False
 
@@ -199,11 +297,11 @@ class RobotAi:
 
         self.advance()
 
-    def advance(self):
-        tile_type_in_front = self.robot_converse.move_forward()
+    def advance(self, probe=False):
+        tile_type_in_front = self.robot_converse.move_forward(probe)
         print('Tile type in front %d'%(tile_type_in_front))
 
-        if tile_type_in_front in self.obstacles:
+        if (tile_type_in_front in self.obstacles) or probe:
             self.map.update_map(self.cur_orientation,
                                 tile_type_in_front,
                                 self.cur_position[0],
@@ -256,6 +354,7 @@ class RobotAi:
                                                  self.cur_position[1])
 
             print('Moved forward')
+        return tile_type_in_front
 
     def turn_left(self):
         self.robot_converse.move_rot_left()
@@ -308,12 +407,13 @@ class RobotAi:
     def return_to_charging_station(self):
         print('Low energy. Return for charging')
         self.charge_map.convert_to_pheromone(1.0)
+        charging_station_coords = self.map.get_charging_station_coords(self.charging_station)
         while not (self.map.get_tile_on(self.cur_position)==self.charging_station):
             possible_tiles_coords = self.check_possible_tiles_to_move_charging()
 
             tile_probability = self.ant.calculate_probability(possible_tiles_coords,
                                                               self.charge_map,
-                                                              target_tile=tile)
+                                                              target_tile=charging_station_coords)
 
             max_probability = self.get_max_probability_value(tile_probability)
 
@@ -325,10 +425,34 @@ class RobotAi:
 
             self.go_to_tile(max_probability_tiles_coords[chosen_tile_index])
 
-            self.charge_map.deplete_pheromone(self.cur_position)
+            self.charge_map.deplete_pheromone(self.cur_position[0],
+                                              self.cur_position[1])
             self.charge_map.print_map()
 
-            input()
+##            input()
+
+    def return_to_last_explored_tile(self, last_explored_tile_coords):
+        while not (self.cur_position==last_explored_tile_coords):
+            print('Commencing exploration from last explored tile')
+            possible_tiles_coords = self.check_possible_tiles_to_move()
+
+            tile_probability = self.ant.calculate_probability(possible_tiles_coords,
+                                                              self.pheromone_map,
+                                                              target_tile=last_explored_tile_coords)
+
+            max_probability = self.get_max_probability_value(tile_probability)
+
+            max_probability_tiles_coords = self.get_most_probable_tiles(tile_probability,
+                                                                        max_probability,
+                                                                        possible_tiles_coords)
+
+            chosen_tile_index = self.choose_next_tile(max_probability_tiles_coords)
+
+            self.go_to_tile(max_probability_tiles_coords[chosen_tile_index])
+
+            self.check_charge()
+
+##            input()
 
     def check_possible_tiles_to_move_charging(self):
         possible_tiles_coords = {'front':None,
@@ -469,12 +593,8 @@ def main(args=None):
     robot.authenticate()
 
     robot.explore_map()
-
-##    robot.find_largest_patch()
-##
-##    robot.mine_largest_patch()
-##
-##    print('All work done! Yupee!')
+    
+    print('All work done! Yupee!')
 
     robot.destroy()
 
