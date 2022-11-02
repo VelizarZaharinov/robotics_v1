@@ -173,7 +173,7 @@ class RobotConverse(Node):
 
         msg.user = 'Velizar Zaharinov'
         msg.repository = 'https://github.com/VelizarZaharinov/robotics_v1'
-        msg.commit_sha = '4de6cf5beb02ec435254aadbd686b95715d724bc'
+        msg.commit_sha = '60a236b2d7f1bcc933d4e94a6e7747a31a0c65bb'
 
         self.pub_authenticate.publish(msg)
         print('Authentication complete')

@@ -64,7 +64,7 @@ class RobotAi:
                 self.moves_left = self.max_moves_on_full_energy
                 self.charge_map.reset(self.cur_position)
 
-##            input()
+            input()
 
         print('All explored!')
         
@@ -101,7 +101,7 @@ class RobotAi:
             self.explored_tiles_map.complement_borders()
             self.pheromone_map.complement_borders()
 
-##            input()
+            input()
 
     def check_possible_tiles_to_move(self):
         possible_tiles_coords = {'front':None,
@@ -347,7 +347,7 @@ class RobotAi:
                                               self.cur_position[1])
             self.charge_map.print_map()
 
-##            input()
+            input()
 
     def go_to_unexplored_tile(self, unexplored_tile_coords):
         while (not (self.cur_position==unexplored_tile_coords)) and self.check_charge():
@@ -368,7 +368,7 @@ class RobotAi:
 
             self.go_to_tile(max_probability_tiles_coords[chosen_tile_index])
 
-##            input()
+            input()
 
     def check_possible_tiles_to_move_charging(self):
         possible_tiles_coords = {'front':None,
