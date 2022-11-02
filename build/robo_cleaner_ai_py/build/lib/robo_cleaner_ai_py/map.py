@@ -357,7 +357,67 @@ class TilesMap(Map):
         return charge_tile_coords
 
     def calc_distance_to_charging_station(self, tile_coords, charging_station_coords):
-        return pow(pow(tile_coords[0]-charging_station_coords[0], 2)+pow(tile_coords[1]-charging_station_coords[1], 2), 0.5)    
+        return pow(pow(tile_coords[0]-charging_station_coords[0], 2)+pow(tile_coords[1]-charging_station_coords[1], 2), 0.5)
+
+    def add_borders(self):
+        # Check north for border
+        if not self.borders_found[0]:
+            flag = 0
+            for i in range(1, len(self.landscape[0])-1):
+                if self.landscape[0][i]==35:
+                    flag = 1
+                    break
+            if flag:
+                for i in range(len(self.landscape[0])):
+                    self.landscape[0][i] = 35
+                self.borders_found[0] = 1
+        # Check east border
+        if not self.borders_found[1]:
+            flag = 0
+            for i in range(1, len(self.landscape)-1):
+                if self.landscape[i][-1]==35:
+                    flag = 1
+                    break
+            if flag:
+                for i in range(len(self.landscape)):
+                    self.landscape[i][-1] = 35
+                self.borders_found[1] = 1
+        # Check south border
+        if not self.borders_found[2]:
+            flag = 0
+            for i in range(1, len(self.landscape[-1])-1):
+                if self.landscape[-1][i]==35:
+                    flag = 1
+                    break
+            if flag:
+                for i in range(len(self.landscape[-1])):
+                    self.landscape[-1][i] = 35
+                self.borders_found[2] = 1
+        # Check west border
+        if not self.borders_found[3]:
+            flag = 0
+            for i in range(1, len(self.landscape)-1):
+                if self.landscape[i][0]==35:
+                    flag = 1
+                    break
+            if flag:
+                for i in range(len(self.landscape)):
+                    self.landscape[i][0] = 35
+                self.borders_found[3] = 1
+
+    def complement_borders(self):
+        if self.borders_found[0]:   
+            self.landscape[0][0] = 35
+            self.landscape[0][-1] = 35
+        if self.borders_found[1]:
+            self.landscape[0][-1] = 35
+            self.landscape[-1][-1] = 35
+        if self.borders_found[2]:
+            self.landscape[-1][0] = 35
+            self.landscape[-1][-1] = 35
+        if self.borders_found[3]:
+            self.landscape[0][0] = 35
+            self.landscape[-1][0] = 35
 
 class ExplorationMap(Map):
     def __init__(self, **kwargs):
@@ -397,6 +457,46 @@ class ExplorationMap(Map):
 
         self.print_map()
 
+    def copy_borders(self, tile_map):
+        # North
+        if not self.borders_found[0]:
+            if tile_map.borders_found[0]:
+                for i in range(len(self.landscape[0])):
+                    self.landscape[0][i] = 1
+                self.borders_found[0] = 1
+        # East
+        if not self.borders_found[1]:
+            if tile_map.borders_found[1]:
+                for i in range(len(self.landscape)):
+                    self.landscape[i][-1] = 1
+                self.borders_found[1] = 1
+        # South
+        if not self.borders_found[2]:
+            if tile_map.borders_found[2]:
+                for i in range(len(self.landscape[-1])):
+                    self.landscape[-1][i] = 1
+                self.borders_found[2] = 1
+        # West
+        if not self.borders_found[3]:
+            if tile_map.borders_found[3]:
+                for i in range(len(self.landscape)):
+                    self.landscape[i][0] = 1
+                self.borders_found[3] = 1
+
+    def complement_borders(self):
+        if self.borders_found[0]:
+            self.landscape[0][0] = 1
+            self.landscape[0][-1] = 1
+        if self.borders_found[1]:
+            self.landscape[0][-1] = 1
+            self.landscape[-1][-1] = 1
+        if self.borders_found[2]:
+            self.landscape[-1][0] = 1
+            self.landscape[-1][-1] = 1
+        if self.borders_found[3]:
+            self.landscape[0][0] = 1
+            self.landscape[-1][0] = 1
+
 class PheromoneMap(Map):
     def __init__(self, **kwargs):
         super().__init__(**kwargs)
@@ -406,24 +506,24 @@ class PheromoneMap(Map):
             if self.landscape[cur_y][cur_x]==fog:
                 if orientation==0:
                     if tile_param==dirtiness[1]:
-                        self.landscape[cur_y][cur_x] = 2.0
+                        self.landscape[cur_y][cur_x] = 1.1
                     elif tile_param==dirtiness[2]:
-                        self.landscape[cur_y][cur_x] = 4.0
+                        self.landscape[cur_y][cur_x] = 1.21
                 elif orientation==1:
                     if tile_param==dirtiness[1]:
-                        self.landscape[cur_y][cur_x] = 2.0
+                        self.landscape[cur_y][cur_x] = 1.1
                     elif tile_param==dirtiness[2]:
-                        self.landscape[cur_y][cur_x] = 4.0
+                        self.landscape[cur_y][cur_x] = 1.21
                 elif orientation==2:
                     if tile_param==dirtiness[1]:
-                        self.landscape[cur_y][cur_x] = 2.0
+                        self.landscape[cur_y][cur_x] = 1.1
                     elif tile_param==dirtiness[2]:
-                        self.landscape[cur_y][cur_x] = 4.0
+                        self.landscape[cur_y][cur_x] = 1.21
                 elif orientation==3:
                     if tile_param==dirtiness[1]:
-                        self.landscape[cur_y][cur_x] = 2.0
+                        self.landscape[cur_y][cur_x] = 1.1
                     elif tile_param==dirtiness[2]:
-                        self.landscape[cur_y][cur_x] = 4.0
+                        self.landscape[cur_y][cur_x] = 1.21
                 else:
                     print('Unknown orientation')
         else:
@@ -444,7 +544,7 @@ class PheromoneMap(Map):
 
         self.print_map()
 
-    def deplete_pheromone(self, cur_x, cur_y, rate=2.0):
+    def deplete_pheromone(self, cur_x, cur_y, rate=1.1):
         self.landscape[cur_y][cur_x] /= rate
 
     def get_tile_pheromone_level(self, coords):
@@ -456,6 +556,62 @@ class PheromoneMap(Map):
                 if self.landscape[i][j] and (self.landscape[i][j]<1.0):
                     self.landscape[i][j] = 1.0
         self.landscape[cur_pos[1]][cur_pos[0]] = 0.5
+
+    def copy_borders(self, tile_map):
+        # North
+        if not self.borders_found[0]:
+            if tile_map.borders_found[0]:
+                for i in range(len(self.landscape[0])):
+                    self.landscape[0][i] = 0.0
+                self.borders_found[0] = 1
+        # East
+        if not self.borders_found[1]:
+            if tile_map.borders_found[1]:
+                for i in range(len(self.landscape)):
+                    self.landscape[i][-1] = 0.0
+                self.borders_found[1] = 1
+        # South
+        if not self.borders_found[2]:
+            if tile_map.borders_found[2]:
+                for i in range(len(self.landscape[-1])):
+                    self.landscape[-1][i] = 0.0
+                self.borders_found[2] = 1
+        # West
+        if not self.borders_found[3]:
+            if tile_map.borders_found[3]:
+                for i in range(len(self.landscape)):
+                    self.landscape[i][0] = 0.0
+                self.borders_found[3] = 1
+
+    def complement_borders(self):
+        if self.borders_found[0]:
+            self.landscape[0][0] = 0.0
+            self.landscape[0][-1] = 0.0
+        if self.borders_found[1]:
+            self.landscape[0][-1] = 0.0
+            self.landscape[-1][-1] = 0.0
+        if self.borders_found[2]:
+            self.landscape[-1][0] = 0.0
+            self.landscape[-1][-1] = 0.0
+        if self.borders_found[3]:
+            self.landscape[0][0] = 0.0
+            self.landscape[-1][0] = 0.0
+
+    def check_clean(self):
+        clean_ok = True
+        for i in range(len(self.landscape)):
+            for j in range(len(self.landscape[i])):
+                if self.landscape[i][j]>(1/1.1):
+                    clean_ok = False
+                    return clean_ok
+
+        return clean_ok
+
+    def get_dirty_tile_coords(self):
+        for i in range(len(self.landscape)):
+            for j in range(len(self.landscape[i])):
+                if self.landscape[i][j]>(1/1.1):
+                    return [j, i]
 
 class ChargeMap(Map):
     def __init__(self, **kwargs):
@@ -485,15 +641,18 @@ class ChargeMap(Map):
                     self.landscape[i][j] = None
         self.landscape[cur_pos[1]][cur_pos[0]] = 0
 
-    def convert_to_pheromone(self, initial_level):
+    def convert_to_pheromone(self, initial_level, cur_pos, tiles_map, obstacles, rate=1.1):
         for i in range(len(self.landscape)):
             for j in range(len(self.landscape[i])):
                 if not (self.landscape[i][j]==None):
                     self.landscape[i][j] = initial_level
+                elif not (tiles_map.landscape[i][j] in obstacles) and (not (tiles_map.landscape[i][j]==None)):
+                    self.landscape[i][j] = initial_level/rate
+        self.landscape[cur_pos[1]][cur_pos[0]] = initial_level/1.1
 
     def get_tile_pheromone_level(self, coords):
         return self.landscape[coords[1]][coords[0]]
 
-    def deplete_pheromone(self, cur_x, cur_y, rate=2.0):
+    def deplete_pheromone(self, cur_x, cur_y, rate=1.1):
         self.landscape[cur_y][cur_x] /= rate
         
