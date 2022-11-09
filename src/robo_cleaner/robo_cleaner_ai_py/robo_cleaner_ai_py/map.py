@@ -186,6 +186,24 @@ class Map:
                 if self.landscape[i][j]==None:
                     return [j, i]
 
+    def get_closest_unexplored_tile(self, cur_pos):
+        for i in range(len(self.landscape)):
+            for j in range(len(self.landscape[i])):
+                if self.landscape[i][j]==None:
+                    min_dist = pow(pow(i-cur_pos[1], 2)+pow(j-cur_pos[0], 2), 0.5)
+                    pos = [j, i]
+                    break
+
+        for i in range(len(self.landscape)):
+            for j in range(len(self.landscape[i])):
+                if self.landscape[i][j]==None:
+                    cur_dist = pow(pow(i-cur_pos[1], 2)+pow(j-cur_pos[0], 2), 0.5)
+                    if cur_dist<min_dist:
+                        min_dist = cur_dist
+                        pos = [j, i]
+
+        return pos
+
     def auto_fill_map_borders(self):
         if 0 in self.borders_found:
             if not self.borders_found[0]:

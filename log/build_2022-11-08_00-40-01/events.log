@@ -1,0 +1,491 @@
+[0.000000] (-) TimerEvent: {}
+[0.001640] (-) JobUnselected: {'identifier': 'cmake_helpers'}
+[0.001865] (-) JobUnselected: {'identifier': 'game_engine'}
+[0.001930] (-) JobUnselected: {'identifier': 'manager_utils'}
+[0.001994] (-) JobUnselected: {'identifier': 'resource_builder'}
+[0.002124] (-) JobUnselected: {'identifier': 'resource_utils'}
+[0.002212] (-) JobUnselected: {'identifier': 'robo_cleaner_ai_py'}
+[0.002275] (-) JobUnselected: {'identifier': 'robo_cleaner_common'}
+[0.002337] (-) JobUnselected: {'identifier': 'robo_cleaner_interfaces'}
+[0.002399] (-) JobUnselected: {'identifier': 'robo_collector_common'}
+[0.002461] (-) JobUnselected: {'identifier': 'robo_collector_controller'}
+[0.002523] (-) JobUnselected: {'identifier': 'robo_collector_controller_py'}
+[0.002585] (-) JobUnselected: {'identifier': 'robo_collector_gui'}
+[0.002647] (-) JobUnselected: {'identifier': 'robo_collector_interfaces'}
+[0.002708] (-) JobUnselected: {'identifier': 'robo_common'}
+[0.002769] (-) JobUnselected: {'identifier': 'robo_miner_ai_py'}
+[0.002831] (-) JobUnselected: {'identifier': 'robo_miner_common'}
+[0.002893] (-) JobUnselected: {'identifier': 'robo_miner_gui'}
+[0.002954] (-) JobUnselected: {'identifier': 'robo_miner_interfaces'}
+[0.003016] (-) JobUnselected: {'identifier': 'ros2_game_engine'}
+[0.003097] (-) JobUnselected: {'identifier': 'sdl_utils'}
+[0.003166] (-) JobUnselected: {'identifier': 'ur_bringup'}
+[0.003233] (-) JobUnselected: {'identifier': 'ur_client_library'}
+[0.003290] (-) JobUnselected: {'identifier': 'ur_control_gui'}
+[0.003346] (-) JobUnselected: {'identifier': 'ur_controllers'}
+[0.003402] (-) JobUnselected: {'identifier': 'ur_dashboard_msgs'}
+[0.003458] (-) JobUnselected: {'identifier': 'ur_description'}
+[0.003514] (-) JobUnselected: {'identifier': 'ur_moveit_config'}
+[0.003570] (-) JobUnselected: {'identifier': 'ur_robot_driver'}
+[0.003626] (-) JobUnselected: {'identifier': 'urscript_bridge'}
+[0.003682] (-) JobUnselected: {'identifier': 'urscript_common'}
+[0.003738] (-) JobUnselected: {'identifier': 'urscript_interfaces'}
+[0.003794] (-) JobUnselected: {'identifier': 'utils'}
+[0.003854] (robo_cleaner_gui) JobQueued: {'identifier': 'robo_cleaner_gui', 'dependencies': OrderedDict([('cmake_helpers', '/home/ubuntu/workspace/Velizar/robotics_v1/install/cmake_helpers'), ('robo_cleaner_interfaces', '/home/ubuntu/workspace/Velizar/robotics_v1/install/robo_cleaner_interfaces'), ('utils', '/home/ubuntu/workspace/Velizar/robotics_v1/install/utils'), ('resource_utils', '/home/ubuntu/workspace/Velizar/robotics_v1/install/resource_utils'), ('sdl_utils', '/home/ubuntu/workspace/Velizar/robotics_v1/install/sdl_utils'), ('manager_utils', '/home/ubuntu/workspace/Velizar/robotics_v1/install/manager_utils'), ('game_engine', '/home/ubuntu/workspace/Velizar/robotics_v1/install/game_engine'), ('robo_common', '/home/ubuntu/workspace/Velizar/robotics_v1/install/robo_common'), ('robo_cleaner_common', '/home/ubuntu/workspace/Velizar/robotics_v1/install/robo_cleaner_common'), ('ros2_game_engine', '/home/ubuntu/workspace/Velizar/robotics_v1/install/ros2_game_engine')])}
+[0.003947] (robo_cleaner_gui) JobStarted: {'identifier': 'robo_cleaner_gui'}
+[0.093176] (robo_cleaner_gui) JobProgress: {'identifier': 'robo_cleaner_gui', 'progress': 'cmake'}
+[0.096052] (robo_cleaner_gui) Command: {'cmd': ['/usr/bin/cmake', '/home/ubuntu/workspace/Velizar/robotics_v1/src/robo_cleaner/robo_cleaner_gui', '-DCMAKE_INSTALL_PREFIX=/home/ubuntu/workspace/Velizar/robotics_v1/install/robo_cleaner_gui'], 'cwd': '/home/ubuntu/workspace/Velizar/robotics_v1/build/robo_cleaner_gui', 'env': OrderedDict([('LESSOPEN', '| /usr/bin/lesspipe %s'), ('USER', 'ubuntu'), ('SSH_AGENT_PID', '2016'), ('XDG_SESSION_TYPE', 'x11'), ('SHLVL', '1'), ('LD_LIBRARY_PATH', '/home/ubuntu/workspace/Velizar/robotics_v1/install/robo_cleaner_interfaces/lib:/home/ubuntu/workspace/Velizar/robotics_v1/install/urscript_interfaces/lib:/home/ubuntu/workspace/Velizar/robotics_v1/install/ur_robot_driver/lib:/home/ubuntu/workspace/Velizar/robotics_v1/install/ur_controllers/lib:/home/ubuntu/workspace/Velizar/robotics_v1/install/ur_dashboard_msgs/lib:/home/ubuntu/workspace/Velizar/robotics_v1/install/ur_client_library/lib:/home/ubuntu/workspace/Velizar/robotics_v1/install/robo_miner_interfaces/lib:/home/ubuntu/workspace/Velizar/robotics_v1/install/robo_collector_interfaces/lib:/opt/ros/foxy/opt/yaml_cpp_vendor/lib:/opt/ros/foxy/opt/rviz_ogre_vendor/lib:/opt/ros/foxy/lib/x86_64-linux-gnu:/opt/ros/foxy/lib'), ('HOME', '/home/ubuntu'), ('DESKTOP_SESSION', 'ubuntu'), ('ROS_PYTHON_VERSION', '3'), ('GNOME_SHELL_SESSION_MODE', 'ubuntu'), ('GTK_MODULES', 'gail:atk-bridge'), ('PS1', '[\\u@\\h \\W]$(git_branch)$'), ('MANAGERPID', '1803'), ('DBUS_STARTER_BUS_TYPE', 'session'), ('DBUS_SESSION_BUS_ADDRESS', 'unix:path=/run/user/1000/bus,guid=8edf32b797c1808c442e4d516362d38b'), ('COLORTERM', 'truecolor'), ('IM_CONFIG_PHASE', '1'), ('COLCON_PREFIX_PATH', '/home/ubuntu/workspace/Velizar/robotics_v1/install'), ('ROS_DISTRO', 'foxy'), ('LOGNAME', 'ubuntu'), ('JOURNAL_STREAM', '8:35462'), ('_', '/usr/bin/colcon'), ('ROS_VERSION', '2'), ('PKG_CONFIG_PATH', '/home/ubuntu/workspace/Velizar/robotics_v1/install/ros2_game_engine/lib/x86_64-linux-gnu/pkgconfig:/home/ubuntu/workspace/Velizar/robotics_v1/install/ros2_game_engine/lib/pkgconfig:/home/ubuntu/workspace/Velizar/robotics_v1/install/robo_common/lib/x86_64-linux-gnu/pkgconfig:/home/ubuntu/workspace/Velizar/robotics_v1/install/robo_common/lib/pkgconfig:/home/ubuntu/workspace/Velizar/robotics_v1/install/game_engine/lib/x86_64-linux-gnu/pkgconfig:/home/ubuntu/workspace/Velizar/robotics_v1/install/game_engine/lib/pkgconfig:/home/ubuntu/workspace/Velizar/robotics_v1/install/manager_utils/lib/x86_64-linux-gnu/pkgconfig:/home/ubuntu/workspace/Velizar/robotics_v1/install/manager_utils/lib/pkgconfig:/home/ubuntu/workspace/Velizar/robotics_v1/install/sdl_utils/lib/x86_64-linux-gnu/pkgconfig:/home/ubuntu/workspace/Velizar/robotics_v1/install/sdl_utils/lib/pkgconfig:/home/ubuntu/workspace/Velizar/robotics_v1/install/resource_utils/lib/x86_64-linux-gnu/pkgconfig:/home/ubuntu/workspace/Velizar/robotics_v1/install/resource_utils/lib/pkgconfig:/home/ubuntu/workspace/Velizar/robotics_v1/install/utils/lib/x86_64-linux-gnu/pkgconfig:/home/ubuntu/workspace/Velizar/robotics_v1/install/utils/lib/pkgconfig:/home/ubuntu/workspace/Velizar/robotics_v1/install/cmake_helpers/lib/x86_64-linux-gnu/pkgconfig:/home/ubuntu/workspace/Velizar/robotics_v1/install/cmake_helpers/lib/pkgconfig:/home/ubuntu/workspace/Velizar/robotics_v1/install/resource_builder/lib/x86_64-linux-gnu/pkgconfig:/home/ubuntu/workspace/Velizar/robotics_v1/install/resource_builder/lib/pkgconfig:/home/ubuntu/workspace/Velizar/robotics_v1/install/ur_client_library/lib/x86_64-linux-gnu/pkgconfig:/home/ubuntu/workspace/Velizar/robotics_v1/install/ur_client_library/lib/pkgconfig'), ('XDG_SESSION_CLASS', 'user'), ('USERNAME', 'ubuntu'), ('TERM', 'xterm-256color'), ('GNOME_DESKTOP_SESSION_ID', 'this-is-deprecated'), ('ROS_LOCALHOST_ONLY', '0'), ('WINDOWPATH', '2'), ('PATH', '/home/ubuntu/workspace/Velizar/robotics_v1/install/resource_builder/bin:/home/ubuntu/workspace/Velizar/robotics_v1/install/ur_robot_driver/bin:/opt/ros/foxy/bin:/home/ubuntu/.local/bin:/usr/local/sbin:/usr/local/bin:/usr/sbin:/usr/bin:/sbin:/bin:/usr/games:/usr/local/games:/snap/bin'), ('SESSION_MANAGER', 'local/ubuntu2004:@/tmp/.ICE-unix/2053,unix/ubuntu2004:/tmp/.ICE-unix/2053'), ('INVOCATION_ID', 'ea27ce0bf85b43079aa99f89a1eb6a15'), ('XDG_MENU_PREFIX', 'gnome-'), ('GNOME_TERMINAL_SCREEN', '/org/gnome/Terminal/screen/2135f09f_3e22_423f_944c_e673e3176585'), ('XDG_RUNTIME_DIR', '/run/user/1000'), ('DISPLAY', ':0'), ('LANG', 'en_US.UTF-8'), ('XDG_CURRENT_DESKTOP', 'ubuntu:GNOME'), ('XMODIFIERS', '@im=ibus'), ('XDG_SESSION_DESKTOP', 'ubuntu'), ('XAUTHORITY', '/run/user/1000/gdm/Xauthority'), ('LS_COLORS', 'rs=0:di=01;34:ln=01;36:mh=00:pi=40;33:so=01;35:do=01;35:bd=40;33;01:cd=40;33;01:or=40;31;01:mi=00:su=37;41:sg=30;43:ca=30;41:tw=30;42:ow=34;42:st=37;44:ex=01;32:*.tar=01;31:*.tgz=01;31:*.arc=01;31:*.arj=01;31:*.taz=01;31:*.lha=01;31:*.lz4=01;31:*.lzh=01;31:*.lzma=01;31:*.tlz=01;31:*.txz=01;31:*.tzo=01;31:*.t7z=01;31:*.zip=01;31:*.z=01;31:*.dz=01;31:*.gz=01;31:*.lrz=01;31:*.lz=01;31:*.lzo=01;31:*.xz=01;31:*.zst=01;31:*.tzst=01;31:*.bz2=01;31:*.bz=01;31:*.tbz=01;31:*.tbz2=01;31:*.tz=01;31:*.deb=01;31:*.rpm=01;31:*.jar=01;31:*.war=01;31:*.ear=01;31:*.sar=01;31:*.rar=01;31:*.alz=01;31:*.ace=01;31:*.zoo=01;31:*.cpio=01;31:*.7z=01;31:*.rz=01;31:*.cab=01;31:*.wim=01;31:*.swm=01;31:*.dwm=01;31:*.esd=01;31:*.jpg=01;35:*.jpeg=01;35:*.mjpg=01;35:*.mjpeg=01;35:*.gif=01;35:*.bmp=01;35:*.pbm=01;35:*.pgm=01;35:*.ppm=01;35:*.tga=01;35:*.xbm=01;35:*.xpm=01;35:*.tif=01;35:*.tiff=01;35:*.png=01;35:*.svg=01;35:*.svgz=01;35:*.mng=01;35:*.pcx=01;35:*.mov=01;35:*.mpg=01;35:*.mpeg=01;35:*.m2v=01;35:*.mkv=01;35:*.webm=01;35:*.ogm=01;35:*.mp4=01;35:*.m4v=01;35:*.mp4v=01;35:*.vob=01;35:*.qt=01;35:*.nuv=01;35:*.wmv=01;35:*.asf=01;35:*.rm=01;35:*.rmvb=01;35:*.flc=01;35:*.avi=01;35:*.fli=01;35:*.flv=01;35:*.gl=01;35:*.dl=01;35:*.xcf=01;35:*.xwd=01;35:*.yuv=01;35:*.cgm=01;35:*.emf=01;35:*.ogv=01;35:*.ogx=01;35:*.aac=00;36:*.au=00;36:*.flac=00;36:*.m4a=00;36:*.mid=00;36:*.midi=00;36:*.mka=00;36:*.mp3=00;36:*.mpc=00;36:*.ogg=00;36:*.ra=00;36:*.wav=00;36:*.oga=00;36:*.opus=00;36:*.spx=00;36:*.xspf=00;36:'), ('GNOME_TERMINAL_SERVICE', ':1.77'), ('SSH_AUTH_SOCK', '/run/user/1000/keyring/ssh'), ('AMENT_PREFIX_PATH', '/home/ubuntu/workspace/Velizar/robotics_v1/install/urscript_bridge:/home/ubuntu/workspace/Velizar/robotics_v1/install/ur_control_gui:/home/ubuntu/workspace/Velizar/robotics_v1/install/urscript_common:/home/ubuntu/workspace/Velizar/robotics_v1/install/robo_miner_gui:/home/ubuntu/workspace/Velizar/robotics_v1/install/robo_collector_gui:/home/ubuntu/workspace/Velizar/robotics_v1/install/robo_collector_controller:/home/ubuntu/workspace/Velizar/robotics_v1/install/robo_cleaner_gui:/home/ubuntu/workspace/Velizar/robotics_v1/install/robo_miner_common:/home/ubuntu/workspace/Velizar/robotics_v1/install/robo_collector_common:/home/ubuntu/workspace/Velizar/robotics_v1/install/robo_cleaner_common:/home/ubuntu/workspace/Velizar/robotics_v1/install/urscript_interfaces:/home/ubuntu/workspace/Velizar/robotics_v1/install/ur_robot_driver:/home/ubuntu/workspace/Velizar/robotics_v1/install/ur_moveit_config:/home/ubuntu/workspace/Velizar/robotics_v1/install/ur_description:/home/ubuntu/workspace/Velizar/robotics_v1/install/ur_controllers:/home/ubuntu/workspace/Velizar/robotics_v1/install/ur_dashboard_msgs:/home/ubuntu/workspace/Velizar/robotics_v1/install/ur_bringup:/home/ubuntu/workspace/Velizar/robotics_v1/install/robo_miner_ai_py:/home/ubuntu/workspace/Velizar/robotics_v1/install/robo_miner_interfaces:/home/ubuntu/workspace/Velizar/robotics_v1/install/robo_collector_controller_py:/home/ubuntu/workspace/Velizar/robotics_v1/install/robo_collector_interfaces:/home/ubuntu/workspace/Velizar/robotics_v1/install/robo_cleaner_ai_py:/home/ubuntu/workspace/Velizar/robotics_v1/install/robo_cleaner_interfaces:/opt/ros/foxy'), ('SHELL', '/bin/bash'), ('QT_ACCESSIBILITY', '1'), ('GDMSESSION', 'ubuntu'), ('LESSCLOSE', '/usr/bin/lesspipe %s %s'), ('GPG_AGENT_INFO', '/run/user/1000/gnupg/S.gpg-agent:0:1'), ('QT_IM_MODULE', 'ibus'), ('PWD', '/home/ubuntu/workspace/Velizar/robotics_v1/build/robo_cleaner_gui'), ('LC_ALL', 'en_US.UTF-8'), ('XDG_CONFIG_DIRS', '/etc/xdg/xdg-ubuntu:/etc/xdg'), ('DBUS_STARTER_ADDRESS', 'unix:path=/run/user/1000/bus,guid=8edf32b797c1808c442e4d516362d38b'), ('XDG_DATA_DIRS', '/usr/share/ubuntu:/usr/local/share/:/usr/share/:/var/lib/snapd/desktop'), ('PYTHONPATH', '/home/ubuntu/workspace/Velizar/robotics_v1/install/robo_cleaner_interfaces/lib/python3.8/site-packages:/home/ubuntu/workspace/Velizar/robotics_v1/install/urscript_interfaces/lib/python3.8/site-packages:/home/ubuntu/workspace/Velizar/robotics_v1/install/ur_dashboard_msgs/lib/python3.8/site-packages:/home/ubuntu/workspace/Velizar/robotics_v1/install/robo_miner_ai_py/lib/python3.8/site-packages:/home/ubuntu/workspace/Velizar/robotics_v1/install/robo_miner_interfaces/lib/python3.8/site-packages:/home/ubuntu/workspace/Velizar/robotics_v1/install/robo_collector_controller_py/lib/python3.8/site-packages:/home/ubuntu/workspace/Velizar/robotics_v1/install/robo_collector_interfaces/lib/python3.8/site-packages:/home/ubuntu/workspace/Velizar/robotics_v1/install/robo_cleaner_ai_py/lib/python3.8/site-packages:/opt/ros/foxy/lib/python3.8/site-packages'), ('COLCON', '1'), ('VTE_VERSION', '6003'), ('CMAKE_PREFIX_PATH', '/home/ubuntu/workspace/Velizar/robotics_v1/install/ros2_game_engine:/home/ubuntu/workspace/Velizar/robotics_v1/install/robo_cleaner_common:/home/ubuntu/workspace/Velizar/robotics_v1/install/robo_common:/home/ubuntu/workspace/Velizar/robotics_v1/install/game_engine:/home/ubuntu/workspace/Velizar/robotics_v1/install/manager_utils:/home/ubuntu/workspace/Velizar/robotics_v1/install/sdl_utils:/home/ubuntu/workspace/Velizar/robotics_v1/install/resource_utils:/home/ubuntu/workspace/Velizar/robotics_v1/install/utils:/home/ubuntu/workspace/Velizar/robotics_v1/install/robo_cleaner_interfaces:/home/ubuntu/workspace/Velizar/robotics_v1/install/cmake_helpers:/home/ubuntu/workspace/Velizar/robotics_v1/install/urscript_bridge:/home/ubuntu/workspace/Velizar/robotics_v1/install/ur_control_gui:/home/ubuntu/workspace/Velizar/robotics_v1/install/urscript_common:/home/ubuntu/workspace/Velizar/robotics_v1/install/robo_miner_gui:/home/ubuntu/workspace/Velizar/robotics_v1/install/robo_collector_gui:/home/ubuntu/workspace/Velizar/robotics_v1/install/robo_collector_controller:/home/ubuntu/workspace/Velizar/robotics_v1/install/robo_cleaner_gui:/home/ubuntu/workspace/Velizar/robotics_v1/install/robo_miner_common:/home/ubuntu/workspace/Velizar/robotics_v1/install/robo_collector_common:/home/ubuntu/workspace/Velizar/robotics_v1/install/resource_builder:/home/ubuntu/workspace/Velizar/robotics_v1/install/urscript_interfaces:/home/ubuntu/workspace/Velizar/robotics_v1/install/ur_robot_driver:/home/ubuntu/workspace/Velizar/robotics_v1/install/ur_moveit_config:/home/ubuntu/workspace/Velizar/robotics_v1/install/ur_description:/home/ubuntu/workspace/Velizar/robotics_v1/install/ur_controllers:/home/ubuntu/workspace/Velizar/robotics_v1/install/ur_dashboard_msgs:/home/ubuntu/workspace/Velizar/robotics_v1/install/ur_client_library:/home/ubuntu/workspace/Velizar/robotics_v1/install/ur_bringup:/home/ubuntu/workspace/Velizar/robotics_v1/install/robo_miner_interfaces:/home/ubuntu/workspace/Velizar/robotics_v1/install/robo_collector_interfaces:/home/ubuntu/workspace/Velizar/robotics_v1/install/robo_miner_ai_py:/home/ubuntu/workspace/Velizar/robotics_v1/install/robo_collector_controller_py:/home/ubuntu/workspace/Velizar/robotics_v1/install/robo_cleaner_ai_py:/opt/ros/foxy')]), 'shell': False}
+[0.102371] (-) TimerEvent: {}
+[0.204135] (-) TimerEvent: {}
+[0.223307] (robo_cleaner_gui) StdoutLine: {'line': b'-- Found cmake_helpers: 1.0.0 (/home/ubuntu/workspace/Velizar/robotics_v1/install/cmake_helpers/share/cmake_helpers/cmake)\n'}
+[0.227142] (robo_cleaner_gui) StdoutLine: {'line': b'-- Found ament_cmake: 0.9.11 (/opt/ros/foxy/share/ament_cmake/cmake)\n'}
+[0.304377] (-) TimerEvent: {}
+[0.336489] (robo_cleaner_gui) StdoutLine: {'line': b'-- Using PYTHON_EXECUTABLE: /usr/bin/python3\n'}
+[0.404673] (-) TimerEvent: {}
+[0.505073] (-) TimerEvent: {}
+[0.605579] (-) TimerEvent: {}
+[0.706013] (-) TimerEvent: {}
+[0.806699] (-) TimerEvent: {}
+[0.831497] (robo_cleaner_gui) StdoutLine: {'line': b'-- Override CMake install command with custom implementation using symlinks instead of copying resources\n'}
+[0.907091] (-) TimerEvent: {}
+[0.921419] (robo_cleaner_gui) StdoutLine: {'line': b'-- Found ament_index_cpp: 1.1.0 (/opt/ros/foxy/share/ament_index_cpp/cmake)\n'}
+[0.958960] (robo_cleaner_gui) StdoutLine: {'line': b'-- Found rclcpp: 2.4.2 (/opt/ros/foxy/share/rclcpp/cmake)\n'}
+[1.007321] (-) TimerEvent: {}
+[1.107796] (-) TimerEvent: {}
+[1.128335] (robo_cleaner_gui) StdoutLine: {'line': b'-- Using all available rosidl_typesupport_c: rosidl_typesupport_fastrtps_c;rosidl_typesupport_introspection_c\n'}
+[1.149031] (robo_cleaner_gui) StdoutLine: {'line': b'-- Found rosidl_adapter: 1.3.0 (/opt/ros/foxy/share/rosidl_adapter/cmake)\n'}
+[1.208066] (-) TimerEvent: {}
+[1.308600] (-) TimerEvent: {}
+[1.409153] (-) TimerEvent: {}
+[1.509585] (-) TimerEvent: {}
+[1.610048] (-) TimerEvent: {}
+[1.626909] (robo_cleaner_gui) StdoutLine: {'line': b'-- Using all available rosidl_typesupport_cpp: rosidl_typesupport_fastrtps_cpp;rosidl_typesupport_introspection_cpp\n'}
+[1.710260] (-) TimerEvent: {}
+[1.810764] (-) TimerEvent: {}
+[1.860829] (robo_cleaner_gui) StdoutLine: {'line': b'-- Found rmw_implementation_cmake: 1.0.3 (/opt/ros/foxy/share/rmw_implementation_cmake/cmake)\n'}
+[1.872463] (robo_cleaner_gui) StdoutLine: {'line': b"-- Using RMW implementation 'rmw_fastrtps_cpp' as default\n"}
+[1.911089] (-) TimerEvent: {}
+[2.011585] (-) TimerEvent: {}
+[2.111991] (-) TimerEvent: {}
+[2.212421] (-) TimerEvent: {}
+[2.312893] (-) TimerEvent: {}
+[2.413401] (-) TimerEvent: {}
+[2.513941] (-) TimerEvent: {}
+[2.614649] (-) TimerEvent: {}
+[2.615991] (robo_cleaner_gui) StdoutLine: {'line': b'-- Found rclcpp_action: 2.4.2 (/opt/ros/foxy/share/rclcpp_action/cmake)\n'}
+[2.714810] (-) TimerEvent: {}
+[2.815265] (-) TimerEvent: {}
+[2.915716] (-) TimerEvent: {}
+[3.000142] (robo_cleaner_gui) StdoutLine: {'line': b'-- Found robo_cleaner_interfaces: 1.0.0 (/home/ubuntu/workspace/Velizar/robotics_v1/install/robo_cleaner_interfaces/share/robo_cleaner_interfaces/cmake)\n'}
+[3.015894] (-) TimerEvent: {}
+[3.116322] (-) TimerEvent: {}
+[3.216737] (-) TimerEvent: {}
+[3.317193] (-) TimerEvent: {}
+[3.417625] (-) TimerEvent: {}
+[3.518137] (-) TimerEvent: {}
+[3.618637] (-) TimerEvent: {}
+[3.719090] (-) TimerEvent: {}
+[3.819657] (-) TimerEvent: {}
+[3.920172] (-) TimerEvent: {}
+[4.020585] (-) TimerEvent: {}
+[4.121800] (-) TimerEvent: {}
+[4.222270] (-) TimerEvent: {}
+[4.323002] (-) TimerEvent: {}
+[4.423511] (-) TimerEvent: {}
+[4.523979] (-) TimerEvent: {}
+[4.624806] (-) TimerEvent: {}
+[4.725142] (-) TimerEvent: {}
+[4.825838] (-) TimerEvent: {}
+[4.927006] (-) TimerEvent: {}
+[5.027685] (-) TimerEvent: {}
+[5.128074] (-) TimerEvent: {}
+[5.228536] (-) TimerEvent: {}
+[5.329450] (-) TimerEvent: {}
+[5.429913] (-) TimerEvent: {}
+[5.530654] (-) TimerEvent: {}
+[5.631303] (-) TimerEvent: {}
+[5.731713] (-) TimerEvent: {}
+[5.832440] (-) TimerEvent: {}
+[5.933066] (-) TimerEvent: {}
+[6.034159] (-) TimerEvent: {}
+[6.134861] (-) TimerEvent: {}
+[6.235557] (-) TimerEvent: {}
+[6.335988] (-) TimerEvent: {}
+[6.436445] (-) TimerEvent: {}
+[6.537054] (-) TimerEvent: {}
+[6.637800] (-) TimerEvent: {}
+[6.738591] (-) TimerEvent: {}
+[6.839461] (-) TimerEvent: {}
+[6.939857] (-) TimerEvent: {}
+[7.040398] (-) TimerEvent: {}
+[7.141225] (-) TimerEvent: {}
+[7.241703] (-) TimerEvent: {}
+[7.342466] (-) TimerEvent: {}
+[7.443092] (-) TimerEvent: {}
+[7.543525] (-) TimerEvent: {}
+[7.644328] (-) TimerEvent: {}
+[7.745090] (-) TimerEvent: {}
+[7.845877] (-) TimerEvent: {}
+[7.946736] (-) TimerEvent: {}
+[8.047581] (-) TimerEvent: {}
+[8.148106] (-) TimerEvent: {}
+[8.248762] (-) TimerEvent: {}
+[8.349889] (-) TimerEvent: {}
+[8.450426] (-) TimerEvent: {}
+[8.551000] (-) TimerEvent: {}
+[8.652265] (-) TimerEvent: {}
+[8.752778] (-) TimerEvent: {}
+[8.853639] (-) TimerEvent: {}
+[8.954180] (-) TimerEvent: {}
+[9.052128] (robo_cleaner_gui) StdoutLine: {'line': b'-- Configuring done\n'}
+[9.054889] (-) TimerEvent: {}
+[9.155291] (-) TimerEvent: {}
+[9.162997] (robo_cleaner_gui) StdoutLine: {'line': b'-- Generating done\n'}
+[9.170804] (robo_cleaner_gui) StdoutLine: {'line': b'-- Build files have been written to: /home/ubuntu/workspace/Velizar/robotics_v1/build/robo_cleaner_gui\n'}
+[9.190202] (robo_cleaner_gui) CommandEnded: {'returncode': 0}
+[9.193230] (robo_cleaner_gui) JobProgress: {'identifier': 'robo_cleaner_gui', 'progress': 'build'}
+[9.193363] (robo_cleaner_gui) Command: {'cmd': ['/usr/bin/cmake', '--build', '/home/ubuntu/workspace/Velizar/robotics_v1/build/robo_cleaner_gui', '--', '-j4', '-l4'], 'cwd': '/home/ubuntu/workspace/Velizar/robotics_v1/build/robo_cleaner_gui', 'env': OrderedDict([('LESSOPEN', '| /usr/bin/lesspipe %s'), ('USER', 'ubuntu'), ('SSH_AGENT_PID', '2016'), ('XDG_SESSION_TYPE', 'x11'), ('SHLVL', '1'), ('LD_LIBRARY_PATH', '/home/ubuntu/workspace/Velizar/robotics_v1/install/robo_cleaner_interfaces/lib:/home/ubuntu/workspace/Velizar/robotics_v1/install/urscript_interfaces/lib:/home/ubuntu/workspace/Velizar/robotics_v1/install/ur_robot_driver/lib:/home/ubuntu/workspace/Velizar/robotics_v1/install/ur_controllers/lib:/home/ubuntu/workspace/Velizar/robotics_v1/install/ur_dashboard_msgs/lib:/home/ubuntu/workspace/Velizar/robotics_v1/install/ur_client_library/lib:/home/ubuntu/workspace/Velizar/robotics_v1/install/robo_miner_interfaces/lib:/home/ubuntu/workspace/Velizar/robotics_v1/install/robo_collector_interfaces/lib:/opt/ros/foxy/opt/yaml_cpp_vendor/lib:/opt/ros/foxy/opt/rviz_ogre_vendor/lib:/opt/ros/foxy/lib/x86_64-linux-gnu:/opt/ros/foxy/lib'), ('HOME', '/home/ubuntu'), ('DESKTOP_SESSION', 'ubuntu'), ('ROS_PYTHON_VERSION', '3'), ('GNOME_SHELL_SESSION_MODE', 'ubuntu'), ('GTK_MODULES', 'gail:atk-bridge'), ('PS1', '[\\u@\\h \\W]$(git_branch)$'), ('MANAGERPID', '1803'), ('DBUS_STARTER_BUS_TYPE', 'session'), ('DBUS_SESSION_BUS_ADDRESS', 'unix:path=/run/user/1000/bus,guid=8edf32b797c1808c442e4d516362d38b'), ('COLORTERM', 'truecolor'), ('IM_CONFIG_PHASE', '1'), ('COLCON_PREFIX_PATH', '/home/ubuntu/workspace/Velizar/robotics_v1/install'), ('ROS_DISTRO', 'foxy'), ('LOGNAME', 'ubuntu'), ('JOURNAL_STREAM', '8:35462'), ('_', '/usr/bin/colcon'), ('ROS_VERSION', '2'), ('PKG_CONFIG_PATH', '/home/ubuntu/workspace/Velizar/robotics_v1/install/ros2_game_engine/lib/x86_64-linux-gnu/pkgconfig:/home/ubuntu/workspace/Velizar/robotics_v1/install/ros2_game_engine/lib/pkgconfig:/home/ubuntu/workspace/Velizar/robotics_v1/install/robo_common/lib/x86_64-linux-gnu/pkgconfig:/home/ubuntu/workspace/Velizar/robotics_v1/install/robo_common/lib/pkgconfig:/home/ubuntu/workspace/Velizar/robotics_v1/install/game_engine/lib/x86_64-linux-gnu/pkgconfig:/home/ubuntu/workspace/Velizar/robotics_v1/install/game_engine/lib/pkgconfig:/home/ubuntu/workspace/Velizar/robotics_v1/install/manager_utils/lib/x86_64-linux-gnu/pkgconfig:/home/ubuntu/workspace/Velizar/robotics_v1/install/manager_utils/lib/pkgconfig:/home/ubuntu/workspace/Velizar/robotics_v1/install/sdl_utils/lib/x86_64-linux-gnu/pkgconfig:/home/ubuntu/workspace/Velizar/robotics_v1/install/sdl_utils/lib/pkgconfig:/home/ubuntu/workspace/Velizar/robotics_v1/install/resource_utils/lib/x86_64-linux-gnu/pkgconfig:/home/ubuntu/workspace/Velizar/robotics_v1/install/resource_utils/lib/pkgconfig:/home/ubuntu/workspace/Velizar/robotics_v1/install/utils/lib/x86_64-linux-gnu/pkgconfig:/home/ubuntu/workspace/Velizar/robotics_v1/install/utils/lib/pkgconfig:/home/ubuntu/workspace/Velizar/robotics_v1/install/cmake_helpers/lib/x86_64-linux-gnu/pkgconfig:/home/ubuntu/workspace/Velizar/robotics_v1/install/cmake_helpers/lib/pkgconfig:/home/ubuntu/workspace/Velizar/robotics_v1/install/resource_builder/lib/x86_64-linux-gnu/pkgconfig:/home/ubuntu/workspace/Velizar/robotics_v1/install/resource_builder/lib/pkgconfig:/home/ubuntu/workspace/Velizar/robotics_v1/install/ur_client_library/lib/x86_64-linux-gnu/pkgconfig:/home/ubuntu/workspace/Velizar/robotics_v1/install/ur_client_library/lib/pkgconfig'), ('XDG_SESSION_CLASS', 'user'), ('USERNAME', 'ubuntu'), ('TERM', 'xterm-256color'), ('GNOME_DESKTOP_SESSION_ID', 'this-is-deprecated'), ('ROS_LOCALHOST_ONLY', '0'), ('WINDOWPATH', '2'), ('PATH', '/home/ubuntu/workspace/Velizar/robotics_v1/install/resource_builder/bin:/home/ubuntu/workspace/Velizar/robotics_v1/install/ur_robot_driver/bin:/opt/ros/foxy/bin:/home/ubuntu/.local/bin:/usr/local/sbin:/usr/local/bin:/usr/sbin:/usr/bin:/sbin:/bin:/usr/games:/usr/local/games:/snap/bin'), ('SESSION_MANAGER', 'local/ubuntu2004:@/tmp/.ICE-unix/2053,unix/ubuntu2004:/tmp/.ICE-unix/2053'), ('INVOCATION_ID', 'ea27ce0bf85b43079aa99f89a1eb6a15'), ('XDG_MENU_PREFIX', 'gnome-'), ('GNOME_TERMINAL_SCREEN', '/org/gnome/Terminal/screen/2135f09f_3e22_423f_944c_e673e3176585'), ('XDG_RUNTIME_DIR', '/run/user/1000'), ('DISPLAY', ':0'), ('LANG', 'en_US.UTF-8'), ('XDG_CURRENT_DESKTOP', 'ubuntu:GNOME'), ('XMODIFIERS', '@im=ibus'), ('XDG_SESSION_DESKTOP', 'ubuntu'), ('XAUTHORITY', '/run/user/1000/gdm/Xauthority'), ('LS_COLORS', 'rs=0:di=01;34:ln=01;36:mh=00:pi=40;33:so=01;35:do=01;35:bd=40;33;01:cd=40;33;01:or=40;31;01:mi=00:su=37;41:sg=30;43:ca=30;41:tw=30;42:ow=34;42:st=37;44:ex=01;32:*.tar=01;31:*.tgz=01;31:*.arc=01;31:*.arj=01;31:*.taz=01;31:*.lha=01;31:*.lz4=01;31:*.lzh=01;31:*.lzma=01;31:*.tlz=01;31:*.txz=01;31:*.tzo=01;31:*.t7z=01;31:*.zip=01;31:*.z=01;31:*.dz=01;31:*.gz=01;31:*.lrz=01;31:*.lz=01;31:*.lzo=01;31:*.xz=01;31:*.zst=01;31:*.tzst=01;31:*.bz2=01;31:*.bz=01;31:*.tbz=01;31:*.tbz2=01;31:*.tz=01;31:*.deb=01;31:*.rpm=01;31:*.jar=01;31:*.war=01;31:*.ear=01;31:*.sar=01;31:*.rar=01;31:*.alz=01;31:*.ace=01;31:*.zoo=01;31:*.cpio=01;31:*.7z=01;31:*.rz=01;31:*.cab=01;31:*.wim=01;31:*.swm=01;31:*.dwm=01;31:*.esd=01;31:*.jpg=01;35:*.jpeg=01;35:*.mjpg=01;35:*.mjpeg=01;35:*.gif=01;35:*.bmp=01;35:*.pbm=01;35:*.pgm=01;35:*.ppm=01;35:*.tga=01;35:*.xbm=01;35:*.xpm=01;35:*.tif=01;35:*.tiff=01;35:*.png=01;35:*.svg=01;35:*.svgz=01;35:*.mng=01;35:*.pcx=01;35:*.mov=01;35:*.mpg=01;35:*.mpeg=01;35:*.m2v=01;35:*.mkv=01;35:*.webm=01;35:*.ogm=01;35:*.mp4=01;35:*.m4v=01;35:*.mp4v=01;35:*.vob=01;35:*.qt=01;35:*.nuv=01;35:*.wmv=01;35:*.asf=01;35:*.rm=01;35:*.rmvb=01;35:*.flc=01;35:*.avi=01;35:*.fli=01;35:*.flv=01;35:*.gl=01;35:*.dl=01;35:*.xcf=01;35:*.xwd=01;35:*.yuv=01;35:*.cgm=01;35:*.emf=01;35:*.ogv=01;35:*.ogx=01;35:*.aac=00;36:*.au=00;36:*.flac=00;36:*.m4a=00;36:*.mid=00;36:*.midi=00;36:*.mka=00;36:*.mp3=00;36:*.mpc=00;36:*.ogg=00;36:*.ra=00;36:*.wav=00;36:*.oga=00;36:*.opus=00;36:*.spx=00;36:*.xspf=00;36:'), ('GNOME_TERMINAL_SERVICE', ':1.77'), ('SSH_AUTH_SOCK', '/run/user/1000/keyring/ssh'), ('AMENT_PREFIX_PATH', '/home/ubuntu/workspace/Velizar/robotics_v1/install/urscript_bridge:/home/ubuntu/workspace/Velizar/robotics_v1/install/ur_control_gui:/home/ubuntu/workspace/Velizar/robotics_v1/install/urscript_common:/home/ubuntu/workspace/Velizar/robotics_v1/install/robo_miner_gui:/home/ubuntu/workspace/Velizar/robotics_v1/install/robo_collector_gui:/home/ubuntu/workspace/Velizar/robotics_v1/install/robo_collector_controller:/home/ubuntu/workspace/Velizar/robotics_v1/install/robo_cleaner_gui:/home/ubuntu/workspace/Velizar/robotics_v1/install/robo_miner_common:/home/ubuntu/workspace/Velizar/robotics_v1/install/robo_collector_common:/home/ubuntu/workspace/Velizar/robotics_v1/install/robo_cleaner_common:/home/ubuntu/workspace/Velizar/robotics_v1/install/urscript_interfaces:/home/ubuntu/workspace/Velizar/robotics_v1/install/ur_robot_driver:/home/ubuntu/workspace/Velizar/robotics_v1/install/ur_moveit_config:/home/ubuntu/workspace/Velizar/robotics_v1/install/ur_description:/home/ubuntu/workspace/Velizar/robotics_v1/install/ur_controllers:/home/ubuntu/workspace/Velizar/robotics_v1/install/ur_dashboard_msgs:/home/ubuntu/workspace/Velizar/robotics_v1/install/ur_bringup:/home/ubuntu/workspace/Velizar/robotics_v1/install/robo_miner_ai_py:/home/ubuntu/workspace/Velizar/robotics_v1/install/robo_miner_interfaces:/home/ubuntu/workspace/Velizar/robotics_v1/install/robo_collector_controller_py:/home/ubuntu/workspace/Velizar/robotics_v1/install/robo_collector_interfaces:/home/ubuntu/workspace/Velizar/robotics_v1/install/robo_cleaner_ai_py:/home/ubuntu/workspace/Velizar/robotics_v1/install/robo_cleaner_interfaces:/opt/ros/foxy'), ('SHELL', '/bin/bash'), ('QT_ACCESSIBILITY', '1'), ('GDMSESSION', 'ubuntu'), ('LESSCLOSE', '/usr/bin/lesspipe %s %s'), ('GPG_AGENT_INFO', '/run/user/1000/gnupg/S.gpg-agent:0:1'), ('QT_IM_MODULE', 'ibus'), ('PWD', '/home/ubuntu/workspace/Velizar/robotics_v1/build/robo_cleaner_gui'), ('LC_ALL', 'en_US.UTF-8'), ('XDG_CONFIG_DIRS', '/etc/xdg/xdg-ubuntu:/etc/xdg'), ('DBUS_STARTER_ADDRESS', 'unix:path=/run/user/1000/bus,guid=8edf32b797c1808c442e4d516362d38b'), ('XDG_DATA_DIRS', '/usr/share/ubuntu:/usr/local/share/:/usr/share/:/var/lib/snapd/desktop'), ('PYTHONPATH', '/home/ubuntu/workspace/Velizar/robotics_v1/install/robo_cleaner_interfaces/lib/python3.8/site-packages:/home/ubuntu/workspace/Velizar/robotics_v1/install/urscript_interfaces/lib/python3.8/site-packages:/home/ubuntu/workspace/Velizar/robotics_v1/install/ur_dashboard_msgs/lib/python3.8/site-packages:/home/ubuntu/workspace/Velizar/robotics_v1/install/robo_miner_ai_py/lib/python3.8/site-packages:/home/ubuntu/workspace/Velizar/robotics_v1/install/robo_miner_interfaces/lib/python3.8/site-packages:/home/ubuntu/workspace/Velizar/robotics_v1/install/robo_collector_controller_py/lib/python3.8/site-packages:/home/ubuntu/workspace/Velizar/robotics_v1/install/robo_collector_interfaces/lib/python3.8/site-packages:/home/ubuntu/workspace/Velizar/robotics_v1/install/robo_cleaner_ai_py/lib/python3.8/site-packages:/opt/ros/foxy/lib/python3.8/site-packages'), ('COLCON', '1'), ('VTE_VERSION', '6003'), ('CMAKE_PREFIX_PATH', '/home/ubuntu/workspace/Velizar/robotics_v1/install/ros2_game_engine:/home/ubuntu/workspace/Velizar/robotics_v1/install/robo_cleaner_common:/home/ubuntu/workspace/Velizar/robotics_v1/install/robo_common:/home/ubuntu/workspace/Velizar/robotics_v1/install/game_engine:/home/ubuntu/workspace/Velizar/robotics_v1/install/manager_utils:/home/ubuntu/workspace/Velizar/robotics_v1/install/sdl_utils:/home/ubuntu/workspace/Velizar/robotics_v1/install/resource_utils:/home/ubuntu/workspace/Velizar/robotics_v1/install/utils:/home/ubuntu/workspace/Velizar/robotics_v1/install/robo_cleaner_interfaces:/home/ubuntu/workspace/Velizar/robotics_v1/install/cmake_helpers:/home/ubuntu/workspace/Velizar/robotics_v1/install/urscript_bridge:/home/ubuntu/workspace/Velizar/robotics_v1/install/ur_control_gui:/home/ubuntu/workspace/Velizar/robotics_v1/install/urscript_common:/home/ubuntu/workspace/Velizar/robotics_v1/install/robo_miner_gui:/home/ubuntu/workspace/Velizar/robotics_v1/install/robo_collector_gui:/home/ubuntu/workspace/Velizar/robotics_v1/install/robo_collector_controller:/home/ubuntu/workspace/Velizar/robotics_v1/install/robo_cleaner_gui:/home/ubuntu/workspace/Velizar/robotics_v1/install/robo_miner_common:/home/ubuntu/workspace/Velizar/robotics_v1/install/robo_collector_common:/home/ubuntu/workspace/Velizar/robotics_v1/install/resource_builder:/home/ubuntu/workspace/Velizar/robotics_v1/install/urscript_interfaces:/home/ubuntu/workspace/Velizar/robotics_v1/install/ur_robot_driver:/home/ubuntu/workspace/Velizar/robotics_v1/install/ur_moveit_config:/home/ubuntu/workspace/Velizar/robotics_v1/install/ur_description:/home/ubuntu/workspace/Velizar/robotics_v1/install/ur_controllers:/home/ubuntu/workspace/Velizar/robotics_v1/install/ur_dashboard_msgs:/home/ubuntu/workspace/Velizar/robotics_v1/install/ur_client_library:/home/ubuntu/workspace/Velizar/robotics_v1/install/ur_bringup:/home/ubuntu/workspace/Velizar/robotics_v1/install/robo_miner_interfaces:/home/ubuntu/workspace/Velizar/robotics_v1/install/robo_collector_interfaces:/home/ubuntu/workspace/Velizar/robotics_v1/install/robo_miner_ai_py:/home/ubuntu/workspace/Velizar/robotics_v1/install/robo_collector_controller_py:/home/ubuntu/workspace/Velizar/robotics_v1/install/robo_cleaner_ai_py:/opt/ros/foxy')]), 'shell': False}
+[9.255522] (-) TimerEvent: {}
+[9.355989] (-) TimerEvent: {}
+[9.456527] (-) TimerEvent: {}
+[9.470948] (robo_cleaner_gui) StdoutLine: {'line': b'\x1b[35m\x1b[1mScanning dependencies of target robo_cleaner_gui\x1b[0m\n'}
+[9.557174] (-) TimerEvent: {}
+[9.657688] (-) TimerEvent: {}
+[9.758180] (-) TimerEvent: {}
+[9.808528] (robo_cleaner_gui) StdoutLine: {'line': b'[ 11%] \x1b[32mBuilding CXX object CMakeFiles/robo_cleaner_gui.dir/src/RoboCleanerGui.cpp.o\x1b[0m\n'}
+[9.808948] (robo_cleaner_gui) StdoutLine: {'line': b'[ 11%] \x1b[32mBuilding CXX object CMakeFiles/robo_cleaner_gui.dir/src/main.cpp.o\x1b[0m\n'}
+[9.812166] (robo_cleaner_gui) StdoutLine: {'line': b'[ 17%] \x1b[32mBuilding CXX object CMakeFiles/robo_cleaner_gui.dir/src/external_api/CleanerControllerExternalBridge.cpp.o\x1b[0m\n'}
+[9.822019] (robo_cleaner_gui) StdoutLine: {'line': b'[ 23%] \x1b[32mBuilding CXX object CMakeFiles/robo_cleaner_gui.dir/src/helpers/RoboCleanerBuilder.cpp.o\x1b[0m\n'}
+[9.858392] (-) TimerEvent: {}
+[9.959014] (-) TimerEvent: {}
+[10.059508] (-) TimerEvent: {}
+[10.160025] (-) TimerEvent: {}
+[10.260671] (-) TimerEvent: {}
+[10.361269] (-) TimerEvent: {}
+[10.461862] (-) TimerEvent: {}
+[10.562408] (-) TimerEvent: {}
+[10.662930] (-) TimerEvent: {}
+[10.763451] (-) TimerEvent: {}
+[10.863937] (-) TimerEvent: {}
+[10.964451] (-) TimerEvent: {}
+[11.065014] (-) TimerEvent: {}
+[11.165516] (-) TimerEvent: {}
+[11.266051] (-) TimerEvent: {}
+[11.366591] (-) TimerEvent: {}
+[11.467098] (-) TimerEvent: {}
+[11.567609] (-) TimerEvent: {}
+[11.668025] (-) TimerEvent: {}
+[11.768502] (-) TimerEvent: {}
+[11.868992] (-) TimerEvent: {}
+[11.969484] (-) TimerEvent: {}
+[12.069995] (-) TimerEvent: {}
+[12.170637] (-) TimerEvent: {}
+[12.271162] (-) TimerEvent: {}
+[12.371638] (-) TimerEvent: {}
+[12.472133] (-) TimerEvent: {}
+[12.572664] (-) TimerEvent: {}
+[12.673210] (-) TimerEvent: {}
+[12.773775] (-) TimerEvent: {}
+[12.874421] (-) TimerEvent: {}
+[12.974886] (-) TimerEvent: {}
+[13.075355] (-) TimerEvent: {}
+[13.175816] (-) TimerEvent: {}
+[13.276320] (-) TimerEvent: {}
+[13.376786] (-) TimerEvent: {}
+[13.477297] (-) TimerEvent: {}
+[13.577803] (-) TimerEvent: {}
+[13.678363] (-) TimerEvent: {}
+[13.780550] (-) TimerEvent: {}
+[13.881094] (-) TimerEvent: {}
+[13.981693] (-) TimerEvent: {}
+[14.082361] (-) TimerEvent: {}
+[14.185615] (-) TimerEvent: {}
+[14.288287] (-) TimerEvent: {}
+[14.388795] (-) TimerEvent: {}
+[14.489307] (-) TimerEvent: {}
+[14.589866] (-) TimerEvent: {}
+[14.693089] (-) TimerEvent: {}
+[14.793616] (-) TimerEvent: {}
+[14.894052] (-) TimerEvent: {}
+[14.994613] (-) TimerEvent: {}
+[15.095121] (-) TimerEvent: {}
+[15.195619] (-) TimerEvent: {}
+[15.296161] (-) TimerEvent: {}
+[15.396756] (-) TimerEvent: {}
+[15.497919] (-) TimerEvent: {}
+[15.598514] (-) TimerEvent: {}
+[15.699078] (-) TimerEvent: {}
+[15.799633] (-) TimerEvent: {}
+[15.900173] (-) TimerEvent: {}
+[16.000692] (-) TimerEvent: {}
+[16.014604] (robo_cleaner_gui) StdoutLine: {'line': b'[ 29%] \x1b[32mBuilding CXX object CMakeFiles/robo_cleaner_gui.dir/src/helpers/RoboCleanerGuiInitHelper.cpp.o\x1b[0m\n'}
+[16.100874] (-) TimerEvent: {}
+[16.201425] (-) TimerEvent: {}
+[16.301999] (-) TimerEvent: {}
+[16.402652] (-) TimerEvent: {}
+[16.503215] (-) TimerEvent: {}
+[16.601475] (robo_cleaner_gui) StdoutLine: {'line': b'[ 35%] \x1b[32mBuilding CXX object CMakeFiles/robo_cleaner_gui.dir/src/helpers/MovementWatcher.cpp.o\x1b[0m\n'}
+[16.603348] (-) TimerEvent: {}
+[16.703833] (-) TimerEvent: {}
+[16.804433] (-) TimerEvent: {}
+[16.904954] (-) TimerEvent: {}
+[17.005469] (-) TimerEvent: {}
+[17.106008] (-) TimerEvent: {}
+[17.206594] (-) TimerEvent: {}
+[17.307135] (-) TimerEvent: {}
+[17.407697] (-) TimerEvent: {}
+[17.508186] (-) TimerEvent: {}
+[17.608819] (-) TimerEvent: {}
+[17.709267] (-) TimerEvent: {}
+[17.809846] (-) TimerEvent: {}
+[17.910428] (-) TimerEvent: {}
+[18.010898] (-) TimerEvent: {}
+[18.111379] (-) TimerEvent: {}
+[18.211894] (-) TimerEvent: {}
+[18.312397] (-) TimerEvent: {}
+[18.413070] (-) TimerEvent: {}
+[18.513640] (-) TimerEvent: {}
+[18.614176] (-) TimerEvent: {}
+[18.714830] (-) TimerEvent: {}
+[18.815424] (-) TimerEvent: {}
+[18.916849] (-) TimerEvent: {}
+[19.017447] (-) TimerEvent: {}
+[19.118168] (-) TimerEvent: {}
+[19.218839] (-) TimerEvent: {}
+[19.319458] (-) TimerEvent: {}
+[19.420071] (-) TimerEvent: {}
+[19.520655] (-) TimerEvent: {}
+[19.621217] (-) TimerEvent: {}
+[19.721810] (-) TimerEvent: {}
+[19.822509] (-) TimerEvent: {}
+[19.923081] (-) TimerEvent: {}
+[20.023645] (-) TimerEvent: {}
+[20.124211] (-) TimerEvent: {}
+[20.224784] (-) TimerEvent: {}
+[20.325314] (-) TimerEvent: {}
+[20.425918] (-) TimerEvent: {}
+[20.526722] (-) TimerEvent: {}
+[20.627298] (-) TimerEvent: {}
+[20.727894] (-) TimerEvent: {}
+[20.828528] (-) TimerEvent: {}
+[20.929226] (-) TimerEvent: {}
+[21.029907] (-) TimerEvent: {}
+[21.130601] (-) TimerEvent: {}
+[21.231188] (-) TimerEvent: {}
+[21.331920] (-) TimerEvent: {}
+[21.432443] (-) TimerEvent: {}
+[21.532988] (-) TimerEvent: {}
+[21.633632] (-) TimerEvent: {}
+[21.734211] (-) TimerEvent: {}
+[21.834768] (-) TimerEvent: {}
+[21.935267] (-) TimerEvent: {}
+[22.035784] (-) TimerEvent: {}
+[22.136309] (-) TimerEvent: {}
+[22.236836] (-) TimerEvent: {}
+[22.337381] (-) TimerEvent: {}
+[22.437939] (-) TimerEvent: {}
+[22.538738] (-) TimerEvent: {}
+[22.639265] (-) TimerEvent: {}
+[22.739796] (-) TimerEvent: {}
+[22.840328] (-) TimerEvent: {}
+[22.941010] (-) TimerEvent: {}
+[23.041729] (-) TimerEvent: {}
+[23.142462] (-) TimerEvent: {}
+[23.242991] (-) TimerEvent: {}
+[23.343538] (-) TimerEvent: {}
+[23.444053] (-) TimerEvent: {}
+[23.544648] (-) TimerEvent: {}
+[23.645212] (-) TimerEvent: {}
+[23.745799] (-) TimerEvent: {}
+[23.846704] (-) TimerEvent: {}
+[23.948210] (-) TimerEvent: {}
+[24.048833] (-) TimerEvent: {}
+[24.149411] (-) TimerEvent: {}
+[24.249930] (-) TimerEvent: {}
+[24.350612] (-) TimerEvent: {}
+[24.451179] (-) TimerEvent: {}
+[24.551797] (-) TimerEvent: {}
+[24.652386] (-) TimerEvent: {}
+[24.752964] (-) TimerEvent: {}
+[24.853505] (-) TimerEvent: {}
+[24.954165] (-) TimerEvent: {}
+[25.054817] (-) TimerEvent: {}
+[25.155418] (-) TimerEvent: {}
+[25.256060] (-) TimerEvent: {}
+[25.356609] (-) TimerEvent: {}
+[25.457217] (-) TimerEvent: {}
+[25.557805] (-) TimerEvent: {}
+[25.658752] (-) TimerEvent: {}
+[25.759483] (-) TimerEvent: {}
+[25.859983] (-) TimerEvent: {}
+[25.960533] (-) TimerEvent: {}
+[26.061045] (-) TimerEvent: {}
+[26.161595] (-) TimerEvent: {}
+[26.262127] (-) TimerEvent: {}
+[26.362739] (-) TimerEvent: {}
+[26.463243] (-) TimerEvent: {}
+[26.563770] (-) TimerEvent: {}
+[26.664287] (-) TimerEvent: {}
+[26.764824] (-) TimerEvent: {}
+[26.865340] (-) TimerEvent: {}
+[26.965876] (-) TimerEvent: {}
+[27.066570] (-) TimerEvent: {}
+[27.167095] (-) TimerEvent: {}
+[27.267638] (-) TimerEvent: {}
+[27.368204] (-) TimerEvent: {}
+[27.468779] (-) TimerEvent: {}
+[27.569205] (-) TimerEvent: {}
+[27.669805] (-) TimerEvent: {}
+[27.770942] (-) TimerEvent: {}
+[27.871494] (-) TimerEvent: {}
+[27.972122] (-) TimerEvent: {}
+[28.072635] (-) TimerEvent: {}
+[28.173146] (-) TimerEvent: {}
+[28.273676] (-) TimerEvent: {}
+[28.374198] (-) TimerEvent: {}
+[28.474884] (-) TimerEvent: {}
+[28.575435] (-) TimerEvent: {}
+[28.675971] (-) TimerEvent: {}
+[28.776506] (-) TimerEvent: {}
+[28.877017] (-) TimerEvent: {}
+[28.978158] (-) TimerEvent: {}
+[29.078777] (-) TimerEvent: {}
+[29.179301] (-) TimerEvent: {}
+[29.279830] (-) TimerEvent: {}
+[29.380362] (-) TimerEvent: {}
+[29.480883] (-) TimerEvent: {}
+[29.581596] (-) TimerEvent: {}
+[29.682208] (-) TimerEvent: {}
+[29.782788] (-) TimerEvent: {}
+[29.883406] (-) TimerEvent: {}
+[29.983984] (-) TimerEvent: {}
+[30.084768] (-) TimerEvent: {}
+[30.185230] (-) TimerEvent: {}
+[30.285736] (-) TimerEvent: {}
+[30.386238] (-) TimerEvent: {}
+[30.486844] (-) TimerEvent: {}
+[30.587383] (-) TimerEvent: {}
+[30.687933] (-) TimerEvent: {}
+[30.788477] (-) TimerEvent: {}
+[30.889176] (-) TimerEvent: {}
+[30.989849] (-) TimerEvent: {}
+[31.090726] (-) TimerEvent: {}
+[31.191286] (-) TimerEvent: {}
+[31.291927] (-) TimerEvent: {}
+[31.392661] (-) TimerEvent: {}
+[31.493266] (-) TimerEvent: {}
+[31.593820] (-) TimerEvent: {}
+[31.694672] (-) TimerEvent: {}
+[31.795368] (-) TimerEvent: {}
+[31.895934] (-) TimerEvent: {}
+[31.996528] (-) TimerEvent: {}
+[32.097286] (-) TimerEvent: {}
+[32.118152] (robo_cleaner_gui) StdoutLine: {'line': b'[ 41%] \x1b[32m\x1b[1mLinking CXX executable robo_cleaner_gui\x1b[0m\n'}
+[32.197576] (-) TimerEvent: {}
+[32.299191] (-) TimerEvent: {}
+[32.399794] (-) TimerEvent: {}
+[32.500419] (-) TimerEvent: {}
+[32.601218] (-) TimerEvent: {}
+[32.701937] (-) TimerEvent: {}
+[32.802667] (-) TimerEvent: {}
+[32.903244] (-) TimerEvent: {}
+[33.003626] (-) TimerEvent: {}
+[33.104603] (-) TimerEvent: {}
+[33.205267] (-) TimerEvent: {}
+[33.305959] (-) TimerEvent: {}
+[33.406483] (-) TimerEvent: {}
+[33.507019] (-) TimerEvent: {}
+[33.607527] (-) TimerEvent: {}
+[33.708095] (-) TimerEvent: {}
+[33.808700] (-) TimerEvent: {}
+[33.909266] (-) TimerEvent: {}
+[34.010921] (-) TimerEvent: {}
+[34.111456] (-) TimerEvent: {}
+[34.211982] (-) TimerEvent: {}
+[34.312554] (-) TimerEvent: {}
+[34.413065] (-) TimerEvent: {}
+[34.513611] (-) TimerEvent: {}
+[34.614926] (-) TimerEvent: {}
+[34.715444] (-) TimerEvent: {}
+[34.815914] (-) TimerEvent: {}
+[34.916457] (-) TimerEvent: {}
+[35.017566] (-) TimerEvent: {}
+[35.118794] (-) TimerEvent: {}
+[35.219909] (-) TimerEvent: {}
+[35.320473] (-) TimerEvent: {}
+[35.421068] (-) TimerEvent: {}
+[35.521653] (-) TimerEvent: {}
+[35.622190] (-) TimerEvent: {}
+[35.722733] (-) TimerEvent: {}
+[35.823447] (-) TimerEvent: {}
+[35.924017] (-) TimerEvent: {}
+[36.026489] (-) TimerEvent: {}
+[36.127158] (-) TimerEvent: {}
+[36.227758] (-) TimerEvent: {}
+[36.328345] (-) TimerEvent: {}
+[36.333154] (robo_cleaner_gui) StdoutLine: {'line': b'[100%] Built target robo_cleaner_gui\n'}
+[36.361546] (robo_cleaner_gui) CommandEnded: {'returncode': 0}
+[36.428590] (-) TimerEvent: {}
+[36.516849] (robo_cleaner_gui) JobProgress: {'identifier': 'robo_cleaner_gui', 'progress': 'install'}
+[36.528815] (-) TimerEvent: {}
+[36.544445] (robo_cleaner_gui) Command: {'cmd': ['/usr/bin/cmake', '--install', '/home/ubuntu/workspace/Velizar/robotics_v1/build/robo_cleaner_gui'], 'cwd': '/home/ubuntu/workspace/Velizar/robotics_v1/build/robo_cleaner_gui', 'env': OrderedDict([('LESSOPEN', '| /usr/bin/lesspipe %s'), ('USER', 'ubuntu'), ('SSH_AGENT_PID', '2016'), ('XDG_SESSION_TYPE', 'x11'), ('SHLVL', '1'), ('LD_LIBRARY_PATH', '/home/ubuntu/workspace/Velizar/robotics_v1/install/robo_cleaner_interfaces/lib:/home/ubuntu/workspace/Velizar/robotics_v1/install/urscript_interfaces/lib:/home/ubuntu/workspace/Velizar/robotics_v1/install/ur_robot_driver/lib:/home/ubuntu/workspace/Velizar/robotics_v1/install/ur_controllers/lib:/home/ubuntu/workspace/Velizar/robotics_v1/install/ur_dashboard_msgs/lib:/home/ubuntu/workspace/Velizar/robotics_v1/install/ur_client_library/lib:/home/ubuntu/workspace/Velizar/robotics_v1/install/robo_miner_interfaces/lib:/home/ubuntu/workspace/Velizar/robotics_v1/install/robo_collector_interfaces/lib:/opt/ros/foxy/opt/yaml_cpp_vendor/lib:/opt/ros/foxy/opt/rviz_ogre_vendor/lib:/opt/ros/foxy/lib/x86_64-linux-gnu:/opt/ros/foxy/lib'), ('HOME', '/home/ubuntu'), ('DESKTOP_SESSION', 'ubuntu'), ('ROS_PYTHON_VERSION', '3'), ('GNOME_SHELL_SESSION_MODE', 'ubuntu'), ('GTK_MODULES', 'gail:atk-bridge'), ('PS1', '[\\u@\\h \\W]$(git_branch)$'), ('MANAGERPID', '1803'), ('DBUS_STARTER_BUS_TYPE', 'session'), ('DBUS_SESSION_BUS_ADDRESS', 'unix:path=/run/user/1000/bus,guid=8edf32b797c1808c442e4d516362d38b'), ('COLORTERM', 'truecolor'), ('IM_CONFIG_PHASE', '1'), ('COLCON_PREFIX_PATH', '/home/ubuntu/workspace/Velizar/robotics_v1/install'), ('ROS_DISTRO', 'foxy'), ('LOGNAME', 'ubuntu'), ('JOURNAL_STREAM', '8:35462'), ('_', '/usr/bin/colcon'), ('ROS_VERSION', '2'), ('PKG_CONFIG_PATH', '/home/ubuntu/workspace/Velizar/robotics_v1/install/ros2_game_engine/lib/x86_64-linux-gnu/pkgconfig:/home/ubuntu/workspace/Velizar/robotics_v1/install/ros2_game_engine/lib/pkgconfig:/home/ubuntu/workspace/Velizar/robotics_v1/install/robo_common/lib/x86_64-linux-gnu/pkgconfig:/home/ubuntu/workspace/Velizar/robotics_v1/install/robo_common/lib/pkgconfig:/home/ubuntu/workspace/Velizar/robotics_v1/install/game_engine/lib/x86_64-linux-gnu/pkgconfig:/home/ubuntu/workspace/Velizar/robotics_v1/install/game_engine/lib/pkgconfig:/home/ubuntu/workspace/Velizar/robotics_v1/install/manager_utils/lib/x86_64-linux-gnu/pkgconfig:/home/ubuntu/workspace/Velizar/robotics_v1/install/manager_utils/lib/pkgconfig:/home/ubuntu/workspace/Velizar/robotics_v1/install/sdl_utils/lib/x86_64-linux-gnu/pkgconfig:/home/ubuntu/workspace/Velizar/robotics_v1/install/sdl_utils/lib/pkgconfig:/home/ubuntu/workspace/Velizar/robotics_v1/install/resource_utils/lib/x86_64-linux-gnu/pkgconfig:/home/ubuntu/workspace/Velizar/robotics_v1/install/resource_utils/lib/pkgconfig:/home/ubuntu/workspace/Velizar/robotics_v1/install/utils/lib/x86_64-linux-gnu/pkgconfig:/home/ubuntu/workspace/Velizar/robotics_v1/install/utils/lib/pkgconfig:/home/ubuntu/workspace/Velizar/robotics_v1/install/cmake_helpers/lib/x86_64-linux-gnu/pkgconfig:/home/ubuntu/workspace/Velizar/robotics_v1/install/cmake_helpers/lib/pkgconfig:/home/ubuntu/workspace/Velizar/robotics_v1/install/resource_builder/lib/x86_64-linux-gnu/pkgconfig:/home/ubuntu/workspace/Velizar/robotics_v1/install/resource_builder/lib/pkgconfig:/home/ubuntu/workspace/Velizar/robotics_v1/install/ur_client_library/lib/x86_64-linux-gnu/pkgconfig:/home/ubuntu/workspace/Velizar/robotics_v1/install/ur_client_library/lib/pkgconfig'), ('XDG_SESSION_CLASS', 'user'), ('USERNAME', 'ubuntu'), ('TERM', 'xterm-256color'), ('GNOME_DESKTOP_SESSION_ID', 'this-is-deprecated'), ('ROS_LOCALHOST_ONLY', '0'), ('WINDOWPATH', '2'), ('PATH', '/home/ubuntu/workspace/Velizar/robotics_v1/install/resource_builder/bin:/home/ubuntu/workspace/Velizar/robotics_v1/install/ur_robot_driver/bin:/opt/ros/foxy/bin:/home/ubuntu/.local/bin:/usr/local/sbin:/usr/local/bin:/usr/sbin:/usr/bin:/sbin:/bin:/usr/games:/usr/local/games:/snap/bin'), ('SESSION_MANAGER', 'local/ubuntu2004:@/tmp/.ICE-unix/2053,unix/ubuntu2004:/tmp/.ICE-unix/2053'), ('INVOCATION_ID', 'ea27ce0bf85b43079aa99f89a1eb6a15'), ('XDG_MENU_PREFIX', 'gnome-'), ('GNOME_TERMINAL_SCREEN', '/org/gnome/Terminal/screen/2135f09f_3e22_423f_944c_e673e3176585'), ('XDG_RUNTIME_DIR', '/run/user/1000'), ('DISPLAY', ':0'), ('LANG', 'en_US.UTF-8'), ('XDG_CURRENT_DESKTOP', 'ubuntu:GNOME'), ('XMODIFIERS', '@im=ibus'), ('XDG_SESSION_DESKTOP', 'ubuntu'), ('XAUTHORITY', '/run/user/1000/gdm/Xauthority'), ('LS_COLORS', 'rs=0:di=01;34:ln=01;36:mh=00:pi=40;33:so=01;35:do=01;35:bd=40;33;01:cd=40;33;01:or=40;31;01:mi=00:su=37;41:sg=30;43:ca=30;41:tw=30;42:ow=34;42:st=37;44:ex=01;32:*.tar=01;31:*.tgz=01;31:*.arc=01;31:*.arj=01;31:*.taz=01;31:*.lha=01;31:*.lz4=01;31:*.lzh=01;31:*.lzma=01;31:*.tlz=01;31:*.txz=01;31:*.tzo=01;31:*.t7z=01;31:*.zip=01;31:*.z=01;31:*.dz=01;31:*.gz=01;31:*.lrz=01;31:*.lz=01;31:*.lzo=01;31:*.xz=01;31:*.zst=01;31:*.tzst=01;31:*.bz2=01;31:*.bz=01;31:*.tbz=01;31:*.tbz2=01;31:*.tz=01;31:*.deb=01;31:*.rpm=01;31:*.jar=01;31:*.war=01;31:*.ear=01;31:*.sar=01;31:*.rar=01;31:*.alz=01;31:*.ace=01;31:*.zoo=01;31:*.cpio=01;31:*.7z=01;31:*.rz=01;31:*.cab=01;31:*.wim=01;31:*.swm=01;31:*.dwm=01;31:*.esd=01;31:*.jpg=01;35:*.jpeg=01;35:*.mjpg=01;35:*.mjpeg=01;35:*.gif=01;35:*.bmp=01;35:*.pbm=01;35:*.pgm=01;35:*.ppm=01;35:*.tga=01;35:*.xbm=01;35:*.xpm=01;35:*.tif=01;35:*.tiff=01;35:*.png=01;35:*.svg=01;35:*.svgz=01;35:*.mng=01;35:*.pcx=01;35:*.mov=01;35:*.mpg=01;35:*.mpeg=01;35:*.m2v=01;35:*.mkv=01;35:*.webm=01;35:*.ogm=01;35:*.mp4=01;35:*.m4v=01;35:*.mp4v=01;35:*.vob=01;35:*.qt=01;35:*.nuv=01;35:*.wmv=01;35:*.asf=01;35:*.rm=01;35:*.rmvb=01;35:*.flc=01;35:*.avi=01;35:*.fli=01;35:*.flv=01;35:*.gl=01;35:*.dl=01;35:*.xcf=01;35:*.xwd=01;35:*.yuv=01;35:*.cgm=01;35:*.emf=01;35:*.ogv=01;35:*.ogx=01;35:*.aac=00;36:*.au=00;36:*.flac=00;36:*.m4a=00;36:*.mid=00;36:*.midi=00;36:*.mka=00;36:*.mp3=00;36:*.mpc=00;36:*.ogg=00;36:*.ra=00;36:*.wav=00;36:*.oga=00;36:*.opus=00;36:*.spx=00;36:*.xspf=00;36:'), ('GNOME_TERMINAL_SERVICE', ':1.77'), ('SSH_AUTH_SOCK', '/run/user/1000/keyring/ssh'), ('AMENT_PREFIX_PATH', '/home/ubuntu/workspace/Velizar/robotics_v1/install/urscript_bridge:/home/ubuntu/workspace/Velizar/robotics_v1/install/ur_control_gui:/home/ubuntu/workspace/Velizar/robotics_v1/install/urscript_common:/home/ubuntu/workspace/Velizar/robotics_v1/install/robo_miner_gui:/home/ubuntu/workspace/Velizar/robotics_v1/install/robo_collector_gui:/home/ubuntu/workspace/Velizar/robotics_v1/install/robo_collector_controller:/home/ubuntu/workspace/Velizar/robotics_v1/install/robo_cleaner_gui:/home/ubuntu/workspace/Velizar/robotics_v1/install/robo_miner_common:/home/ubuntu/workspace/Velizar/robotics_v1/install/robo_collector_common:/home/ubuntu/workspace/Velizar/robotics_v1/install/robo_cleaner_common:/home/ubuntu/workspace/Velizar/robotics_v1/install/urscript_interfaces:/home/ubuntu/workspace/Velizar/robotics_v1/install/ur_robot_driver:/home/ubuntu/workspace/Velizar/robotics_v1/install/ur_moveit_config:/home/ubuntu/workspace/Velizar/robotics_v1/install/ur_description:/home/ubuntu/workspace/Velizar/robotics_v1/install/ur_controllers:/home/ubuntu/workspace/Velizar/robotics_v1/install/ur_dashboard_msgs:/home/ubuntu/workspace/Velizar/robotics_v1/install/ur_bringup:/home/ubuntu/workspace/Velizar/robotics_v1/install/robo_miner_ai_py:/home/ubuntu/workspace/Velizar/robotics_v1/install/robo_miner_interfaces:/home/ubuntu/workspace/Velizar/robotics_v1/install/robo_collector_controller_py:/home/ubuntu/workspace/Velizar/robotics_v1/install/robo_collector_interfaces:/home/ubuntu/workspace/Velizar/robotics_v1/install/robo_cleaner_ai_py:/home/ubuntu/workspace/Velizar/robotics_v1/install/robo_cleaner_interfaces:/opt/ros/foxy'), ('SHELL', '/bin/bash'), ('QT_ACCESSIBILITY', '1'), ('GDMSESSION', 'ubuntu'), ('LESSCLOSE', '/usr/bin/lesspipe %s %s'), ('GPG_AGENT_INFO', '/run/user/1000/gnupg/S.gpg-agent:0:1'), ('QT_IM_MODULE', 'ibus'), ('PWD', '/home/ubuntu/workspace/Velizar/robotics_v1/build/robo_cleaner_gui'), ('LC_ALL', 'en_US.UTF-8'), ('XDG_CONFIG_DIRS', '/etc/xdg/xdg-ubuntu:/etc/xdg'), ('DBUS_STARTER_ADDRESS', 'unix:path=/run/user/1000/bus,guid=8edf32b797c1808c442e4d516362d38b'), ('XDG_DATA_DIRS', '/usr/share/ubuntu:/usr/local/share/:/usr/share/:/var/lib/snapd/desktop'), ('PYTHONPATH', '/home/ubuntu/workspace/Velizar/robotics_v1/install/robo_cleaner_interfaces/lib/python3.8/site-packages:/home/ubuntu/workspace/Velizar/robotics_v1/install/urscript_interfaces/lib/python3.8/site-packages:/home/ubuntu/workspace/Velizar/robotics_v1/install/ur_dashboard_msgs/lib/python3.8/site-packages:/home/ubuntu/workspace/Velizar/robotics_v1/install/robo_miner_ai_py/lib/python3.8/site-packages:/home/ubuntu/workspace/Velizar/robotics_v1/install/robo_miner_interfaces/lib/python3.8/site-packages:/home/ubuntu/workspace/Velizar/robotics_v1/install/robo_collector_controller_py/lib/python3.8/site-packages:/home/ubuntu/workspace/Velizar/robotics_v1/install/robo_collector_interfaces/lib/python3.8/site-packages:/home/ubuntu/workspace/Velizar/robotics_v1/install/robo_cleaner_ai_py/lib/python3.8/site-packages:/opt/ros/foxy/lib/python3.8/site-packages'), ('COLCON', '1'), ('VTE_VERSION', '6003'), ('CMAKE_PREFIX_PATH', '/home/ubuntu/workspace/Velizar/robotics_v1/install/ros2_game_engine:/home/ubuntu/workspace/Velizar/robotics_v1/install/robo_cleaner_common:/home/ubuntu/workspace/Velizar/robotics_v1/install/robo_common:/home/ubuntu/workspace/Velizar/robotics_v1/install/game_engine:/home/ubuntu/workspace/Velizar/robotics_v1/install/manager_utils:/home/ubuntu/workspace/Velizar/robotics_v1/install/sdl_utils:/home/ubuntu/workspace/Velizar/robotics_v1/install/resource_utils:/home/ubuntu/workspace/Velizar/robotics_v1/install/utils:/home/ubuntu/workspace/Velizar/robotics_v1/install/robo_cleaner_interfaces:/home/ubuntu/workspace/Velizar/robotics_v1/install/cmake_helpers:/home/ubuntu/workspace/Velizar/robotics_v1/install/urscript_bridge:/home/ubuntu/workspace/Velizar/robotics_v1/install/ur_control_gui:/home/ubuntu/workspace/Velizar/robotics_v1/install/urscript_common:/home/ubuntu/workspace/Velizar/robotics_v1/install/robo_miner_gui:/home/ubuntu/workspace/Velizar/robotics_v1/install/robo_collector_gui:/home/ubuntu/workspace/Velizar/robotics_v1/install/robo_collector_controller:/home/ubuntu/workspace/Velizar/robotics_v1/install/robo_cleaner_gui:/home/ubuntu/workspace/Velizar/robotics_v1/install/robo_miner_common:/home/ubuntu/workspace/Velizar/robotics_v1/install/robo_collector_common:/home/ubuntu/workspace/Velizar/robotics_v1/install/resource_builder:/home/ubuntu/workspace/Velizar/robotics_v1/install/urscript_interfaces:/home/ubuntu/workspace/Velizar/robotics_v1/install/ur_robot_driver:/home/ubuntu/workspace/Velizar/robotics_v1/install/ur_moveit_config:/home/ubuntu/workspace/Velizar/robotics_v1/install/ur_description:/home/ubuntu/workspace/Velizar/robotics_v1/install/ur_controllers:/home/ubuntu/workspace/Velizar/robotics_v1/install/ur_dashboard_msgs:/home/ubuntu/workspace/Velizar/robotics_v1/install/ur_client_library:/home/ubuntu/workspace/Velizar/robotics_v1/install/ur_bringup:/home/ubuntu/workspace/Velizar/robotics_v1/install/robo_miner_interfaces:/home/ubuntu/workspace/Velizar/robotics_v1/install/robo_collector_interfaces:/home/ubuntu/workspace/Velizar/robotics_v1/install/robo_miner_ai_py:/home/ubuntu/workspace/Velizar/robotics_v1/install/robo_collector_controller_py:/home/ubuntu/workspace/Velizar/robotics_v1/install/robo_cleaner_ai_py:/opt/ros/foxy')]), 'shell': False}
+[36.568094] (robo_cleaner_gui) StdoutLine: {'line': b'-- Install configuration: "Debug"\n'}
+[36.569578] (robo_cleaner_gui) StdoutLine: {'line': b'-- Execute custom install script\n'}
+[36.570492] (robo_cleaner_gui) StdoutLine: {'line': b'-- Up-to-date symlink: /home/ubuntu/workspace/Velizar/robotics_v1/install/robo_cleaner_gui/share/robo_cleaner_gui/package.xml\n'}
+[36.571904] (robo_cleaner_gui) StdoutLine: {'line': b'-- Up-to-date symlink: /home/ubuntu/workspace/Velizar/robotics_v1/install/robo_cleaner_gui/share/robo_cleaner_gui//launch/launch.py\n'}
+[36.573294] (robo_cleaner_gui) StdoutLine: {'line': b'-- Up-to-date symlink: /home/ubuntu/workspace/Velizar/robotics_v1/install/robo_cleaner_gui/share/robo_cleaner_gui//config/params.yaml\n'}
+[36.574642] (robo_cleaner_gui) StdoutLine: {'line': b'-- Up-to-date symlink: /home/ubuntu/workspace/Velizar/robotics_v1/install/robo_cleaner_gui/lib/robo_cleaner_gui/robo_cleaner_gui\n'}
+[36.575462] (robo_cleaner_gui) StdoutLine: {'line': b'-- Symlinking: /home/ubuntu/workspace/Velizar/robotics_v1/install/robo_cleaner_gui/share/ament_index/resource_index/packages/robo_cleaner_gui\n'}
+[36.601096] (robo_cleaner_gui) StdoutLine: {'line': b'-- Up-to-date symlink: /home/ubuntu/workspace/Velizar/robotics_v1/install/robo_cleaner_gui/share/robo_cleaner_gui/hook/ament_prefix_path.dsv\n'}
+[36.601826] (robo_cleaner_gui) StdoutLine: {'line': b'-- Up-to-date symlink: /home/ubuntu/workspace/Velizar/robotics_v1/install/robo_cleaner_gui/share/robo_cleaner_gui/hook/ros_package_path.dsv\n'}
+[36.602709] (robo_cleaner_gui) StdoutLine: {'line': b'-- Up-to-date symlink: /home/ubuntu/workspace/Velizar/robotics_v1/install/robo_cleaner_gui/share/ament_index/resource_index/package_run_dependencies/robo_cleaner_gui\n'}
+[36.604558] (robo_cleaner_gui) StdoutLine: {'line': b'-- Up-to-date symlink: /home/ubuntu/workspace/Velizar/robotics_v1/install/robo_cleaner_gui/share/ament_index/resource_index/parent_prefix_path/robo_cleaner_gui\n'}
+[36.604967] (robo_cleaner_gui) StdoutLine: {'line': b'-- Up-to-date symlink: /home/ubuntu/workspace/Velizar/robotics_v1/install/robo_cleaner_gui/share/robo_cleaner_gui/environment/ament_prefix_path.sh\n'}
+[36.606181] (robo_cleaner_gui) StdoutLine: {'line': b'-- Up-to-date symlink: /home/ubuntu/workspace/Velizar/robotics_v1/install/robo_cleaner_gui/share/robo_cleaner_gui/environment/ament_prefix_path.dsv\n'}
+[36.607054] (robo_cleaner_gui) StdoutLine: {'line': b'-- Up-to-date symlink: /home/ubuntu/workspace/Velizar/robotics_v1/install/robo_cleaner_gui/share/robo_cleaner_gui/environment/path.sh\n'}
+[36.607873] (robo_cleaner_gui) StdoutLine: {'line': b'-- Up-to-date symlink: /home/ubuntu/workspace/Velizar/robotics_v1/install/robo_cleaner_gui/share/robo_cleaner_gui/environment/path.dsv\n'}
+[36.608637] (robo_cleaner_gui) StdoutLine: {'line': b'-- Up-to-date symlink: /home/ubuntu/workspace/Velizar/robotics_v1/install/robo_cleaner_gui/share/robo_cleaner_gui/local_setup.bash\n'}
+[36.609429] (robo_cleaner_gui) StdoutLine: {'line': b'-- Up-to-date symlink: /home/ubuntu/workspace/Velizar/robotics_v1/install/robo_cleaner_gui/share/robo_cleaner_gui/local_setup.sh\n'}
+[36.610270] (robo_cleaner_gui) StdoutLine: {'line': b'-- Up-to-date symlink: /home/ubuntu/workspace/Velizar/robotics_v1/install/robo_cleaner_gui/share/robo_cleaner_gui/local_setup.zsh\n'}
+[36.611138] (robo_cleaner_gui) StdoutLine: {'line': b'-- Up-to-date symlink: /home/ubuntu/workspace/Velizar/robotics_v1/install/robo_cleaner_gui/share/robo_cleaner_gui/local_setup.dsv\n'}
+[36.611826] (robo_cleaner_gui) StdoutLine: {'line': b'-- Symlinking: /home/ubuntu/workspace/Velizar/robotics_v1/install/robo_cleaner_gui/share/robo_cleaner_gui/package.dsv\n'}
+[36.629001] (-) TimerEvent: {}
+[36.635827] (robo_cleaner_gui) StdoutLine: {'line': b'-- Symlinking: /home/ubuntu/workspace/Velizar/robotics_v1/install/robo_cleaner_gui/share/ament_index/resource_index/packages/robo_cleaner_gui\n'}
+[36.660084] (robo_cleaner_gui) StdoutLine: {'line': b'-- Up-to-date symlink: /home/ubuntu/workspace/Velizar/robotics_v1/install/robo_cleaner_gui/share/robo_cleaner_gui/cmake/robo_cleaner_guiConfig.cmake\n'}
+[36.660511] (robo_cleaner_gui) StdoutLine: {'line': b'-- Up-to-date symlink: /home/ubuntu/workspace/Velizar/robotics_v1/install/robo_cleaner_gui/share/robo_cleaner_gui/cmake/robo_cleaner_guiConfig-version.cmake\n'}
+[36.661431] (robo_cleaner_gui) StdoutLine: {'line': b'-- Up-to-date symlink: /home/ubuntu/workspace/Velizar/robotics_v1/install/robo_cleaner_gui/share/robo_cleaner_gui/package.xml\n'}
+[36.665404] (robo_cleaner_gui) StdoutLine: {'line': b'-- Up-to-date symlink: /home/ubuntu/workspace/Velizar/robotics_v1/install/robo_cleaner_gui/share/robo_cleaner_gui/resources//RoboCleanerGui.rsrc\n'}
+[36.666013] (robo_cleaner_gui) StdoutLine: {'line': b'-- Up-to-date symlink: /home/ubuntu/workspace/Velizar/robotics_v1/install/robo_cleaner_gui/share/robo_cleaner_gui/resources//f/vinque_rg_20.ttf\n'}
+[36.666431] (robo_cleaner_gui) StdoutLine: {'line': b'-- Up-to-date symlink: /home/ubuntu/workspace/Velizar/robotics_v1/install/robo_cleaner_gui/share/robo_cleaner_gui/resources//f/vinque_rg_30.ttf\n'}
+[36.666845] (robo_cleaner_gui) StdoutLine: {'line': b'-- Up-to-date symlink: /home/ubuntu/workspace/Velizar/robotics_v1/install/robo_cleaner_gui/share/robo_cleaner_gui/resources//f/vinque_rg_75.ttf\n'}
+[36.667341] (robo_cleaner_gui) StdoutLine: {'line': b'-- Up-to-date symlink: /home/ubuntu/workspace/Velizar/robotics_v1/install/robo_cleaner_gui/share/robo_cleaner_gui/resources//generated/RoboCleanerGuiResources.h\n'}
+[36.667907] (robo_cleaner_gui) StdoutLine: {'line': b'-- Up-to-date symlink: /home/ubuntu/workspace/Velizar/robotics_v1/install/robo_cleaner_gui/share/robo_cleaner_gui/resources//generated/RoboCleanerGuiResourcesDynamic.h\n'}
+[36.668398] (robo_cleaner_gui) StdoutLine: {'line': b'-- Up-to-date symlink: /home/ubuntu/workspace/Velizar/robotics_v1/install/robo_cleaner_gui/share/robo_cleaner_gui/resources//generated/RoboCleanerGuiResourcesDynamicValues.h\n'}
+[36.668952] (robo_cleaner_gui) StdoutLine: {'line': b'-- Up-to-date symlink: /home/ubuntu/workspace/Velizar/robotics_v1/install/robo_cleaner_gui/share/robo_cleaner_gui/resources//generated/fonts.bin\n'}
+[36.669470] (robo_cleaner_gui) StdoutLine: {'line': b'-- Up-to-date symlink: /home/ubuntu/workspace/Velizar/robotics_v1/install/robo_cleaner_gui/share/robo_cleaner_gui/resources//generated/resources.bin\n'}
+[36.669994] (robo_cleaner_gui) StdoutLine: {'line': b'-- Up-to-date symlink: /home/ubuntu/workspace/Velizar/robotics_v1/install/robo_cleaner_gui/share/robo_cleaner_gui/resources//generated/sounds.bin\n'}
+[36.670605] (robo_cleaner_gui) StdoutLine: {'line': b'-- Up-to-date symlink: /home/ubuntu/workspace/Velizar/robotics_v1/install/robo_cleaner_gui/share/robo_cleaner_gui/resources//levels/level_1/field_map.txt\n'}
+[36.671137] (robo_cleaner_gui) StdoutLine: {'line': b'-- Up-to-date symlink: /home/ubuntu/workspace/Velizar/robotics_v1/install/robo_cleaner_gui/share/robo_cleaner_gui/resources//levels/level_2/field_map.txt\n'}
+[36.671689] (robo_cleaner_gui) StdoutLine: {'line': b'-- Up-to-date symlink: /home/ubuntu/workspace/Velizar/robotics_v1/install/robo_cleaner_gui/share/robo_cleaner_gui/resources//levels/level_3/field_map.txt\n'}
+[36.672244] (robo_cleaner_gui) StdoutLine: {'line': b'-- Up-to-date symlink: /home/ubuntu/workspace/Velizar/robotics_v1/install/robo_cleaner_gui/share/robo_cleaner_gui/resources//p/background/fogOfWar.png\n'}
+[36.672807] (robo_cleaner_gui) StdoutLine: {'line': b'-- Up-to-date symlink: /home/ubuntu/workspace/Velizar/robotics_v1/install/robo_cleaner_gui/share/robo_cleaner_gui/resources//p/background/map.png\n'}
+[36.673373] (robo_cleaner_gui) StdoutLine: {'line': b'-- Up-to-date symlink: /home/ubuntu/workspace/Velizar/robotics_v1/install/robo_cleaner_gui/share/robo_cleaner_gui/resources//p/background/obstacle.png\n'}
+[36.673919] (robo_cleaner_gui) StdoutLine: {'line': b'-- Up-to-date symlink: /home/ubuntu/workspace/Velizar/robotics_v1/install/robo_cleaner_gui/share/robo_cleaner_gui/resources//p/background/tile.png\n'}
+[36.674557] (robo_cleaner_gui) StdoutLine: {'line': b'-- Up-to-date symlink: /home/ubuntu/workspace/Velizar/robotics_v1/install/robo_cleaner_gui/share/robo_cleaner_gui/resources//p/entities/damage_marker.png\n'}
+[36.675112] (robo_cleaner_gui) StdoutLine: {'line': b'-- Up-to-date symlink: /home/ubuntu/workspace/Velizar/robotics_v1/install/robo_cleaner_gui/share/robo_cleaner_gui/resources//p/entities/player_robot.png\n'}
+[36.675686] (robo_cleaner_gui) StdoutLine: {'line': b'-- Up-to-date symlink: /home/ubuntu/workspace/Velizar/robotics_v1/install/robo_cleaner_gui/share/robo_cleaner_gui/resources//p/entities/rubbish.png\n'}
+[36.676216] (robo_cleaner_gui) StdoutLine: {'line': b'-- Up-to-date symlink: /home/ubuntu/workspace/Velizar/robotics_v1/install/robo_cleaner_gui/share/robo_cleaner_gui/resources//p/panels/energy_indicator.png\n'}
+[36.676793] (robo_cleaner_gui) StdoutLine: {'line': b'-- Up-to-date symlink: /home/ubuntu/workspace/Velizar/robotics_v1/install/robo_cleaner_gui/share/robo_cleaner_gui/resources//p/panels/energy_panel.png\n'}
+[36.677306] (robo_cleaner_gui) StdoutLine: {'line': b'-- Up-to-date symlink: /home/ubuntu/workspace/Velizar/robotics_v1/install/robo_cleaner_gui/share/robo_cleaner_gui/resources//p/panels/health_indicator.png\n'}
+[36.677859] (robo_cleaner_gui) StdoutLine: {'line': b'-- Up-to-date symlink: /home/ubuntu/workspace/Velizar/robotics_v1/install/robo_cleaner_gui/share/robo_cleaner_gui/resources//p/panels/health_panel.png\n'}
+[36.678510] (robo_cleaner_gui) StdoutLine: {'line': b'-- Up-to-date symlink: /home/ubuntu/workspace/Velizar/robotics_v1/install/robo_cleaner_gui/share/robo_cleaner_gui/resources//p/panels/hor_delimiter.png\n'}
+[36.679043] (robo_cleaner_gui) StdoutLine: {'line': b'-- Up-to-date symlink: /home/ubuntu/workspace/Velizar/robotics_v1/install/robo_cleaner_gui/share/robo_cleaner_gui/resources//p/panels/rubbish_panel.png\n'}
+[36.679596] (robo_cleaner_gui) StdoutLine: {'line': b'-- Up-to-date symlink: /home/ubuntu/workspace/Velizar/robotics_v1/install/robo_cleaner_gui/share/robo_cleaner_gui/resources//p/panels/tile_panel.png\n'}
+[36.680127] (robo_cleaner_gui) StdoutLine: {'line': b'-- Up-to-date symlink: /home/ubuntu/workspace/Velizar/robotics_v1/install/robo_cleaner_gui/share/robo_cleaner_gui/resources//p/panels/vert_delimiter.png\n'}
+[36.680684] (robo_cleaner_gui) StdoutLine: {'line': b'-- Up-to-date symlink: /home/ubuntu/workspace/Velizar/robotics_v1/install/robo_cleaner_gui/share/robo_cleaner_gui/resources//p/stars/star_single.png\n'}
+[36.681211] (robo_cleaner_gui) StdoutLine: {'line': b'-- Up-to-date symlink: /home/ubuntu/workspace/Velizar/robotics_v1/install/robo_cleaner_gui/share/robo_cleaner_gui/resources//p/stars/stars.png\n'}
+[36.688875] (robo_cleaner_gui) CommandEnded: {'returncode': 0}
+[36.729336] (-) TimerEvent: {}
+[36.831402] (-) TimerEvent: {}
+[36.907979] (robo_cleaner_gui) JobEnded: {'identifier': 'robo_cleaner_gui', 'rc': 0}
+[36.909618] (-) EventReactorShutdown: {}

@@ -1,0 +1,5 @@
+  File "/home/ubuntu/workspace/Velizar/robotics_v1/install/robo_cleaner_ai_py/lib/python3.8/site-packages/robo_cleaner_ai_py/robo_cleaner_ai.py", line 531
+    while (not (dirty_tile_coords==self.cur_position) and self.check_charge():
+                                                                             ^
+SyntaxError: invalid syntax
+

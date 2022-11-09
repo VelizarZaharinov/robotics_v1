@@ -27,9 +27,6 @@ class MoveAction(Node):
         # Result from moving forward
         self.move_result = None
 
-        # Flag for checking what is in front
-        self.probing = False
-
         # Init actions
         self.act_move = ActionClient(self,
                                      RobotMove,
@@ -41,9 +38,7 @@ class MoveAction(Node):
         # Init messages
         self.msg_move = RobotMoveType()
 
-    def move_forward(self, probe=False):
-        self.probing = probe
-        
+    def move_forward(self):
         self.msg_move.move_type = 0
         self.goal_move.robot_move_type = self.msg_move
 
@@ -173,7 +168,7 @@ class RobotConverse(Node):
 
         msg.user = 'Velizar Zaharinov'
         msg.repository = 'https://github.com/VelizarZaharinov/robotics_v1'
-        msg.commit_sha = '60a236b2d7f1bcc933d4e94a6e7747a31a0c65bb'
+        msg.commit_sha = 'df249980f4d52a3ad601e688685f67ee47765e7a'
 
         self.pub_authenticate.publish(msg)
         print('Authentication complete')
@@ -185,8 +180,8 @@ class RobotConverse(Node):
         
         return future.result()
 
-    def move_forward(self, probe=False):
-        self.move_action.move_forward(probe=probe)
+    def move_forward(self):
+        self.move_action.move_forward()
 
         return self.move_action.move_feedback
 

@@ -53,7 +53,7 @@ class RobotAi:
             print('Need more exploration')
             print('Using Ant algorithm')
             if not (0 in self.map.borders_found):
-                target_tile = self.map.get_unexplored_tile()
+                target_tile = self.map.get_closest_unexplored_tile(self.cur_position)
                 self.go_to_unexplored_tile(target_tile)
             else:                
                 self.free_roam()
@@ -63,8 +63,6 @@ class RobotAi:
                 self.robot_converse.request_charge()
                 self.moves_left = self.max_moves_on_full_energy
                 self.charge_map.reset(self.cur_position)
-
-            input()
 
         print('All explored!')
         
@@ -188,8 +186,25 @@ class RobotAi:
     def choose_next_tile(self, max_probability_tiles_coords):
         n_max_probability_tiles = len(max_probability_tiles_coords)
         if n_max_probability_tiles>1:
-            chosen_tile_index = random.randint(0,
-                                               n_max_probability_tiles-1)
+            front = self.map.get_front_tile_pos(self.cur_position,
+                                                self.cur_orientation)
+            right = self.map.get_right_tile_pos(self.cur_position,
+                                                self.cur_orientation)
+            left = self.map.get_left_tile_pos(self.cur_position,
+                                              self.cur_orientation)
+            rear = self.map.get_rear_tile_pos(self.cur_position,
+                                              self.cur_orientation)
+            if front in max_probability_tiles_coords:
+                chosen_tile_index = max_probability_tiles_coords.index(front)
+            elif (right in max_probability_tiles_coords) and (left in max_probability_tiles_coords):
+                ri = max_probability_tiles_coords.index(right)
+                li = max_probability_tiles_coords.index(left)
+                i = [ri, li]
+                chosen_tile_index = random.choice(i)
+            elif right in max_probability_tiles_coords:
+                chosen_tile_index = max_probability_tiles_coords.index(right)
+            elif left in max_probability_tiles_coords:
+                chosen_tile_index = max_probability_tiles_coords.index(left)
         else:
             chosen_tile_index = 0
 
@@ -212,11 +227,11 @@ class RobotAi:
 
         self.advance()
 
-    def advance(self, probe=False):
-        tile_type_in_front = self.robot_converse.move_forward(probe)
+    def advance(self):
+        tile_type_in_front = self.robot_converse.move_forward()
         print('Tile type in front %d'%(tile_type_in_front))
 
-        if (tile_type_in_front in self.obstacles) or probe:
+        if tile_type_in_front in self.obstacles:
             self.map.update_map(self.cur_orientation,
                                 tile_type_in_front,
                                 self.cur_position[0],
@@ -350,7 +365,7 @@ class RobotAi:
             input()
 
     def go_to_unexplored_tile(self, unexplored_tile_coords):
-        while (not (self.cur_position==unexplored_tile_coords)) and self.check_charge():
+        while (self.map.get_tile_on(unexplored_tile_coords)==None) and self.check_charge():
             print('Targetting unexplored tile [%d, %d]'%(unexplored_tile_coords[0], unexplored_tile_coords[1]))
             possible_tiles_coords = self.check_possible_tiles_to_move()
 
@@ -500,7 +515,7 @@ class RobotAi:
         print('Cleaning the rest...')
         while not self.pheromone_map.check_clean():
             target_tile = self.pheromone_map.get_dirty_tile_coords()
-            self.go_to_unexplored_tile(target_tile)
+            self.go_to_dirty_tile(target_tile)
             # Go back
             possible_tiles_coords = self.check_possible_tiles_to_move()
 
@@ -524,8 +539,31 @@ class RobotAi:
                 self.moves_left = self.max_moves_on_full_energy
                 self.charge_map.reset(self.cur_position)
 
+            input()
+
         self.return_to_charging_station()
         self.robot_converse.request_charge()
+
+    def go_to_dirty_tile(self, dirty_tile_coords):
+        while (not (dirty_tile_coords==self.cur_position)) and self.check_charge():
+            print('Targetting dirty tile [%d, %d]'%(dirty_tile_coords[0], dirty_tile_coords[1]))
+            possible_tiles_coords = self.check_possible_tiles_to_move()
+
+            tile_probability = self.ant.calculate_probability_with_target(possible_tiles_coords,
+                                                                          self.pheromone_map,
+                                                                          dirty_tile_coords)
+
+            max_probability = self.get_max_probability_value(tile_probability)
+
+            max_probability_tiles_coords = self.get_most_probable_tiles(tile_probability,
+                                                                        max_probability,
+                                                                        possible_tiles_coords)
+
+            chosen_tile_index = self.choose_next_tile(max_probability_tiles_coords)
+
+            self.go_to_tile(max_probability_tiles_coords[chosen_tile_index])
+
+            input()
 
     def destroy(self):
         self.robot_converse.destroy()

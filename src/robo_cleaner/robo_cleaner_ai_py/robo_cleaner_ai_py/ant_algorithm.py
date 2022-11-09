@@ -43,7 +43,7 @@ class AntAlgorithm:
         for direction in pheromone_levels.keys():
             if pheromone_levels[direction]:
                 try:
-                    tile_probability[direction] = pheromone_levels[direction]/(possible_tiles_distances[direction]*norm)
+                    tile_probability[direction] = pheromone_levels[direction]/(pow(possible_tiles_distances[direction], 0.5)*norm)
                 except ZeroDivisionError:
                     tile_probability[direction] = self.max_probability
 
@@ -69,49 +69,14 @@ class AntAlgorithm:
         for direction in pheromone_levels.keys():
             if pheromone_levels[direction]:
                 try:
-                    tile_probability[direction] = pow(pheromone_levels[direction], 2)/(possible_tiles_distances[direction]*norm)
+##                    tile_probability[direction] = pheromone_levels[direction]/(pow(possible_tiles_distances[direction], 0.5)*norm)
+                    tile_probability[direction] = pheromone_levels[direction]/norm
                 except ZeroDivisionError:
                     tile_probability[direction] = self.max_probability
 
         print(tile_probability)
 
         return tile_probability
-
-##    def calculate_probability(self, possible_tiles_coords, pheromone_map, explored_tiles_map=[], target_tile=None):
-##        tile_probability = {'front':None,
-##                            'right':None,
-##                            'rear':None,
-##                            'left':None}
-##
-##        pheromone_levels = self.get_pheromone_levels(possible_tiles_coords,
-##                                                     pheromone_map)
-##
-##        if target_tile:
-##            possible_tiles_distances = self.calc_distances(possible_tiles_coords,
-##                                                           target_tile)
-##
-##            norm = self.calc_normalizer_distance(pheromone_levels,
-##                                                 possible_tiles_distances)
-##        else:
-##            exploration = self.get_exploration(possible_tiles_coords,
-##                                               explored_tiles_map)
-##
-##            norm = self.calc_normalizer_exploration(pheromone_levels,
-##                                                    exploration)
-##        
-##        for direction in pheromone_levels.keys():
-##            if pheromone_levels[direction]:
-##                if target_tile:
-##                    try:
-##                        tile_probability[direction] = pheromone_levels[direction]/(possible_tiles_distances[direction]*norm)
-##                    except ZeroDivisionError:
-##                        tile_probability[direction] = self.max_probability
-##                else:                    
-##                    tile_probability[direction] = pheromone_levels[direction]*exploration[direction]/norm
-##
-##        print(tile_probability)
-##
-##        return tile_probability
 
     def get_pheromone_levels(self, possible_tiles_coords, pheromone_map):
         pheromone_levels = {'front':None,
@@ -172,7 +137,7 @@ class AntAlgorithm:
         norm = 0
         for direction in pheromone_levels.keys():
             if pheromone_levels[direction]:
-                norm += pheromone_levels[direction]*possible_tiles_distances[direction]
+                norm += pheromone_levels[direction]*pow(possible_tiles_distances[direction], 0.5)
 
         print(norm)
 
@@ -182,7 +147,7 @@ class AntAlgorithm:
         norm = 0
         for direction in pheromone_levels.keys():
             if pheromone_levels[direction]:
-                norm += pow(pheromone_levels[direction], 2)*possible_tiles_distances[direction]
+                norm += pheromone_levels[direction]#*pow(possible_tiles_distances[direction], 0.5)
 
         print(norm)
 
