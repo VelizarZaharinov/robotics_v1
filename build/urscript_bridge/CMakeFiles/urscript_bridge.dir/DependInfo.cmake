@@ -10,6 +10,7 @@ set(CMAKE_DEPENDS_CHECK_CXX
   "/home/ubuntu/workspace/Velizar/robotics_v1/src/ur_dev/urscript/urscript_bridge/src/external_api/UrBridgeRos2ParamProvider.cpp" "/home/ubuntu/workspace/Velizar/robotics_v1/build/urscript_bridge/CMakeFiles/urscript_bridge.dir/src/external_api/UrBridgeRos2ParamProvider.cpp.o"
   "/home/ubuntu/workspace/Velizar/robotics_v1/src/ur_dev/urscript/urscript_bridge/src/main.cpp" "/home/ubuntu/workspace/Velizar/robotics_v1/build/urscript_bridge/CMakeFiles/urscript_bridge.dir/src/main.cpp.o"
   "/home/ubuntu/workspace/Velizar/robotics_v1/src/ur_dev/urscript/urscript_bridge/src/utils/TcpClient.cpp" "/home/ubuntu/workspace/Velizar/robotics_v1/build/urscript_bridge/CMakeFiles/urscript_bridge.dir/src/utils/TcpClient.cpp.o"
+  "/home/ubuntu/workspace/Velizar/robotics_v1/src/ur_dev/urscript/urscript_bridge/src/utils/Tf2Utils.cpp" "/home/ubuntu/workspace/Velizar/robotics_v1/build/urscript_bridge/CMakeFiles/urscript_bridge.dir/src/utils/Tf2Utils.cpp.o"
   )
 set(CMAKE_CXX_COMPILER_ID "Clang")
 
@@ -33,6 +34,7 @@ set(CMAKE_CXX_TARGET_INCLUDE_PATH
   "/home/ubuntu/workspace/Velizar/robotics_v1/install/resource_utils/include"
   "/home/ubuntu/workspace/Velizar/robotics_v1/install/utils/include"
   "/home/ubuntu/workspace/Velizar/robotics_v1/install/urscript_common/include"
+  "/usr/include/eigen3"
   )
 
 # Targets to which this target links.

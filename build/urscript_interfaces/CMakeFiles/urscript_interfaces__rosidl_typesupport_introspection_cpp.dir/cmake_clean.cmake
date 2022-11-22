@@ -1,7 +1,10 @@
 file(REMOVE_RECURSE
+  "CMakeFiles/urscript_interfaces__rosidl_typesupport_introspection_cpp.dir/rosidl_typesupport_introspection_cpp/urscript_interfaces/srv/detail/get_eef_angle_axis__type_support.cpp.o"
   "CMakeFiles/urscript_interfaces__rosidl_typesupport_introspection_cpp.dir/rosidl_typesupport_introspection_cpp/urscript_interfaces/srv/detail/ur_script__type_support.cpp.o"
   "liburscript_interfaces__rosidl_typesupport_introspection_cpp.pdb"
   "liburscript_interfaces__rosidl_typesupport_introspection_cpp.so"
+  "rosidl_typesupport_introspection_cpp/urscript_interfaces/srv/detail/get_eef_angle_axis__rosidl_typesupport_introspection_cpp.hpp"
+  "rosidl_typesupport_introspection_cpp/urscript_interfaces/srv/detail/get_eef_angle_axis__type_support.cpp"
   "rosidl_typesupport_introspection_cpp/urscript_interfaces/srv/detail/ur_script__rosidl_typesupport_introspection_cpp.hpp"
   "rosidl_typesupport_introspection_cpp/urscript_interfaces/srv/detail/ur_script__type_support.cpp"
 )

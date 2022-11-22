@@ -1,0 +1,22 @@
+// generated from rosidl_adapter/resource/srv.idl.em
+// with input from urscript_interfaces/srv/GetEefAngleAxis.srv
+// generated code does not contain a copyright notice
+
+#include "geometry_msgs/msg/Vector3.idl"
+
+module urscript_interfaces {
+  module srv {
+    @verbatim (language="comment", text=
+      "empty request")
+    struct GetEefAngleAxis_Request {
+      uint8 structure_needs_at_least_one_member;
+    };
+    struct GetEefAngleAxis_Response {
+      boolean success;
+
+      string error_reason;
+
+      geometry_msgs::msg::Vector3 angle_axis;
+    };
+  };
+};

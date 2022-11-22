@@ -1,0 +1,5 @@
+  File "/home/ubuntu/workspace/Velizar/robotics_v1/install/robo_builder_py/lib/python3.8/site-packages/robo_builder_py/points.py", line 107
+    'release':[first_cube_in_tower_release[0],
+    ^
+SyntaxError: invalid syntax
+

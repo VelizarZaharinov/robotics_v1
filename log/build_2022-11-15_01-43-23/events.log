@@ -1,0 +1,36 @@
+[0.000000] (-) TimerEvent: {}
+[0.000594] (-) JobUnselected: {'identifier': 'cmake_helpers'}
+[0.000659] (-) JobUnselected: {'identifier': 'game_engine'}
+[0.000712] (-) JobUnselected: {'identifier': 'manager_utils'}
+[0.000764] (-) JobUnselected: {'identifier': 'resource_builder'}
+[0.000815] (-) JobUnselected: {'identifier': 'resource_utils'}
+[0.000867] (-) JobUnselected: {'identifier': 'robo_builder_py'}
+[0.000945] (-) JobUnselected: {'identifier': 'robo_cleaner_ai_py'}
+[0.001022] (-) JobUnselected: {'identifier': 'robo_cleaner_common'}
+[0.001108] (-) JobUnselected: {'identifier': 'robo_cleaner_gui'}
+[0.001164] (-) JobUnselected: {'identifier': 'robo_cleaner_interfaces'}
+[0.001216] (-) JobUnselected: {'identifier': 'robo_collector_common'}
+[0.001266] (-) JobUnselected: {'identifier': 'robo_collector_controller'}
+[0.001316] (-) JobUnselected: {'identifier': 'robo_collector_controller_py'}
+[0.001393] (-) JobUnselected: {'identifier': 'robo_collector_gui'}
+[0.001450] (-) JobUnselected: {'identifier': 'robo_collector_interfaces'}
+[0.001532] (-) JobUnselected: {'identifier': 'robo_common'}
+[0.001589] (-) JobUnselected: {'identifier': 'robo_miner_ai_py'}
+[0.001694] (-) JobUnselected: {'identifier': 'robo_miner_common'}
+[0.002001] (-) JobUnselected: {'identifier': 'robo_miner_gui'}
+[0.002059] (-) JobUnselected: {'identifier': 'robo_miner_interfaces'}
+[0.002110] (-) JobUnselected: {'identifier': 'ros2_game_engine'}
+[0.002162] (-) JobUnselected: {'identifier': 'sdl_utils'}
+[0.002241] (-) JobUnselected: {'identifier': 'ur_bringup'}
+[0.002343] (-) JobUnselected: {'identifier': 'ur_client_library'}
+[0.002400] (-) JobUnselected: {'identifier': 'ur_control_gui'}
+[0.002451] (-) JobUnselected: {'identifier': 'ur_controllers'}
+[0.002502] (-) JobUnselected: {'identifier': 'ur_dashboard_msgs'}
+[0.002552] (-) JobUnselected: {'identifier': 'ur_description'}
+[0.002653] (-) JobUnselected: {'identifier': 'ur_moveit_config'}
+[0.002710] (-) JobUnselected: {'identifier': 'ur_robot_driver'}
+[0.002762] (-) JobUnselected: {'identifier': 'urscript_bridge'}
+[0.002854] (-) JobUnselected: {'identifier': 'urscript_common'}
+[0.002911] (-) JobUnselected: {'identifier': 'urscript_interfaces'}
+[0.002962] (-) JobUnselected: {'identifier': 'utils'}
+[0.003013] (-) EventReactorShutdown: {}

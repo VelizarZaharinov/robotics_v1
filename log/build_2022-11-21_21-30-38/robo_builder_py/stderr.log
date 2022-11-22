@@ -1,0 +1,5 @@
+  File "/home/ubuntu/workspace/Velizar/robotics_v1/install/robo_builder_py/lib/python3.8/site-packages/robo_builder_py/robo_builder_gui.py", line 41
+    self. = tkinter.Canvas(self.environment_frame)
+          ^
+SyntaxError: invalid syntax
+

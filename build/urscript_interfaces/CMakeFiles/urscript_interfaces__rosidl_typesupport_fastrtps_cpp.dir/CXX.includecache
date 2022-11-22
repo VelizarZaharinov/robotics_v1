@@ -6,6 +6,36 @@
 
 #IncludeRegexTransform: 
 
+/home/ubuntu/workspace/Velizar/robotics_v1/build/urscript_interfaces/rosidl_typesupport_fastrtps_cpp/urscript_interfaces/srv/detail/dds_fastrtps/get_eef_angle_axis__type_support.cpp
+urscript_interfaces/srv/detail/get_eef_angle_axis__rosidl_typesupport_fastrtps_cpp.hpp
+/home/ubuntu/workspace/Velizar/robotics_v1/build/urscript_interfaces/rosidl_typesupport_fastrtps_cpp/urscript_interfaces/srv/detail/dds_fastrtps/urscript_interfaces/srv/detail/get_eef_angle_axis__rosidl_typesupport_fastrtps_cpp.hpp
+urscript_interfaces/srv/detail/get_eef_angle_axis__struct.hpp
+/home/ubuntu/workspace/Velizar/robotics_v1/build/urscript_interfaces/rosidl_typesupport_fastrtps_cpp/urscript_interfaces/srv/detail/dds_fastrtps/urscript_interfaces/srv/detail/get_eef_angle_axis__struct.hpp
+limits
+-
+stdexcept
+-
+string
+-
+rosidl_typesupport_cpp/message_type_support.hpp
+/home/ubuntu/workspace/Velizar/robotics_v1/build/urscript_interfaces/rosidl_typesupport_fastrtps_cpp/urscript_interfaces/srv/detail/dds_fastrtps/rosidl_typesupport_cpp/message_type_support.hpp
+rosidl_typesupport_fastrtps_cpp/identifier.hpp
+/home/ubuntu/workspace/Velizar/robotics_v1/build/urscript_interfaces/rosidl_typesupport_fastrtps_cpp/urscript_interfaces/srv/detail/dds_fastrtps/rosidl_typesupport_fastrtps_cpp/identifier.hpp
+rosidl_typesupport_fastrtps_cpp/message_type_support.h
+/home/ubuntu/workspace/Velizar/robotics_v1/build/urscript_interfaces/rosidl_typesupport_fastrtps_cpp/urscript_interfaces/srv/detail/dds_fastrtps/rosidl_typesupport_fastrtps_cpp/message_type_support.h
+rosidl_typesupport_fastrtps_cpp/message_type_support_decl.hpp
+/home/ubuntu/workspace/Velizar/robotics_v1/build/urscript_interfaces/rosidl_typesupport_fastrtps_cpp/urscript_interfaces/srv/detail/dds_fastrtps/rosidl_typesupport_fastrtps_cpp/message_type_support_decl.hpp
+rosidl_typesupport_fastrtps_cpp/wstring_conversion.hpp
+/home/ubuntu/workspace/Velizar/robotics_v1/build/urscript_interfaces/rosidl_typesupport_fastrtps_cpp/urscript_interfaces/srv/detail/dds_fastrtps/rosidl_typesupport_fastrtps_cpp/wstring_conversion.hpp
+fastcdr/Cdr.h
+/home/ubuntu/workspace/Velizar/robotics_v1/build/urscript_interfaces/rosidl_typesupport_fastrtps_cpp/urscript_interfaces/srv/detail/dds_fastrtps/fastcdr/Cdr.h
+rmw/error_handling.h
+/home/ubuntu/workspace/Velizar/robotics_v1/build/urscript_interfaces/rosidl_typesupport_fastrtps_cpp/urscript_interfaces/srv/detail/dds_fastrtps/rmw/error_handling.h
+rosidl_typesupport_fastrtps_cpp/service_type_support.h
+/home/ubuntu/workspace/Velizar/robotics_v1/build/urscript_interfaces/rosidl_typesupport_fastrtps_cpp/urscript_interfaces/srv/detail/dds_fastrtps/rosidl_typesupport_fastrtps_cpp/service_type_support.h
+rosidl_typesupport_fastrtps_cpp/service_type_support_decl.hpp
+/home/ubuntu/workspace/Velizar/robotics_v1/build/urscript_interfaces/rosidl_typesupport_fastrtps_cpp/urscript_interfaces/srv/detail/dds_fastrtps/rosidl_typesupport_fastrtps_cpp/service_type_support_decl.hpp
+
 /home/ubuntu/workspace/Velizar/robotics_v1/build/urscript_interfaces/rosidl_typesupport_fastrtps_cpp/urscript_interfaces/srv/detail/dds_fastrtps/ur_script__type_support.cpp
 urscript_interfaces/srv/detail/ur_script__rosidl_typesupport_fastrtps_cpp.hpp
 /home/ubuntu/workspace/Velizar/robotics_v1/build/urscript_interfaces/rosidl_typesupport_fastrtps_cpp/urscript_interfaces/srv/detail/dds_fastrtps/urscript_interfaces/srv/detail/ur_script__rosidl_typesupport_fastrtps_cpp.hpp
@@ -95,6 +125,22 @@ fastcdr/config.h
 -
 eProsima_auto_link.h
 /opt/ros/foxy/include/fastcdr/eProsima_auto_link.h
+
+/opt/ros/foxy/include/geometry_msgs/msg/detail/vector3__struct.hpp
+rosidl_runtime_cpp/bounded_vector.hpp
+-
+rosidl_runtime_cpp/message_initialization.hpp
+-
+algorithm
+-
+array
+-
+memory
+-
+string
+-
+vector
+-
 
 /opt/ros/foxy/include/rcutils/allocator.h
 stdbool.h
@@ -472,6 +518,24 @@ string
 
 /opt/ros/foxy/include/rosidl_typesupport_interface/macros.h
 
+rosidl_generator_cpp/urscript_interfaces/srv/detail/get_eef_angle_axis__struct.hpp
+rosidl_runtime_cpp/bounded_vector.hpp
+-
+rosidl_runtime_cpp/message_initialization.hpp
+-
+algorithm
+-
+array
+-
+memory
+-
+string
+-
+vector
+-
+geometry_msgs/msg/detail/vector3__struct.hpp
+rosidl_generator_cpp/urscript_interfaces/srv/detail/geometry_msgs/msg/detail/vector3__struct.hpp
+
 rosidl_generator_cpp/urscript_interfaces/srv/detail/ur_script__struct.hpp
 rosidl_runtime_cpp/bounded_vector.hpp
 -
@@ -489,6 +553,22 @@ vector
 -
 
 rosidl_typesupport_fastrtps_cpp/urscript_interfaces/msg/rosidl_typesupport_fastrtps_cpp__visibility_control.h
+
+rosidl_typesupport_fastrtps_cpp/urscript_interfaces/srv/detail/get_eef_angle_axis__rosidl_typesupport_fastrtps_cpp.hpp
+rosidl_runtime_c/message_type_support_struct.h
+rosidl_typesupport_fastrtps_cpp/urscript_interfaces/srv/detail/rosidl_runtime_c/message_type_support_struct.h
+rosidl_typesupport_interface/macros.h
+rosidl_typesupport_fastrtps_cpp/urscript_interfaces/srv/detail/rosidl_typesupport_interface/macros.h
+urscript_interfaces/msg/rosidl_typesupport_fastrtps_cpp__visibility_control.h
+rosidl_typesupport_fastrtps_cpp/urscript_interfaces/srv/detail/urscript_interfaces/msg/rosidl_typesupport_fastrtps_cpp__visibility_control.h
+urscript_interfaces/srv/detail/get_eef_angle_axis__struct.hpp
+rosidl_typesupport_fastrtps_cpp/urscript_interfaces/srv/detail/urscript_interfaces/srv/detail/get_eef_angle_axis__struct.hpp
+fastcdr/Cdr.h
+rosidl_typesupport_fastrtps_cpp/urscript_interfaces/srv/detail/fastcdr/Cdr.h
+rmw/types.h
+rosidl_typesupport_fastrtps_cpp/urscript_interfaces/srv/detail/rmw/types.h
+rosidl_typesupport_cpp/service_type_support.hpp
+rosidl_typesupport_fastrtps_cpp/urscript_interfaces/srv/detail/rosidl_typesupport_cpp/service_type_support.hpp
 
 rosidl_typesupport_fastrtps_cpp/urscript_interfaces/srv/detail/ur_script__rosidl_typesupport_fastrtps_cpp.hpp
 rosidl_runtime_c/message_type_support_struct.h

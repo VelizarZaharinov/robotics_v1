@@ -1,0 +1,195 @@
+[0.096s] Invoking command in '/home/ubuntu/workspace/Velizar/robotics_v1/build/urscript_interfaces': CMAKE_PREFIX_PATH=${CMAKE_PREFIX_PATH}:/home/ubuntu/workspace/Velizar/robotics_v1/install/robo_builder_py:/home/ubuntu/workspace/Velizar/robotics_v1/install/robo_miner_ai_py:/home/ubuntu/workspace/Velizar/robotics_v1/install/robo_collector_controller_py:/home/ubuntu/workspace/Velizar/robotics_v1/install/robo_cleaner_ai_py:/opt/ros/foxy PS1=[\u@\h \W]$(git_branch)$ /usr/bin/cmake /home/ubuntu/workspace/Velizar/robotics_v1/src/ur_dev/urscript/urscript_interfaces -DCMAKE_INSTALL_PREFIX=/home/ubuntu/workspace/Velizar/robotics_v1/install/urscript_interfaces
+[0.311s] -- Found ament_cmake: 0.9.11 (/opt/ros/foxy/share/ament_cmake/cmake)
+[0.448s] -- Found PythonInterp: /usr/bin/python3 (found suitable version "3.8.10", minimum required is "3") 
+[0.448s] -- Using PYTHON_EXECUTABLE: /usr/bin/python3
+[1.156s] -- Override CMake install command with custom implementation using symlinks instead of copying resources
+[1.252s] -- Found geometry_msgs: 2.0.5 (/opt/ros/foxy/share/geometry_msgs/cmake)
+[1.439s] -- Using all available rosidl_typesupport_c: rosidl_typesupport_fastrtps_c;rosidl_typesupport_introspection_c
+[1.467s] -- Found rosidl_adapter: 1.3.0 (/opt/ros/foxy/share/rosidl_adapter/cmake)
+[2.117s] -- Using all available rosidl_typesupport_cpp: rosidl_typesupport_fastrtps_cpp;rosidl_typesupport_introspection_cpp
+[2.703s] -- Found rosidl_default_generators: 1.0.1 (/opt/ros/foxy/share/rosidl_default_generators/cmake)
+[2.915s] -- Found PythonInterp: /usr/bin/python3 (found version "3.8.10") 
+[3.872s] -- Found ament_cmake_ros: 0.9.2 (/opt/ros/foxy/share/ament_cmake_ros/cmake)
+[5.355s] -- Using all available rosidl_typesupport_c: rosidl_typesupport_fastrtps_c;rosidl_typesupport_introspection_c
+[6.071s] -- Using all available rosidl_typesupport_cpp: rosidl_typesupport_fastrtps_cpp;rosidl_typesupport_introspection_cpp
+[6.224s] -- Found PythonInterp: /usr/bin/python3 (found suitable version "3.8.10", minimum required is "3.5") 
+[6.227s] -- Found python_cmake_module: 0.8.1 (/opt/ros/foxy/share/python_cmake_module/cmake)
+[6.341s] -- Using PYTHON_EXECUTABLE: /usr/bin/python3
+[6.342s] -- Using PYTHON_INCLUDE_DIRS: /usr/include/python3.8
+[6.342s] -- Using PYTHON_LIBRARIES: /usr/lib/x86_64-linux-gnu/libpython3.8.so
+[6.825s] -- Configuring done
+[7.186s] -- Generating done
+[7.205s] -- Build files have been written to: /home/ubuntu/workspace/Velizar/robotics_v1/build/urscript_interfaces
+[7.227s] Invoked command in '/home/ubuntu/workspace/Velizar/robotics_v1/build/urscript_interfaces' returned '0': CMAKE_PREFIX_PATH=${CMAKE_PREFIX_PATH}:/home/ubuntu/workspace/Velizar/robotics_v1/install/robo_builder_py:/home/ubuntu/workspace/Velizar/robotics_v1/install/robo_miner_ai_py:/home/ubuntu/workspace/Velizar/robotics_v1/install/robo_collector_controller_py:/home/ubuntu/workspace/Velizar/robotics_v1/install/robo_cleaner_ai_py:/opt/ros/foxy PS1=[\u@\h \W]$(git_branch)$ /usr/bin/cmake /home/ubuntu/workspace/Velizar/robotics_v1/src/ur_dev/urscript/urscript_interfaces -DCMAKE_INSTALL_PREFIX=/home/ubuntu/workspace/Velizar/robotics_v1/install/urscript_interfaces
+[7.238s] Invoking command in '/home/ubuntu/workspace/Velizar/robotics_v1/build/urscript_interfaces': CMAKE_PREFIX_PATH=${CMAKE_PREFIX_PATH}:/home/ubuntu/workspace/Velizar/robotics_v1/install/robo_builder_py:/home/ubuntu/workspace/Velizar/robotics_v1/install/robo_miner_ai_py:/home/ubuntu/workspace/Velizar/robotics_v1/install/robo_collector_controller_py:/home/ubuntu/workspace/Velizar/robotics_v1/install/robo_cleaner_ai_py:/opt/ros/foxy PS1=[\u@\h \W]$(git_branch)$ /usr/bin/cmake --build /home/ubuntu/workspace/Velizar/robotics_v1/build/urscript_interfaces -- -j4 -l4
+[7.445s] [35m[1mScanning dependencies of target urscript_interfaces__cpp[0m
+[7.494s] [  2%] [34m[1mGenerating C++ code for ROS interfaces[0m
+[9.015s] [  2%] Built target urscript_interfaces__cpp
+[9.057s] [  5%] [34m[1mGenerating C code for ROS interfaces[0m
+[10.751s] [35m[1mScanning dependencies of target urscript_interfaces__rosidl_generator_c[0m
+[10.832s] [  7%] [32mBuilding C object CMakeFiles/urscript_interfaces__rosidl_generator_c.dir/rosidl_generator_c/urscript_interfaces/srv/detail/ur_script__functions.c.o[0m
+[11.410s] [ 10%] [32mBuilding C object CMakeFiles/urscript_interfaces__rosidl_generator_c.dir/rosidl_generator_c/urscript_interfaces/srv/detail/get_eef_angle_axis__functions.c.o[0m
+[11.729s] [ 12%] [32m[1mLinking C shared library liburscript_interfaces__rosidl_generator_c.so[0m
+[11.926s] [ 12%] Built target urscript_interfaces__rosidl_generator_c
+[11.986s] [ 15%] [34m[1mGenerating C++ introspection for ROS interfaces[0m
+[12.002s] [ 17%] [34m[1mGenerating C++ type support dispatch for ROS interfaces[0m
+[12.996s] [ 20%] [34m[1mGenerating C type support dispatch for ROS interfaces[0m
+[13.255s] [35m[1mScanning dependencies of target urscript_interfaces__rosidl_typesupport_cpp[0m
+[13.342s] [ 23%] [32mBuilding CXX object CMakeFiles/urscript_interfaces__rosidl_typesupport_cpp.dir/rosidl_typesupport_cpp/urscript_interfaces/srv/ur_script__type_support.cpp.o[0m
+[13.480s] [35m[1mScanning dependencies of target urscript_interfaces__rosidl_typesupport_introspection_cpp[0m
+[13.583s] [ 25%] [32mBuilding CXX object CMakeFiles/urscript_interfaces__rosidl_typesupport_introspection_cpp.dir/rosidl_typesupport_introspection_cpp/urscript_interfaces/srv/detail/ur_script__type_support.cpp.o[0m
+[14.321s] [35m[1mScanning dependencies of target urscript_interfaces__rosidl_typesupport_c[0m
+[14.437s] [ 28%] [32mBuilding CXX object CMakeFiles/urscript_interfaces__rosidl_typesupport_c.dir/rosidl_typesupport_c/urscript_interfaces/srv/ur_script__type_support.cpp.o[0m
+[14.462s] [ 30%] [34m[1mGenerating C++ type support for eProsima Fast-RTPS[0m
+[14.919s] [ 33%] [32mBuilding CXX object CMakeFiles/urscript_interfaces__rosidl_typesupport_c.dir/rosidl_typesupport_c/urscript_interfaces/srv/get_eef_angle_axis__type_support.cpp.o[0m
+[15.223s] [ 35%] [32m[1mLinking CXX shared library liburscript_interfaces__rosidl_typesupport_c.so[0m
+[15.722s] [ 38%] [32mBuilding CXX object CMakeFiles/urscript_interfaces__rosidl_typesupport_cpp.dir/rosidl_typesupport_cpp/urscript_interfaces/srv/get_eef_angle_axis__type_support.cpp.o[0m
+[15.862s] [ 38%] Built target urscript_interfaces__rosidl_typesupport_c
+[15.951s] [ 41%] [34m[1mGenerating C introspection for ROS interfaces[0m
+[16.128s] [ 43%] [32mBuilding CXX object CMakeFiles/urscript_interfaces__rosidl_typesupport_introspection_cpp.dir/rosidl_typesupport_introspection_cpp/urscript_interfaces/srv/detail/get_eef_angle_axis__type_support.cpp.o[0m
+[17.297s] [35m[1mScanning dependencies of target urscript_interfaces__rosidl_typesupport_fastrtps_cpp[0m
+[17.430s] [ 46%] [32mBuilding CXX object CMakeFiles/urscript_interfaces__rosidl_typesupport_fastrtps_cpp.dir/rosidl_typesupport_fastrtps_cpp/urscript_interfaces/srv/detail/dds_fastrtps/ur_script__type_support.cpp.o[0m
+[17.582s] [ 48%] [32m[1mLinking CXX shared library liburscript_interfaces__rosidl_typesupport_cpp.so[0m
+[17.644s] [ 51%] [32m[1mLinking CXX shared library liburscript_interfaces__rosidl_typesupport_introspection_cpp.so[0m
+[18.264s] [ 51%] Built target urscript_interfaces__rosidl_typesupport_cpp
+[18.329s] [ 51%] Built target urscript_interfaces__rosidl_typesupport_introspection_cpp
+[18.556s] [35m[1mScanning dependencies of target urscript_interfaces__rosidl_typesupport_introspection_c[0m
+[18.623s] [ 53%] [32mBuilding C object CMakeFiles/urscript_interfaces__rosidl_typesupport_introspection_c.dir/rosidl_typesupport_introspection_c/urscript_interfaces/srv/detail/ur_script__type_support.c.o[0m
+[18.824s] [ 56%] [32mBuilding C object CMakeFiles/urscript_interfaces__rosidl_typesupport_introspection_c.dir/rosidl_typesupport_introspection_c/urscript_interfaces/srv/detail/get_eef_angle_axis__type_support.c.o[0m
+[19.001s] [ 58%] [32m[1mLinking C shared library liburscript_interfaces__rosidl_typesupport_introspection_c.so[0m
+[19.172s] [ 58%] Built target urscript_interfaces__rosidl_typesupport_introspection_c
+[19.774s] [ 61%] [32mBuilding CXX object CMakeFiles/urscript_interfaces__rosidl_typesupport_fastrtps_cpp.dir/rosidl_typesupport_fastrtps_cpp/urscript_interfaces/srv/detail/dds_fastrtps/get_eef_angle_axis__type_support.cpp.o[0m
+[21.432s] [ 64%] [32m[1mLinking CXX shared library liburscript_interfaces__rosidl_typesupport_fastrtps_cpp.so[0m
+[21.965s] [ 64%] Built target urscript_interfaces__rosidl_typesupport_fastrtps_cpp
+[22.021s] [ 66%] [34m[1mGenerating C type support for eProsima Fast-RTPS[0m
+[23.479s] [35m[1mScanning dependencies of target urscript_interfaces__rosidl_typesupport_fastrtps_c[0m
+[23.578s] [ 69%] [32mBuilding CXX object CMakeFiles/urscript_interfaces__rosidl_typesupport_fastrtps_c.dir/rosidl_typesupport_fastrtps_c/urscript_interfaces/srv/detail/ur_script__type_support_c.cpp.o[0m
+[24.994s] [ 71%] [32mBuilding CXX object CMakeFiles/urscript_interfaces__rosidl_typesupport_fastrtps_c.dir/rosidl_typesupport_fastrtps_c/urscript_interfaces/srv/detail/get_eef_angle_axis__type_support_c.cpp.o[0m
+[26.427s] [ 74%] [32m[1mLinking CXX shared library liburscript_interfaces__rosidl_typesupport_fastrtps_c.so[0m
+[27.011s] [ 74%] Built target urscript_interfaces__rosidl_typesupport_fastrtps_c
+[27.104s] [ 74%] Built target urscript_interfaces
+[27.152s] [35m[1mScanning dependencies of target urscript_interfaces__py[0m
+[27.203s] [ 76%] [34m[1mGenerating Python code for ROS interfaces[0m
+[30.028s] [ 76%] Built target urscript_interfaces__py
+[30.079s] [35m[1mScanning dependencies of target urscript_interfaces__python[0m
+[30.173s] [ 79%] [32mBuilding C object CMakeFiles/urscript_interfaces__python.dir/rosidl_generator_py/urscript_interfaces/srv/_ur_script_s.c.o[0m
+[30.737s] [ 82%] [32mBuilding C object CMakeFiles/urscript_interfaces__python.dir/rosidl_generator_py/urscript_interfaces/srv/_get_eef_angle_axis_s.c.o[0m
+[31.226s] [ 84%] [32m[1mLinking C shared library rosidl_generator_py/urscript_interfaces/liburscript_interfaces__python.so[0m
+[31.406s] [ 84%] Built target urscript_interfaces__python
+[31.448s] [35m[1mScanning dependencies of target urscript_interfaces__rosidl_typesupport_c__pyext[0m
+[31.520s] [ 87%] [32mBuilding C object CMakeFiles/urscript_interfaces__rosidl_typesupport_c__pyext.dir/rosidl_generator_py/urscript_interfaces/_urscript_interfaces_s.ep.rosidl_typesupport_c.c.o[0m
+[31.969s] [ 89%] [32m[1mLinking C shared library rosidl_generator_py/urscript_interfaces/urscript_interfaces_s__rosidl_typesupport_c.cpython-38-x86_64-linux-gnu.so[0m
+[32.142s] [ 89%] Built target urscript_interfaces__rosidl_typesupport_c__pyext
+[32.194s] [35m[1mScanning dependencies of target urscript_interfaces__rosidl_typesupport_fastrtps_c__pyext[0m
+[32.288s] [ 92%] [32mBuilding C object CMakeFiles/urscript_interfaces__rosidl_typesupport_fastrtps_c__pyext.dir/rosidl_generator_py/urscript_interfaces/_urscript_interfaces_s.ep.rosidl_typesupport_fastrtps_c.c.o[0m
+[32.751s] [ 94%] [32m[1mLinking CXX shared library rosidl_generator_py/urscript_interfaces/urscript_interfaces_s__rosidl_typesupport_fastrtps_c.cpython-38-x86_64-linux-gnu.so[0m
+[33.420s] [ 94%] Built target urscript_interfaces__rosidl_typesupport_fastrtps_c__pyext
+[33.472s] [35m[1mScanning dependencies of target urscript_interfaces__rosidl_typesupport_introspection_c__pyext[0m
+[33.552s] [ 97%] [32mBuilding C object CMakeFiles/urscript_interfaces__rosidl_typesupport_introspection_c__pyext.dir/rosidl_generator_py/urscript_interfaces/_urscript_interfaces_s.ep.rosidl_typesupport_introspection_c.c.o[0m
+[34.036s] [100%] [32m[1mLinking C shared library rosidl_generator_py/urscript_interfaces/urscript_interfaces_s__rosidl_typesupport_introspection_c.cpython-38-x86_64-linux-gnu.so[0m
+[34.218s] [100%] Built target urscript_interfaces__rosidl_typesupport_introspection_c__pyext
+[34.265s] Invoked command in '/home/ubuntu/workspace/Velizar/robotics_v1/build/urscript_interfaces' returned '0': CMAKE_PREFIX_PATH=${CMAKE_PREFIX_PATH}:/home/ubuntu/workspace/Velizar/robotics_v1/install/robo_builder_py:/home/ubuntu/workspace/Velizar/robotics_v1/install/robo_miner_ai_py:/home/ubuntu/workspace/Velizar/robotics_v1/install/robo_collector_controller_py:/home/ubuntu/workspace/Velizar/robotics_v1/install/robo_cleaner_ai_py:/opt/ros/foxy PS1=[\u@\h \W]$(git_branch)$ /usr/bin/cmake --build /home/ubuntu/workspace/Velizar/robotics_v1/build/urscript_interfaces -- -j4 -l4
+[34.649s] Invoking command in '/home/ubuntu/workspace/Velizar/robotics_v1/build/urscript_interfaces': CMAKE_PREFIX_PATH=${CMAKE_PREFIX_PATH}:/home/ubuntu/workspace/Velizar/robotics_v1/install/robo_builder_py:/home/ubuntu/workspace/Velizar/robotics_v1/install/robo_miner_ai_py:/home/ubuntu/workspace/Velizar/robotics_v1/install/robo_collector_controller_py:/home/ubuntu/workspace/Velizar/robotics_v1/install/robo_cleaner_ai_py:/opt/ros/foxy PS1=[\u@\h \W]$(git_branch)$ /usr/bin/cmake --install /home/ubuntu/workspace/Velizar/robotics_v1/build/urscript_interfaces
+[34.685s] -- Install configuration: "Debug"
+[34.688s] -- Execute custom install script
+[34.690s] -- Up-to-date symlink: /home/ubuntu/workspace/Velizar/robotics_v1/install/urscript_interfaces/share/ament_index/resource_index/rosidl_interfaces/urscript_interfaces
+[34.697s] -- Up-to-date symlink: /home/ubuntu/workspace/Velizar/robotics_v1/install/urscript_interfaces/include/urscript_interfaces/msg/rosidl_generator_c__visibility_control.h
+[34.697s] -- Symlinking: /home/ubuntu/workspace/Velizar/robotics_v1/install/urscript_interfaces/include/urscript_interfaces/srv/detail/get_eef_angle_axis__functions.h
+[34.732s] -- Symlinking: /home/ubuntu/workspace/Velizar/robotics_v1/install/urscript_interfaces/include/urscript_interfaces/srv/detail/get_eef_angle_axis__struct.h
+[34.767s] -- Symlinking: /home/ubuntu/workspace/Velizar/robotics_v1/install/urscript_interfaces/include/urscript_interfaces/srv/detail/get_eef_angle_axis__type_support.h
+[34.806s] -- Up-to-date symlink: /home/ubuntu/workspace/Velizar/robotics_v1/install/urscript_interfaces/include/urscript_interfaces/srv/detail/ur_script__functions.h
+[34.807s] -- Up-to-date symlink: /home/ubuntu/workspace/Velizar/robotics_v1/install/urscript_interfaces/include/urscript_interfaces/srv/detail/ur_script__struct.h
+[34.808s] -- Up-to-date symlink: /home/ubuntu/workspace/Velizar/robotics_v1/install/urscript_interfaces/include/urscript_interfaces/srv/detail/ur_script__type_support.h
+[34.808s] -- Symlinking: /home/ubuntu/workspace/Velizar/robotics_v1/install/urscript_interfaces/include/urscript_interfaces/srv/get_eef_angle_axis.h
+[34.843s] -- Up-to-date symlink: /home/ubuntu/workspace/Velizar/robotics_v1/install/urscript_interfaces/include/urscript_interfaces/srv/ur_script.h
+[34.846s] -- Up-to-date symlink: /home/ubuntu/workspace/Velizar/robotics_v1/install/urscript_interfaces/share/urscript_interfaces/environment/library_path.sh
+[34.847s] -- Up-to-date symlink: /home/ubuntu/workspace/Velizar/robotics_v1/install/urscript_interfaces/share/urscript_interfaces/environment/library_path.dsv
+[34.850s] -- Up-to-date symlink: /home/ubuntu/workspace/Velizar/robotics_v1/install/urscript_interfaces/include/urscript_interfaces/msg/rosidl_typesupport_fastrtps_c__visibility_control.h
+[34.851s] -- Symlinking: /home/ubuntu/workspace/Velizar/robotics_v1/install/urscript_interfaces/include/urscript_interfaces/srv/detail/get_eef_angle_axis__rosidl_typesupport_fastrtps_c.h
+[34.892s] -- Up-to-date symlink: /home/ubuntu/workspace/Velizar/robotics_v1/install/urscript_interfaces/include/urscript_interfaces/srv/detail/ur_script__rosidl_typesupport_fastrtps_c.h
+[34.897s] -- Up-to-date symlink: /home/ubuntu/workspace/Velizar/robotics_v1/install/urscript_interfaces/lib/liburscript_interfaces__rosidl_typesupport_fastrtps_c.so
+[34.902s] -- Up-to-date symlink: /home/ubuntu/workspace/Velizar/robotics_v1/install/urscript_interfaces/include/urscript_interfaces/msg/rosidl_typesupport_fastrtps_cpp__visibility_control.h
+[34.903s] -- Symlinking: /home/ubuntu/workspace/Velizar/robotics_v1/install/urscript_interfaces/include/urscript_interfaces/srv/detail/get_eef_angle_axis__rosidl_typesupport_fastrtps_cpp.hpp
+[34.945s] -- Up-to-date symlink: /home/ubuntu/workspace/Velizar/robotics_v1/install/urscript_interfaces/include/urscript_interfaces/srv/detail/ur_script__rosidl_typesupport_fastrtps_cpp.hpp
+[34.945s] -- Up-to-date symlink: /home/ubuntu/workspace/Velizar/robotics_v1/install/urscript_interfaces/lib/liburscript_interfaces__rosidl_typesupport_fastrtps_cpp.so
+[34.948s] -- Up-to-date symlink: /home/ubuntu/workspace/Velizar/robotics_v1/install/urscript_interfaces/include/urscript_interfaces/msg/rosidl_typesupport_introspection_c__visibility_control.h
+[34.948s] -- Symlinking: /home/ubuntu/workspace/Velizar/robotics_v1/install/urscript_interfaces/include/urscript_interfaces/srv/detail/get_eef_angle_axis__rosidl_typesupport_introspection_c.h
+[34.990s] -- Up-to-date symlink: /home/ubuntu/workspace/Velizar/robotics_v1/install/urscript_interfaces/include/urscript_interfaces/srv/detail/ur_script__rosidl_typesupport_introspection_c.h
+[34.994s] -- Symlinking: /home/ubuntu/workspace/Velizar/robotics_v1/install/urscript_interfaces/include/urscript_interfaces/srv/detail/get_eef_angle_axis__builder.hpp
+[35.033s] -- Symlinking: /home/ubuntu/workspace/Velizar/robotics_v1/install/urscript_interfaces/include/urscript_interfaces/srv/detail/get_eef_angle_axis__struct.hpp
+[35.072s] -- Symlinking: /home/ubuntu/workspace/Velizar/robotics_v1/install/urscript_interfaces/include/urscript_interfaces/srv/detail/get_eef_angle_axis__traits.hpp
+[35.118s] -- Up-to-date symlink: /home/ubuntu/workspace/Velizar/robotics_v1/install/urscript_interfaces/include/urscript_interfaces/srv/detail/ur_script__builder.hpp
+[35.119s] -- Up-to-date symlink: /home/ubuntu/workspace/Velizar/robotics_v1/install/urscript_interfaces/include/urscript_interfaces/srv/detail/ur_script__struct.hpp
+[35.120s] -- Up-to-date symlink: /home/ubuntu/workspace/Velizar/robotics_v1/install/urscript_interfaces/include/urscript_interfaces/srv/detail/ur_script__traits.hpp
+[35.120s] -- Symlinking: /home/ubuntu/workspace/Velizar/robotics_v1/install/urscript_interfaces/include/urscript_interfaces/srv/get_eef_angle_axis.hpp
+[35.161s] -- Up-to-date symlink: /home/ubuntu/workspace/Velizar/robotics_v1/install/urscript_interfaces/include/urscript_interfaces/srv/ur_script.hpp
+[35.163s] -- Symlinking: /home/ubuntu/workspace/Velizar/robotics_v1/install/urscript_interfaces/include/urscript_interfaces/srv/detail/get_eef_angle_axis__rosidl_typesupport_introspection_cpp.hpp
+[35.211s] -- Up-to-date symlink: /home/ubuntu/workspace/Velizar/robotics_v1/install/urscript_interfaces/include/urscript_interfaces/srv/detail/ur_script__rosidl_typesupport_introspection_cpp.hpp
+[35.211s] -- Up-to-date symlink: /home/ubuntu/workspace/Velizar/robotics_v1/install/urscript_interfaces/share/urscript_interfaces/environment/pythonpath.sh
+[35.213s] -- Up-to-date symlink: /home/ubuntu/workspace/Velizar/robotics_v1/install/urscript_interfaces/share/urscript_interfaces/environment/pythonpath.dsv
+[35.214s] -- Up-to-date symlink: /home/ubuntu/workspace/Velizar/robotics_v1/install/urscript_interfaces/lib/python3.8/site-packages/urscript_interfaces/__init__.py
+[35.215s] -- Up-to-date symlink: /home/ubuntu/workspace/Velizar/robotics_v1/install/urscript_interfaces/lib/python3.8/site-packages/urscript_interfaces/srv/__init__.py
+[35.216s] -- Symlinking: /home/ubuntu/workspace/Velizar/robotics_v1/install/urscript_interfaces/lib/python3.8/site-packages/urscript_interfaces/srv/_get_eef_angle_axis.py
+[35.256s] -- Up-to-date symlink: /home/ubuntu/workspace/Velizar/robotics_v1/install/urscript_interfaces/lib/python3.8/site-packages/urscript_interfaces/srv/_ur_script.py
+[35.258s] -- Up-to-date symlink: /home/ubuntu/workspace/Velizar/robotics_v1/install/urscript_interfaces/lib/python3.8/site-packages/urscript_interfaces/urscript_interfaces_s__rosidl_typesupport_fastrtps_c.cpython-38-x86_64-linux-gnu.so
+[35.259s] -- Up-to-date symlink: /home/ubuntu/workspace/Velizar/robotics_v1/install/urscript_interfaces/lib/python3.8/site-packages/urscript_interfaces/urscript_interfaces_s__rosidl_typesupport_introspection_c.cpython-38-x86_64-linux-gnu.so
+[35.262s] -- Up-to-date symlink: /home/ubuntu/workspace/Velizar/robotics_v1/install/urscript_interfaces/lib/python3.8/site-packages/urscript_interfaces/urscript_interfaces_s__rosidl_typesupport_c.cpython-38-x86_64-linux-gnu.so
+[35.264s] -- Up-to-date symlink: /home/ubuntu/workspace/Velizar/robotics_v1/install/urscript_interfaces/lib/liburscript_interfaces__python.so
+[35.266s] -- Up-to-date symlink: /home/ubuntu/workspace/Velizar/robotics_v1/install/urscript_interfaces/share/urscript_interfaces/srv/UrScript.idl
+[35.266s] -- Symlinking: /home/ubuntu/workspace/Velizar/robotics_v1/install/urscript_interfaces/share/urscript_interfaces/srv/GetEefAngleAxis.idl
+[35.317s] -- Up-to-date symlink: /home/ubuntu/workspace/Velizar/robotics_v1/install/urscript_interfaces/share/urscript_interfaces/srv/UrScript.srv
+[35.318s] -- Up-to-date symlink: /home/ubuntu/workspace/Velizar/robotics_v1/install/urscript_interfaces/share/urscript_interfaces/srv/UrScript_Request.msg
+[35.319s] -- Up-to-date symlink: /home/ubuntu/workspace/Velizar/robotics_v1/install/urscript_interfaces/share/urscript_interfaces/srv/UrScript_Response.msg
+[35.321s] -- Symlinking: /home/ubuntu/workspace/Velizar/robotics_v1/install/urscript_interfaces/share/urscript_interfaces/srv/GetEefAngleAxis.srv
+[35.362s] -- Symlinking: /home/ubuntu/workspace/Velizar/robotics_v1/install/urscript_interfaces/share/urscript_interfaces/srv/GetEefAngleAxis_Request.msg
+[35.411s] -- Symlinking: /home/ubuntu/workspace/Velizar/robotics_v1/install/urscript_interfaces/share/urscript_interfaces/srv/GetEefAngleAxis_Response.msg
+[35.450s] -- Up-to-date symlink: /home/ubuntu/workspace/Velizar/robotics_v1/install/urscript_interfaces/share/ament_index/resource_index/package_run_dependencies/urscript_interfaces
+[35.452s] -- Up-to-date symlink: /home/ubuntu/workspace/Velizar/robotics_v1/install/urscript_interfaces/share/ament_index/resource_index/parent_prefix_path/urscript_interfaces
+[35.454s] -- Up-to-date symlink: /home/ubuntu/workspace/Velizar/robotics_v1/install/urscript_interfaces/share/urscript_interfaces/environment/ament_prefix_path.sh
+[35.455s] -- Up-to-date symlink: /home/ubuntu/workspace/Velizar/robotics_v1/install/urscript_interfaces/share/urscript_interfaces/environment/ament_prefix_path.dsv
+[35.457s] -- Up-to-date symlink: /home/ubuntu/workspace/Velizar/robotics_v1/install/urscript_interfaces/share/urscript_interfaces/environment/path.sh
+[35.458s] -- Up-to-date symlink: /home/ubuntu/workspace/Velizar/robotics_v1/install/urscript_interfaces/share/urscript_interfaces/environment/path.dsv
+[35.459s] -- Up-to-date symlink: /home/ubuntu/workspace/Velizar/robotics_v1/install/urscript_interfaces/share/urscript_interfaces/local_setup.bash
+[35.461s] -- Up-to-date symlink: /home/ubuntu/workspace/Velizar/robotics_v1/install/urscript_interfaces/share/urscript_interfaces/local_setup.sh
+[35.462s] -- Up-to-date symlink: /home/ubuntu/workspace/Velizar/robotics_v1/install/urscript_interfaces/share/urscript_interfaces/local_setup.zsh
+[35.463s] -- Up-to-date symlink: /home/ubuntu/workspace/Velizar/robotics_v1/install/urscript_interfaces/share/urscript_interfaces/local_setup.dsv
+[35.465s] -- Symlinking: /home/ubuntu/workspace/Velizar/robotics_v1/install/urscript_interfaces/share/urscript_interfaces/package.dsv
+[35.513s] -- Up-to-date symlink: /home/ubuntu/workspace/Velizar/robotics_v1/install/urscript_interfaces/share/ament_index/resource_index/packages/urscript_interfaces
+[35.515s] -- Up-to-date symlink: /home/ubuntu/workspace/Velizar/robotics_v1/install/urscript_interfaces/share/urscript_interfaces/cmake/rosidl_cmake-extras.cmake
+[35.516s] -- Up-to-date symlink: /home/ubuntu/workspace/Velizar/robotics_v1/install/urscript_interfaces/share/urscript_interfaces/cmake/ament_cmake_export_dependencies-extras.cmake
+[35.517s] -- Up-to-date symlink: /home/ubuntu/workspace/Velizar/robotics_v1/install/urscript_interfaces/share/urscript_interfaces/cmake/ament_cmake_export_libraries-extras.cmake
+[35.519s] -- Up-to-date symlink: /home/ubuntu/workspace/Velizar/robotics_v1/install/urscript_interfaces/share/urscript_interfaces/cmake/ament_cmake_export_targets-extras.cmake
+[35.520s] -- Up-to-date symlink: /home/ubuntu/workspace/Velizar/robotics_v1/install/urscript_interfaces/share/urscript_interfaces/cmake/ament_cmake_export_include_directories-extras.cmake
+[35.522s] -- Up-to-date symlink: /home/ubuntu/workspace/Velizar/robotics_v1/install/urscript_interfaces/share/urscript_interfaces/cmake/rosidl_cmake_export_typesupport_libraries-extras.cmake
+[35.524s] -- Up-to-date symlink: /home/ubuntu/workspace/Velizar/robotics_v1/install/urscript_interfaces/share/urscript_interfaces/cmake/rosidl_cmake_export_typesupport_targets-extras.cmake
+[35.525s] -- Up-to-date symlink: /home/ubuntu/workspace/Velizar/robotics_v1/install/urscript_interfaces/share/urscript_interfaces/cmake/urscript_interfacesConfig.cmake
+[35.527s] -- Up-to-date symlink: /home/ubuntu/workspace/Velizar/robotics_v1/install/urscript_interfaces/share/urscript_interfaces/cmake/urscript_interfacesConfig-version.cmake
+[35.531s] -- Up-to-date symlink: /home/ubuntu/workspace/Velizar/robotics_v1/install/urscript_interfaces/share/urscript_interfaces/package.xml
+[35.532s] -- Installing: /home/ubuntu/workspace/Velizar/robotics_v1/install/urscript_interfaces/lib/liburscript_interfaces__rosidl_generator_c.so
+[35.534s] -- Set runtime path of "/home/ubuntu/workspace/Velizar/robotics_v1/install/urscript_interfaces/lib/liburscript_interfaces__rosidl_generator_c.so" to ""
+[35.536s] -- Installing: /home/ubuntu/workspace/Velizar/robotics_v1/install/urscript_interfaces/lib/liburscript_interfaces__rosidl_typesupport_introspection_c.so
+[35.537s] -- Set runtime path of "/home/ubuntu/workspace/Velizar/robotics_v1/install/urscript_interfaces/lib/liburscript_interfaces__rosidl_typesupport_introspection_c.so" to ""
+[35.539s] -- Installing: /home/ubuntu/workspace/Velizar/robotics_v1/install/urscript_interfaces/lib/liburscript_interfaces__rosidl_typesupport_c.so
+[35.540s] -- Set runtime path of "/home/ubuntu/workspace/Velizar/robotics_v1/install/urscript_interfaces/lib/liburscript_interfaces__rosidl_typesupport_c.so" to ""
+[35.541s] -- Installing: /home/ubuntu/workspace/Velizar/robotics_v1/install/urscript_interfaces/lib/liburscript_interfaces__rosidl_typesupport_introspection_cpp.so
+[35.543s] -- Set runtime path of "/home/ubuntu/workspace/Velizar/robotics_v1/install/urscript_interfaces/lib/liburscript_interfaces__rosidl_typesupport_introspection_cpp.so" to ""
+[35.545s] -- Installing: /home/ubuntu/workspace/Velizar/robotics_v1/install/urscript_interfaces/lib/liburscript_interfaces__rosidl_typesupport_cpp.so
+[35.547s] -- Set runtime path of "/home/ubuntu/workspace/Velizar/robotics_v1/install/urscript_interfaces/lib/liburscript_interfaces__rosidl_typesupport_cpp.so" to ""
+[35.676s] Compiling '/home/ubuntu/workspace/Velizar/robotics_v1/install/urscript_interfaces/lib/python3.8/site-packages/urscript_interfaces/__init__.py'...
+[35.695s] -- Old export file "/home/ubuntu/workspace/Velizar/robotics_v1/install/urscript_interfaces/share/urscript_interfaces/cmake/urscript_interfaces__rosidl_generator_cExport.cmake" will be replaced.  Removing files [/home/ubuntu/workspace/Velizar/robotics_v1/install/urscript_interfaces/share/urscript_interfaces/cmake/urscript_interfaces__rosidl_generator_cExport-debug.cmake].
+[35.696s] -- Installing: /home/ubuntu/workspace/Velizar/robotics_v1/install/urscript_interfaces/share/urscript_interfaces/cmake/urscript_interfaces__rosidl_generator_cExport.cmake
+[35.696s] -- Installing: /home/ubuntu/workspace/Velizar/robotics_v1/install/urscript_interfaces/share/urscript_interfaces/cmake/urscript_interfaces__rosidl_generator_cExport-debug.cmake
+[35.698s] -- Old export file "/home/ubuntu/workspace/Velizar/robotics_v1/install/urscript_interfaces/share/urscript_interfaces/cmake/urscript_interfaces__rosidl_typesupport_introspection_cExport.cmake" will be replaced.  Removing files [/home/ubuntu/workspace/Velizar/robotics_v1/install/urscript_interfaces/share/urscript_interfaces/cmake/urscript_interfaces__rosidl_typesupport_introspection_cExport-debug.cmake].
+[35.698s] -- Installing: /home/ubuntu/workspace/Velizar/robotics_v1/install/urscript_interfaces/share/urscript_interfaces/cmake/urscript_interfaces__rosidl_typesupport_introspection_cExport.cmake
+[35.698s] -- Installing: /home/ubuntu/workspace/Velizar/robotics_v1/install/urscript_interfaces/share/urscript_interfaces/cmake/urscript_interfaces__rosidl_typesupport_introspection_cExport-debug.cmake
+[35.700s] -- Old export file "/home/ubuntu/workspace/Velizar/robotics_v1/install/urscript_interfaces/share/urscript_interfaces/cmake/urscript_interfaces__rosidl_typesupport_cExport.cmake" will be replaced.  Removing files [/home/ubuntu/workspace/Velizar/robotics_v1/install/urscript_interfaces/share/urscript_interfaces/cmake/urscript_interfaces__rosidl_typesupport_cExport-debug.cmake].
+[35.700s] -- Installing: /home/ubuntu/workspace/Velizar/robotics_v1/install/urscript_interfaces/share/urscript_interfaces/cmake/urscript_interfaces__rosidl_typesupport_cExport.cmake
+[35.700s] -- Installing: /home/ubuntu/workspace/Velizar/robotics_v1/install/urscript_interfaces/share/urscript_interfaces/cmake/urscript_interfaces__rosidl_typesupport_cExport-debug.cmake
+[35.702s] -- Installing: /home/ubuntu/workspace/Velizar/robotics_v1/install/urscript_interfaces/share/urscript_interfaces/cmake/urscript_interfaces__rosidl_generator_cppExport.cmake
+[35.703s] -- Old export file "/home/ubuntu/workspace/Velizar/robotics_v1/install/urscript_interfaces/share/urscript_interfaces/cmake/urscript_interfaces__rosidl_typesupport_introspection_cppExport.cmake" will be replaced.  Removing files [/home/ubuntu/workspace/Velizar/robotics_v1/install/urscript_interfaces/share/urscript_interfaces/cmake/urscript_interfaces__rosidl_typesupport_introspection_cppExport-debug.cmake].
+[35.703s] -- Installing: /home/ubuntu/workspace/Velizar/robotics_v1/install/urscript_interfaces/share/urscript_interfaces/cmake/urscript_interfaces__rosidl_typesupport_introspection_cppExport.cmake
+[35.704s] -- Installing: /home/ubuntu/workspace/Velizar/robotics_v1/install/urscript_interfaces/share/urscript_interfaces/cmake/urscript_interfaces__rosidl_typesupport_introspection_cppExport-debug.cmake
+[35.705s] -- Old export file "/home/ubuntu/workspace/Velizar/robotics_v1/install/urscript_interfaces/share/urscript_interfaces/cmake/urscript_interfaces__rosidl_typesupport_cppExport.cmake" will be replaced.  Removing files [/home/ubuntu/workspace/Velizar/robotics_v1/install/urscript_interfaces/share/urscript_interfaces/cmake/urscript_interfaces__rosidl_typesupport_cppExport-debug.cmake].
+[35.705s] -- Installing: /home/ubuntu/workspace/Velizar/robotics_v1/install/urscript_interfaces/share/urscript_interfaces/cmake/urscript_interfaces__rosidl_typesupport_cppExport.cmake
+[35.706s] -- Installing: /home/ubuntu/workspace/Velizar/robotics_v1/install/urscript_interfaces/share/urscript_interfaces/cmake/urscript_interfaces__rosidl_typesupport_cppExport-debug.cmake
+[35.717s] Invoked command in '/home/ubuntu/workspace/Velizar/robotics_v1/build/urscript_interfaces' returned '0': CMAKE_PREFIX_PATH=${CMAKE_PREFIX_PATH}:/home/ubuntu/workspace/Velizar/robotics_v1/install/robo_builder_py:/home/ubuntu/workspace/Velizar/robotics_v1/install/robo_miner_ai_py:/home/ubuntu/workspace/Velizar/robotics_v1/install/robo_collector_controller_py:/home/ubuntu/workspace/Velizar/robotics_v1/install/robo_cleaner_ai_py:/opt/ros/foxy PS1=[\u@\h \W]$(git_branch)$ /usr/bin/cmake --install /home/ubuntu/workspace/Velizar/robotics_v1/build/urscript_interfaces

@@ -1,0 +1,24 @@
+[2.175s] Invoking command in '/home/ubuntu/workspace/Velizar/robotics_v1/src/robo_builder_py': AMENT_PREFIX_PATH=/home/ubuntu/workspace/Velizar/robotics_v1/install/urscript_interfaces:${AMENT_PREFIX_PATH} CMAKE_PREFIX_PATH=/home/ubuntu/workspace/Velizar/robotics_v1/install/urscript_interfaces LD_LIBRARY_PATH=/home/ubuntu/workspace/Velizar/robotics_v1/install/urscript_interfaces/lib:${LD_LIBRARY_PATH} PS1=[\u@\h \W]$(git_branch)$ PYTHONPATH=/home/ubuntu/workspace/Velizar/robotics_v1/install/robo_builder_py/lib/python3.8/site-packages:/home/ubuntu/workspace/Velizar/robotics_v1/install/urscript_interfaces/lib/python3.8/site-packages:${PYTHONPATH} /usr/bin/python3 setup.py egg_info --egg-base ../../build/robo_builder_py build --build-base /home/ubuntu/workspace/Velizar/robotics_v1/build/robo_builder_py/build install --prefix /home/ubuntu/workspace/Velizar/robotics_v1/install/robo_builder_py --record /home/ubuntu/workspace/Velizar/robotics_v1/build/robo_builder_py/install.log --single-version-externally-managed
+[3.062s] running egg_info
+[3.065s] writing ../../build/robo_builder_py/robo_builder_py.egg-info/PKG-INFO
+[3.066s] writing dependency_links to ../../build/robo_builder_py/robo_builder_py.egg-info/dependency_links.txt
+[3.067s] writing entry points to ../../build/robo_builder_py/robo_builder_py.egg-info/entry_points.txt
+[3.067s] writing requirements to ../../build/robo_builder_py/robo_builder_py.egg-info/requires.txt
+[3.067s] writing top-level names to ../../build/robo_builder_py/robo_builder_py.egg-info/top_level.txt
+[3.206s] reading manifest file '../../build/robo_builder_py/robo_builder_py.egg-info/SOURCES.txt'
+[3.209s] writing manifest file '../../build/robo_builder_py/robo_builder_py.egg-info/SOURCES.txt'
+[3.210s] running build
+[3.210s] running build_py
+[3.211s] copying robo_builder_py/controls.py -> /home/ubuntu/workspace/Velizar/robotics_v1/build/robo_builder_py/build/lib/robo_builder_py
+[3.212s] running install
+[3.214s] running install_lib
+[3.217s] copying /home/ubuntu/workspace/Velizar/robotics_v1/build/robo_builder_py/build/lib/robo_builder_py/controls.py -> /home/ubuntu/workspace/Velizar/robotics_v1/install/robo_builder_py/lib/python3.8/site-packages/robo_builder_py
+[3.219s] byte-compiling /home/ubuntu/workspace/Velizar/robotics_v1/install/robo_builder_py/lib/python3.8/site-packages/robo_builder_py/controls.py to controls.cpython-38.pyc
+[3.227s] running install_data
+[3.229s] running install_egg_info
+[3.233s] removing '/home/ubuntu/workspace/Velizar/robotics_v1/install/robo_builder_py/lib/python3.8/site-packages/robo_builder_py-0.0.0-py3.8.egg-info' (and everything under it)
+[3.233s] Copying ../../build/robo_builder_py/robo_builder_py.egg-info to /home/ubuntu/workspace/Velizar/robotics_v1/install/robo_builder_py/lib/python3.8/site-packages/robo_builder_py-0.0.0-py3.8.egg-info
+[3.236s] running install_scripts
+[3.300s] Installing robo_builder script to /home/ubuntu/workspace/Velizar/robotics_v1/install/robo_builder_py/lib/robo_builder_py
+[3.302s] writing list of installed files to '/home/ubuntu/workspace/Velizar/robotics_v1/build/robo_builder_py/install.log'
+[3.393s] Invoked command in '/home/ubuntu/workspace/Velizar/robotics_v1/src/robo_builder_py' returned '0': AMENT_PREFIX_PATH=/home/ubuntu/workspace/Velizar/robotics_v1/install/urscript_interfaces:${AMENT_PREFIX_PATH} CMAKE_PREFIX_PATH=/home/ubuntu/workspace/Velizar/robotics_v1/install/urscript_interfaces LD_LIBRARY_PATH=/home/ubuntu/workspace/Velizar/robotics_v1/install/urscript_interfaces/lib:${LD_LIBRARY_PATH} PS1=[\u@\h \W]$(git_branch)$ PYTHONPATH=/home/ubuntu/workspace/Velizar/robotics_v1/install/robo_builder_py/lib/python3.8/site-packages:/home/ubuntu/workspace/Velizar/robotics_v1/install/urscript_interfaces/lib/python3.8/site-packages:${PYTHONPATH} /usr/bin/python3 setup.py egg_info --egg-base ../../build/robo_builder_py build --build-base /home/ubuntu/workspace/Velizar/robotics_v1/build/robo_builder_py/build install --prefix /home/ubuntu/workspace/Velizar/robotics_v1/install/robo_builder_py --record /home/ubuntu/workspace/Velizar/robotics_v1/build/robo_builder_py/install.log --single-version-externally-managed

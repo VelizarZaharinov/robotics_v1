@@ -1,8 +1,12 @@
 file(REMOVE_RECURSE
   "CMakeFiles/urscript_interfaces__cpp"
+  "rosidl_generator_cpp/urscript_interfaces/srv/detail/get_eef_angle_axis__builder.hpp"
+  "rosidl_generator_cpp/urscript_interfaces/srv/detail/get_eef_angle_axis__struct.hpp"
+  "rosidl_generator_cpp/urscript_interfaces/srv/detail/get_eef_angle_axis__traits.hpp"
   "rosidl_generator_cpp/urscript_interfaces/srv/detail/ur_script__builder.hpp"
   "rosidl_generator_cpp/urscript_interfaces/srv/detail/ur_script__struct.hpp"
   "rosidl_generator_cpp/urscript_interfaces/srv/detail/ur_script__traits.hpp"
+  "rosidl_generator_cpp/urscript_interfaces/srv/get_eef_angle_axis.hpp"
   "rosidl_generator_cpp/urscript_interfaces/srv/ur_script.hpp"
 )
 

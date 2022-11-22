@@ -122,9 +122,22 @@ CMakeFiles/urscript_bridge.dir/src/utils/TcpClient.cpp.s: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling CXX source to assembly CMakeFiles/urscript_bridge.dir/src/utils/TcpClient.cpp.s"
 	/usr/bin/clang++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S /home/ubuntu/workspace/Velizar/robotics_v1/src/ur_dev/urscript/urscript_bridge/src/utils/TcpClient.cpp -o CMakeFiles/urscript_bridge.dir/src/utils/TcpClient.cpp.s
 
+CMakeFiles/urscript_bridge.dir/src/utils/Tf2Utils.cpp.o: CMakeFiles/urscript_bridge.dir/flags.make
+CMakeFiles/urscript_bridge.dir/src/utils/Tf2Utils.cpp.o: /home/ubuntu/workspace/Velizar/robotics_v1/src/ur_dev/urscript/urscript_bridge/src/utils/Tf2Utils.cpp
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/home/ubuntu/workspace/Velizar/robotics_v1/build/urscript_bridge/CMakeFiles --progress-num=$(CMAKE_PROGRESS_6) "Building CXX object CMakeFiles/urscript_bridge.dir/src/utils/Tf2Utils.cpp.o"
+	/usr/bin/clang++  $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -o CMakeFiles/urscript_bridge.dir/src/utils/Tf2Utils.cpp.o -c /home/ubuntu/workspace/Velizar/robotics_v1/src/ur_dev/urscript/urscript_bridge/src/utils/Tf2Utils.cpp
+
+CMakeFiles/urscript_bridge.dir/src/utils/Tf2Utils.cpp.i: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing CXX source to CMakeFiles/urscript_bridge.dir/src/utils/Tf2Utils.cpp.i"
+	/usr/bin/clang++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E /home/ubuntu/workspace/Velizar/robotics_v1/src/ur_dev/urscript/urscript_bridge/src/utils/Tf2Utils.cpp > CMakeFiles/urscript_bridge.dir/src/utils/Tf2Utils.cpp.i
+
+CMakeFiles/urscript_bridge.dir/src/utils/Tf2Utils.cpp.s: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling CXX source to assembly CMakeFiles/urscript_bridge.dir/src/utils/Tf2Utils.cpp.s"
+	/usr/bin/clang++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S /home/ubuntu/workspace/Velizar/robotics_v1/src/ur_dev/urscript/urscript_bridge/src/utils/Tf2Utils.cpp -o CMakeFiles/urscript_bridge.dir/src/utils/Tf2Utils.cpp.s
+
 CMakeFiles/urscript_bridge.dir/src/main.cpp.o: CMakeFiles/urscript_bridge.dir/flags.make
 CMakeFiles/urscript_bridge.dir/src/main.cpp.o: /home/ubuntu/workspace/Velizar/robotics_v1/src/ur_dev/urscript/urscript_bridge/src/main.cpp
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/home/ubuntu/workspace/Velizar/robotics_v1/build/urscript_bridge/CMakeFiles --progress-num=$(CMAKE_PROGRESS_6) "Building CXX object CMakeFiles/urscript_bridge.dir/src/main.cpp.o"
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/home/ubuntu/workspace/Velizar/robotics_v1/build/urscript_bridge/CMakeFiles --progress-num=$(CMAKE_PROGRESS_7) "Building CXX object CMakeFiles/urscript_bridge.dir/src/main.cpp.o"
 	/usr/bin/clang++  $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -o CMakeFiles/urscript_bridge.dir/src/main.cpp.o -c /home/ubuntu/workspace/Velizar/robotics_v1/src/ur_dev/urscript/urscript_bridge/src/main.cpp
 
 CMakeFiles/urscript_bridge.dir/src/main.cpp.i: cmake_force
@@ -142,6 +155,7 @@ urscript_bridge_OBJECTS = \
 "CMakeFiles/urscript_bridge.dir/src/external_api/UrBridgeExternalInterface.cpp.o" \
 "CMakeFiles/urscript_bridge.dir/src/external_api/UrBridgeRos2ParamProvider.cpp.o" \
 "CMakeFiles/urscript_bridge.dir/src/utils/TcpClient.cpp.o" \
+"CMakeFiles/urscript_bridge.dir/src/utils/Tf2Utils.cpp.o" \
 "CMakeFiles/urscript_bridge.dir/src/main.cpp.o"
 
 # External object files for target urscript_bridge
@@ -152,11 +166,11 @@ urscript_bridge: CMakeFiles/urscript_bridge.dir/src/core/UrBridgeApplication.cpp
 urscript_bridge: CMakeFiles/urscript_bridge.dir/src/external_api/UrBridgeExternalInterface.cpp.o
 urscript_bridge: CMakeFiles/urscript_bridge.dir/src/external_api/UrBridgeRos2ParamProvider.cpp.o
 urscript_bridge: CMakeFiles/urscript_bridge.dir/src/utils/TcpClient.cpp.o
+urscript_bridge: CMakeFiles/urscript_bridge.dir/src/utils/Tf2Utils.cpp.o
 urscript_bridge: CMakeFiles/urscript_bridge.dir/src/main.cpp.o
 urscript_bridge: CMakeFiles/urscript_bridge.dir/build.make
 urscript_bridge: /home/ubuntu/workspace/Velizar/robotics_v1/install/ros2_game_engine/lib/libros2_game_engine.a
 urscript_bridge: /home/ubuntu/workspace/Velizar/robotics_v1/install/urscript_common/lib/liburscript_common.a
-urscript_bridge: /opt/ros/foxy/lib/librclcpp.so
 urscript_bridge: /opt/ros/foxy/lib/libur_msgs__rosidl_typesupport_introspection_c.so
 urscript_bridge: /opt/ros/foxy/lib/libur_msgs__rosidl_typesupport_c.so
 urscript_bridge: /opt/ros/foxy/lib/libur_msgs__rosidl_typesupport_introspection_cpp.so
@@ -248,13 +262,37 @@ urscript_bridge: /opt/ros/foxy/lib/libstatistics_msgs__rosidl_typesupport_cpp.so
 urscript_bridge: /opt/ros/foxy/lib/libtracetools.so
 urscript_bridge: /home/ubuntu/workspace/Velizar/robotics_v1/install/urscript_interfaces/lib/liburscript_interfaces__rosidl_generator_c.so
 urscript_bridge: /home/ubuntu/workspace/Velizar/robotics_v1/install/utils/lib/libutils.a
+urscript_bridge: /opt/ros/foxy/lib/libur_msgs__rosidl_generator_c.so
+urscript_bridge: /opt/ros/foxy/lib/libstatic_transform_broadcaster_node.so
+urscript_bridge: /opt/ros/foxy/lib/libtf2_ros.so
+urscript_bridge: /opt/ros/foxy/lib/libtf2.so
+urscript_bridge: /opt/ros/foxy/lib/libmessage_filters.so
+urscript_bridge: /opt/ros/foxy/lib/librclcpp_action.so
+urscript_bridge: /opt/ros/foxy/lib/librcl_action.so
+urscript_bridge: /opt/ros/foxy/lib/libtf2_msgs__rosidl_typesupport_introspection_c.so
+urscript_bridge: /opt/ros/foxy/lib/libtf2_msgs__rosidl_generator_c.so
+urscript_bridge: /opt/ros/foxy/lib/libtf2_msgs__rosidl_typesupport_c.so
+urscript_bridge: /opt/ros/foxy/lib/libtf2_msgs__rosidl_typesupport_introspection_cpp.so
+urscript_bridge: /opt/ros/foxy/lib/libtf2_msgs__rosidl_typesupport_cpp.so
+urscript_bridge: /opt/ros/foxy/lib/libgeometry_msgs__rosidl_typesupport_introspection_c.so
+urscript_bridge: /opt/ros/foxy/lib/libgeometry_msgs__rosidl_generator_c.so
+urscript_bridge: /opt/ros/foxy/lib/libgeometry_msgs__rosidl_typesupport_c.so
+urscript_bridge: /opt/ros/foxy/lib/libgeometry_msgs__rosidl_typesupport_introspection_cpp.so
+urscript_bridge: /opt/ros/foxy/lib/libgeometry_msgs__rosidl_typesupport_cpp.so
+urscript_bridge: /opt/ros/foxy/lib/libaction_msgs__rosidl_typesupport_introspection_c.so
+urscript_bridge: /opt/ros/foxy/lib/libaction_msgs__rosidl_generator_c.so
+urscript_bridge: /opt/ros/foxy/lib/libaction_msgs__rosidl_typesupport_c.so
+urscript_bridge: /opt/ros/foxy/lib/libaction_msgs__rosidl_typesupport_introspection_cpp.so
+urscript_bridge: /opt/ros/foxy/lib/libaction_msgs__rosidl_typesupport_cpp.so
+urscript_bridge: /opt/ros/foxy/lib/libunique_identifier_msgs__rosidl_typesupport_introspection_c.so
+urscript_bridge: /opt/ros/foxy/lib/libunique_identifier_msgs__rosidl_generator_c.so
+urscript_bridge: /opt/ros/foxy/lib/libunique_identifier_msgs__rosidl_typesupport_c.so
+urscript_bridge: /opt/ros/foxy/lib/libunique_identifier_msgs__rosidl_typesupport_introspection_cpp.so
+urscript_bridge: /opt/ros/foxy/lib/libunique_identifier_msgs__rosidl_typesupport_cpp.so
+urscript_bridge: /opt/ros/foxy/lib/libcomponent_manager.so
+urscript_bridge: /opt/ros/foxy/lib/librclcpp.so
 urscript_bridge: /opt/ros/foxy/lib/liblibstatistics_collector.so
 urscript_bridge: /opt/ros/foxy/lib/librcl.so
-urscript_bridge: /opt/ros/foxy/lib/librcl_interfaces__rosidl_typesupport_introspection_c.so
-urscript_bridge: /opt/ros/foxy/lib/librcl_interfaces__rosidl_generator_c.so
-urscript_bridge: /opt/ros/foxy/lib/librcl_interfaces__rosidl_typesupport_c.so
-urscript_bridge: /opt/ros/foxy/lib/librcl_interfaces__rosidl_typesupport_introspection_cpp.so
-urscript_bridge: /opt/ros/foxy/lib/librcl_interfaces__rosidl_typesupport_cpp.so
 urscript_bridge: /opt/ros/foxy/lib/librcl_yaml_param_parser.so
 urscript_bridge: /opt/ros/foxy/lib/libyaml.so
 urscript_bridge: /opt/ros/foxy/lib/librmw_implementation.so
@@ -272,22 +310,29 @@ urscript_bridge: /opt/ros/foxy/lib/liblibstatistics_collector_test_msgs__rosidl_
 urscript_bridge: /opt/ros/foxy/lib/liblibstatistics_collector_test_msgs__rosidl_typesupport_c.so
 urscript_bridge: /opt/ros/foxy/lib/liblibstatistics_collector_test_msgs__rosidl_typesupport_introspection_cpp.so
 urscript_bridge: /opt/ros/foxy/lib/liblibstatistics_collector_test_msgs__rosidl_typesupport_cpp.so
-urscript_bridge: /opt/ros/foxy/lib/librosgraph_msgs__rosidl_typesupport_introspection_c.so
-urscript_bridge: /opt/ros/foxy/lib/librosgraph_msgs__rosidl_generator_c.so
-urscript_bridge: /opt/ros/foxy/lib/librosgraph_msgs__rosidl_typesupport_c.so
-urscript_bridge: /opt/ros/foxy/lib/librosgraph_msgs__rosidl_typesupport_introspection_cpp.so
-urscript_bridge: /opt/ros/foxy/lib/librosgraph_msgs__rosidl_typesupport_cpp.so
-urscript_bridge: /opt/ros/foxy/lib/libur_msgs__rosidl_generator_c.so
-urscript_bridge: /opt/ros/foxy/lib/libgeometry_msgs__rosidl_typesupport_introspection_c.so
-urscript_bridge: /opt/ros/foxy/lib/libgeometry_msgs__rosidl_generator_c.so
-urscript_bridge: /opt/ros/foxy/lib/libgeometry_msgs__rosidl_typesupport_c.so
-urscript_bridge: /opt/ros/foxy/lib/libgeometry_msgs__rosidl_typesupport_introspection_cpp.so
-urscript_bridge: /opt/ros/foxy/lib/libgeometry_msgs__rosidl_typesupport_cpp.so
 urscript_bridge: /opt/ros/foxy/lib/libstd_msgs__rosidl_typesupport_introspection_c.so
 urscript_bridge: /opt/ros/foxy/lib/libstd_msgs__rosidl_generator_c.so
 urscript_bridge: /opt/ros/foxy/lib/libstd_msgs__rosidl_typesupport_c.so
 urscript_bridge: /opt/ros/foxy/lib/libstd_msgs__rosidl_typesupport_introspection_cpp.so
 urscript_bridge: /opt/ros/foxy/lib/libstd_msgs__rosidl_typesupport_cpp.so
+urscript_bridge: /opt/ros/foxy/lib/librosgraph_msgs__rosidl_typesupport_introspection_c.so
+urscript_bridge: /opt/ros/foxy/lib/librosgraph_msgs__rosidl_generator_c.so
+urscript_bridge: /opt/ros/foxy/lib/librosgraph_msgs__rosidl_typesupport_c.so
+urscript_bridge: /opt/ros/foxy/lib/librosgraph_msgs__rosidl_typesupport_introspection_cpp.so
+urscript_bridge: /opt/ros/foxy/lib/librosgraph_msgs__rosidl_typesupport_cpp.so
+urscript_bridge: /opt/ros/foxy/lib/libament_index_cpp.so
+urscript_bridge: /opt/ros/foxy/lib/libclass_loader.so
+urscript_bridge: /opt/ros/foxy/lib/x86_64-linux-gnu/libconsole_bridge.so.1.0
+urscript_bridge: /opt/ros/foxy/lib/libcomposition_interfaces__rosidl_typesupport_introspection_c.so
+urscript_bridge: /opt/ros/foxy/lib/libcomposition_interfaces__rosidl_generator_c.so
+urscript_bridge: /opt/ros/foxy/lib/libcomposition_interfaces__rosidl_typesupport_c.so
+urscript_bridge: /opt/ros/foxy/lib/libcomposition_interfaces__rosidl_typesupport_introspection_cpp.so
+urscript_bridge: /opt/ros/foxy/lib/libcomposition_interfaces__rosidl_typesupport_cpp.so
+urscript_bridge: /opt/ros/foxy/lib/librcl_interfaces__rosidl_typesupport_introspection_c.so
+urscript_bridge: /opt/ros/foxy/lib/librcl_interfaces__rosidl_generator_c.so
+urscript_bridge: /opt/ros/foxy/lib/librcl_interfaces__rosidl_typesupport_c.so
+urscript_bridge: /opt/ros/foxy/lib/librcl_interfaces__rosidl_typesupport_introspection_cpp.so
+urscript_bridge: /opt/ros/foxy/lib/librcl_interfaces__rosidl_typesupport_cpp.so
 urscript_bridge: /opt/ros/foxy/lib/libbuiltin_interfaces__rosidl_typesupport_introspection_c.so
 urscript_bridge: /opt/ros/foxy/lib/libbuiltin_interfaces__rosidl_generator_c.so
 urscript_bridge: /opt/ros/foxy/lib/libbuiltin_interfaces__rosidl_typesupport_c.so
@@ -300,8 +345,9 @@ urscript_bridge: /opt/ros/foxy/lib/librosidl_typesupport_c.so
 urscript_bridge: /opt/ros/foxy/lib/librcpputils.so
 urscript_bridge: /opt/ros/foxy/lib/librosidl_runtime_c.so
 urscript_bridge: /opt/ros/foxy/lib/librcutils.so
+urscript_bridge: /opt/ros/foxy/lib/liborocos-kdl.so.1.4.0
 urscript_bridge: CMakeFiles/urscript_bridge.dir/link.txt
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --bold --progress-dir=/home/ubuntu/workspace/Velizar/robotics_v1/build/urscript_bridge/CMakeFiles --progress-num=$(CMAKE_PROGRESS_7) "Linking CXX executable urscript_bridge"
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --bold --progress-dir=/home/ubuntu/workspace/Velizar/robotics_v1/build/urscript_bridge/CMakeFiles --progress-num=$(CMAKE_PROGRESS_8) "Linking CXX executable urscript_bridge"
 	$(CMAKE_COMMAND) -E cmake_link_script CMakeFiles/urscript_bridge.dir/link.txt --verbose=$(VERBOSE)
 
 # Rule to build all files generated by this target.

@@ -6,6 +6,24 @@
 
 #IncludeRegexTransform: 
 
+/home/ubuntu/workspace/Velizar/robotics_v1/build/urscript_interfaces/rosidl_generator_py/urscript_interfaces/srv/_get_eef_angle_axis_s.c
+Python.h
+-
+stdbool.h
+-
+numpy/ndarrayobject.h
+/home/ubuntu/workspace/Velizar/robotics_v1/build/urscript_interfaces/rosidl_generator_py/urscript_interfaces/srv/numpy/ndarrayobject.h
+rosidl_runtime_c/visibility_control.h
+/home/ubuntu/workspace/Velizar/robotics_v1/build/urscript_interfaces/rosidl_generator_py/urscript_interfaces/srv/rosidl_runtime_c/visibility_control.h
+urscript_interfaces/srv/detail/get_eef_angle_axis__struct.h
+/home/ubuntu/workspace/Velizar/robotics_v1/build/urscript_interfaces/rosidl_generator_py/urscript_interfaces/srv/urscript_interfaces/srv/detail/get_eef_angle_axis__struct.h
+urscript_interfaces/srv/detail/get_eef_angle_axis__functions.h
+/home/ubuntu/workspace/Velizar/robotics_v1/build/urscript_interfaces/rosidl_generator_py/urscript_interfaces/srv/urscript_interfaces/srv/detail/get_eef_angle_axis__functions.h
+rosidl_runtime_c/string.h
+/home/ubuntu/workspace/Velizar/robotics_v1/build/urscript_interfaces/rosidl_generator_py/urscript_interfaces/srv/rosidl_runtime_c/string.h
+rosidl_runtime_c/string_functions.h
+/home/ubuntu/workspace/Velizar/robotics_v1/build/urscript_interfaces/rosidl_generator_py/urscript_interfaces/srv/rosidl_runtime_c/string_functions.h
+
 /home/ubuntu/workspace/Velizar/robotics_v1/build/urscript_interfaces/rosidl_generator_py/urscript_interfaces/srv/_ur_script_s.c
 Python.h
 -
@@ -23,6 +41,14 @@ rosidl_runtime_c/string.h
 /home/ubuntu/workspace/Velizar/robotics_v1/build/urscript_interfaces/rosidl_generator_py/urscript_interfaces/srv/rosidl_runtime_c/string.h
 rosidl_runtime_c/string_functions.h
 /home/ubuntu/workspace/Velizar/robotics_v1/build/urscript_interfaces/rosidl_generator_py/urscript_interfaces/srv/rosidl_runtime_c/string_functions.h
+
+/opt/ros/foxy/include/geometry_msgs/msg/detail/vector3__struct.h
+stdbool.h
+-
+stddef.h
+-
+stdint.h
+-
 
 /opt/ros/foxy/include/rosidl_runtime_c/primitives_sequence.h
 stdbool.h
@@ -621,6 +647,30 @@ cpython/unicodeobject.h
 /usr/include/python3.8/weakrefobject.h
 
 rosidl_generator_c/urscript_interfaces/msg/rosidl_generator_c__visibility_control.h
+
+rosidl_generator_c/urscript_interfaces/srv/detail/get_eef_angle_axis__functions.h
+stdbool.h
+-
+stdlib.h
+-
+rosidl_runtime_c/visibility_control.h
+rosidl_generator_c/urscript_interfaces/srv/detail/rosidl_runtime_c/visibility_control.h
+urscript_interfaces/msg/rosidl_generator_c__visibility_control.h
+rosidl_generator_c/urscript_interfaces/srv/detail/urscript_interfaces/msg/rosidl_generator_c__visibility_control.h
+urscript_interfaces/srv/detail/get_eef_angle_axis__struct.h
+rosidl_generator_c/urscript_interfaces/srv/detail/urscript_interfaces/srv/detail/get_eef_angle_axis__struct.h
+
+rosidl_generator_c/urscript_interfaces/srv/detail/get_eef_angle_axis__struct.h
+stdbool.h
+-
+stddef.h
+-
+stdint.h
+-
+rosidl_runtime_c/string.h
+rosidl_generator_c/urscript_interfaces/srv/detail/rosidl_runtime_c/string.h
+geometry_msgs/msg/detail/vector3__struct.h
+rosidl_generator_c/urscript_interfaces/srv/detail/geometry_msgs/msg/detail/vector3__struct.h
 
 rosidl_generator_c/urscript_interfaces/srv/detail/ur_script__functions.h
 stdbool.h

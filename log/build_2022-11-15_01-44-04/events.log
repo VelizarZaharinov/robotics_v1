@@ -1,0 +1,595 @@
+[0.000000] (-) TimerEvent: {}
+[0.000250] (-) JobUnselected: {'identifier': 'cmake_helpers'}
+[0.000414] (-) JobUnselected: {'identifier': 'game_engine'}
+[0.000512] (-) JobUnselected: {'identifier': 'manager_utils'}
+[0.000580] (-) JobUnselected: {'identifier': 'resource_builder'}
+[0.000669] (-) JobUnselected: {'identifier': 'resource_utils'}
+[0.000736] (-) JobUnselected: {'identifier': 'robo_builder_py'}
+[0.000798] (-) JobUnselected: {'identifier': 'robo_cleaner_ai_py'}
+[0.000859] (-) JobUnselected: {'identifier': 'robo_cleaner_common'}
+[0.000928] (-) JobUnselected: {'identifier': 'robo_cleaner_gui'}
+[0.001008] (-) JobUnselected: {'identifier': 'robo_cleaner_interfaces'}
+[0.001092] (-) JobUnselected: {'identifier': 'robo_collector_common'}
+[0.001175] (-) JobUnselected: {'identifier': 'robo_collector_controller'}
+[0.001326] (-) JobUnselected: {'identifier': 'robo_collector_controller_py'}
+[0.001442] (-) JobUnselected: {'identifier': 'robo_collector_gui'}
+[0.001511] (-) JobUnselected: {'identifier': 'robo_collector_interfaces'}
+[0.001573] (-) JobUnselected: {'identifier': 'robo_common'}
+[0.001673] (-) JobUnselected: {'identifier': 'robo_miner_ai_py'}
+[0.001741] (-) JobUnselected: {'identifier': 'robo_miner_common'}
+[0.005975] (-) JobUnselected: {'identifier': 'robo_miner_gui'}
+[0.007601] (-) JobUnselected: {'identifier': 'robo_miner_interfaces'}
+[0.011522] (-) JobUnselected: {'identifier': 'ros2_game_engine'}
+[0.011662] (-) JobUnselected: {'identifier': 'sdl_utils'}
+[0.011738] (-) JobUnselected: {'identifier': 'ur_bringup'}
+[0.011802] (-) JobUnselected: {'identifier': 'ur_client_library'}
+[0.011865] (-) JobUnselected: {'identifier': 'ur_control_gui'}
+[0.011927] (-) JobUnselected: {'identifier': 'ur_controllers'}
+[0.011997] (-) JobUnselected: {'identifier': 'ur_dashboard_msgs'}
+[0.012124] (-) JobUnselected: {'identifier': 'ur_description'}
+[0.012198] (-) JobUnselected: {'identifier': 'ur_moveit_config'}
+[0.012286] (-) JobUnselected: {'identifier': 'ur_robot_driver'}
+[0.012346] (-) JobUnselected: {'identifier': 'urscript_bridge'}
+[0.012404] (-) JobUnselected: {'identifier': 'urscript_common'}
+[0.012498] (-) JobUnselected: {'identifier': 'utils'}
+[0.012565] (urscript_interfaces) JobQueued: {'identifier': 'urscript_interfaces', 'dependencies': OrderedDict()}
+[0.012640] (urscript_interfaces) JobStarted: {'identifier': 'urscript_interfaces'}
+[0.087544] (urscript_interfaces) JobProgress: {'identifier': 'urscript_interfaces', 'progress': 'cmake'}
+[0.094973] (urscript_interfaces) Command: {'cmd': ['/usr/bin/cmake', '/home/ubuntu/workspace/Velizar/robotics_v1/src/ur_dev/urscript/urscript_interfaces', '-DCMAKE_INSTALL_PREFIX=/home/ubuntu/workspace/Velizar/robotics_v1/install/urscript_interfaces'], 'cwd': '/home/ubuntu/workspace/Velizar/robotics_v1/build/urscript_interfaces', 'env': OrderedDict([('LESSOPEN', '| /usr/bin/lesspipe %s'), ('USER', 'ubuntu'), ('SSH_AGENT_PID', '2056'), ('XDG_SESSION_TYPE', 'x11'), ('SHLVL', '1'), ('LD_LIBRARY_PATH', '/home/ubuntu/workspace/Velizar/robotics_v1/install/urscript_interfaces/lib:/home/ubuntu/workspace/Velizar/robotics_v1/install/ur_robot_driver/lib:/home/ubuntu/workspace/Velizar/robotics_v1/install/ur_controllers/lib:/home/ubuntu/workspace/Velizar/robotics_v1/install/ur_dashboard_msgs/lib:/home/ubuntu/workspace/Velizar/robotics_v1/install/ur_client_library/lib:/home/ubuntu/workspace/Velizar/robotics_v1/install/robo_miner_interfaces/lib:/home/ubuntu/workspace/Velizar/robotics_v1/install/robo_collector_interfaces/lib:/home/ubuntu/workspace/Velizar/robotics_v1/install/robo_cleaner_interfaces/lib:/opt/ros/foxy/opt/yaml_cpp_vendor/lib:/opt/ros/foxy/opt/rviz_ogre_vendor/lib:/opt/ros/foxy/lib/x86_64-linux-gnu:/opt/ros/foxy/lib'), ('HOME', '/home/ubuntu'), ('DESKTOP_SESSION', 'ubuntu'), ('ROS_PYTHON_VERSION', '3'), ('GNOME_SHELL_SESSION_MODE', 'ubuntu'), ('GTK_MODULES', 'gail:atk-bridge'), ('PS1', '[\\u@\\h \\W]$(git_branch)$'), ('MANAGERPID', '1852'), ('DBUS_STARTER_BUS_TYPE', 'session'), ('DBUS_SESSION_BUS_ADDRESS', 'unix:path=/run/user/1000/bus,guid=9ee663c5beab7df805155993636c022a'), ('COLORTERM', 'truecolor'), ('IM_CONFIG_PHASE', '1'), ('COLCON_PREFIX_PATH', '/home/ubuntu/workspace/Velizar/robotics_v1/install'), ('ROS_DISTRO', 'foxy'), ('LOGNAME', 'ubuntu'), ('JOURNAL_STREAM', '8:34810'), ('_', '/usr/bin/colcon'), ('ROS_VERSION', '2'), ('PKG_CONFIG_PATH', '/home/ubuntu/workspace/Velizar/robotics_v1/install/ros2_game_engine/lib/x86_64-linux-gnu/pkgconfig:/home/ubuntu/workspace/Velizar/robotics_v1/install/ros2_game_engine/lib/pkgconfig:/home/ubuntu/workspace/Velizar/robotics_v1/install/robo_common/lib/x86_64-linux-gnu/pkgconfig:/home/ubuntu/workspace/Velizar/robotics_v1/install/robo_common/lib/pkgconfig:/home/ubuntu/workspace/Velizar/robotics_v1/install/game_engine/lib/x86_64-linux-gnu/pkgconfig:/home/ubuntu/workspace/Velizar/robotics_v1/install/game_engine/lib/pkgconfig:/home/ubuntu/workspace/Velizar/robotics_v1/install/manager_utils/lib/x86_64-linux-gnu/pkgconfig:/home/ubuntu/workspace/Velizar/robotics_v1/install/manager_utils/lib/pkgconfig:/home/ubuntu/workspace/Velizar/robotics_v1/install/sdl_utils/lib/x86_64-linux-gnu/pkgconfig:/home/ubuntu/workspace/Velizar/robotics_v1/install/sdl_utils/lib/pkgconfig:/home/ubuntu/workspace/Velizar/robotics_v1/install/resource_builder/lib/x86_64-linux-gnu/pkgconfig:/home/ubuntu/workspace/Velizar/robotics_v1/install/resource_builder/lib/pkgconfig:/home/ubuntu/workspace/Velizar/robotics_v1/install/resource_utils/lib/x86_64-linux-gnu/pkgconfig:/home/ubuntu/workspace/Velizar/robotics_v1/install/resource_utils/lib/pkgconfig:/home/ubuntu/workspace/Velizar/robotics_v1/install/utils/lib/x86_64-linux-gnu/pkgconfig:/home/ubuntu/workspace/Velizar/robotics_v1/install/utils/lib/pkgconfig:/home/ubuntu/workspace/Velizar/robotics_v1/install/ur_client_library/lib/x86_64-linux-gnu/pkgconfig:/home/ubuntu/workspace/Velizar/robotics_v1/install/ur_client_library/lib/pkgconfig:/home/ubuntu/workspace/Velizar/robotics_v1/install/cmake_helpers/lib/x86_64-linux-gnu/pkgconfig:/home/ubuntu/workspace/Velizar/robotics_v1/install/cmake_helpers/lib/pkgconfig'), ('XDG_SESSION_CLASS', 'user'), ('USERNAME', 'ubuntu'), ('TERM', 'xterm-256color'), ('GNOME_DESKTOP_SESSION_ID', 'this-is-deprecated'), ('ROS_LOCALHOST_ONLY', '0'), ('WINDOWPATH', '2'), ('PATH', '/home/ubuntu/workspace/Velizar/robotics_v1/install/resource_builder/bin:/home/ubuntu/workspace/Velizar/robotics_v1/install/ur_robot_driver/bin:/opt/ros/foxy/bin:/home/ubuntu/.local/bin:/usr/local/sbin:/usr/local/bin:/usr/sbin:/usr/bin:/sbin:/bin:/usr/games:/usr/local/games:/snap/bin'), ('SESSION_MANAGER', 'local/ubuntu2004:@/tmp/.ICE-unix/2094,unix/ubuntu2004:/tmp/.ICE-unix/2094'), ('INVOCATION_ID', 'db6af1d95cfb432587ee346525700d87'), ('XDG_MENU_PREFIX', 'gnome-'), ('GNOME_TERMINAL_SCREEN', '/org/gnome/Terminal/screen/d90872aa_9b12_477d_8c10_6395cac3f8e1'), ('XDG_RUNTIME_DIR', '/run/user/1000'), ('DISPLAY', ':0'), ('LANG', 'en_US.UTF-8'), ('XDG_CURRENT_DESKTOP', 'ubuntu:GNOME'), ('XMODIFIERS', '@im=ibus'), ('XDG_SESSION_DESKTOP', 'ubuntu'), ('XAUTHORITY', '/run/user/1000/gdm/Xauthority'), ('LS_COLORS', 'rs=0:di=01;34:ln=01;36:mh=00:pi=40;33:so=01;35:do=01;35:bd=40;33;01:cd=40;33;01:or=40;31;01:mi=00:su=37;41:sg=30;43:ca=30;41:tw=30;42:ow=34;42:st=37;44:ex=01;32:*.tar=01;31:*.tgz=01;31:*.arc=01;31:*.arj=01;31:*.taz=01;31:*.lha=01;31:*.lz4=01;31:*.lzh=01;31:*.lzma=01;31:*.tlz=01;31:*.txz=01;31:*.tzo=01;31:*.t7z=01;31:*.zip=01;31:*.z=01;31:*.dz=01;31:*.gz=01;31:*.lrz=01;31:*.lz=01;31:*.lzo=01;31:*.xz=01;31:*.zst=01;31:*.tzst=01;31:*.bz2=01;31:*.bz=01;31:*.tbz=01;31:*.tbz2=01;31:*.tz=01;31:*.deb=01;31:*.rpm=01;31:*.jar=01;31:*.war=01;31:*.ear=01;31:*.sar=01;31:*.rar=01;31:*.alz=01;31:*.ace=01;31:*.zoo=01;31:*.cpio=01;31:*.7z=01;31:*.rz=01;31:*.cab=01;31:*.wim=01;31:*.swm=01;31:*.dwm=01;31:*.esd=01;31:*.jpg=01;35:*.jpeg=01;35:*.mjpg=01;35:*.mjpeg=01;35:*.gif=01;35:*.bmp=01;35:*.pbm=01;35:*.pgm=01;35:*.ppm=01;35:*.tga=01;35:*.xbm=01;35:*.xpm=01;35:*.tif=01;35:*.tiff=01;35:*.png=01;35:*.svg=01;35:*.svgz=01;35:*.mng=01;35:*.pcx=01;35:*.mov=01;35:*.mpg=01;35:*.mpeg=01;35:*.m2v=01;35:*.mkv=01;35:*.webm=01;35:*.ogm=01;35:*.mp4=01;35:*.m4v=01;35:*.mp4v=01;35:*.vob=01;35:*.qt=01;35:*.nuv=01;35:*.wmv=01;35:*.asf=01;35:*.rm=01;35:*.rmvb=01;35:*.flc=01;35:*.avi=01;35:*.fli=01;35:*.flv=01;35:*.gl=01;35:*.dl=01;35:*.xcf=01;35:*.xwd=01;35:*.yuv=01;35:*.cgm=01;35:*.emf=01;35:*.ogv=01;35:*.ogx=01;35:*.aac=00;36:*.au=00;36:*.flac=00;36:*.m4a=00;36:*.mid=00;36:*.midi=00;36:*.mka=00;36:*.mp3=00;36:*.mpc=00;36:*.ogg=00;36:*.ra=00;36:*.wav=00;36:*.oga=00;36:*.opus=00;36:*.spx=00;36:*.xspf=00;36:'), ('GNOME_TERMINAL_SERVICE', ':1.87'), ('SSH_AUTH_SOCK', '/run/user/1000/keyring/ssh'), ('AMENT_PREFIX_PATH', '/home/ubuntu/workspace/Velizar/robotics_v1/install/urscript_bridge:/home/ubuntu/workspace/Velizar/robotics_v1/install/ur_control_gui:/home/ubuntu/workspace/Velizar/robotics_v1/install/urscript_common:/home/ubuntu/workspace/Velizar/robotics_v1/install/robo_miner_gui:/home/ubuntu/workspace/Velizar/robotics_v1/install/robo_collector_gui:/home/ubuntu/workspace/Velizar/robotics_v1/install/robo_collector_controller:/home/ubuntu/workspace/Velizar/robotics_v1/install/robo_cleaner_gui:/home/ubuntu/workspace/Velizar/robotics_v1/install/robo_miner_common:/home/ubuntu/workspace/Velizar/robotics_v1/install/robo_collector_common:/home/ubuntu/workspace/Velizar/robotics_v1/install/robo_cleaner_common:/home/ubuntu/workspace/Velizar/robotics_v1/install/robo_builder_py:/home/ubuntu/workspace/Velizar/robotics_v1/install/urscript_interfaces:/home/ubuntu/workspace/Velizar/robotics_v1/install/ur_robot_driver:/home/ubuntu/workspace/Velizar/robotics_v1/install/ur_moveit_config:/home/ubuntu/workspace/Velizar/robotics_v1/install/ur_description:/home/ubuntu/workspace/Velizar/robotics_v1/install/ur_controllers:/home/ubuntu/workspace/Velizar/robotics_v1/install/ur_dashboard_msgs:/home/ubuntu/workspace/Velizar/robotics_v1/install/ur_bringup:/home/ubuntu/workspace/Velizar/robotics_v1/install/robo_miner_ai_py:/home/ubuntu/workspace/Velizar/robotics_v1/install/robo_miner_interfaces:/home/ubuntu/workspace/Velizar/robotics_v1/install/robo_collector_controller_py:/home/ubuntu/workspace/Velizar/robotics_v1/install/robo_collector_interfaces:/home/ubuntu/workspace/Velizar/robotics_v1/install/robo_cleaner_ai_py:/home/ubuntu/workspace/Velizar/robotics_v1/install/robo_cleaner_interfaces:/opt/ros/foxy'), ('SHELL', '/bin/bash'), ('QT_ACCESSIBILITY', '1'), ('GDMSESSION', 'ubuntu'), ('LESSCLOSE', '/usr/bin/lesspipe %s %s'), ('GPG_AGENT_INFO', '/run/user/1000/gnupg/S.gpg-agent:0:1'), ('QT_IM_MODULE', 'ibus'), ('PWD', '/home/ubuntu/workspace/Velizar/robotics_v1/build/urscript_interfaces'), ('LC_ALL', 'en_US.UTF-8'), ('XDG_CONFIG_DIRS', '/etc/xdg/xdg-ubuntu:/etc/xdg'), ('DBUS_STARTER_ADDRESS', 'unix:path=/run/user/1000/bus,guid=9ee663c5beab7df805155993636c022a'), ('XDG_DATA_DIRS', '/usr/share/ubuntu:/usr/local/share/:/usr/share/:/var/lib/snapd/desktop'), ('PYTHONPATH', '/home/ubuntu/workspace/Velizar/robotics_v1/install/robo_builder_py/lib/python3.8/site-packages:/home/ubuntu/workspace/Velizar/robotics_v1/install/urscript_interfaces/lib/python3.8/site-packages:/home/ubuntu/workspace/Velizar/robotics_v1/install/ur_dashboard_msgs/lib/python3.8/site-packages:/home/ubuntu/workspace/Velizar/robotics_v1/install/robo_miner_ai_py/lib/python3.8/site-packages:/home/ubuntu/workspace/Velizar/robotics_v1/install/robo_miner_interfaces/lib/python3.8/site-packages:/home/ubuntu/workspace/Velizar/robotics_v1/install/robo_collector_controller_py/lib/python3.8/site-packages:/home/ubuntu/workspace/Velizar/robotics_v1/install/robo_collector_interfaces/lib/python3.8/site-packages:/home/ubuntu/workspace/Velizar/robotics_v1/install/robo_cleaner_ai_py/lib/python3.8/site-packages:/home/ubuntu/workspace/Velizar/robotics_v1/install/robo_cleaner_interfaces/lib/python3.8/site-packages:/opt/ros/foxy/lib/python3.8/site-packages'), ('COLCON', '1'), ('VTE_VERSION', '6003'), ('CMAKE_PREFIX_PATH', '/home/ubuntu/workspace/Velizar/robotics_v1/install/urscript_bridge:/home/ubuntu/workspace/Velizar/robotics_v1/install/ur_control_gui:/home/ubuntu/workspace/Velizar/robotics_v1/install/urscript_common:/home/ubuntu/workspace/Velizar/robotics_v1/install/robo_miner_gui:/home/ubuntu/workspace/Velizar/robotics_v1/install/robo_collector_gui:/home/ubuntu/workspace/Velizar/robotics_v1/install/robo_collector_controller:/home/ubuntu/workspace/Velizar/robotics_v1/install/robo_cleaner_gui:/home/ubuntu/workspace/Velizar/robotics_v1/install/ros2_game_engine:/home/ubuntu/workspace/Velizar/robotics_v1/install/robo_miner_common:/home/ubuntu/workspace/Velizar/robotics_v1/install/robo_collector_common:/home/ubuntu/workspace/Velizar/robotics_v1/install/robo_cleaner_common:/home/ubuntu/workspace/Velizar/robotics_v1/install/robo_common:/home/ubuntu/workspace/Velizar/robotics_v1/install/game_engine:/home/ubuntu/workspace/Velizar/robotics_v1/install/manager_utils:/home/ubuntu/workspace/Velizar/robotics_v1/install/sdl_utils:/home/ubuntu/workspace/Velizar/robotics_v1/install/resource_builder:/home/ubuntu/workspace/Velizar/robotics_v1/install/resource_utils:/home/ubuntu/workspace/Velizar/robotics_v1/install/utils:/home/ubuntu/workspace/Velizar/robotics_v1/install/urscript_interfaces:/home/ubuntu/workspace/Velizar/robotics_v1/install/ur_robot_driver:/home/ubuntu/workspace/Velizar/robotics_v1/install/ur_moveit_config:/home/ubuntu/workspace/Velizar/robotics_v1/install/ur_description:/home/ubuntu/workspace/Velizar/robotics_v1/install/ur_controllers:/home/ubuntu/workspace/Velizar/robotics_v1/install/ur_dashboard_msgs:/home/ubuntu/workspace/Velizar/robotics_v1/install/ur_client_library:/home/ubuntu/workspace/Velizar/robotics_v1/install/ur_bringup:/home/ubuntu/workspace/Velizar/robotics_v1/install/robo_miner_interfaces:/home/ubuntu/workspace/Velizar/robotics_v1/install/robo_collector_interfaces:/home/ubuntu/workspace/Velizar/robotics_v1/install/robo_cleaner_interfaces:/home/ubuntu/workspace/Velizar/robotics_v1/install/cmake_helpers:/home/ubuntu/workspace/Velizar/robotics_v1/install/robo_builder_py:/home/ubuntu/workspace/Velizar/robotics_v1/install/robo_miner_ai_py:/home/ubuntu/workspace/Velizar/robotics_v1/install/robo_collector_controller_py:/home/ubuntu/workspace/Velizar/robotics_v1/install/robo_cleaner_ai_py:/opt/ros/foxy')]), 'shell': False}
+[0.111596] (-) TimerEvent: {}
+[0.213181] (-) TimerEvent: {}
+[0.313636] (-) TimerEvent: {}
+[0.323382] (urscript_interfaces) StdoutLine: {'line': b'-- Found ament_cmake: 0.9.11 (/opt/ros/foxy/share/ament_cmake/cmake)\n'}
+[0.413768] (-) TimerEvent: {}
+[0.460157] (urscript_interfaces) StdoutLine: {'line': b'-- Found PythonInterp: /usr/bin/python3 (found suitable version "3.8.10", minimum required is "3") \n'}
+[0.460515] (urscript_interfaces) StdoutLine: {'line': b'-- Using PYTHON_EXECUTABLE: /usr/bin/python3\n'}
+[0.513945] (-) TimerEvent: {}
+[0.614414] (-) TimerEvent: {}
+[0.714958] (-) TimerEvent: {}
+[0.815474] (-) TimerEvent: {}
+[0.916102] (-) TimerEvent: {}
+[1.016671] (-) TimerEvent: {}
+[1.117488] (-) TimerEvent: {}
+[1.168160] (urscript_interfaces) StdoutLine: {'line': b'-- Override CMake install command with custom implementation using symlinks instead of copying resources\n'}
+[1.217852] (-) TimerEvent: {}
+[1.264563] (urscript_interfaces) StdoutLine: {'line': b'-- Found geometry_msgs: 2.0.5 (/opt/ros/foxy/share/geometry_msgs/cmake)\n'}
+[1.318012] (-) TimerEvent: {}
+[1.418951] (-) TimerEvent: {}
+[1.451853] (urscript_interfaces) StdoutLine: {'line': b'-- Using all available rosidl_typesupport_c: rosidl_typesupport_fastrtps_c;rosidl_typesupport_introspection_c\n'}
+[1.479075] (urscript_interfaces) StdoutLine: {'line': b'-- Found rosidl_adapter: 1.3.0 (/opt/ros/foxy/share/rosidl_adapter/cmake)\n'}
+[1.519385] (-) TimerEvent: {}
+[1.619970] (-) TimerEvent: {}
+[1.720437] (-) TimerEvent: {}
+[1.820982] (-) TimerEvent: {}
+[1.921499] (-) TimerEvent: {}
+[2.022069] (-) TimerEvent: {}
+[2.122547] (-) TimerEvent: {}
+[2.129859] (urscript_interfaces) StdoutLine: {'line': b'-- Using all available rosidl_typesupport_cpp: rosidl_typesupport_fastrtps_cpp;rosidl_typesupport_introspection_cpp\n'}
+[2.222758] (-) TimerEvent: {}
+[2.323491] (-) TimerEvent: {}
+[2.424076] (-) TimerEvent: {}
+[2.524810] (-) TimerEvent: {}
+[2.625376] (-) TimerEvent: {}
+[2.715416] (urscript_interfaces) StdoutLine: {'line': b'-- Found rosidl_default_generators: 1.0.1 (/opt/ros/foxy/share/rosidl_default_generators/cmake)\n'}
+[2.725553] (-) TimerEvent: {}
+[2.826602] (-) TimerEvent: {}
+[2.927130] (urscript_interfaces) StdoutLine: {'line': b'-- Found PythonInterp: /usr/bin/python3 (found version "3.8.10") \n'}
+[2.927563] (-) TimerEvent: {}
+[3.027870] (-) TimerEvent: {}
+[3.128332] (-) TimerEvent: {}
+[3.228858] (-) TimerEvent: {}
+[3.329624] (-) TimerEvent: {}
+[3.430205] (-) TimerEvent: {}
+[3.530695] (-) TimerEvent: {}
+[3.631151] (-) TimerEvent: {}
+[3.732251] (-) TimerEvent: {}
+[3.832911] (-) TimerEvent: {}
+[3.884095] (urscript_interfaces) StdoutLine: {'line': b'-- Found ament_cmake_ros: 0.9.2 (/opt/ros/foxy/share/ament_cmake_ros/cmake)\n'}
+[3.933112] (-) TimerEvent: {}
+[4.033540] (-) TimerEvent: {}
+[4.134036] (-) TimerEvent: {}
+[4.234587] (-) TimerEvent: {}
+[4.335201] (-) TimerEvent: {}
+[4.435696] (-) TimerEvent: {}
+[4.536362] (-) TimerEvent: {}
+[4.636922] (-) TimerEvent: {}
+[4.737448] (-) TimerEvent: {}
+[4.838013] (-) TimerEvent: {}
+[4.938908] (-) TimerEvent: {}
+[5.039739] (-) TimerEvent: {}
+[5.140252] (-) TimerEvent: {}
+[5.240804] (-) TimerEvent: {}
+[5.341269] (-) TimerEvent: {}
+[5.367751] (urscript_interfaces) StdoutLine: {'line': b'-- Using all available rosidl_typesupport_c: rosidl_typesupport_fastrtps_c;rosidl_typesupport_introspection_c\n'}
+[5.441542] (-) TimerEvent: {}
+[5.542305] (-) TimerEvent: {}
+[5.642738] (-) TimerEvent: {}
+[5.743432] (-) TimerEvent: {}
+[5.844366] (-) TimerEvent: {}
+[5.944760] (-) TimerEvent: {}
+[6.045245] (-) TimerEvent: {}
+[6.083584] (urscript_interfaces) StdoutLine: {'line': b'-- Using all available rosidl_typesupport_cpp: rosidl_typesupport_fastrtps_cpp;rosidl_typesupport_introspection_cpp\n'}
+[6.145478] (-) TimerEvent: {}
+[6.236876] (urscript_interfaces) StdoutLine: {'line': b'-- Found PythonInterp: /usr/bin/python3 (found suitable version "3.8.10", minimum required is "3.5") \n'}
+[6.239335] (urscript_interfaces) StdoutLine: {'line': b'-- Found python_cmake_module: 0.8.1 (/opt/ros/foxy/share/python_cmake_module/cmake)\n'}
+[6.245746] (-) TimerEvent: {}
+[6.346304] (-) TimerEvent: {}
+[6.353599] (urscript_interfaces) StdoutLine: {'line': b'-- Using PYTHON_EXECUTABLE: /usr/bin/python3\n'}
+[6.354110] (urscript_interfaces) StdoutLine: {'line': b'-- Using PYTHON_INCLUDE_DIRS: /usr/include/python3.8\n'}
+[6.354392] (urscript_interfaces) StdoutLine: {'line': b'-- Using PYTHON_LIBRARIES: /usr/lib/x86_64-linux-gnu/libpython3.8.so\n'}
+[6.446574] (-) TimerEvent: {}
+[6.547047] (-) TimerEvent: {}
+[6.647564] (-) TimerEvent: {}
+[6.748390] (-) TimerEvent: {}
+[6.837336] (urscript_interfaces) StdoutLine: {'line': b'-- Configuring done\n'}
+[6.848640] (-) TimerEvent: {}
+[6.949159] (-) TimerEvent: {}
+[7.049782] (-) TimerEvent: {}
+[7.150277] (-) TimerEvent: {}
+[7.198309] (urscript_interfaces) StdoutLine: {'line': b'-- Generating done\n'}
+[7.217188] (urscript_interfaces) StdoutLine: {'line': b'-- Build files have been written to: /home/ubuntu/workspace/Velizar/robotics_v1/build/urscript_interfaces\n'}
+[7.238890] (urscript_interfaces) CommandEnded: {'returncode': 0}
+[7.248796] (urscript_interfaces) JobProgress: {'identifier': 'urscript_interfaces', 'progress': 'build'}
+[7.249496] (urscript_interfaces) Command: {'cmd': ['/usr/bin/cmake', '--build', '/home/ubuntu/workspace/Velizar/robotics_v1/build/urscript_interfaces', '--', '-j4', '-l4'], 'cwd': '/home/ubuntu/workspace/Velizar/robotics_v1/build/urscript_interfaces', 'env': OrderedDict([('LESSOPEN', '| /usr/bin/lesspipe %s'), ('USER', 'ubuntu'), ('SSH_AGENT_PID', '2056'), ('XDG_SESSION_TYPE', 'x11'), ('SHLVL', '1'), ('LD_LIBRARY_PATH', '/home/ubuntu/workspace/Velizar/robotics_v1/install/urscript_interfaces/lib:/home/ubuntu/workspace/Velizar/robotics_v1/install/ur_robot_driver/lib:/home/ubuntu/workspace/Velizar/robotics_v1/install/ur_controllers/lib:/home/ubuntu/workspace/Velizar/robotics_v1/install/ur_dashboard_msgs/lib:/home/ubuntu/workspace/Velizar/robotics_v1/install/ur_client_library/lib:/home/ubuntu/workspace/Velizar/robotics_v1/install/robo_miner_interfaces/lib:/home/ubuntu/workspace/Velizar/robotics_v1/install/robo_collector_interfaces/lib:/home/ubuntu/workspace/Velizar/robotics_v1/install/robo_cleaner_interfaces/lib:/opt/ros/foxy/opt/yaml_cpp_vendor/lib:/opt/ros/foxy/opt/rviz_ogre_vendor/lib:/opt/ros/foxy/lib/x86_64-linux-gnu:/opt/ros/foxy/lib'), ('HOME', '/home/ubuntu'), ('DESKTOP_SESSION', 'ubuntu'), ('ROS_PYTHON_VERSION', '3'), ('GNOME_SHELL_SESSION_MODE', 'ubuntu'), ('GTK_MODULES', 'gail:atk-bridge'), ('PS1', '[\\u@\\h \\W]$(git_branch)$'), ('MANAGERPID', '1852'), ('DBUS_STARTER_BUS_TYPE', 'session'), ('DBUS_SESSION_BUS_ADDRESS', 'unix:path=/run/user/1000/bus,guid=9ee663c5beab7df805155993636c022a'), ('COLORTERM', 'truecolor'), ('IM_CONFIG_PHASE', '1'), ('COLCON_PREFIX_PATH', '/home/ubuntu/workspace/Velizar/robotics_v1/install'), ('ROS_DISTRO', 'foxy'), ('LOGNAME', 'ubuntu'), ('JOURNAL_STREAM', '8:34810'), ('_', '/usr/bin/colcon'), ('ROS_VERSION', '2'), ('PKG_CONFIG_PATH', '/home/ubuntu/workspace/Velizar/robotics_v1/install/ros2_game_engine/lib/x86_64-linux-gnu/pkgconfig:/home/ubuntu/workspace/Velizar/robotics_v1/install/ros2_game_engine/lib/pkgconfig:/home/ubuntu/workspace/Velizar/robotics_v1/install/robo_common/lib/x86_64-linux-gnu/pkgconfig:/home/ubuntu/workspace/Velizar/robotics_v1/install/robo_common/lib/pkgconfig:/home/ubuntu/workspace/Velizar/robotics_v1/install/game_engine/lib/x86_64-linux-gnu/pkgconfig:/home/ubuntu/workspace/Velizar/robotics_v1/install/game_engine/lib/pkgconfig:/home/ubuntu/workspace/Velizar/robotics_v1/install/manager_utils/lib/x86_64-linux-gnu/pkgconfig:/home/ubuntu/workspace/Velizar/robotics_v1/install/manager_utils/lib/pkgconfig:/home/ubuntu/workspace/Velizar/robotics_v1/install/sdl_utils/lib/x86_64-linux-gnu/pkgconfig:/home/ubuntu/workspace/Velizar/robotics_v1/install/sdl_utils/lib/pkgconfig:/home/ubuntu/workspace/Velizar/robotics_v1/install/resource_builder/lib/x86_64-linux-gnu/pkgconfig:/home/ubuntu/workspace/Velizar/robotics_v1/install/resource_builder/lib/pkgconfig:/home/ubuntu/workspace/Velizar/robotics_v1/install/resource_utils/lib/x86_64-linux-gnu/pkgconfig:/home/ubuntu/workspace/Velizar/robotics_v1/install/resource_utils/lib/pkgconfig:/home/ubuntu/workspace/Velizar/robotics_v1/install/utils/lib/x86_64-linux-gnu/pkgconfig:/home/ubuntu/workspace/Velizar/robotics_v1/install/utils/lib/pkgconfig:/home/ubuntu/workspace/Velizar/robotics_v1/install/ur_client_library/lib/x86_64-linux-gnu/pkgconfig:/home/ubuntu/workspace/Velizar/robotics_v1/install/ur_client_library/lib/pkgconfig:/home/ubuntu/workspace/Velizar/robotics_v1/install/cmake_helpers/lib/x86_64-linux-gnu/pkgconfig:/home/ubuntu/workspace/Velizar/robotics_v1/install/cmake_helpers/lib/pkgconfig'), ('XDG_SESSION_CLASS', 'user'), ('USERNAME', 'ubuntu'), ('TERM', 'xterm-256color'), ('GNOME_DESKTOP_SESSION_ID', 'this-is-deprecated'), ('ROS_LOCALHOST_ONLY', '0'), ('WINDOWPATH', '2'), ('PATH', '/home/ubuntu/workspace/Velizar/robotics_v1/install/resource_builder/bin:/home/ubuntu/workspace/Velizar/robotics_v1/install/ur_robot_driver/bin:/opt/ros/foxy/bin:/home/ubuntu/.local/bin:/usr/local/sbin:/usr/local/bin:/usr/sbin:/usr/bin:/sbin:/bin:/usr/games:/usr/local/games:/snap/bin'), ('SESSION_MANAGER', 'local/ubuntu2004:@/tmp/.ICE-unix/2094,unix/ubuntu2004:/tmp/.ICE-unix/2094'), ('INVOCATION_ID', 'db6af1d95cfb432587ee346525700d87'), ('XDG_MENU_PREFIX', 'gnome-'), ('GNOME_TERMINAL_SCREEN', '/org/gnome/Terminal/screen/d90872aa_9b12_477d_8c10_6395cac3f8e1'), ('XDG_RUNTIME_DIR', '/run/user/1000'), ('DISPLAY', ':0'), ('LANG', 'en_US.UTF-8'), ('XDG_CURRENT_DESKTOP', 'ubuntu:GNOME'), ('XMODIFIERS', '@im=ibus'), ('XDG_SESSION_DESKTOP', 'ubuntu'), ('XAUTHORITY', '/run/user/1000/gdm/Xauthority'), ('LS_COLORS', 'rs=0:di=01;34:ln=01;36:mh=00:pi=40;33:so=01;35:do=01;35:bd=40;33;01:cd=40;33;01:or=40;31;01:mi=00:su=37;41:sg=30;43:ca=30;41:tw=30;42:ow=34;42:st=37;44:ex=01;32:*.tar=01;31:*.tgz=01;31:*.arc=01;31:*.arj=01;31:*.taz=01;31:*.lha=01;31:*.lz4=01;31:*.lzh=01;31:*.lzma=01;31:*.tlz=01;31:*.txz=01;31:*.tzo=01;31:*.t7z=01;31:*.zip=01;31:*.z=01;31:*.dz=01;31:*.gz=01;31:*.lrz=01;31:*.lz=01;31:*.lzo=01;31:*.xz=01;31:*.zst=01;31:*.tzst=01;31:*.bz2=01;31:*.bz=01;31:*.tbz=01;31:*.tbz2=01;31:*.tz=01;31:*.deb=01;31:*.rpm=01;31:*.jar=01;31:*.war=01;31:*.ear=01;31:*.sar=01;31:*.rar=01;31:*.alz=01;31:*.ace=01;31:*.zoo=01;31:*.cpio=01;31:*.7z=01;31:*.rz=01;31:*.cab=01;31:*.wim=01;31:*.swm=01;31:*.dwm=01;31:*.esd=01;31:*.jpg=01;35:*.jpeg=01;35:*.mjpg=01;35:*.mjpeg=01;35:*.gif=01;35:*.bmp=01;35:*.pbm=01;35:*.pgm=01;35:*.ppm=01;35:*.tga=01;35:*.xbm=01;35:*.xpm=01;35:*.tif=01;35:*.tiff=01;35:*.png=01;35:*.svg=01;35:*.svgz=01;35:*.mng=01;35:*.pcx=01;35:*.mov=01;35:*.mpg=01;35:*.mpeg=01;35:*.m2v=01;35:*.mkv=01;35:*.webm=01;35:*.ogm=01;35:*.mp4=01;35:*.m4v=01;35:*.mp4v=01;35:*.vob=01;35:*.qt=01;35:*.nuv=01;35:*.wmv=01;35:*.asf=01;35:*.rm=01;35:*.rmvb=01;35:*.flc=01;35:*.avi=01;35:*.fli=01;35:*.flv=01;35:*.gl=01;35:*.dl=01;35:*.xcf=01;35:*.xwd=01;35:*.yuv=01;35:*.cgm=01;35:*.emf=01;35:*.ogv=01;35:*.ogx=01;35:*.aac=00;36:*.au=00;36:*.flac=00;36:*.m4a=00;36:*.mid=00;36:*.midi=00;36:*.mka=00;36:*.mp3=00;36:*.mpc=00;36:*.ogg=00;36:*.ra=00;36:*.wav=00;36:*.oga=00;36:*.opus=00;36:*.spx=00;36:*.xspf=00;36:'), ('GNOME_TERMINAL_SERVICE', ':1.87'), ('SSH_AUTH_SOCK', '/run/user/1000/keyring/ssh'), ('AMENT_PREFIX_PATH', '/home/ubuntu/workspace/Velizar/robotics_v1/install/urscript_bridge:/home/ubuntu/workspace/Velizar/robotics_v1/install/ur_control_gui:/home/ubuntu/workspace/Velizar/robotics_v1/install/urscript_common:/home/ubuntu/workspace/Velizar/robotics_v1/install/robo_miner_gui:/home/ubuntu/workspace/Velizar/robotics_v1/install/robo_collector_gui:/home/ubuntu/workspace/Velizar/robotics_v1/install/robo_collector_controller:/home/ubuntu/workspace/Velizar/robotics_v1/install/robo_cleaner_gui:/home/ubuntu/workspace/Velizar/robotics_v1/install/robo_miner_common:/home/ubuntu/workspace/Velizar/robotics_v1/install/robo_collector_common:/home/ubuntu/workspace/Velizar/robotics_v1/install/robo_cleaner_common:/home/ubuntu/workspace/Velizar/robotics_v1/install/robo_builder_py:/home/ubuntu/workspace/Velizar/robotics_v1/install/urscript_interfaces:/home/ubuntu/workspace/Velizar/robotics_v1/install/ur_robot_driver:/home/ubuntu/workspace/Velizar/robotics_v1/install/ur_moveit_config:/home/ubuntu/workspace/Velizar/robotics_v1/install/ur_description:/home/ubuntu/workspace/Velizar/robotics_v1/install/ur_controllers:/home/ubuntu/workspace/Velizar/robotics_v1/install/ur_dashboard_msgs:/home/ubuntu/workspace/Velizar/robotics_v1/install/ur_bringup:/home/ubuntu/workspace/Velizar/robotics_v1/install/robo_miner_ai_py:/home/ubuntu/workspace/Velizar/robotics_v1/install/robo_miner_interfaces:/home/ubuntu/workspace/Velizar/robotics_v1/install/robo_collector_controller_py:/home/ubuntu/workspace/Velizar/robotics_v1/install/robo_collector_interfaces:/home/ubuntu/workspace/Velizar/robotics_v1/install/robo_cleaner_ai_py:/home/ubuntu/workspace/Velizar/robotics_v1/install/robo_cleaner_interfaces:/opt/ros/foxy'), ('SHELL', '/bin/bash'), ('QT_ACCESSIBILITY', '1'), ('GDMSESSION', 'ubuntu'), ('LESSCLOSE', '/usr/bin/lesspipe %s %s'), ('GPG_AGENT_INFO', '/run/user/1000/gnupg/S.gpg-agent:0:1'), ('QT_IM_MODULE', 'ibus'), ('PWD', '/home/ubuntu/workspace/Velizar/robotics_v1/build/urscript_interfaces'), ('LC_ALL', 'en_US.UTF-8'), ('XDG_CONFIG_DIRS', '/etc/xdg/xdg-ubuntu:/etc/xdg'), ('DBUS_STARTER_ADDRESS', 'unix:path=/run/user/1000/bus,guid=9ee663c5beab7df805155993636c022a'), ('XDG_DATA_DIRS', '/usr/share/ubuntu:/usr/local/share/:/usr/share/:/var/lib/snapd/desktop'), ('PYTHONPATH', '/home/ubuntu/workspace/Velizar/robotics_v1/install/robo_builder_py/lib/python3.8/site-packages:/home/ubuntu/workspace/Velizar/robotics_v1/install/urscript_interfaces/lib/python3.8/site-packages:/home/ubuntu/workspace/Velizar/robotics_v1/install/ur_dashboard_msgs/lib/python3.8/site-packages:/home/ubuntu/workspace/Velizar/robotics_v1/install/robo_miner_ai_py/lib/python3.8/site-packages:/home/ubuntu/workspace/Velizar/robotics_v1/install/robo_miner_interfaces/lib/python3.8/site-packages:/home/ubuntu/workspace/Velizar/robotics_v1/install/robo_collector_controller_py/lib/python3.8/site-packages:/home/ubuntu/workspace/Velizar/robotics_v1/install/robo_collector_interfaces/lib/python3.8/site-packages:/home/ubuntu/workspace/Velizar/robotics_v1/install/robo_cleaner_ai_py/lib/python3.8/site-packages:/home/ubuntu/workspace/Velizar/robotics_v1/install/robo_cleaner_interfaces/lib/python3.8/site-packages:/opt/ros/foxy/lib/python3.8/site-packages'), ('COLCON', '1'), ('VTE_VERSION', '6003'), ('CMAKE_PREFIX_PATH', '/home/ubuntu/workspace/Velizar/robotics_v1/install/urscript_bridge:/home/ubuntu/workspace/Velizar/robotics_v1/install/ur_control_gui:/home/ubuntu/workspace/Velizar/robotics_v1/install/urscript_common:/home/ubuntu/workspace/Velizar/robotics_v1/install/robo_miner_gui:/home/ubuntu/workspace/Velizar/robotics_v1/install/robo_collector_gui:/home/ubuntu/workspace/Velizar/robotics_v1/install/robo_collector_controller:/home/ubuntu/workspace/Velizar/robotics_v1/install/robo_cleaner_gui:/home/ubuntu/workspace/Velizar/robotics_v1/install/ros2_game_engine:/home/ubuntu/workspace/Velizar/robotics_v1/install/robo_miner_common:/home/ubuntu/workspace/Velizar/robotics_v1/install/robo_collector_common:/home/ubuntu/workspace/Velizar/robotics_v1/install/robo_cleaner_common:/home/ubuntu/workspace/Velizar/robotics_v1/install/robo_common:/home/ubuntu/workspace/Velizar/robotics_v1/install/game_engine:/home/ubuntu/workspace/Velizar/robotics_v1/install/manager_utils:/home/ubuntu/workspace/Velizar/robotics_v1/install/sdl_utils:/home/ubuntu/workspace/Velizar/robotics_v1/install/resource_builder:/home/ubuntu/workspace/Velizar/robotics_v1/install/resource_utils:/home/ubuntu/workspace/Velizar/robotics_v1/install/utils:/home/ubuntu/workspace/Velizar/robotics_v1/install/urscript_interfaces:/home/ubuntu/workspace/Velizar/robotics_v1/install/ur_robot_driver:/home/ubuntu/workspace/Velizar/robotics_v1/install/ur_moveit_config:/home/ubuntu/workspace/Velizar/robotics_v1/install/ur_description:/home/ubuntu/workspace/Velizar/robotics_v1/install/ur_controllers:/home/ubuntu/workspace/Velizar/robotics_v1/install/ur_dashboard_msgs:/home/ubuntu/workspace/Velizar/robotics_v1/install/ur_client_library:/home/ubuntu/workspace/Velizar/robotics_v1/install/ur_bringup:/home/ubuntu/workspace/Velizar/robotics_v1/install/robo_miner_interfaces:/home/ubuntu/workspace/Velizar/robotics_v1/install/robo_collector_interfaces:/home/ubuntu/workspace/Velizar/robotics_v1/install/robo_cleaner_interfaces:/home/ubuntu/workspace/Velizar/robotics_v1/install/cmake_helpers:/home/ubuntu/workspace/Velizar/robotics_v1/install/robo_builder_py:/home/ubuntu/workspace/Velizar/robotics_v1/install/robo_miner_ai_py:/home/ubuntu/workspace/Velizar/robotics_v1/install/robo_collector_controller_py:/home/ubuntu/workspace/Velizar/robotics_v1/install/robo_cleaner_ai_py:/opt/ros/foxy')]), 'shell': False}
+[7.251486] (-) TimerEvent: {}
+[7.351923] (-) TimerEvent: {}
+[7.454153] (-) TimerEvent: {}
+[7.457179] (urscript_interfaces) StdoutLine: {'line': b'\x1b[35m\x1b[1mScanning dependencies of target urscript_interfaces__cpp\x1b[0m\n'}
+[7.506488] (urscript_interfaces) StdoutLine: {'line': b'[  2%] \x1b[34m\x1b[1mGenerating C++ code for ROS interfaces\x1b[0m\n'}
+[7.554357] (-) TimerEvent: {}
+[7.654951] (-) TimerEvent: {}
+[7.755349] (-) TimerEvent: {}
+[7.855942] (-) TimerEvent: {}
+[7.956553] (-) TimerEvent: {}
+[8.056979] (-) TimerEvent: {}
+[8.157464] (-) TimerEvent: {}
+[8.257922] (-) TimerEvent: {}
+[8.358454] (-) TimerEvent: {}
+[8.459337] (-) TimerEvent: {}
+[8.559970] (-) TimerEvent: {}
+[8.660451] (-) TimerEvent: {}
+[8.760931] (-) TimerEvent: {}
+[8.861344] (-) TimerEvent: {}
+[8.961941] (-) TimerEvent: {}
+[9.027205] (urscript_interfaces) StdoutLine: {'line': b'[  2%] Built target urscript_interfaces__cpp\n'}
+[9.062083] (-) TimerEvent: {}
+[9.069162] (urscript_interfaces) StdoutLine: {'line': b'[  5%] \x1b[34m\x1b[1mGenerating C code for ROS interfaces\x1b[0m\n'}
+[9.162217] (-) TimerEvent: {}
+[9.263031] (-) TimerEvent: {}
+[9.363570] (-) TimerEvent: {}
+[9.464107] (-) TimerEvent: {}
+[9.564801] (-) TimerEvent: {}
+[9.665346] (-) TimerEvent: {}
+[9.765942] (-) TimerEvent: {}
+[9.866473] (-) TimerEvent: {}
+[9.967154] (-) TimerEvent: {}
+[10.067717] (-) TimerEvent: {}
+[10.168232] (-) TimerEvent: {}
+[10.268816] (-) TimerEvent: {}
+[10.369597] (-) TimerEvent: {}
+[10.470234] (-) TimerEvent: {}
+[10.570818] (-) TimerEvent: {}
+[10.671282] (-) TimerEvent: {}
+[10.763510] (urscript_interfaces) StdoutLine: {'line': b'\x1b[35m\x1b[1mScanning dependencies of target urscript_interfaces__rosidl_generator_c\x1b[0m\n'}
+[10.771692] (-) TimerEvent: {}
+[10.844635] (urscript_interfaces) StdoutLine: {'line': b'[  7%] \x1b[32mBuilding C object CMakeFiles/urscript_interfaces__rosidl_generator_c.dir/rosidl_generator_c/urscript_interfaces/srv/detail/ur_script__functions.c.o\x1b[0m\n'}
+[10.871993] (-) TimerEvent: {}
+[10.972884] (-) TimerEvent: {}
+[11.073401] (-) TimerEvent: {}
+[11.174089] (-) TimerEvent: {}
+[11.274671] (-) TimerEvent: {}
+[11.381776] (-) TimerEvent: {}
+[11.420507] (urscript_interfaces) StdoutLine: {'line': b'[ 10%] \x1b[32mBuilding C object CMakeFiles/urscript_interfaces__rosidl_generator_c.dir/rosidl_generator_c/urscript_interfaces/srv/detail/get_eef_angle_axis__functions.c.o\x1b[0m\n'}
+[11.481933] (-) TimerEvent: {}
+[11.582763] (-) TimerEvent: {}
+[11.683395] (-) TimerEvent: {}
+[11.741319] (urscript_interfaces) StdoutLine: {'line': b'[ 12%] \x1b[32m\x1b[1mLinking C shared library liburscript_interfaces__rosidl_generator_c.so\x1b[0m\n'}
+[11.783602] (-) TimerEvent: {}
+[11.884025] (-) TimerEvent: {}
+[11.938685] (urscript_interfaces) StdoutLine: {'line': b'[ 12%] Built target urscript_interfaces__rosidl_generator_c\n'}
+[11.985894] (-) TimerEvent: {}
+[11.998250] (urscript_interfaces) StdoutLine: {'line': b'[ 15%] \x1b[34m\x1b[1mGenerating C++ introspection for ROS interfaces\x1b[0m\n'}
+[12.014458] (urscript_interfaces) StdoutLine: {'line': b'[ 17%] \x1b[34m\x1b[1mGenerating C++ type support dispatch for ROS interfaces\x1b[0m\n'}
+[12.087683] (-) TimerEvent: {}
+[12.189473] (-) TimerEvent: {}
+[12.290778] (-) TimerEvent: {}
+[12.391997] (-) TimerEvent: {}
+[12.494405] (-) TimerEvent: {}
+[12.596114] (-) TimerEvent: {}
+[12.696601] (-) TimerEvent: {}
+[12.798082] (-) TimerEvent: {}
+[12.898557] (-) TimerEvent: {}
+[12.999140] (-) TimerEvent: {}
+[13.008372] (urscript_interfaces) StdoutLine: {'line': b'[ 20%] \x1b[34m\x1b[1mGenerating C type support dispatch for ROS interfaces\x1b[0m\n'}
+[13.099675] (-) TimerEvent: {}
+[13.200106] (-) TimerEvent: {}
+[13.266905] (urscript_interfaces) StdoutLine: {'line': b'\x1b[35m\x1b[1mScanning dependencies of target urscript_interfaces__rosidl_typesupport_cpp\x1b[0m\n'}
+[13.300390] (-) TimerEvent: {}
+[13.354776] (urscript_interfaces) StdoutLine: {'line': b'[ 23%] \x1b[32mBuilding CXX object CMakeFiles/urscript_interfaces__rosidl_typesupport_cpp.dir/rosidl_typesupport_cpp/urscript_interfaces/srv/ur_script__type_support.cpp.o\x1b[0m\n'}
+[13.400989] (-) TimerEvent: {}
+[13.492575] (urscript_interfaces) StdoutLine: {'line': b'\x1b[35m\x1b[1mScanning dependencies of target urscript_interfaces__rosidl_typesupport_introspection_cpp\x1b[0m\n'}
+[13.501161] (-) TimerEvent: {}
+[13.595814] (urscript_interfaces) StdoutLine: {'line': b'[ 25%] \x1b[32mBuilding CXX object CMakeFiles/urscript_interfaces__rosidl_typesupport_introspection_cpp.dir/rosidl_typesupport_introspection_cpp/urscript_interfaces/srv/detail/ur_script__type_support.cpp.o\x1b[0m\n'}
+[13.601338] (-) TimerEvent: {}
+[13.702066] (-) TimerEvent: {}
+[13.802748] (-) TimerEvent: {}
+[13.903418] (-) TimerEvent: {}
+[14.004268] (-) TimerEvent: {}
+[14.105152] (-) TimerEvent: {}
+[14.206213] (-) TimerEvent: {}
+[14.316284] (-) TimerEvent: {}
+[14.333561] (urscript_interfaces) StdoutLine: {'line': b'\x1b[35m\x1b[1mScanning dependencies of target urscript_interfaces__rosidl_typesupport_c\x1b[0m\n'}
+[14.418785] (-) TimerEvent: {}
+[14.449685] (urscript_interfaces) StdoutLine: {'line': b'[ 28%] \x1b[32mBuilding CXX object CMakeFiles/urscript_interfaces__rosidl_typesupport_c.dir/rosidl_typesupport_c/urscript_interfaces/srv/ur_script__type_support.cpp.o\x1b[0m\n'}
+[14.474613] (urscript_interfaces) StdoutLine: {'line': b'[ 30%] \x1b[34m\x1b[1mGenerating C++ type support for eProsima Fast-RTPS\x1b[0m\n'}
+[14.518908] (-) TimerEvent: {}
+[14.619740] (-) TimerEvent: {}
+[14.720209] (-) TimerEvent: {}
+[14.820662] (-) TimerEvent: {}
+[14.921260] (-) TimerEvent: {}
+[14.931666] (urscript_interfaces) StdoutLine: {'line': b'[ 33%] \x1b[32mBuilding CXX object CMakeFiles/urscript_interfaces__rosidl_typesupport_c.dir/rosidl_typesupport_c/urscript_interfaces/srv/get_eef_angle_axis__type_support.cpp.o\x1b[0m\n'}
+[15.021442] (-) TimerEvent: {}
+[15.121932] (-) TimerEvent: {}
+[15.222844] (-) TimerEvent: {}
+[15.235441] (urscript_interfaces) StdoutLine: {'line': b'[ 35%] \x1b[32m\x1b[1mLinking CXX shared library liburscript_interfaces__rosidl_typesupport_c.so\x1b[0m\n'}
+[15.323027] (-) TimerEvent: {}
+[15.424098] (-) TimerEvent: {}
+[15.525821] (-) TimerEvent: {}
+[15.633067] (-) TimerEvent: {}
+[15.734318] (urscript_interfaces) StdoutLine: {'line': b'[ 38%] \x1b[32mBuilding CXX object CMakeFiles/urscript_interfaces__rosidl_typesupport_cpp.dir/rosidl_typesupport_cpp/urscript_interfaces/srv/get_eef_angle_axis__type_support.cpp.o\x1b[0m\n'}
+[15.735133] (-) TimerEvent: {}
+[15.835767] (-) TimerEvent: {}
+[15.872709] (urscript_interfaces) StdoutLine: {'line': b'[ 38%] Built target urscript_interfaces__rosidl_typesupport_c\n'}
+[15.936399] (-) TimerEvent: {}
+[15.963241] (urscript_interfaces) StdoutLine: {'line': b'[ 41%] \x1b[34m\x1b[1mGenerating C introspection for ROS interfaces\x1b[0m\n'}
+[16.036528] (-) TimerEvent: {}
+[16.137161] (-) TimerEvent: {}
+[16.138346] (urscript_interfaces) StdoutLine: {'line': b'[ 43%] \x1b[32mBuilding CXX object CMakeFiles/urscript_interfaces__rosidl_typesupport_introspection_cpp.dir/rosidl_typesupport_introspection_cpp/urscript_interfaces/srv/detail/get_eef_angle_axis__type_support.cpp.o\x1b[0m\n'}
+[16.237897] (-) TimerEvent: {}
+[16.338471] (-) TimerEvent: {}
+[16.439031] (-) TimerEvent: {}
+[16.539485] (-) TimerEvent: {}
+[16.640107] (-) TimerEvent: {}
+[16.740426] (-) TimerEvent: {}
+[16.841065] (-) TimerEvent: {}
+[16.941560] (-) TimerEvent: {}
+[17.045821] (-) TimerEvent: {}
+[17.146604] (-) TimerEvent: {}
+[17.247117] (-) TimerEvent: {}
+[17.309804] (urscript_interfaces) StdoutLine: {'line': b'\x1b[35m\x1b[1mScanning dependencies of target urscript_interfaces__rosidl_typesupport_fastrtps_cpp\x1b[0m\n'}
+[17.349721] (-) TimerEvent: {}
+[17.442041] (urscript_interfaces) StdoutLine: {'line': b'[ 46%] \x1b[32mBuilding CXX object CMakeFiles/urscript_interfaces__rosidl_typesupport_fastrtps_cpp.dir/rosidl_typesupport_fastrtps_cpp/urscript_interfaces/srv/detail/dds_fastrtps/ur_script__type_support.cpp.o\x1b[0m\n'}
+[17.449906] (-) TimerEvent: {}
+[17.550521] (-) TimerEvent: {}
+[17.594295] (urscript_interfaces) StdoutLine: {'line': b'[ 48%] \x1b[32m\x1b[1mLinking CXX shared library liburscript_interfaces__rosidl_typesupport_cpp.so\x1b[0m\n'}
+[17.650713] (-) TimerEvent: {}
+[17.656111] (urscript_interfaces) StdoutLine: {'line': b'[ 51%] \x1b[32m\x1b[1mLinking CXX shared library liburscript_interfaces__rosidl_typesupport_introspection_cpp.so\x1b[0m\n'}
+[17.751295] (-) TimerEvent: {}
+[17.852469] (-) TimerEvent: {}
+[17.952971] (-) TimerEvent: {}
+[18.053506] (-) TimerEvent: {}
+[18.154022] (-) TimerEvent: {}
+[18.255423] (-) TimerEvent: {}
+[18.276212] (urscript_interfaces) StdoutLine: {'line': b'[ 51%] Built target urscript_interfaces__rosidl_typesupport_cpp\n'}
+[18.341382] (urscript_interfaces) StdoutLine: {'line': b'[ 51%] Built target urscript_interfaces__rosidl_typesupport_introspection_cpp\n'}
+[18.356453] (-) TimerEvent: {}
+[18.457014] (-) TimerEvent: {}
+[18.558707] (-) TimerEvent: {}
+[18.568549] (urscript_interfaces) StdoutLine: {'line': b'\x1b[35m\x1b[1mScanning dependencies of target urscript_interfaces__rosidl_typesupport_introspection_c\x1b[0m\n'}
+[18.635872] (urscript_interfaces) StdoutLine: {'line': b'[ 53%] \x1b[32mBuilding C object CMakeFiles/urscript_interfaces__rosidl_typesupport_introspection_c.dir/rosidl_typesupport_introspection_c/urscript_interfaces/srv/detail/ur_script__type_support.c.o\x1b[0m\n'}
+[18.658939] (-) TimerEvent: {}
+[18.760553] (-) TimerEvent: {}
+[18.836078] (urscript_interfaces) StdoutLine: {'line': b'[ 56%] \x1b[32mBuilding C object CMakeFiles/urscript_interfaces__rosidl_typesupport_introspection_c.dir/rosidl_typesupport_introspection_c/urscript_interfaces/srv/detail/get_eef_angle_axis__type_support.c.o\x1b[0m\n'}
+[18.862936] (-) TimerEvent: {}
+[18.964656] (-) TimerEvent: {}
+[19.013060] (urscript_interfaces) StdoutLine: {'line': b'[ 58%] \x1b[32m\x1b[1mLinking C shared library liburscript_interfaces__rosidl_typesupport_introspection_c.so\x1b[0m\n'}
+[19.066886] (-) TimerEvent: {}
+[19.167481] (-) TimerEvent: {}
+[19.184133] (urscript_interfaces) StdoutLine: {'line': b'[ 58%] Built target urscript_interfaces__rosidl_typesupport_introspection_c\n'}
+[19.267793] (-) TimerEvent: {}
+[19.368358] (-) TimerEvent: {}
+[19.468707] (-) TimerEvent: {}
+[19.569204] (-) TimerEvent: {}
+[19.669672] (-) TimerEvent: {}
+[19.770191] (-) TimerEvent: {}
+[19.786887] (urscript_interfaces) StdoutLine: {'line': b'[ 61%] \x1b[32mBuilding CXX object CMakeFiles/urscript_interfaces__rosidl_typesupport_fastrtps_cpp.dir/rosidl_typesupport_fastrtps_cpp/urscript_interfaces/srv/detail/dds_fastrtps/get_eef_angle_axis__type_support.cpp.o\x1b[0m\n'}
+[19.870354] (-) TimerEvent: {}
+[19.970792] (-) TimerEvent: {}
+[20.071324] (-) TimerEvent: {}
+[20.171989] (-) TimerEvent: {}
+[20.272416] (-) TimerEvent: {}
+[20.372928] (-) TimerEvent: {}
+[20.473438] (-) TimerEvent: {}
+[20.574002] (-) TimerEvent: {}
+[20.674593] (-) TimerEvent: {}
+[20.775077] (-) TimerEvent: {}
+[20.875676] (-) TimerEvent: {}
+[20.976284] (-) TimerEvent: {}
+[21.076759] (-) TimerEvent: {}
+[21.177253] (-) TimerEvent: {}
+[21.277754] (-) TimerEvent: {}
+[21.378335] (-) TimerEvent: {}
+[21.444029] (urscript_interfaces) StdoutLine: {'line': b'[ 64%] \x1b[32m\x1b[1mLinking CXX shared library liburscript_interfaces__rosidl_typesupport_fastrtps_cpp.so\x1b[0m\n'}
+[21.478533] (-) TimerEvent: {}
+[21.579172] (-) TimerEvent: {}
+[21.679718] (-) TimerEvent: {}
+[21.780257] (-) TimerEvent: {}
+[21.880948] (-) TimerEvent: {}
+[21.977055] (urscript_interfaces) StdoutLine: {'line': b'[ 64%] Built target urscript_interfaces__rosidl_typesupport_fastrtps_cpp\n'}
+[21.981186] (-) TimerEvent: {}
+[22.033345] (urscript_interfaces) StdoutLine: {'line': b'[ 66%] \x1b[34m\x1b[1mGenerating C type support for eProsima Fast-RTPS\x1b[0m\n'}
+[22.081333] (-) TimerEvent: {}
+[22.181916] (-) TimerEvent: {}
+[22.282962] (-) TimerEvent: {}
+[22.383506] (-) TimerEvent: {}
+[22.483986] (-) TimerEvent: {}
+[22.584413] (-) TimerEvent: {}
+[22.684869] (-) TimerEvent: {}
+[22.785331] (-) TimerEvent: {}
+[22.885854] (-) TimerEvent: {}
+[22.986419] (-) TimerEvent: {}
+[23.086891] (-) TimerEvent: {}
+[23.187330] (-) TimerEvent: {}
+[23.287797] (-) TimerEvent: {}
+[23.388600] (-) TimerEvent: {}
+[23.489066] (-) TimerEvent: {}
+[23.491261] (urscript_interfaces) StdoutLine: {'line': b'\x1b[35m\x1b[1mScanning dependencies of target urscript_interfaces__rosidl_typesupport_fastrtps_c\x1b[0m\n'}
+[23.589256] (-) TimerEvent: {}
+[23.589993] (urscript_interfaces) StdoutLine: {'line': b'[ 69%] \x1b[32mBuilding CXX object CMakeFiles/urscript_interfaces__rosidl_typesupport_fastrtps_c.dir/rosidl_typesupport_fastrtps_c/urscript_interfaces/srv/detail/ur_script__type_support_c.cpp.o\x1b[0m\n'}
+[23.689538] (-) TimerEvent: {}
+[23.790011] (-) TimerEvent: {}
+[23.890483] (-) TimerEvent: {}
+[23.990964] (-) TimerEvent: {}
+[24.091379] (-) TimerEvent: {}
+[24.191919] (-) TimerEvent: {}
+[24.292797] (-) TimerEvent: {}
+[24.393382] (-) TimerEvent: {}
+[24.494457] (-) TimerEvent: {}
+[24.595105] (-) TimerEvent: {}
+[24.695700] (-) TimerEvent: {}
+[24.796539] (-) TimerEvent: {}
+[24.897200] (-) TimerEvent: {}
+[24.997825] (-) TimerEvent: {}
+[25.006618] (urscript_interfaces) StdoutLine: {'line': b'[ 71%] \x1b[32mBuilding CXX object CMakeFiles/urscript_interfaces__rosidl_typesupport_fastrtps_c.dir/rosidl_typesupport_fastrtps_c/urscript_interfaces/srv/detail/get_eef_angle_axis__type_support_c.cpp.o\x1b[0m\n'}
+[25.097908] (-) TimerEvent: {}
+[25.198342] (-) TimerEvent: {}
+[25.298880] (-) TimerEvent: {}
+[25.399650] (-) TimerEvent: {}
+[25.500313] (-) TimerEvent: {}
+[25.600811] (-) TimerEvent: {}
+[25.701300] (-) TimerEvent: {}
+[25.802252] (-) TimerEvent: {}
+[25.902691] (-) TimerEvent: {}
+[26.003241] (-) TimerEvent: {}
+[26.103777] (-) TimerEvent: {}
+[26.204376] (-) TimerEvent: {}
+[26.304981] (-) TimerEvent: {}
+[26.407681] (-) TimerEvent: {}
+[26.439556] (urscript_interfaces) StdoutLine: {'line': b'[ 74%] \x1b[32m\x1b[1mLinking CXX shared library liburscript_interfaces__rosidl_typesupport_fastrtps_c.so\x1b[0m\n'}
+[26.507857] (-) TimerEvent: {}
+[26.608310] (-) TimerEvent: {}
+[26.709016] (-) TimerEvent: {}
+[26.809609] (-) TimerEvent: {}
+[26.910160] (-) TimerEvent: {}
+[27.010755] (-) TimerEvent: {}
+[27.023033] (urscript_interfaces) StdoutLine: {'line': b'[ 74%] Built target urscript_interfaces__rosidl_typesupport_fastrtps_c\n'}
+[27.110946] (-) TimerEvent: {}
+[27.116813] (urscript_interfaces) StdoutLine: {'line': b'[ 74%] Built target urscript_interfaces\n'}
+[27.164813] (urscript_interfaces) StdoutLine: {'line': b'\x1b[35m\x1b[1mScanning dependencies of target urscript_interfaces__py\x1b[0m\n'}
+[27.211373] (-) TimerEvent: {}
+[27.214732] (urscript_interfaces) StdoutLine: {'line': b'[ 76%] \x1b[34m\x1b[1mGenerating Python code for ROS interfaces\x1b[0m\n'}
+[27.311516] (-) TimerEvent: {}
+[27.412040] (-) TimerEvent: {}
+[27.512759] (-) TimerEvent: {}
+[27.613207] (-) TimerEvent: {}
+[27.713606] (-) TimerEvent: {}
+[27.814142] (-) TimerEvent: {}
+[27.914597] (-) TimerEvent: {}
+[28.015082] (-) TimerEvent: {}
+[28.115728] (-) TimerEvent: {}
+[28.216210] (-) TimerEvent: {}
+[28.316719] (-) TimerEvent: {}
+[28.417303] (-) TimerEvent: {}
+[28.517896] (-) TimerEvent: {}
+[28.618381] (-) TimerEvent: {}
+[28.718926] (-) TimerEvent: {}
+[28.819472] (-) TimerEvent: {}
+[28.920466] (-) TimerEvent: {}
+[29.021075] (-) TimerEvent: {}
+[29.121669] (-) TimerEvent: {}
+[29.222223] (-) TimerEvent: {}
+[29.322724] (-) TimerEvent: {}
+[29.423411] (-) TimerEvent: {}
+[29.523885] (-) TimerEvent: {}
+[29.624373] (-) TimerEvent: {}
+[29.724834] (-) TimerEvent: {}
+[29.825302] (-) TimerEvent: {}
+[29.925899] (-) TimerEvent: {}
+[30.026328] (-) TimerEvent: {}
+[30.039985] (urscript_interfaces) StdoutLine: {'line': b'[ 76%] Built target urscript_interfaces__py\n'}
+[30.091326] (urscript_interfaces) StdoutLine: {'line': b'\x1b[35m\x1b[1mScanning dependencies of target urscript_interfaces__python\x1b[0m\n'}
+[30.126451] (-) TimerEvent: {}
+[30.184858] (urscript_interfaces) StdoutLine: {'line': b'[ 79%] \x1b[32mBuilding C object CMakeFiles/urscript_interfaces__python.dir/rosidl_generator_py/urscript_interfaces/srv/_ur_script_s.c.o\x1b[0m\n'}
+[30.226663] (-) TimerEvent: {}
+[30.327499] (-) TimerEvent: {}
+[30.428081] (-) TimerEvent: {}
+[30.528662] (-) TimerEvent: {}
+[30.629173] (-) TimerEvent: {}
+[30.729692] (-) TimerEvent: {}
+[30.749666] (urscript_interfaces) StdoutLine: {'line': b'[ 82%] \x1b[32mBuilding C object CMakeFiles/urscript_interfaces__python.dir/rosidl_generator_py/urscript_interfaces/srv/_get_eef_angle_axis_s.c.o\x1b[0m\n'}
+[30.829926] (-) TimerEvent: {}
+[30.930409] (-) TimerEvent: {}
+[31.030899] (-) TimerEvent: {}
+[31.131881] (-) TimerEvent: {}
+[31.232996] (-) TimerEvent: {}
+[31.238007] (urscript_interfaces) StdoutLine: {'line': b'[ 84%] \x1b[32m\x1b[1mLinking C shared library rosidl_generator_py/urscript_interfaces/liburscript_interfaces__python.so\x1b[0m\n'}
+[31.333659] (-) TimerEvent: {}
+[31.418736] (urscript_interfaces) StdoutLine: {'line': b'[ 84%] Built target urscript_interfaces__python\n'}
+[31.433840] (-) TimerEvent: {}
+[31.460252] (urscript_interfaces) StdoutLine: {'line': b'\x1b[35m\x1b[1mScanning dependencies of target urscript_interfaces__rosidl_typesupport_c__pyext\x1b[0m\n'}
+[31.531866] (urscript_interfaces) StdoutLine: {'line': b'[ 87%] \x1b[32mBuilding C object CMakeFiles/urscript_interfaces__rosidl_typesupport_c__pyext.dir/rosidl_generator_py/urscript_interfaces/_urscript_interfaces_s.ep.rosidl_typesupport_c.c.o\x1b[0m\n'}
+[31.533968] (-) TimerEvent: {}
+[31.639927] (-) TimerEvent: {}
+[31.740702] (-) TimerEvent: {}
+[31.841116] (-) TimerEvent: {}
+[31.941845] (-) TimerEvent: {}
+[31.981416] (urscript_interfaces) StdoutLine: {'line': b'[ 89%] \x1b[32m\x1b[1mLinking C shared library rosidl_generator_py/urscript_interfaces/urscript_interfaces_s__rosidl_typesupport_c.cpython-38-x86_64-linux-gnu.so\x1b[0m\n'}
+[32.042517] (-) TimerEvent: {}
+[32.144005] (-) TimerEvent: {}
+[32.154544] (urscript_interfaces) StdoutLine: {'line': b'[ 89%] Built target urscript_interfaces__rosidl_typesupport_c__pyext\n'}
+[32.205909] (urscript_interfaces) StdoutLine: {'line': b'\x1b[35m\x1b[1mScanning dependencies of target urscript_interfaces__rosidl_typesupport_fastrtps_c__pyext\x1b[0m\n'}
+[32.244157] (-) TimerEvent: {}
+[32.300728] (urscript_interfaces) StdoutLine: {'line': b'[ 92%] \x1b[32mBuilding C object CMakeFiles/urscript_interfaces__rosidl_typesupport_fastrtps_c__pyext.dir/rosidl_generator_py/urscript_interfaces/_urscript_interfaces_s.ep.rosidl_typesupport_fastrtps_c.c.o\x1b[0m\n'}
+[32.344440] (-) TimerEvent: {}
+[32.445050] (-) TimerEvent: {}
+[32.546065] (-) TimerEvent: {}
+[32.646627] (-) TimerEvent: {}
+[32.747245] (-) TimerEvent: {}
+[32.763624] (urscript_interfaces) StdoutLine: {'line': b'[ 94%] \x1b[32m\x1b[1mLinking CXX shared library rosidl_generator_py/urscript_interfaces/urscript_interfaces_s__rosidl_typesupport_fastrtps_c.cpython-38-x86_64-linux-gnu.so\x1b[0m\n'}
+[32.847895] (-) TimerEvent: {}
+[32.948984] (-) TimerEvent: {}
+[33.049694] (-) TimerEvent: {}
+[33.150373] (-) TimerEvent: {}
+[33.251269] (-) TimerEvent: {}
+[33.351800] (-) TimerEvent: {}
+[33.431910] (urscript_interfaces) StdoutLine: {'line': b'[ 94%] Built target urscript_interfaces__rosidl_typesupport_fastrtps_c__pyext\n'}
+[33.452424] (-) TimerEvent: {}
+[33.484357] (urscript_interfaces) StdoutLine: {'line': b'\x1b[35m\x1b[1mScanning dependencies of target urscript_interfaces__rosidl_typesupport_introspection_c__pyext\x1b[0m\n'}
+[33.552616] (-) TimerEvent: {}
+[33.564534] (urscript_interfaces) StdoutLine: {'line': b'[ 97%] \x1b[32mBuilding C object CMakeFiles/urscript_interfaces__rosidl_typesupport_introspection_c__pyext.dir/rosidl_generator_py/urscript_interfaces/_urscript_interfaces_s.ep.rosidl_typesupport_introspection_c.c.o\x1b[0m\n'}
+[33.652804] (-) TimerEvent: {}
+[33.753567] (-) TimerEvent: {}
+[33.854103] (-) TimerEvent: {}
+[33.954614] (-) TimerEvent: {}
+[34.047954] (urscript_interfaces) StdoutLine: {'line': b'[100%] \x1b[32m\x1b[1mLinking C shared library rosidl_generator_py/urscript_interfaces/urscript_interfaces_s__rosidl_typesupport_introspection_c.cpython-38-x86_64-linux-gnu.so\x1b[0m\n'}
+[34.054765] (-) TimerEvent: {}
+[34.155450] (-) TimerEvent: {}
+[34.230243] (urscript_interfaces) StdoutLine: {'line': b'[100%] Built target urscript_interfaces__rosidl_typesupport_introspection_c__pyext\n'}
+[34.256362] (-) TimerEvent: {}
+[34.276732] (urscript_interfaces) CommandEnded: {'returncode': 0}
+[34.356538] (-) TimerEvent: {}
+[34.458022] (-) TimerEvent: {}
+[34.559151] (-) TimerEvent: {}
+[34.616596] (urscript_interfaces) JobProgress: {'identifier': 'urscript_interfaces', 'progress': 'install'}
+[34.659710] (urscript_interfaces) Command: {'cmd': ['/usr/bin/cmake', '--install', '/home/ubuntu/workspace/Velizar/robotics_v1/build/urscript_interfaces'], 'cwd': '/home/ubuntu/workspace/Velizar/robotics_v1/build/urscript_interfaces', 'env': OrderedDict([('LESSOPEN', '| /usr/bin/lesspipe %s'), ('USER', 'ubuntu'), ('SSH_AGENT_PID', '2056'), ('XDG_SESSION_TYPE', 'x11'), ('SHLVL', '1'), ('LD_LIBRARY_PATH', '/home/ubuntu/workspace/Velizar/robotics_v1/install/urscript_interfaces/lib:/home/ubuntu/workspace/Velizar/robotics_v1/install/ur_robot_driver/lib:/home/ubuntu/workspace/Velizar/robotics_v1/install/ur_controllers/lib:/home/ubuntu/workspace/Velizar/robotics_v1/install/ur_dashboard_msgs/lib:/home/ubuntu/workspace/Velizar/robotics_v1/install/ur_client_library/lib:/home/ubuntu/workspace/Velizar/robotics_v1/install/robo_miner_interfaces/lib:/home/ubuntu/workspace/Velizar/robotics_v1/install/robo_collector_interfaces/lib:/home/ubuntu/workspace/Velizar/robotics_v1/install/robo_cleaner_interfaces/lib:/opt/ros/foxy/opt/yaml_cpp_vendor/lib:/opt/ros/foxy/opt/rviz_ogre_vendor/lib:/opt/ros/foxy/lib/x86_64-linux-gnu:/opt/ros/foxy/lib'), ('HOME', '/home/ubuntu'), ('DESKTOP_SESSION', 'ubuntu'), ('ROS_PYTHON_VERSION', '3'), ('GNOME_SHELL_SESSION_MODE', 'ubuntu'), ('GTK_MODULES', 'gail:atk-bridge'), ('PS1', '[\\u@\\h \\W]$(git_branch)$'), ('MANAGERPID', '1852'), ('DBUS_STARTER_BUS_TYPE', 'session'), ('DBUS_SESSION_BUS_ADDRESS', 'unix:path=/run/user/1000/bus,guid=9ee663c5beab7df805155993636c022a'), ('COLORTERM', 'truecolor'), ('IM_CONFIG_PHASE', '1'), ('COLCON_PREFIX_PATH', '/home/ubuntu/workspace/Velizar/robotics_v1/install'), ('ROS_DISTRO', 'foxy'), ('LOGNAME', 'ubuntu'), ('JOURNAL_STREAM', '8:34810'), ('_', '/usr/bin/colcon'), ('ROS_VERSION', '2'), ('PKG_CONFIG_PATH', '/home/ubuntu/workspace/Velizar/robotics_v1/install/ros2_game_engine/lib/x86_64-linux-gnu/pkgconfig:/home/ubuntu/workspace/Velizar/robotics_v1/install/ros2_game_engine/lib/pkgconfig:/home/ubuntu/workspace/Velizar/robotics_v1/install/robo_common/lib/x86_64-linux-gnu/pkgconfig:/home/ubuntu/workspace/Velizar/robotics_v1/install/robo_common/lib/pkgconfig:/home/ubuntu/workspace/Velizar/robotics_v1/install/game_engine/lib/x86_64-linux-gnu/pkgconfig:/home/ubuntu/workspace/Velizar/robotics_v1/install/game_engine/lib/pkgconfig:/home/ubuntu/workspace/Velizar/robotics_v1/install/manager_utils/lib/x86_64-linux-gnu/pkgconfig:/home/ubuntu/workspace/Velizar/robotics_v1/install/manager_utils/lib/pkgconfig:/home/ubuntu/workspace/Velizar/robotics_v1/install/sdl_utils/lib/x86_64-linux-gnu/pkgconfig:/home/ubuntu/workspace/Velizar/robotics_v1/install/sdl_utils/lib/pkgconfig:/home/ubuntu/workspace/Velizar/robotics_v1/install/resource_builder/lib/x86_64-linux-gnu/pkgconfig:/home/ubuntu/workspace/Velizar/robotics_v1/install/resource_builder/lib/pkgconfig:/home/ubuntu/workspace/Velizar/robotics_v1/install/resource_utils/lib/x86_64-linux-gnu/pkgconfig:/home/ubuntu/workspace/Velizar/robotics_v1/install/resource_utils/lib/pkgconfig:/home/ubuntu/workspace/Velizar/robotics_v1/install/utils/lib/x86_64-linux-gnu/pkgconfig:/home/ubuntu/workspace/Velizar/robotics_v1/install/utils/lib/pkgconfig:/home/ubuntu/workspace/Velizar/robotics_v1/install/ur_client_library/lib/x86_64-linux-gnu/pkgconfig:/home/ubuntu/workspace/Velizar/robotics_v1/install/ur_client_library/lib/pkgconfig:/home/ubuntu/workspace/Velizar/robotics_v1/install/cmake_helpers/lib/x86_64-linux-gnu/pkgconfig:/home/ubuntu/workspace/Velizar/robotics_v1/install/cmake_helpers/lib/pkgconfig'), ('XDG_SESSION_CLASS', 'user'), ('USERNAME', 'ubuntu'), ('TERM', 'xterm-256color'), ('GNOME_DESKTOP_SESSION_ID', 'this-is-deprecated'), ('ROS_LOCALHOST_ONLY', '0'), ('WINDOWPATH', '2'), ('PATH', '/home/ubuntu/workspace/Velizar/robotics_v1/install/resource_builder/bin:/home/ubuntu/workspace/Velizar/robotics_v1/install/ur_robot_driver/bin:/opt/ros/foxy/bin:/home/ubuntu/.local/bin:/usr/local/sbin:/usr/local/bin:/usr/sbin:/usr/bin:/sbin:/bin:/usr/games:/usr/local/games:/snap/bin'), ('SESSION_MANAGER', 'local/ubuntu2004:@/tmp/.ICE-unix/2094,unix/ubuntu2004:/tmp/.ICE-unix/2094'), ('INVOCATION_ID', 'db6af1d95cfb432587ee346525700d87'), ('XDG_MENU_PREFIX', 'gnome-'), ('GNOME_TERMINAL_SCREEN', '/org/gnome/Terminal/screen/d90872aa_9b12_477d_8c10_6395cac3f8e1'), ('XDG_RUNTIME_DIR', '/run/user/1000'), ('DISPLAY', ':0'), ('LANG', 'en_US.UTF-8'), ('XDG_CURRENT_DESKTOP', 'ubuntu:GNOME'), ('XMODIFIERS', '@im=ibus'), ('XDG_SESSION_DESKTOP', 'ubuntu'), ('XAUTHORITY', '/run/user/1000/gdm/Xauthority'), ('LS_COLORS', 'rs=0:di=01;34:ln=01;36:mh=00:pi=40;33:so=01;35:do=01;35:bd=40;33;01:cd=40;33;01:or=40;31;01:mi=00:su=37;41:sg=30;43:ca=30;41:tw=30;42:ow=34;42:st=37;44:ex=01;32:*.tar=01;31:*.tgz=01;31:*.arc=01;31:*.arj=01;31:*.taz=01;31:*.lha=01;31:*.lz4=01;31:*.lzh=01;31:*.lzma=01;31:*.tlz=01;31:*.txz=01;31:*.tzo=01;31:*.t7z=01;31:*.zip=01;31:*.z=01;31:*.dz=01;31:*.gz=01;31:*.lrz=01;31:*.lz=01;31:*.lzo=01;31:*.xz=01;31:*.zst=01;31:*.tzst=01;31:*.bz2=01;31:*.bz=01;31:*.tbz=01;31:*.tbz2=01;31:*.tz=01;31:*.deb=01;31:*.rpm=01;31:*.jar=01;31:*.war=01;31:*.ear=01;31:*.sar=01;31:*.rar=01;31:*.alz=01;31:*.ace=01;31:*.zoo=01;31:*.cpio=01;31:*.7z=01;31:*.rz=01;31:*.cab=01;31:*.wim=01;31:*.swm=01;31:*.dwm=01;31:*.esd=01;31:*.jpg=01;35:*.jpeg=01;35:*.mjpg=01;35:*.mjpeg=01;35:*.gif=01;35:*.bmp=01;35:*.pbm=01;35:*.pgm=01;35:*.ppm=01;35:*.tga=01;35:*.xbm=01;35:*.xpm=01;35:*.tif=01;35:*.tiff=01;35:*.png=01;35:*.svg=01;35:*.svgz=01;35:*.mng=01;35:*.pcx=01;35:*.mov=01;35:*.mpg=01;35:*.mpeg=01;35:*.m2v=01;35:*.mkv=01;35:*.webm=01;35:*.ogm=01;35:*.mp4=01;35:*.m4v=01;35:*.mp4v=01;35:*.vob=01;35:*.qt=01;35:*.nuv=01;35:*.wmv=01;35:*.asf=01;35:*.rm=01;35:*.rmvb=01;35:*.flc=01;35:*.avi=01;35:*.fli=01;35:*.flv=01;35:*.gl=01;35:*.dl=01;35:*.xcf=01;35:*.xwd=01;35:*.yuv=01;35:*.cgm=01;35:*.emf=01;35:*.ogv=01;35:*.ogx=01;35:*.aac=00;36:*.au=00;36:*.flac=00;36:*.m4a=00;36:*.mid=00;36:*.midi=00;36:*.mka=00;36:*.mp3=00;36:*.mpc=00;36:*.ogg=00;36:*.ra=00;36:*.wav=00;36:*.oga=00;36:*.opus=00;36:*.spx=00;36:*.xspf=00;36:'), ('GNOME_TERMINAL_SERVICE', ':1.87'), ('SSH_AUTH_SOCK', '/run/user/1000/keyring/ssh'), ('AMENT_PREFIX_PATH', '/home/ubuntu/workspace/Velizar/robotics_v1/install/urscript_bridge:/home/ubuntu/workspace/Velizar/robotics_v1/install/ur_control_gui:/home/ubuntu/workspace/Velizar/robotics_v1/install/urscript_common:/home/ubuntu/workspace/Velizar/robotics_v1/install/robo_miner_gui:/home/ubuntu/workspace/Velizar/robotics_v1/install/robo_collector_gui:/home/ubuntu/workspace/Velizar/robotics_v1/install/robo_collector_controller:/home/ubuntu/workspace/Velizar/robotics_v1/install/robo_cleaner_gui:/home/ubuntu/workspace/Velizar/robotics_v1/install/robo_miner_common:/home/ubuntu/workspace/Velizar/robotics_v1/install/robo_collector_common:/home/ubuntu/workspace/Velizar/robotics_v1/install/robo_cleaner_common:/home/ubuntu/workspace/Velizar/robotics_v1/install/robo_builder_py:/home/ubuntu/workspace/Velizar/robotics_v1/install/urscript_interfaces:/home/ubuntu/workspace/Velizar/robotics_v1/install/ur_robot_driver:/home/ubuntu/workspace/Velizar/robotics_v1/install/ur_moveit_config:/home/ubuntu/workspace/Velizar/robotics_v1/install/ur_description:/home/ubuntu/workspace/Velizar/robotics_v1/install/ur_controllers:/home/ubuntu/workspace/Velizar/robotics_v1/install/ur_dashboard_msgs:/home/ubuntu/workspace/Velizar/robotics_v1/install/ur_bringup:/home/ubuntu/workspace/Velizar/robotics_v1/install/robo_miner_ai_py:/home/ubuntu/workspace/Velizar/robotics_v1/install/robo_miner_interfaces:/home/ubuntu/workspace/Velizar/robotics_v1/install/robo_collector_controller_py:/home/ubuntu/workspace/Velizar/robotics_v1/install/robo_collector_interfaces:/home/ubuntu/workspace/Velizar/robotics_v1/install/robo_cleaner_ai_py:/home/ubuntu/workspace/Velizar/robotics_v1/install/robo_cleaner_interfaces:/opt/ros/foxy'), ('SHELL', '/bin/bash'), ('QT_ACCESSIBILITY', '1'), ('GDMSESSION', 'ubuntu'), ('LESSCLOSE', '/usr/bin/lesspipe %s %s'), ('GPG_AGENT_INFO', '/run/user/1000/gnupg/S.gpg-agent:0:1'), ('QT_IM_MODULE', 'ibus'), ('PWD', '/home/ubuntu/workspace/Velizar/robotics_v1/build/urscript_interfaces'), ('LC_ALL', 'en_US.UTF-8'), ('XDG_CONFIG_DIRS', '/etc/xdg/xdg-ubuntu:/etc/xdg'), ('DBUS_STARTER_ADDRESS', 'unix:path=/run/user/1000/bus,guid=9ee663c5beab7df805155993636c022a'), ('XDG_DATA_DIRS', '/usr/share/ubuntu:/usr/local/share/:/usr/share/:/var/lib/snapd/desktop'), ('PYTHONPATH', '/home/ubuntu/workspace/Velizar/robotics_v1/install/robo_builder_py/lib/python3.8/site-packages:/home/ubuntu/workspace/Velizar/robotics_v1/install/urscript_interfaces/lib/python3.8/site-packages:/home/ubuntu/workspace/Velizar/robotics_v1/install/ur_dashboard_msgs/lib/python3.8/site-packages:/home/ubuntu/workspace/Velizar/robotics_v1/install/robo_miner_ai_py/lib/python3.8/site-packages:/home/ubuntu/workspace/Velizar/robotics_v1/install/robo_miner_interfaces/lib/python3.8/site-packages:/home/ubuntu/workspace/Velizar/robotics_v1/install/robo_collector_controller_py/lib/python3.8/site-packages:/home/ubuntu/workspace/Velizar/robotics_v1/install/robo_collector_interfaces/lib/python3.8/site-packages:/home/ubuntu/workspace/Velizar/robotics_v1/install/robo_cleaner_ai_py/lib/python3.8/site-packages:/home/ubuntu/workspace/Velizar/robotics_v1/install/robo_cleaner_interfaces/lib/python3.8/site-packages:/opt/ros/foxy/lib/python3.8/site-packages'), ('COLCON', '1'), ('VTE_VERSION', '6003'), ('CMAKE_PREFIX_PATH', '/home/ubuntu/workspace/Velizar/robotics_v1/install/urscript_bridge:/home/ubuntu/workspace/Velizar/robotics_v1/install/ur_control_gui:/home/ubuntu/workspace/Velizar/robotics_v1/install/urscript_common:/home/ubuntu/workspace/Velizar/robotics_v1/install/robo_miner_gui:/home/ubuntu/workspace/Velizar/robotics_v1/install/robo_collector_gui:/home/ubuntu/workspace/Velizar/robotics_v1/install/robo_collector_controller:/home/ubuntu/workspace/Velizar/robotics_v1/install/robo_cleaner_gui:/home/ubuntu/workspace/Velizar/robotics_v1/install/ros2_game_engine:/home/ubuntu/workspace/Velizar/robotics_v1/install/robo_miner_common:/home/ubuntu/workspace/Velizar/robotics_v1/install/robo_collector_common:/home/ubuntu/workspace/Velizar/robotics_v1/install/robo_cleaner_common:/home/ubuntu/workspace/Velizar/robotics_v1/install/robo_common:/home/ubuntu/workspace/Velizar/robotics_v1/install/game_engine:/home/ubuntu/workspace/Velizar/robotics_v1/install/manager_utils:/home/ubuntu/workspace/Velizar/robotics_v1/install/sdl_utils:/home/ubuntu/workspace/Velizar/robotics_v1/install/resource_builder:/home/ubuntu/workspace/Velizar/robotics_v1/install/resource_utils:/home/ubuntu/workspace/Velizar/robotics_v1/install/utils:/home/ubuntu/workspace/Velizar/robotics_v1/install/urscript_interfaces:/home/ubuntu/workspace/Velizar/robotics_v1/install/ur_robot_driver:/home/ubuntu/workspace/Velizar/robotics_v1/install/ur_moveit_config:/home/ubuntu/workspace/Velizar/robotics_v1/install/ur_description:/home/ubuntu/workspace/Velizar/robotics_v1/install/ur_controllers:/home/ubuntu/workspace/Velizar/robotics_v1/install/ur_dashboard_msgs:/home/ubuntu/workspace/Velizar/robotics_v1/install/ur_client_library:/home/ubuntu/workspace/Velizar/robotics_v1/install/ur_bringup:/home/ubuntu/workspace/Velizar/robotics_v1/install/robo_miner_interfaces:/home/ubuntu/workspace/Velizar/robotics_v1/install/robo_collector_interfaces:/home/ubuntu/workspace/Velizar/robotics_v1/install/robo_cleaner_interfaces:/home/ubuntu/workspace/Velizar/robotics_v1/install/cmake_helpers:/home/ubuntu/workspace/Velizar/robotics_v1/install/robo_builder_py:/home/ubuntu/workspace/Velizar/robotics_v1/install/robo_miner_ai_py:/home/ubuntu/workspace/Velizar/robotics_v1/install/robo_collector_controller_py:/home/ubuntu/workspace/Velizar/robotics_v1/install/robo_cleaner_ai_py:/opt/ros/foxy')]), 'shell': False}
+[34.662686] (-) TimerEvent: {}
+[34.697539] (urscript_interfaces) StdoutLine: {'line': b'-- Install configuration: "Debug"\n'}
+[34.700350] (urscript_interfaces) StdoutLine: {'line': b'-- Execute custom install script\n'}
+[34.701875] (urscript_interfaces) StdoutLine: {'line': b'-- Up-to-date symlink: /home/ubuntu/workspace/Velizar/robotics_v1/install/urscript_interfaces/share/ament_index/resource_index/rosidl_interfaces/urscript_interfaces\n'}
+[34.709060] (urscript_interfaces) StdoutLine: {'line': b'-- Up-to-date symlink: /home/ubuntu/workspace/Velizar/robotics_v1/install/urscript_interfaces/include/urscript_interfaces/msg/rosidl_generator_c__visibility_control.h\n'}
+[34.709557] (urscript_interfaces) StdoutLine: {'line': b'-- Symlinking: /home/ubuntu/workspace/Velizar/robotics_v1/install/urscript_interfaces/include/urscript_interfaces/srv/detail/get_eef_angle_axis__functions.h\n'}
+[34.744001] (urscript_interfaces) StdoutLine: {'line': b'-- Symlinking: /home/ubuntu/workspace/Velizar/robotics_v1/install/urscript_interfaces/include/urscript_interfaces/srv/detail/get_eef_angle_axis__struct.h\n'}
+[34.762964] (-) TimerEvent: {}
+[34.779603] (urscript_interfaces) StdoutLine: {'line': b'-- Symlinking: /home/ubuntu/workspace/Velizar/robotics_v1/install/urscript_interfaces/include/urscript_interfaces/srv/detail/get_eef_angle_axis__type_support.h\n'}
+[34.818509] (urscript_interfaces) StdoutLine: {'line': b'-- Up-to-date symlink: /home/ubuntu/workspace/Velizar/robotics_v1/install/urscript_interfaces/include/urscript_interfaces/srv/detail/ur_script__functions.h\n'}
+[34.819540] (urscript_interfaces) StdoutLine: {'line': b'-- Up-to-date symlink: /home/ubuntu/workspace/Velizar/robotics_v1/install/urscript_interfaces/include/urscript_interfaces/srv/detail/ur_script__struct.h\n'}
+[34.820044] (urscript_interfaces) StdoutLine: {'line': b'-- Up-to-date symlink: /home/ubuntu/workspace/Velizar/robotics_v1/install/urscript_interfaces/include/urscript_interfaces/srv/detail/ur_script__type_support.h\n'}
+[34.820425] (urscript_interfaces) StdoutLine: {'line': b'-- Symlinking: /home/ubuntu/workspace/Velizar/robotics_v1/install/urscript_interfaces/include/urscript_interfaces/srv/get_eef_angle_axis.h\n'}
+[34.855184] (urscript_interfaces) StdoutLine: {'line': b'-- Up-to-date symlink: /home/ubuntu/workspace/Velizar/robotics_v1/install/urscript_interfaces/include/urscript_interfaces/srv/ur_script.h\n'}
+[34.858530] (urscript_interfaces) StdoutLine: {'line': b'-- Up-to-date symlink: /home/ubuntu/workspace/Velizar/robotics_v1/install/urscript_interfaces/share/urscript_interfaces/environment/library_path.sh\n'}
+[34.859356] (urscript_interfaces) StdoutLine: {'line': b'-- Up-to-date symlink: /home/ubuntu/workspace/Velizar/robotics_v1/install/urscript_interfaces/share/urscript_interfaces/environment/library_path.dsv\n'}
+[34.862663] (urscript_interfaces) StdoutLine: {'line': b'-- Up-to-date symlink: /home/ubuntu/workspace/Velizar/robotics_v1/install/urscript_interfaces/include/urscript_interfaces/msg/rosidl_typesupport_fastrtps_c__visibility_control.h\n'}
+[34.863132] (-) TimerEvent: {}
+[34.863340] (urscript_interfaces) StdoutLine: {'line': b'-- Symlinking: /home/ubuntu/workspace/Velizar/robotics_v1/install/urscript_interfaces/include/urscript_interfaces/srv/detail/get_eef_angle_axis__rosidl_typesupport_fastrtps_c.h\n'}
+[34.903887] (urscript_interfaces) StdoutLine: {'line': b'-- Up-to-date symlink: /home/ubuntu/workspace/Velizar/robotics_v1/install/urscript_interfaces/include/urscript_interfaces/srv/detail/ur_script__rosidl_typesupport_fastrtps_c.h\n'}
+[34.909285] (urscript_interfaces) StdoutLine: {'line': b'-- Up-to-date symlink: /home/ubuntu/workspace/Velizar/robotics_v1/install/urscript_interfaces/lib/liburscript_interfaces__rosidl_typesupport_fastrtps_c.so\n'}
+[34.914659] (urscript_interfaces) StdoutLine: {'line': b'-- Up-to-date symlink: /home/ubuntu/workspace/Velizar/robotics_v1/install/urscript_interfaces/include/urscript_interfaces/msg/rosidl_typesupport_fastrtps_cpp__visibility_control.h\n'}
+[34.915270] (urscript_interfaces) StdoutLine: {'line': b'-- Symlinking: /home/ubuntu/workspace/Velizar/robotics_v1/install/urscript_interfaces/include/urscript_interfaces/srv/detail/get_eef_angle_axis__rosidl_typesupport_fastrtps_cpp.hpp\n'}
+[34.957430] (urscript_interfaces) StdoutLine: {'line': b'-- Up-to-date symlink: /home/ubuntu/workspace/Velizar/robotics_v1/install/urscript_interfaces/include/urscript_interfaces/srv/detail/ur_script__rosidl_typesupport_fastrtps_cpp.hpp\n'}
+[34.957922] (urscript_interfaces) StdoutLine: {'line': b'-- Up-to-date symlink: /home/ubuntu/workspace/Velizar/robotics_v1/install/urscript_interfaces/lib/liburscript_interfaces__rosidl_typesupport_fastrtps_cpp.so\n'}
+[34.960325] (urscript_interfaces) StdoutLine: {'line': b'-- Up-to-date symlink: /home/ubuntu/workspace/Velizar/robotics_v1/install/urscript_interfaces/include/urscript_interfaces/msg/rosidl_typesupport_introspection_c__visibility_control.h\n'}
+[34.960770] (urscript_interfaces) StdoutLine: {'line': b'-- Symlinking: /home/ubuntu/workspace/Velizar/robotics_v1/install/urscript_interfaces/include/urscript_interfaces/srv/detail/get_eef_angle_axis__rosidl_typesupport_introspection_c.h\n'}
+[34.963628] (-) TimerEvent: {}
+[35.002391] (urscript_interfaces) StdoutLine: {'line': b'-- Up-to-date symlink: /home/ubuntu/workspace/Velizar/robotics_v1/install/urscript_interfaces/include/urscript_interfaces/srv/detail/ur_script__rosidl_typesupport_introspection_c.h\n'}
+[35.005113] (urscript_interfaces) StdoutLine: {'line': b'-- Symlinking: /home/ubuntu/workspace/Velizar/robotics_v1/install/urscript_interfaces/include/urscript_interfaces/srv/detail/get_eef_angle_axis__builder.hpp\n'}
+[35.045277] (urscript_interfaces) StdoutLine: {'line': b'-- Symlinking: /home/ubuntu/workspace/Velizar/robotics_v1/install/urscript_interfaces/include/urscript_interfaces/srv/detail/get_eef_angle_axis__struct.hpp\n'}
+[35.063615] (-) TimerEvent: {}
+[35.084939] (urscript_interfaces) StdoutLine: {'line': b'-- Symlinking: /home/ubuntu/workspace/Velizar/robotics_v1/install/urscript_interfaces/include/urscript_interfaces/srv/detail/get_eef_angle_axis__traits.hpp\n'}
+[35.130010] (urscript_interfaces) StdoutLine: {'line': b'-- Up-to-date symlink: /home/ubuntu/workspace/Velizar/robotics_v1/install/urscript_interfaces/include/urscript_interfaces/srv/detail/ur_script__builder.hpp\n'}
+[35.131073] (urscript_interfaces) StdoutLine: {'line': b'-- Up-to-date symlink: /home/ubuntu/workspace/Velizar/robotics_v1/install/urscript_interfaces/include/urscript_interfaces/srv/detail/ur_script__struct.hpp\n'}
+[35.132304] (urscript_interfaces) StdoutLine: {'line': b'-- Up-to-date symlink: /home/ubuntu/workspace/Velizar/robotics_v1/install/urscript_interfaces/include/urscript_interfaces/srv/detail/ur_script__traits.hpp\n'}
+[35.132699] (urscript_interfaces) StdoutLine: {'line': b'-- Symlinking: /home/ubuntu/workspace/Velizar/robotics_v1/install/urscript_interfaces/include/urscript_interfaces/srv/get_eef_angle_axis.hpp\n'}
+[35.163752] (-) TimerEvent: {}
+[35.173829] (urscript_interfaces) StdoutLine: {'line': b'-- Up-to-date symlink: /home/ubuntu/workspace/Velizar/robotics_v1/install/urscript_interfaces/include/urscript_interfaces/srv/ur_script.hpp\n'}
+[35.175037] (urscript_interfaces) StdoutLine: {'line': b'-- Symlinking: /home/ubuntu/workspace/Velizar/robotics_v1/install/urscript_interfaces/include/urscript_interfaces/srv/detail/get_eef_angle_axis__rosidl_typesupport_introspection_cpp.hpp\n'}
+[35.222875] (urscript_interfaces) StdoutLine: {'line': b'-- Up-to-date symlink: /home/ubuntu/workspace/Velizar/robotics_v1/install/urscript_interfaces/include/urscript_interfaces/srv/detail/ur_script__rosidl_typesupport_introspection_cpp.hpp\n'}
+[35.223833] (urscript_interfaces) StdoutLine: {'line': b'-- Up-to-date symlink: /home/ubuntu/workspace/Velizar/robotics_v1/install/urscript_interfaces/share/urscript_interfaces/environment/pythonpath.sh\n'}
+[35.225012] (urscript_interfaces) StdoutLine: {'line': b'-- Up-to-date symlink: /home/ubuntu/workspace/Velizar/robotics_v1/install/urscript_interfaces/share/urscript_interfaces/environment/pythonpath.dsv\n'}
+[35.226027] (urscript_interfaces) StdoutLine: {'line': b'-- Up-to-date symlink: /home/ubuntu/workspace/Velizar/robotics_v1/install/urscript_interfaces/lib/python3.8/site-packages/urscript_interfaces/__init__.py\n'}
+[35.227816] (urscript_interfaces) StdoutLine: {'line': b'-- Up-to-date symlink: /home/ubuntu/workspace/Velizar/robotics_v1/install/urscript_interfaces/lib/python3.8/site-packages/urscript_interfaces/srv/__init__.py\n'}
+[35.228195] (urscript_interfaces) StdoutLine: {'line': b'-- Symlinking: /home/ubuntu/workspace/Velizar/robotics_v1/install/urscript_interfaces/lib/python3.8/site-packages/urscript_interfaces/srv/_get_eef_angle_axis.py\n'}
+[35.263865] (-) TimerEvent: {}
+[35.268722] (urscript_interfaces) StdoutLine: {'line': b'-- Up-to-date symlink: /home/ubuntu/workspace/Velizar/robotics_v1/install/urscript_interfaces/lib/python3.8/site-packages/urscript_interfaces/srv/_ur_script.py\n'}
+[35.270680] (urscript_interfaces) StdoutLine: {'line': b'-- Up-to-date symlink: /home/ubuntu/workspace/Velizar/robotics_v1/install/urscript_interfaces/lib/python3.8/site-packages/urscript_interfaces/urscript_interfaces_s__rosidl_typesupport_fastrtps_c.cpython-38-x86_64-linux-gnu.so\n'}
+[35.271980] (urscript_interfaces) StdoutLine: {'line': b'-- Up-to-date symlink: /home/ubuntu/workspace/Velizar/robotics_v1/install/urscript_interfaces/lib/python3.8/site-packages/urscript_interfaces/urscript_interfaces_s__rosidl_typesupport_introspection_c.cpython-38-x86_64-linux-gnu.so\n'}
+[35.274351] (urscript_interfaces) StdoutLine: {'line': b'-- Up-to-date symlink: /home/ubuntu/workspace/Velizar/robotics_v1/install/urscript_interfaces/lib/python3.8/site-packages/urscript_interfaces/urscript_interfaces_s__rosidl_typesupport_c.cpython-38-x86_64-linux-gnu.so\n'}
+[35.275323] (urscript_interfaces) StdoutLine: {'line': b'-- Up-to-date symlink: /home/ubuntu/workspace/Velizar/robotics_v1/install/urscript_interfaces/lib/liburscript_interfaces__python.so\n'}
+[35.277309] (urscript_interfaces) StdoutLine: {'line': b'-- Up-to-date symlink: /home/ubuntu/workspace/Velizar/robotics_v1/install/urscript_interfaces/share/urscript_interfaces/srv/UrScript.idl\n'}
+[35.278651] (urscript_interfaces) StdoutLine: {'line': b'-- Symlinking: /home/ubuntu/workspace/Velizar/robotics_v1/install/urscript_interfaces/share/urscript_interfaces/srv/GetEefAngleAxis.idl\n'}
+[35.329100] (urscript_interfaces) StdoutLine: {'line': b'-- Up-to-date symlink: /home/ubuntu/workspace/Velizar/robotics_v1/install/urscript_interfaces/share/urscript_interfaces/srv/UrScript.srv\n'}
+[35.330058] (urscript_interfaces) StdoutLine: {'line': b'-- Up-to-date symlink: /home/ubuntu/workspace/Velizar/robotics_v1/install/urscript_interfaces/share/urscript_interfaces/srv/UrScript_Request.msg\n'}
+[35.331842] (urscript_interfaces) StdoutLine: {'line': b'-- Up-to-date symlink: /home/ubuntu/workspace/Velizar/robotics_v1/install/urscript_interfaces/share/urscript_interfaces/srv/UrScript_Response.msg\n'}
+[35.332981] (urscript_interfaces) StdoutLine: {'line': b'-- Symlinking: /home/ubuntu/workspace/Velizar/robotics_v1/install/urscript_interfaces/share/urscript_interfaces/srv/GetEefAngleAxis.srv\n'}
+[35.364191] (-) TimerEvent: {}
+[35.373813] (urscript_interfaces) StdoutLine: {'line': b'-- Symlinking: /home/ubuntu/workspace/Velizar/robotics_v1/install/urscript_interfaces/share/urscript_interfaces/srv/GetEefAngleAxis_Request.msg\n'}
+[35.423323] (urscript_interfaces) StdoutLine: {'line': b'-- Symlinking: /home/ubuntu/workspace/Velizar/robotics_v1/install/urscript_interfaces/share/urscript_interfaces/srv/GetEefAngleAxis_Response.msg\n'}
+[35.462596] (urscript_interfaces) StdoutLine: {'line': b'-- Up-to-date symlink: /home/ubuntu/workspace/Velizar/robotics_v1/install/urscript_interfaces/share/ament_index/resource_index/package_run_dependencies/urscript_interfaces\n'}
+[35.464631] (urscript_interfaces) StdoutLine: {'line': b'-- Up-to-date symlink: /home/ubuntu/workspace/Velizar/robotics_v1/install/urscript_interfaces/share/ament_index/resource_index/parent_prefix_path/urscript_interfaces\n'}
+[35.464904] (-) TimerEvent: {}
+[35.466525] (urscript_interfaces) StdoutLine: {'line': b'-- Up-to-date symlink: /home/ubuntu/workspace/Velizar/robotics_v1/install/urscript_interfaces/share/urscript_interfaces/environment/ament_prefix_path.sh\n'}
+[35.467159] (urscript_interfaces) StdoutLine: {'line': b'-- Up-to-date symlink: /home/ubuntu/workspace/Velizar/robotics_v1/install/urscript_interfaces/share/urscript_interfaces/environment/ament_prefix_path.dsv\n'}
+[35.469497] (urscript_interfaces) StdoutLine: {'line': b'-- Up-to-date symlink: /home/ubuntu/workspace/Velizar/robotics_v1/install/urscript_interfaces/share/urscript_interfaces/environment/path.sh\n'}
+[35.470844] (urscript_interfaces) StdoutLine: {'line': b'-- Up-to-date symlink: /home/ubuntu/workspace/Velizar/robotics_v1/install/urscript_interfaces/share/urscript_interfaces/environment/path.dsv\n'}
+[35.471985] (urscript_interfaces) StdoutLine: {'line': b'-- Up-to-date symlink: /home/ubuntu/workspace/Velizar/robotics_v1/install/urscript_interfaces/share/urscript_interfaces/local_setup.bash\n'}
+[35.473668] (urscript_interfaces) StdoutLine: {'line': b'-- Up-to-date symlink: /home/ubuntu/workspace/Velizar/robotics_v1/install/urscript_interfaces/share/urscript_interfaces/local_setup.sh\n'}
+[35.474929] (urscript_interfaces) StdoutLine: {'line': b'-- Up-to-date symlink: /home/ubuntu/workspace/Velizar/robotics_v1/install/urscript_interfaces/share/urscript_interfaces/local_setup.zsh\n'}
+[35.475952] (urscript_interfaces) StdoutLine: {'line': b'-- Up-to-date symlink: /home/ubuntu/workspace/Velizar/robotics_v1/install/urscript_interfaces/share/urscript_interfaces/local_setup.dsv\n'}
+[35.477022] (urscript_interfaces) StdoutLine: {'line': b'-- Symlinking: /home/ubuntu/workspace/Velizar/robotics_v1/install/urscript_interfaces/share/urscript_interfaces/package.dsv\n'}
+[35.525217] (urscript_interfaces) StdoutLine: {'line': b'-- Up-to-date symlink: /home/ubuntu/workspace/Velizar/robotics_v1/install/urscript_interfaces/share/ament_index/resource_index/packages/urscript_interfaces\n'}
+[35.526876] (urscript_interfaces) StdoutLine: {'line': b'-- Up-to-date symlink: /home/ubuntu/workspace/Velizar/robotics_v1/install/urscript_interfaces/share/urscript_interfaces/cmake/rosidl_cmake-extras.cmake\n'}
+[35.528103] (urscript_interfaces) StdoutLine: {'line': b'-- Up-to-date symlink: /home/ubuntu/workspace/Velizar/robotics_v1/install/urscript_interfaces/share/urscript_interfaces/cmake/ament_cmake_export_dependencies-extras.cmake\n'}
+[35.529461] (urscript_interfaces) StdoutLine: {'line': b'-- Up-to-date symlink: /home/ubuntu/workspace/Velizar/robotics_v1/install/urscript_interfaces/share/urscript_interfaces/cmake/ament_cmake_export_libraries-extras.cmake\n'}
+[35.531095] (urscript_interfaces) StdoutLine: {'line': b'-- Up-to-date symlink: /home/ubuntu/workspace/Velizar/robotics_v1/install/urscript_interfaces/share/urscript_interfaces/cmake/ament_cmake_export_targets-extras.cmake\n'}
+[35.532605] (urscript_interfaces) StdoutLine: {'line': b'-- Up-to-date symlink: /home/ubuntu/workspace/Velizar/robotics_v1/install/urscript_interfaces/share/urscript_interfaces/cmake/ament_cmake_export_include_directories-extras.cmake\n'}
+[35.534347] (urscript_interfaces) StdoutLine: {'line': b'-- Up-to-date symlink: /home/ubuntu/workspace/Velizar/robotics_v1/install/urscript_interfaces/share/urscript_interfaces/cmake/rosidl_cmake_export_typesupport_libraries-extras.cmake\n'}
+[35.535769] (urscript_interfaces) StdoutLine: {'line': b'-- Up-to-date symlink: /home/ubuntu/workspace/Velizar/robotics_v1/install/urscript_interfaces/share/urscript_interfaces/cmake/rosidl_cmake_export_typesupport_targets-extras.cmake\n'}
+[35.537486] (urscript_interfaces) StdoutLine: {'line': b'-- Up-to-date symlink: /home/ubuntu/workspace/Velizar/robotics_v1/install/urscript_interfaces/share/urscript_interfaces/cmake/urscript_interfacesConfig.cmake\n'}
+[35.539087] (urscript_interfaces) StdoutLine: {'line': b'-- Up-to-date symlink: /home/ubuntu/workspace/Velizar/robotics_v1/install/urscript_interfaces/share/urscript_interfaces/cmake/urscript_interfacesConfig-version.cmake\n'}
+[35.543018] (urscript_interfaces) StdoutLine: {'line': b'-- Up-to-date symlink: /home/ubuntu/workspace/Velizar/robotics_v1/install/urscript_interfaces/share/urscript_interfaces/package.xml\n'}
+[35.544875] (urscript_interfaces) StdoutLine: {'line': b'-- Installing: /home/ubuntu/workspace/Velizar/robotics_v1/install/urscript_interfaces/lib/liburscript_interfaces__rosidl_generator_c.so\n'}
+[35.546240] (urscript_interfaces) StdoutLine: {'line': b'-- Set runtime path of "/home/ubuntu/workspace/Velizar/robotics_v1/install/urscript_interfaces/lib/liburscript_interfaces__rosidl_generator_c.so" to ""\n'}
+[35.547917] (urscript_interfaces) StdoutLine: {'line': b'-- Installing: /home/ubuntu/workspace/Velizar/robotics_v1/install/urscript_interfaces/lib/liburscript_interfaces__rosidl_typesupport_introspection_c.so\n'}
+[35.549194] (urscript_interfaces) StdoutLine: {'line': b'-- Set runtime path of "/home/ubuntu/workspace/Velizar/robotics_v1/install/urscript_interfaces/lib/liburscript_interfaces__rosidl_typesupport_introspection_c.so" to ""\n'}
+[35.551006] (urscript_interfaces) StdoutLine: {'line': b'-- Installing: /home/ubuntu/workspace/Velizar/robotics_v1/install/urscript_interfaces/lib/liburscript_interfaces__rosidl_typesupport_c.so\n'}
+[35.552050] (urscript_interfaces) StdoutLine: {'line': b'-- Set runtime path of "/home/ubuntu/workspace/Velizar/robotics_v1/install/urscript_interfaces/lib/liburscript_interfaces__rosidl_typesupport_c.so" to ""\n'}
+[35.553545] (urscript_interfaces) StdoutLine: {'line': b'-- Installing: /home/ubuntu/workspace/Velizar/robotics_v1/install/urscript_interfaces/lib/liburscript_interfaces__rosidl_typesupport_introspection_cpp.so\n'}
+[35.555205] (urscript_interfaces) StdoutLine: {'line': b'-- Set runtime path of "/home/ubuntu/workspace/Velizar/robotics_v1/install/urscript_interfaces/lib/liburscript_interfaces__rosidl_typesupport_introspection_cpp.so" to ""\n'}
+[35.557344] (urscript_interfaces) StdoutLine: {'line': b'-- Installing: /home/ubuntu/workspace/Velizar/robotics_v1/install/urscript_interfaces/lib/liburscript_interfaces__rosidl_typesupport_cpp.so\n'}
+[35.559253] (urscript_interfaces) StdoutLine: {'line': b'-- Set runtime path of "/home/ubuntu/workspace/Velizar/robotics_v1/install/urscript_interfaces/lib/liburscript_interfaces__rosidl_typesupport_cpp.so" to ""\n'}
+[35.565652] (-) TimerEvent: {}
+[35.666103] (-) TimerEvent: {}
+[35.688353] (urscript_interfaces) StdoutLine: {'line': b"Compiling '/home/ubuntu/workspace/Velizar/robotics_v1/install/urscript_interfaces/lib/python3.8/site-packages/urscript_interfaces/__init__.py'...\n"}
+[35.706784] (urscript_interfaces) StdoutLine: {'line': b'-- Old export file "/home/ubuntu/workspace/Velizar/robotics_v1/install/urscript_interfaces/share/urscript_interfaces/cmake/urscript_interfaces__rosidl_generator_cExport.cmake" will be replaced.  Removing files [/home/ubuntu/workspace/Velizar/robotics_v1/install/urscript_interfaces/share/urscript_interfaces/cmake/urscript_interfaces__rosidl_generator_cExport-debug.cmake].\n'}
+[35.708115] (urscript_interfaces) StdoutLine: {'line': b'-- Installing: /home/ubuntu/workspace/Velizar/robotics_v1/install/urscript_interfaces/share/urscript_interfaces/cmake/urscript_interfaces__rosidl_generator_cExport.cmake\n'}
+[35.708839] (urscript_interfaces) StdoutLine: {'line': b'-- Installing: /home/ubuntu/workspace/Velizar/robotics_v1/install/urscript_interfaces/share/urscript_interfaces/cmake/urscript_interfaces__rosidl_generator_cExport-debug.cmake\n'}
+[35.710143] (urscript_interfaces) StdoutLine: {'line': b'-- Old export file "/home/ubuntu/workspace/Velizar/robotics_v1/install/urscript_interfaces/share/urscript_interfaces/cmake/urscript_interfaces__rosidl_typesupport_introspection_cExport.cmake" will be replaced.  Removing files [/home/ubuntu/workspace/Velizar/robotics_v1/install/urscript_interfaces/share/urscript_interfaces/cmake/urscript_interfaces__rosidl_typesupport_introspection_cExport-debug.cmake].\n'}
+[35.710562] (urscript_interfaces) StdoutLine: {'line': b'-- Installing: /home/ubuntu/workspace/Velizar/robotics_v1/install/urscript_interfaces/share/urscript_interfaces/cmake/urscript_interfaces__rosidl_typesupport_introspection_cExport.cmake\n'}
+[35.710887] (urscript_interfaces) StdoutLine: {'line': b'-- Installing: /home/ubuntu/workspace/Velizar/robotics_v1/install/urscript_interfaces/share/urscript_interfaces/cmake/urscript_interfaces__rosidl_typesupport_introspection_cExport-debug.cmake\n'}
+[35.712117] (urscript_interfaces) StdoutLine: {'line': b'-- Old export file "/home/ubuntu/workspace/Velizar/robotics_v1/install/urscript_interfaces/share/urscript_interfaces/cmake/urscript_interfaces__rosidl_typesupport_cExport.cmake" will be replaced.  Removing files [/home/ubuntu/workspace/Velizar/robotics_v1/install/urscript_interfaces/share/urscript_interfaces/cmake/urscript_interfaces__rosidl_typesupport_cExport-debug.cmake].\n'}
+[35.712499] (urscript_interfaces) StdoutLine: {'line': b'-- Installing: /home/ubuntu/workspace/Velizar/robotics_v1/install/urscript_interfaces/share/urscript_interfaces/cmake/urscript_interfaces__rosidl_typesupport_cExport.cmake\n'}
+[35.712840] (urscript_interfaces) StdoutLine: {'line': b'-- Installing: /home/ubuntu/workspace/Velizar/robotics_v1/install/urscript_interfaces/share/urscript_interfaces/cmake/urscript_interfaces__rosidl_typesupport_cExport-debug.cmake\n'}
+[35.714204] (urscript_interfaces) StdoutLine: {'line': b'-- Installing: /home/ubuntu/workspace/Velizar/robotics_v1/install/urscript_interfaces/share/urscript_interfaces/cmake/urscript_interfaces__rosidl_generator_cppExport.cmake\n'}
+[35.715139] (urscript_interfaces) StdoutLine: {'line': b'-- Old export file "/home/ubuntu/workspace/Velizar/robotics_v1/install/urscript_interfaces/share/urscript_interfaces/cmake/urscript_interfaces__rosidl_typesupport_introspection_cppExport.cmake" will be replaced.  Removing files [/home/ubuntu/workspace/Velizar/robotics_v1/install/urscript_interfaces/share/urscript_interfaces/cmake/urscript_interfaces__rosidl_typesupport_introspection_cppExport-debug.cmake].\n'}
+[35.715541] (urscript_interfaces) StdoutLine: {'line': b'-- Installing: /home/ubuntu/workspace/Velizar/robotics_v1/install/urscript_interfaces/share/urscript_interfaces/cmake/urscript_interfaces__rosidl_typesupport_introspection_cppExport.cmake\n'}
+[35.715847] (urscript_interfaces) StdoutLine: {'line': b'-- Installing: /home/ubuntu/workspace/Velizar/robotics_v1/install/urscript_interfaces/share/urscript_interfaces/cmake/urscript_interfaces__rosidl_typesupport_introspection_cppExport-debug.cmake\n'}
+[35.717104] (urscript_interfaces) StdoutLine: {'line': b'-- Old export file "/home/ubuntu/workspace/Velizar/robotics_v1/install/urscript_interfaces/share/urscript_interfaces/cmake/urscript_interfaces__rosidl_typesupport_cppExport.cmake" will be replaced.  Removing files [/home/ubuntu/workspace/Velizar/robotics_v1/install/urscript_interfaces/share/urscript_interfaces/cmake/urscript_interfaces__rosidl_typesupport_cppExport-debug.cmake].\n'}
+[35.717405] (urscript_interfaces) StdoutLine: {'line': b'-- Installing: /home/ubuntu/workspace/Velizar/robotics_v1/install/urscript_interfaces/share/urscript_interfaces/cmake/urscript_interfaces__rosidl_typesupport_cppExport.cmake\n'}
+[35.717781] (urscript_interfaces) StdoutLine: {'line': b'-- Installing: /home/ubuntu/workspace/Velizar/robotics_v1/install/urscript_interfaces/share/urscript_interfaces/cmake/urscript_interfaces__rosidl_typesupport_cppExport-debug.cmake\n'}
+[35.728987] (urscript_interfaces) CommandEnded: {'returncode': 0}
+[35.771371] (-) TimerEvent: {}
+[35.872072] (-) TimerEvent: {}
+[35.972823] (-) TimerEvent: {}
+[36.073630] (-) TimerEvent: {}
+[36.180140] (-) TimerEvent: {}
+[36.237532] (urscript_interfaces) JobEnded: {'identifier': 'urscript_interfaces', 'rc': 0}
+[36.239279] (-) EventReactorShutdown: {}

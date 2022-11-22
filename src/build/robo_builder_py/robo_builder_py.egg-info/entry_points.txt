@@ -1,0 +1,3 @@
+[console_scripts]
+robo_builder = robo_builder_py.robo_builder:main
+

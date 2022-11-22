@@ -370,6 +370,9 @@ include("/home/ubuntu/workspace/Velizar/robotics_v1/build/urscript_interfaces/am
 # install(FILES "/home/ubuntu/workspace/Velizar/robotics_v1/build/urscript_interfaces/rosidl_adapter/urscript_interfaces/srv/UrScript.idl" "DESTINATION" "share/urscript_interfaces/srv")
 ament_cmake_symlink_install_files("/home/ubuntu/workspace/Velizar/robotics_v1/src/ur_dev/urscript/urscript_interfaces" FILES "/home/ubuntu/workspace/Velizar/robotics_v1/build/urscript_interfaces/rosidl_adapter/urscript_interfaces/srv/UrScript.idl" "DESTINATION" "share/urscript_interfaces/srv")
 
+# install(FILES "/home/ubuntu/workspace/Velizar/robotics_v1/build/urscript_interfaces/rosidl_adapter/urscript_interfaces/srv/GetEefAngleAxis.idl" "DESTINATION" "share/urscript_interfaces/srv")
+ament_cmake_symlink_install_files("/home/ubuntu/workspace/Velizar/robotics_v1/src/ur_dev/urscript/urscript_interfaces" FILES "/home/ubuntu/workspace/Velizar/robotics_v1/build/urscript_interfaces/rosidl_adapter/urscript_interfaces/srv/GetEefAngleAxis.idl" "DESTINATION" "share/urscript_interfaces/srv")
+
 # install(FILES "/home/ubuntu/workspace/Velizar/robotics_v1/src/ur_dev/urscript/urscript_interfaces/srv/UrScript.srv" "DESTINATION" "share/urscript_interfaces/srv")
 ament_cmake_symlink_install_files("/home/ubuntu/workspace/Velizar/robotics_v1/src/ur_dev/urscript/urscript_interfaces" FILES "/home/ubuntu/workspace/Velizar/robotics_v1/src/ur_dev/urscript/urscript_interfaces/srv/UrScript.srv" "DESTINATION" "share/urscript_interfaces/srv")
 
@@ -378,6 +381,15 @@ ament_cmake_symlink_install_files("/home/ubuntu/workspace/Velizar/robotics_v1/sr
 
 # install(FILES "/home/ubuntu/workspace/Velizar/robotics_v1/build/urscript_interfaces/rosidl_cmake/srv/UrScript_Response.msg" "DESTINATION" "share/urscript_interfaces/srv")
 ament_cmake_symlink_install_files("/home/ubuntu/workspace/Velizar/robotics_v1/src/ur_dev/urscript/urscript_interfaces" FILES "/home/ubuntu/workspace/Velizar/robotics_v1/build/urscript_interfaces/rosidl_cmake/srv/UrScript_Response.msg" "DESTINATION" "share/urscript_interfaces/srv")
+
+# install(FILES "/home/ubuntu/workspace/Velizar/robotics_v1/src/ur_dev/urscript/urscript_interfaces/srv/GetEefAngleAxis.srv" "DESTINATION" "share/urscript_interfaces/srv")
+ament_cmake_symlink_install_files("/home/ubuntu/workspace/Velizar/robotics_v1/src/ur_dev/urscript/urscript_interfaces" FILES "/home/ubuntu/workspace/Velizar/robotics_v1/src/ur_dev/urscript/urscript_interfaces/srv/GetEefAngleAxis.srv" "DESTINATION" "share/urscript_interfaces/srv")
+
+# install(FILES "/home/ubuntu/workspace/Velizar/robotics_v1/build/urscript_interfaces/rosidl_cmake/srv/GetEefAngleAxis_Request.msg" "DESTINATION" "share/urscript_interfaces/srv")
+ament_cmake_symlink_install_files("/home/ubuntu/workspace/Velizar/robotics_v1/src/ur_dev/urscript/urscript_interfaces" FILES "/home/ubuntu/workspace/Velizar/robotics_v1/build/urscript_interfaces/rosidl_cmake/srv/GetEefAngleAxis_Request.msg" "DESTINATION" "share/urscript_interfaces/srv")
+
+# install(FILES "/home/ubuntu/workspace/Velizar/robotics_v1/build/urscript_interfaces/rosidl_cmake/srv/GetEefAngleAxis_Response.msg" "DESTINATION" "share/urscript_interfaces/srv")
+ament_cmake_symlink_install_files("/home/ubuntu/workspace/Velizar/robotics_v1/src/ur_dev/urscript/urscript_interfaces" FILES "/home/ubuntu/workspace/Velizar/robotics_v1/build/urscript_interfaces/rosidl_cmake/srv/GetEefAngleAxis_Response.msg" "DESTINATION" "share/urscript_interfaces/srv")
 
 # install(FILES "/home/ubuntu/workspace/Velizar/robotics_v1/build/urscript_interfaces/ament_cmake_index/share/ament_index/resource_index/package_run_dependencies/urscript_interfaces" "DESTINATION" "share/ament_index/resource_index/package_run_dependencies")
 ament_cmake_symlink_install_files("/home/ubuntu/workspace/Velizar/robotics_v1/src/ur_dev/urscript/urscript_interfaces" FILES "/home/ubuntu/workspace/Velizar/robotics_v1/build/urscript_interfaces/ament_cmake_index/share/ament_index/resource_index/package_run_dependencies/urscript_interfaces" "DESTINATION" "share/ament_index/resource_index/package_run_dependencies")

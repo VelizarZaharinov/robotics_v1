@@ -3,6 +3,7 @@
 
 CMakeFiles/urscript_interfaces__rosidl_typesupport_c__pyext.dir/rosidl_generator_py/urscript_interfaces/_urscript_interfaces_s.ep.rosidl_typesupport_c.c.o
  /home/ubuntu/workspace/Velizar/robotics_v1/build/urscript_interfaces/rosidl_generator_py/urscript_interfaces/_urscript_interfaces_s.ep.rosidl_typesupport_c.c
+ /opt/ros/foxy/include/geometry_msgs/msg/detail/vector3__struct.h
  /opt/ros/foxy/include/rosidl_runtime_c/action_type_support_struct.h
  /opt/ros/foxy/include/rosidl_runtime_c/message_type_support_struct.h
  /opt/ros/foxy/include/rosidl_runtime_c/primitives_sequence.h
@@ -98,6 +99,9 @@ CMakeFiles/urscript_interfaces__rosidl_typesupport_c__pyext.dir/rosidl_generator
  /usr/include/python3.8/warnings.h
  /usr/include/python3.8/weakrefobject.h
  rosidl_generator_c/urscript_interfaces/msg/rosidl_generator_c__visibility_control.h
+ rosidl_generator_c/urscript_interfaces/srv/detail/get_eef_angle_axis__functions.h
+ rosidl_generator_c/urscript_interfaces/srv/detail/get_eef_angle_axis__struct.h
+ rosidl_generator_c/urscript_interfaces/srv/detail/get_eef_angle_axis__type_support.h
  rosidl_generator_c/urscript_interfaces/srv/detail/ur_script__functions.h
  rosidl_generator_c/urscript_interfaces/srv/detail/ur_script__struct.h
  rosidl_generator_c/urscript_interfaces/srv/detail/ur_script__type_support.h

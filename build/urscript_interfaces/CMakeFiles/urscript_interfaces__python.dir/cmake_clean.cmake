@@ -1,4 +1,5 @@
 file(REMOVE_RECURSE
+  "CMakeFiles/urscript_interfaces__python.dir/rosidl_generator_py/urscript_interfaces/srv/_get_eef_angle_axis_s.c.o"
   "CMakeFiles/urscript_interfaces__python.dir/rosidl_generator_py/urscript_interfaces/srv/_ur_script_s.c.o"
   "rosidl_generator_py/urscript_interfaces/liburscript_interfaces__python.pdb"
   "rosidl_generator_py/urscript_interfaces/liburscript_interfaces__python.so"

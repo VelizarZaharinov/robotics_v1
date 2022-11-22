@@ -3,6 +3,8 @@ file(REMOVE_RECURSE
   "../rosidl_generator_py/urscript_interfaces/_urscript_interfaces_s.ep.rosidl_typesupport_fastrtps_c.c"
   "../rosidl_generator_py/urscript_interfaces/_urscript_interfaces_s.ep.rosidl_typesupport_introspection_c.c"
   "../rosidl_generator_py/urscript_interfaces/srv/__init__.py"
+  "../rosidl_generator_py/urscript_interfaces/srv/_get_eef_angle_axis.py"
+  "../rosidl_generator_py/urscript_interfaces/srv/_get_eef_angle_axis_s.c"
   "../rosidl_generator_py/urscript_interfaces/srv/_ur_script.py"
   "../rosidl_generator_py/urscript_interfaces/srv/_ur_script_s.c"
   "CMakeFiles/urscript_interfaces__py"

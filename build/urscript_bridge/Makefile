@@ -368,6 +368,33 @@ src/utils/TcpClient.cpp.s:
 	$(MAKE) -f CMakeFiles/urscript_bridge.dir/build.make CMakeFiles/urscript_bridge.dir/src/utils/TcpClient.cpp.s
 .PHONY : src/utils/TcpClient.cpp.s
 
+src/utils/Tf2Utils.o: src/utils/Tf2Utils.cpp.o
+
+.PHONY : src/utils/Tf2Utils.o
+
+# target to build an object file
+src/utils/Tf2Utils.cpp.o:
+	$(MAKE) -f CMakeFiles/urscript_bridge.dir/build.make CMakeFiles/urscript_bridge.dir/src/utils/Tf2Utils.cpp.o
+.PHONY : src/utils/Tf2Utils.cpp.o
+
+src/utils/Tf2Utils.i: src/utils/Tf2Utils.cpp.i
+
+.PHONY : src/utils/Tf2Utils.i
+
+# target to preprocess a source file
+src/utils/Tf2Utils.cpp.i:
+	$(MAKE) -f CMakeFiles/urscript_bridge.dir/build.make CMakeFiles/urscript_bridge.dir/src/utils/Tf2Utils.cpp.i
+.PHONY : src/utils/Tf2Utils.cpp.i
+
+src/utils/Tf2Utils.s: src/utils/Tf2Utils.cpp.s
+
+.PHONY : src/utils/Tf2Utils.s
+
+# target to generate assembly for a file
+src/utils/Tf2Utils.cpp.s:
+	$(MAKE) -f CMakeFiles/urscript_bridge.dir/build.make CMakeFiles/urscript_bridge.dir/src/utils/Tf2Utils.cpp.s
+.PHONY : src/utils/Tf2Utils.cpp.s
+
 # Help Target
 help:
 	@echo "The following are some of the valid targets for this Makefile:"
@@ -402,6 +429,9 @@ help:
 	@echo "... src/utils/TcpClient.o"
 	@echo "... src/utils/TcpClient.i"
 	@echo "... src/utils/TcpClient.s"
+	@echo "... src/utils/Tf2Utils.o"
+	@echo "... src/utils/Tf2Utils.i"
+	@echo "... src/utils/Tf2Utils.s"
 .PHONY : help
 
 

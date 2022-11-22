@@ -1,3 +1,7 @@
+srv/GetEefAngleAxis.idl
+srv/GetEefAngleAxis.srv
+srv/GetEefAngleAxis_Request.msg
+srv/GetEefAngleAxis_Response.msg
 srv/UrScript.idl
 srv/UrScript.srv
 srv/UrScript_Request.msg

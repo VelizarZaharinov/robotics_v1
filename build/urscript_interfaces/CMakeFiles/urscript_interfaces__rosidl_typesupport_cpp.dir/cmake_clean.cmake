@@ -1,7 +1,9 @@
 file(REMOVE_RECURSE
+  "CMakeFiles/urscript_interfaces__rosidl_typesupport_cpp.dir/rosidl_typesupport_cpp/urscript_interfaces/srv/get_eef_angle_axis__type_support.cpp.o"
   "CMakeFiles/urscript_interfaces__rosidl_typesupport_cpp.dir/rosidl_typesupport_cpp/urscript_interfaces/srv/ur_script__type_support.cpp.o"
   "liburscript_interfaces__rosidl_typesupport_cpp.pdb"
   "liburscript_interfaces__rosidl_typesupport_cpp.so"
+  "rosidl_typesupport_cpp/urscript_interfaces/srv/get_eef_angle_axis__type_support.cpp"
   "rosidl_typesupport_cpp/urscript_interfaces/srv/ur_script__type_support.cpp"
 )
 

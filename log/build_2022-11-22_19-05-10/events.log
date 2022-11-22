@@ -1,0 +1,95 @@
+[0.000000] (-) TimerEvent: {}
+[0.000453] (-) JobUnselected: {'identifier': 'cmake_helpers'}
+[0.000526] (-) JobUnselected: {'identifier': 'game_engine'}
+[0.000610] (-) JobUnselected: {'identifier': 'manager_utils'}
+[0.000678] (-) JobUnselected: {'identifier': 'resource_builder'}
+[0.000740] (-) JobUnselected: {'identifier': 'resource_utils'}
+[0.000802] (-) JobUnselected: {'identifier': 'robo_cleaner_ai_py'}
+[0.000896] (-) JobUnselected: {'identifier': 'robo_cleaner_common'}
+[0.000959] (-) JobUnselected: {'identifier': 'robo_cleaner_gui'}
+[0.001020] (-) JobUnselected: {'identifier': 'robo_cleaner_interfaces'}
+[0.001082] (-) JobUnselected: {'identifier': 'robo_collector_common'}
+[0.001864] (-) JobUnselected: {'identifier': 'robo_collector_controller'}
+[0.001941] (-) JobUnselected: {'identifier': 'robo_collector_controller_py'}
+[0.002005] (-) JobUnselected: {'identifier': 'robo_collector_gui'}
+[0.002188] (-) JobUnselected: {'identifier': 'robo_collector_interfaces'}
+[0.002250] (-) JobUnselected: {'identifier': 'robo_common'}
+[0.002342] (-) JobUnselected: {'identifier': 'robo_miner_ai_py'}
+[0.002405] (-) JobUnselected: {'identifier': 'robo_miner_common'}
+[0.002471] (-) JobUnselected: {'identifier': 'robo_miner_gui'}
+[0.002573] (-) JobUnselected: {'identifier': 'robo_miner_interfaces'}
+[0.004064] (-) JobUnselected: {'identifier': 'ros2_game_engine'}
+[0.004136] (-) JobUnselected: {'identifier': 'sdl_utils'}
+[0.004201] (-) JobUnselected: {'identifier': 'ur_bringup'}
+[0.004261] (-) JobUnselected: {'identifier': 'ur_client_library'}
+[0.004322] (-) JobUnselected: {'identifier': 'ur_control_gui'}
+[0.004382] (-) JobUnselected: {'identifier': 'ur_controllers'}
+[0.004443] (-) JobUnselected: {'identifier': 'ur_dashboard_msgs'}
+[0.004526] (-) JobUnselected: {'identifier': 'ur_description'}
+[0.004591] (-) JobUnselected: {'identifier': 'ur_moveit_config'}
+[0.004653] (-) JobUnselected: {'identifier': 'ur_robot_driver'}
+[0.004714] (-) JobUnselected: {'identifier': 'urscript_bridge'}
+[0.004775] (-) JobUnselected: {'identifier': 'urscript_common'}
+[0.004868] (-) JobUnselected: {'identifier': 'urscript_interfaces'}
+[0.004931] (-) JobUnselected: {'identifier': 'utils'}
+[0.004999] (robo_builder_py) JobQueued: {'identifier': 'robo_builder_py', 'dependencies': OrderedDict([('urscript_interfaces', '/home/ubuntu/workspace/Velizar/robotics_v1/install/urscript_interfaces')])}
+[0.005073] (robo_builder_py) JobStarted: {'identifier': 'robo_builder_py'}
+[0.094905] (-) TimerEvent: {}
+[0.195642] (-) TimerEvent: {}
+[0.296115] (-) TimerEvent: {}
+[0.403220] (-) TimerEvent: {}
+[0.503711] (-) TimerEvent: {}
+[0.604990] (-) TimerEvent: {}
+[0.705574] (-) TimerEvent: {}
+[0.806076] (-) TimerEvent: {}
+[0.907598] (-) TimerEvent: {}
+[1.009300] (-) TimerEvent: {}
+[1.110189] (-) TimerEvent: {}
+[1.210951] (-) TimerEvent: {}
+[1.311455] (-) TimerEvent: {}
+[1.412148] (-) TimerEvent: {}
+[1.512637] (-) TimerEvent: {}
+[1.613935] (-) TimerEvent: {}
+[1.714593] (-) TimerEvent: {}
+[1.815043] (-) TimerEvent: {}
+[1.915442] (-) TimerEvent: {}
+[2.016067] (-) TimerEvent: {}
+[2.116652] (-) TimerEvent: {}
+[2.217100] (-) TimerEvent: {}
+[2.322197] (robo_builder_py) Command: {'cmd': ['/usr/bin/python3', 'setup.py', 'egg_info', '--egg-base', '../../build/robo_builder_py', 'build', '--build-base', '/home/ubuntu/workspace/Velizar/robotics_v1/build/robo_builder_py/build', 'install', '--prefix', '/home/ubuntu/workspace/Velizar/robotics_v1/install/robo_builder_py', '--record', '/home/ubuntu/workspace/Velizar/robotics_v1/build/robo_builder_py/install.log', '--single-version-externally-managed'], 'cwd': '/home/ubuntu/workspace/Velizar/robotics_v1/src/robo_builder_py', 'env': {'LESSOPEN': '| /usr/bin/lesspipe %s', 'USER': 'ubuntu', 'SSH_AGENT_PID': '2056', 'XDG_SESSION_TYPE': 'x11', 'SHLVL': '1', 'LD_LIBRARY_PATH': '/home/ubuntu/workspace/Velizar/robotics_v1/install/urscript_interfaces/lib:/opt/ros/foxy/opt/yaml_cpp_vendor/lib:/opt/ros/foxy/opt/rviz_ogre_vendor/lib:/opt/ros/foxy/lib/x86_64-linux-gnu:/opt/ros/foxy/lib', 'HOME': '/home/ubuntu', 'DESKTOP_SESSION': 'ubuntu', 'ROS_PYTHON_VERSION': '3', 'GNOME_SHELL_SESSION_MODE': 'ubuntu', 'GTK_MODULES': 'gail:atk-bridge', 'PS1': '[\\u@\\h \\W]$(git_branch)$', 'MANAGERPID': '1852', 'DBUS_STARTER_BUS_TYPE': 'session', 'DBUS_SESSION_BUS_ADDRESS': 'unix:path=/run/user/1000/bus,guid=9ee663c5beab7df805155993636c022a', 'COLORTERM': 'truecolor', 'IM_CONFIG_PHASE': '1', 'ROS_DISTRO': 'foxy', 'LOGNAME': 'ubuntu', 'JOURNAL_STREAM': '8:34810', '_': '/usr/bin/colcon', 'ROS_VERSION': '2', 'XDG_SESSION_CLASS': 'user', 'USERNAME': 'ubuntu', 'TERM': 'xterm-256color', 'GNOME_DESKTOP_SESSION_ID': 'this-is-deprecated', 'ROS_LOCALHOST_ONLY': '0', 'WINDOWPATH': '2', 'PATH': '/opt/ros/foxy/bin:/home/ubuntu/.local/bin:/usr/local/sbin:/usr/local/bin:/usr/sbin:/usr/bin:/sbin:/bin:/usr/games:/usr/local/games:/snap/bin', 'SESSION_MANAGER': 'local/ubuntu2004:@/tmp/.ICE-unix/2094,unix/ubuntu2004:/tmp/.ICE-unix/2094', 'INVOCATION_ID': 'db6af1d95cfb432587ee346525700d87', 'XDG_MENU_PREFIX': 'gnome-', 'GNOME_TERMINAL_SCREEN': '/org/gnome/Terminal/screen/c5645687_2172_419b_8f1e_b2126112ed72', 'XDG_RUNTIME_DIR': '/run/user/1000', 'DISPLAY': ':0', 'LANG': 'en_US.UTF-8', 'XDG_CURRENT_DESKTOP': 'ubuntu:GNOME', 'XMODIFIERS': '@im=ibus', 'XDG_SESSION_DESKTOP': 'ubuntu', 'XAUTHORITY': '/run/user/1000/gdm/Xauthority', 'LS_COLORS': 'rs=0:di=01;34:ln=01;36:mh=00:pi=40;33:so=01;35:do=01;35:bd=40;33;01:cd=40;33;01:or=40;31;01:mi=00:su=37;41:sg=30;43:ca=30;41:tw=30;42:ow=34;42:st=37;44:ex=01;32:*.tar=01;31:*.tgz=01;31:*.arc=01;31:*.arj=01;31:*.taz=01;31:*.lha=01;31:*.lz4=01;31:*.lzh=01;31:*.lzma=01;31:*.tlz=01;31:*.txz=01;31:*.tzo=01;31:*.t7z=01;31:*.zip=01;31:*.z=01;31:*.dz=01;31:*.gz=01;31:*.lrz=01;31:*.lz=01;31:*.lzo=01;31:*.xz=01;31:*.zst=01;31:*.tzst=01;31:*.bz2=01;31:*.bz=01;31:*.tbz=01;31:*.tbz2=01;31:*.tz=01;31:*.deb=01;31:*.rpm=01;31:*.jar=01;31:*.war=01;31:*.ear=01;31:*.sar=01;31:*.rar=01;31:*.alz=01;31:*.ace=01;31:*.zoo=01;31:*.cpio=01;31:*.7z=01;31:*.rz=01;31:*.cab=01;31:*.wim=01;31:*.swm=01;31:*.dwm=01;31:*.esd=01;31:*.jpg=01;35:*.jpeg=01;35:*.mjpg=01;35:*.mjpeg=01;35:*.gif=01;35:*.bmp=01;35:*.pbm=01;35:*.pgm=01;35:*.ppm=01;35:*.tga=01;35:*.xbm=01;35:*.xpm=01;35:*.tif=01;35:*.tiff=01;35:*.png=01;35:*.svg=01;35:*.svgz=01;35:*.mng=01;35:*.pcx=01;35:*.mov=01;35:*.mpg=01;35:*.mpeg=01;35:*.m2v=01;35:*.mkv=01;35:*.webm=01;35:*.ogm=01;35:*.mp4=01;35:*.m4v=01;35:*.mp4v=01;35:*.vob=01;35:*.qt=01;35:*.nuv=01;35:*.wmv=01;35:*.asf=01;35:*.rm=01;35:*.rmvb=01;35:*.flc=01;35:*.avi=01;35:*.fli=01;35:*.flv=01;35:*.gl=01;35:*.dl=01;35:*.xcf=01;35:*.xwd=01;35:*.yuv=01;35:*.cgm=01;35:*.emf=01;35:*.ogv=01;35:*.ogx=01;35:*.aac=00;36:*.au=00;36:*.flac=00;36:*.m4a=00;36:*.mid=00;36:*.midi=00;36:*.mka=00;36:*.mp3=00;36:*.mpc=00;36:*.ogg=00;36:*.ra=00;36:*.wav=00;36:*.oga=00;36:*.opus=00;36:*.spx=00;36:*.xspf=00;36:', 'GNOME_TERMINAL_SERVICE': ':1.87', 'SSH_AUTH_SOCK': '/run/user/1000/keyring/ssh', 'AMENT_PREFIX_PATH': '/home/ubuntu/workspace/Velizar/robotics_v1/install/urscript_interfaces:/opt/ros/foxy', 'SHELL': '/bin/bash', 'QT_ACCESSIBILITY': '1', 'GDMSESSION': 'ubuntu', 'LESSCLOSE': '/usr/bin/lesspipe %s %s', 'GPG_AGENT_INFO': '/run/user/1000/gnupg/S.gpg-agent:0:1', 'QT_IM_MODULE': 'ibus', 'PWD': '/home/ubuntu/workspace/Velizar/robotics_v1/build/robo_builder_py', 'LC_ALL': 'en_US.UTF-8', 'XDG_CONFIG_DIRS': '/etc/xdg/xdg-ubuntu:/etc/xdg', 'DBUS_STARTER_ADDRESS': 'unix:path=/run/user/1000/bus,guid=9ee663c5beab7df805155993636c022a', 'XDG_DATA_DIRS': '/usr/share/ubuntu:/usr/local/share/:/usr/share/:/var/lib/snapd/desktop', 'PYTHONPATH': '/home/ubuntu/workspace/Velizar/robotics_v1/install/robo_builder_py/lib/python3.8/site-packages:/home/ubuntu/workspace/Velizar/robotics_v1/install/urscript_interfaces/lib/python3.8/site-packages:/opt/ros/foxy/lib/python3.8/site-packages', 'COLCON': '1', 'VTE_VERSION': '6003', 'CMAKE_PREFIX_PATH': '/home/ubuntu/workspace/Velizar/robotics_v1/install/urscript_interfaces'}, 'shell': False}
+[2.332131] (-) TimerEvent: {}
+[2.433485] (-) TimerEvent: {}
+[2.533935] (-) TimerEvent: {}
+[2.634304] (-) TimerEvent: {}
+[2.735940] (-) TimerEvent: {}
+[2.837040] (-) TimerEvent: {}
+[2.937542] (-) TimerEvent: {}
+[3.037969] (-) TimerEvent: {}
+[3.056786] (robo_builder_py) StdoutLine: {'line': b'running egg_info\n'}
+[3.058608] (robo_builder_py) StdoutLine: {'line': b'writing ../../build/robo_builder_py/robo_builder_py.egg-info/PKG-INFO\n'}
+[3.058984] (robo_builder_py) StdoutLine: {'line': b'writing dependency_links to ../../build/robo_builder_py/robo_builder_py.egg-info/dependency_links.txt\n'}
+[3.059450] (robo_builder_py) StdoutLine: {'line': b'writing entry points to ../../build/robo_builder_py/robo_builder_py.egg-info/entry_points.txt\n'}
+[3.059730] (robo_builder_py) StdoutLine: {'line': b'writing requirements to ../../build/robo_builder_py/robo_builder_py.egg-info/requires.txt\n'}
+[3.060544] (robo_builder_py) StdoutLine: {'line': b'writing top-level names to ../../build/robo_builder_py/robo_builder_py.egg-info/top_level.txt\n'}
+[3.138135] (-) TimerEvent: {}
+[3.194709] (robo_builder_py) StdoutLine: {'line': b"reading manifest file '../../build/robo_builder_py/robo_builder_py.egg-info/SOURCES.txt'\n"}
+[3.197883] (robo_builder_py) StdoutLine: {'line': b"writing manifest file '../../build/robo_builder_py/robo_builder_py.egg-info/SOURCES.txt'\n"}
+[3.199270] (robo_builder_py) StdoutLine: {'line': b'running build\n'}
+[3.199481] (robo_builder_py) StdoutLine: {'line': b'running build_py\n'}
+[3.199702] (robo_builder_py) StdoutLine: {'line': b'copying robo_builder_py/robo_builder.py -> /home/ubuntu/workspace/Velizar/robotics_v1/build/robo_builder_py/build/lib/robo_builder_py\n'}
+[3.200895] (robo_builder_py) StdoutLine: {'line': b'running install\n'}
+[3.203656] (robo_builder_py) StdoutLine: {'line': b'running install_lib\n'}
+[3.206124] (robo_builder_py) StdoutLine: {'line': b'copying /home/ubuntu/workspace/Velizar/robotics_v1/build/robo_builder_py/build/lib/robo_builder_py/robo_builder.py -> /home/ubuntu/workspace/Velizar/robotics_v1/install/robo_builder_py/lib/python3.8/site-packages/robo_builder_py\n'}
+[3.208135] (robo_builder_py) StdoutLine: {'line': b'byte-compiling /home/ubuntu/workspace/Velizar/robotics_v1/install/robo_builder_py/lib/python3.8/site-packages/robo_builder_py/robo_builder.py to robo_builder.cpython-38.pyc\n'}
+[3.221522] (robo_builder_py) StdoutLine: {'line': b'running install_data\n'}
+[3.223346] (robo_builder_py) StdoutLine: {'line': b'running install_egg_info\n'}
+[3.227684] (robo_builder_py) StdoutLine: {'line': b"removing '/home/ubuntu/workspace/Velizar/robotics_v1/install/robo_builder_py/lib/python3.8/site-packages/robo_builder_py-0.0.0-py3.8.egg-info' (and everything under it)\n"}
+[3.228208] (robo_builder_py) StdoutLine: {'line': b'Copying ../../build/robo_builder_py/robo_builder_py.egg-info to /home/ubuntu/workspace/Velizar/robotics_v1/install/robo_builder_py/lib/python3.8/site-packages/robo_builder_py-0.0.0-py3.8.egg-info\n'}
+[3.230144] (robo_builder_py) StdoutLine: {'line': b'running install_scripts\n'}
+[3.238369] (-) TimerEvent: {}
+[3.293621] (robo_builder_py) StdoutLine: {'line': b'Installing robo_builder script to /home/ubuntu/workspace/Velizar/robotics_v1/install/robo_builder_py/lib/robo_builder_py\n'}
+[3.295513] (robo_builder_py) StdoutLine: {'line': b"writing list of installed files to '/home/ubuntu/workspace/Velizar/robotics_v1/build/robo_builder_py/install.log'\n"}
+[3.338558] (-) TimerEvent: {}
+[3.375847] (robo_builder_py) CommandEnded: {'returncode': 0}
+[3.428929] (robo_builder_py) JobEnded: {'identifier': 'robo_builder_py', 'rc': 0}
+[3.430603] (-) EventReactorShutdown: {}

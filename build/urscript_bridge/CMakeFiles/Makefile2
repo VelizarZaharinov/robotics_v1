@@ -76,12 +76,12 @@ clean: CMakeFiles/uninstall.dir/clean
 CMakeFiles/urscript_bridge.dir/all:
 	$(MAKE) -f CMakeFiles/urscript_bridge.dir/build.make CMakeFiles/urscript_bridge.dir/depend
 	$(MAKE) -f CMakeFiles/urscript_bridge.dir/build.make CMakeFiles/urscript_bridge.dir/build
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --progress-dir=/home/ubuntu/workspace/Velizar/robotics_v1/build/urscript_bridge/CMakeFiles --progress-num=1,2,3,4,5,6,7 "Built target urscript_bridge"
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --progress-dir=/home/ubuntu/workspace/Velizar/robotics_v1/build/urscript_bridge/CMakeFiles --progress-num=1,2,3,4,5,6,7,8 "Built target urscript_bridge"
 .PHONY : CMakeFiles/urscript_bridge.dir/all
 
 # Build rule for subdir invocation for target.
 CMakeFiles/urscript_bridge.dir/rule: cmake_check_build_system
-	$(CMAKE_COMMAND) -E cmake_progress_start /home/ubuntu/workspace/Velizar/robotics_v1/build/urscript_bridge/CMakeFiles 7
+	$(CMAKE_COMMAND) -E cmake_progress_start /home/ubuntu/workspace/Velizar/robotics_v1/build/urscript_bridge/CMakeFiles 8
 	$(MAKE) -f CMakeFiles/Makefile2 CMakeFiles/urscript_bridge.dir/all
 	$(CMAKE_COMMAND) -E cmake_progress_start /home/ubuntu/workspace/Velizar/robotics_v1/build/urscript_bridge/CMakeFiles 0
 .PHONY : CMakeFiles/urscript_bridge.dir/rule

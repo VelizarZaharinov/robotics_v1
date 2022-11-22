@@ -1,0 +1,5 @@
+  File "/home/ubuntu/workspace/Velizar/robotics_v1/install/robo_builder_py/lib/python3.8/site-packages/robo_builder_py/robo_builder_gui.py", line 143
+    for i in range(4):
+    ^
+SyntaxError: invalid syntax
+

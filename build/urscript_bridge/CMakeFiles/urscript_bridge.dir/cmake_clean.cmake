@@ -5,6 +5,7 @@ file(REMOVE_RECURSE
   "CMakeFiles/urscript_bridge.dir/src/external_api/UrBridgeRos2ParamProvider.cpp.o"
   "CMakeFiles/urscript_bridge.dir/src/main.cpp.o"
   "CMakeFiles/urscript_bridge.dir/src/utils/TcpClient.cpp.o"
+  "CMakeFiles/urscript_bridge.dir/src/utils/Tf2Utils.cpp.o"
   "urscript_bridge"
   "urscript_bridge.pdb"
 )
